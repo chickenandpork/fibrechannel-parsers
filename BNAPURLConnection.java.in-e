@@ -36,7 +36,6 @@ public class BNAPURLConnection extends java.net.URLConnection
 	            while (source.next())
 	            {
 			String res = String.format("%s,\"%s\"\n",source.getString(1), source.getString(2));
-		        System.out.print(res);
 		        write(res.getBytes(), 0, res.length());
 	            }
     
