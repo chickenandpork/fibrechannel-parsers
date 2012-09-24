@@ -13,6 +13,8 @@ package org.smallfoot.bnapsql;
  *
  * @section Known Issues
  * - as of 2012-09-11 unknown test status
+ * - as of 2012-09-16 may not accept "standard aliases shared to fabric" approach, may be only "McData Port Labels Not Shared to Fabric" approach (less common)
+ *   - http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf defines table model on Table 282, "defined_content", "active_content", or "ti_zone_content"
  */
 
 public class BNAPURLConnection extends java.net.URLConnection
