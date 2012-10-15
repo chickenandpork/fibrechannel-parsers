@@ -120,6 +120,9 @@ System.out.println("fin: public BNAPURLConnection(java.net.URL "+url.toString()+
 
     /**
      * connect the result of a "psql -c "select wwn,name from device_port_info"" to something that looks readable like an InputStream
+     * may want to consider later (http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf):
+     * - select port_wwn,name from hba_target_info;
+     * - select port_nwwn,physical_port_nwwn,name from hba_port_details_info;
      */
     public java.io.InputStream getInputStream()
     {
