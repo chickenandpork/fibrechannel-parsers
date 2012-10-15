@@ -2,7 +2,7 @@ nodist_pkgdata_JAVA = AliShowZoneParser.java AliShowZoneParserVal.java ZoneParse
 nodist_pkgdata_DATA = @PACKAGE@.jar $(subdir).jar
 # https://downloads.sourceforge.net/project/byaccj/byaccj/1.15/byaccj1.15_macosx.tar.gz?r=http%3A%2F%2Fbyaccj.sourceforge.net%2F&ts=1347235095&use_mirror=voxel
 
-EXTRA_DIST = $(nodist_pkgdata_JAVA)  logparser.y
+EXTRA_DIST = $(nodist_pkgdata_JAVA)  zonefile.y
 CONFIG_CLEAN_FILES = 
 
 AM_JAVACFLAGS= -cp $(top_builddir)/java-pre/getopt.jar:$(top_builddir):.
