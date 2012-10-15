@@ -131,7 +131,7 @@ System.out.println("fin: public BNAPURLConnection(java.net.URL "+url.toString()+
 
         System.out.println("Now executing the command: "+ "select wwn,name from device_port_info");
 	try {
-	    ResultCSVPipe res = new ResultCSVPipe(connection.createStatement().executeQuery("select wwn,name from device_port_info"));
+	    ResultCSVPipe res = new ResultCSVPipe(connection.createStatement().executeQuery("select wwn,name from device_port_info where name is not null"));
 	    new Thread(res).start();
 	    return new java.io.PipedInputStream(res);
 	} catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); return null; }
