@@ -1,0 +1,84 @@
+options {
+    IGNORE_CASE=true;
+}
+
+PARSER_BEGIN(ZoneParse)
+package org.smallfoot.parser.zone;
+
+public class ZoneParse {
+
+  class Nameable { };
+
+  public static void main(String args[]) throws ParseException {
+    ZoneParse parser = new ZoneParse(System.in);
+    parser.input();
+  }
+
+}
+
+PARSER_END(ZoneParse)
+
+SKIP : /* WHITE SPACE */
+{ " " | "\t"  | "\n" | "\r" }
+
+TOKEN :
+{
+  < CFG_STR: "cfg:" >
+| < ZONE_STR: "zone:" >
+| < ALIAS_STR: "alias:" >
+| < CFG_Effective: "Effective" >
+| < CFG_Defined: "Defined" >
+| < SEMICOL: ";" >
+| < ZONESET_STR: "configuration:" >
+| < NAMEABLE: ["A"-"Z","0"-"9"](["A"-"Z","0"-"9","_","-"])+ >
+| <WWN: ["A"-"F","0"-"9"]["A"-"F","0"-"9"]":"["A"-"F","0"-"9"]["A"-"F","0"-"9"]":"["A"-"F","0"-"9"]["A"-"F","0"-"9"]":"["A"-"F","0"-"9"]["A"-"F","0"-"9"]":"["A"-"F","0"-"9"]["A"-"F","0"-"9"]":"["A"-"F","0"-"9"]["A"-"F","0"-"9"]":"["A"-"F","0"-"9"]["A"-"F","0"-"9"]":"["A"-"F","0"-"9"]["A"-"F","0"-"9"] | 
+	["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"]["A"-"F","0"-"9"] >
+}
+
+void input() :
+{}
+{
+     ( effectiveConfig() | definedConfig() )+ <EOF>
+}
+
+void effectiveConfig() :
+{}
+{
+     <CFG_Effective> <ZONESET_STR> cfg_sh() ( zone_sh() )* ( alias() )* { System.out.println("Effective read"); }
+}
+
+void definedConfig() :
+{}
+{
+     <CFG_Defined>   <ZONESET_STR> cfg()    ( zone() )* ( alias() )*
+}
+
+void zone() :
+{}
+{
+	<ZONE_STR> <NAMEABLE> <NAMEABLE> ( <SEMICOL> <NAMEABLE> )*
+}
+
+void zone_sh() :
+{}
+{
+	<ZONE_STR> <NAMEABLE> ( <WWN> )+
+}
+
+void cfg() :
+{}
+{
+	<CFG_STR> <NAMEABLE> <NAMEABLE> ( <SEMICOL> <NAMEABLE> )*
+}
+
+void cfg_sh() :
+{}
+{
+	<CFG_STR> <NAMEABLE> 
+}
+
+void alias() :
+{}
+{
+	<ALIAS_STR> <NAMEABLE> <WWN> ( <SEMICOL> <WWN> )*
+}
