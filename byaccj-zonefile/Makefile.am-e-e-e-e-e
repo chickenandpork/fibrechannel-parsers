@@ -27,9 +27,6 @@ endif
 clean-local:
 	CLASSES=`for i in $(nodist_pkgdata_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
 
-check-local: $(top_builddir)/java-pre/getopt.jar @PACKAGE@.jar sample.zone
-	$(JAVA) $(AM_JAVACFLAGS) org.smallfoot.parser.zone.AliShowZoneParser < sample.zone
-
 
 $(subdir).jar: $(BUILT_SOURCES) $(top_builddir)/java-pre/getopt.jar @PACKAGE@.jar
 	-rm -fr $(@D)/.workdir

@@ -9,11 +9,25 @@ import java.io.*;
 %token ZONE
 %token ALIAS
 %token ALPHANUM
+%token DEFINED
+%token EFFECTIVE
+%token CONFIGURATION
+%token CFG
 
 /* Grammar follows */
 %%
 input: /* empty string */
- | input line
+ | input DEFINED CONFIGURATION CFG ALPHANUM sectionDefined
+ | input EFFECTIVE CONFIGURATION CFG ALPHANUM sectionEffective
+ | input sectionEffective
+ ;
+
+sectionEffective: /* empty */
+ | sectionEffective effectiveLine
+ ;
+
+sectionDefined: /* empty */
+ | sectionDefined effectiveLine
  ;
 
 /*
@@ -23,7 +37,7 @@ input: /* empty string */
  *                A11; EMC_CX4_
  */
 
-line: '\n'
+effectiveLine: '\n'
  | ZONE ALPHANUM itemlist '\n' { addZone ($2, $3); }
  | ALIAS ALPHANUM itemlist '\n' { addAlias ($2, $3); }
  ;
@@ -31,6 +45,7 @@ line: '\n'
 itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
  | itemlist ';' ALPHANUM { $$ = appendZoneAlphanum($1, $3); }
  | itemlist '\n' ALPHANUM { $$ = appendZoneAlphanum($1, $3); }
+ | itemlist ALPHANUM { $$ = appendZoneAlphanum($1, $2); }
  ;
  /* | '\n' itemlist { $$ = $2 ; }
  */
@@ -39,6 +54,13 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
     java.util.Vector<ZPZoneEntry> zones = new java.util.Vector();
     java.util.Vector<ZPAliasEntry> aliases = new java.util.Vector();
 
+    java.util.Properties _prop = null;
+    boolean checkProperty(String n)
+    {
+	if (null == _prop) _prop = System.getProperties();
+	//return ( (null != _prop.getProperty(n)) && (false != Boolean.parseBoolean(_prop.getProperty(n))) );
+	return ( Boolean.parseBoolean(_prop.getProperty(n)) );
+    }
     String ins;
     java.io.StreamTokenizer st;
 
@@ -47,17 +69,30 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
         System.out.println("parser error: "+s);
     }
 
+    boolean verboseStringtokenizer = checkProperty("debug.verboseTokenizer");
     boolean newline;
+    String manualPushBackALPHANUM = null;
+
     int yylex()
     {
         String s;
         int tok;
         Double d;
 //System.out.print("yylex ");
+	if (null != manualPushBackALPHANUM)
+	{
+	    st.sval = manualPushBackALPHANUM;
+	    //if (verboseStringtokenizer) System.out.println("token#: "+java.io.StreamTokenizer.TT_WORD);
+	    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
+	    manualPushBackALPHANUM = null;
+	    return ALPHANUM;
+	}
+	/* else */
+
 	try {
         tok = st.nextToken();
 	} catch (java.io.IOException ioe) { return 0; }
-//System.out.println("token#: "+tok);
+	//if (verboseStringtokenizer) System.out.println("token#: "+tok);
 	switch(tok)
 	{
 	    case java.io.StreamTokenizer.TT_EOF:
@@ -72,7 +107,7 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
                 return 0;
 	
 	    case java.io.StreamTokenizer.TT_EOL:
-//System.out.println("returning java.io.StreamTokenizer.TT_EOL");
+		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_EOL");
                 newline=true;
 		return '\n';
 
@@ -80,35 +115,67 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
 	        if (st.sval.equalsIgnoreCase("zone:"))
 		{
 		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-//System.out.println("returning java.io.StreamTokenizer.TT_WORD:ZONE \"" + st.sval + "\"");
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ZONE \"" + st.sval + "\"");
 		    return ZONE;
 		}
 	        if (st.sval.equalsIgnoreCase("alias:"))
 		{
 		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-//System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALIAS \"" + st.sval + "\"");
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALIAS \"" + st.sval + "\"");
 		    return ALIAS;
 		}
-//System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
+	        if (st.sval.equalsIgnoreCase("cfg:"))
+		{
+		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:CFG \"" + st.sval + "\"");
+		    return CFG;
+		}
+	        if (st.sval.toLowerCase().startsWith("cfg:"))
+		{
+		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
+		    manualPushBackALPHANUM = st.sval.substring(4);
+		    st.sval = "cfg:";
+		    if (verboseStringtokenizer) System.out.println("returning (manual pushBack: "+manualPushBackALPHANUM+") java.io.StreamTokenizer.TT_WORD:CFG \"" + st.sval + "\"");
+		    return CFG;
+		}
+	        if (st.sval.equalsIgnoreCase("effective"))
+		{
+		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:EFFECTIVE \"" + st.sval + "\"");
+		    return EFFECTIVE;
+		}
+	        if (st.sval.equalsIgnoreCase("defined"))
+		{
+		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:DEFINED \"" + st.sval + "\"");
+		    return DEFINED;
+		}
+	        if (st.sval.equalsIgnoreCase("configuration:"))
+		{
+		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:CONFIGURATION \"" + st.sval + "\"");
+		    return CONFIGURATION;
+		}
+		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
                 newline=false;
 		yylval = new AliShowZoneParserVal(st.sval);
 		return ALPHANUM;
 
 	    case java.io.StreamTokenizer.TT_NUMBER:
-//System.out.println("returning java.io.StreamTokenizer.TT_NUMBER \"" + st.sval + "\" as \"" + st.nval + "\"");
+	        if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_NUMBER \"" + st.sval + "\" as \"" + st.nval + "\"");
                 newline=false;
 		yylval = new AliShowZoneParserVal(st.nval);
 		return ALPHANUM;
 
 	    case ':':
 	    case ';':
-//System.out.println("returning anticipated char "+ tok + " \"" + (char) tok + "\"");
+	        if (verboseStringtokenizer) System.out.println("returning anticipated char "+ tok + " \"" + (char) tok + "\"");
                 newline=false;
 		return tok;
 	}
 
 	// bogusity
-//System.out.println("returning bogus char "+ tok + " \"" + (char) tok + "\"");
+	System.out.println("returning bogus char "+ tok + " \"" + (char) tok + "\"");
 	return '\n';
     }
 
