@@ -13,7 +13,7 @@ BUILT_SOURCES += postgresql-9.1-902.jdbc4.jar
 
 postgresql-9.1-902.jdbc4.jar:
 	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
-	test -f $@ || wget -O $@ http://jdbc.postgresql.org/download/$(@F) || curl -o $@ http://jdbc.postgresql.org/download/$(@F)
+	test -f $@ || wget -O $@ http://jdbc.postgresql.org/download/$(@F) || curl -Lo $@ http://jdbc.postgresql.org/download/$(@F)
 	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
 
 @PACKAGE@.jar: classnodist_pkgdata.stamp
