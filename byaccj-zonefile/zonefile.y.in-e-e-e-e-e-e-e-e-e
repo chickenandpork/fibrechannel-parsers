@@ -180,35 +180,10 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
     }
 
 
-void parse(BufferedReader in)
+public void parse()
 {
  try
  {
- st = new java.io.StreamTokenizer(in);
- // reset the parser to effect a parseNumbers(false) which doesn't exist
- st.resetSyntax();
- st.wordChars('a', 'z');
- st.wordChars('A', 'Z');
- st.wordChars(128 + 32, 255);
- st.whitespaceChars(0, ' ');
- st.commentChar('/');
- st.quoteChar('"');
- st.quoteChar('\'');
-
- // ok, dots, numbers, things accepted as WWNs or names are generally "words"
- st.wordChars((int) '.', (int) '.');
- st.wordChars((int) '0', (int) '0');
- st.wordChars((int) '1', (int) '9');
- st.wordChars((int) ':', (int) ':');
- st.wordChars((int) '_', (int) '_');
-
- // It's ordinary, and returned so that we can use as a separator.  Later, it's possible to just treat as a separator to be a bit more accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
- st.ordinaryChar((int) ';');
-
- //st.ordinaryChar((int) ':');
- st.eolIsSignificant(false);
-
- newline=false;
  yyparse();
  }
  catch (Exception e)
@@ -290,16 +265,95 @@ AliShowZoneParserVal appendZoneAlphanum(AliShowZoneParserVal list, AliShowZonePa
 }
 
 
+public void setReader(Reader in)
+{
+  //nothing to do
+ st = new java.io.StreamTokenizer(in);
+ // reset the parser to effect a parseNumbers(false) which doesn't exist
+ st.resetSyntax();
+ st.wordChars('a', 'z');
+ st.wordChars('A', 'Z');
+ st.wordChars(128 + 32, 255);
+ st.whitespaceChars(0, ' ');
+ st.commentChar('/');
+ st.quoteChar('"');
+ st.quoteChar('\'');
+
+ // ok, dots, numbers, things accepted as WWNs or names are generally "words"
+ st.wordChars((int) '.', (int) '.');
+ st.wordChars((int) '0', (int) '0');
+ st.wordChars((int) '1', (int) '9');
+ st.wordChars((int) ':', (int) ':');
+ st.wordChars((int) '_', (int) '_');
+
+ // It's ordinary, and returned so that we can use as a separator.  Later, it's possible to just treat as a separator to be a bit more accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
+ st.ordinaryChar((int) ';');
+
+ //st.ordinaryChar((int) ':');
+ st.eolIsSignificant(false);
+
+ newline=false;
+}
+
+
+/**
+ * Create a parser with a new stream
+ *
+ * @param in InputStream that is the source of bytes to consume
+ */
+public AliShowZoneParser(InputStream in)
+{
+    setReader(new BufferedReader(new InputStreamReader(in)));
+}
+
+
+/**
+ * Create a parser with a new stream
+ *
+ * @param in InputStream that is the source of bytes to consume
+ * @param debugMe true for debugging, false for no debug.
+ */
+public AliShowZoneParser(InputStream in, boolean debugMe)
+{
+    setReader(new BufferedReader(new InputStreamReader(in)));
+    yydebug=debugMe;
+}
+
+
+/**
+ * Create a parser with a new stream
+ *
+ * @param in Reader that is the source of bytes to consume
+ */
+public AliShowZoneParser(Reader in)
+{
+    setReader(in);
+}
+
+
+/**
+ * Create a parser, setting the debug to true or false
+ *
+ * @param in Reader that is the source of bytes to consume
+ * @param debugMe true for debugging, false for no debug.
+ */
+public AliShowZoneParser(Reader in, boolean debugMe)
+{
+    setReader(in);
+    yydebug=debugMe;
+}
+
+
+
 public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements(); }
 public int zoneSize() { return zones.size(); }
 public java.util.Enumeration<ZPAliasEntry> aliasElements() { return aliases.elements(); }
 public int aliasSize() { return aliases.size(); }
 
 
-
 public static void main(String args[])
 {
- AliShowZoneParser aszp = new AliShowZoneParser(false);
- aszp.parse(new BufferedReader(new InputStreamReader(System.in)));
+ AliShowZoneParser aszp = new AliShowZoneParser(System.in);
+ aszp.parse();
  System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
 }

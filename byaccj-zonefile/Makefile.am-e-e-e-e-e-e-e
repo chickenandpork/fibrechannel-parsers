@@ -1,9 +1,11 @@
 nodist_pkgdata_JAVA = AliShowZoneParser.java AliShowZoneParserVal.java ZoneParser.java ZPAliasEntry.java ZPZoneEntry.java
+nodist_pkgdata_JAVA += BNAZoneParser.java BNAZoneParserVal.java
+
 nodist_pkgdata_DATA = @PACKAGE@.jar $(subdir).jar
 # https://downloads.sourceforge.net/project/byaccj/byaccj/1.15/byaccj1.15_macosx.tar.gz?r=http%3A%2F%2Fbyaccj.sourceforge.net%2F&ts=1347235095&use_mirror=voxel
 
-EXTRA_DIST = $(nodist_pkgdata_JAVA)  zonefile.y
-CONFIG_CLEAN_FILES = 
+EXTRA_DIST = $(nodist_pkgdata_JAVA)  zonefile.y bnazone.y
+CONFIG_CLEAN_FILES = @PACKAGE@.jar $(subdir).jarAliShowZoneParser.java AliShowZoneParserVal.java
 
 AM_JAVACFLAGS= -cp $(top_builddir)/java-pre/getopt.jar:$(top_builddir):.
 
@@ -15,7 +17,13 @@ if DO_BYACC
 BUILT_SOURCES += AliShowZoneParser.java AliShowZoneParserVal.java
 
 AliShowZoneParser.java AliShowZoneParserVal.java: zonefile.y
-	$(BYACC) -Jpackage=org.smallfoot.parser.zone -Jimplements=ZoneParser -Jclass=AliShowZoneParser -J $<
+	$(BYACC) -Jnoconstruct -Jpackage=org.smallfoot.parser.zone -Jimplements=ZoneParser -Jextends=Thread -Jclass=AliShowZoneParser -J $<
+
+BUILT_SOURCES += BNAZoneParser.java BNAZoneParserVal.java
+
+BNAZoneParser.java BNAZoneParserVal.java: bnazone.y
+	$(BYACC) -Jnoconstruct -Jpackage=org.smallfoot.parser.zone -Jimplements=ZoneParser -Jextends=Thread -Jclass=BNAZoneParser -J $<
+
 endif
 	
 
@@ -26,6 +34,10 @@ endif
 
 clean-local:
 	CLASSES=`for i in $(nodist_pkgdata_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
+	rm -f @PACKAGE@.jar $(subdir).jar $(BUILT_SOURCES)
+
+check-local: BNAZoneParser.java BNAZoneParserVal.java test-bnazone.txt
+	@JAVA@ -Ddebug.verboseTokenizer=true -classpath $(top_builddir) org.smallfoot.parser.zone.BNAZoneParser < test-bnazone.txt
 
 
 $(subdir).jar: $(BUILT_SOURCES) $(top_builddir)/java-pre/getopt.jar @PACKAGE@.jar
@@ -33,7 +45,7 @@ $(subdir).jar: $(BUILT_SOURCES) $(top_builddir)/java-pre/getopt.jar @PACKAGE@.ja
 	mkdir -p $(@D)/.workdir
 	echo "Manifest-Version: 1.0" > $(@D)/.workdir/MANIFEST.MF
 	echo "Created-By: @PACKAGE@-@VERSION@" >> $(@D)/.workdir/MANIFEST.MF
-	echo "Main-Class: org.smallfoot.vi.VIMailDrop"  >> $(@D)/.workdir/MANIFEST.MF
+	echo "Main-Class: org.smallfoot.parser.zone.AliShowZoneParser"  >> $(@D)/.workdir/MANIFEST.MF
 	ln -f $^ $(@D)/.workdir/
 	for i in $(^F) ; do (cd $(@D)/.workdir  && jar xf $$i) ; done
 	rm -fr $(@D)/.workdir/META-INF/{LICENSE.txt,MANIFEST.MF,{SUN_MICR,TESTKEY}.{RSA,SF}}

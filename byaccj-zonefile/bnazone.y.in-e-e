@@ -6,49 +6,28 @@ import java.io.*;
 %}
 
 /* YACC Declarations */
-%token ZONE
-%token ALIAS
+%token TOK01 1	/* zone start */
+%token TOK02 2	/* zone entry */
+%token TOK03 3	/* nickname: alias WWN */
+%token TOK05 5	/* 1048576 end-of-cell */
+%token TOK07 7	/* matches a 0x01 value */
 %token ALPHANUM
-%token DEFINED
-%token EFFECTIVE
-%token CONFIGURATION
-%token CFG
 
 /* Grammar follows */
 %%
-input: /* empty string */
- | input DEFINED CONFIGURATION CFG ALPHANUM sectionDefined
- | input EFFECTIVE CONFIGURATION CFG ALPHANUM sectionEffective
- | input sectionEffective
+input:  /* empty string */
+ | input TOK07 ALPHANUM ALPHANUM
+ | input TOK05 ALPHANUM { }
+ | input TOK03 ALPHANUM itemlist { addAlias ($2, $3); }
+ | input TOK02 ALPHANUM itemlist { }
+ | input TOK01 ALPHANUM itemlist { }
  ;
 
-sectionEffective: /* empty */
- | sectionEffective effectiveLine
- ;
-
-sectionDefined: /* empty */
- | sectionDefined effectiveLine
- ;
-
-/*
- * zone:  A10_IBM_V7000
- *                A10; IBM_V7000_C1P1; IBM_V7000_C2P1
- * zone:  A11_EMC_CX4_960
- *                A11; EMC_CX4_
- */
-
-effectiveLine: '\n'
- | ZONE ALPHANUM itemlist '\n' { addZone ($2, $3); }
- | ALIAS ALPHANUM itemlist '\n' { addAlias ($2, $3); }
- ;
-
-itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
- | itemlist ';' ALPHANUM { $$ = appendZoneAlphanum($1, $3); }
- | itemlist '\n' ALPHANUM { $$ = appendZoneAlphanum($1, $3); }
+itemlist: ALPHANUM { $$ = new BNAZoneParserVal($1); }
  | itemlist ALPHANUM { $$ = appendZoneAlphanum($1, $2); }
+ | itemlist ';' { $$ = $1 ; }
  ;
- /* | '\n' itemlist { $$ = $2 ; }
- */
+
 %%
 
     java.util.Vector<ZPZoneEntry> zones = new java.util.Vector();
@@ -91,19 +70,11 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
 
 	try {
         tok = st.nextToken();
-	} catch (java.io.IOException ioe) { return 0; }
-	//if (verboseStringtokenizer) System.out.println("token#: "+tok);
+	} catch (java.io.IOException ioe) { if (verboseStringtokenizer) System.out.println("I/O Exception so returning from parser"); return 0; }
+	if (verboseStringtokenizer) System.out.println("(@75) token#: "+tok);
 	switch(tok)
 	{
 	    case java.io.StreamTokenizer.TT_EOF:
-//System.out.println("returning java.io.StreamTokenizer.TT_EOF");
-            if (!newline)
-            {
-                newline=true;
-		st.pushBack();
-                return '\n'; //So we look like classic YACC example
-            }
-            else
                 return 0;
 	
 	    case java.io.StreamTokenizer.TT_EOL:
@@ -111,67 +82,39 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
                 newline=true;
 		return '\n';
 
+	    case TOK01:
+	    case TOK02:
+	    case TOK03:
+	    case TOK05:
+	    case TOK07:
+/*
+		if (!newline)
+		{
+                    newline=true;
+                    st.pushBack();
+                    return '\n'; //So we look like classic YACC example
+                }
+*/
+		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.delimiter: \"" + (char)(tok+'0') + "\"");
+                newline=false;
+		return tok;
+
 	    case java.io.StreamTokenizer.TT_WORD:
-	        if (st.sval.equalsIgnoreCase("zone:"))
-		{
-		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ZONE \"" + st.sval + "\"");
-		    return ZONE;
-		}
-	        if (st.sval.equalsIgnoreCase("alias:"))
-		{
-		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALIAS \"" + st.sval + "\"");
-		    return ALIAS;
-		}
-	        if (st.sval.equalsIgnoreCase("cfg:"))
-		{
-		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:CFG \"" + st.sval + "\"");
-		    return CFG;
-		}
-	        if (st.sval.toLowerCase().startsWith("cfg:"))
-		{
-		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-		    manualPushBackALPHANUM = st.sval.substring(4);
-		    st.sval = "cfg:";
-		    if (verboseStringtokenizer) System.out.println("returning (manual pushBack: "+manualPushBackALPHANUM+") java.io.StreamTokenizer.TT_WORD:CFG \"" + st.sval + "\"");
-		    return CFG;
-		}
-	        if (st.sval.equalsIgnoreCase("effective"))
-		{
-		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:EFFECTIVE \"" + st.sval + "\"");
-		    return EFFECTIVE;
-		}
-	        if (st.sval.equalsIgnoreCase("defined"))
-		{
-		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:DEFINED \"" + st.sval + "\"");
-		    return DEFINED;
-		}
-	        if (st.sval.equalsIgnoreCase("configuration:"))
-		{
-		    if (!newline) { newline=true; st.pushBack(); return '\n'; }
-		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:CONFIGURATION \"" + st.sval + "\"");
-		    return CONFIGURATION;
-		}
 		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
                 newline=false;
-		yylval = new AliShowZoneParserVal(st.sval);
+		yylval = new BNAZoneParserVal(st.sval);
 		return ALPHANUM;
 
 	    case java.io.StreamTokenizer.TT_NUMBER:
 	        if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_NUMBER \"" + st.sval + "\" as \"" + st.nval + "\"");
                 newline=false;
-		yylval = new AliShowZoneParserVal(st.nval);
+		yylval = new BNAZoneParserVal(st.nval);
 		return ALPHANUM;
 
-	    case ':':
-	    case ';':
-	        if (verboseStringtokenizer) System.out.println("returning anticipated char "+ tok + " \"" + (char) tok + "\"");
+            case ';':
+                if (verboseStringtokenizer) System.out.println("returning anticipated char "+ tok + " \"" + (char) tok + "\"");
                 newline=false;
-		return tok;
+                return tok;
 	}
 
 	// bogusity
@@ -191,7 +134,7 @@ public void parse()
  }
 }
 
-void addZone(AliShowZoneParserVal name, AliShowZoneParserVal list)
+void addZone(BNAZoneParserVal name, BNAZoneParserVal list)
 {
 //System.out.println(" ZZone: " + name.sval + " -- xx");
 //System.out.println("name.sval: " + (null == name.sval ? "NULL" : name.sval));
@@ -202,18 +145,18 @@ void addZone(AliShowZoneParserVal name, AliShowZoneParserVal list)
     if (null != list.sval)
 	addZone (name.sval, list.sval);
     else if (list.obj.getClass() == java.util.Vector.class)
-	addZone (name.sval, (java.util.Vector<AliShowZoneParserVal>) list.obj);
-    else if (list.obj.getClass() == AliShowZoneParserVal.class)
-	addZone (name, (AliShowZoneParserVal)list.obj);
+	addZone (name.sval, (java.util.Vector<BNAZoneParserVal>) list.obj);
+    else if (list.obj.getClass() == BNAZoneParserVal.class)
+	addZone (name, (BNAZoneParserVal)list.obj);
 }
-void addAlias(AliShowZoneParserVal name, AliShowZoneParserVal list)
+void addAlias(BNAZoneParserVal name, BNAZoneParserVal list)
 {
     if (null != list.sval)
 	addAlias (name.sval, list.sval);
     else if (list.obj.getClass() == java.util.Vector.class)
-	addAlias (name.sval, (java.util.Vector<AliShowZoneParserVal>) list.obj);
-    else if (list.obj.getClass() == AliShowZoneParserVal.class)
-	addAlias (name, (AliShowZoneParserVal)list.obj);
+	addAlias (name.sval, (java.util.Vector<BNAZoneParserVal>) list.obj);
+    else if (list.obj.getClass() == BNAZoneParserVal.class)
+	addAlias (name, (BNAZoneParserVal)list.obj);
 }
 
 void addZone(String name, String list)
@@ -221,10 +164,10 @@ void addZone(String name, String list)
     zones.add(new ZPZoneEntry (name,list));
 }
 
-void addZone(String name, java.util.Vector<AliShowZoneParserVal> list)
+void addZone(String name, java.util.Vector<BNAZoneParserVal> list)
 {
     ZPZoneEntry ze = new ZPZoneEntry (name);
-    for (java.util.Enumeration<AliShowZoneParserVal> e = list.elements(); e.hasMoreElements();)
+    for (java.util.Enumeration<BNAZoneParserVal> e = list.elements(); e.hasMoreElements();)
     {
        ze.addZone(e.nextElement().sval);
     }
@@ -236,10 +179,10 @@ void addAlias(String name, String list)
     aliases.add(new ZPAliasEntry (name,list));
 }
 
-void addAlias(String name, java.util.Vector<AliShowZoneParserVal> list)
+void addAlias(String name, java.util.Vector<BNAZoneParserVal> list)
 {
     ZPAliasEntry ze = new ZPAliasEntry (name);
-    for (java.util.Enumeration<AliShowZoneParserVal> e = list.elements(); e.hasMoreElements();)
+    for (java.util.Enumeration<BNAZoneParserVal> e = list.elements(); e.hasMoreElements();)
     {
        ze.addAlias(e.nextElement().sval);
     }
@@ -247,7 +190,7 @@ void addAlias(String name, java.util.Vector<AliShowZoneParserVal> list)
     aliases.add(ze);
  }
 
-AliShowZoneParserVal appendZoneAlphanum(AliShowZoneParserVal list, AliShowZoneParserVal item)
+BNAZoneParserVal appendZoneAlphanum(BNAZoneParserVal list, BNAZoneParserVal item)
 {
     if (list.obj.getClass().getName().equals(java.util.Vector.class.getName()))
     {
@@ -256,8 +199,8 @@ AliShowZoneParserVal appendZoneAlphanum(AliShowZoneParserVal list, AliShowZonePa
     }
     else 
     {
-	java.util.Vector<AliShowZoneParserVal> li = new java.util.Vector(2,2);
-	AliShowZoneParserVal retNewList = new AliShowZoneParserVal(li);
+	java.util.Vector<BNAZoneParserVal> li = new java.util.Vector(2,2);
+	BNAZoneParserVal retNewList = new BNAZoneParserVal(li);
 	li.add(list);
 	li.add(item);
 	return retNewList;
@@ -273,11 +216,9 @@ public void setReader(Reader in)
  st.resetSyntax();
  st.wordChars('a', 'z');
  st.wordChars('A', 'Z');
- st.wordChars(128 + 32, 255);
- st.whitespaceChars(0, ' ');
- st.commentChar('/');
- st.quoteChar('"');
- st.quoteChar('\'');
+ //st.wordChars(128 + 32, 255);
+ st.ordinaryChars((int) 1, (int) 7);
+ st.whitespaceChars(8, ' ');
 
  // ok, dots, numbers, things accepted as WWNs or names are generally "words"
  st.wordChars((int) '.', (int) '.');
@@ -289,7 +230,6 @@ public void setReader(Reader in)
  // It's ordinary, and returned so that we can use as a separator.  Later, it's possible to just treat as a separator to be a bit more accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
  st.ordinaryChar((int) ';');
 
- //st.ordinaryChar((int) ':');
  st.eolIsSignificant(false);
 
  newline=false;
@@ -301,7 +241,7 @@ public void setReader(Reader in)
  *
  * @param in InputStream that is the source of bytes to consume
  */
-public AliShowZoneParser(InputStream in)
+public BNAZoneParser(InputStream in)
 {
     setReader(new BufferedReader(new InputStreamReader(in)));
 }
@@ -313,7 +253,7 @@ public AliShowZoneParser(InputStream in)
  * @param in InputStream that is the source of bytes to consume
  * @param debugMe true for debugging, false for no debug.
  */
-public AliShowZoneParser(InputStream in, boolean debugMe)
+public BNAZoneParser(InputStream in, boolean debugMe)
 {
     setReader(new BufferedReader(new InputStreamReader(in)));
     yydebug=debugMe;
@@ -325,7 +265,7 @@ public AliShowZoneParser(InputStream in, boolean debugMe)
  *
  * @param in Reader that is the source of bytes to consume
  */
-public AliShowZoneParser(Reader in)
+public BNAZoneParser(Reader in)
 {
     setReader(in);
 }
@@ -337,7 +277,7 @@ public AliShowZoneParser(Reader in)
  * @param in Reader that is the source of bytes to consume
  * @param debugMe true for debugging, false for no debug.
  */
-public AliShowZoneParser(Reader in, boolean debugMe)
+public BNAZoneParser(Reader in, boolean debugMe)
 {
     setReader(in);
     yydebug=debugMe;
@@ -353,7 +293,7 @@ public int aliasSize() { return aliases.size(); }
 
 public static void main(String args[])
 {
- AliShowZoneParser aszp = new AliShowZoneParser(System.in);
+ BNAZoneParser aszp = new BNAZoneParser(System.in, true);
  aszp.parse();
  System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
 }
