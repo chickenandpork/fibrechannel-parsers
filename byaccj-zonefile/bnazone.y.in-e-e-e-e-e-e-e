@@ -17,10 +17,11 @@ import java.io.*;
 %%
 input:  /* empty string */
  | input TOK07 ALPHANUM ALPHANUM
- | input TOK05 ALPHANUM { }
- | input TOK03 ALPHANUM itemlist { addAlias ($2, $3); }
- | input TOK02 ALPHANUM itemlist { }
- | input TOK01 ALPHANUM itemlist { }
+ | input TOK05 ALPHANUM
+ | input TOK03 ALPHANUM ALPHANUM { addAlias ($3, $4); }
+ | input TOK03 ALPHANUM itemlist { addAlias ($3, $4); }
+ | input TOK02 ALPHANUM itemlist 
+ | input TOK01 ALPHANUM itemlist
  ;
 
 itemlist: ALPHANUM { $$ = new BNAZoneParserVal($1); }
@@ -151,6 +152,12 @@ void addZone(BNAZoneParserVal name, BNAZoneParserVal list)
 }
 void addAlias(BNAZoneParserVal name, BNAZoneParserVal list)
 {
+//System.out.println(" Alias: " + name.sval + " -- xx");
+//System.out.println("name.sval: " + (null == name.sval ? "NULL" : name.sval));
+//System.out.println("name.obj: " + (null == name.obj ? "NULL" : name.obj.getClass().getName()));
+//System.out.println("list.sval: " + (null == list.sval ? "NULL" : list.sval));
+//System.out.println("list.obj: " + (null == list.obj ? "NULL" : list.obj.getClass().getName()));
+
     if (null != list.sval)
 	addAlias (name.sval, list.sval);
     else if (list.obj.getClass() == java.util.Vector.class)

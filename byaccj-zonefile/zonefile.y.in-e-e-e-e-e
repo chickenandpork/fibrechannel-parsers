@@ -349,6 +349,7 @@ public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements
 public int zoneSize() { return zones.size(); }
 public java.util.Enumeration<ZPAliasEntry> aliasElements() { return aliases.elements(); }
 public int aliasSize() { return aliases.size(); }
+public ZPAliasEntry[] aliases() { return (ZPAliasEntry[]) aliases.toArray(); }
 
 
 public static void main(String args[])
