@@ -33,7 +33,8 @@ $(subdir).jar: @PACKAGE@.jar $(BUILT_SOURCES)
 	echo "Main-Class: org.smallfoot.bnapsql.BNAPURLConnection"  >> $(@D)/.workdir/MANIFEST.MF
 	ln -f $^ $(@D)/.workdir/
 	for i in $(^F) ; do (cd $(@D)/.workdir  && jar xf $$i) ; done
-	(cd $(@D)/.workdir && jar cm MANIFEST.MF org) > $@
+	(cd $(@D)/.workdir && find * -name Driver.class -print) | sed -e 's@/@.@g' -e 's/.class$$//g' > $(@D)/.workdir/META-INF/services/java.sql.Driver
+	(cd $(@D)/.workdir && jar cm MANIFEST.MF META-INF/services/java.sql.Driver org) > $@
 	rm -fr $(@D)/.workdir
 
 

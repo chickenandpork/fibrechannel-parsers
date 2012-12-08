@@ -7,6 +7,8 @@ package org.smallfoot.bnapsql;
 //import javax.activation.URLDataSource;
 //import gnu.getopt.Getopt;
 //import gnu.getopt.LongOpt;
+import org.smallfoot.parser.zone.BNAZoneParser;
+import org.smallfoot.parser.zone.ZPAliasEntry;
 
 /**
  * @file
@@ -20,14 +22,16 @@ package org.smallfoot.bnapsql;
 public class BNAPURLConnection extends java.net.URLConnection
 {
     /**
-     * PipedOutputStream to push out resultsets as SCV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  TO be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources.
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  TO be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources.
      */
     class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
     {
 	java.sql.ResultSet source;
-	public ResultCSVPipe(java.sql.ResultSet source)
+	BNAZoneParser aszp;
+	public ResultCSVPipe(java.sql.ResultSet source, BNAZoneParser aszp)
 	{
 	    this.source = source;
+	    this.aszp = aszp;
 	}
 
 	public void run()
@@ -43,12 +47,84 @@ public class BNAPURLConnection extends java.net.URLConnection
     
 	            source.close();
 	        } catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); }
-		catch (java.io.IOException ioe) { System.err.println("IOException transferring data from database: " + ioe.getMessage()); }
+		catch (java.io.IOException ioe) { System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage()); }
 	    }
 
 	    source = null;
+
+	    try
+	    {
+//System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
+		for (java.util.Enumeration<ZPAliasEntry> aliases = aszp.aliasElements(); aliases.hasMoreElements(); )
+		{
+		    ZPAliasEntry alias = aliases.nextElement();
+
+		    for (java.util.Enumeration<String> wwns = alias.getWWNs(); wwns.hasMoreElements(); )
+		    {
+		        String res = String.format("%s,\"%s\"\n",wwns.nextElement(), alias.name());
+//System.out.println("ASZP Alias: "+res);
+		        write(res.getBytes(), 0, res.length());
+		    }
+		}
+	    }
+	    catch (java.io.IOException ioe) { System.err.println("IOException pasting bogus test content: " + ioe.getMessage()); }
+	    aszp = null;
+
 	    try { close(); } catch (java.io.IOException ioe) { System.err.println("IOException closing datapath from database: " + ioe.getMessage()); }
 	}
+    }
+
+    /**
+     * PipedOutputStream to push out a single column of a resultset as a stream of resulting data.  More reinforcement of the layers discussed in ResultCSVPipe but maybe a bit closer to streams of datablocks?
+     */
+    class ResultSetPipe extends java.io.PipedOutputStream implements Runnable
+    {
+	java.sql.ResultSet source;
+	int columnNumber;
+	public ResultSetPipe(java.sql.ResultSet source, int columnNumber)
+	{
+	    this.source = source;
+	    this.columnNumber = columnNumber;
+	}
+
+	public void run()
+	{
+	    String _tee = System.getProperties().getProperty("bnapsql.teeCSVPipe");
+	    java.io.FileOutputStream tee = null;
+	    try {
+	    if (null != _tee) tee = new java.io.FileOutputStream (_tee);
+	    } catch (java.io.FileNotFoundException fnfe) { System.err.println("FileNotFound: tee file "+_tee+" not found"); }
+
+            if (source != null)
+	    {
+	        try {
+	            while (source.next())
+	            {
+			if (null != source.getString(columnNumber))
+		            write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
+//System.out.println("copied " + source.getString(columnNumber).length() + " bytes from result to stream: "+source.getString(columnNumber));
+			if (null != tee) tee.write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
+	            }
+    
+	            source.close();
+		    if (null != tee) tee.close();
+//System.out.println("result stream closed");
+	        } catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); }
+		catch (java.io.IOException ioe) { System.err.println("IOException (@94) transferring data from database: " + ioe.getMessage()); }
+	    }
+
+	    source = null;
+
+	    try { close(); } catch (java.io.IOException ioe) { System.err.println("IOException closing datapath from database: " + ioe.getMessage()); }
+	}
+
+	/*
+         * @throw java.io.IOException when java.io.PipedInputStream.PipedInputStream(PipedOutputStream) throws an IOException "when an I/O error occurs" (thanks, guys)
+	 */
+        public java.io.InputStream getInputStream() throws java.io.IOException
+        {
+	        return new java.io.PipedInputStream(this);
+        }
     }
 
     String connectionInfo = null;
@@ -62,7 +138,7 @@ public class BNAPURLConnection extends java.net.URLConnection
     public BNAPURLConnection(java.net.URL url)
     {
 	super(url);
-System.out.println("public BNAPURLConnection(java.net.URL "+url.toString()+")");
+//System.out.println("public BNAPURLConnection(java.net.URL "+url.toString()+")");
         //String ProgressStrocity = "jdbc.jdbcProgress:T:"+url.getHost()+":";
 	// jdbc:postgresql://host:port/database
         String ProgressStrocity = "jdbc:postgresql://"+url.getHost()+":";
@@ -83,7 +159,7 @@ System.out.println("public BNAPURLConnection(java.net.URL "+url.toString()+")");
         }
         else
         {
-System.out.println("authority = \""+url.getUserInfo()+"\"");
+//System.out.println("authority = \""+url.getUserInfo()+"\"");
             String[] a = url.getUserInfo().split(":");
             if (1 <= (java.lang.reflect.Array.getLength(a)))
                 user = a[0];
@@ -94,7 +170,7 @@ System.out.println("authority = \""+url.getUserInfo()+"\"");
         connectionInfo = ProgressStrocity;
 	properties.put("user",user);
 	properties.put("password",pass);
-System.out.println("fin: public BNAPURLConnection(java.net.URL "+url.toString()+")");
+//System.out.println("fin: public BNAPURLConnection(java.net.URL "+url.toString()+")");
    }
 
     /**
@@ -129,9 +205,15 @@ System.out.println("fin: public BNAPURLConnection(java.net.URL "+url.toString()+
 	if (null == connection)
 	    connect();
 
-        System.out.println("Now executing the command: "+ "select wwn,name from device_port_info");
+//System.out.println("Now executing the command: "+ "SELECT wwn,name FROM device_port_info");
 	try {
-	    ResultCSVPipe res = new ResultCSVPipe(connection.createStatement().executeQuery("select wwn,name from device_port_info where name is not null"));
+		ResultSetPipe rsp = new ResultSetPipe(connection.createStatement().executeQuery("SELECT defined_content FROM zone_db_config"), 1);
+	    	BNAZoneParser aszp = new BNAZoneParser(rsp.getInputStream());
+		new Thread(aszp).start();
+	    	new Thread(rsp).start();
+//System.out.println("Newer zone content parsed; going to nickname format");
+	    
+	    ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,name FROM device_port_info WHERE name IS NOT NULL"), aszp);
 	    new Thread(res).start();
 	    return new java.io.PipedInputStream(res);
 	} catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); return null; }
@@ -148,10 +230,10 @@ System.out.println("fin: public BNAPURLConnection(java.net.URL "+url.toString()+
 
     static java.net.URL URLof(String connectionInfo)
     {
-System.out.println("static java.net.URL URLof(\""+connectionInfo+"\")");
+//System.out.println("static java.net.URL URLof(\""+connectionInfo+"\")");
 	String con[] = connectionInfo.split(":");
 	try {
-System.out.println("length of " + java.lang.reflect.Array.getLength(con));
+//System.out.println("length of " + java.lang.reflect.Array.getLength(con));
 for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.println("con["+i+"] is "+con[i]);
 	return new java.net.URL("bnapsql://" + con[3] + ":" + con[4] + "/" + con[5]);
 	} catch (java.net.MalformedURLException mue) { return null;}
@@ -159,7 +241,7 @@ for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.printl
 
     public void connect()
     {
-System.out.println("void connect(), connectionInfo=\""+connectionInfo+"\", user=\""+properties.get("user")+"\", password=\""+properties.get("password")+"\"");
+//System.out.println("void connect(), connectionInfo=\""+connectionInfo+"\", user=\""+properties.get("user")+"\", password=\""+properties.get("password")+"\"");
 	try {
         connection = java.sql.DriverManager.getConnection (connectionInfo, properties);
 	} catch (java.sql.SQLException se) { System.err.println("Connection error: " + se.getMessage()); se.printStackTrace(); }
