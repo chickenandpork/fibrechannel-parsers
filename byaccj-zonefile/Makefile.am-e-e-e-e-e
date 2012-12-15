@@ -36,8 +36,10 @@ clean-local:
 	CLASSES=`for i in $(nodist_pkgdata_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
 	rm -f @PACKAGE@.jar $(subdir).jar $(BUILT_SOURCES)
 
+if DO_CHECKLOCAL_PARSER
 check-local: BNAZoneParser.java BNAZoneParserVal.java test-bnazone.txt
 	@JAVA@ -Ddebug.verboseTokenizer=true -classpath $(top_builddir) org.smallfoot.parser.zone.BNAZoneParser < test-bnazone.txt
+endif
 
 
 $(subdir).jar: $(BUILT_SOURCES) $(top_builddir)/java-pre/getopt.jar @PACKAGE@.jar
