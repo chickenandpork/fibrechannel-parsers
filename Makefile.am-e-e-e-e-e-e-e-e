@@ -4,7 +4,7 @@ nodist_pkgdata_DATA = $(subdir).jar
 EXTRA_DIST = $(nodist_pkgdata_JAVA)  Handler.java.in BNAPURLConnection.java.in
 CONFIG_CLEAN_FILES = $(subdir).jar
 
-AM_JAVACFLAGS= -cp $(top_builddir)
+AM_JAVACFLAGS= -cp $(top_builddir)/parser/byaccj-zonefile/parser/byaccj-zonefile.jar
 BUILDTMP=$(shell date +%s)
 
 BUILT_SOURCES = 
@@ -16,9 +16,14 @@ postgresql-9.1-902.jdbc4.jar:
 	test -f $@ || wget -O $@ http://jdbc.postgresql.org/download/$(@F) || curl -Lo $@ http://jdbc.postgresql.org/download/$(@F)
 	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
 
+JAVAROOT = bld
+BUILT_SOURCES += javaroot.stamp
+
+javaroot.stamp: $(nodist_pkgdata_JAVA)
+	mkdir -p $(JAVAROOT) && touch $@
+
 @PACKAGE@.jar: classnodist_pkgdata.stamp
-	awk '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C .. %s",n }; printf "\n"; }' $(nodist_pkgdata_JAVA) | $(SHELL)
-	awk -v BUILDTOP="$(top_builddir)" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvef org.smallfoot.vi.VIFieldTool $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_pkgdata_JAVA) | $(SHELL)
+	awk -v BUILDTOP="bld" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_pkgdata_JAVA) | $(SHELL)
 	touch $(subdir).class
 
 clean-local:
