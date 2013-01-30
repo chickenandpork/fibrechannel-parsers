@@ -27,9 +27,14 @@ BNAZoneParser.java BNAZoneParserVal.java: bnazone.y
 endif
 	
 
+JAVAROOT = bld
+BUILT_SOURCES += javaroot.stamp
+
+javaroot.stamp: $(nodist_pkgdata_JAVA)
+	mkdir -p $(JAVAROOT) && touch $@
+
 @PACKAGE@.jar: classnodist_pkgdata.stamp
-	awk -v BUILDTOP="$(top_builddir)" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_pkgdata_JAVA) | $(SHELL)
-	echo jar uef org.smallfoot.vi.VirtualRegent $@
+	awk -v BUILDTOP="bld" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_pkgdata_JAVA) | $(SHELL)
 	touch $$(basename $(subdir)).class
 
 clean-local:
@@ -38,7 +43,7 @@ clean-local:
 
 if DO_CHECKLOCAL_PARSER
 check-local: BNAZoneParser.java BNAZoneParserVal.java test-bnazone.txt
-	@JAVA@ -Ddebug.verboseTokenizer=true -classpath $(top_builddir) org.smallfoot.parser.zone.BNAZoneParser < test-bnazone.txt
+	@JAVA@ -Ddebug.verboseTokenizer=true -classpath bld:$(top_builddir) org.smallfoot.parser.zone.BNAZoneParser < test-bnazone.txt
 endif
 
 
