@@ -33,14 +33,13 @@ public NicknameParser(Reader in, boolean debugMe, boolean quiet)
  * @param debugMe true for debugging, false for no debug.
  * @param quiet true to squelch any error output
  */
-public NicknameParser(java.util.Properties prop, boolean debugMe, boolean quiet)
+public NicknameParser(java.util.Properties properties, boolean debugMe, boolean quiet)
 {
     zpquiet = quiet;
-    if (null != prop)
+    if (null != properties)
     {
-	colWWN=Integer.parseInt(prop.getProperty("wwn","0"));
-	colNickname=Integer.parseInt(prop.getProperty("nickname","1"));
-//System.out.println("WWN is "+colWWN+", nickname is "+colNickname);
+	colWWN=Integer.parseInt(properties.getProperty("wwn","0"));
+	colNickname=Integer.parseInt(properties.getProperty("nickname","1"));
     }
 }
 

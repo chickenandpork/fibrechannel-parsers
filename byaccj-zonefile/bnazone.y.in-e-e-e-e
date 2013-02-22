@@ -308,7 +308,7 @@ public BNAZoneParser(Reader in, boolean debugMe, boolean quiet)
  * @param debugMe true for debugging, false for no debug.
  * @param quiet true to squelch any error output
  */
-public BNAZoneParser(java.util.Properties prop, boolean debugMe, boolean quiet)
+public BNAZoneParser(java.util.Properties properties, boolean debugMe, boolean quiet)
 {
     yydebug=debugMe;
     zpquiet = quiet;
