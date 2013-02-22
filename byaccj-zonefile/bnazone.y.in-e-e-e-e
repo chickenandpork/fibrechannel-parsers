@@ -39,14 +39,20 @@ itemlist: ALPHANUM { $$ = new BNAZoneParserVal($1); }
     {
 	if (null == _prop) _prop = System.getProperties();
 	//return ( (null != _prop.getProperty(n)) && (false != Boolean.parseBoolean(_prop.getProperty(n))) );
-	return ( Boolean.parseBoolean(_prop.getProperty(n)) );
+        return (
+            Boolean.parseBoolean(_prop.getProperty(n))
+         || (getClass().getName().equalsIgnoreCase(_prop.getProperty(n)))
+         || (getClass().getName().replaceAll("^.*\\.","").equalsIgnoreCase(_prop.getProperty(n)))
+            );
     }
+
     String ins;
     java.io.StreamTokenizer st;
+    boolean zpquiet;
 
     void yyerror(String s)
     {
-        System.out.println("parser error: "+s);
+        if (!zpquiet) System.out.println("parser error: "+s);
     }
 
     boolean verboseStringtokenizer = checkProperty("debug.verboseTokenizer");
@@ -119,7 +125,7 @@ itemlist: ALPHANUM { $$ = new BNAZoneParserVal($1); }
 	}
 
 	// bogusity
-	System.out.println("returning bogus char "+ tok + " \"" + (char) tok + "\"");
+	if (verboseStringtokenizer) System.out.println("returning bogus char "+ tok + " \"" + (char) tok + "\"");
 	return '\n';
     }
 
@@ -259,11 +265,13 @@ public BNAZoneParser(InputStream in)
  *
  * @param in InputStream that is the source of bytes to consume
  * @param debugMe true for debugging, false for no debug.
+ * @param quiet true to squelch any error output
  */
-public BNAZoneParser(InputStream in, boolean debugMe)
+public BNAZoneParser(InputStream in, boolean debugMe, boolean quiet)
 {
     setReader(new BufferedReader(new InputStreamReader(in)));
     yydebug=debugMe;
+    zpquiet = quiet;
 }
 
 
@@ -274,7 +282,7 @@ public BNAZoneParser(InputStream in, boolean debugMe)
  */
 public BNAZoneParser(Reader in)
 {
-    setReader(in);
+    if (null != in) setReader(in);
 }
 
 
@@ -283,11 +291,27 @@ public BNAZoneParser(Reader in)
  *
  * @param in Reader that is the source of bytes to consume
  * @param debugMe true for debugging, false for no debug.
+ * @param quiet true to squelch any error output
  */
-public BNAZoneParser(Reader in, boolean debugMe)
+public BNAZoneParser(Reader in, boolean debugMe, boolean quiet)
 {
-    setReader(in);
+    if (null != in) setReader(in);
     yydebug=debugMe;
+    zpquiet = quiet;
+}
+
+
+/**
+ * Create a parser, setting the debug to true or false
+ *
+ * @param properties additional name-value pair collection
+ * @param debugMe true for debugging, false for no debug.
+ * @param quiet true to squelch any error output
+ */
+public BNAZoneParser(java.util.Properties prop, boolean debugMe, boolean quiet)
+{
+    yydebug=debugMe;
+    zpquiet = quiet;
 }
 
 
@@ -295,12 +319,13 @@ public BNAZoneParser(Reader in, boolean debugMe)
 public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements(); }
 public int zoneSize() { return zones.size(); }
 public java.util.Enumeration<ZPAliasEntry> aliasElements() { return aliases.elements(); }
+public ZPAliasEntry[] aliasArray() { return aliases.toArray(new ZPAliasEntry[1]); }
 public int aliasSize() { return aliases.size(); }
 
 
 public static void main(String args[])
 {
- BNAZoneParser aszp = new BNAZoneParser(System.in, true);
+ BNAZoneParser aszp = new BNAZoneParser(System.in, true, false);
  aszp.parse();
- System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
+ System.out.println("bnazone (main) parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
 }

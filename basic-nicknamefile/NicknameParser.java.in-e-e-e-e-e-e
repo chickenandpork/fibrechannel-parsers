@@ -1,0 +1,89 @@
+package org.smallfoot.parser.zone;
+
+import java.io.*;
+import java.util.*;
+
+
+public class NicknameParser extends ZoneParser
+{
+    BufferedReader br;
+    java.util.Vector<ZPAliasEntry> aliases = new java.util.Vector();
+    boolean zpquiet;
+
+    int colWWN=0;
+    int colNickname=1;
+
+/**
+ * Create a parser, setting the debug to true or false
+ *
+ * @param in Reader that is the source of bytes to consume
+ * @param debugMe (ignored, retained for API)
+ * @param quiet true to squelch any error output
+ */
+public NicknameParser(Reader in, boolean debugMe, boolean quiet)
+{
+    if (null != in) setReader(in);
+    zpquiet=quiet;
+}
+
+/**
+ * Create a parser, setting the debug to true or false
+ *
+ * @param properties additional name-value pair collection
+ * @param debugMe true for debugging, false for no debug.
+ * @param quiet true to squelch any error output
+ */
+public NicknameParser(java.util.Properties prop, boolean debugMe, boolean quiet)
+{
+    zpquiet = quiet;
+    if (null != prop)
+    {
+	colWWN=Integer.parseInt(prop.getProperty("wwn","0"));
+	colNickname=Integer.parseInt(prop.getProperty("nickname","1"));
+//System.out.println("WWN is "+colWWN+", nickname is "+colNickname);
+    }
+}
+
+
+
+    public java.util.Enumeration<ZPZoneEntry> zoneElements() { return null; }
+
+    public int zoneSize() { return 0; }
+
+    public void setReader(java.io.Reader is)
+    {
+        br = new BufferedReader(is);
+    }
+
+    public java.util.Enumeration<ZPAliasEntry> aliasElements() { if (null == aliases) return null; else return aliases.elements(); }
+
+    public ZPAliasEntry[] aliasArray() { return aliases.toArray(new ZPAliasEntry[1]); }
+
+    public int aliasSize() { if (null == aliases) return 0; else return aliases.size(); }
+
+    public void run()
+    {
+	String line;
+
+	if (null != br) 
+        try
+        {
+            while (null != (line = br.readLine()))
+            {
+                String[] lb = line.split(",");
+                if (lb.length <= colWWN)
+                    ;
+                if (lb.length <= colNickname)
+                    ;
+                else if (lb[colWWN].matches("^[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]$"))
+                    aliases.add(new ZPAliasEntry(lb[colNickname],lb[colWWN]));
+                else if (lb[colWWN].matches("^[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]$"))
+                    aliases.add(new ZPAliasEntry(lb[colNickname],lb[colWWN]));
+	    }
+	}
+        catch (java.io.IOException ioe)
+        {
+            if (!zpquiet) System.out.println("I/O Error: " + ioe.getMessage());
+        }
+    }
+}

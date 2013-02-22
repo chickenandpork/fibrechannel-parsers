@@ -38,6 +38,7 @@ sectionDefined: /* empty */
  */
 
 effectiveLine: '\n'
+ | itemlist '\n' {}
  | ZONE ALPHANUM itemlist '\n' { addZone ($2, $3); }
  | ALIAS ALPHANUM itemlist '\n' { addAlias ($2, $3); }
  ;
@@ -59,14 +60,20 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
     {
 	if (null == _prop) _prop = System.getProperties();
 	//return ( (null != _prop.getProperty(n)) && (false != Boolean.parseBoolean(_prop.getProperty(n))) );
-	return ( Boolean.parseBoolean(_prop.getProperty(n)) );
+	return (
+	    Boolean.parseBoolean(_prop.getProperty(n))
+	 || (getClass().getName().equalsIgnoreCase(_prop.getProperty(n)))
+	 || (getClass().getName().replaceAll("^.*\\.","").equalsIgnoreCase(_prop.getProperty(n)))
+	    );
     }
+
     String ins;
     java.io.StreamTokenizer st;
+    boolean zpquiet;
 
     void yyerror(String s)
     {
-        System.out.println("parser error: "+s);
+        if (! zpquiet) System.out.println("parser error: "+s);
     }
 
     boolean verboseStringtokenizer = checkProperty("debug.verboseTokenizer");
@@ -175,7 +182,7 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
 	}
 
 	// bogusity
-	System.out.println("returning bogus char "+ tok + " \"" + (char) tok + "\"");
+	if (verboseStringtokenizer) System.out.println("returning bogus char "+ tok + " \"" + (char) tok + "\"");
 	return '\n';
     }
 
@@ -312,11 +319,13 @@ public AliShowZoneParser(InputStream in)
  *
  * @param in InputStream that is the source of bytes to consume
  * @param debugMe true for debugging, false for no debug.
+ * @param quiet true to squelch any error output
  */
-public AliShowZoneParser(InputStream in, boolean debugMe)
+public AliShowZoneParser(InputStream in, boolean debugMe, boolean quiet)
 {
     setReader(new BufferedReader(new InputStreamReader(in)));
     yydebug=debugMe;
+    zpquiet=quiet;
 }
 
 
@@ -327,7 +336,7 @@ public AliShowZoneParser(InputStream in, boolean debugMe)
  */
 public AliShowZoneParser(Reader in)
 {
-    setReader(in);
+    if (null != in) setReader(in);
 }
 
 
@@ -336,11 +345,28 @@ public AliShowZoneParser(Reader in)
  *
  * @param in Reader that is the source of bytes to consume
  * @param debugMe true for debugging, false for no debug.
+ * @param quiet true to squelch any error output
  */
-public AliShowZoneParser(Reader in, boolean debugMe)
+public AliShowZoneParser(Reader in, boolean debugMe, boolean quiet)
 {
-    setReader(in);
+    if (null != in) setReader(in);
     yydebug=debugMe;
+    zpquiet=quiet;
+}
+
+
+
+/**
+ * Create a parser, setting the debug to true or false
+ *
+ * @param properties additional name-value pair collection
+ * @param debugMe true for debugging, false for no debug.
+ * @param quiet true to squelch any error output
+ */
+public AliShowZoneParser(java.util.Properties prop, boolean debugMe, boolean quiet)
+{
+    yydebug=debugMe;
+    zpquiet = quiet;
 }
 
 
@@ -348,13 +374,14 @@ public AliShowZoneParser(Reader in, boolean debugMe)
 public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements(); }
 public int zoneSize() { return zones.size(); }
 public java.util.Enumeration<ZPAliasEntry> aliasElements() { return aliases.elements(); }
+public ZPAliasEntry[] aliasArray() { return aliases.toArray(new ZPAliasEntry[1]); }
 public int aliasSize() { return aliases.size(); }
 public ZPAliasEntry[] aliases() { return (ZPAliasEntry[]) aliases.toArray(); }
 
 
 public static void main(String args[])
 {
- AliShowZoneParser aszp = new AliShowZoneParser(System.in);
+ AliShowZoneParser aszp = new AliShowZoneParser(System.in,false,false);
  aszp.parse();
- System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
+ System.out.println("zonefile (main) parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
 }
