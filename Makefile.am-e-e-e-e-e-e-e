@@ -30,4 +30,4 @@ $(subdir).jar: pipeparser/pipeparser.jar byaccj-zonefile/@PACKAGE@.jar  basic-ni
 	echo "Created-By: @PACKAGE@-@VERSION@" >> $(@D)/.workdir/MANIFEST.MF
 	(cd $(@D)/.workdir && jar cm MANIFEST.MF META-INF gnu org) > $@
 	rm -fr $(@D)/.workdir
-	touch $@
+	touch $(notdir $(subdir)).class
