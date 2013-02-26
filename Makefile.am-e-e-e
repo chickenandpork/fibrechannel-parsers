@@ -4,7 +4,7 @@ nodist_pkgdata_DATA = $(subdir).jar
 EXTRA_DIST = $(nodist_pkgdata_JAVA)  Handler.java.in BNAPURLConnection.java.in
 CONFIG_CLEAN_FILES = $(subdir).jar
 
-AM_JAVACFLAGS= -cp $(top_builddir)/parser/byaccj-zonefile/byaccj-zonefile.jar
+AM_JAVACFLAGS= -cp $(top_builddir)/parser/parser.jar
 BUILDTMP=$(shell date +%s)
 
 BUILT_SOURCES = 
