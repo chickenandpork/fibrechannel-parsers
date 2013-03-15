@@ -3,6 +3,7 @@ package org.smallfoot.parser.zone;
 public class ZPAliasEntry
 {
     String name;
+    public enum DeviceType { DEV_UNKNOWN, DEV_SERVER, DEV_SWITCH, DEV_STORAGE, DEV_TAPE, DEV_VIRTUALIZER, DEV_OTHER };
     java.util.Vector<String> wwns = new java.util.Vector(1,2);
 
     ZPAliasEntry (String name, String WWN) { this.name = name; this.wwns.add(WWN); }

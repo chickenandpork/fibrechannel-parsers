@@ -1,4 +1,4 @@
-nodist_pkgdata_JAVA = ZoneParser.java ZPAliasEntry.java ZPZoneEntry.java ParserTee.java
+nodist_pkgdata_JAVA = ZoneParser.java ZPAliasEntry.java ZPZoneEntry.java ParserTee.java ZPFCAliasEntry.java
 
 nodist_pkgdata_DATA = $(notdir $(subdir)).jar
 # https://downloads.sourceforge.net/project/byaccj/byaccj/1.15/byaccj1.15_macosx.tar.gz?r=http%3A%2F%2Fbyaccj.sourceforge.net%2F&ts=1347235095&use_mirror=voxel

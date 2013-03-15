@@ -55,18 +55,6 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
     java.util.Vector<ZPZoneEntry> zones = new java.util.Vector();
     java.util.Vector<ZPAliasEntry> aliases = new java.util.Vector();
 
-    java.util.Properties _prop = null;
-    boolean checkProperty(String n)
-    {
-	if (null == _prop) _prop = System.getProperties();
-	//return ( (null != _prop.getProperty(n)) && (false != Boolean.parseBoolean(_prop.getProperty(n))) );
-	return (
-	    Boolean.parseBoolean(_prop.getProperty(n))
-	 || (getClass().getName().equalsIgnoreCase(_prop.getProperty(n)))
-	 || (getClass().getName().replaceAll("^.*\\.","").equalsIgnoreCase(_prop.getProperty(n)))
-	    );
-    }
-
     String ins;
     java.io.StreamTokenizer st;
     boolean zpquiet;
