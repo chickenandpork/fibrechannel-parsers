@@ -244,6 +244,16 @@ for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.printl
 //System.out.println("void connect(), connectionInfo=\""+connectionInfo+"\", user=\""+properties.get("user")+"\", password=\""+properties.get("password")+"\"");
 	try {
         connection = java.sql.DriverManager.getConnection (connectionInfo, properties);
-	} catch (java.sql.SQLException se) { System.err.println("Connection error: " + se.getMessage()); se.printStackTrace(); }
+	}
+	catch (java.sql.SQLException se)
+	{
+	    String m = se.getMessage();
+	    if (m.startsWith("FATAL: no pg_hba.conf entry for host"))
+		System.err.println("Connection error: " + se.getMessage() + "\n PLEASE add the client's IP address to the file C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\ni.e: host   all   all  0.0.0.0/0  md5\n(no BNA restart is required)");
+	    else
+	    {
+		System.err.println("Connection error: " + se.getMessage()); se.printStackTrace();
+	    }
+	}
     }
 }
