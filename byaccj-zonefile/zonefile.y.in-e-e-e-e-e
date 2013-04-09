@@ -57,11 +57,11 @@ itemlist: ALPHANUM { $$ = new AliShowZoneParserVal($1); }
 
     String ins;
     java.io.StreamTokenizer st;
-    boolean zpquiet;
+    boolean zpquiet = true;
 
     void yyerror(String s)
     {
-        if (! zpquiet) System.out.println("parser error: "+s);
+        if (!zpquiet) System.out.println("parser error: "+s);
     }
 
     boolean verboseStringtokenizer = checkProperty("debug.verboseTokenizer");
@@ -313,7 +313,7 @@ public AliShowZoneParser(InputStream in, boolean debugMe, boolean quiet)
 {
     setReader(new BufferedReader(new InputStreamReader(in)));
     yydebug=debugMe;
-    zpquiet=quiet;
+    zpquiet = quiet;
 }
 
 
@@ -339,7 +339,7 @@ public AliShowZoneParser(Reader in, boolean debugMe, boolean quiet)
 {
     if (null != in) setReader(in);
     yydebug=debugMe;
-    zpquiet=quiet;
+    zpquiet = quiet;
 }
 
 

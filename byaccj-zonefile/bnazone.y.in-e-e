@@ -36,7 +36,7 @@ itemlist: ALPHANUM { $$ = new BNAZoneParserVal($1); }
 
     String ins;
     java.io.StreamTokenizer st;
-    boolean zpquiet;
+    boolean zpquiet = true;
 
     void yyerror(String s)
     {
