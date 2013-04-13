@@ -1,6 +1,6 @@
-DIST_SUBDIRS =	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file
+DIST_SUBDIRS =	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file byaccj-devicealias
 if DO_JAVA
-SUBDIRS =	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file
+SUBDIRS =	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file byaccj-devicealias
 endif
 
 # if missing mkinstalldirs install-sh trigger errors, ignore the result code on the "system (cp ...)" command in automake
@@ -20,7 +20,7 @@ BUILDTMP=$(shell date +%s)
 BUILT_SOURCES =
 
 
-$(subdir).jar: pipeparser/pipeparser.jar byaccj-zonefile/@PACKAGE@.jar  basic-nicknamefile/basic-nicknamefile.jar basic-alias4file/basic-alias4file.jar
+$(subdir).jar: pipeparser/pipeparser.jar byaccj-zonefile/@PACKAGE@.jar  basic-nicknamefile/basic-nicknamefile.jar basic-alias4file/basic-alias4file.jar byaccj-devicealias/byaccj-devicealias.jar
 	-rm -fr $(@D)/.workdir
 	mkdir -p $(@D)/.workdir
 	ln -f $^ $(@D)/.workdir/
