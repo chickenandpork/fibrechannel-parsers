@@ -237,72 +237,22 @@ public void setReader(Reader in)
 }
 
 
-/**
- * Create a parser with a new stream
- *
- * @param in InputStream that is the source of bytes to consume
- */
-public BNAZoneParser(InputStream in)
+public void run()
 {
-    setReader(new BufferedReader(new InputStreamReader(in)));
+  if (0 != yyparse())
+    try
+    {
+	/* if the parse is incomplete, drain the channel */
+	while (java.io.StreamTokenizer.TT_EOF != st.nextToken()) ;
+    }
+    catch (IOException e) { debug(getClass().getName()+" I.O Error: "+e.getMessage()); }
 }
 
 
-/**
- * Create a parser with a new stream
- *
- * @param in InputStream that is the source of bytes to consume
- * @param debugMe true for debugging, false for no debug.
- * @param quiet true to squelch any error output
- */
-public BNAZoneParser(InputStream in, boolean debugMe, boolean quiet)
-{
-    setReader(new BufferedReader(new InputStreamReader(in)));
-    yydebug=debugMe;
-    zpquiet = quiet;
-}
-
-
-/**
- * Create a parser with a new stream
- *
- * @param in Reader that is the source of bytes to consume
- */
-public BNAZoneParser(Reader in)
-{
-    if (null != in) setReader(in);
-}
-
-
-/**
- * Create a parser, setting the debug to true or false
- *
- * @param in Reader that is the source of bytes to consume
- * @param debugMe true for debugging, false for no debug.
- * @param quiet true to squelch any error output
- */
-public BNAZoneParser(Reader in, boolean debugMe, boolean quiet)
-{
-    if (null != in) setReader(in);
-    yydebug=debugMe;
-    zpquiet = quiet;
-}
-
-
-/**
- * Create a parser, setting the debug to true or false
- *
- * @param properties additional name-value pair collection
- * @param debugMe true for debugging, false for no debug.
- * @param quiet true to squelch any error output
- */
-public BNAZoneParser(java.util.Properties properties, boolean debugMe, boolean quiet)
-{
-    yydebug=debugMe;
-    zpquiet = quiet;
-}
-
-
+public void setDebug(boolean debug) { yydebug=debug; }
+public BNAZoneParser(InputStream in, boolean debugMe) { super(in, debugMe); }
+public BNAZoneParser(InputStream in) { super(in); }
+public BNAZoneParser(java.util.Properties in, boolean debugMe) { super(in, debugMe); }
 
 public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements(); }
 public int zoneSize() { return zones.size(); }
@@ -313,7 +263,7 @@ public int aliasSize() { return aliases.size(); }
 
 public static void main(String args[])
 {
- BNAZoneParser aszp = new BNAZoneParser(System.in, true, false);
+ BNAZoneParser aszp = new BNAZoneParser(System.in, false);
  aszp.parse();
  System.out.println("bnazone (main) parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
 }

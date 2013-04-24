@@ -240,73 +240,21 @@ public void setReader(Reader in)
 }
 
 
-/**
- * Create a parser with a new stream
- *
- * @param in InputStream that is the source of bytes to consume
- */
-public DeviceAliasParser(InputStream in)
+public void run()
 {
-    setReader(new BufferedReader(new InputStreamReader(in)));
+  if (0 != yyparse())
+    try
+    {
+        /* if the parse is incomplete, drain the channel */
+        while (java.io.StreamTokenizer.TT_EOF != st.nextToken()) ;
+    }
+    catch (IOException e) { debug(getClass().getName()+" I.O Error: "+e.getMessage()); }
 }
 
+public void setDebug(boolean debug) { yydebug=debug; }
 
-/**
- * Create a parser with a new stream
- *
- * @param in InputStream that is the source of bytes to consume
- * @param debugMe true for debugging, false for no debug.
- * @param quiet true to squelch any error output
- */
-public DeviceAliasParser(InputStream in, boolean debugMe, boolean quiet)
-{
-    setReader(new BufferedReader(new InputStreamReader(in)));
-    yydebug=debugMe;
-    zpquiet = quiet;
-}
-
-
-/**
- * Create a parser with a new stream
- *
- * @param in Reader that is the source of bytes to consume
- */
-public DeviceAliasParser(Reader in)
-{
-    if (null != in) setReader(in);
-}
-
-
-/**
- * Create a parser, setting the debug to true or false
- *
- * @param in Reader that is the source of bytes to consume
- * @param debugMe true for debugging, false for no debug.
- * @param quiet true to squelch any error output
- */
-public DeviceAliasParser(Reader in, boolean debugMe, boolean quiet)
-{
-    if (null != in) setReader(in);
-    yydebug=debugMe;
-    zpquiet = quiet;
-}
-
-
-
-/**
- * Create a parser, setting the debug to true or false
- *
- * @param properties additional name-value pair collection
- * @param debugMe true for debugging, false for no debug.
- * @param quiet true to squelch any error output
- */
-public DeviceAliasParser(java.util.Properties properties, boolean debugMe, boolean quiet)
-{
-    yydebug=debugMe;
-    zpquiet = quiet;
-}
-
-
+public DeviceAliasParser(InputStream in, boolean debugMe) { super(in, debugMe); }
+public DeviceAliasParser(java.util.Properties in, boolean debugMe) { super(in, debugMe); }
 
 public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements(); }
 public int zoneSize() { return zones.size(); }
@@ -318,7 +266,7 @@ public ZPAliasEntry[] aliases() { return (ZPAliasEntry[]) aliases.toArray(); }
 
 public static void main(String args[])
 {
- DeviceAliasParser aszp = new DeviceAliasParser(System.in,false,false);
+ DeviceAliasParser aszp = new DeviceAliasParser(System.in,false);
  aszp.parse();
  System.out.println("zonefile (main) parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
 }

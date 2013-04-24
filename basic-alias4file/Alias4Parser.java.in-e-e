@@ -10,32 +10,7 @@ public class Alias4Parser extends ZoneParser
     java.util.Vector<ZPFCAliasEntry> fcaliases = new java.util.Vector();
     boolean zpquiet;
 
-/**
- * Create a parser, setting the debug to true or false
- *
- * @param in Reader that is the source of bytes to consume
- * @param debugMe (ignored, retained for API)
- * @param quiet true to squelch any error output
- */
-public Alias4Parser(Reader in, boolean debugMe, boolean quiet)
-{
-    if (null != in) setReader(in);
-    zpquiet=quiet;
-}
-
-/**
- * Create a parser, setting the debug to true or false
- *
- * @param properties additional name-value pair collection
- * @param debugMe true for debugging, false for no debug.
- * @param quiet true to squelch any error output
- */
-public Alias4Parser(java.util.Properties properties, boolean debugMe, boolean quiet)
-{
-    zpquiet = quiet;
-}
-
-
+    public void setDebug(boolean debug) { zpquiet = !debug; }
 
     public java.util.Enumeration<ZPZoneEntry> zoneElements() { return null; }
     public int zoneSize() { return 0; }
@@ -51,6 +26,7 @@ public Alias4Parser(java.util.Properties properties, boolean debugMe, boolean qu
         br = new BufferedReader(is);
     }
 
+    public Alias4Parser(java.util.Properties in, boolean debugMe) { super(in, debugMe); }
 
 
     public void run()
@@ -76,7 +52,7 @@ public Alias4Parser(java.util.Properties properties, boolean debugMe, boolean qu
 	}
         catch (java.io.IOException ioe)
         {
-            if (!zpquiet) System.out.println("I/O Error: " + ioe.getMessage());
+            if (!zpquiet) System.out.println(getClass().getName() + " I/O Error: " + ioe.getMessage());
         }
     }
 }

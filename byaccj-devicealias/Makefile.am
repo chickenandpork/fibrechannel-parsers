@@ -16,8 +16,8 @@ if DO_BYACC
 BUILT_SOURCES += DeviceAliasParser.java DeviceAliasParserVal.java
 
 DeviceAliasParser.java DeviceAliasParserVal.java: devicealias.y
-	echo $(BYACC) -Jnoconstruct -Jpackage=org.smallfoot.parser.zone -Jimplements=ZoneParser -Jextends=Thread -Jclass=DeviceAliasParser -J $<
-	$(BYACC) -Jnoconstruct -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=DeviceAliasParser -J $<
+	echo $(BYACC) -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jimplements=ZoneParser -Jextends=Thread -Jclass=DeviceAliasParser -J $<
+	$(BYACC) -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=DeviceAliasParser -J $<
 
 endif
 	

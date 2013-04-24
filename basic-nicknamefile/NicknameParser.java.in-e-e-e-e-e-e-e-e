@@ -13,37 +13,25 @@ public class NicknameParser extends ZoneParser
     int colWWN=0;
     int colNickname=1;
 
-/**
- * Create a parser, setting the debug to true or false
- *
- * @param in Reader that is the source of bytes to consume
- * @param debugMe (ignored, retained for API)
- * @param quiet true to squelch any error output
- */
-public NicknameParser(Reader in, boolean debugMe, boolean quiet)
-{
-    if (null != in) setReader(in);
-    zpquiet=quiet;
-}
-
-/**
- * Create a parser, setting the debug to true or false
- *
- * @param properties additional name-value pair collection
- * @param debugMe true for debugging, false for no debug.
- * @param quiet true to squelch any error output
- */
-public NicknameParser(java.util.Properties properties, boolean debugMe, boolean quiet)
-{
-    zpquiet = quiet;
-    if (null != properties)
+    /**
+     * Create a parser, setting the debug to true or false
+     *
+     * @param properties additional name-value pair collection
+     * @param debugMe true for debugging, false for no debug.
+     */
+    public NicknameParser(java.util.Properties properties, boolean debugMe)
     {
-	colWWN=Integer.parseInt(properties.getProperty("wwn","0"));
-	colNickname=Integer.parseInt(properties.getProperty("nickname","1"));
+        super (properties, debugMe);
+
+        if (null != properties)
+        {
+	    colWWN=Integer.parseInt(properties.getProperty("wwn","0"));
+	    colNickname=Integer.parseInt(properties.getProperty("nickname","1"));
+        }
     }
-}
 
-
+    public void setDebug(boolean debug) { zpquiet = !debug; }
+    public NicknameParser(InputStream in, boolean debugMe) { super(in, debugMe); }
 
     public java.util.Enumeration<ZPZoneEntry> zoneElements() { return null; }
 
@@ -84,7 +72,7 @@ System.out.println("WWN("+colWWN+") \""+lb[colWWN]+"\" is name("+colNickname+") 
 	}
         catch (java.io.IOException ioe)
         {
-            if (!zpquiet) System.out.println("I/O Error: " + ioe.getMessage());
+            if (!zpquiet) System.out.println(getClass().getName() + " I/O Error: " + ioe.getMessage());
         }
     }
 }
