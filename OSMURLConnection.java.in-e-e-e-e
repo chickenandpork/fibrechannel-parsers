@@ -17,40 +17,49 @@ public class OSMURLConnection extends java.net.URLConnection
      */
     class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
     {
-	java.sql.ResultSet source;
+        java.sql.ResultSet source;
 
-	public ResultCSVPipe(java.sql.ResultSet source)
-	{
-	    this.source = source;
-	}
+        public ResultCSVPipe(java.sql.ResultSet source)
+        {
+            this.source = source;
+        }
 
-	public void run()
-	{
+        public void run()
+        {
             if (source != null)
-	    {
-	        try {
-	            while (source.next())
-	            {
-			String res = String.format("%s,\"%s\"\n",source.getString(1), source.getString(2));
-		        write(res.getBytes(), 0, res.length());
-	            }
-    
-	            source.close();
-	        } catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); }
-		catch (java.io.IOException ioe) { System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage()); }
-	    }
+            {
+                try
+                {
+                    while (source.next())
+                    {
+                        String res = String.format("%s,\"%s\"\n",source.getString(1), source.getString(2));
+                        write(res.getBytes(), 0, res.length());
+                    }
 
-	    source = null;
+                    source.close();
+                }
+                catch (java.sql.SQLException se)
+                {
+                    System.err.println("SQLException: " + se.getMessage());
+                    se.printStackTrace();
+                }
+                catch (java.io.IOException ioe)
+                {
+                    System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage());
+                }
+            }
 
-	    try
-	    {
-		this.close(); 
-	    }
-	    catch (java.io.IOException ioe)
-	    {
-		System.err.println("IOException closing datapath from database: " + ioe.getMessage());
-	    }
-	}
+            source = null;
+
+            try
+            {
+                this.close();
+            }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException closing datapath from database: " + ioe.getMessage());
+            }
+        }
     }
 
 
@@ -59,12 +68,17 @@ public class OSMURLConnection extends java.net.URLConnection
     java.sql.Connection connection;
 
     public OSMURLConnection(String connectionInfo, String username, String password)
-    { super(URLof(connectionInfo)); this.connectionInfo = connectionInfo; properties.put("user",username); properties.put("password",password); }
+    {
+        super(URLof(connectionInfo));
+        this.connectionInfo = connectionInfo;
+        properties.put("user",username);
+        properties.put("password",password);
+    }
 
 
     public OSMURLConnection(java.net.URL url)
     {
-	super(url);
+        super(url);
         String work = "jdbc:mysql://"+url.getHost()+":";
 
         if (-1 == url.getPort())
@@ -93,9 +107,9 @@ public class OSMURLConnection extends java.net.URLConnection
         }
 
         connectionInfo = work;
-	properties.put("user",user);
-	properties.put("password",pass);
-   }
+        properties.put("user",user);
+        properties.put("password",pass);
+    }
 
     /**
      * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
@@ -115,7 +129,10 @@ public class OSMURLConnection extends java.net.URLConnection
     /**
      * Stubbed, because there's nothing to send us.  Oh how did I get caught in the "Royal 'We'" ?
      */
-    public java.io.OutputStream getOutputStream() { return null; }
+    public java.io.OutputStream getOutputStream()
+    {
+        return null;
+    }
 
 
     /**
@@ -125,15 +142,26 @@ public class OSMURLConnection extends java.net.URLConnection
      */
     public java.io.InputStream getInputStream()
     {
-	if (null == connection)
-	    connect();
+        if (null == connection)
+            connect();
 
-	try {
-	    ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT hp.wwn, h.name FROM host_port hp JOIN host h ON (h.id = hp.hostid)"));
-	    new Thread(res).start();
-	    return new java.io.PipedInputStream(res);
-	} catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); return null; }
-	catch (java.io.IOException ioe) { System.err.println("IOException joining database output to piped input: " + ioe.getMessage()); return null; }
+        try
+        {
+            ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT hp.wwn, h.name FROM host_port hp JOIN host h ON (h.id = hp.hostid)"));
+            new Thread(res).start();
+            return new java.io.PipedInputStream(res);
+        }
+        catch (java.sql.SQLException se)
+        {
+            System.err.println("SQLException: " + se.getMessage());
+            se.printStackTrace();
+            return null;
+        }
+        catch (java.io.IOException ioe)
+        {
+            System.err.println("IOException joining database output to piped input: " + ioe.getMessage());
+            return null;
+        }
     }
 
     /**
@@ -142,27 +170,36 @@ public class OSMURLConnection extends java.net.URLConnection
      * @return populated connection as org.smallfoot.osmsql.OSMURLConnection(Connection)
      * @param url URL to connect to
      */
-    protected OSMURLConnection openConnection(java.net.URL url) { return null; }
+    protected OSMURLConnection openConnection(java.net.URL url)
+    {
+        return null;
+    }
 
     static java.net.URL URLof(String connectionInfo)
     {
-	String con[] = connectionInfo.split(":");
-	try {
-for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.println("con["+i+"] is "+con[i]);
-	return new java.net.URL("osmsql://" + con[3] + ":" + con[4] + "/" + con[5]);
-	} catch (java.net.MalformedURLException mue) { return null;}
+        String con[] = connectionInfo.split(":");
+        try
+        {
+            for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.println("con["+i+"] is "+con[i]);
+            return new java.net.URL("osmsql://" + con[3] + ":" + con[4] + "/" + con[5]);
+        }
+        catch (java.net.MalformedURLException mue)
+        {
+            return null;
+        }
     }
 
     public void connect()
     {
-	try
-	{
+        try
+        {
             connection = java.sql.DriverManager.getConnection (connectionInfo, properties);
-	}
-	catch (java.sql.SQLException se)
-	{
-	    String m = se.getMessage();
-	    System.err.println("Connection error: " + se.getMessage()); se.printStackTrace();
-	}
+        }
+        catch (java.sql.SQLException se)
+        {
+            String m = se.getMessage();
+            System.err.println("Connection error: " + se.getMessage());
+            se.printStackTrace();
+        }
     }
 }
