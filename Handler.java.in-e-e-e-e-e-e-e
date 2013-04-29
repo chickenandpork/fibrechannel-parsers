@@ -27,33 +27,33 @@ public class Handler extends java.net.URLStreamHandler
     {
         return new org.smallfoot.bnapsql.BNAPURLConnection(url);
 
-/*
-        String ProgressStrocity = "jdbc.jdbcProgress:T:"+url.getHost()+":";
+        /*
+                String ProgressStrocity = "jdbc.jdbcProgress:T:"+url.getHost()+":";
 
-        if (0 == url.getPort())
-            ProgressStrocity += "5432";
-        else
-            ProgressStrocity += url.getPort();
+                if (0 == url.getPort())
+                    ProgressStrocity += "5432";
+                else
+                    ProgressStrocity += url.getPort();
 
-        ProgressStrocity += ":dcmdb";
+                ProgressStrocity += ":dcmdb";
 
-        String user = null;
-        String pass = null;
-        if (null == url.getAuthority())
-        {
-            user = "dcmadmin";
-            pass = "passw0rd";
-        }
-        else
-        {
-            String[] a = url.getAuthority().split(":");
-            if (1 <= (java.lang.reflect.Array.getLength(a)))
-                user = a[1];
-            if (2 <= (java.lang.reflect.Array.getLength(a)))
-                pass = a[2];
-        }
+                String user = null;
+                String pass = null;
+                if (null == url.getAuthority())
+                {
+                    user = "dcmadmin";
+                    pass = "passw0rd";
+                }
+                else
+                {
+                    String[] a = url.getAuthority().split(":");
+                    if (1 <= (java.lang.reflect.Array.getLength(a)))
+                        user = a[1];
+                    if (2 <= (java.lang.reflect.Array.getLength(a)))
+                        pass = a[2];
+                }
 
-        return new org.smallfoot.bnapsql.BNAPURLConnection(ProgressStrocity, user, pass);
-*/
+                return new org.smallfoot.bnapsql.BNAPURLConnection(ProgressStrocity, user, pass);
+        */
     }
 }

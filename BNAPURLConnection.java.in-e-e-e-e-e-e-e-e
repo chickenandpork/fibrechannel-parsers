@@ -26,52 +26,71 @@ public class BNAPURLConnection extends java.net.URLConnection
      */
     class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
     {
-	java.sql.ResultSet source;
-	BNAZoneParser aszp;
-	public ResultCSVPipe(java.sql.ResultSet source, BNAZoneParser aszp)
-	{
-	    this.source = source;
-	    this.aszp = aszp;
-	}
+        java.sql.ResultSet source;
+        BNAZoneParser aszp;
+        public ResultCSVPipe(java.sql.ResultSet source, BNAZoneParser aszp)
+        {
+            this.source = source;
+            this.aszp = aszp;
+        }
 
-	public void run()
-	{
+        public void run()
+        {
             if (source != null)
-	    {
-	        try {
-	            while (source.next())
-	            {
-			String res = String.format("%s,\"%s\"\n",source.getString(1), source.getString(2));
-		        write(res.getBytes(), 0, res.length());
-	            }
-    
-	            source.close();
-	        } catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); }
-		catch (java.io.IOException ioe) { System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage()); }
-	    }
+            {
+                try
+                {
+                    while (source.next())
+                    {
+                        String res = String.format("%s,\"%s\"\n",source.getString(1), source.getString(2));
+                        write(res.getBytes(), 0, res.length());
+                    }
 
-	    source = null;
+                    source.close();
+                }
+                catch (java.sql.SQLException se)
+                {
+                    System.err.println("SQLException: " + se.getMessage());
+                    se.printStackTrace();
+                }
+                catch (java.io.IOException ioe)
+                {
+                    System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage());
+                }
+            }
 
-	    try
-	    {
+            source = null;
+
+            try
+            {
 //System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
-		for (java.util.Enumeration<ZPAliasEntry> aliases = aszp.aliasElements(); aliases.hasMoreElements(); )
-		{
-		    ZPAliasEntry alias = aliases.nextElement();
+                for (java.util.Enumeration<ZPAliasEntry> aliases = aszp.aliasElements(); aliases.hasMoreElements(); )
+                {
+                    ZPAliasEntry alias = aliases.nextElement();
 
-		    for (java.util.Enumeration<String> wwns = alias.getWWNs(); wwns.hasMoreElements(); )
-		    {
-		        String res = String.format("%s,\"%s\"\n",wwns.nextElement(), alias.name());
+                    for (java.util.Enumeration<String> wwns = alias.getWWNs(); wwns.hasMoreElements(); )
+                    {
+                        String res = String.format("%s,\"%s\"\n",wwns.nextElement(), alias.name());
 //System.out.println("ASZP Alias: "+res);
-		        write(res.getBytes(), 0, res.length());
-		    }
-		}
-	    }
-	    catch (java.io.IOException ioe) { System.err.println("IOException pasting bogus test content: " + ioe.getMessage()); }
-	    aszp = null;
+                        write(res.getBytes(), 0, res.length());
+                    }
+                }
+            }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException pasting bogus test content: " + ioe.getMessage());
+            }
+            aszp = null;
 
-	    try { close(); } catch (java.io.IOException ioe) { System.err.println("IOException closing datapath from database: " + ioe.getMessage()); }
-	}
+            try
+            {
+                close();
+            }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException closing datapath from database: " + ioe.getMessage());
+            }
+        }
     }
 
     /**
@@ -79,51 +98,72 @@ public class BNAPURLConnection extends java.net.URLConnection
      */
     class ResultSetPipe extends java.io.PipedOutputStream implements Runnable
     {
-	java.sql.ResultSet source;
-	int columnNumber;
-	public ResultSetPipe(java.sql.ResultSet source, int columnNumber)
-	{
-	    this.source = source;
-	    this.columnNumber = columnNumber;
-	}
+        java.sql.ResultSet source;
+        int columnNumber;
+        public ResultSetPipe(java.sql.ResultSet source, int columnNumber)
+        {
+            this.source = source;
+            this.columnNumber = columnNumber;
+        }
 
-	public void run()
-	{
-	    String _tee = System.getProperties().getProperty("bnapsql.teeCSVPipe");
-	    java.io.FileOutputStream tee = null;
-	    try {
-	    if (null != _tee) tee = new java.io.FileOutputStream (_tee);
-	    } catch (java.io.FileNotFoundException fnfe) { System.err.println("FileNotFound: tee file "+_tee+" not found"); }
+        public void run()
+        {
+            String _tee = System.getProperties().getProperty("bnapsql.teeCSVPipe");
+            java.io.FileOutputStream tee = null;
+            try
+            {
+                if (null != _tee) tee = new java.io.FileOutputStream (_tee);
+            }
+            catch (java.io.FileNotFoundException fnfe)
+            {
+                System.err.println("FileNotFound: tee file "+_tee+" not found");
+            }
 
             if (source != null)
-	    {
-	        try {
-	            while (source.next())
-	            {
-			if (null != source.getString(columnNumber))
-		            write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
+            {
+                try
+                {
+                    while (source.next())
+                    {
+                        if (null != source.getString(columnNumber))
+                            write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
 //System.out.println("copied " + source.getString(columnNumber).length() + " bytes from result to stream: "+source.getString(columnNumber));
-			if (null != tee) tee.write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
-	            }
-    
-	            source.close();
-		    if (null != tee) tee.close();
+                        if (null != tee) tee.write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
+                    }
+
+                    source.close();
+                    if (null != tee) tee.close();
 //System.out.println("result stream closed");
-	        } catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); }
-		catch (java.io.IOException ioe) { System.err.println("IOException (@94) transferring data from database: " + ioe.getMessage()); }
-	    }
+                }
+                catch (java.sql.SQLException se)
+                {
+                    System.err.println("SQLException: " + se.getMessage());
+                    se.printStackTrace();
+                }
+                catch (java.io.IOException ioe)
+                {
+                    System.err.println("IOException (@94) transferring data from database: " + ioe.getMessage());
+                }
+            }
 
-	    source = null;
+            source = null;
 
-	    try { close(); } catch (java.io.IOException ioe) { System.err.println("IOException closing datapath from database: " + ioe.getMessage()); }
-	}
+            try
+            {
+                close();
+            }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException closing datapath from database: " + ioe.getMessage());
+            }
+        }
 
-	/*
-         * @throw java.io.IOException when java.io.PipedInputStream.PipedInputStream(PipedOutputStream) throws an IOException "when an I/O error occurs" (thanks, guys)
-	 */
+        /*
+             * @throw java.io.IOException when java.io.PipedInputStream.PipedInputStream(PipedOutputStream) throws an IOException "when an I/O error occurs" (thanks, guys)
+         */
         public java.io.InputStream getInputStream() throws java.io.IOException
         {
-	        return new java.io.PipedInputStream(this);
+            return new java.io.PipedInputStream(this);
         }
     }
 
@@ -132,15 +172,20 @@ public class BNAPURLConnection extends java.net.URLConnection
     java.sql.Connection connection;
 
     public BNAPURLConnection(String connectionInfo, String username, String password)
-    { super(URLof(connectionInfo)); this.connectionInfo = connectionInfo; properties.put("user",username); properties.put("password",password); }
+    {
+        super(URLof(connectionInfo));
+        this.connectionInfo = connectionInfo;
+        properties.put("user",username);
+        properties.put("password",password);
+    }
 
 
     public BNAPURLConnection(java.net.URL url)
     {
-	super(url);
+        super(url);
 //System.out.println("public BNAPURLConnection(java.net.URL "+url.toString()+")");
         //String ProgressStrocity = "jdbc.jdbcProgress:T:"+url.getHost()+":";
-	// jdbc:postgresql://host:port/database
+        // jdbc:postgresql://host:port/database
         String ProgressStrocity = "jdbc:postgresql://"+url.getHost()+":";
 
         if (-1 == url.getPort())
@@ -168,10 +213,10 @@ public class BNAPURLConnection extends java.net.URLConnection
         }
 
         connectionInfo = ProgressStrocity;
-	properties.put("user",user);
-	properties.put("password",pass);
+        properties.put("user",user);
+        properties.put("password",pass);
 //System.out.println("fin: public BNAPURLConnection(java.net.URL "+url.toString()+")");
-   }
+    }
 
     /**
      * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
@@ -191,7 +236,10 @@ public class BNAPURLConnection extends java.net.URLConnection
     /**
      * Stubbed, because there's nothing to send us.  Oh how did I get caught in the "Royal 'We'" ?
      */
-    public java.io.OutputStream getOutputStream() { return null; }
+    public java.io.OutputStream getOutputStream()
+    {
+        return null;
+    }
 
 
     /**
@@ -202,22 +250,33 @@ public class BNAPURLConnection extends java.net.URLConnection
      */
     public java.io.InputStream getInputStream()
     {
-	if (null == connection)
-	    connect();
+        if (null == connection)
+            connect();
 
 //System.out.println("Now executing the command: "+ "SELECT wwn,name FROM device_port_info");
-	try {
-		ResultSetPipe rsp = new ResultSetPipe(connection.createStatement().executeQuery("SELECT defined_content FROM zone_db_config"), 1);
-	    	BNAZoneParser aszp = new BNAZoneParser(rsp.getInputStream());
-		new Thread(aszp).start();
-	    	new Thread(rsp).start();
+        try
+        {
+            ResultSetPipe rsp = new ResultSetPipe(connection.createStatement().executeQuery("SELECT defined_content FROM zone_db_config"), 1);
+            BNAZoneParser aszp = new BNAZoneParser(rsp.getInputStream());
+            new Thread(aszp).start();
+            new Thread(rsp).start();
 //System.out.println("Newer zone content parsed; going to nickname format");
-	    
-	    ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,name FROM device_port_info WHERE name IS NOT NULL"), aszp);
-	    new Thread(res).start();
-	    return new java.io.PipedInputStream(res);
-	} catch (java.sql.SQLException se) { System.err.println("SQLException: " + se.getMessage()); se.printStackTrace(); return null; }
-	catch (java.io.IOException ioe) { System.err.println("IOException joining database output to piped input: " + ioe.getMessage()); return null; }
+
+            ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,name FROM device_port_info WHERE name IS NOT NULL"), aszp);
+            new Thread(res).start();
+            return new java.io.PipedInputStream(res);
+        }
+        catch (java.sql.SQLException se)
+        {
+            System.err.println("SQLException: " + se.getMessage());
+            se.printStackTrace();
+            return null;
+        }
+        catch (java.io.IOException ioe)
+        {
+            System.err.println("IOException joining database output to piped input: " + ioe.getMessage());
+            return null;
+        }
     }
 
     /**
@@ -226,34 +285,44 @@ public class BNAPURLConnection extends java.net.URLConnection
      * @return populated connection as org.smallfoot.bnapsql.BNAPURLConnection(Connection)
      * @param url URL to connect to
      */
-    protected BNAPURLConnection openConnection(java.net.URL url) { return null; }
+    protected BNAPURLConnection openConnection(java.net.URL url)
+    {
+        return null;
+    }
 
     static java.net.URL URLof(String connectionInfo)
     {
 //System.out.println("static java.net.URL URLof(\""+connectionInfo+"\")");
-	String con[] = connectionInfo.split(":");
-	try {
+        String con[] = connectionInfo.split(":");
+        try
+        {
 //System.out.println("length of " + java.lang.reflect.Array.getLength(con));
-for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.println("con["+i+"] is "+con[i]);
-	return new java.net.URL("bnapsql://" + con[3] + ":" + con[4] + "/" + con[5]);
-	} catch (java.net.MalformedURLException mue) { return null;}
+            for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.println("con["+i+"] is "+con[i]);
+            return new java.net.URL("bnapsql://" + con[3] + ":" + con[4] + "/" + con[5]);
+        }
+        catch (java.net.MalformedURLException mue)
+        {
+            return null;
+        }
     }
 
     public void connect()
     {
 //System.out.println("void connect(), connectionInfo=\""+connectionInfo+"\", user=\""+properties.get("user")+"\", password=\""+properties.get("password")+"\"");
-	try {
-        connection = java.sql.DriverManager.getConnection (connectionInfo, properties);
-	}
-	catch (java.sql.SQLException se)
-	{
-	    String m = se.getMessage();
-	    if (m.startsWith("FATAL: no pg_hba.conf entry for host"))
-		System.err.println("Connection error: " + se.getMessage() + "\n PLEASE add the client's IP address to the file C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\ni.e: host   all   all  0.0.0.0/0  md5\n(no BNA restart is required)");
-	    else
-	    {
-		System.err.println("Connection error: " + se.getMessage()); se.printStackTrace();
-	    }
-	}
+        try
+        {
+            connection = java.sql.DriverManager.getConnection (connectionInfo, properties);
+        }
+        catch (java.sql.SQLException se)
+        {
+            String m = se.getMessage();
+            if (m.startsWith("FATAL: no pg_hba.conf entry for host"))
+                System.err.println("Connection error: " + se.getMessage() + "\n PLEASE add the client's IP address to the file C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\ni.e: host   all   all  0.0.0.0/0  md5\n(no BNA restart is required)");
+            else
+            {
+                System.err.println("Connection error: " + se.getMessage());
+                se.printStackTrace();
+            }
+        }
     }
 }
