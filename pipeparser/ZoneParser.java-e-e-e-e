@@ -57,7 +57,6 @@ public abstract class ZoneParser extends Thread
      *
      * @param in InputStream that is the source of bytes to consume
      * @param debugMe true for debugging, false for no debug.
-     * @param quiet true to squelch any error output
      */
     public ZoneParser(java.io.InputStream in, boolean debugMe)
     {
@@ -81,7 +80,6 @@ public abstract class ZoneParser extends Thread
      *
      * @param in Reader that is the source of bytes to consume
      * @param debugMe true for debugging, false for no debug.
-     * @param quiet true to squelch any error output
      */
     public ZoneParser(Reader in, boolean debugMe)
     {
@@ -96,7 +94,6 @@ public abstract class ZoneParser extends Thread
      *
      * @param properties additional name-value pair collection
      * @param debugMe true for debugging, false for no debug.
-     * @param quiet true to squelch any error output
      */
     public ZoneParser(java.util.Properties properties, boolean debugMe)
     {
