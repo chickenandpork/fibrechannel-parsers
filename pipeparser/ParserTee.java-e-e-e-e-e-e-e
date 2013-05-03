@@ -28,6 +28,8 @@ public class ParserTee extends org.apache.commons.io.input.TeeInputStream
      * http://www.coderanch.com/t/275464//java/OutputStream-InputStream
      * http://stackoverflow.com/questions/1225909/most-efficient-way-to-create-inputstream-from-outputstream
      * http://ostermiller.org/convert_java_outputstream_inputstream.html
+     * http://svn.apache.org/viewvc/commons/proper/io/trunk/src/main/java/org/apache/commons/io/input/TeeInputStream.java?view=markup
+     * http://commons.apache.org/proper/commons-io/apidocs/src-html/org/apache/commons/io/input/NullInputStream.html#line.94
      */
      
     /**
