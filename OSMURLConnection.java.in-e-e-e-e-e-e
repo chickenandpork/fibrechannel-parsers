@@ -4,10 +4,13 @@ package org.smallfoot.osmsql;
 /**
  * @file
  *
- * @section Known Issues
- * - as of 2012-09-11 unknown test status
- * - as of 2012-09-16 may not accept "standard aliases shared to fabric" approach, may be only "McData Port Labels Not Shared to Fabric" approach (less common)
- *   - http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf defines table model on Table 282, "defined_content", "active_content", or "ti_zone_content"
+ * This class provides the connection infor to query the underlying OnCommand System Manager tables.  These are typically in a database called "dwh_inventory" (Data Warehouse), under userID "dwh", password "password".
+ *
+ * Testing of this data was done with an exported config database from jessigg called "dwh_inventory.sql" loaded using:
+ *      /usr/local/mysql/bin/mysqladmin create dwh_inventory
+ *      /usr/local/mysql/bin/mysql -u root mysql "grant connect on dwh_inventory.* to dwh identified by 'password'"
+ *      /usr/local/mysql/bin/mysqladmin reload grant
+ *      /usr/local/mysql/bin/mysql -u root dwh_inventory < ~/dwh_inventory.sql 
  */
 
 public class OSMURLConnection extends java.net.URLConnection
@@ -86,16 +89,14 @@ public class OSMURLConnection extends java.net.URLConnection
         else
             work += url.getPort();
 
-        work += "/oncommand";
-        //String connectioninfo = "jdbc:mysql://"+portalServer+"/summary?user="+mysqlUser;
-        //if (null != mysqlPass) connectioninfo = connectioninfo + "&password=" + mysqlPass;
+        work += "/dwh_inventory";
 
         String user = null;
         String pass = null;
         if (null == url.getUserInfo())
         {
-            user = "degruut";
-            pass = "";
+            user = "dwh";
+            pass = "password";
         }
         else
         {
