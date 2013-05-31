@@ -28,6 +28,7 @@ public class BNAPURLConnection extends java.net.URLConnection
     {
         java.sql.ResultSet source;
         BNAZoneParser aszp;
+        public ResultCSVPipe(java.sql.ResultSet source) { this (source, null); }
         public ResultCSVPipe(java.sql.ResultSet source, BNAZoneParser aszp)
         {
             this.source = source;
@@ -61,7 +62,8 @@ public class BNAPURLConnection extends java.net.URLConnection
 
             source = null;
 
-            try
+            if (null != aszp)
+	    try
             {
 //System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
                 for (java.util.Enumeration<ZPAliasEntry> aliases = aszp.aliasElements(); aliases.hasMoreElements(); )
@@ -158,8 +160,8 @@ public class BNAPURLConnection extends java.net.URLConnection
             }
         }
 
-        /*
-             * @throw java.io.IOException when java.io.PipedInputStream.PipedInputStream(PipedOutputStream) throws an IOException "when an I/O error occurs" (thanks, guys)
+        /**
+         * @throw java.io.IOException when java.io.PipedInputStream.PipedInputStream(PipedOutputStream) throws an IOException "when an I/O error occurs" (thanks, guys)
          */
         public java.io.InputStream getInputStream() throws java.io.IOException
         {
