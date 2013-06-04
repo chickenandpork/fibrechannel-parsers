@@ -10,7 +10,7 @@ package org.smallfoot.osmsql;
  *      /usr/local/mysql/bin/mysqladmin create dwh_inventory
  *      /usr/local/mysql/bin/mysql -u root mysql "grant connect on dwh_inventory.* to dwh identified by 'password'"
  *      /usr/local/mysql/bin/mysqladmin reload grant
- *      /usr/local/mysql/bin/mysql -u root dwh_inventory < ~/dwh_inventory.sql 
+ *      /usr/local/mysql/bin/mysql -u root dwh_inventory < ~/dwh_inventory.sql
  */
 
 public class OSMURLConnection extends java.net.URLConnection
