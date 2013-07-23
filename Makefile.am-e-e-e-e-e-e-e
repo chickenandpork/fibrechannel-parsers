@@ -13,7 +13,7 @@ BUILT_SOURCES += mysql-connector-java-5.1.14.jar
 
 mysql-connector-java-5.1.14.jar:
 	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
-	test -f $@ || wget -O $@ http://mirrors.ibiblio.org/maven2/mysql/mysql-connector-java/5.1.14/$(@F) || curl -o $@ http://mirrors.ibiblio.org/maven2/mysql/mysql-connector-java/5.1.14/$(@F) test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
+	test -f $@ || wget -O $@ http://mirrors.ibiblio.org/maven2/mysql/mysql-connector-java/5.1.14/$(@F) || curl -o $@ http://mirrors.ibiblio.org/maven2/mysql/mysql-connector-java/5.1.14/$(@F) 
 	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
 
 
