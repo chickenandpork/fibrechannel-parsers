@@ -113,6 +113,15 @@ public class BNAPURLConnection extends java.net.URLConnection
 
         public void run()
         {
+            /**
+             * @jvmopt bnapsql.teeCSVPipe:
+             * For diagnostic purposes, -Dbnapsql.teeCSVPipe causes the data collected from the BNA server to be dumped out in raw-form.  This can be funneled back into a "vict.jar --nickname=file.txt" for re-parsing or repair
+             *
+             * For example:
+             * 1 java -Dbnapsql.teeCSVPipe=dump.txt -jar vict.jar --nickname=bnapsql://server/
+             * 2 java -jar vict.jar --nickname=dump.txt
+             */
+
             String _tee = System.getProperties().getProperty("bnapsql.teeCSVPipe");
             java.io.FileOutputStream tee = null;
             try
