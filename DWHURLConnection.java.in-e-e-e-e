@@ -1,0 +1,21 @@
+/* smallfoot.org is owned by allan.clark */
+package org.smallfoot.ocidwh;
+
+/**
+ * @file
+ *
+ * This class simply provides a second URL pattern for the client extractor
+ */
+
+public class DWHURLConnection extends org.smallfoot.osmsql.OSMURLConnection
+{
+    public DWHURLConnection(String connectionInfo, String username, String password)
+    {
+        super(connectionInfo, username, password);
+    }
+
+    public DWHURLConnection(java.net.URL url)
+    {
+        super(url);
+    }
+}
