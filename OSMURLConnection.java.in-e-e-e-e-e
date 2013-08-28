@@ -18,9 +18,9 @@ public class OSMURLConnection extends java.net.URLConnection
     /**
      * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  To be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources.
      */
-    class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
+    protected class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
     {
-        java.sql.ResultSet source;
+        protected java.sql.ResultSet source;
 
         public ResultCSVPipe(java.sql.ResultSet source)
         {
@@ -68,7 +68,7 @@ public class OSMURLConnection extends java.net.URLConnection
 
     String connectionInfo = null;
     java.util.Properties properties = new java.util.Properties();
-    java.sql.Connection connection;
+    protected java.sql.Connection connection;
 
     public OSMURLConnection(String connectionInfo, String username, String password)
     {

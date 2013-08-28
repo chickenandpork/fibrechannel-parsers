@@ -1,0 +1,23 @@
+/* smallfoot.org is owned by allan.clark */
+package org.smallfoot.msosmsql;
+
+/**
+ * @file
+ *
+ * @section Known Issues
+ * - as of 2012-09-11 unknown test status
+ */
+
+public class Handler extends java.net.URLStreamHandler
+{
+    /**
+     * openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client.
+     *
+     * @return populated connection as org.smallfoot.bnapsql.BNAPURLConnection(Connection)
+     * @param url URL to connect to
+     */
+    protected java.net.URLConnection openConnection(java.net.URL url)
+    {
+        return new org.smallfoot.msosmsql.MSDWHURLConnection(url);
+    }
+}

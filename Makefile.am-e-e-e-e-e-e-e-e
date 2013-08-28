@@ -1,10 +1,10 @@
-nodist_pkgdata_JAVA = osmsql/Handler.java ocidwh/Handler.java OSMURLConnection.java  DWHURLConnection.java
+nodist_pkgdata_JAVA = osmsql/Handler.java ocidwh/Handler.java OSMURLConnection.java  DWHURLConnection.java msosmsql/Handler.java msosmsql/MSDWHURLConnection.java
 nodist_pkgdata_DATA = $(subdir).jar
 
-EXTRA_DIST = $(nodist_pkgdata_JAVA)  ocidwh/Handler.java.in osmsql/Handler.java.in OSMURLConnection.java.in DWHURLConnection.java.in
+EXTRA_DIST = $(nodist_pkgdata_JAVA)  ocidwh/Handler.java.in osmsql/Handler.java.in OSMURLConnection.java.in DWHURLConnection.java.in msosmsql/Handler.java.in msosmsql/MSDWHURLConnection.java.in
 CONFIG_CLEAN_FILES = $(subdir).jar
 
-AM_JAVACFLAGS= -cp $(top_builddir)/vift/mysql-connector-java-5.1.14.jar
+AM_JAVACFLAGS= -cp bld:$(top_builddir)/vift/mysql-connector-java-5.1.14.jar
 BUILDTMP=$(shell date +%s)
 
 BUILT_SOURCES = 
