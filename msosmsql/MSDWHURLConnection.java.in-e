@@ -31,7 +31,7 @@ public class MSDWHURLConnection extends org.smallfoot.osmsql.OSMURLConnection
      * | MS-SQL-15          | 10:00:00:00:c9:12:34:58 | EAST_FAB_1 |
      * | MS-SQL-15          | 10:00:00:00:c9:12:34:59 | EAST_FAB_2 |
      * +--------------------+-------------------------+------------+
-     * 
+     *
      * The output will be the A/B of the fabric appended to the alias with 1/2 converted to A/B:
      * 10:00:00:00:c9:12:34:56,"MS-SQL-14_A"
      * 10:00:00:00:c9:12:34:57,"MS-SQL-14_B"
@@ -75,15 +75,21 @@ public class MSDWHURLConnection extends org.smallfoot.osmsql.OSMURLConnection
 
         public char uniqueness(String thirdRail)
         {
-            if ('_' != thirdRail.charAt(thirdRail.length()-2)) 
-		return 'X';
-	    switch (thirdRail.charAt(thirdRail.length()-1))
-	    {
-		case '1': case 'a': case 'A': return 'A';
-		case '2': case 'b': case 'B': return 'B';
-		default:
-		    return 'X';
-	    }
+            if ('_' != thirdRail.charAt(thirdRail.length()-2))
+                return 'X';
+            switch (thirdRail.charAt(thirdRail.length()-1))
+            {
+            case '1':
+            case 'a':
+            case 'A':
+                return 'A';
+            case '2':
+            case 'b':
+            case 'B':
+                return 'B';
+            default:
+                return 'X';
+            }
         }
 
         public void run()
