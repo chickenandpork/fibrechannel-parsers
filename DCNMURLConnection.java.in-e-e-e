@@ -29,65 +29,68 @@ public class DCNMURLConnection extends java.net.URLConnection
     {
         java.util.Vector<java.sql.ResultSet> sources;
         BNAZoneParser aszp;
-        public ResultCSVPipe(java.sql.ResultSet source) { this(source, null); }
+        public ResultCSVPipe(java.sql.ResultSet source)
+        {
+            this(source, null);
+        }
         public ResultCSVPipe(java.sql.ResultSet source, BNAZoneParser aszp)
         {
             this.sources = new java.util.Vector (1,1);
-	    this.add(source);
+            this.add(source);
             this.aszp = aszp;
         }
 
         public void add(java.sql.ResultSet source)
         {
-	    sources.add(source);
+            sources.add(source);
         }
 
         public void run()
         {
-            for (java.sql.ResultSet source: sources)
-	    if (source != null)
-            {
+for (java.sql.ResultSet source: sources)
+                if (source != null)
+                {
+                    try
+                    {
+                        while (source.next())
+                        {
+                            String res = String.format("%s,\"%s\"\n",source.getString(1), source.getString(2));
+                            write(res.getBytes(), 0, res.length());
+                        }
+
+                        source.close();
+                    }
+                    catch (java.sql.SQLException se)
+                    {
+                        System.err.println("SQLException: " + se.getMessage());
+                        se.printStackTrace();
+                    }
+                    catch (java.io.IOException ioe)
+                    {
+                        System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage());
+                    }
+                }
+
+            if (null != aszp)
                 try
                 {
-                    while (source.next())
+//System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
+                    for (java.util.Enumeration<ZPAliasEntry> aliases = aszp.aliasElements(); aliases.hasMoreElements(); )
                     {
-                        String res = String.format("%s,\"%s\"\n",source.getString(1), source.getString(2));
-                        write(res.getBytes(), 0, res.length());
-                    }
+                        ZPAliasEntry alias = aliases.nextElement();
 
-                    source.close();
-                }
-                catch (java.sql.SQLException se)
-                {
-                    System.err.println("SQLException: " + se.getMessage());
-                    se.printStackTrace();
+                        for (java.util.Enumeration<String> wwns = alias.getWWNs(); wwns.hasMoreElements(); )
+                        {
+                            String res = String.format("%s,\"%s\"\n",wwns.nextElement(), alias.name());
+//System.out.println("ASZP Alias: "+res);
+                            write(res.getBytes(), 0, res.length());
+                        }
+                    }
                 }
                 catch (java.io.IOException ioe)
                 {
-                    System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage());
+                    System.err.println("IOException pasting bogus test content: " + ioe.getMessage());
                 }
-            }
-
-            if (null != aszp)
-            try
-            {
-//System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
-                for (java.util.Enumeration<ZPAliasEntry> aliases = aszp.aliasElements(); aliases.hasMoreElements(); )
-                {
-                    ZPAliasEntry alias = aliases.nextElement();
-
-                    for (java.util.Enumeration<String> wwns = alias.getWWNs(); wwns.hasMoreElements(); )
-                    {
-                        String res = String.format("%s,\"%s\"\n",wwns.nextElement(), alias.name());
-//System.out.println("ASZP Alias: "+res);
-                        write(res.getBytes(), 0, res.length());
-                    }
-                }
-            }
-            catch (java.io.IOException ioe)
-            {
-                System.err.println("IOException pasting bogus test content: " + ioe.getMessage());
-            }
             aszp = null;
 
             try
