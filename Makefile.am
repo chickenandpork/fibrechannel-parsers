@@ -1,6 +1,6 @@
-DIST_SUBDIRS =	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file byaccj-devicealias
+DIST_SUBDIRS =	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file byaccj-devicealias tests-autotest
 if DO_JAVA
-SUBDIRS =	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file byaccj-devicealias
+SUBDIRS =	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file byaccj-devicealias tests-autotest
 endif
 
 # if missing mkinstalldirs install-sh trigger errors, ignore the result code on the "system (cp ...)" command in automake
@@ -9,10 +9,10 @@ dnl EXTRA_DIST = @PACKAGE@.spec nginx-1.0.6.tar.gz
 
 
 
-nodist_pkgdata_DATA = $(subdir).jar
+nodist_pkgdata_DATA = @PACKAGE@.jar
 
 EXTRA_DIST = $(nodist_pkgdata_JAVA)
-CONFIG_CLEAN_FILES = $(subdir).jar
+CONFIG_CLEAN_FILES = @PACKAGE@.jar
 
 AM_JAVACFLAGS= -cp $(top_builddir)/java-pre/getopt.jar:$(top_builddir):.
 
@@ -20,7 +20,7 @@ BUILDTMP=$(shell date +%s)
 BUILT_SOURCES =
 
 
-$(subdir).jar: pipeparser/pipeparser.jar byaccj-zonefile/@PACKAGE@.jar  basic-nicknamefile/basic-nicknamefile.jar basic-alias4file/basic-alias4file.jar byaccj-devicealias/byaccj-devicealias.jar
+@PACKAGE@.jar: pipeparser/pipeparser.jar byaccj-zonefile/@PACKAGE@.jar  basic-nicknamefile/basic-nicknamefile.jar basic-alias4file/basic-alias4file.jar byaccj-devicealias/byaccj-devicealias.jar
 	-rm -fr $(@D)/.workdir
 	mkdir -p $(@D)/.workdir
 	ln -f $^ $(@D)/.workdir/
