@@ -1,6 +1,21 @@
 AT_INIT()
 
 
+AT_SETUP(Brocade alishow Parser)
+dnl      ----------------------
+
+AT_CHECK([java -Ddebug.verboseTokenizer=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple.zoneshow ], 0, [stdout], [stderr])
+AT_CHECK([java -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple.zoneshow ], 0, [zonefile (main) parsed 4 zones, 10 aliases
+], [stderr])
+
+AT_CLEANUP()
+
+
+dnl Alias4Parser.java:public class Alias4Parser extends ZoneParser
+dnl BNAZoneParser.java:public class BNAZoneParser
+dnl DeviceAliasParser.java:public class DeviceAliasParser
+
+
 AT_SETUP(Doxygen confirmation of marked-up content)
 dnl      -----------------------------------------
 
