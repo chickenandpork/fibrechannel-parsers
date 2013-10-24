@@ -1,13 +1,5 @@
 AT_INIT()
 
-AT_SETUP(tool check)
-dnl      ----------
-
-AT_TESTED([java])
-
-AT_CLEANUP()
-
-
 
 AT_SETUP(Doxygen confirmation of marked-up content)
 dnl      -----------------------------------------
