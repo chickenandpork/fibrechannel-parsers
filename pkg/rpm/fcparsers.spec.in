@@ -53,5 +53,5 @@ make install DESTDIR=%{buildroot}
 
 
 %changelog
-* Mon Oct 21 2013 Allan Clark <allanc@chickenandporn.com> - 1.0-1
+* Mon Oct 21 2013 Allan Clark <allanc@chickenandporn.com> - 0.3-1
 - Initial package (split from fctools-0.2-599)
