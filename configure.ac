@@ -25,7 +25,7 @@ AM_CONDITIONAL(DO_JAVA, test "$JAVAC" != none)
 
 AC_PATH_PROGS(BYACC, [yacc.macosx byaccj], [missing byacc], $PATH:$HOME/bin)
 AM_CONDITIONAL(DO_BYACC, true)
-AM_CONDITIONAL(DO_CHECKLOCAL_PARSER, true)
+AM_CONDITIONAL(DO_CHECKLOCAL_PARSER, false)
 dnl AM_CONDITIONAL(DO_BYACC, test "$BYACC" != "missing byacc")
 
 dnl ***********************************************************************
