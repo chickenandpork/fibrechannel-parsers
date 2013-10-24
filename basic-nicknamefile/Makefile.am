@@ -5,7 +5,7 @@ nodist_pkgdata_DATA = $(notdir $(subdir)).jar
 EXTRA_DIST = $(nodist_pkgdata_JAVA)
 CONFIG_CLEAN_FILES = @PACKAGE@.jar
 
-AM_JAVACFLAGS= -cp bld:$(top_builddir)/parser/pipeparser/pipeparser.jar
+AM_JAVACFLAGS= -cp bld:$(top_builddir)/pipeparser/pipeparser.jar
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES =

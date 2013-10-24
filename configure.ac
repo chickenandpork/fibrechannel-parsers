@@ -2,7 +2,7 @@ dnl ***********************************************************************
 dnl Process this file with autoconf to produce a configure script.
 dnl ***********************************************************************
 #AC_INIT(install-sh)
-AC_INIT(fibrechannel-parsers, 1.0)
+AC_INIT(fcparsers, 1.0)
 AC_CONFIG_MACRO_DIR([m4])
 
 AC_CANONICAL_HOST
@@ -120,6 +120,7 @@ AM_CONDITIONAL(DO_AUTOTEST, test "$ENAB" = yes)
 
 
 AC_CONFIG_FILES(Makefile
+  depjars/Makefile 
   pipeparser/Makefile 
   byaccj-zonefile/Makefile byaccj-zonefile/zonefile.y byaccj-zonefile/bnazone.y
   basic-nicknamefile/Makefile basic-nicknamefile/NicknameParser.java

@@ -6,7 +6,7 @@ nodist_pkgdata_DATA = $(notdir $(subdir)).jar
 EXTRA_DIST = $(nodist_pkgdata_JAVA)
 CONFIG_CLEAN_FILES = $(notdir $(subdir)).jar @PACKAGE@.jar
 
-AM_JAVACFLAGS= -cp bld:$(top_builddir)/java-pre/getopt.jar:$(top_builddir)/documentation/commons-io-2.3.jar
+AM_JAVACFLAGS= -cp $(JAVAROOT):$(top_builddir)/depjars/commons-io-2.3.jar
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES =
@@ -26,7 +26,7 @@ clean-local:
 	CLASSES=`for i in $(nodist_pkgdata_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
 	rm -f @PACKAGE@.jar $(notdir $(subdir)).jar $(BUILT_SOURCES)
 
-$(notdir $(subdir)).jar: $(BUILT_SOURCES) $(top_builddir)/java-pre/getopt.jar $(top_builddir)/documentation/commons-io-2.3.jar @PACKAGE@.jar
+$(notdir $(subdir)).jar: $(BUILT_SOURCES) $(top_builddir)/depjars/commons-io-2.3.jar @PACKAGE@.jar
 	-rm -fr $(@D)/.workdir
 	mkdir -p $(@D)/.workdir
 	echo "Manifest-Version: 1.0" > $(@D)/.workdir/MANIFEST.MF
@@ -35,6 +35,6 @@ $(notdir $(subdir)).jar: $(BUILT_SOURCES) $(top_builddir)/java-pre/getopt.jar $(
 	ln -f $^ $(@D)/.workdir/
 	for i in $(^F) ; do (cd $(@D)/.workdir  && jar xf $$i) ; done
 	rm -fr $(@D)/.workdir/META-INF/{LICENSE.txt,MANIFEST.MF,{SUN_MICR,TESTKEY}.{RSA,SF}}
-	(cd $(@D)/.workdir && jar cm MANIFEST.MF META-INF gnu org) > $@
+	(cd $(@D)/.workdir && jar cm MANIFEST.MF META-INF org) > $@
 	rm -fr $(@D)/.workdir
 	touch $@

@@ -6,7 +6,7 @@ nodist_pkgdata_DATA = @PACKAGE@.jar $(notdir $(subdir)).jar
 EXTRA_DIST = $(nodist_pkgdata_JAVA)  devicealias.y
 CONFIG_CLEAN_FILES = @PACKAGE@.jar $(notdir $(subdir)).jar DeviceAliasParser.java DeviceAliasParserVal.java
 
-AM_JAVACFLAGS= -cp $(top_builddir)/java-pre/getopt.jar:$(top_builddir)/parser/pipeparser/pipeparser.jar:$(JAVAROOT):.
+AM_JAVACFLAGS= -cp $(top_builddir)/pipeparser/pipeparser.jar:$(JAVAROOT):.
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES =
@@ -38,11 +38,11 @@ clean-local:
 
 if DO_CHECKLOCAL_PARSER
 check-local: @PACKAGE@.jar test-devicealias.txt
-	@JAVA@ -Ddebug.verboseTokenizer=true -classpath @PACKAGE@.jar:$(top_builddir)/parser/pipeparser/bld org.smallfoot.parser.zone.DeviceAliasParser < test-devicealias.txt
+	@JAVA@ -Ddebug.verboseTokenizer=true -classpath @PACKAGE@.jar:$(top_builddir)/pipeparser/bld org.smallfoot.parser.zone.DeviceAliasParser < test-devicealias.txt
 endif
 
 
-$(notdir $(subdir)).jar: $(BUILT_SOURCES) $(top_builddir)/java-pre/getopt.jar $(top_builddir)/parser/pipeparser/pipeparser.jar @PACKAGE@.jar
+$(notdir $(subdir)).jar: $(BUILT_SOURCES) $(top_builddir)/pipeparser/pipeparser.jar @PACKAGE@.jar
 	-rm -fr $(@D)/.workdir
 	mkdir -p $(@D)/.workdir
 	echo "Manifest-Version: 1.0" > $(@D)/.workdir/MANIFEST.MF
@@ -51,6 +51,6 @@ $(notdir $(subdir)).jar: $(BUILT_SOURCES) $(top_builddir)/java-pre/getopt.jar $(
 	ln -f $^ $(@D)/.workdir/
 	for i in $(^F) ; do (cd $(@D)/.workdir  && jar xf $$i) ; done
 	rm -fr $(@D)/.workdir/META-INF/{LICENSE.txt,MANIFEST.MF,{SUN_MICR,TESTKEY}.{RSA,SF}}
-	(cd $(@D)/.workdir && jar cm MANIFEST.MF META-INF gnu org) > $@
+	(cd $(@D)/.workdir && jar cm MANIFEST.MF META-INF org) > $@
 	rm -fr $(@D)/.workdir
 	touch $@
