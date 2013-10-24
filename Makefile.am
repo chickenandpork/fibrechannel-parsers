@@ -9,13 +9,11 @@ ACLOCAL_AMFLAGS = -I m4
 
 # if missing mkinstalldirs install-sh trigger errors, ignore the result code on the "system (cp ...)" command in automake
 dnl CONFIG_CLEAN_FILES = aclocal.m4 config.guess config.sub config.h config.h.in ltconfig ltmain.sh missing mkinstalldirs install-sh Doxyfile @PACKAGE@.spec @PACKAGE@.jar changes.atom
-dnl EXTRA_DIST = @PACKAGE@.spec nginx-1.0.6.tar.gz
+EXTRA_DIST = @PACKAGE@.spec
 
 
 
 nodist_pkgdata_DATA = @PACKAGE@.jar
-
-EXTRA_DIST = $(nodist_pkgdata_JAVA)
 CONFIG_CLEAN_FILES = @PACKAGE@.jar
 
 AM_JAVACFLAGS= -cp $(top_builddir)/java-pre/getopt.jar:$(top_builddir):.
@@ -60,4 +58,7 @@ git-formatting:
 	echo git dcommit
 endif
 
-
+if HAVE_RPMBUILD
+rpm: dist-bzip2
+	@RPMBUILD@ --define 'skipcheck 1' -ta $(PACKAGE)-$(VERSION).tar.bz2
+endif
