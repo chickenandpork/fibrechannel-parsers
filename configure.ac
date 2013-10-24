@@ -121,11 +121,7 @@ AM_CONDITIONAL(DO_AUTOTEST, test "$ENAB" = yes)
 
 AC_CONFIG_FILES(Makefile
   depjars/Makefile 
-  pipeparser/Makefile 
-  byaccj-zonefile/Makefile byaccj-zonefile/zonefile.y byaccj-zonefile/bnazone.y
-  basic-nicknamefile/Makefile basic-nicknamefile/NicknameParser.java
-  basic-alias4file/Makefile basic-alias4file/Alias4Parser.java
-  byaccj-devicealias/Makefile byaccj-devicealias/devicealias.y
+  java/Makefile java/zonefile.y java/bnazone.y java/NicknameParser.java java/Alias4Parser.java java/devicealias.y
   tests-autotest/Makefile tests-autotest/atlocal tests-autotest/testsuite.at
 )
 

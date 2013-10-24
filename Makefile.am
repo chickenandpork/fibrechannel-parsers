@@ -1,8 +1,9 @@
-DIST_SUBDIRS =	depjars pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file byaccj-devicealias tests-autotest
+DIST_SUBDIRS =	depjars java tests-autotest
 SUBDIRS =	depjars
 if DO_JAVA
-SUBDIRS +=	pipeparser byaccj-zonefile basic-nicknamefile basic-alias4file byaccj-devicealias tests-autotest
+SUBDIRS +=	java
 endif
+SUBDIRS +=	tests-autotest
 
 ACLOCAL_AMFLAGS = -I m4
 
@@ -23,7 +24,7 @@ BUILDTMP=$(shell date +%s)
 BUILT_SOURCES =
 
 
-@PACKAGE@.jar: pipeparser/pipeparser.jar byaccj-zonefile/@PACKAGE@.jar  basic-nicknamefile/basic-nicknamefile.jar basic-alias4file/basic-alias4file.jar byaccj-devicealias/byaccj-devicealias.jar
+@PACKAGE@.jar: depjars/commons-io-2.3.jar java/@PACKAGE@.jar
 	-rm -fr $(@D)/.workdir
 	mkdir -p $(@D)/.workdir
 	ln -f $^ $(@D)/.workdir/
@@ -33,7 +34,6 @@ BUILT_SOURCES =
 	echo "Created-By: @PACKAGE@-@VERSION@" >> $(@D)/.workdir/MANIFEST.MF
 	(cd $(@D)/.workdir && jar cm MANIFEST.MF META-INF org) > $@
 	rm -fr $(@D)/.workdir
-	touch $(notdir $(subdir)).class
 
 
 if DO_DOXYGEN
@@ -48,7 +48,7 @@ doc: Doxyfile
 endif
 
 if DO_ASTYLE
-formatting: basic-alias4file/Alias4Parser.java.in basic-nicknamefile/NicknameParser.java.in pipeparser/ParserTee.java pipeparser/ZoneParser.java pipeparser/ZPAliasEntry.java pipeparser/ZPFCAliasEntry.java pipeparser/ZPZoneEntry.java
+formatting: java/Alias4Parser.java.in java/NicknameParser.java.in java/ParserTee.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java
 	$(MAKE) check
 	for i in $^; do $(ASTYLE) -A1 $$i; done
 	$(MAKE) check
