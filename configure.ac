@@ -105,6 +105,8 @@ AC_SUBST(BUILDID)
 
 AC_CHECK_PROG(SVN, [svn], [svn],[missing svn])
 AM_CONDITIONAL(DO_SVNLOG, test "$SVN" != "missing svn" -a "$XSLTPROC" != "missing xsltproc" -a -f .svn/entries -a -f /usr/share/cnp/svnlog2atom.xsl)
+AC_CHECK_PROG(GIT, [git], [git],[missing git])
+AM_CONDITIONAL(DO_GITFORMATTING, test "$GIT" != "missing git" -a -f .git/config)
 AC_PATH_PROGS(ECHO, [echo], [missing])
 AC_PATH_PROGS(NC, [nc], [missing])
 AC_PATH_PROGS(SED, [sed], [missing])

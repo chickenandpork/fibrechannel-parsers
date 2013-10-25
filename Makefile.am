@@ -47,12 +47,18 @@ endif
 
 if DO_ASTYLE
 formatting: java/Alias4Parser.java.in java/NicknameParser.java.in java/ParserTee.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java
+if DO_GITFORMATTING
+	@git ls-files --other --exclude-standard --directory || { echo "###################### unignored local files: git add, git commit ?"; }
+	@git diff --exit-code || { echo "###################### unstaged changes: git commit -a"; exit 1; }
+	@git diff --cached --exit-code || { echo "###################### staged uncommitted changes: git commit"; exit 1; }
+endif
 	$(MAKE) check
 	for i in $^; do $(ASTYLE) -A1 $$i; done
 	$(MAKE) check
-
-git-formatting: formatting
+if DO_GITFORMATTING
 	git commit -a -m 'formatting and whitespace'
+endif DO_GITFORMATTING
+
 endif
 
 if HAVE_RPMBUILD
