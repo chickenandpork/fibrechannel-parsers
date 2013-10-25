@@ -4,7 +4,6 @@ AT_INIT()
 AT_SETUP(Brocade alishow Parser)
 dnl      ----------------------
 
-debug.verboseAddZone
 AT_CHECK([java -Ddebug.verboseTokenizer=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple.zoneshow ], 0, [stdout], [stderr])
 AT_CHECK([java -Ddebug.dumpAliases=AliShowZoneParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple.zoneshow ], 0, [Parse results for AliShowZoneParser:
 Zones: 4
