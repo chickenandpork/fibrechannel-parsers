@@ -18,7 +18,7 @@ public class ParserTee extends org.apache.commons.io.input.TeeInputStream
      *
      * (insert a bunch of ZoneParsers into v)
      * ParserTee pt = new ParserTee (File().stream());
-     * 
+     *
      * for (ZoneParser zp: v.items())
      *    pt = new ParserTee (pt, zp);
      *
@@ -31,7 +31,7 @@ public class ParserTee extends org.apache.commons.io.input.TeeInputStream
      * http://svn.apache.org/viewvc/commons/proper/io/trunk/src/main/java/org/apache/commons/io/input/TeeInputStream.java?view=markup
      * http://commons.apache.org/proper/commons-io/apidocs/src-html/org/apache/commons/io/input/NullInputStream.html#line.94
      */
-     
+
     /**
      * Tee off the datastream and set it to sink into the given ZoneParser
      *
@@ -42,10 +42,10 @@ public class ParserTee extends org.apache.commons.io.input.TeeInputStream
     static OutputStream pipeOutputStreamTo (ZoneParser zp) throws java.io.IOException
     {
         PipedInputStream ip = new PipedInputStream();
-	//zp.setReader(new BufferedReader(new InputStreamReader(ip)));
-	zp.setReader(new InputStreamReader(ip));
-	zp.start();
-	return new PipedOutputStream(ip);
+        //zp.setReader(new BufferedReader(new InputStreamReader(ip)));
+        zp.setReader(new InputStreamReader(ip));
+        zp.start();
+        return new PipedOutputStream(ip);
     }
 
     /**
@@ -57,6 +57,6 @@ public class ParserTee extends org.apache.commons.io.input.TeeInputStream
      */
     public ParserTee (InputStream input, ZoneParser zp) throws java.io.IOException
     {
-	super(input, pipeOutputStreamTo(zp), true);
+        super(input, pipeOutputStreamTo(zp), true);
     }
 }

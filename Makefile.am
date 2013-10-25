@@ -51,11 +51,8 @@ formatting: java/Alias4Parser.java.in java/NicknameParser.java.in java/ParserTee
 	for i in $^; do $(ASTYLE) -A1 $$i; done
 	$(MAKE) check
 
-git-formatting:
-	$(MAKE) formatting
+git-formatting: formatting
 	git commit -a -m 'formatting and whitespace'
-	echo git push
-	echo git dcommit
 endif
 
 if HAVE_RPMBUILD

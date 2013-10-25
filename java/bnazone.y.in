@@ -24,7 +24,7 @@ input:  /* empty string */
  | input TOK01 ALPHANUM itemlist
  ;
 
-itemlist: ALPHANUM { $$ = new BNAZoneParserVal($1); }
+itemlist: ALPHANUM { $$ = $1; }
  | itemlist ALPHANUM { $$ = appendZoneAlphanum($1, $2); }
  | itemlist ';' { $$ = $1 ; }
  ;
@@ -193,7 +193,7 @@ void addAlias(String name, java.util.Vector<BNAZoneParserVal> list)
 
 BNAZoneParserVal appendZoneAlphanum(BNAZoneParserVal list, BNAZoneParserVal item)
 {
-    if (list.obj.getClass().getName().equals(java.util.Vector.class.getName()))
+    if ( (null != list.obj)  && (list.obj.getClass().getName().equals(java.util.Vector.class.getName())) )
     {
 	((java.util.Vector) list.obj).add(item);
 	return list;

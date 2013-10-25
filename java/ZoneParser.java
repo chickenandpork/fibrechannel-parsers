@@ -24,10 +24,10 @@ public abstract class ZoneParser extends Thread
         if (null == _prop) _prop = System.getProperties();
         //return ( (null != _prop.getProperty(n)) && (false != Boolean.parseBoolean(_prop.getProperty(n))) );
         return (
-            Boolean.parseBoolean(_prop.getProperty(n))
-         || (getClass().getName().equalsIgnoreCase(_prop.getProperty(n)))
-         || (getClass().getName().replaceAll("^.*\\.","").equalsIgnoreCase(_prop.getProperty(n)))
-            );
+                   Boolean.parseBoolean(_prop.getProperty(n))
+                   || (getClass().getName().equalsIgnoreCase(_prop.getProperty(n)))
+                   || (getClass().getName().replaceAll("^.*\\.","").equalsIgnoreCase(_prop.getProperty(n)))
+               );
     }
 
 
@@ -71,7 +71,7 @@ public abstract class ZoneParser extends Thread
      */
     public ZoneParser(Reader in)
     {
-        this(in, false); 
+        this(in, false);
     }
 
 
@@ -98,6 +98,33 @@ public abstract class ZoneParser extends Thread
     public ZoneParser(java.util.Properties properties, boolean debugMe)
     {
         this((Reader) null,debugMe);
+    }
+
+
+
+    /**
+     * To test/show a descendant class, with a created parser, feed in the stdin, parse what it can, and summarize the results to stdout
+     *
+     * @param args argc/argv from a void main() run to feed any getopt herein (currently ignored)
+     */
+    public void testSummary(String args[])
+    {
+        run();
+        System.out.println("Parse results for "+getClass().getName().replaceAll("^.*\\.","") + ":");
+        System.out.println("Zones: "+zoneSize());
+        System.out.println("Aliases: "+aliasSize() + " (names with one or more WWPNs)");
+
+        java.util.PriorityQueue<ZPAliasEntry> pq = new java.util.PriorityQueue(aliasSize());
+        for (ZPAliasEntry e: aliasArray())
+            pq.add(e);
+        int c = 0;
+        for (ZPAliasEntry e: pq) c += e.wwns.size();
+        System.out.println("Aliases: "+c + " (name/WWPN pairs)");
+
+        if (checkProperty("debug.dumpAliases"))
+            for (ZPAliasEntry e: pq)
+                for (String s: e.wwns)
+                    System.out.println("Alias: "+s+", "+e.name());
     }
 
 }
