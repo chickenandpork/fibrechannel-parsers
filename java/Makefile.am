@@ -2,12 +2,13 @@ nodist_pkgdata_JAVA = Alias4Parser.java NicknameParser.java ParserTee.java ZPAli
 nodist_pkgdata_JAVA += AliShowZoneParser.java AliShowZoneParserVal.java
 nodist_pkgdata_JAVA += BNAZoneParser.java BNAZoneParserVal.java
 nodist_pkgdata_JAVA += DeviceAliasParser.java DeviceAliasParserVal.java
+nodist_pkgdata_JAVA += version.java
 
 nodist_pkgdata_DATA = @PACKAGE@.jar
 # https://downloads.sourceforge.net/project/byaccj/byaccj/1.15/byaccj1.15_macosx.tar.gz?r=http%3A%2F%2Fbyaccj.sourceforge.net%2F&ts=1347235095&use_mirror=voxel
 
 
-EXTRA_DIST = $(nodist_pkgdata_JAVA)  zonefile.y bnazone.y
+EXTRA_DIST = $(nodist_pkgdata_JAVA)  zonefile.y bnazone.y version.java.in
 CONFIG_CLEAN_FILES = @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java DeviceAliasParserVal.java
 
 AM_JAVACFLAGS= -cp $(JAVAROOT):$(top_builddir)/depjars/commons-io-2.3.jar
