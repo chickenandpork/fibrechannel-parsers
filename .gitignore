@@ -9,6 +9,7 @@ config.sub
 configure
 install-sh
 missing
+gitdescribe
 
 #generated buildproc
 fcparsers.jar
