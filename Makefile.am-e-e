@@ -1,7 +1,7 @@
-nodist_pkgdata_JAVA = Handler.java BNAPURLConnection.java 
+nodist_pkgdata_JAVA = Handler.java BNAPURLConnection.java bna/Handler.java dcfm/Handler.java cmcne/Handler.java DCFMURLConnection.java
 nodist_pkgdata_DATA = $(subdir).jar
 
-EXTRA_DIST = $(nodist_pkgdata_JAVA)  Handler.java.in BNAPURLConnection.java.in
+EXTRA_DIST = $(nodist_pkgdata_JAVA)  Handler.java.in BNAPURLConnection.java.in DCFMURLConnection.java.in
 CONFIG_CLEAN_FILES = $(subdir).jar
 
 AM_JAVACFLAGS= -cp @FCPARSERSJAR@
@@ -9,12 +9,35 @@ BUILDTMP=$(shell date +%s)
 
 BUILT_SOURCES = 
 
+BUILT_SOURCES += bna/Handler.java
+
+bna/Handler.java: Handler.java
+	@mkdir -p $(@D)
+	awk '/^package / {sub ("bnapsql;","bna;"); } {print}' $< > $@
+
+dcfm/Handler.java: Handler.java
+	@mkdir -p $(@D)
+	awk '/^package / {sub ("bnapsql;","dcfm;"); } {sub("BNAPURL","DCFMURL"); } {print}' $< > $@
+
+cmcne/Handler.java: Handler.java
+	@mkdir -p $(@D)
+	awk '/^package / {sub ("bnapsql;","cmcne;"); } {print}' $< > $@
+
 BUILT_SOURCES += postgresql-9.1-902.jdbc4.jar
 
 postgresql-9.1-902.jdbc4.jar:
 	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
 	test -f $@ || wget -O $@ http://jdbc.postgresql.org/download/$(@F) || curl -Lo $@ http://jdbc.postgresql.org/download/$(@F)
 	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
+
+
+BUILT_SOURCES += jconn2-5.5.jar
+
+jconn2-5.5.jar:
+	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
+	test -f $@ || wget -O $@ http://oodt.jpl.nasa.gov/download/private/sybase/jconn2/5.5/$(@F) || curl -Lo $@ http://oodt.jpl.nasa.gov/download/private/sybase/jconn2/5.5/$(@F)
+	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
+
 
 JAVAROOT = bld
 BUILT_SOURCES += javaroot.stamp

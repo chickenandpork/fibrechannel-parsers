@@ -19,7 +19,7 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  *   - http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf defines table model on Table 282, "defined_content", "active_content", or "ti_zone_content"
  */
 
-public class BNAPURLConnection extends java.net.URLConnection
+public class DCFMURLConnection extends java.net.URLConnection
 {
     /**
      * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  TO be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources.
@@ -68,7 +68,7 @@ public class BNAPURLConnection extends java.net.URLConnection
             if (null != aszp)
                 try
                 {
-//System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
+                    System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
                     for (java.util.Enumeration<ZPAliasEntry> aliases = aszp.aliasElements(); aliases.hasMoreElements(); )
                     {
                         ZPAliasEntry alias = aliases.nextElement();
@@ -76,7 +76,7 @@ public class BNAPURLConnection extends java.net.URLConnection
                         for (java.util.Enumeration<String> wwns = alias.getWWNs(); wwns.hasMoreElements(); )
                         {
                             String res = String.format("%s,\"%s\"\n",wwns.nextElement(), alias.name());
-//System.out.println("ASZP Alias: "+res);
+                            System.out.println("ASZP Alias: "+res);
                             write(res.getBytes(), 0, res.length());
                         }
                     }
@@ -141,7 +141,7 @@ public class BNAPURLConnection extends java.net.URLConnection
                     {
                         if (null != source.getString(columnNumber))
                             write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
-//System.out.println("copied " + source.getString(columnNumber).length() + " bytes from result to stream: "+source.getString(columnNumber));
+                        System.out.println("copied " + source.getString(columnNumber).length() + " bytes from result to stream: "+source.getString(columnNumber));
                         if (null != tee) tee.write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
                     }
 
@@ -185,40 +185,52 @@ public class BNAPURLConnection extends java.net.URLConnection
     java.util.Properties properties = new java.util.Properties();
     java.sql.Connection connection;
 
-    public BNAPURLConnection(String connectionInfo, String username, String password)
+    public DCFMURLConnection(String connectionInfo, String username, String password)
     {
         super(URLof(connectionInfo));
+        try
+        {
+            Object o = Class.forName("com.sybase.jdbc2.jdbc.SybDriver");
+        }
+        catch (Exception e) {}
         this.connectionInfo = connectionInfo;
         properties.put("user",username);
         properties.put("password",password);
     }
 
 
-    public BNAPURLConnection(java.net.URL url)
+    public DCFMURLConnection(java.net.URL url)
     {
         super(url);
-//System.out.println("public BNAPURLConnection(java.net.URL "+url.toString()+")");
-        //String ProgressStrocity = "jdbc.jdbcProgress:T:"+url.getHost()+":";
-        // jdbc:postgresql://host:port/database
-        String ProgressStrocity = "jdbc:postgresql://"+url.getHost()+":";
+        try
+        {
+            Object o = Class.forName("com.sybase.jdbc2.jdbc.SybDriver");
+        }
+        catch (Exception e) {}
+        System.out.println("**** WARNING ****\n**** WARNING ****\nDCFM Support is within infancy stage at best.  Alpha.  Schema not yet verified.  Good Luck!\nPlease send screencaps and/or text dump of output for analysis\n**** WARNING ****\n**** WARNING ****");
+        System.out.println("public DCFMURLConnection(java.net.URL "+url.toString()+")");
+        //String SybaseAnywhere = "jdbc.jdbcProgress:T:"+url.getHost()+":";
+        // jdbc:sybase:Tds:localhost:5000?USER=sa&PASSWORD=secret
+        String SybaseAnywhere = "jdbc:sybase:Tds:"+url.getHost()+":";
 
         if (-1 == url.getPort())
-            ProgressStrocity += "5432";
+            SybaseAnywhere += "2638";
         else
-            ProgressStrocity += url.getPort();
+            SybaseAnywhere += url.getPort();
 
-        ProgressStrocity += "/dcmdb";
+        //SybaseAnywhere += "/dcfmdb";
+        SybaseAnywhere += "?SERVICENAME=dcfmdb";
 
         String user = null;
         String pass = null;
         if (null == url.getUserInfo())
         {
-            user = "dcmadmin";
+            user = "dcfm";
             pass = "passw0rd";
         }
         else
         {
-//System.out.println("authority = \""+url.getUserInfo()+"\"");
+            System.out.println("authority = \""+url.getUserInfo()+"\"");
             String[] a = url.getUserInfo().split(":");
             if (1 <= (java.lang.reflect.Array.getLength(a)))
                 user = a[0];
@@ -226,10 +238,19 @@ public class BNAPURLConnection extends java.net.URLConnection
                 pass = a[1];
         }
 
-        connectionInfo = ProgressStrocity;
+        if ((null != user) && (null != pass))
+        {
+            SybaseAnywhere = SybaseAnywhere+"&USER="+user+"&PASSWORD="+pass;
+        }
+        else if (null != user)
+        {
+            SybaseAnywhere = SybaseAnywhere+"&USER="+user;
+        }
+
+        connectionInfo = SybaseAnywhere;
         properties.put("user",user);
         properties.put("password",pass);
-//System.out.println("fin: public BNAPURLConnection(java.net.URL "+url.toString()+")");
+        System.out.println("fin: public DCFMURLConnection(java.net.URL "+url.toString()+")");
     }
 
     /**
@@ -261,20 +282,22 @@ public class BNAPURLConnection extends java.net.URLConnection
      * may want to consider later (http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf):
      * - select port_wwn,name from hba_target_info;
      * - select port_nwwn,physical_port_nwwn,name from hba_port_details_info;
+     *
+     * NOTE: In converting to the older SybaseAnywhere, the datamodel may be similar to BNA: ftp://service.boulder.ibm.com/storage/san/dcfm/IBM_DCFM_v10.4.1_ReleaseNotes.pdf p 17
      */
     public java.io.InputStream getInputStream()
     {
         if (null == connection)
             connect();
 
-//System.out.println("Now executing the command: "+ "SELECT wwn,name FROM device_port_info");
+        System.out.println("Now executing the command: "+ "SELECT wwn,name FROM device_port_info");
         try
         {
             ResultSetPipe rsp = new ResultSetPipe(connection.createStatement().executeQuery("SELECT defined_content FROM zone_db_config"), 1);
             BNAZoneParser aszp = new BNAZoneParser(rsp.getInputStream());
             new Thread(aszp).start();
             new Thread(rsp).start();
-//System.out.println("Newer zone content parsed; going to nickname format");
+            System.out.println("Newer zone content parsed; going to nickname format");
 
             ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,name FROM device_port_info WHERE name IS NOT NULL"), aszp);
             new Thread(res).start();
@@ -296,10 +319,10 @@ public class BNAPURLConnection extends java.net.URLConnection
     /**
      * openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client.
      *
-     * @return populated connection as org.smallfoot.bnapsql.BNAPURLConnection(Connection)
+     * @return populated connection as org.smallfoot.bnapsql.DCFMURLConnection(Connection)
      * @param url URL to connect to
      */
-    protected BNAPURLConnection openConnection(java.net.URL url)
+    protected DCFMURLConnection openConnection(java.net.URL url)
     {
         return null;
     }
@@ -334,6 +357,8 @@ public class BNAPURLConnection extends java.net.URLConnection
                 System.err.println("Connection error: " + se.getMessage() + "\n PLEASE add the client's IP address to the file C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\ni.e: host   all   all  0.0.0.0/0  md5\n(no BNA restart is required)");
             else if (m.startsWith("Connection refused."))
                 System.err.println("Connection error: " + se.getMessage() + "\n PLEASE also confirm that no firewall on the server is instructed to block/refuse our connection");
+            else if (se.getMessage().startsWith("JZ006: "))
+                System.err.println("FATAL: Connection error: Timeout\n PLEASE ensure no firewall blocks our connection (on client host, interposing gateways, and server)");
             else
             {
                 System.err.println("Connection error: " + se.getMessage());

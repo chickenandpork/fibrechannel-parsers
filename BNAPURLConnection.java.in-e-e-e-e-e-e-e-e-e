@@ -332,6 +332,8 @@ public class BNAPURLConnection extends java.net.URLConnection
             String m = se.getMessage();
             if (m.startsWith("FATAL: no pg_hba.conf entry for host"))
                 System.err.println("Connection error: " + se.getMessage() + "\n PLEASE add the client's IP address to the file C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\ni.e: host   all   all  0.0.0.0/0  md5\n(no BNA restart is required)");
+            else if (m.startsWith("Connection refused."))
+                System.err.println("Connection error: " + se.getMessage() + "\n PLEASE also confirm that no firewall on the server is instructed to block/refuse our connection");
             else
             {
                 System.err.println("Connection error: " + se.getMessage());
