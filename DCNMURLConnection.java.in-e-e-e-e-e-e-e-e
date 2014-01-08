@@ -210,8 +210,9 @@ for (java.sql.ResultSet source: sources)
         String pass = null;
         if (null == url.getUserInfo())
         {
-            user = "admin";
+            user = "dcnmuser";
             pass = "password";
+            //pass = "DCNMuser2010";	// http://www.itcertnotes.com/2011/08/changing-and-migrating-dcnm-and.html
             //user = "dcnmuser";
             //pass = "dcnmuser";
         }
