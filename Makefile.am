@@ -1,7 +1,7 @@
-DIST_SUBDIRS =	depjars java tests-autotest
+DIST_SUBDIRS =	depjars java convjars tests-autotest
 SUBDIRS =	depjars
 if DO_JAVA
-SUBDIRS +=	java
+SUBDIRS +=	java convjars
 endif
 SUBDIRS +=	tests-autotest
 
@@ -11,27 +11,6 @@ ACLOCAL_AMFLAGS = -I m4
 dnl CONFIG_CLEAN_FILES = aclocal.m4 config.guess config.sub config.h config.h.in ltconfig ltmain.sh missing mkinstalldirs install-sh Doxyfile @PACKAGE@.spec @PACKAGE@.jar changes.atom
 EXTRA_DIST = @PACKAGE@.spec gitdescribe
 
-
-
-nodist_pkgdata_DATA = @PACKAGE@.jar
-CONFIG_CLEAN_FILES = @PACKAGE@.jar
-
-AM_JAVACFLAGS= -cp $(top_builddir)/java-pre/getopt.jar:$(top_builddir):.
-
-BUILDTMP=$(shell date +%s)
-BUILT_SOURCES =
-
-
-@PACKAGE@.jar: depjars/commons-io-2.3.jar java/@PACKAGE@.jar
-	-rm -fr $(@D)/.workdir
-	mkdir -p $(@D)/.workdir
-	ln -f $^ $(@D)/.workdir/
-	for i in $(^F) ; do (cd $(@D)/.workdir  && jar xf $$i) ; done
-	rm -fr $(@D)/.workdir/META-INF/{maven,LICENSE.txt,MANIFEST.MF,{SUN_MICR,TESTKEY}.{RSA,SF}}
-	echo "Manifest-Version: 1.0" > $(@D)/.workdir/MANIFEST.MF
-	echo "Created-By: @PACKAGE@-@VERSION@" >> $(@D)/.workdir/MANIFEST.MF
-	(cd $(@D)/.workdir && jar cm MANIFEST.MF META-INF org) > $@
-	rm -fr $(@D)/.workdir
 
 
 if DO_DOXYGEN

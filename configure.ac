@@ -74,10 +74,23 @@ AC_ARG_WITH(doxygen,
 	"no")  DOXYGEN=missing ;;
 	*) DOXYGEN=$withval ;;
     esac
+
+    case "$DOXYGEN" in
+	"missing") HAVE_DOXYGEN_MARKDOWN=no ;;
+	*)
+	    case `$DOXYGEN --version` in
+		1.[0-7]* ) HAVE_DOXYGEN_MARKDOWN=no;;
+		*) HAVE_DOXYGEN_MARKDOWN=yes;;
+	    esac ;;
+    esac
 ],
 [
 	DOXYGEN=missing 
+	HAVE_DOXYGEN_MARKDOWN=no
 ])
+AC_SUBST(HAVE_DOXYGEN_MARKDOWN)
+AM_CONDITIONAL(DO_DOXYGEN_MD, test "x$HAVE_DOXYGEN_MARKDOWN" = "xyes")
+
 AC_PATH_PROGS(DOT, [dot], missing, $PATH:/usr/local/bin:/usr/local/graph*/bin)
 AC_SUBST(PATHDOT, [`dirname "${DOT}"`])
 AM_CONDITIONAL(DO_DOT, test "x$DOT" != "xmissing")
@@ -135,7 +148,26 @@ AC_ARG_ENABLE(autotest,
 AM_CONDITIONAL(DO_AUTOTEST, test "$ENAB" = yes)
 
 
+AC_ARG_WITH(getoptplus,
+[AS_HELP_STRING([--with-getoptplus],[Enable inclusion of an improved getopt .jar; default=search])],
+[
+    case "$withval" in
+	"yes") WITH_GETOPTJAR=$((locate getopt.jar) | grep -v .workdir | head -1) ;;
+	"no")  WITH_GETOPTJAR=no  ;;
+	*) WITH_GETOPTJAR="$withval" ;;
+    esac
+],
+[
+AC_MSG_CHECKING([for getopt.jar])
+    WITH_GETOPTJAR=$((locate getopt.jar) | grep -v .workdir | head -1) ;
+AC_MSG_RESULT([${WITH_GETOPTJAR}])
+])
+AM_CONDITIONAL(DO_GETOPTJAR, test "$WITH_GETOPTJAR" != no)
+AC_SUBST([GETOPTJAR], ${WITH_GETOPTJAR})
+
+
 AC_CONFIG_FILES(Makefile
+  convjars/Makefile 
   depjars/Makefile 
   java/Makefile java/zonefile.y java/bnazone.y java/NicknameParser.java java/Alias4Parser.java java/devicealias.y
   java/version.java
