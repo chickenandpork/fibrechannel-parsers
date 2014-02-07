@@ -27,8 +27,44 @@ Alias: 10:00:00:00:c9:44:44:30, NASMany_654321
 Alias: 10:00:00:00:c9:44:44:31, NASMany_654321
 ], [stderr])
 
+AT_CLEANUP()
+
+
+AT_SETUP(alishow Double cfg Block)
+dnl      ----------------------
+
 AT_CHECK([java -Ddebug.verboseTokenizer=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-multicfg.zoneshow ], 0, [stdout], [stderr])
 AT_CHECK([java -Ddebug.dumpAliases=AliShowZoneParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-multicfg.zoneshow ], 0, [Parse results for AliShowZoneParser:
+Zones: 4
+Aliases: 11 (names with one or more WWPNs)
+Aliases: 16 (name/WWPN pairs)
+Alias: 50:06:0e:80:12:34:57:24, HDS0123457_CL3E
+Alias: 50:06:0e:80:12:34:57:25, HDS0123457_CL3F
+Alias: 50:06:0e:80:12:34:57:44, HDS0123457_CL5E
+Alias: 50:06:0e:80:12:34:57:45, HDS0123457_CL5F
+Alias: 50:06:0e:80:12:34:57:64, HDS0123457_CL7E
+Alias: 50:06:0e:80:12:34:57:65, HDS0123457_CL7F
+Alias: 10:00:00:00:c9:12:34:66, Oracle_123466
+Alias: 10:00:00:00:c9:12:34:67, Oracle_123467
+Alias: 10:00:00:00:c9:12:34:68, NASHead_123468
+Alias: 10:00:00:00:c9:12:34:69, NASHead_123469
+Alias: 10:00:00:00:c9:44:44:10, NASMany_654321
+Alias: 10:00:00:00:c9:44:44:11, NASMany_654321
+Alias: 10:00:00:00:c9:44:44:20, NASMany_654321
+Alias: 10:00:00:00:c9:44:44:21, NASMany_654321
+Alias: 10:00:00:00:c9:44:44:30, NASMany_654321
+Alias: 10:00:00:00:c9:44:44:31, NASMany_654321
+], [stderr])
+
+AT_CLEANUP()
+
+
+
+AT_SETUP(alishow Ignore Hard-Zoning)
+dnl      --------------------------
+
+AT_CHECK([java -Ddebug.verboseTokenizer=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-hardzone.zoneshow ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=AliShowZoneParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-hardzone.zoneshow ], 0, [Parse results for AliShowZoneParser:
 Zones: 4
 Aliases: 11 (names with one or more WWPNs)
 Aliases: 16 (name/WWPN pairs)

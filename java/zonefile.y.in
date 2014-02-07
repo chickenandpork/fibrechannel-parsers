@@ -13,6 +13,7 @@ import java.io.*;
 %token EFFECTIVE
 %token CONFIGURATION
 %token CFG
+%token HARDZONE
 
 /* Grammar follows */
 %%
@@ -46,6 +47,7 @@ effectiveLine: itemlist {}
 itemlist: ALPHANUM { $$ = $1; }
  | itemlist ';' ALPHANUM { $$ = appendZoneAlphanum($1, $3); }
  | itemlist ALPHANUM { $$ = appendZoneAlphanum($1, $2); }
+ | itemlist HARDZONE { $$ = $1; }
  ;
 %%
 
@@ -90,6 +92,7 @@ itemlist: ALPHANUM { $$ = $1; }
                 return 0;
 	
 	    case java.io.StreamTokenizer.TT_WORD:
+	        if (verboseStringtokenizer) System.out.println("checking java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
 	        if (st.sval.equalsIgnoreCase("zone:"))
 		{
 		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ZONE \"" + st.sval + "\"");
@@ -126,6 +129,11 @@ itemlist: ALPHANUM { $$ = $1; }
 		{
 		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:CONFIGURATION \"" + st.sval + "\"");
 		    return CONFIGURATION;
+		}
+	        if (st.sval.matches("[0-9]+,[0-9]+"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:HARD-Zone \"" + st.sval + "\" (discarding)");
+		    return HARDZONE;
 		}
 		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
 		yylval = new AliShowZoneParserVal(st.sval);
@@ -267,6 +275,7 @@ public void setReader(Reader in)
  st.wordChars((int) '0', (int) '0');
  st.wordChars((int) '1', (int) '9');
  st.wordChars((int) ':', (int) ':');
+ st.wordChars((int) ',', (int) ',');
  st.wordChars((int) '_', (int) '_');
 
  // It's ordinary, and returned so that we can use as a separator.  Later, it's possible to just treat as a separator to be a bit more accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
