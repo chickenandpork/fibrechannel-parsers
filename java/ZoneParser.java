@@ -114,6 +114,8 @@ public abstract class ZoneParser extends Thread
         System.out.println("Zones: "+zoneSize());
         System.out.println("Aliases: "+aliasSize() + " (names with one or more WWPNs)");
 
+	if (0 < aliasSize())
+	{
         java.util.PriorityQueue<ZPAliasEntry> pq = new java.util.PriorityQueue(aliasSize());
         for (ZPAliasEntry e: aliasArray())
             pq.add(e);
@@ -125,6 +127,7 @@ public abstract class ZoneParser extends Thread
             for (ZPAliasEntry e: pq)
                 for (String s: e.wwns)
                     System.out.println("Alias: "+s+", "+e.name());
+	}
     }
 
 }
