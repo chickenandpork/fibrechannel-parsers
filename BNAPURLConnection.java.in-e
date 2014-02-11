@@ -194,6 +194,11 @@ public class BNAPURLConnection extends java.net.URLConnection
     }
 
 
+    /**
+     * Construct a connection URL per http://www.postgresql.org/docs/9.3/static/libpq-connect.html#LIBPQ-CONNSTRING
+     *
+     * @param url connection url of the form "<proto>://user:pass@host:port/database" parsed by a Java.net.URL constructor.
+     */
     public BNAPURLConnection(java.net.URL url)
     {
         super(url);
