@@ -204,7 +204,7 @@ for (java.sql.ResultSet source: sources)
         else
             ProgressStrocity += url.getPort();
 
-        ProgressStrocity += "/dcmdb";
+        ProgressStrocity += "/dcnmdb";
 
         String user = null;
         String pass = null;
@@ -266,7 +266,9 @@ for (java.sql.ResultSet source: sources)
         if (null == connection)
             connect();
 
-//System.out.println("Now executing the command: "+ "SELECT wwn,name FROM device_port_info");
+System.out.println("Now executing the command: "+ "SELECT wwn,alias FROM device_alias");
+System.out.println("Now executing the command: "+ "SELECT wwn,alias FROM end_port");
+System.out.println("NOT executing the command: "+ "SELECT f_wwn, np_wwn FROM npv_link");
         try
         {
             ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,alias FROM device_alias WHERE alias IS NOT NULL"));
