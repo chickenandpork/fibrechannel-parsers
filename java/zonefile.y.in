@@ -45,9 +45,9 @@ effectiveLine: itemlist {}
  ;
 
 itemlist: ALPHANUM { $$ = $1; }
- | itemlist ';' ALPHANUM { $$ = appendZoneAlphanum($1, $3); }
- | itemlist ALPHANUM { $$ = appendZoneAlphanum($1, $2); }
- | itemlist HARDZONE { $$ = $1; }
+ | ';' itemlist { $$ = $2; }
+ | HARDZONE itemlist { $$ = $2; }
+ | ALPHANUM itemlist { $$ = appendZoneAlphanum($2, $1); }
  ;
 %%
 
@@ -64,6 +64,7 @@ itemlist: ALPHANUM { $$ = $1; }
     }
 
     boolean verboseStringtokenizer = checkProperty("debug.verboseTokenizer");
+    boolean moreVerboseStringtokenizer = checkProperty("debug.moreVerboseTokenizer");
     String manualPushBackALPHANUM = null;
 
     int yylex()
@@ -92,7 +93,7 @@ itemlist: ALPHANUM { $$ = $1; }
                 return 0;
 	
 	    case java.io.StreamTokenizer.TT_WORD:
-	        if (verboseStringtokenizer) System.out.println("checking java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
+	        if (moreVerboseStringtokenizer) System.out.println("checking java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
 	        if (st.sval.equalsIgnoreCase("zone:"))
 		{
 		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ZONE \"" + st.sval + "\"");
@@ -132,7 +133,7 @@ itemlist: ALPHANUM { $$ = $1; }
 		}
 	        if (st.sval.matches("[0-9]+,[0-9]+"))
 		{
-		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:HARD-Zone \"" + st.sval + "\" (discarding)");
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:HARDZone \"" + st.sval + "\"");
 		    return HARDZONE;
 		}
 		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
@@ -289,6 +290,8 @@ public void setReader(Reader in)
 
 public void run()
 {
+  if (checkProperty("debug.debugTokenizer")) setDebug(true);
+
   if (0 != yyparse())
     try
     {
@@ -314,7 +317,7 @@ public ZPAliasEntry[] aliases() { return (ZPAliasEntry[]) aliases.toArray(); }
 
 public static void main(String args[])
 {
- AliShowZoneParser aszp = new AliShowZoneParser(System.in,false);
+ AliShowZoneParser aszp = new AliShowZoneParser(System.in, false);
 
  aszp.testSummary(args);
 }

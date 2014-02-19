@@ -63,7 +63,7 @@ AT_CLEANUP()
 AT_SETUP(alishow Ignore Hard-Zoning)
 dnl      --------------------------
 
-AT_CHECK([java -Ddebug.verboseTokenizer=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-hardzone.zoneshow ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.debugTokenizer=AliShowZoneParser -Ddebug.verboseTokenizer=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-hardzone.zoneshow ], 0, [stdout], [stderr])
 AT_CHECK([java -Ddebug.dumpAliases=AliShowZoneParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-hardzone.zoneshow ], 0, [Parse results for AliShowZoneParser:
 Zones: 4
 Aliases: 11 (names with one or more WWPNs)
@@ -105,13 +105,9 @@ AT_DATA([multiWWPN.zoneshow], [Defined configuration:
                 10:00:00:00:c9:44:44:30; 10:00:00:00:c9:44:44:31
 ])
 
-AT_CHECK([java -Ddebug.verboseAppendZone=AliShowZoneParser -Ddebug.verboseAddZone=AliShowZoneParser -Ddebug.dumpAliases=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < multiWWPN.zoneshow ], 0, [append: list.sval: 10:00:00:00:c9:44:44:10
+AT_CHECK([java -Ddebug.verboseAppendZone=AliShowZoneParser -Ddebug.verboseAddZone=AliShowZoneParser -Ddebug.dumpAliases=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < multiWWPN.zoneshow ], 0, [append: list.sval: 10:00:00:00:c9:44:44:31
 append: list.obj: NULL
-append: item.sval: 10:00:00:00:c9:44:44:11
-append: item.obj: NULL
-append: list.sval: NULL
-append: list.obj: java.util.Vector
-append: item.sval: 10:00:00:00:c9:44:44:20
+append: item.sval: 10:00:00:00:c9:44:44:30
 append: item.obj: NULL
 append: list.sval: NULL
 append: list.obj: java.util.Vector
@@ -119,11 +115,15 @@ append: item.sval: 10:00:00:00:c9:44:44:21
 append: item.obj: NULL
 append: list.sval: NULL
 append: list.obj: java.util.Vector
-append: item.sval: 10:00:00:00:c9:44:44:30
+append: item.sval: 10:00:00:00:c9:44:44:20
 append: item.obj: NULL
 append: list.sval: NULL
 append: list.obj: java.util.Vector
-append: item.sval: 10:00:00:00:c9:44:44:31
+append: item.sval: 10:00:00:00:c9:44:44:11
+append: item.obj: NULL
+append: list.sval: NULL
+append: list.obj: java.util.Vector
+append: item.sval: 10:00:00:00:c9:44:44:10
 append: item.obj: NULL
 Parse results for AliShowZoneParser:
 Zones: 0

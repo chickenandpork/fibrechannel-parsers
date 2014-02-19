@@ -4,12 +4,12 @@ public class ZPAliasEntry implements java.lang.Comparable<ZPAliasEntry>
 {
     String name;
     public enum DeviceType { DEV_UNKNOWN, DEV_SERVER, DEV_SWITCH, DEV_STORAGE, DEV_TAPE, DEV_VIRTUALIZER, DEV_OTHER };
-    java.util.Vector<String> wwns = new java.util.Vector(1,2);
+    java.util.TreeSet<String> wwns = new java.util.TreeSet();
 
     ZPAliasEntry (String name, String WWN)
     {
         this.name = name;
-        this.wwns.add(WWN);
+        this.wwns.add(WWN.toLowerCase());
     }
     ZPAliasEntry (String name)
     {
@@ -17,16 +17,16 @@ public class ZPAliasEntry implements java.lang.Comparable<ZPAliasEntry>
     }
     void addAlias (String wwn)
     {
-        wwns.add(wwn);
+        wwns.add(wwn.toLowerCase());
     }
 
     public String name()
     {
         return this.name;
     }
-    public java.util.Enumeration<String> getWWNs()
+    public java.util.Iterator<String> getWWNs()
     {
-        return wwns.elements();
+        return wwns.iterator();
     }
     public String[] getWWNArray()
     {

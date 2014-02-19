@@ -21,20 +21,17 @@ if DO_BYACC
 BUILT_SOURCES += AliShowZoneParser.java AliShowZoneParserVal.java
 
 AliShowZoneParser.java AliShowZoneParserVal.java: zonefile.y
-	echo $(BYACC) -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jimplements=ZoneParser -Jextends=Thread -Jclass=AliShowZoneParser -J $<
-	$(BYACC) -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=AliShowZoneParser -J $<
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=AliShowZoneParser -J $<
 
 BUILT_SOURCES += BNAZoneParser.java BNAZoneParserVal.java
 
 BNAZoneParser.java BNAZoneParserVal.java: bnazone.y
-	echo $(BYACC) -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jimplements=ZoneParser -Jextends=Thread -Jclass=BNAZoneParser -J $<
-	$(BYACC) -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=BNAZoneParser -J $<
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=BNAZoneParser -J $<
 
 BUILT_SOURCES += DeviceAliasParser.java DeviceAliasParserVal.java
 
 DeviceAliasParser.java DeviceAliasParserVal.java: devicealias.y
-	echo $(BYACC) -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jimplements=ZoneParser -Jextends=Thread -Jclass=DeviceAliasParser -J $<
-	$(BYACC) -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=DeviceAliasParser -J $<
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=DeviceAliasParser -J $<
 
 endif
 	

@@ -30,11 +30,12 @@ Defined configuration:
 Effective configuration:
  cfg:   SAN_CFG_B
  zone:  SANASVR001_FabA
-                10:00:00:00:c9:12:34:66
+		11,124
+		10:00:00:00:c9:12:34:66
                 50:06:0e:80:12:34:56:78
                 50:06:0e:80:12:34:56:79
  zone:  SANASVR002_FabA
-                10:00:00:00:c9:12:34:67
+		11,125; 10:00:00:00:c9:12:34:67
                 50:06:0e:80:12:34:56:7a
                 50:06:0e:80:12:34:56:7b
  zone:  SANASVR003_FabA
