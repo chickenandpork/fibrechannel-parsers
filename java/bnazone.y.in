@@ -31,9 +31,6 @@ itemlist: ALPHANUM { $$ = $1; }
 
 %%
 
-    java.util.Vector<ZPZoneEntry> zones = new java.util.Vector();
-    java.util.Vector<ZPAliasEntry> aliases = new java.util.Vector();
-
     String ins;
     java.io.StreamTokenizer st;
     boolean zpquiet = true;
