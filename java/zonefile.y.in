@@ -47,6 +47,7 @@ effectiveLine: itemlist {}
 itemlist: ALPHANUM { $$ = $1; }
  | ';' itemlist { $$ = $2; }
  | HARDZONE itemlist { $$ = $2; }
+ | HARDZONE { } ;
  | ALPHANUM itemlist { $$ = appendZoneAlphanum($2, $1); }
  ;
 %%

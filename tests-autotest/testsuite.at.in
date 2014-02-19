@@ -65,7 +65,7 @@ dnl      --------------------------
 
 AT_CHECK([java -Ddebug.debugTokenizer=AliShowZoneParser -Ddebug.verboseTokenizer=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-hardzone.zoneshow ], 0, [stdout], [stderr])
 AT_CHECK([java -Ddebug.dumpAliases=AliShowZoneParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/simple-hardzone.zoneshow ], 0, [Parse results for AliShowZoneParser:
-Zones: 4
+Zones: 5
 Aliases: 11 (names with one or more WWPNs)
 Aliases: 16 (name/WWPN pairs)
 Alias: 50:06:0e:80:12:34:57:24, HDS0123457_CL3E
