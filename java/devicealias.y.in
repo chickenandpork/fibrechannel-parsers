@@ -103,12 +103,12 @@ effectiveLine: DEVICEALIAS NAME ALPHANUM PWWN ALPHANUM { addAlias ($3, $5); }
 		    return PWWN;
 		}
 		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
-		yylval = new DeviceAliasParserVal(st.sval);
+		yylval = new ZoneParserVal(st.sval);
 		return ALPHANUM;
 
 	    case java.io.StreamTokenizer.TT_NUMBER:
 	        if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_NUMBER \"" + st.sval + "\" as \"" + st.nval + "\"");
-		yylval = new DeviceAliasParserVal(st.nval);
+		yylval = new ZoneParserVal(st.nval);
 		return ALPHANUM;
 
 	    case ':':
@@ -132,79 +132,6 @@ public void parse()
  catch (Exception e)
  {
  }
-}
-
-void addZone(DeviceAliasParserVal name, DeviceAliasParserVal list)
-{
-//System.out.println(" ZZone: " + name.sval + " -- xx");
-//System.out.println("name.sval: " + (null == name.sval ? "NULL" : name.sval));
-//System.out.println("name.obj: " + (null == name.obj ? "NULL" : name.obj.getClass().getName()));
-//System.out.println("list.sval: " + (null == list.sval ? "NULL" : list.sval));
-//System.out.println("list.obj: " + (null == list.obj ? "NULL" : list.obj.getClass().getName()));
-
-    if (null != list.sval)
-	addZone (name.sval, list.sval);
-    else if (list.obj.getClass() == java.util.Vector.class)
-	addZone (name.sval, (java.util.Vector<DeviceAliasParserVal>) list.obj);
-    else if (list.obj.getClass() == DeviceAliasParserVal.class)
-	addZone (name, (DeviceAliasParserVal)list.obj);
-}
-void addAlias(DeviceAliasParserVal name, DeviceAliasParserVal list)
-{
-    if (null != list.sval)
-	addAlias (name.sval, list.sval);
-    else if (list.obj.getClass() == java.util.Vector.class)
-	addAlias (name.sval, (java.util.Vector<DeviceAliasParserVal>) list.obj);
-    else if (list.obj.getClass() == DeviceAliasParserVal.class)
-	addAlias (name, (DeviceAliasParserVal)list.obj);
-}
-
-void addZone(String name, String list)
-{
-    zones.add(new ZPZoneEntry (name,list));
-}
-
-void addZone(String name, java.util.Vector<DeviceAliasParserVal> list)
-{
-    ZPZoneEntry ze = new ZPZoneEntry (name);
-    for (java.util.Enumeration<DeviceAliasParserVal> e = list.elements(); e.hasMoreElements();)
-    {
-       ze.addZone(e.nextElement().sval);
-    }
-
-    zones.add(ze);
- }
-void addAlias(String name, String list)
-{
-    aliases.add(new ZPAliasEntry (name,list));
-}
-
-void addAlias(String name, java.util.Vector<DeviceAliasParserVal> list)
-{
-    ZPAliasEntry ze = new ZPAliasEntry (name);
-    for (java.util.Enumeration<DeviceAliasParserVal> e = list.elements(); e.hasMoreElements();)
-    {
-       ze.addAlias(e.nextElement().sval);
-    }
-
-    aliases.add(ze);
- }
-
-DeviceAliasParserVal appendZoneAlphanum(DeviceAliasParserVal list, DeviceAliasParserVal item)
-{
-    if (list.obj.getClass().getName().equals(java.util.Vector.class.getName()))
-    {
-	((java.util.Vector) list.obj).add(item);
-	return list;
-    }
-    else 
-    {
-	java.util.Vector<DeviceAliasParserVal> li = new java.util.Vector(2,2);
-	DeviceAliasParserVal retNewList = new DeviceAliasParserVal(li);
-	li.add(list);
-	li.add(item);
-	return retNewList;
-    }
 }
 
 
@@ -255,13 +182,6 @@ public void setDebug(boolean debug) { yydebug=debug; }
 
 public DeviceAliasParser(InputStream in, boolean debugMe) { super(in, debugMe); }
 public DeviceAliasParser(java.util.Properties in, boolean debugMe) { super(in, debugMe); }
-
-public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements(); }
-public int zoneSize() { return zones.size(); }
-public java.util.Enumeration<ZPAliasEntry> aliasElements() { return aliases.elements(); }
-public ZPAliasEntry[] aliasArray() { return aliases.toArray(new ZPAliasEntry[1]); }
-public int aliasSize() { return aliases.size(); }
-public ZPAliasEntry[] aliases() { return (ZPAliasEntry[]) aliases.toArray(); }
 
 
 public static void main(String args[])

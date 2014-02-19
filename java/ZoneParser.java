@@ -4,11 +4,11 @@ import java.io.*;
 
 public abstract class ZoneParser extends Thread
 {
-    public abstract java.util.Enumeration<ZPZoneEntry> zoneElements();
+    public abstract java.util.Iterator<ZPZoneEntry> zoneElements();
 
     public abstract int zoneSize();
 
-    public abstract java.util.Enumeration<ZPAliasEntry> aliasElements();
+    public abstract java.util.Iterator<ZPAliasEntry> aliasElements();
 
     public abstract ZPAliasEntry[] aliasArray();
 

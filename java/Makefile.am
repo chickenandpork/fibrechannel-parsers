@@ -1,7 +1,7 @@
-nodist_pkgdata_JAVA = Alias4Parser.java NicknameParser.java ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java ZPZoneEntry.java ZoneParser.java
-nodist_pkgdata_JAVA += AliShowZoneParser.java AliShowZoneParserVal.java
-nodist_pkgdata_JAVA += BNAZoneParser.java BNAZoneParserVal.java
-nodist_pkgdata_JAVA += DeviceAliasParser.java DeviceAliasParserVal.java
+nodist_pkgdata_JAVA = Alias4Parser.java NicknameParser.java ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java ZPZoneEntry.java ZoneParser.java ZoneParserVal.java ZoneParserI.java
+nodist_pkgdata_JAVA += AliShowZoneParser.java
+nodist_pkgdata_JAVA += BNAZoneParser.java
+nodist_pkgdata_JAVA += DeviceAliasParser.java
 nodist_pkgdata_JAVA += version.java
 
 nodist_pkgdata_DATA = @PACKAGE@.jar
@@ -21,17 +21,17 @@ if DO_BYACC
 BUILT_SOURCES += AliShowZoneParser.java AliShowZoneParserVal.java
 
 AliShowZoneParser.java AliShowZoneParserVal.java: zonefile.y
-	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=AliShowZoneParser -J $<
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=AliShowZoneParser -J $<
 
 BUILT_SOURCES += BNAZoneParser.java BNAZoneParserVal.java
 
 BNAZoneParser.java BNAZoneParserVal.java: bnazone.y
-	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=BNAZoneParser -J $<
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=BNAZoneParser -J $<
 
 BUILT_SOURCES += DeviceAliasParser.java DeviceAliasParserVal.java
 
 DeviceAliasParser.java DeviceAliasParserVal.java: devicealias.y
-	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParser -Jclass=DeviceAliasParser -J $<
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=DeviceAliasParser -J $<
 
 endif
 	
