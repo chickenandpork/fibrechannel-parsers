@@ -18,19 +18,20 @@ BUILT_SOURCES =
 
 
 if DO_BYACC
-BUILT_SOURCES += AliShowZoneParser.java AliShowZoneParserVal.java
 
-AliShowZoneParser.java AliShowZoneParserVal.java: zonefile.y
+BUILT_SOURCES += AliShowZoneParser.java
+
+AliShowZoneParser.java: zonefile.y
 	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=AliShowZoneParser -J $<
 
-BUILT_SOURCES += BNAZoneParser.java BNAZoneParserVal.java
+BUILT_SOURCES += BNAZoneParser.java
 
-BNAZoneParser.java BNAZoneParserVal.java: bnazone.y
+BNAZoneParser.java: bnazone.y
 	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=BNAZoneParser -J $<
 
-BUILT_SOURCES += DeviceAliasParser.java DeviceAliasParserVal.java
+BUILT_SOURCES += DeviceAliasParser.java
 
-DeviceAliasParser.java DeviceAliasParserVal.java: devicealias.y
+DeviceAliasParser.java: devicealias.y
 	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=DeviceAliasParser -J $<
 
 endif
