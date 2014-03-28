@@ -24,6 +24,7 @@ SVN_CHECK_JDK([1.6.0])
 AM_CONDITIONAL(DO_JAVA, test "$JAVAC" != none)
 
 AC_PATH_PROGS(BYACC, [yacc.macosx byaccj], [missing byacc], $PATH:$HOME/bin)
+if test "x$BYACC" = "xmissing byacc"; then echo "BYACC available at http://byaccj.sourceforge.net/#download"; fi
 AM_CONDITIONAL(DO_BYACC, true)
 AM_CONDITIONAL(DO_CHECKLOCAL_PARSER, false)
 dnl AM_CONDITIONAL(DO_BYACC, test "$BYACC" != "missing byacc")
