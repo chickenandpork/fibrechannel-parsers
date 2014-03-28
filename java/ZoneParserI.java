@@ -143,9 +143,9 @@ void addAlias(ZoneParserVal name, ZoneParserVal list)
         addAlias (name, (ZoneParserVal)list.obj);
 }
 
-void addAlias(String name, String list)
+void addAlias(String name, String wwn)
 {
-    aliases.add(new ZPAliasEntry (name,list));
+    aliases.add(new ZPAliasEntry (name,wwn));
 }
 
 void addAlias(String name, java.util.Vector<ZoneParserVal> list)

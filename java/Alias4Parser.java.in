@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class Alias4Parser extends ZoneParser
+public class Alias4Parser extends ZoneParserI
 {
     BufferedReader br;
     java.util.Vector<ZPFCAliasEntry> fcaliases = new java.util.Vector();
@@ -14,29 +14,6 @@ public class Alias4Parser extends ZoneParser
     {
         zpquiet = !debug;
     }
-
-    public java.util.Enumeration<ZPZoneEntry> zoneElements()
-    {
-        return null;
-    }
-    public int zoneSize()
-    {
-        return 0;
-    }
-
-    public java.util.Enumeration<ZPAliasEntry> aliasElements()
-    {
-        return null;
-    }
-    public ZPAliasEntry[] aliasArray()
-    {
-        return null;
-    }
-    public int aliasSize()
-    {
-        return 0;
-    }
-
 
 
     public void setReader(java.io.Reader is)
@@ -65,15 +42,78 @@ public class Alias4Parser extends ZoneParser
                         ;
                     else if (lb.length > 4)
                         ;
-                    else if (! lb[0].equalsIgnoreCase("fcid"))
-                        ;
-                    else if (4 == lb.length) fcaliases.add(new ZPFCAliasEntry(lb[1],lb[2],lb[3]));
-                    else fcaliases.add(new ZPFCAliasEntry(lb[1],lb[2]));
+                    else if (lb[0].equalsIgnoreCase("fcid"))
+                    {
+			if (4 == lb.length) fcaliases.add(new ZPFCAliasEntry(lb[1],lb[2],lb[3]));
+                    	else fcaliases.add(new ZPFCAliasEntry(lb[1],lb[2]));
+		    }
+                    else if (lb[0].equalsIgnoreCase("logicalfabric"))
+			;
+                    else if (lb[0].equalsIgnoreCase("lun"))
+			;
+                    else if (lb[0].equalsIgnoreCase("wwn"))
+                    {
+                    	addAlias(lb[1],lb[2]);
+		    }
                 }
             }
             catch (java.io.IOException ioe)
             {
                 if (!zpquiet) System.out.println(getClass().getName() + " I/O Error: " + ioe.getMessage());
             }
+    }
+
+    /**
+     * Create a parser with a new stream, defaulting to no debug, and verbose ZP debug
+     *
+     * @param in InputStream that is the source of bytes to consume
+     */
+    public Alias4Parser(java.io.InputStream in)
+    {
+        this(in, false);
+    }
+
+
+    /**
+     * Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug
+     */
+    public Alias4Parser()
+    {
+        this((Reader) null, false);
+    }
+
+
+    /**
+     * Create a parser with a new stream
+     *
+     * @param in InputStream that is the source of bytes to consume
+     * @param debugMe true for debugging, false for no debug.
+     */
+    public Alias4Parser(java.io.InputStream in, boolean debugMe)
+    {
+        this(new BufferedReader(new InputStreamReader(in)), debugMe);
+    }
+
+
+
+    /**
+     * Create a parser, setting the debug to true or false
+     *
+     * @param in Reader that is the source of bytes to consume
+     * @param debugMe true for debugging, false for no debug.
+     */
+    public Alias4Parser(Reader in, boolean debugMe)
+    {
+        if (null != in) setReader(in);
+        setDebug(debugMe);
+    }
+
+
+
+    public static void main(String args[])
+    {
+     Alias4Parser aszp = new Alias4Parser(System.in, false);
+
+     aszp.testSummary(args);
     }
 }
