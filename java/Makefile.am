@@ -1,14 +1,17 @@
-nodist_pkgdata_JAVA = Alias4Parser.java NicknameParser.java ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java ZPZoneEntry.java ZoneParser.java ZoneParserVal.java ZoneParserI.java
-nodist_pkgdata_JAVA += AliShowZoneParser.java
-nodist_pkgdata_JAVA += BNAZoneParser.java
-nodist_pkgdata_JAVA += DeviceAliasParser.java
-nodist_pkgdata_JAVA += version.java
+nodist_java_JAVA = Alias4Parser.java NicknameParser.java ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java ZPZoneEntry.java ZoneParser.java ZoneParserVal.java ZoneParserI.java
+nodist_java_JAVA += AliShowZoneParser.java
+nodist_java_JAVA += BNAZoneParser.java
+nodist_java_JAVA += DeviceAliasParser.java
+nodist_java_JAVA += Select2Sample.java
+nodist_java_JAVA += version.java
+javadir = $(pkgdir)
 
-nodist_pkgdata_DATA = @PACKAGE@.jar
+
+nodist_java_DATA = @PACKAGE@.jar
 # https://downloads.sourceforge.net/project/byaccj/byaccj/1.15/byaccj1.15_macosx.tar.gz?r=http%3A%2F%2Fbyaccj.sourceforge.net%2F&ts=1347235095&use_mirror=voxel
 
 
-EXTRA_DIST = $(nodist_pkgdata_JAVA)  zonefile.y bnazone.y version.java.in
+EXTRA_DIST = $(nodist_java_JAVA)  zonefile.y bnazone.y version.java.in
 CONFIG_CLEAN_FILES = @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java DeviceAliasParserVal.java
 
 AM_JAVACFLAGS= -cp $(JAVAROOT):$(top_builddir)/depjars/commons-io-2.3.jar
@@ -40,15 +43,15 @@ endif
 JAVAROOT = bld
 BUILT_SOURCES += javaroot.stamp
 
-javaroot.stamp: $(nodist_pkgdata_JAVA)
+javaroot.stamp: $(nodist_java_JAVA)
 	mkdir -p $(JAVAROOT) && touch $@
 
 @PACKAGE@.jar: classnodist_pkgdata.stamp
-	awk -v BUILDTOP="bld" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_pkgdata_JAVA) | $(SHELL)
+	awk -v BUILDTOP="bld" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_java_JAVA) | $(SHELL)
 	touch @PACKAGE@.class
 
 clean-local:
-	CLASSES=`for i in $(nodist_pkgdata_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
+	CLASSES=`for i in $(nodist_java_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
 	rm -f @PACKAGE@.jar $(notdir $(subdir)).jar $(BUILT_SOURCES)
 
 if DO_CHECKLOCAL_PARSER
