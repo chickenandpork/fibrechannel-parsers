@@ -266,6 +266,9 @@ public class BNAPURLConnection extends java.net.URLConnection
      * may want to consider later (http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf):
      * - select port_wwn,name from hba_target_info;
      * - select port_nwwn,physical_port_nwwn,name from hba_port_details_info;
+     *
+     * @page Compatibility
+     * @section BNA 10.x, 11.x, 12.0 (with edit to data/databases/pg_hba.conf to allow host), 12.1 (pg_hba.conf edit, 12.1.0 and 12.1.4)
      */
     public java.io.InputStream getInputStream()
     {
@@ -281,7 +284,21 @@ public class BNAPURLConnection extends java.net.URLConnection
             new Thread(rsp).start();
 //System.out.println("Newer zone content parsed; going to nickname format");
 
-            ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,name FROM device_port_info WHERE name IS NOT NULL"), aszp);
+/**
+* @jvmopt debug.carleton:
+* For testing and additional info, -Ddebug.carleton causes the "old" query to be swapped with a pull from hba_target_info
+*/
+
+            ResultCSVPipe res;
+if (false != Boolean.parseBoolean(System.getProperties().getProperty("debug.carleton")))
+{
+	System.out.println("Activating the Chris Carleton workaround #1 (hba_target_info)");
+            res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT port_wwn,name FROM hba_target_info WHERE name IS NOT NULL"), aszp);
+}
+else
+{
+            res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,name FROM device_port_info WHERE name IS NOT NULL"), aszp);
+}
             new Thread(res).start();
             return new java.io.PipedInputStream(res);
         }
