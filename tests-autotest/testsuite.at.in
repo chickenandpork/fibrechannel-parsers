@@ -141,6 +141,17 @@ AT_CLEANUP()
 
 
 
+AT_SETUP(User-given bnazone testcase)
+dnl      ---------------------------
+
+AT_CHECK([if test @USERBNATESTCASE@ = missing ; then exit 77; fi])
+AT_CHECK([java -cp $abs_srcdir/../java/bld org.smallfoot.parser.boneheadbits.Select2Sample < @USERBNATESTCASE@], 0, [stdout], [])
+AT_CHECK([java -cp $abs_srcdir/../java/bld org.smallfoot.parser.BNAZoneParser < stdout], 0, [], [])
+
+AT_CLEANUP()
+
+
+
 AT_SETUP(Doxygen confirmation of marked-up content)
 dnl      -----------------------------------------
 
