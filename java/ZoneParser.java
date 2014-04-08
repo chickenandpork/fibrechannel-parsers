@@ -110,6 +110,16 @@ public abstract class ZoneParser extends Thread
     public void testSummary(String args[])
     {
         run();
+	summarize();
+    }
+
+
+
+    /**
+     * Summarize the parsing results to stdout
+     */
+    public void summarize()
+    {
         System.out.println("Parse results for "+getClass().getName().replaceAll("^.*\\.","") + ":");
         System.out.println("Zones: "+zoneSize());
         System.out.println("Aliases: "+aliasSize() + " (names with one or more WWPNs)");

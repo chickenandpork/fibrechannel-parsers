@@ -39,7 +39,7 @@ public class ParserTee extends org.apache.commons.io.input.TeeInputStream
      * @param zp a ZoneParser to consume a copy of the incoming datastream
      * @throw java.io.IOException if PipedOutputStream(PipedInputStream) throws the same
      */
-    static OutputStream pipeOutputStreamTo (ZoneParser zp) throws java.io.IOException
+    public static OutputStream pipeOutputStreamTo (ZoneParser zp) throws java.io.IOException
     {
         PipedInputStream ip = new PipedInputStream();
         //zp.setReader(new BufferedReader(new InputStreamReader(ip)));

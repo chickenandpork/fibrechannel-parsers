@@ -145,11 +145,17 @@ void addAlias(ZoneParserVal name, ZoneParserVal list)
 
 void addAlias(String name, String wwn)
 {
+    if (checkProperty("debug.verboseAddAlias"))
+	System.out.println("add: " + (null == name ? "NULL" : name) + " --> wwn: "+wwn);
+
     aliases.add(new ZPAliasEntry (name,wwn));
 }
 
 void addAlias(String name, java.util.Vector<ZoneParserVal> list)
 {
+    if (checkProperty("debug.verboseAddAlias"))
+	System.out.println("add: " + (null == name ? "NULL" : name));
+
     ZPAliasEntry ze = new ZPAliasEntry (name);
     for (java.util.Enumeration<ZoneParserVal> e = list.elements(); e.hasMoreElements();)
     {
