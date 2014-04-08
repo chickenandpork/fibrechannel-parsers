@@ -266,9 +266,12 @@ for (java.sql.ResultSet source: sources)
         if (null == connection)
             connect();
 
-System.out.println("Now executing the command: "+ "SELECT wwn,alias FROM device_alias");
-System.out.println("Now executing the command: "+ "SELECT wwn,alias FROM end_port");
-System.out.println("NOT executing the command: "+ "SELECT f_wwn, np_wwn FROM npv_link");
+        /**
+         * @sa http://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_x/technical/reference/DCNM-SAN_Published/dbschema/db_tab.html#wp1319153
+        */
+        System.out.println("Now executing the command: "+ "SELECT wwn,alias FROM device_alias");
+        System.out.println("Now executing the command: "+ "SELECT wwn,alias FROM end_port");
+        System.out.println("NOT executing the command: "+ "SELECT f_wwn, np_wwn FROM npv_link");
         try
         {
             ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,alias FROM device_alias WHERE alias IS NOT NULL"));
