@@ -1,7 +1,8 @@
-nodist_pkgdata_JAVA = Handler.java DCNMURLConnection.java 
+nodist_java_JAVA = Handler.java DCNMURLConnection.java 
 nodist_pkgdata_DATA = $(subdir).jar
+javadir = $(pkgdir)
 
-EXTRA_DIST = $(nodist_pkgdata_JAVA)  Handler.java.in DCNMURLConnection.java.in
+EXTRA_DIST = $(nodist_java_JAVA)  Handler.java.in DCNMURLConnection.java.in
 CONFIG_CLEAN_FILES = $(subdir).jar
 
 AM_JAVACFLAGS= -cp @FCPARSERSJAR@
@@ -19,15 +20,15 @@ postgresql-9.1-902.jdbc4.jar:
 JAVAROOT = bld
 BUILT_SOURCES += javaroot.stamp
 
-javaroot.stamp: $(nodist_pkgdata_JAVA)
+javaroot.stamp: $(nodist_java_JAVA)
 	mkdir -p $(JAVAROOT) && touch $@
 
-@PACKAGE@.jar: classnodist_pkgdata.stamp
-	awk -v BUILDTOP="bld" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_pkgdata_JAVA) | $(SHELL)
+@PACKAGE@.jar: classjava.stamp
+	awk -v BUILDTOP="bld" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_java_JAVA) | $(SHELL)
 	touch $(notdir $(subdir)).class
 
 clean-local:
-	CLASSES=`for i in $(nodist_pkgdata_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
+	CLASSES=`for i in $(nodist_java_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
 
 
 $(subdir).jar: @PACKAGE@.jar $(BUILT_SOURCES)
