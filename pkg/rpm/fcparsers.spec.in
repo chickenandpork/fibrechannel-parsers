@@ -36,7 +36,6 @@ Tools and Resources collected from my "fctools" project for parsing various Fibr
 
 %install
 make install DESTDIR=%{buildroot}
-rm %{buildroot}/%{_datadir}/@PACKAGE@/@PACKAGE@.class
 rm -fr %{buildroot}/%{_datadir}/@PACKAGE@/jars
 
 %clean
