@@ -184,6 +184,6 @@ public DeviceAliasParser(java.util.Properties in, boolean debugMe) { super(in, d
 public static void main(String args[])
 {
  DeviceAliasParser aszp = new DeviceAliasParser(System.in,false);
- aszp.parse();
- System.out.println("zonefile (main) parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
+
+ aszp.testSummary(args);
 }
