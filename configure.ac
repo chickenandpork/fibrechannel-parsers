@@ -20,7 +20,7 @@ AC_PROG_MAKE_SET
 
 AC_SUBST(AUTOM4TE, autom4te)
 
-SVN_CHECK_JDK([1.6.0])
+SVN_CHECK_JDK([1.6],[1.6])
 AM_CONDITIONAL(DO_JAVA, test "$JAVAC" != none)
 
 AC_PATH_PROGS(BYACC, [yacc.macosx byaccj], [missing byacc], $PATH:$HOME/bin)
