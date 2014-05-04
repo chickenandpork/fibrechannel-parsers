@@ -3,6 +3,7 @@ nodist_java_JAVA += AliShowZoneParser.java
 nodist_java_JAVA += BNAZoneParser.java
 nodist_java_JAVA += DeviceAliasParser.java
 nodist_java_JAVA += Select2Sample.java
+nodist_java_JAVA += ShowZoneParser.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
@@ -31,6 +32,11 @@ BUILT_SOURCES += BNAZoneParser.java
 
 BNAZoneParser.java: bnazone.y
 	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=BNAZoneParser -J $<
+
+BUILT_SOURCES += ShowZoneParser.java
+
+ShowZoneParser.java: showzone.y
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=ShowZoneParser -J $<
 
 BUILT_SOURCES += DeviceAliasParser.java
 

@@ -145,22 +145,50 @@ AT_SETUP(Cisco device-alias Parser)
 dnl      -------------------------
 
 AT_CHECK([java -Ddebug.verboseTokenizer=DeviceAliasParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.DeviceAliasParser < abs_top_srcdir/samples/simple.devicealias ], 0, [stdout], [stderr])
-AT_CHECK([java -Ddebug.dumpAliases=DeviceAliasParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.DeviceAliasParser < abs_top_srcdir/samples/simple.devicealias ], 0, [Parse results for DeviceAliasParser:
-Zones: 0
-Aliases: 12 (names with one or more WWPNs)
-Aliases: 12 (name/WWPN pairs)
-Alias: 50:06:0e:80:12:34:56:24, HDS0123456_CL3E
-Alias: 50:06:0e:80:12:34:56:44, HDS0123456_CL5E
-Alias: 50:06:0e:80:12:34:56:25, HDS0123456_CL3F
-Alias: 50:06:0e:80:12:34:56:6e, HDS0123456_CL7P
-Alias: 50:06:0e:80:12:34:56:45, HDS0123456_CL5F
-Alias: 50:06:0e:80:12:34:56:64, HDS0123456_CL7E
-Alias: 50:06:0e:80:12:34:56:65, HDS0123456_CL7F
-Alias: 10:00:00:00:c9:12:34:66, Oracle_123466
-Alias: 50:06:0e:80:12:34:56:6f, HDS0123456_CL7Q
+AT_CHECK([java -Ddebug.dumpAliases=DeviceAliasParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.DeviceAliasParser < abs_top_srcdir/samples/simple.devicealias ], 0, [stdout], [stderr])
+AT_CHECK([sort stdout], 0, [Alias: 10:00:00:00:c9:12:34:66, Oracle_123466
 Alias: 10:00:00:00:c9:12:34:67, Oracle_123467
 Alias: 10:00:00:00:c9:12:34:68, NASHead_123468
 Alias: 10:00:00:00:c9:12:34:69, NASHead_123469
+Alias: 50:06:0e:80:12:34:56:24, HDS0123456_CL3E
+Alias: 50:06:0e:80:12:34:56:25, HDS0123456_CL3F
+Alias: 50:06:0e:80:12:34:56:44, HDS0123456_CL5E
+Alias: 50:06:0e:80:12:34:56:45, HDS0123456_CL5F
+Alias: 50:06:0e:80:12:34:56:64, HDS0123456_CL7E
+Alias: 50:06:0e:80:12:34:56:65, HDS0123456_CL7F
+Alias: 50:06:0e:80:12:34:56:6e, HDS0123456_CL7P
+Alias: 50:06:0e:80:12:34:56:6f, HDS0123456_CL7Q
+Aliases: 12 (name/WWPN pairs)
+Aliases: 12 (names with one or more WWPNs)
+Parse results for DeviceAliasParser:
+Zones: 0
+], [stderr])
+
+AT_CLEANUP()
+
+
+
+AT_SETUP(Cisco showzone Parser)
+dnl      ---------------------
+
+AT_CHECK([java -Ddebug.verboseTokenizer=ShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.ShowZoneParser < abs_top_srcdir/samples/simple.shzone ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=ShowZoneParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.ShowZoneParser < abs_top_srcdir/samples/simple.shzone ], 0, [stdout], [stderr])
+AT_CHECK([sort stdout], 0, [Alias: 10:00:00:00:c9:12:34:66, Oracle_123466
+Alias: 10:00:00:00:c9:12:34:67, Oracle_123467
+Alias: 10:00:00:00:c9:12:34:68, NASHead_123468
+Alias: 10:00:00:00:c9:12:34:69, NASHead_123469
+Alias: 50:06:0e:80:12:34:56:78, HDS0123457_CL7F
+Alias: 50:06:0e:80:12:34:56:79, HDS0123457_CL7F
+Alias: 50:06:0e:80:12:34:56:7a, SANASVR003_FabA
+Alias: 50:06:0e:80:12:34:56:7b, HDS0123457_CL7F
+Alias: 50:06:0e:80:12:34:56:7c, vclprFpdc01_hba2_A1
+Alias: 50:06:0e:80:12:34:56:7d, HDS0123457_CL7F
+Alias: 50:06:0e:80:12:34:56:7e, vclprFpdc01_hba2_A1
+Alias: 50:06:0e:80:12:34:56:7f, HDS0123457_CL7F
+Aliases: 12 (name/WWPN pairs)
+Aliases: 12 (names with one or more WWPNs)
+Parse results for ShowZoneParser:
+Zones: 0
 ], [stderr])
 
 AT_CLEANUP()
