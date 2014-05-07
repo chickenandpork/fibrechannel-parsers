@@ -191,6 +191,28 @@ Parse results for ShowZoneParser:
 Zones: 0
 ], [stderr])
 
+AT_CHECK([echo 'switchname#sh zone' > work], 0, [], [])
+AT_CHECK([cat abs_top_srcdir/samples/simple.shzone >> work], 0, [], [])
+AT_CHECK([java -Ddebug.verboseTokenizer=ShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.ShowZoneParser < work ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=ShowZoneParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.ShowZoneParser < work ], 0, [stdout], [stderr])
+AT_CHECK([sort stdout], 0, [Alias: 10:00:00:00:c9:12:34:66, Oracle_123466
+Alias: 10:00:00:00:c9:12:34:67, Oracle_123467
+Alias: 10:00:00:00:c9:12:34:68, NASHead_123468
+Alias: 10:00:00:00:c9:12:34:69, NASHead_123469
+Alias: 50:06:0e:80:12:34:56:78, HDS0123457_CL7F
+Alias: 50:06:0e:80:12:34:56:79, HDS0123457_CL7F
+Alias: 50:06:0e:80:12:34:56:7a, SANASVR003_FabA
+Alias: 50:06:0e:80:12:34:56:7b, HDS0123457_CL7F
+Alias: 50:06:0e:80:12:34:56:7c, vclprFpdc01_hba2_A1
+Alias: 50:06:0e:80:12:34:56:7d, HDS0123457_CL7F
+Alias: 50:06:0e:80:12:34:56:7e, vclprFpdc01_hba2_A1
+Alias: 50:06:0e:80:12:34:56:7f, HDS0123457_CL7F
+Aliases: 12 (name/WWPN pairs)
+Aliases: 12 (names with one or more WWPNs)
+Parse results for ShowZoneParser:
+Zones: 0
+], [stderr])
+
 AT_CLEANUP()
 
 

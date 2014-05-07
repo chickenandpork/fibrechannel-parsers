@@ -17,11 +17,12 @@ import java.io.*;
 /* Grammar follows */
 %%
 input: /* empty string */
- | input '\n'
+ | ALPHANUM input
  | input zone
  ;
 
-zone: ZONE NAME ALPHANUM zoneline
+zone: ZONE
+ | ZONE NAME ALPHANUM zoneline
  | ZONE NAME ALPHANUM VSAN ALPHANUM zoneline
  ;
 
@@ -171,6 +172,7 @@ public void setReader(Reader in)
 
  // ok, dots, numbers, things accepted as WWNs or names are generally "words"
  st.wordChars((int) '.', (int) '.');
+ st.wordChars((int) '#', (int) '#');
  st.wordChars((int) '0', (int) '0');
  st.wordChars((int) '1', (int) '9');
  st.wordChars((int) ':', (int) ':');
