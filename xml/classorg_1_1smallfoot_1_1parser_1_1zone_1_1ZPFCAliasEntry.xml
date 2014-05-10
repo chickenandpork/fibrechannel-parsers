@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::zone::ZPFCAliasEntry</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1aaf0cbfcefdfa25db6585e81ebb0f2c0c" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String fabric</definition>
+        <argsstring></argsstring>
+        <name>fabric</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="5" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a2db7f0ff6b69231ed6be4f87d38f2cff" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String fcid</definition>
+        <argsstring></argsstring>
+        <name>fcid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a9a2326f35466e54c36c070829245c557" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="7" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1afaa8025d1e0c67fa9ec920f60c2b2b95" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZPFCAliasEntry</definition>
+        <argsstring>(String fcid, String name, String fabric)</argsstring>
+        <name>ZPFCAliasEntry</name>
+        <param>
+          <type>String</type>
+          <declname>fcid</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>fabric</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="9" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a85aa95244c7c1c63666d4ff90a466fdf" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZPFCAliasEntry</definition>
+        <argsstring>(String fcid, String name)</argsstring>
+        <name>ZPFCAliasEntry</name>
+        <param>
+          <type>String</type>
+          <declname>fcid</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="15" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="15" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a029906acf4f1bf35093141bf40fb7568" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String fabric</definition>
+        <argsstring>()</argsstring>
+        <name>fabric</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="21" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a4a386aabb5767691ba52abae205ee718" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String fcid</definition>
+        <argsstring>()</argsstring>
+        <name>fcid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="25" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1afa2149aced9d90555f788dfc81c23d15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="29" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="29" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1abc067dc0c4eb499a400d7df2ad4f5da2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>static boolean isFCID</definition>
+        <argsstring>(String fcid)</argsstring>
+        <name>isFCID</name>
+        <param>
+          <type>String</type>
+          <declname>fcid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="34" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="34" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" line="4" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPFCAliasEntry.java" bodystart="3" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1aaf0cbfcefdfa25db6585e81ebb0f2c0c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>fabric</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a029906acf4f1bf35093141bf40fb7568" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>fabric</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a2db7f0ff6b69231ed6be4f87d38f2cff" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>fcid</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a4a386aabb5767691ba52abae205ee718" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>fcid</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1abc067dc0c4eb499a400d7df2ad4f5da2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>isFCID</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a9a2326f35466e54c36c070829245c557" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>name</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1afa2149aced9d90555f788dfc81c23d15" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>name</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1afaa8025d1e0c67fa9ec920f60c2b2b95" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>ZPFCAliasEntry</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry_1a85aa95244c7c1c63666d4ff90a466fdf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPFCAliasEntry</scope><name>ZPFCAliasEntry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

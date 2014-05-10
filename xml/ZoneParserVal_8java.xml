@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="ZoneParserVal_8java" kind="file">
+    <compoundname>ZoneParserVal.java</compoundname>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" prot="public">org::smallfoot::parser::zone::ZoneParserVal</innerclass>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1zone">org::smallfoot::parser::zone</innernamespace>
+    <briefdescription>
+<para>Originally created by BYACC/J but extracted to allow parent ZoneParser class to be intelligent BYACC/J Semantic Value for parser: ZoneParser This class provides some of the functionality of the yacc/C &apos;union&apos; directive. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java"/>
+  </compounddef>
+</doxygen>

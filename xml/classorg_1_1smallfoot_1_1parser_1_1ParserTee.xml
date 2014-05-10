@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1ParserTee" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::ParserTee</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TeeInputStream</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>OutputStream</type>
+        <definition>static OutputStream pipeOutputStreamTo</definition>
+        <argsstring>(ZoneParser zp)</argsstring>
+        <name>pipeOutputStreamTo</name>
+        <param>
+          <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" kindref="compound">ZoneParser</ref></type>
+          <declname>zp</declname>
+        </param>
+        <exceptions> throws java.io.IOException     </exceptions>
+        <briefdescription>
+<para>Tee off the datastream and set it to sink into the given ZoneParser. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>new OutputStream connected to the ZoneParser&apos;s input to which the tee or fork of the incoming datastream can/should be dumped </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>zp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a ZoneParser to consume a copy of the incoming datastream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.io.IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if PipedOutputStream(PipedInputStream) throws the same </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ParserTee.java" line="42" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ParserTee.java" bodystart="42" bodyend="49"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a0827a34f92131d39860a9f9df6a4b8c3" compoundref="ParserTee_8java" startline="58" endline="61">ParserTee.ParserTee</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a0827a34f92131d39860a9f9df6a4b8c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ParserTee</definition>
+        <argsstring>(InputStream input, ZoneParser zp)</argsstring>
+        <name>ParserTee</name>
+        <param>
+          <type>InputStream</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" kindref="compound">ZoneParser</ref></type>
+          <declname>zp</declname>
+        </param>
+        <exceptions> throws java.io.IOException     </exceptions>
+        <briefdescription>
+<para>Create a link in a chain of parser tees. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the incoming datastream to read from and pass through </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>zp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a ZoneParser to consume a copy of the incoming datastream </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.io.IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if PipedOutputStream(PipedInputStream) throws the same </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ParserTee.java" line="58" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ParserTee.java" bodystart="58" bodyend="61"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" compoundref="ParserTee_8java" startline="42" endline="49">ParserTee.pipeOutputStreamTo</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="149">
+        <label>ParserTee</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>TeeInputStream</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="151">
+        <label>ParserTee</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee"/>
+        <childnode refid="152" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>TeeInputStream</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/ParserTee.java" line="12" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ParserTee.java" bodystart="11" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a0827a34f92131d39860a9f9df6a4b8c3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ParserTee</scope><name>ParserTee</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ParserTee</scope><name>pipeOutputStreamTo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::zone::BNAZoneParserVal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a19233a42865dd45eae5fc8cf34a6775a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ival</definition>
+        <argsstring></argsstring>
+        <name>ival</name>
+        <briefdescription>
+<para>integer value of this &apos;union&apos; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="17" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="17" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1aa654698bab3f21cf1e471a235f55f4db" compoundref="BNAZoneParserVal_8java" startline="46" endline="49">BNAZoneParserVal.BNAZoneParserVal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1acefc0ddbab467d8de90049105846767c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double dval</definition>
+        <argsstring></argsstring>
+        <name>dval</name>
+        <briefdescription>
+<para>double value of this &apos;union&apos; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="22" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="22" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a175cc8ee8da633ba92fd4f626496f8eb" compoundref="BNAZoneParserVal_8java" startline="54" endline="57">BNAZoneParserVal.BNAZoneParserVal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a277083a86232087ccdbaa1f691f3a3ff" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String sval</definition>
+        <argsstring></argsstring>
+        <name>sval</name>
+        <briefdescription>
+<para>string value of this &apos;union&apos; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="27" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="27" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1afcb2190fba606d96346c235b6e4e5bf5" compoundref="BNAZoneParserVal_8java" startline="62" endline="65">BNAZoneParserVal.BNAZoneParserVal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a3a6f22968f6ad522baa85c809b856bae" prot="public" static="no" mutable="no">
+        <type>Object</type>
+        <definition>Object obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+<para>object value of this &apos;union&apos; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="32" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a7d0e23383e0acec439e9f27c74169b7e" compoundref="BNAZoneParserVal_8java" startline="70" endline="73">BNAZoneParserVal.BNAZoneParserVal</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a6df3dfd0bb1a7217ee69d29365a0a15a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BNAZoneParserVal</definition>
+        <argsstring>()</argsstring>
+        <name>BNAZoneParserVal</name>
+        <briefdescription>
+<para>Initialize me without a value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="40" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1aa654698bab3f21cf1e471a235f55f4db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BNAZoneParserVal</definition>
+        <argsstring>(int val)</argsstring>
+        <name>BNAZoneParserVal</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize me as an int. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="46" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="46" bodyend="49"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a19233a42865dd45eae5fc8cf34a6775a" compoundref="BNAZoneParserVal_8java" startline="17">BNAZoneParserVal.ival</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a175cc8ee8da633ba92fd4f626496f8eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BNAZoneParserVal</definition>
+        <argsstring>(double val)</argsstring>
+        <name>BNAZoneParserVal</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize me as a double. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="54" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="54" bodyend="57"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1acefc0ddbab467d8de90049105846767c" compoundref="BNAZoneParserVal_8java" startline="22">BNAZoneParserVal.dval</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1afcb2190fba606d96346c235b6e4e5bf5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BNAZoneParserVal</definition>
+        <argsstring>(String val)</argsstring>
+        <name>BNAZoneParserVal</name>
+        <param>
+          <type>String</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize me as a string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="62" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="62" bodyend="65"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a277083a86232087ccdbaa1f691f3a3ff" compoundref="BNAZoneParserVal_8java" startline="27">BNAZoneParserVal.sval</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a7d0e23383e0acec439e9f27c74169b7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BNAZoneParserVal</definition>
+        <argsstring>(Object val)</argsstring>
+        <name>BNAZoneParserVal</name>
+        <param>
+          <type>Object</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize me as an Object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="70" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="70" bodyend="73"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a3a6f22968f6ad522baa85c809b856bae" compoundref="BNAZoneParserVal_8java" startline="32">BNAZoneParserVal.obj</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>BYACC/J Semantic Value for parser: <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref> This class provides some of the functionality of the yacc/C &apos;union&apos; directive. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" line="13" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParserVal.java" bodystart="12" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a6df3dfd0bb1a7217ee69d29365a0a15a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>BNAZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1aa654698bab3f21cf1e471a235f55f4db" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>BNAZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a175cc8ee8da633ba92fd4f626496f8eb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>BNAZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1afcb2190fba606d96346c235b6e4e5bf5" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>BNAZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a7d0e23383e0acec439e9f27c74169b7e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>BNAZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1acefc0ddbab467d8de90049105846767c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>dval</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a19233a42865dd45eae5fc8cf34a6775a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>ival</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a3a6f22968f6ad522baa85c809b856bae" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>obj</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParserVal_1a277083a86232087ccdbaa1f691f3a3ff" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParserVal</scope><name>sval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

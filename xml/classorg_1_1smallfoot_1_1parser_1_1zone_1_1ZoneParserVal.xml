@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::zone::ZoneParserVal</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a19233a42865dd45eae5fc8cf34a6775a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ival</definition>
+        <argsstring></argsstring>
+        <name>ival</name>
+        <briefdescription>
+<para>integer value of this &apos;union&apos; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="19" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="19" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1aefecc91652325afa2976508f17d91485" compoundref="ZoneParserVal_8java" startline="48" endline="51">ZoneParserVal.ZoneParserVal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1acefc0ddbab467d8de90049105846767c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double dval</definition>
+        <argsstring></argsstring>
+        <name>dval</name>
+        <briefdescription>
+<para>double value of this &apos;union&apos; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="24" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="24" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1aff05064bdd6d2d0f40fc043c2a88008f" compoundref="ZoneParserVal_8java" startline="56" endline="59">ZoneParserVal.ZoneParserVal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a277083a86232087ccdbaa1f691f3a3ff" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String sval</definition>
+        <argsstring></argsstring>
+        <name>sval</name>
+        <briefdescription>
+<para>string value of this &apos;union&apos; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="29" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a9e80205c3a378ccb9e0aac1e498c81f6" compoundref="ZoneParserVal_8java" startline="64" endline="67">ZoneParserVal.ZoneParserVal</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a3a6f22968f6ad522baa85c809b856bae" prot="public" static="no" mutable="no">
+        <type>Object</type>
+        <definition>Object obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+<para>object value of this &apos;union&apos; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="34" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="34" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a615bc34ca29fafd1fc6d120babcd9289" compoundref="ZoneParserVal_8java" startline="72" endline="75">ZoneParserVal.ZoneParserVal</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a7bd74d453054f1bfc0bd18dfab63f13e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZoneParserVal</definition>
+        <argsstring>()</argsstring>
+        <name>ZoneParserVal</name>
+        <briefdescription>
+<para>Initialize me without a value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="42" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1aefecc91652325afa2976508f17d91485" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZoneParserVal</definition>
+        <argsstring>(int val)</argsstring>
+        <name>ZoneParserVal</name>
+        <param>
+          <type>int</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize me as an int. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="48" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="48" bodyend="51"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a19233a42865dd45eae5fc8cf34a6775a" compoundref="ZoneParserVal_8java" startline="19">ZoneParserVal.ival</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1aff05064bdd6d2d0f40fc043c2a88008f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZoneParserVal</definition>
+        <argsstring>(double val)</argsstring>
+        <name>ZoneParserVal</name>
+        <param>
+          <type>double</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize me as a double. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="56" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="56" bodyend="59"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1acefc0ddbab467d8de90049105846767c" compoundref="ZoneParserVal_8java" startline="24">ZoneParserVal.dval</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a9e80205c3a378ccb9e0aac1e498c81f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZoneParserVal</definition>
+        <argsstring>(String val)</argsstring>
+        <name>ZoneParserVal</name>
+        <param>
+          <type>String</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize me as a string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="64" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="64" bodyend="67"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a277083a86232087ccdbaa1f691f3a3ff" compoundref="ZoneParserVal_8java" startline="29">ZoneParserVal.sval</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a615bc34ca29fafd1fc6d120babcd9289" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZoneParserVal</definition>
+        <argsstring>(Object val)</argsstring>
+        <name>ZoneParserVal</name>
+        <param>
+          <type>Object</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Initialize me as an Object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="72" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="72" bodyend="75"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a3a6f22968f6ad522baa85c809b856bae" compoundref="ZoneParserVal_8java" startline="34">ZoneParserVal.obj</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" line="15" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserVal.java" bodystart="14" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1acefc0ddbab467d8de90049105846767c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>dval</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a19233a42865dd45eae5fc8cf34a6775a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>ival</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a3a6f22968f6ad522baa85c809b856bae" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>obj</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a277083a86232087ccdbaa1f691f3a3ff" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>sval</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a7bd74d453054f1bfc0bd18dfab63f13e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>ZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1aefecc91652325afa2976508f17d91485" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>ZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1aff05064bdd6d2d0f40fc043c2a88008f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>ZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a9e80205c3a378ccb9e0aac1e498c81f6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>ZoneParserVal</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal_1a615bc34ca29fafd1fc6d120babcd9289" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserVal</scope><name>ZoneParserVal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

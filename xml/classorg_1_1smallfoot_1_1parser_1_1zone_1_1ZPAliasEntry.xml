@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::zone::ZPAliasEntry</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">java::lang::Comparable&lt; ZPAliasEntry &gt;</basecompoundref>
+    <innerclass refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType" prot="public">org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</innerclass>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a9a2326f35466e54c36c070829245c557" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="5" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a679154f48ec2a0c2339f57892fd95b7d" prot="package" static="no" mutable="no">
+        <type>java.util.TreeSet&lt; String &gt;</type>
+        <definition>java.util.TreeSet&lt;String&gt; wwns</definition>
+        <argsstring></argsstring>
+        <name>wwns</name>
+        <initializer>= new java.util.TreeSet()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="7" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a8dcddc25ac6822355c96c048ec6425ff" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZPAliasEntry</definition>
+        <argsstring>(String name, String WWN)</argsstring>
+        <name>ZPAliasEntry</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>WWN</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="9" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1afb41473f6f2d96fe5a59cfba35e4272b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZPAliasEntry</definition>
+        <argsstring>(String name)</argsstring>
+        <name>ZPAliasEntry</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="14" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a2f5f3c0590fde4600fee4ae884b30454" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void addAlias</definition>
+        <argsstring>(String wwn)</argsstring>
+        <name>addAlias</name>
+        <param>
+          <type>String</type>
+          <declname>wwn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="18" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="18" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1afa2149aced9d90555f788dfc81c23d15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String name</definition>
+        <argsstring>()</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="23" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a615bd9484115d596c7ea43e7a74f0b17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.util.Iterator&lt; String &gt;</type>
+        <definition>java.util.Iterator&lt;String&gt; getWWNs</definition>
+        <argsstring>()</argsstring>
+        <name>getWWNs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="27" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1ad91f327feecd7baf6b0a99938adb5201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String[]</type>
+        <definition>String [] getWWNArray</definition>
+        <argsstring>()</argsstring>
+        <name>getWWNArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="31" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a202e7da3074eb820067bc4e288aa0744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int compareTo</definition>
+        <argsstring>(ZPAliasEntry y)</argsstring>
+        <name>compareTo</name>
+        <param>
+          <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="36" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="36" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="190">
+        <label>ZPAliasEntry</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>Comparable&lt; ZPAliasEntry &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="192">
+        <label>ZPAliasEntry</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>Comparable&lt; ZPAliasEntry &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="4" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="3" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a2f5f3c0590fde4600fee4ae884b30454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a202e7da3074eb820067bc4e288aa0744" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>compareTo</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1ad91f327feecd7baf6b0a99938adb5201" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>getWWNArray</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a615bd9484115d596c7ea43e7a74f0b17" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>getWWNs</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a9a2326f35466e54c36c070829245c557" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>name</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1afa2149aced9d90555f788dfc81c23d15" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>name</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a679154f48ec2a0c2339f57892fd95b7d" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>wwns</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a8dcddc25ac6822355c96c048ec6425ff" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>ZPAliasEntry</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1afb41473f6f2d96fe5a59cfba35e4272b" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>ZPAliasEntry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

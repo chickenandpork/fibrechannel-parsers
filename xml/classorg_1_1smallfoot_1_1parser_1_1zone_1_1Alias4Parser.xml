@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::zone::Alias4Parser</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" prot="public" virt="non-virtual">ZoneParserI</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a4e1353cca944de55b1cff88ca87b23cd" prot="package" static="no" mutable="no">
+        <type>BufferedReader</type>
+        <definition>BufferedReader br</definition>
+        <argsstring></argsstring>
+        <name>br</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="9" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a38f6db9d4d540b728b2815e7d38559f1" prot="package" static="no" mutable="no">
+        <type>java.util.Vector&lt; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry" kindref="compound">ZPFCAliasEntry</ref> &gt;</type>
+        <definition>java.util.Vector&lt;ZPFCAliasEntry&gt; fcaliases</definition>
+        <argsstring></argsstring>
+        <name>fcaliases</name>
+        <initializer>= new java.util.Vector()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="10" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1acd46a0f826a276c736966f6193f717cc" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean zpquiet</definition>
+        <argsstring></argsstring>
+        <name>zpquiet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="11" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDebug</definition>
+        <argsstring>(boolean debug)</argsstring>
+        <name>setDebug</name>
+        <param>
+          <type>boolean</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="13" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="13" bodyend="16"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" compoundref="Alias4Parser_8java" startline="105" endline="109">Alias4Parser.Alias4Parser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1aa89f56e94a76b211df071f905e7288ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setReader</definition>
+        <argsstring>(java.io.Reader is)</argsstring>
+        <name>setReader</name>
+        <param>
+          <type>java.io.Reader</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="19" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="19" bodyend="22"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" compoundref="Alias4Parser_8java" startline="105" endline="109">Alias4Parser.Alias4Parser</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a7b003de53f79832df5f1845e91a48d76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Alias4Parser</definition>
+        <argsstring>(java.util.Properties in, boolean debugMe)</argsstring>
+        <name>Alias4Parser</name>
+        <param>
+          <type>java.util.Properties</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>debugMe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="24" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="30" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="30" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a298e31048a0168fc5cc4e79abc966fd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Alias4Parser</definition>
+        <argsstring>(java.io.InputStream in)</argsstring>
+        <name>Alias4Parser</name>
+        <param>
+          <type>java.io.InputStream</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>Create a parser with a new stream, defaulting to no debug, and verbose ZP debug. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>InputStream that is the source of bytes to consume </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="71" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1af385e3c075112d912bb0dad0d9324372" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Alias4Parser</definition>
+        <argsstring>()</argsstring>
+        <name>Alias4Parser</name>
+        <briefdescription>
+<para>Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="80" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="80" bodyend="83"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="Alias4Parser_8java" startline="113" endline="118">Alias4Parser.main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a6332334673488c613c5ea2d667b98626" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Alias4Parser</definition>
+        <argsstring>(java.io.InputStream in, boolean debugMe)</argsstring>
+        <name>Alias4Parser</name>
+        <param>
+          <type>java.io.InputStream</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>debugMe</declname>
+        </param>
+        <briefdescription>
+<para>Create a parser with a new stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>InputStream that is the source of bytes to consume </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debugMe</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true for debugging, false for no debug. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="92" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Alias4Parser</definition>
+        <argsstring>(Reader in, boolean debugMe)</argsstring>
+        <name>Alias4Parser</name>
+        <param>
+          <type>Reader</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>debugMe</declname>
+        </param>
+        <briefdescription>
+<para>Create a parser, setting the debug to true or false. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reader that is the source of bytes to consume </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debugMe</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true for debugging, false for no debug. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="105" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="105" bodyend="109"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a6c13d260cf71d0554f789c4641a9f18b" compoundref="Alias4Parser_8java" startline="13" endline="16">Alias4Parser.setDebug</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1aa89f56e94a76b211df071f905e7288ae" compoundref="Alias4Parser_8java" startline="19" endline="22">Alias4Parser.setReader</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void main</definition>
+        <argsstring>(String args[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>String</type>
+          <declname>args</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="113" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="113" bodyend="118"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1af385e3c075112d912bb0dad0d9324372" compoundref="Alias4Parser_8java" startline="80" endline="83">Alias4Parser.Alias4Parser</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="99">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>Thread</label>
+      </node>
+      <node id="100">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>Alias4Parser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="106">
+        <label>BufferedReader</label>
+      </node>
+      <node id="103">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="104" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>Thread</label>
+      </node>
+      <node id="104">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>Alias4Parser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="106" relation="usage">
+          <edgelabel>br</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="7" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>_prop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a49f8902117520ae3cc27b7bddb370a0e" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a21a0aa226fb1154f5413f84fd78ae2c4" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab02480bb67091ad319f56a9dd13ea899" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a55d78812ef0e9e26eabc46c0269ec3ad" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0cfe7f047edd054bac3bc33e9b611afd" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a830731cb1af2631d89e512f38460be81" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a7b003de53f79832df5f1845e91a48d76" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>Alias4Parser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a298e31048a0168fc5cc4e79abc966fd2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>Alias4Parser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1af385e3c075112d912bb0dad0d9324372" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>Alias4Parser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a6332334673488c613c5ea2d667b98626" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>Alias4Parser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>Alias4Parser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5c646608669073b5c31bb44626baa48f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliasArray</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a1631138fd08af051dc26686c00768ab3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliasElements</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0dc8b05b3f25e59bc98f90dc8c64857c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliases</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliasSize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ad9eac83891611fa5e2e983328603eb8a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>appendZoneAlphanum</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a4e1353cca944de55b1cff88ca87b23cd" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>br</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a5cb1996c3b0edb483631b6c82fd82608" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>checkProperty</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a38f6db9d4d540b728b2815e7d38559f1" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>fcaliases</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>main</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>setDebug</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1aa89f56e94a76b211df071f905e7288ae" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>setReader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>summarize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>testSummary</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a17bb9b86877d4493c7ad4ba284f7c945" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>zoneElements</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a89f1cfcb18c2aaa76794a8ce060637fb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adc74e849472a0632eb0910b719acfa77" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a18c7e8b0a1166e23d1fc9605e4740ccc" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1abe50de6630cefa98b757505c1b5fda0b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1aab55b15bec7ad0340c51c26dca3b8dc6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a11196447ea6972d5c557a52a9da5150f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a78ce415d9f6ed283bce24ee9f700cedb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a678cd3827f5f34241ba56702cd5663a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae2743a1693169cd3b5ebc8fcafa07c74" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1acc9e1015da0abae3030920bc213a20c6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae37df97616010e6203984ccf9c42e669" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>zones</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>zoneSize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1acd46a0f826a276c736966f6193f717cc" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>zpquiet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

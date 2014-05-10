@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType" kind="enum" prot="public">
+    <compoundname>org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a2181504f7419b379d8107fa76cf98cc6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>DEV_UNKNOWN</definition>
+        <argsstring></argsstring>
+        <name>DEV_UNKNOWN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a2a5477499e7cc4af0a446cafc2fdff69" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>DEV_SERVER</definition>
+        <argsstring></argsstring>
+        <name>DEV_SERVER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a066e9d3aa3023aa6377f20e41874727d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>DEV_SWITCH</definition>
+        <argsstring></argsstring>
+        <name>DEV_SWITCH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a3ee32b644cbbba8e614f55c2d9952701" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>DEV_STORAGE</definition>
+        <argsstring></argsstring>
+        <name>DEV_STORAGE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1acc26107efaf346173b211684eb2b580a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>DEV_TAPE</definition>
+        <argsstring></argsstring>
+        <name>DEV_TAPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a9e86c3fd05c684d8834cccae3c0f0ca1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>DEV_VIRTUALIZER</definition>
+        <argsstring></argsstring>
+        <name>DEV_VIRTUALIZER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a16792ac0d619df5babc1a94c7a0296ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>DEV_OTHER</definition>
+        <argsstring></argsstring>
+        <name>DEV_OTHER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="6" bodyend="6"/>
+    <listofallmembers>
+      <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a16792ac0d619df5babc1a94c7a0296ff" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</scope><name>DEV_OTHER</name></member>
+      <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a2a5477499e7cc4af0a446cafc2fdff69" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</scope><name>DEV_SERVER</name></member>
+      <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a3ee32b644cbbba8e614f55c2d9952701" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</scope><name>DEV_STORAGE</name></member>
+      <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a066e9d3aa3023aa6377f20e41874727d" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</scope><name>DEV_SWITCH</name></member>
+      <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1acc26107efaf346173b211684eb2b580a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</scope><name>DEV_TAPE</name></member>
+      <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a2181504f7419b379d8107fa76cf98cc6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</scope><name>DEV_UNKNOWN</name></member>
+      <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a9e86c3fd05c684d8834cccae3c0f0ca1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</scope><name>DEV_VIRTUALIZER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

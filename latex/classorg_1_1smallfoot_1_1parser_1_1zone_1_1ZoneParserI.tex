@@ -1,0 +1,334 @@
+\section{Zone\-Parser\-I Class Reference}
+\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI}\index{Zone\-Parser\-I@{Zone\-Parser\-I}}
+
+
+Inheritance diagram for Zone\-Parser\-I\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Zone\-Parser\-I\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=114pt]{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+java.\-util.\-Enumeration\\*
+$<$ Z\-P\-Zone\-Entry $>$ {\bf zone\-Elements} ()
+\item 
+int {\bf zone\-Size} ()
+\item 
+java.\-util.\-Enumeration\\*
+$<$ {\bf Z\-P\-Alias\-Entry} $>$ {\bf alias\-Elements} ()
+\item 
+{\bf Z\-P\-Alias\-Entry}[$\,$] {\bf alias\-Array} ()
+\item 
+int {\bf alias\-Size} ()
+\item 
+abstract void {\bf set\-Reader} (java.\-io.\-Reader is)
+\item 
+abstract void {\bf set\-Debug} (boolean debug)
+\item 
+{\bf Zone\-Parser\-I} (java.\-io.\-Input\-Stream in)
+\begin{DoxyCompactList}\small\item\em Create a parser with a new stream, defaulting to no debug, and verbose Z\-P debug. \end{DoxyCompactList}\item 
+{\bf Zone\-Parser\-I} ()
+\begin{DoxyCompactList}\small\item\em Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug. \end{DoxyCompactList}\item 
+{\bf Zone\-Parser\-I} (java.\-io.\-Input\-Stream in, boolean debug\-Me)
+\begin{DoxyCompactList}\small\item\em Create a parser with a new stream. \end{DoxyCompactList}\item 
+{\bf Zone\-Parser\-I} (Reader in)
+\begin{DoxyCompactList}\small\item\em Create a parser with a new reader, defaulting to no debug, and verbose Z\-P debug. \end{DoxyCompactList}\item 
+{\bf Zone\-Parser\-I} (Reader in, boolean debug\-Me)
+\begin{DoxyCompactList}\small\item\em Create a parser, setting the debug to true or false. \end{DoxyCompactList}\item 
+{\bf Zone\-Parser\-I} (java.\-util.\-Properties properties, boolean debug\-Me)
+\begin{DoxyCompactList}\small\item\em Create a parser, setting the debug to true or false. \end{DoxyCompactList}\item 
+void {\bf test\-Summary} (String args[$\,$])
+\begin{DoxyCompactList}\small\item\em To test/show a descendant class, with a created parser, feed in the stdin, parse what it can, and summarize the results to stdout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file Zone\-Parser\-I.\-java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!Zone\-Parser\-I@{Zone\-Parser\-I}}
+\index{Zone\-Parser\-I@{Zone\-Parser\-I}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{Zone\-Parser\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zone\-Parser\-I} (
+\begin{DoxyParamCaption}
+\item[{java.\-io.\-Input\-Stream}]{in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a78ce415d9f6ed283bce24ee9f700cedb}
+
+
+Create a parser with a new stream, defaulting to no debug, and verbose Z\-P debug. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input\-Stream that is the source of bytes to consume \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file Zone\-Parser\-I.\-java.
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!Zone\-Parser\-I@{Zone\-Parser\-I}}
+\index{Zone\-Parser\-I@{Zone\-Parser\-I}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{Zone\-Parser\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zone\-Parser\-I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a678cd3827f5f34241ba56702cd5663a1}
+
+
+Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug. 
+
+
+
+Definition at line 40 of file Zone\-Parser\-I.\-java.
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!Zone\-Parser\-I@{Zone\-Parser\-I}}
+\index{Zone\-Parser\-I@{Zone\-Parser\-I}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{Zone\-Parser\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zone\-Parser\-I} (
+\begin{DoxyParamCaption}
+\item[{java.\-io.\-Input\-Stream}]{in, }
+\item[{boolean}]{debug\-Me}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_ae2743a1693169cd3b5ebc8fcafa07c74}
+
+
+Create a parser with a new stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input\-Stream that is the source of bytes to consume \\
+\hline
+{\em debug\-Me} & true for debugging, false for no debug. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file Zone\-Parser\-I.\-java.
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!Zone\-Parser\-I@{Zone\-Parser\-I}}
+\index{Zone\-Parser\-I@{Zone\-Parser\-I}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{Zone\-Parser\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zone\-Parser\-I} (
+\begin{DoxyParamCaption}
+\item[{Reader}]{in}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_acc9e1015da0abae3030920bc213a20c6}
+
+
+Create a parser with a new reader, defaulting to no debug, and verbose Z\-P debug. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Reader that is the source of bytes to consume \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 63 of file Zone\-Parser\-I.\-java.
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!Zone\-Parser\-I@{Zone\-Parser\-I}}
+\index{Zone\-Parser\-I@{Zone\-Parser\-I}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{Zone\-Parser\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zone\-Parser\-I} (
+\begin{DoxyParamCaption}
+\item[{Reader}]{in, }
+\item[{boolean}]{debug\-Me}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_ab13723430c8b49022eae775179389d41}
+
+
+Create a parser, setting the debug to true or false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Reader that is the source of bytes to consume \\
+\hline
+{\em debug\-Me} & true for debugging, false for no debug. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 75 of file Zone\-Parser\-I.\-java.
+
+
+
+References Zone\-Parser\-I.\-set\-Debug(), and Zone\-Parser\-I.\-set\-Reader().
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_ab13723430c8b49022eae775179389d41_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!Zone\-Parser\-I@{Zone\-Parser\-I}}
+\index{Zone\-Parser\-I@{Zone\-Parser\-I}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{Zone\-Parser\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Zone\-Parser\-I} (
+\begin{DoxyParamCaption}
+\item[{java.\-util.\-Properties}]{properties, }
+\item[{boolean}]{debug\-Me}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_ae37df97616010e6203984ccf9c42e669}
+
+
+Create a parser, setting the debug to true or false. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & additional name-\/value pair collection \\
+\hline
+{\em debug\-Me} & true for debugging, false for no debug. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file Zone\-Parser\-I.\-java.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!alias\-Array@{alias\-Array}}
+\index{alias\-Array@{alias\-Array}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{alias\-Array}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Z\-P\-Alias\-Entry} [$\,$] alias\-Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a5c646608669073b5c31bb44626baa48f}
+
+
+Definition at line 17 of file Zone\-Parser\-I.\-java.
+
+
+
+Referenced by Zone\-Parser\-I.\-test\-Summary().
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!alias\-Elements@{alias\-Elements}}
+\index{alias\-Elements@{alias\-Elements}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{alias\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}java.\-util.\-Enumeration$<${\bf Z\-P\-Alias\-Entry}$>$ alias\-Elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a1631138fd08af051dc26686c00768ab3}
+
+
+Definition at line 15 of file Zone\-Parser\-I.\-java.
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!alias\-Size@{alias\-Size}}
+\index{alias\-Size@{alias\-Size}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{alias\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int alias\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a5586367d58e0d7e6a4d5262d6dc87fd2}
+
+
+Definition at line 19 of file Zone\-Parser\-I.\-java.
+
+
+
+Referenced by B\-N\-A\-Zone\-Parser.\-main(), and Zone\-Parser\-I.\-test\-Summary().
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!set\-Debug@{set\-Debug}}
+\index{set\-Debug@{set\-Debug}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{set\-Debug}]{\setlength{\rightskip}{0pt plus 5cm}abstract void set\-Debug (
+\begin{DoxyParamCaption}
+\item[{boolean}]{debug}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_ab23378f817a0790a310e852b89a5eb1d}
+
+
+Referenced by Zone\-Parser\-I.\-Zone\-Parser\-I().
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!set\-Reader@{set\-Reader}}
+\index{set\-Reader@{set\-Reader}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{set\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}abstract void set\-Reader (
+\begin{DoxyParamCaption}
+\item[{java.\-io.\-Reader}]{is}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a19567e6611303b1035a1a101b00310e2}
+
+
+Referenced by Zone\-Parser\-I.\-Zone\-Parser\-I().
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!test\-Summary@{test\-Summary}}
+\index{test\-Summary@{test\-Summary}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{test\-Summary}]{\setlength{\rightskip}{0pt plus 5cm}void test\-Summary (
+\begin{DoxyParamCaption}
+\item[{String}]{args[$\,$]}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a70080dd2601542e3fa52cfdac8e00afb}
+
+
+To test/show a descendant class, with a created parser, feed in the stdin, parse what it can, and summarize the results to stdout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & argc/argv from a void main() run to feed any getopt herein (currently ignored) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 199 of file Zone\-Parser\-I.\-java.
+
+
+
+References Zone\-Parser\-I.\-alias\-Array(), Zone\-Parser\-I.\-alias\-Size(), and Zone\-Parser\-I.\-zone\-Size().
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a70080dd2601542e3fa52cfdac8e00afb_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!zone\-Elements@{zone\-Elements}}
+\index{zone\-Elements@{zone\-Elements}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{zone\-Elements}]{\setlength{\rightskip}{0pt plus 5cm}java.\-util.\-Enumeration$<$Z\-P\-Zone\-Entry$>$ zone\-Elements (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a17bb9b86877d4493c7ad4ba284f7c945}
+
+
+Definition at line 11 of file Zone\-Parser\-I.\-java.
+
+\index{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}!zone\-Size@{zone\-Size}}
+\index{zone\-Size@{zone\-Size}!org::smallfoot::parser::zone::ZoneParserI@{org\-::smallfoot\-::parser\-::zone\-::\-Zone\-Parser\-I}}
+\subsubsection[{zone\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int zone\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a083293963a3e77da41becf829be83aca}
+
+
+Definition at line 13 of file Zone\-Parser\-I.\-java.
+
+
+
+Referenced by Zone\-Parser\-I.\-test\-Summary().
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+java/{\bf Zone\-Parser\-I.\-java}\end{DoxyCompactItemize}

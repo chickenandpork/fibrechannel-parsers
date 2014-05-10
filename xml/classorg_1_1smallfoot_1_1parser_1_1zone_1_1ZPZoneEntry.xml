@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry" kind="class" prot="package">
+    <compoundname>org::smallfoot::parser::zone::ZPZoneEntry</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1a9a2326f35466e54c36c070829245c557" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" line="5" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1a4214db86534daa11001db6a2376f0974" prot="package" static="no" mutable="no">
+        <type>java.util.Vector&lt; String &gt;</type>
+        <definition>java.util.Vector&lt;String&gt; members</definition>
+        <argsstring></argsstring>
+        <name>members</name>
+        <initializer>= new java.util.Vector(2,2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1acd85ce9cd038c7a5819ba9af6f9cf691" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZPZoneEntry</definition>
+        <argsstring>(String name, String member)</argsstring>
+        <name>ZPZoneEntry</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>member</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1a2c91423fb426e7c594b82743ee2ebb86" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ZPZoneEntry</definition>
+        <argsstring>(String name)</argsstring>
+        <name>ZPZoneEntry</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" line="13" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1add1c7d44303c1a81f18d2371b14f254f" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void addZone</definition>
+        <argsstring>(String z)</argsstring>
+        <name>addZone</name>
+        <param>
+          <type>String</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" line="17" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" bodystart="17" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" line="4" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" bodystart="3" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1add1c7d44303c1a81f18d2371b14f254f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPZoneEntry</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1a4214db86534daa11001db6a2376f0974" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPZoneEntry</scope><name>members</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1a9a2326f35466e54c36c070829245c557" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPZoneEntry</scope><name>name</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1acd85ce9cd038c7a5819ba9af6f9cf691" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPZoneEntry</scope><name>ZPZoneEntry</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1a2c91423fb426e7c594b82743ee2ebb86" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPZoneEntry</scope><name>ZPZoneEntry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

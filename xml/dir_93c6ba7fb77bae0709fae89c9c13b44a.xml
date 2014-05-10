@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_93c6ba7fb77bae0709fae89c9c13b44a" kind="dir">
+    <compoundname>java</compoundname>
+    <innerfile refid="Alias4Parser_8java">Alias4Parser.java</innerfile>
+    <innerfile refid="AliShowZoneParser_8java">AliShowZoneParser.java</innerfile>
+    <innerfile refid="AliShowZoneParserVal_8java">AliShowZoneParserVal.java</innerfile>
+    <innerfile refid="BNAZoneParser_8java">BNAZoneParser.java</innerfile>
+    <innerfile refid="BNAZoneParserVal_8java">BNAZoneParserVal.java</innerfile>
+    <innerfile refid="DeviceAliasParser_8java">DeviceAliasParser.java</innerfile>
+    <innerfile refid="DeviceAliasParserVal_8java">DeviceAliasParserVal.java</innerfile>
+    <innerfile refid="NicknameParser_8java">NicknameParser.java</innerfile>
+    <innerfile refid="ParserTee_8java">ParserTee.java</innerfile>
+    <innerfile refid="Select2Sample_8java">Select2Sample.java</innerfile>
+    <innerfile refid="ShowZoneParser_8java">ShowZoneParser.java</innerfile>
+    <innerfile refid="version_8java">version.java</innerfile>
+    <innerfile refid="ZoneParser_8java">ZoneParser.java</innerfile>
+    <innerfile refid="ZoneParserI_8java">ZoneParserI.java</innerfile>
+    <innerfile refid="ZoneParserVal_8java">ZoneParserVal.java</innerfile>
+    <innerfile refid="ZPAliasEntry_8java">ZPAliasEntry.java</innerfile>
+    <innerfile refid="ZPFCAliasEntry_8java">ZPFCAliasEntry.java</innerfile>
+    <innerfile refid="ZPZoneEntry_8java">ZPZoneEntry.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/"/>
+  </compounddef>
+</doxygen>
