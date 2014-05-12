@@ -11,14 +11,18 @@ Alias4Parser.java
 NicknameParser.java
 bnazone.y
 devicealias.y
+showzone.y
 zonefile.y
 
 #generated buildproc
 fcparsers.class
 fcparsers.jar
-classnodist_pkgdata.stamp
+classjava.stamp
 javaroot.stamp
+version.java
 bld/
+Makefile
+Makefile.in
 
 #style == make formatting
 *.java.orig

@@ -13,7 +13,9 @@ nodist_java_DATA = @PACKAGE@.jar
 
 
 EXTRA_DIST = $(nodist_java_JAVA)  zonefile.y bnazone.y version.java.in
-CONFIG_CLEAN_FILES = @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java DeviceAliasParserVal.java
+CONFIG_CLEAN_FILES = @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java Alias4Parser.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java
+CONFIG_CLEAN_FILES += DeviceAliasParserVal.java NicknameParser.java version.java
+CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y zonefile.y
 
 AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):$(top_builddir)/depjars/commons-io-2.3.jar
 
