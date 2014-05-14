@@ -94,24 +94,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="149">
+      <node id="66">
         <label>ParserTee</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee"/>
-        <childnode refid="150" relation="public-inheritance">
+        <childnode refid="67" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="150">
+      <node id="67">
         <label>TeeInputStream</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="151">
+      <node id="68">
         <label>ParserTee</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee"/>
-        <childnode refid="152" relation="public-inheritance">
+        <childnode refid="69" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="152">
+      <node id="69">
         <label>TeeInputStream</label>
       </node>
     </collaborationgraph>
