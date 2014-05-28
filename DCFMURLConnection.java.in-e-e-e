@@ -73,9 +73,9 @@ public class DCFMURLConnection extends java.net.URLConnection
                     {
                         ZPAliasEntry alias = aliases.nextElement();
 
-                        for (java.util.Iterator<String> wwns = alias.getWWNs(); wwns.hasNext(); )
+                        for (String s: alias.getWWNArray())
                         {
-                            String res = String.format("%s,\"%s\"\n",wwns.next(), alias.name());
+                            String res = String.format("%s,\"%s\"\n",s, alias.name());
                             System.out.println("ASZP Alias: "+res);
                             write(res.getBytes(), 0, res.length());
                         }
