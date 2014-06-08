@@ -1,6 +1,29 @@
 AT_INIT()
 
 
+AT_SETUP(Alias4File Parser)
+dnl      -----------------
+
+AT_DATA([alias4file.csv], ["WWN",50:0A:09:85:98:12:34:56,NetApp-123456,Storage
+"WWN",50:0A:09:86:98:12:34:56,NetApp-123456,Storage
+"WWN",10:00:00:00:c9:12:34:56,Oracle01,Server
+"WWN",10:00:00:00:c9:12:34:57,Oracle01,Server
+])
+
+AT_CHECK([java -Ddebug.verboseTokenizer=ALias4Parser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.Alias4Parser < alias4file.csv ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=Alias4Parser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.Alias4Parser < alias4file.csv ], 0, [Parse results for Alias4Parser:
+Zones: 0
+Aliases: 4 (names with one or more WWPNs)
+Aliases: 4 (name/WWPN pairs)
+Alias: 50:0a:09:85:98:12:34:56, NetApp-123456
+Alias: 50:0a:09:86:98:12:34:56, NetApp-123456
+Alias: 10:00:00:00:c9:12:34:56, Oracle01
+Alias: 10:00:00:00:c9:12:34:57, Oracle01
+], [stderr])
+
+AT_CLEANUP()
+
+
 AT_SETUP(Brocade alishow Parser)
 dnl      ----------------------
 
