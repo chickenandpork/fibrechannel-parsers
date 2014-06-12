@@ -14,6 +14,9 @@ import java.io.*;
 %token CONFIGURATION
 %token CFG
 %token HARDZONE
+%token H
+%token OPENPAREN
+%token CLOSEPAREN
 
 /* Grammar follows */
 %%
@@ -49,6 +52,8 @@ itemlist: ALPHANUM { $$ = $1; }
  | HARDZONE itemlist { $$ = $2; }
  | HARDZONE { } ;
  | ALPHANUM itemlist { $$ = appendZoneAlphanum($2, $1); }
+ | H OPENPAREN ALPHANUM CLOSEPAREN { $$ = $3; }
+ | H OPENPAREN ALPHANUM CLOSEPAREN itemlist { $$ = appendZoneAlphanum($5, $3); }
  ;
 %%
 
@@ -129,6 +134,11 @@ itemlist: ALPHANUM { $$ = $1; }
 		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:CONFIGURATION \"" + st.sval + "\"");
 		    return CONFIGURATION;
 		}
+	        if (st.sval.equalsIgnoreCase("h"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:H \"" + st.sval + "\"");
+		    return H;
+		}
 	        if (st.sval.matches("[0-9]+,[0-9]+"))
 		{
 		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:HARDZone \"" + st.sval + "\"");
@@ -142,6 +152,11 @@ itemlist: ALPHANUM { $$ = $1; }
 	        if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_NUMBER \"" + st.sval + "\" as \"" + st.nval + "\"");
 		yylval = new ZoneParserVal(st.nval);
 		return ALPHANUM;
+
+	    case '{':
+		return OPENPAREN;
+	    case '}':
+		return CLOSEPAREN;
 
 	    case ':':
 	    case ';':
@@ -191,6 +206,9 @@ public void setReader(Reader in)
 
  // It's ordinary, and returned so that we can use as a separator.  Later, it's possible to just treat as a separator to be a bit more accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
  st.ordinaryChar((int) ';');
+
+ st.ordinaryChar((int) '{');
+ st.ordinaryChar((int) '}');
 
  st.eolIsSignificant(false);
 

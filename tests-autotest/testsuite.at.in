@@ -117,6 +117,20 @@ dnl Alias4Parser.java:public class Alias4Parser extends ZoneParser
 dnl BNAZoneParser.java:public class BNAZoneParser
 dnl DeviceAliasParser.java:public class DeviceAliasParser
 
+AT_SETUP(alishow Regression Hanging Members)
+
+AT_CHECK([java -Ddebug.verboseTokenizer=AliShowZoneParser -Ddebug.verboseAppendZone=AliShowZoneParser -Ddebug.verboseAddZone=AliShowZoneParser -Ddebug.dumpAliases=AliShowZoneParser -Ddebug.yystate=AliShowZoneParser -cp $abs_top_builddir/convjars/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/hangingmember.zoneshow ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=DeviceAliasParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < abs_top_srcdir/samples/hangingmember.zoneshow ], 0, [stdout], [stderr])
+AT_CHECK([sort stdout], 0, [Aliases: 10 (name/WWPN pairs)
+Aliases: 10 (names with one or more WWPNs)
+Parse results for AliShowZoneParser:
+Zones: 4
+], [])
+
+AT_CLEANUP()
+
+
+
 AT_SETUP(alishow Regression First WWPN Missed)
 
 AT_DATA([multiWWPN.zoneshow], [Defined configuration:
