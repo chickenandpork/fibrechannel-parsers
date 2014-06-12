@@ -208,7 +208,8 @@ public ShowZoneParser(java.util.Properties in, boolean debugMe) { super(in, debu
 
 public static void main(String args[])
 {
- ShowZoneParser aszp = new ShowZoneParser(System.in,false);
+    String p = System.getProperties().getProperty("debug.yystate");
 
- aszp.testSummary(args);
+    ShowZoneParser aszp = new ShowZoneParser(System.in, (null != p) && ((p.equalsIgnoreCase("ShowZoneParser")) || (p.equalsIgnoreCase("true"))));
+    aszp.testSummary(args);
 }

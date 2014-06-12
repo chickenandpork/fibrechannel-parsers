@@ -192,7 +192,6 @@ public void setReader(Reader in)
  // It's ordinary, and returned so that we can use as a separator.  Later, it's possible to just treat as a separator to be a bit more accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
  st.ordinaryChar((int) ';');
 
- //st.ordinaryChar((int) ':');
  st.eolIsSignificant(false);
 
 }
@@ -219,7 +218,8 @@ public AliShowZoneParser(java.util.Properties in, boolean debugMe) { super(in, d
 
 public static void main(String args[])
 {
- AliShowZoneParser aszp = new AliShowZoneParser(System.in, false);
+    String p = System.getProperties().getProperty("debug.yystate");
 
- aszp.testSummary(args);
+    AliShowZoneParser aszp = new AliShowZoneParser(System.in, (null != p) && ((p.equalsIgnoreCase("AliShowZoneParser")) || (p.equalsIgnoreCase("true"))));
+    aszp.testSummary(args);
 }

@@ -183,7 +183,8 @@ public DeviceAliasParser(java.util.Properties in, boolean debugMe) { super(in, d
 
 public static void main(String args[])
 {
- DeviceAliasParser aszp = new DeviceAliasParser(System.in,false);
+    String p = System.getProperties().getProperty("debug.yystate");
 
- aszp.testSummary(args);
+    DeviceAliasParser aszp = new DeviceAliasParser(System.in, (null != p) && ((p.equalsIgnoreCase("DeviceAliasParser")) || (p.equalsIgnoreCase("true"))));
+    aszp.testSummary(args);
 }
