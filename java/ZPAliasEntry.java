@@ -8,8 +8,8 @@ public class ZPAliasEntry implements java.lang.Comparable<ZPAliasEntry>
 
     ZPAliasEntry (String name, String WWN)
     {
-        this.name = name;
-        this.wwns.add(WWN.toLowerCase());
+        this.name = name.trim();
+        this.wwns.add(WWN.trim().toLowerCase().replaceAll(":",""));
     }
     ZPAliasEntry (String name)
     {
@@ -17,7 +17,7 @@ public class ZPAliasEntry implements java.lang.Comparable<ZPAliasEntry>
     }
     void addAlias (String wwn)
     {
-        wwns.add(wwn.toLowerCase());
+        wwns.add(wwn.trim().toLowerCase().replaceAll(":",""));
     }
 
     public String name()
