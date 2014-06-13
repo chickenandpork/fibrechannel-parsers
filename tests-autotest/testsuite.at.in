@@ -205,6 +205,27 @@ AT_CLEANUP()
 
 
 
+AT_SETUP(Cisco device-alias Dirty Sample)
+dnl      -------------------------------
+
+AT_CHECK([java -Ddebug.verboseTokenizer=DeviceAliasParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.DeviceAliasParser < abs_top_srcdir/samples/preambled.devicealias ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=DeviceAliasParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.DeviceAliasParser < abs_top_srcdir/samples/preambled.devicealias ], 0, [stdout], [stderr])
+AT_CHECK([sort stdout], 0, [Alias: 10:00:00:00:c9:12:34:56, server44_hba0
+Alias: 19:00:00:00:c9:12:34:57, server44_hba1
+Alias: 21:00:00:24:ff:12:34:56, oracle10_hba0
+Alias: 22:00:00:24:ff:12:34:56, oracle10_hba1
+Alias: 50:00:09:72:01:23:45:54, vmax-18641-fa06a0
+Alias: 50:00:09:72:01:23:45:58, vmax-18641-fa07a0
+Aliases: 6 (name/WWPN pairs)
+Aliases: 6 (names with one or more WWPNs)
+Parse results for DeviceAliasParser:
+Zones: 0
+], [stderr])
+
+AT_CLEANUP()
+
+
+
 AT_SETUP(Cisco showzone Parser)
 dnl      ---------------------
 

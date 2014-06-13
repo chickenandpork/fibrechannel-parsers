@@ -10,17 +10,27 @@ import java.io.*;
 %token NAME
 %token PWWN
 %token ALPHANUM
+%token PRE_SHOW
+%token PRE_DATABASE
 
 /* Grammar follows */
 %%
+file: skippreamble input ;
+
 input: /* empty string */
  | input '\n'
  | input effectiveLine
  ;
 
 lineContent: /* empty */
+ | ALPHANUM lineContent { $$ = $2; }
  | lineContent ALPHANUM
  | lineContent effectiveLine
+ ;
+
+skippreamble: /* empty */
+ | skippreamble ALPHANUM
+ | skippreamble ALPHANUM PRE_SHOW DEVICEALIAS PRE_DATABASE
  ;
 
 /*
@@ -99,6 +109,16 @@ effectiveLine: DEVICEALIAS NAME ALPHANUM PWWN ALPHANUM { addAlias ($3, $5); }
 		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:PWWN \"" + st.sval + "\"");
 		    return PWWN;
 		}
+	        else if (st.sval.equalsIgnoreCase("show"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:PRE_SHOW \"" + st.sval + "\"");
+		    return PRE_SHOW;
+		}
+	        else if (st.sval.equalsIgnoreCase("database"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:PRE_DATABASE \"" + st.sval + "\"");
+		    return PRE_DATABASE;
+		}
 		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
 		yylval = new ZoneParserVal(st.sval);
 		return ALPHANUM;
@@ -157,8 +177,11 @@ public void setReader(Reader in)
  // It's ordinary, and returned so that we can use as a separator.  Later, it's possible to just treat as a separator to be a bit more accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
  st.ordinaryChar((int) ';');
 
- //st.ordinaryChar((int) ':');
- st.eolIsSignificant(true);
+ st.wordChars((int) '(', (int) ')');
+ st.wordChars((int) ',', (int) ',');
+ st.wordChars((int) '#', (int) '#');
+
+ st.eolIsSignificant(false);
 
  //newline=true;
 }
