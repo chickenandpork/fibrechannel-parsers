@@ -145,6 +145,9 @@ void addAlias(ZoneParserVal name, ZoneParserVal list)
 
 void addAlias(String name, String wwn)
 {
+    name = name.replaceAll("\"","").trim();
+    wwn = wwn.replaceAll("\"","");
+
     if (checkProperty("debug.verboseAddAlias"))
 	System.out.println("add: " + (null == name ? "NULL" : name) + " --> wwn: "+wwn);
 
