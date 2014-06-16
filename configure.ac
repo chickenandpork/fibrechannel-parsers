@@ -185,6 +185,7 @@ AC_CONFIG_FILES(Makefile
   convjars/Makefile 
   depjars/Makefile 
   java/Makefile java/zonefile.y java/bnazone.y java/NicknameParser.java java/Alias4Parser.java java/devicealias.y java/showzone.y
+  java/FCParser.java
   java/version.java
   tests-autotest/Makefile tests-autotest/atlocal tests-autotest/testsuite.at
 )
