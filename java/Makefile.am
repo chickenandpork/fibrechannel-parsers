@@ -17,7 +17,7 @@ CONFIG_CLEAN_FILES = @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.j
 CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.java version.java
 CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y zonefile.y
 
-AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):$(top_builddir)/depjars/commons-io-2.3.jar
+AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES = FCParser.java

@@ -40,7 +40,7 @@ endif
 
 
 if DO_ASTYLE
-formatting: java/Alias4Parser.java.in java/NicknameParser.java.in java/ParserTee.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java
+formatting: java/Alias4Parser.java.in java/FCParser.java.in java/NicknameParser.java.in java/ParserTee.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java
 if DO_GITFORMATTING
 	@git ls-files --other --exclude-standard --directory || { echo "###################### unignored local files: git add, git commit ?"; }
 	@git diff --exit-code || { echo "###################### unstaged changes: git commit -a"; exit 1; }
