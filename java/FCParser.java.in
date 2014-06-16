@@ -109,9 +109,10 @@ public abstract class FCParser
      *
      * @return the number of things loaded (used to trigger obsessive retries to get around choking org.apache.commons.io.input.TeeInputStream )
      * @param is the inputstream to parse from
+     * @param args0 the args[0] value to substitute into the optional verbose output of oarsing results
      * @param verbose if true, parser results will be shown to stdout
      */
-    public static ZoneParser loadFile(InputStream is, boolean verbose)
+    public static ZoneParser loadFile(InputStream is, String args0, boolean verbose)
     {
         java.util.Properties prop = new java.util.Properties();
         Vector<ZoneParser> zpl = new Vector();
@@ -195,8 +196,8 @@ public abstract class FCParser
         ZoneParser winningzp = null;
         for (ZoneParser zp:zpl)
         {
-            if (verbose)
-                System.out.println("(@PACKAGE@) parsed " + zp.zoneSize() + " zones, " + zp.aliasSize() + " aliases via "+zp.getClass().getName().replaceAll(".*\\.",""));
+            if (verbose) 
+                System.out.println("("+(null == args0 ? "@PACKAGE@" : ("" == args0 ? "@PACKAGE@" : args0))+") parsed " + zp.zoneSize() + " zones, " + zp.aliasSize() + " aliases via "+zp.getClass().getName().replaceAll(".*\\.",""));
 
             if (null == winningzp)
                 winningzp = zp;
@@ -262,7 +263,7 @@ public abstract class FCParser
             switch (c)
             {
             case 'N': /* input Nicknames using file:, ftp:, http: via fibrechannel-parsers fcparsers.jar */
-                ZoneParser aszp = FCParser.loadFile(FCParser.openSource(args[1], false), /* verbose */ false);
+                ZoneParser aszp = FCParser.loadFile(FCParser.openSource(args[1], false), null, /* verbose */ false);
                 aszp.summarize();
                 break;
 
