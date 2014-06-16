@@ -1,4 +1,6 @@
 #generated autoconf
+Makefile
+Makefile.in
 atconfig
 atlocal
 testsuite.at
@@ -7,3 +9,4 @@ testsuite.at
 package.m4
 testsuite
 testsuite.log
+

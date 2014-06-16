@@ -8,7 +8,9 @@ DeviceAliasParserVal.java
 
 #generated autoconf
 Alias4Parser.java
+FCParser.java
 NicknameParser.java
+ShowZoneParser.java
 bnazone.y
 devicealias.y
 showzone.y
@@ -27,4 +29,6 @@ Makefile.in
 #style == make formatting
 *.java.orig
 *.java.in.orig
+
+
 

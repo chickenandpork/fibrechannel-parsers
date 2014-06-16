@@ -110,7 +110,7 @@ public abstract class ZoneParser extends Thread
     public void testSummary(String args[])
     {
         run();
-	summarize();
+        summarize();
     }
 
 
@@ -124,20 +124,20 @@ public abstract class ZoneParser extends Thread
         System.out.println("Zones: "+zoneSize());
         System.out.println("Aliases: "+aliasSize() + " (names with one or more WWPNs)");
 
-	if (0 < aliasSize())
-	{
-        java.util.PriorityQueue<ZPAliasEntry> pq = new java.util.PriorityQueue(aliasSize());
-        for (ZPAliasEntry e: aliasArray())
-            pq.add(e);
-        int c = 0;
-        for (ZPAliasEntry e: pq) c += e.wwns.size();
-        System.out.println("Aliases: "+c + " (name/WWPN pairs)");
+        if (0 < aliasSize())
+        {
+            java.util.PriorityQueue<ZPAliasEntry> pq = new java.util.PriorityQueue(aliasSize());
+            for (ZPAliasEntry e: aliasArray())
+                pq.add(e);
+            int c = 0;
+            for (ZPAliasEntry e: pq) c += e.wwns.size();
+            System.out.println("Aliases: "+c + " (name/WWPN pairs)");
 
-        if (checkProperty("debug.dumpAliases"))
-            for (ZPAliasEntry e: pq)
-                for (String s: e.wwns)
-                    System.out.println("Alias: "+s+", "+e.name());
-	}
+            if (checkProperty("debug.dumpAliases"))
+                for (ZPAliasEntry e: pq)
+                    for (String s: e.wwns)
+                        System.out.println("Alias: "+s+", "+e.name());
+        }
     }
 }
 

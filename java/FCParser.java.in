@@ -101,7 +101,7 @@ public abstract class FCParser
             }
         }
 
-	return is;
+        return is;
     }
 
     /**
@@ -247,11 +247,11 @@ public abstract class FCParser
 
         options.add(new LongOpt("nickname", LongOpt.REQUIRED_ARGUMENT, null, 'N'));
 
-		/*
-		 * NOTE: the following two pieces of code react to a choice at compile-time to
-		 * use extended getopt; only one of the next two likes is visible at the same
-		 * time
-		 */
+        /*
+         * NOTE: the following two pieces of code react to a choice at compile-time to
+         * use extended getopt; only one of the next two likes is visible at the same
+         * time
+         */
         /* *@DO_GETOPTJAR_TRUE@/        org.smallfoot.getopt.GetOpt     g = new org.smallfoot.getopt.GetOpt("fcparser", args, options);        /@DO_GETOPTJAR_TRUE@* */
         /* *@DO_GETOPTJAR_FALSE@/       gnu.getopt.Getopt               g = new gnu.getopt.Getopt("fcparser", args, "HVN:", options);        /@DO_GETOPTJAR_FALSE@* */
 
@@ -259,11 +259,11 @@ public abstract class FCParser
         int c;
         while ((c = g.getopt()) != -1)
         {
-	    switch (c)
-	    {
+            switch (c)
+            {
             case 'N': /* input Nicknames using file:, ftp:, http: via fibrechannel-parsers fcparsers.jar */
-        	ZoneParser aszp = FCParser.loadFile(FCParser.openSource(args[1], false), /* verbose */ false);
-        	aszp.summarize();
+                ZoneParser aszp = FCParser.loadFile(FCParser.openSource(args[1], false), /* verbose */ false);
+                aszp.summarize();
                 break;
 
             /*
@@ -271,23 +271,23 @@ public abstract class FCParser
              */
             case 'V':
             {
-		/*
-		 * NOTE: the following two pieces of code react as do the instantation of variable "g" above
-		 */
+                /*
+                 * NOTE: the following two pieces of code react as do the instantation of variable "g" above
+                 */
 
-        	/* *@DO_GETOPTJAR_TRUE@/	System.out.println(g.consistentVersion("@VERSION@-@BUILDID@"));	/@DO_GETOPTJAR_TRUE@* */
-        	/* *@DO_GETOPTJAR_FALSE@/	System.out.println("@VERSION@-@BUILDID@");			/@DO_GETOPTJAR_FALSE@* */
+                /* *@DO_GETOPTJAR_TRUE@/	System.out.println(g.consistentVersion("@VERSION@-@BUILDID@"));	/@DO_GETOPTJAR_TRUE@* */
+                /* *@DO_GETOPTJAR_FALSE@/	System.out.println("@VERSION@-@BUILDID@");			/@DO_GETOPTJAR_FALSE@* */
                 return;
             }
 
             default:
             case '?':
             case 'H':
-        	/* *@DO_GETOPTJAR_TRUE@/	FCParser.usage(g.progname());			/@DO_GETOPTJAR_TRUE@* */
-        	/* *@DO_GETOPTJAR_FALSE@/	FCParser.usage("fcparser");			/@DO_GETOPTJAR_FALSE@* */
+                /* *@DO_GETOPTJAR_TRUE@/	FCParser.usage(g.progname());			/@DO_GETOPTJAR_TRUE@* */
+                /* *@DO_GETOPTJAR_FALSE@/	FCParser.usage("fcparser");			/@DO_GETOPTJAR_FALSE@* */
                 break;
-	}
-	}
+            }
+        }
 
     }
 
