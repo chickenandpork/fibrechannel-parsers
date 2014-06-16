@@ -249,43 +249,49 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="59">
+      <node id="157">
         <label>NicknameParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="158" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="61">
+      <node id="159">
         <label>Thread</label>
       </node>
-      <node id="60">
+      <node id="158">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="61" relation="public-inheritance">
+        <childnode refid="159" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="65">
+      <node id="164">
         <label>BufferedReader</label>
       </node>
-      <node id="62">
+      <node id="160">
         <label>NicknameParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser"/>
-        <childnode refid="63" relation="public-inheritance">
+        <childnode refid="161" relation="public-inheritance">
         </childnode>
-        <childnode refid="65" relation="usage">
+        <childnode refid="163" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="164" relation="usage">
           <edgelabel>br</edgelabel>
         </childnode>
       </node>
-      <node id="64">
+      <node id="162">
         <label>Thread</label>
       </node>
-      <node id="63">
+      <node id="161">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="64" relation="public-inheritance">
+        <childnode refid="162" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="163">
+        <label>Vector&lt; org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
     </collaborationgraph>
     <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="7" bodyend="101"/>

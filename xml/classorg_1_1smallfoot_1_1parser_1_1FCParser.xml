@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1FCParser" kind="class" prot="public" abstract="yes">
+    <compoundname>org::smallfoot::parser::FCParser</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.io.InputStream</type>
+        <definition>static java.io.InputStream openStream</definition>
+        <argsstring>(String uri)</argsstring>
+        <name>openStream</name>
+        <param>
+          <type>String</type>
+          <declname>uri</declname>
+        </param>
+        <exceptions> throws java.io.FileNotFoundException, java.net.MalformedURLException, java.io.IOException     </exceptions>
+        <briefdescription>
+<para>Produce an InputStream for the given uri in a way that corresponds to the url protocol. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>InputStream ready to offer back the data </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ulink url="file://">file://</ulink> resource of a file, ie &quot;file:///sample.csv&quot; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="28" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="28" bodyend="46"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1afaa48a4dd8e8a976b5f69ccc616ff6e6" compoundref="FCParser_8java" startline="57" endline="105">FCParser.openSource</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1afaa48a4dd8e8a976b5f69ccc616ff6e6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>InputStream</type>
+        <definition>static InputStream openSource</definition>
+        <argsstring>(String url, boolean verbose)</argsstring>
+        <name>openSource</name>
+        <param>
+          <type>String</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>verbose</declname>
+        </param>
+        <briefdescription>
+<para>Create a stream from a URL or file name with a convenience workaround for no-proto URLs. </para>        </briefdescription>
+        <detaileddescription>
+<para>NOTE: changes java.util.Properties</para><para><simplesect kind="return"><para>the resulting InputStream </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the resource to open </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verbose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>whether to report errors to stdout or run quietly </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="57" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="57" bodyend="105"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" compoundref="FCParser_8java" startline="28" endline="46">FCParser.openStream</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac04082b3e6b53cd43bbdc5ac4284f930" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" kindref="compound">ZoneParser</ref></type>
+        <definition>static ZoneParser loadFile</definition>
+        <argsstring>(InputStream is, boolean verbose)</argsstring>
+        <name>loadFile</name>
+        <param>
+          <type>InputStream</type>
+          <declname>is</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>verbose</declname>
+        </param>
+        <briefdescription>
+<para>Load a file from the resource given to a WWN/Nickname vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the number of things loaded (used to trigger obsessive retries to get around choking org.apache.commons.io.input.TeeInputStream ) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the inputstream to parse from </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verbose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, parser results will be shown to stdout </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="114" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="114" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void main</definition>
+        <argsstring>(String args[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>String</type>
+          <declname>args</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Main function, as you can tell. </para>        </briefdescription>
+        <detaileddescription>
+<para>this function merely parses the command-line to dispatch actions to the meat of the meal above. I&apos;m using an actual GetOpt because, yes, I&apos;m a UNIX/C hack, re-using 3-decades-old knowledge, but this also preserves both extensibility and the ability to use longopts in scripts as a way to self-document what the tool&apos;s doing.</para><para>No real intelligence herein except the parse-and-redirect action.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as you&apos;d expect, these are commandline arguments given when the jar is activated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="240" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="240" bodyend="292"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6995194e0af7dc5aa27034287b79dbf3" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void usage</definition>
+        <argsstring>(String progname)</argsstring>
+        <name>usage</name>
+        <param>
+          <type>String</type>
+          <declname>progname</declname>
+        </param>
+        <briefdescription>
+<para>Usage messages are useful to those of us with short memories as well (hey, I just need to add swap!) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>progname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the program (args[0]) to print on a usage message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="217" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="217" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="21" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="20" bodyend="294"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac04082b3e6b53cd43bbdc5ac4284f930" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::FCParser</scope><name>loadFile</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::FCParser</scope><name>main</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1afaa48a4dd8e8a976b5f69ccc616ff6e6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::FCParser</scope><name>openSource</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::FCParser</scope><name>openStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6995194e0af7dc5aa27034287b79dbf3" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::FCParser</scope><name>usage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

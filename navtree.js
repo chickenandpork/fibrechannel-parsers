@@ -21,7 +21,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Alias4Parser_8java.html"
+"AliShowZoneParser_8java.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

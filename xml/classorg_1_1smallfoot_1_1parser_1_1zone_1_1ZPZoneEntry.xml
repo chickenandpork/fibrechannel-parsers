@@ -92,6 +92,17 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="218">
+        <label>Vector&lt; String &gt;</label>
+      </node>
+      <node id="217">
+        <label>ZPZoneEntry</label>
+        <childnode refid="218" relation="usage">
+          <edgelabel>members</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
     <location file="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" line="4" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPZoneEntry.java" bodystart="3" bodyend="21"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1add1c7d44303c1a81f18d2371b14f254f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPZoneEntry</scope><name>addZone</name></member>

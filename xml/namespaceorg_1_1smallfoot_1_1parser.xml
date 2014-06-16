@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
   <compounddef id="namespaceorg_1_1smallfoot_1_1parser" kind="namespace">
     <compoundname>org::smallfoot::parser</compoundname>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1FCParser" prot="public">org::smallfoot::parser::FCParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee" prot="public">org::smallfoot::parser::ParserTee</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1version" prot="public">org::smallfoot::parser::version</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits">org::smallfoot::parser::boneheadbits</innernamespace>

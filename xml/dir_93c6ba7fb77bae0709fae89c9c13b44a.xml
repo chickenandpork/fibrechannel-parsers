@@ -3,9 +3,14 @@
   <compounddef id="dir_93c6ba7fb77bae0709fae89c9c13b44a" kind="dir">
     <compoundname>java</compoundname>
     <innerfile refid="Alias4Parser_8java">Alias4Parser.java</innerfile>
+    <innerfile refid="AliShowZoneParser_8java">AliShowZoneParser.java</innerfile>
+    <innerfile refid="BNAZoneParser_8java">BNAZoneParser.java</innerfile>
+    <innerfile refid="DeviceAliasParser_8java">DeviceAliasParser.java</innerfile>
+    <innerfile refid="FCParser_8java">FCParser.java</innerfile>
     <innerfile refid="NicknameParser_8java">NicknameParser.java</innerfile>
     <innerfile refid="ParserTee_8java">ParserTee.java</innerfile>
     <innerfile refid="Select2Sample_8java">Select2Sample.java</innerfile>
+    <innerfile refid="ShowZoneParser_8java">ShowZoneParser.java</innerfile>
     <innerfile refid="version_8java">version.java</innerfile>
     <innerfile refid="ZoneParser_8java">ZoneParser.java</innerfile>
     <innerfile refid="ZoneParserI_8java">ZoneParserI.java</innerfile>

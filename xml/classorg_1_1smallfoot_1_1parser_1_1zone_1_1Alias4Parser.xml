@@ -62,7 +62,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="13" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="13" bodyend="16"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" compoundref="Alias4Parser_8java" startline="105" endline="109">Alias4Parser.Alias4Parser</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" compoundref="Alias4Parser_8java" startline="110" endline="114">Alias4Parser.Alias4Parser</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1aa89f56e94a76b211df071f905e7288ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -80,7 +80,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="19" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="19" bodyend="22"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" compoundref="Alias4Parser_8java" startline="105" endline="109">Alias4Parser.Alias4Parser</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" compoundref="Alias4Parser_8java" startline="110" endline="114">Alias4Parser.Alias4Parser</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a7b003de53f79832df5f1845e91a48d76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="30" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="30" bodyend="64"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="30" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="30" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a298e31048a0168fc5cc4e79abc966fd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -139,7 +139,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="71" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="71" bodyend="74"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="76" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="76" bodyend="79"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1af385e3c075112d912bb0dad0d9324372" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -152,8 +152,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="80" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="80" bodyend="83"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="Alias4Parser_8java" startline="113" endline="118">Alias4Parser.main</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="85" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="85" bodyend="88"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="Alias4Parser_8java" startline="118" endline="123">Alias4Parser.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a6332334673488c613c5ea2d667b98626" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -189,7 +189,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="92" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="92" bodyend="95"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="97" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="97" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -225,7 +225,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="105" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="105" bodyend="109"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="110" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="110" bodyend="114"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a6c13d260cf71d0554f789c4641a9f18b" compoundref="Alias4Parser_8java" startline="13" endline="16">Alias4Parser.setDebug</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1aa89f56e94a76b211df071f905e7288ae" compoundref="Alias4Parser_8java" startline="19" endline="22">Alias4Parser.setReader</references>
       </memberdef>
@@ -247,8 +247,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="113" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="113" bodyend="118"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1af385e3c075112d912bb0dad0d9324372" compoundref="Alias4Parser_8java" startline="80" endline="83">Alias4Parser.Alias4Parser</references>
+        <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="118" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="118" bodyend="123"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1af385e3c075112d912bb0dad0d9324372" compoundref="Alias4Parser_8java" startline="85" endline="88">Alias4Parser.Alias4Parser</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -256,58 +256,76 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="49">
+      <node id="109">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="50" relation="public-inheritance">
+        <childnode refid="110" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="51">
+      <node id="111">
         <label>Thread</label>
       </node>
-      <node id="50">
+      <node id="110">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="51" relation="public-inheritance">
+        <childnode refid="111" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="48">
+      <node id="108">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="49" relation="public-inheritance">
+        <childnode refid="109" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="56">
+      <node id="119">
         <label>BufferedReader</label>
       </node>
-      <node id="53">
+      <node id="113">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="54" relation="public-inheritance">
+        <childnode refid="114" relation="public-inheritance">
+        </childnode>
+        <childnode refid="116" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="117" relation="usage">
+          <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="55">
+      <node id="117">
+        <label>Vector&lt; ZPZoneEntry &gt;</label>
+      </node>
+      <node id="115">
         <label>Thread</label>
       </node>
-      <node id="54">
+      <node id="114">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="55" relation="public-inheritance">
+        <childnode refid="115" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="52">
+      <node id="112">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="53" relation="public-inheritance">
+        <childnode refid="113" relation="public-inheritance">
         </childnode>
-        <childnode refid="56" relation="usage">
+        <childnode refid="118" relation="usage">
+          <edgelabel>fcaliases</edgelabel>
+        </childnode>
+        <childnode refid="119" relation="usage">
           <edgelabel>br</edgelabel>
         </childnode>
       </node>
+      <node id="118">
+        <label>Vector&lt; org.smallfoot.parser.zone.ZPFCAliasEntry &gt;</label>
+      </node>
+      <node id="116">
+        <label>Vector&lt; org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="7" bodyend="119"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="7" bodyend="124"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>_prop</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a49f8902117520ae3cc27b7bddb370a0e" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>addAlias</name></member>

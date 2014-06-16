@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="455" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="455" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="456" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="456" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a31c1ea5edb0bdd30006447b3f1e58d15" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="456" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="456" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="457" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="457" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ac0fe627e81502f1ccb08d1519bfa40f2" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="457" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="457" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="458" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="458" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2cdb474303672925b387e5f813343a82" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="458" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="458" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="459" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="459" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-attrib">
@@ -921,7 +921,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="439" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="439" bodyend="448"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="440" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="440" bodyend="449"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1acd8617a8f2ac0de8bc1cc032cf449e19" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -934,7 +934,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="464" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="464" bodyend="648"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="465" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="465" bodyend="649"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">
@@ -1072,7 +1072,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="424" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="424" bodyend="424"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="BNAZoneParser_8java" startline="429" endline="434">BNAZoneParser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="BNAZoneParser_8java" startline="429" endline="435">BNAZoneParser.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a0908383bf408f9defeb19ebcd0d22a41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1130,8 +1130,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="429" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="429" bodyend="434"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" compoundref="ZoneParserI_8java" startline="19" endline="19">ZoneParserI.aliasSize</references>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="429" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="429" bodyend="435"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a461606a38dc40cb68f480cab9878d620" compoundref="BNAZoneParser_8java" startline="424" endline="424">BNAZoneParser.BNAZoneParser</references>
       </memberdef>
       </sectiondef>
@@ -1140,61 +1139,73 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="118">
+      <node id="131">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="119" relation="public-inheritance">
+        <childnode refid="132" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="119">
+      <node id="132">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="120" relation="public-inheritance">
+        <childnode refid="133" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="121">
+      <node id="134">
         <label>Thread</label>
       </node>
-      <node id="120">
+      <node id="133">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="121" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="122">
+      <node id="135">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="123" relation="public-inheritance">
+        <childnode refid="136" relation="public-inheritance">
         </childnode>
-        <childnode refid="126" relation="usage">
+        <childnode refid="141" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="123">
+      <node id="136">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="124" relation="public-inheritance">
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+        <childnode refid="139" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="140" relation="usage">
+          <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="125">
+      <node id="140">
+        <label>Vector&lt; ZPZoneEntry &gt;</label>
+      </node>
+      <node id="138">
         <label>Thread</label>
       </node>
-      <node id="124">
+      <node id="137">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="125" relation="public-inheritance">
+        <childnode refid="138" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="126">
+      <node id="139">
+        <label>Vector&lt; org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="141">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="31" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="29" bodyend="665"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="31" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="29" bodyend="666"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParser</scope><name>[static initializer]</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParser</scope><name>[static initializer]</name></member>
