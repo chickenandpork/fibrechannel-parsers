@@ -1,20 +1,22 @@
 package org.smallfoot.parser.zone;
 
 import java.io.*;
+import java.util.TreeMap;
+import java.util.Vector;
 
 public abstract class ZoneParserI extends ZoneParser
 {
 
     java.util.Vector<ZPZoneEntry> zones = new java.util.Vector();
-    java.util.Vector<ZPAliasEntry> aliases = new java.util.Vector();
+    TreeMap<String,ZPAliasEntry> aliases = new TreeMap<String,ZPAliasEntry>();
 
     public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements(); }
 
     public int zoneSize() { return zones.size(); }
 
-    public java.util.Enumeration<ZPAliasEntry> aliasElements() { return aliases.elements(); }
+    public java.util.Enumeration<ZPAliasEntry> aliasElements() { return new java.util.Vector<ZPAliasEntry>(aliases.values()).elements(); }
 
-    public ZPAliasEntry[] aliasArray() { return aliases.toArray(new ZPAliasEntry[1]); }
+    public ZPAliasEntry[] aliasArray() { return aliases.values().toArray(new ZPAliasEntry[1]); }
 
     public int aliasSize() { return aliases.size(); }
 
@@ -151,7 +153,12 @@ void addAlias(String name, String wwn)
     if (checkProperty("debug.verboseAddAlias"))
 	System.out.println("add: " + (null == name ? "NULL" : name) + " --> wwn: "+wwn);
 
-    aliases.add(new ZPAliasEntry (name,wwn));
+    ZPAliasEntry zpa;
+
+    if (null != (zpa = aliases.get(name)))
+	zpa.addAlias(wwn);
+    else
+        aliases.put(name, new ZPAliasEntry (name,wwn));
 }
 
 void addAlias(String name, java.util.Vector<ZoneParserVal> list)
@@ -159,13 +166,16 @@ void addAlias(String name, java.util.Vector<ZoneParserVal> list)
     if (checkProperty("debug.verboseAddAlias"))
 	System.out.println("add: " + (null == name ? "NULL" : name));
 
-    ZPAliasEntry ze = new ZPAliasEntry (name);
+    ZPAliasEntry ze = aliases.get(name);
+    if (null == ze)
+    {
+	ze = new ZPAliasEntry (name);
+        aliases.put(name,ze);
+    }
     for (java.util.Enumeration<ZoneParserVal> e = list.elements(); e.hasMoreElements();)
     {
        ze.addAlias(e.nextElement().sval);
     }
-
-    aliases.add(ze);
  }
 
 ZoneParserVal appendZoneAlphanum(ZoneParserVal list, ZoneParserVal item)
