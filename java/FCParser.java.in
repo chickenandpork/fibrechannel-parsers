@@ -205,7 +205,7 @@ public abstract class FCParser
         ZoneParser winningzp = null;
         for (ZoneParser zp:zpl)
         {
-            if (verbose) 
+            if (verbose)
                 System.out.println("("+(null == args0 ? "@PACKAGE@" : ("" == args0 ? "@PACKAGE@" : args0))+") parsed " + zp.zoneSize() + " zones, " + zp.aliasSize() + " aliases via "+zp.getClass().getName().replaceAll(".*\\.",""));
 
             if (null == winningzp)
