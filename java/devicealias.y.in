@@ -3,8 +3,6 @@ import java.lang.Math;
 import java.io.*;
 
 /**
- * @file devicealias.y
- *
  * @page formats Compatible File Formats
  * @subpage DeviceAliasParser
  *

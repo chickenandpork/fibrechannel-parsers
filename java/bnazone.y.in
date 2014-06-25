@@ -5,8 +5,6 @@ import java.lang.Math;
 import java.io.*;
 
 /**
- * @file bnazone.y
- *
  * @page formats Compatible File Formats
  * @subpage BNAZoneParser
 

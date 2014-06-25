@@ -3,8 +3,6 @@ import java.lang.Math;
 import java.io.*;
 
 /**
- * @file showzone.y
- *
  * @page formats Compatible File Formats
  * @subpage ShowZoneParser
  *
