@@ -1,0 +1,249 @@
+/* http://byaccj.sourceforge.net */
+%{
+import java.lang.Math;
+//import java.util.StringTokenizer;
+import java.io.*;
+%}
+
+/* YACC Declarations */
+%token LOCATION	/* start of line "Location: [Line : 2999 , Column : 7]" */
+%token LINE
+%token COLUMN
+%token INVALID	/* start of line "Invalid added child entities : 20c2000dec123456" */
+%token ADDED
+%token CHILD
+%token ENTITIES
+%token WWPN
+%token ENTITY	/* start of line "Entity: Cisco-000dec-123456:194 : hba" */
+%token ALPHANUM
+%token HBA
+
+/* Grammar follows */
+%%
+
+/*
+ * Location: [Line : 1234 , Column : 7]
+ * Invalid added child entities : 20c2000dec123456
+ * Entity: Cisco-000dec-123456:194 : hba
+ */
+
+input:  /* empty string */
+ | input LOCATION ':' '[' LINE ':' ALPHANUM ',' COLUMN ':' ALPHANUM ']'
+ | input INVALID ADDED CHILD ENTITIES ':' WWPN { addAlias (new ZoneParserVal("none"), $7); $$ = $1;}    /* void ZoneParserI::addAlias(String name, String wwn) */
+ | input ENTITY ':' ALPHANUM ':' HBA
+ | input ENTITY ':' ALPHANUM ':' ALPHANUM ':' HBA
+ ;
+
+%%
+
+    String ins;
+    java.io.StreamTokenizer st;
+    boolean zpquiet = true;
+
+    void yyerror(String s)
+    {
+        if (!zpquiet) System.out.println("parser error: "+s);
+    }
+
+    boolean verboseStringtokenizer = checkProperty("debug.verboseTokenizer");
+    boolean newline;
+    String manualPushBackALPHANUM = null;
+
+    int yylex()
+    {
+        String s;
+        int tok;
+        Double d;
+//System.out.print("yylex ");
+	if (null != manualPushBackALPHANUM)
+	{
+	    st.sval = manualPushBackALPHANUM;
+	    //if (verboseStringtokenizer) System.out.println("token#: "+java.io.StreamTokenizer.TT_WORD);
+	    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
+	    manualPushBackALPHANUM = null;
+	    return ALPHANUM;
+	}
+	/* else */
+
+	try {
+        tok = st.nextToken();
+	} catch (java.io.IOException ioe) { if (verboseStringtokenizer) System.out.println("I/O Exception so returning from parser"); return 0; }
+	if (verboseStringtokenizer) System.out.println("(@75) token#: "+tok);
+	switch(tok)
+	{
+	    case java.io.StreamTokenizer.TT_EOF:
+                return 0;
+	
+	    case java.io.StreamTokenizer.TT_EOL:
+		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_EOL");
+                newline=true;
+		return '\n';
+
+            case java.io.StreamTokenizer.TT_WORD:
+                if (verboseStringtokenizer) System.out.println("checking java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
+                if (st.sval.equalsIgnoreCase("location"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:LOCATION \"" + st.sval + "\"");
+                    return LOCATION;
+                }
+
+/* %token LINE */
+                if (st.sval.equalsIgnoreCase("line"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:LINE \"" + st.sval + "\"");
+                    return LINE;
+                }
+
+/* %token COLUMN */
+                if (st.sval.equalsIgnoreCase("column"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:COLUMN \"" + st.sval + "\"");
+                    return COLUMN;
+                }
+
+/* %token INVALID */
+                if (st.sval.equalsIgnoreCase("invalid"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:INVALID \"" + st.sval + "\"");
+                    return INVALID;
+                }
+
+/* %token ADDED */
+                if (st.sval.equalsIgnoreCase("added"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ADDED \"" + st.sval + "\"");
+                    return ADDED;
+                }
+
+/* %token CHILD */
+                if (st.sval.equalsIgnoreCase("child"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:CHILD \"" + st.sval + "\"");
+                    return CHILD;
+                }
+
+/* %token ENTITIES */
+                if (st.sval.equalsIgnoreCase("entities"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ENTITIES \"" + st.sval + "\"");
+                    return ENTITIES;
+                }
+
+/* %token ENTITY */
+                if (st.sval.equalsIgnoreCase("entity"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ENTITY \"" + st.sval + "\"");
+                    return ENTITY;
+                }
+
+/* %token HBA */
+                if (st.sval.equalsIgnoreCase("hba"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:HBA \"" + st.sval + "\"");
+                    return HBA;
+                }
+
+/* %token WWPN */
+                if (st.sval.matches("[0-9a-fA-F]{16}"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:WWPN \"" + st.sval + "\"");
+		    yylval = new ZoneParserVal(st.sval.toLowerCase());
+                    return WWPN;
+                }
+
+/* %token ALPHANUM */
+		yylval = new ZoneParserVal(st.sval);
+		return ALPHANUM;
+
+	    case java.io.StreamTokenizer.TT_NUMBER:
+	        if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_NUMBER \"" + st.sval + "\" as \"" + st.nval + "\"");
+                newline=false;
+		yylval = new ZoneParserVal(st.nval);
+		return ALPHANUM;
+
+            case ';':
+            case ':':
+            case '[':
+            case ']':
+            case ',':
+                if (verboseStringtokenizer) System.out.println("returning anticipated char "+ tok + " \"" + (char) tok + "\"");
+                newline=false;
+                return tok;
+	}
+
+	// bogusity
+	if (verboseStringtokenizer) System.out.println("returning bogus char "+ tok + " \"" + (char) tok + "\"");
+	return '\n';
+    }
+
+
+public void parse()
+{
+ try
+ {
+ yyparse();
+ }
+ catch (Exception e)
+ {
+ }
+}
+
+
+public void setReader(Reader in)
+{
+  //nothing to do
+ st = new java.io.StreamTokenizer(in);
+ // reset the parser to effect a parseNumbers(false) which doesn't exist
+ st.resetSyntax();
+ st.wordChars('a', 'z');
+ st.wordChars('A', 'Z');
+ //st.wordChars(128 + 32, 255);
+ st.ordinaryChars((int) 1, (int) 7);
+ st.whitespaceChars(8, ' ');
+
+ // ok, dots, numbers, things accepted as WWNs or names are generally "words"
+ st.wordChars((int) '.', (int) '.');
+ st.wordChars((int) '0', (int) '0');
+ st.wordChars((int) '1', (int) '9');
+ //st.wordChars((int) ':', (int) ':');
+ st.wordChars((int) '_', (int) '_');
+ st.wordChars((int) '-', (int) '-');
+
+  /*
+   * It's ordinary, and returned so that we can use as a separator. 
+   * Later, it's possible to just treat as a separator to be a bit more
+   * accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
+   */
+ //st.ordinaryChar((int) ';');
+
+ st.eolIsSignificant(false);
+
+ newline=false;
+}
+
+
+public void run()
+{
+  if (0 != yyparse())
+    try
+    {
+	/* if the parse is incomplete, drain the channel */
+	while (java.io.StreamTokenizer.TT_EOF != st.nextToken()) ;
+    }
+    catch (IOException e) { debug(getClass().getName()+" I.O Error: "+e.getMessage()); }
+}
+
+
+public void setDebug(boolean debug) { yydebug=debug; }
+public VW4InvalidAddedParser(InputStream in, boolean debugMe) { super(in, debugMe); }
+public VW4InvalidAddedParser(InputStream in) { super(in); }
+public VW4InvalidAddedParser(java.util.Properties in, boolean debugMe) { super(in, debugMe); }
+
+
+public static void main(String args[])
+{
+    String p = System.getProperties().getProperty("debug.yystate");
+
+    VW4InvalidAddedParser aszp = new VW4InvalidAddedParser(System.in, (null != p) && ((p.equalsIgnoreCase("VW4InvalidAddedParser")) || (p.equalsIgnoreCase("true"))));
+    aszp.testSummary(args);
+}

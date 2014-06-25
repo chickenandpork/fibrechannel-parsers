@@ -166,6 +166,7 @@ void addAlias(String name, java.util.Vector<ZoneParserVal> list)
     if (checkProperty("debug.verboseAddAlias"))
 	System.out.println("add: " + (null == name ? "NULL" : name));
 
+    name = name.replaceAll("\"","").trim();
     ZPAliasEntry ze = aliases.get(name);
     if (null == ze)
     {

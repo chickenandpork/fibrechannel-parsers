@@ -4,6 +4,7 @@ nodist_java_JAVA += BNAZoneParser.java
 nodist_java_JAVA += DeviceAliasParser.java
 nodist_java_JAVA += Select2Sample.java
 nodist_java_JAVA += ShowZoneParser.java
+nodist_java_JAVA += VW4InvalidAddedParser.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
@@ -44,6 +45,11 @@ BUILT_SOURCES += DeviceAliasParser.java
 
 DeviceAliasParser.java: devicealias.y
 	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=DeviceAliasParser -J $<
+
+BUILT_SOURCES += VW4InvalidAddedParser.java
+
+VW4InvalidAddedParser.java: vw4invalid.y
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=VW4InvalidAddedParser -J $<
 
 endif
 	
