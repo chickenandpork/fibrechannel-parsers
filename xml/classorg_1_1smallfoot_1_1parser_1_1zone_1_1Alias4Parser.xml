@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kind="class" prot="public">
     <compoundname>org::smallfoot::parser::zone::Alias4Parser</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" prot="public" virt="non-virtual">ZoneParserI</basecompoundref>
@@ -249,6 +249,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="118" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="118" bodyend="123"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1af385e3c075112d912bb0dad0d9324372" compoundref="Alias4Parser_8java" startline="85" endline="88">Alias4Parser.Alias4Parser</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="213" endline="234">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -256,73 +257,73 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="109">
+      <node id="122">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="110" relation="public-inheritance">
+        <childnode refid="123" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="111">
+      <node id="124">
         <label>Thread</label>
       </node>
-      <node id="110">
+      <node id="123">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="111" relation="public-inheritance">
+        <childnode refid="124" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="108">
+      <node id="121">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="109" relation="public-inheritance">
+        <childnode refid="122" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="119">
+      <node id="132">
         <label>BufferedReader</label>
       </node>
-      <node id="113">
+      <node id="126">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="114" relation="public-inheritance">
+        <childnode refid="127" relation="public-inheritance">
         </childnode>
-        <childnode refid="116" relation="usage">
+        <childnode refid="129" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="117" relation="usage">
+        <childnode refid="130" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="117">
+      <node id="130">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="115">
+      <node id="129">
+        <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="128">
         <label>Thread</label>
       </node>
-      <node id="114">
+      <node id="127">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="115" relation="public-inheritance">
+        <childnode refid="128" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="112">
+      <node id="125">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="113" relation="public-inheritance">
+        <childnode refid="126" relation="public-inheritance">
         </childnode>
-        <childnode refid="118" relation="usage">
+        <childnode refid="131" relation="usage">
           <edgelabel>fcaliases</edgelabel>
         </childnode>
-        <childnode refid="119" relation="usage">
+        <childnode refid="132" relation="usage">
           <edgelabel>br</edgelabel>
         </childnode>
       </node>
-      <node id="118">
+      <node id="131">
         <label>Vector&lt; org.smallfoot.parser.zone.ZPFCAliasEntry &gt;</label>
-      </node>
-      <node id="116">
-        <label>Vector&lt; org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
     </collaborationgraph>
     <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="7" bodyend="124"/>
@@ -341,7 +342,7 @@
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a619525690dfd9b583a9be3eb03fc590a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>Alias4Parser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5c646608669073b5c31bb44626baa48f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliasArray</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a1631138fd08af051dc26686c00768ab3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliasElements</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0dc8b05b3f25e59bc98f90dc8c64857c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliases</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a071816722bbf8f31f56a3b27f5c84fa6" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliases</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>aliasSize</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ad9eac83891611fa5e2e983328603eb8a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>appendZoneAlphanum</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a4e1353cca944de55b1cff88ca87b23cd" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::Alias4Parser</scope><name>br</name></member>

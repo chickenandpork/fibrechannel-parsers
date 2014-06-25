@@ -1,10 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html" title="ZoneParser" alt="" coords="117,79,208,105"/>
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html" title="NicknameParser" alt="" coords="256,54,376,79"/>
-<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html" title="ZoneParserI" alt="" coords="269,103,363,129"/>
-<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html" title="Alias4Parser" alt="" coords="445,5,542,30"/>
-<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html" title="AliShowZoneParser" alt="" coords="424,54,563,79"/>
-<area shape="rect" id="node7" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html" title="BNAZoneParser" alt="" coords="434,103,553,129"/>
-<area shape="rect" id="node8" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html" title="DeviceAliasParser" alt="" coords="428,153,558,178"/>
-<area shape="rect" id="node9" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html" title="ShowZoneParser" alt="" coords="431,202,556,227"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html" title="ZoneParser" alt="" coords="117,105,208,130"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html" title="NicknameParser" alt="" coords="256,79,376,105"/>
+<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html" title="ZoneParserI" alt="" coords="269,129,363,154"/>
+<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html" title="Alias4Parser" alt="" coords="460,5,556,30"/>
+<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html" title="AliShowZoneParser" alt="" coords="438,54,578,79"/>
+<area shape="rect" id="node7" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html" title="BNAZoneParser" alt="" coords="449,103,567,129"/>
+<area shape="rect" id="node8" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html" title="DeviceAliasParser" alt="" coords="443,153,573,178"/>
+<area shape="rect" id="node9" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html" title="ShowZoneParser" alt="" coords="446,202,570,227"/>
+<area shape="rect" id="node10" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html" title="VW4InvalidAddedParser" alt="" coords="425,251,591,277"/>
 </map>

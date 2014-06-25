@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="DeviceAliasParser" kind="page">
+    <compoundname>DeviceAliasParser</compoundname>
+    <title>Cisco &quot;show device-alias database&quot;</title>
+    <detaileddescription>
+<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref> parses the output of a Cisco SAN switch with the &quot;show device-alias database&quot; command</para><para>As always, this parser is more successful when the content is treated like binary: don&apos;t edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.2.3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.</para><para>When collecting aliases using an ssh command, it&apos;s better to execute that command noninteractively:</para><para>In UNIX, Linux, Ubuntu, OSX, or the 6000 other licensees of the USL codebase: <verbatim>ssh username@switch44.example.com &quot;show device-alias database&quot; &gt; switch44.dad
+</verbatim></para><para>In windows, using the <ulink url="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">putty</ulink> tools: <verbatim>plink.exe -l username -pw p4ssw0rd switch44.example.com &quot;show device-alias database&quot; &gt; switch44.dad
+</verbatim></para><para>This leads to a better chance to parse 100% of the output with more accuracy, but I guess following this recommendation is up to the user, and to the engineer suggesting how he or she should collect the text for parsing.</para><para><verbatim>The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+switch44a# show device-alias database
+device-alias name server44_hba0 pwwn 10:00:00:00:c9:12:34:56
+device-alias name server44_hba1 pwwn 10:00:00:00:c9:12:34:57
+device-alias name oracle10_hba0 pwwn 21:00:00:24:ff:12:34:56
+device-alias name oracle10_hba1 pwwn 22:00:00:24:ff:12:34:56
+device-alias name vmax-18641-fa06a0 pwwn 50:00:09:72:01:23:45:54
+device-alias name vmax-18641-fa07a0 pwwn 50:00:09:72:01:23:45:58 </verbatim></para><para>with the following result of WWPN/alias pairs: <verbatim>10000000c9123456,&quot;server44_hba0&quot;
+10000000c9123457,&quot;server44_hba1&quot;
+21000024ff123456,&quot;oracle10_hba0&quot;
+22000024ff123456,&quot;oracle10_hba1&quot;
+5000097201234554,&quot;vmax-18641-fa06a0&quot;
+5000097201234558,&quot;vmax-18641-fa07a0&quot; </verbatim> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

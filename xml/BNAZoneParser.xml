@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="BNAZoneParser" kind="page">
+    <compoundname>BNAZoneParser</compoundname>
+    <title>BNA Database</title>
+    <detaileddescription>
+<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref> parses the binary text records in a BNA server representing the zonesets and their aliases</para><para>This parser is not normally used from a downloaded text; it&apos;s normally used when a client executes a query against the backing database of a BNA instance. The resulting query tends to have data columns in resultset that are binary-coded to reduce parsing load. These same binary tokens are parsed by <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref> to provide results similar to AliShowParser.</para><para>There are times that the backing database is easier to query than switches</para><para>Use this parser automatically by collecting using a bnapsql:// URL protocol with the &quot;vict&quot; or &quot;vw4tools&quot; project. For example: <verbatim>java -jar vict.jar -N bnapsql://bna.example.com/
+</verbatim></para><para>or <verbatim>java -jar vw4tools.jar -N bna://bna.example.com/</verbatim> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

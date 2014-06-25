@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="VW4InvalidAdded" kind="page">
+    <compoundname>VW4InvalidAdded</compoundname>
+    <title>VirtualWisdom4 Validation Errors</title>
+    <detaileddescription>
+<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref> interprets the error content of a VirtualWisdom4 Entity validation exception</para><para>a VirtualWisdom4 Validation error message is typically a long set of multi-line messages such as: <verbatim>Location: [Line : 1234 , Column : 7]
+Invalid added child entities : 20c2000dec123456
+Entity: Cisco-000dec-123456:194 : hba </verbatim></para><para>The result is a list of nicknames, all of which say that the WWPN has a nickname of &quot;none&quot; <ndash/> for example, as if the <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref> had read content such as:</para><para><verbatim>20c2000dec123456,&quot;none&quot; </verbatim></para><para>This format has limited facility: it&apos;s intended for cases where an error message is used to exclude entities from an import file. In such case, the same import would be used to generate a list of WWPN/alias combinations, then the &quot;exclusion&quot; list would be read using this parser. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,180 @@
+\doxyref{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}{p.}{AliShowZoneParser}
+
+\doxyref{B\+N\+A Database}{p.}{BNAZoneParser}
+
+\doxyref{Cisco \char`\"{}show device-\/alias database\char`\"{}}{p.}{DeviceAliasParser}
+
+\doxyref{Cisco \char`\"{}show zone\char`\"{}}{p.}{ShowZoneParser}
+
+\doxyref{Virtual\+Wisdom4 Validation Errors}{p.}{VW4InvalidAdded} \section{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}\label{AliShowZoneParser}
+The \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser} parses the output of a Brocade S\+A\+N switch with the \char`\"{}alishow\char`\"{} or \char`\"{}zoneshow\char`\"{} commands.
+
+As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
+
+When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:
+
+In U\+N\+I\+X, Linux, Ubuntu, O\+S\+X, or the 6000 other licensees of the U\+S\+L codebase\+: \begin{DoxyVerb}ssh username@switch44.example.com "alishow" > switch44.alishow
+\end{DoxyVerb}
+
+
+In windows, using the {\tt putty} tools\+: \begin{DoxyVerb}plink.exe -l username -pw p4ssw0rd switch44.example.com "alishow" > switch44.alishow
+\end{DoxyVerb}
+
+
+This leads to a better chance to parse 100\% of the output with more accuracy, but I guess following this recommendation is up to the user, and to the engineer suggesting how he or she should collect the text for parsing.
+
+\begin{DoxyVerb}Defined configuration:
+ cfg:   SAN_CFG_B
+                SANASVR001_FabA; SANASVR002_FabA; SANASVR003_FabA;
+                SANASVR004_FabA
+ alias: HDS0123457_CL3E
+                50:06:0e:80:12:34:57:24
+ alias: HDS0123457_CL3F
+                50:06:0e:80:12:34:57:25
+ alias: HDS0123457_CL5E
+                50:06:0e:80:12:34:57:44
+ alias: HDS0123457_CL5F
+                50:06:0e:80:12:34:57:45
+ alias: HDS0123457_CL7E
+                50:06:0e:80:12:34:57:64
+ alias: HDS0123457_CL7F
+                50:06:0e:80:12:34:57:65
+ alias: Oracle_123466
+                10:00:00:00:c9:12:34:66
+ alias: Oracle_123467
+                10:00:00:00:c9:12:34:67
+ alias: NASHead_123468
+                10:00:00:00:c9:12:34:68
+ alias: NASHead_123469
+                10:00:00:00:c9:12:34:69
+ alias: NASMany_654321
+                10:00:00:00:c9:44:44:10; 10:00:00:00:c9:44:44:11
+                10:00:00:00:c9:44:44:20; 10:00:00:00:c9:44:44:21
+                10:00:00:00:c9:44:44:30; 10:00:00:00:c9:44:44:31
+
+Effective configuration:
+ cfg:   SAN_CFG_B
+ zone:  SANASVR001_FabA
+                10:00:00:00:c9:12:34:66 \end{DoxyVerb}
+
+
+The result is a list of nicknames, such as\+:
+
+\begin{DoxyVerb}50060e8012345724,HDS0123457_CL3E
+50060e8012345725,"HDS0123457_CL3F"
+50060e8012345744,"HDS0123457_CL5E"
+50060e8012345745,"HDS0123457_CL5F"
+50060e8012345764,"HDS0123457_CL7E"
+50060e8012345765,"HDS0123457_CL7F"
+10000000c9123466,"Oracle_123466"
+10000000c9123467,"Oracle_123467"
+10000000c9123468,"NASHead_123468"
+10000000c9123469,"NASHead_123469"
+10000000c9444410,"NASMany_654321"
+10000000c9444411,"NASMany_654321"
+10000000c9444420,"NASMany_654321"
+10000000c9444421,"NASMany_654321"
+10000000c9444430,"NASMany_654321"
+10000000c9444431,"NASMany_654321" \end{DoxyVerb}
+ \section{B\+N\+A Database}\label{BNAZoneParser}
+The \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} parses the binary text records in a B\+N\+A server representing the zonesets and their aliases
+
+This parser is not normally used from a downloaded text; it's normally used when a client executes a query against the backing database of a B\+N\+A instance. The resulting query tends to have data columns in resultset that are binary-\/coded to reduce parsing load. These same binary tokens are parsed by \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} to provide results similar to Ali\+Show\+Parser.
+
+There are times that the backing database is easier to query than switches
+
+Use this parser automatically by collecting using a bnapsql\+:// U\+R\+L protocol with the \char`\"{}vict\char`\"{} or \char`\"{}vw4tools\char`\"{} project. For example\+: \begin{DoxyVerb}java -jar vict.jar -N bnapsql://bna.example.com/
+\end{DoxyVerb}
+
+
+or \begin{DoxyVerb}java -jar vw4tools.jar -N bna://bna.example.com/\end{DoxyVerb}
+ \section{Cisco \char`\"{}show device-\/alias database\char`\"{}}\label{DeviceAliasParser}
+The \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show device-\/alias database\char`\"{} command
+
+As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
+
+When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:
+
+In U\+N\+I\+X, Linux, Ubuntu, O\+S\+X, or the 6000 other licensees of the U\+S\+L codebase\+: \begin{DoxyVerb}ssh username@switch44.example.com "show device-alias database" > switch44.dad
+\end{DoxyVerb}
+
+
+In windows, using the {\tt putty} tools\+: \begin{DoxyVerb}plink.exe -l username -pw p4ssw0rd switch44.example.com "show device-alias database" > switch44.dad
+\end{DoxyVerb}
+
+
+This leads to a better chance to parse 100\% of the output with more accuracy, but I guess following this recommendation is up to the user, and to the engineer suggesting how he or she should collect the text for parsing.
+
+\begin{DoxyVerb}The copyrights to certain works contained in this software are
+owned by other third parties and used and distributed under
+license. Certain components of this software are licensed under
+the GNU General Public License (GPL) version 2.0 or the GNU
+Lesser General Public License (LGPL) Version 2.1. A copy of each
+such license is available at
+http://www.opensource.org/licenses/gpl-2.0.php and
+http://www.opensource.org/licenses/lgpl-2.1.php
+switch44a# show device-alias database
+device-alias name server44_hba0 pwwn 10:00:00:00:c9:12:34:56
+device-alias name server44_hba1 pwwn 10:00:00:00:c9:12:34:57
+device-alias name oracle10_hba0 pwwn 21:00:00:24:ff:12:34:56
+device-alias name oracle10_hba1 pwwn 22:00:00:24:ff:12:34:56
+device-alias name vmax-18641-fa06a0 pwwn 50:00:09:72:01:23:45:54
+device-alias name vmax-18641-fa07a0 pwwn 50:00:09:72:01:23:45:58 \end{DoxyVerb}
+
+
+with the following result of W\+W\+P\+N/alias pairs\+: \begin{DoxyVerb}10000000c9123456,"server44_hba0"
+10000000c9123457,"server44_hba1"
+21000024ff123456,"oracle10_hba0"
+22000024ff123456,"oracle10_hba1"
+5000097201234554,"vmax-18641-fa06a0"
+5000097201234558,"vmax-18641-fa07a0" \end{DoxyVerb}
+ \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZoneParser}
+The \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show zone\char`\"{} command
+
+As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
+
+When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:
+
+In U\+N\+I\+X, Linux, Ubuntu, O\+S\+X, or the 6000 other licensees of the U\+S\+L codebase\+: \begin{DoxyVerb}ssh username@switch44.example.com "show zone" > switch44.shzone
+\end{DoxyVerb}
+
+
+In windows, using the {\tt putty} tools\+: \begin{DoxyVerb}plink.exe -l username -pw p4ssw0rd switch44.example.com "show zone" > switch44.shzone
+\end{DoxyVerb}
+
+
+This leads to a better chance to parse 100\% of the output with more accuracy, but I guess following this recommendation is up to the user, and to the engineer suggesting how he or she should collect the text for parsing.
+
+\begin{DoxyVerb}zone name SANASVR001_FabA vsan 100
+  fcalias name Oracle_123466 vsan 100
+    pwwn 10:00:00:00:c9:12:34:66
+
+  fcalias name HDS0123457_CL7F vsan 100
+    pwwn 50:06:0e:80:12:34:56:78
+
+  fcalias name HDS0123457_CL7F vsan 100
+    pwwn 50:06:0e:80:12:34:56:79
+
+zone name SANASVR002_FabA vsan 100
+  fcalias name Oracle_123467 vsan 100
+    pwwn 10:00:00:00:c9:12:34:67 \end{DoxyVerb}
+
+
+The resulting content from this example would be the following W\+W\+P\+N/alias pairs\+: \begin{DoxyVerb}10000000c9123466,"Oracle_123466"
+10000000c9123467,"Oracle_123467"
+50060e8012345678,"HDS0123457_CL7F"
+50060e8012345679,"HDS0123457_CL7F" \end{DoxyVerb}
+ \section{Virtual\+Wisdom4 Validation Errors}\label{VW4InvalidAdded}
+The \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser} interprets the error content of a Virtual\+Wisdom4 Entity validation exception
+
+a Virtual\+Wisdom4 Validation error message is typically a long set of multi-\/line messages such as\+: \begin{DoxyVerb}Location: [Line : 1234 , Column : 7]
+Invalid added child entities : 20c2000dec123456
+Entity: Cisco-000dec-123456:194 : hba \end{DoxyVerb}
+
+
+The result is a list of nicknames, all of which say that the W\+W\+P\+N has a nickname of \char`\"{}none\char`\"{} -- for example, as if the \doxyref{Nickname\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser} had read content such as\+:
+
+\begin{DoxyVerb}20c2000dec123456,"none" \end{DoxyVerb}
+
+
+This format has limited facility\+: it's intended for cases where an error message is used to exclude entities from an import file. In such case, the same import would be used to generate a list of W\+W\+P\+N/alias combinations, then the \char`\"{}exclusion\char`\"{} list would be read using this parser. 

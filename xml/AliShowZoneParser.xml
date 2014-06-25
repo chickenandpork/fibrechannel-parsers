@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="AliShowZoneParser" kind="page">
+    <compoundname>AliShowZoneParser</compoundname>
+    <title>Brocade &quot;alishow&quot; and &quot;zoneshow&quot;</title>
+    <detaileddescription>
+<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref> parses the output of a Brocade SAN switch with the &quot;alishow&quot; or &quot;zoneshow&quot; commands.</para><para>As always, this parser is more successful when the content is treated like binary: don&apos;t edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.2.3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.</para><para>When collecting aliases using an ssh command, it&apos;s better to execute that command noninteractively:</para><para>In UNIX, Linux, Ubuntu, OSX, or the 6000 other licensees of the USL codebase: <verbatim>ssh username@switch44.example.com &quot;alishow&quot; &gt; switch44.alishow
+</verbatim></para><para>In windows, using the <ulink url="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">putty</ulink> tools: <verbatim>plink.exe -l username -pw p4ssw0rd switch44.example.com &quot;alishow&quot; &gt; switch44.alishow
+</verbatim></para><para>This leads to a better chance to parse 100% of the output with more accuracy, but I guess following this recommendation is up to the user, and to the engineer suggesting how he or she should collect the text for parsing.</para><para><verbatim>Defined configuration:
+ cfg:   SAN_CFG_B
+                SANASVR001_FabA; SANASVR002_FabA; SANASVR003_FabA;
+                SANASVR004_FabA
+ alias: HDS0123457_CL3E
+                50:06:0e:80:12:34:57:24
+ alias: HDS0123457_CL3F
+                50:06:0e:80:12:34:57:25
+ alias: HDS0123457_CL5E
+                50:06:0e:80:12:34:57:44
+ alias: HDS0123457_CL5F
+                50:06:0e:80:12:34:57:45
+ alias: HDS0123457_CL7E
+                50:06:0e:80:12:34:57:64
+ alias: HDS0123457_CL7F
+                50:06:0e:80:12:34:57:65
+ alias: Oracle_123466
+                10:00:00:00:c9:12:34:66
+ alias: Oracle_123467
+                10:00:00:00:c9:12:34:67
+ alias: NASHead_123468
+                10:00:00:00:c9:12:34:68
+ alias: NASHead_123469
+                10:00:00:00:c9:12:34:69
+ alias: NASMany_654321
+                10:00:00:00:c9:44:44:10; 10:00:00:00:c9:44:44:11
+                10:00:00:00:c9:44:44:20; 10:00:00:00:c9:44:44:21
+                10:00:00:00:c9:44:44:30; 10:00:00:00:c9:44:44:31
+
+Effective configuration:
+ cfg:   SAN_CFG_B
+ zone:  SANASVR001_FabA
+                10:00:00:00:c9:12:34:66 </verbatim></para><para>The result is a list of nicknames, such as:</para><para><verbatim>50060e8012345724,HDS0123457_CL3E
+50060e8012345725,&quot;HDS0123457_CL3F&quot;
+50060e8012345744,&quot;HDS0123457_CL5E&quot;
+50060e8012345745,&quot;HDS0123457_CL5F&quot;
+50060e8012345764,&quot;HDS0123457_CL7E&quot;
+50060e8012345765,&quot;HDS0123457_CL7F&quot;
+10000000c9123466,&quot;Oracle_123466&quot;
+10000000c9123467,&quot;Oracle_123467&quot;
+10000000c9123468,&quot;NASHead_123468&quot;
+10000000c9123469,&quot;NASHead_123469&quot;
+10000000c9444410,&quot;NASMany_654321&quot;
+10000000c9444411,&quot;NASMany_654321&quot;
+10000000c9444420,&quot;NASMany_654321&quot;
+10000000c9444421,&quot;NASMany_654321&quot;
+10000000c9444430,&quot;NASMany_654321&quot;
+10000000c9444431,&quot;NASMany_654321&quot; </verbatim> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

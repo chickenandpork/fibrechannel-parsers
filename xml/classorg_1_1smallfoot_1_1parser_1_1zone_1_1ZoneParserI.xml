@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" kind="class" prot="public" abstract="yes">
     <compoundname>org::smallfoot::parser::zone::ZoneParserI</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" prot="public" virt="non-virtual">ZoneParser</basecompoundref>
@@ -8,6 +8,7 @@
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" prot="public" virt="non-virtual">BNAZoneParser</derivedcompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" prot="public" virt="non-virtual">DeviceAliasParser</derivedcompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" prot="public" virt="non-virtual">ShowZoneParser</derivedcompoundref>
+    <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" prot="public" virt="non-virtual">VW4InvalidAddedParser</derivedcompoundref>
       <sectiondef kind="package-attrib">
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" prot="package" static="no" mutable="no">
         <type>java.util.Vector&lt; ZPZoneEntry &gt;</type>
@@ -21,21 +22,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="8" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="10" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="10" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0dc8b05b3f25e59bc98f90dc8c64857c" prot="package" static="no" mutable="no">
-        <type>java.util.Vector&lt; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref> &gt;</type>
-        <definition>java.util.Vector&lt;ZPAliasEntry&gt; aliases</definition>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a071816722bbf8f31f56a3b27f5c84fa6" prot="package" static="no" mutable="no">
+        <type>TreeMap&lt; String, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref> &gt;</type>
+        <definition>TreeMap&lt;String,ZPAliasEntry&gt; aliases</definition>
         <argsstring></argsstring>
         <name>aliases</name>
-        <initializer>= new java.util.Vector()</initializer>
+        <initializer>= new TreeMap&lt;String,<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref>&gt;()</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="9" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="9" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="11" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="11" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -50,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="11" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="11" bodyend="11"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="13" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -63,8 +64,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="13" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="13" bodyend="13"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="202" endline="223">ZoneParserI.testSummary</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="15" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="15" bodyend="15"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="213" endline="234">ZoneParserI.testSummary</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a1631138fd08af051dc26686c00768ab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.util.Enumeration&lt; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref> &gt;</type>
@@ -77,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="15" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="15" bodyend="15"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="17" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="17" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5c646608669073b5c31bb44626baa48f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref>[]</type>
@@ -90,8 +91,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="17" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="17" bodyend="17"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="202" endline="223">ZoneParserI.testSummary</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="19" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="19" bodyend="19"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="213" endline="234">ZoneParserI.testSummary</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -104,8 +105,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="19" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="19" bodyend="19"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="202" endline="223">ZoneParserI.testSummary</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="21" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="21" bodyend="21"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="213" endline="234">ZoneParserI.testSummary</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a19567e6611303b1035a1a101b00310e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>abstract void</type>
@@ -122,8 +123,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="23" column="1"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" compoundref="ZoneParserI_8java" startline="75" endline="79">ZoneParserI.ZoneParserI</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="25" column="1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" compoundref="ZoneParserI_8java" startline="77" endline="81">ZoneParserI.ZoneParserI</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab23378f817a0790a310e852b89a5eb1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>abstract void</type>
@@ -140,8 +141,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="24" column="1"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" compoundref="ZoneParserI_8java" startline="75" endline="79">ZoneParserI.ZoneParserI</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="26" column="1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" compoundref="ZoneParserI_8java" startline="77" endline="81">ZoneParserI.ZoneParserI</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a78ce415d9f6ed283bce24ee9f700cedb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -166,7 +167,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="31" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="31" bodyend="34"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="33" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="33" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a678cd3827f5f34241ba56702cd5663a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -179,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="40" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="40" bodyend="43"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="42" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="42" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae2743a1693169cd3b5ebc8fcafa07c74" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -215,7 +216,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="52" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="52" bodyend="55"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="54" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="54" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1acc9e1015da0abae3030920bc213a20c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -240,7 +241,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="63" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="63" bodyend="66"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="65" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="65" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -276,7 +277,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="75" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="75" bodyend="79"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="77" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="77" bodyend="81"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab23378f817a0790a310e852b89a5eb1d">ZoneParserI.setDebug</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a19567e6611303b1035a1a101b00310e2">ZoneParserI.setReader</references>
       </memberdef>
@@ -314,7 +315,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="89" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="89" bodyend="92"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="91" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="91" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -340,10 +341,16 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="202" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="202" bodyend="223"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5c646608669073b5c31bb44626baa48f" compoundref="ZoneParserI_8java" startline="17" endline="17">ZoneParserI.aliasArray</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" compoundref="ZoneParserI_8java" startline="19" endline="19">ZoneParserI.aliasSize</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" compoundref="ZoneParserI_8java" startline="13" endline="13">ZoneParserI.zoneSize</references>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="213" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="213" bodyend="234"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5c646608669073b5c31bb44626baa48f" compoundref="ZoneParserI_8java" startline="19" endline="19">ZoneParserI.aliasArray</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" compoundref="ZoneParserI_8java" startline="21" endline="21">ZoneParserI.aliasSize</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" compoundref="ZoneParserI_8java" startline="15" endline="15">ZoneParserI.zoneSize</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="Alias4Parser_8java" startline="118" endline="123">Alias4Parser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="BNAZoneParser_8java" startline="452" endline="458">BNAZoneParser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="VW4InvalidAddedParser_8java" startline="471" endline="477">VW4InvalidAddedParser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="ShowZoneParser_8java" startline="505" endline="511">ShowZoneParser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="DeviceAliasParser_8java" startline="512" endline="518">DeviceAliasParser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="AliShowZoneParser_8java" startline="581" endline="587">AliShowZoneParser.main</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-func">
@@ -366,7 +373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="96" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="96" bodyend="113"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="98" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="98" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0cfe7f047edd054bac3bc33e9b611afd" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -387,7 +394,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="115" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="115" bodyend="123"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="117" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="117" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a830731cb1af2631d89e512f38460be81" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -408,7 +415,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="125" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="125" bodyend="134"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="127" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="127" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a49f8902117520ae3cc27b7bddb370a0e" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -429,7 +436,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="136" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="136" bodyend="144"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="138" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="138" bodyend="146"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a21a0aa226fb1154f5413f84fd78ae2c4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -450,7 +457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="146" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="146" bodyend="155"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="148" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="148" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab02480bb67091ad319f56a9dd13ea899" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -471,7 +478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="157" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="157" bodyend="169"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="164" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="164" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ad9eac83891611fa5e2e983328603eb8a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -492,7 +499,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="171" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="171" bodyend="193"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="182" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="182" bodyend="204"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -500,82 +507,88 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="200">
+      <node id="225">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="195" relation="public-inheritance">
+        <childnode refid="220" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="202">
+      <node id="227">
         <label>ShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser"/>
-        <childnode refid="195" relation="public-inheritance">
+        <childnode refid="220" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="195">
+      <node id="220">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="196" relation="public-inheritance">
+        <childnode refid="221" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="197">
+      <node id="228">
+        <label>VW4InvalidAddedParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="222">
         <label>Thread</label>
       </node>
-      <node id="196">
+      <node id="221">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="197" relation="public-inheritance">
+        <childnode refid="222" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="198">
+      <node id="223">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="195" relation="public-inheritance">
+        <childnode refid="220" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="201">
+      <node id="226">
         <label>DeviceAliasParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser"/>
-        <childnode refid="195" relation="public-inheritance">
+        <childnode refid="220" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="199">
+      <node id="224">
         <label>AliShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser"/>
-        <childnode refid="195" relation="public-inheritance">
+        <childnode refid="220" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="203">
+      <node id="229">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="204" relation="public-inheritance">
+        <childnode refid="230" relation="public-inheritance">
         </childnode>
-        <childnode refid="206" relation="usage">
+        <childnode refid="232" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="207" relation="usage">
+        <childnode refid="233" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="207">
+      <node id="233">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="205">
+      <node id="232">
+        <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="231">
         <label>Thread</label>
       </node>
-      <node id="204">
+      <node id="230">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="205" relation="public-inheritance">
+        <childnode refid="231" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="206">
-        <label>Vector&lt; org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
-      </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="6" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="5" bodyend="225"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="7" bodyend="236"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>_prop</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a49f8902117520ae3cc27b7bddb370a0e" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>addAlias</name></member>
@@ -586,7 +599,7 @@
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a830731cb1af2631d89e512f38460be81" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>addZone</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5c646608669073b5c31bb44626baa48f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>aliasArray</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a1631138fd08af051dc26686c00768ab3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>aliasElements</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0dc8b05b3f25e59bc98f90dc8c64857c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>aliases</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a071816722bbf8f31f56a3b27f5c84fa6" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>aliases</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>aliasSize</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ad9eac83891611fa5e2e983328603eb8a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>appendZoneAlphanum</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a5cb1996c3b0edb483631b6c82fd82608" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZoneParserI</scope><name>checkProperty</name></member>

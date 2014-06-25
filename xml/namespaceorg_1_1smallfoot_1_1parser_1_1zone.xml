@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="namespaceorg_1_1smallfoot_1_1parser_1_1zone" kind="namespace">
     <compoundname>org::smallfoot::parser::zone</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" prot="public">org::smallfoot::parser::zone::Alias4Parser</innerclass>
@@ -8,6 +8,7 @@
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" prot="public">org::smallfoot::parser::zone::DeviceAliasParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" prot="public">org::smallfoot::parser::zone::NicknameParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" prot="public">org::smallfoot::parser::zone::ShowZoneParser</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" prot="public">org::smallfoot::parser::zone::VW4InvalidAddedParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" prot="public">org::smallfoot::parser::zone::ZoneParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" prot="public">org::smallfoot::parser::zone::ZoneParserI</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" prot="public">org::smallfoot::parser::zone::ZoneParserVal</innerclass>

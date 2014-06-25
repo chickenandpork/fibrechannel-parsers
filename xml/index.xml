@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.7">
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kind="class"><name>org::smallfoot::parser::zone::Alias4Parser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a4e1353cca944de55b1cff88ca87b23cd" kind="variable"><name>br</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a38f6db9d4d540b728b2815e7d38559f1" kind="variable"><name>fcaliases</name></member>
@@ -256,7 +256,7 @@
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1FCParser" kind="class"><name>org::smallfoot::parser::FCParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" kind="function"><name>openStream</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1afaa48a4dd8e8a976b5f69ccc616ff6e6" kind="function"><name>openSource</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac04082b3e6b53cd43bbdc5ac4284f930" kind="function"><name>loadFile</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac2a58d7e7ba14399f9a0c5dd55011d28" kind="function"><name>loadFile</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6995194e0af7dc5aa27034287b79dbf3" kind="function"><name>usage</name></member>
   </compound>
@@ -362,6 +362,87 @@
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1version" kind="class"><name>org::smallfoot::parser::version</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1version_1ae4faf7ff4190d227357ef851490d7757" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kind="class"><name>org::smallfoot::parser::zone::VW4InvalidAddedParser</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4adddc9d747bbbcd221d26df8c80d05f" kind="variable"><name>yydebug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a0ea9e3b522e448ac462274fe70e1be82" kind="variable"><name>yynerrs</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a21e545865dbcf87cb4c1de2a7da51806" kind="variable"><name>yyerrflag</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a9e2c7c7373b818c86b2df7106a92327c" kind="variable"><name>yychar</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa638b510be8421c552f8a71f91f6ec3" kind="variable"><name>statestk</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac89c2492d77f2a88c9ccb06cfa375c39" kind="variable"><name>stateptr</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a29aa9152242dba094643e0b3717b7de1" kind="variable"><name>stateptrmax</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a08bd7e4c8c0de0fbe835b3522cd6e9cb" kind="variable"><name>statemax</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad5004db9a2ef3a73534e240417580b8b" kind="variable"><name>yytext</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad0e1edc56977784ee3140880a4ab662f" kind="variable"><name>yyval</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a86d02a47805f45fe9925395fb890e547" kind="variable"><name>yylval</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aaf3ab675514edcd808ad9e31c14bc243" kind="variable"><name>valstk</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a49423ca4199bedaafb0d36e3ce74ce40" kind="variable"><name>valptr</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab3627b14322e66c17a48d05c216c4da5" kind="variable"><name>ins</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24b8b65b5b30d5d3f4d9cfd89f47bd8e" kind="variable"><name>st</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1acd46a0f826a276c736966f6193f717cc" kind="variable"><name>zpquiet</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" kind="variable"><name>verboseStringtokenizer</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abb93c7c711a3c0ee506f0e510bf368a9" kind="variable"><name>newline</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a94ab010de2cb6a11c04bbf095fb31e12" kind="variable"><name>manualPushBackALPHANUM</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a0bb57aaadfcbef38e67059219b4126c9" kind="variable"><name>yyn</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a31c1ea5edb0bdd30006447b3f1e58d15" kind="variable"><name>yym</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac0fe627e81502f1ccb08d1519bfa40f2" kind="variable"><name>yystate</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2cdb474303672925b387e5f813343a82" kind="variable"><name>yys</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a486498b8c8ad29ef792a499437192ca5" kind="variable"><name>YYSTACKSIZE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a39171a519b0927d419c1b50aeac99b8a" kind="variable"><name>yylhs</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2e0afb9a762a5c5bad3dcb9f4ea67508" kind="variable"><name>yylen</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a76e5d053c1e04f4b4ad49b84fc440193" kind="variable"><name>yydefred</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a9a9c55e1779bc144dee27b76fcf1be4e" kind="variable"><name>yydgoto</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a771f445cecdd000023eabc2556196d3f" kind="variable"><name>yysindex</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a326b811dc6a20004fd5462b50b2552b9" kind="variable"><name>yyrindex</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad5657f65d3a538951fc73836fb367373" kind="variable"><name>yygindex</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aba56e7cdfd617dc786ca9452a8d56b60" kind="variable"><name>YYTABLESIZE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7682804618f55311e36c8338425eac69" kind="variable"><name>yytable</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a734735ae171a8a3bf7e651343fa35eb2" kind="variable"><name>yycheck</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ae401f7abf70e23dd826ef078c900ffa6" kind="variable"><name>YYFINAL</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abe4ca243dec8a5d592012c4e817e0b10" kind="variable"><name>YYMAXTOKEN</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a0c215687f88b02eedeece3e19b48bc00" kind="variable"><name>yyname</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aa90e232613bcc5abc359f1dfd9755e4a" kind="variable"><name>yyrule</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6a4b0f294229cb6f7a9379147c5bf760" kind="variable"><name>LOCATION</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a243829ef5cd46d7de88e0d5ac30d0b44" kind="variable"><name>LINE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a393daa759a1143577ed9c520408718e9" kind="variable"><name>COLUMN</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab78b371699c59ad27fd9f486d3923203" kind="variable"><name>INVALID</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a47f0373b201de53529ea39cfdb320a9a" kind="variable"><name>ADDED</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a88f4cd11b8a94e957069b64101ff8f09" kind="variable"><name>CHILD</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7d254cfa99265d281a12aca532b81672" kind="variable"><name>ENTITIES</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab9a3de9a217cad4ad00a26e6324f275e" kind="variable"><name>WWPN</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kind="variable"><name>ENTITY</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa1bd945463851953be939c8793faf70" kind="variable"><name>ALPHANUM</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2b4ade66a5ea6528e4e8c93cdae23124" kind="variable"><name>HBA</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1c58472ea6621d2f613831e08d10dba3" kind="variable"><name>YYERRCODE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad5b3677e61ca769d9d9e5cf9cfa1b33c" kind="function"><name>debug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7fca06f2aea68127ed9d54ee46be67ed" kind="function"><name>state_push</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5b17a79d1f2f4e91db95a53420401505" kind="function"><name>state_pop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a3b3b21a1eb9702329844cc77d2d82a22" kind="function"><name>state_drop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a9bd929c959381696ac57117965762423" kind="function"><name>state_peek</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad1071764e501d770efe1ade5ea8d7ee5" kind="function"><name>init_stacks</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a8e626edce147080d6b74344124787ed7" kind="function"><name>dump_stacks</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a15f32bea4b8f1c22ada11d651b67db4a" kind="function"><name>val_init</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a546b106645004a3f569c40a7be9cecdb" kind="function"><name>val_push</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad6e5325d5726d0823417eb248a201bc2" kind="function"><name>val_pop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a03184d479fc81e916502118e86acd1e7" kind="function"><name>val_drop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aff23f19244cb74af69b0d1598a019c91" kind="function"><name>val_peek</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5b3da8f164c609de90b1205d63103862" kind="function"><name>dup_yyval</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac677a01b361642a02e9b23afb4163fce" kind="function"><name>yyerror</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aa40b27ae32d6d1ae7160bd6256e08eb8" kind="function"><name>yylex</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2d5e88a14a1ce23f517be13c8a7a0f92" kind="function"><name>yylexdebug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1acd8617a8f2ac0de8bc1cc032cf449e19" kind="function"><name>yyparse</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2e87c5ede6b7235170d287cd2e254454" kind="function"><name>[static initializer]</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7bfe55f022dd2ed471f804f7e83f3b19" kind="function"><name>yytable</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2e87c5ede6b7235170d287cd2e254454" kind="function"><name>[static initializer]</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aa000c1557e5264cffbc58d37d7d67ce4" kind="function"><name>yycheck</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad7c704b34912678d95c13243cacf9d7f" kind="function"><name>parse</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5deab139f9ad4072e1a497c5cccda0ea" kind="function"><name>setReader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6c13d260cf71d0554f789c4641a9f18b" kind="function"><name>setDebug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a883f64011f4bd6ffb448ae0eaac1bcda" kind="function"><name>VW4InvalidAddedParser</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aceee193982e5d541a3a302bdf288cb0a" kind="function"><name>VW4InvalidAddedParser</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a266237757cc1ac1aa85f2ca408c80c98" kind="function"><name>VW4InvalidAddedParser</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" kind="class"><name>org::smallfoot::parser::zone::ZoneParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" kind="variable"><name>_prop</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1afdaf0b0fa88db2d36aca3bfed387f230" kind="function"><name>zoneElements</name></member>
@@ -383,7 +464,7 @@
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" kind="class"><name>org::smallfoot::parser::zone::ZoneParserI</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" kind="variable"><name>zones</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0dc8b05b3f25e59bc98f90dc8c64857c" kind="variable"><name>aliases</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a071816722bbf8f31f56a3b27f5c84fa6" kind="variable"><name>aliases</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a17bb9b86877d4493c7ad4ba284f7c945" kind="function"><name>zoneElements</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" kind="function"><name>zoneSize</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a1631138fd08af051dc26686c00768ab3" kind="function"><name>aliasElements</name></member>
@@ -480,6 +561,8 @@
   </compound>
   <compound refid="version_8java" kind="file"><name>version.java</name>
   </compound>
+  <compound refid="VW4InvalidAddedParser_8java" kind="file"><name>VW4InvalidAddedParser.java</name>
+  </compound>
   <compound refid="ZoneParser_8java" kind="file"><name>ZoneParser.java</name>
   </compound>
   <compound refid="ZoneParserI_8java" kind="file"><name>ZoneParserI.java</name>
@@ -491,6 +574,18 @@
   <compound refid="ZPFCAliasEntry_8java" kind="file"><name>ZPFCAliasEntry.java</name>
   </compound>
   <compound refid="ZPZoneEntry_8java" kind="file"><name>ZPZoneEntry.java</name>
+  </compound>
+  <compound refid="formats" kind="page"><name>formats</name>
+  </compound>
+  <compound refid="AliShowZoneParser" kind="page"><name>AliShowZoneParser</name>
+  </compound>
+  <compound refid="BNAZoneParser" kind="page"><name>BNAZoneParser</name>
+  </compound>
+  <compound refid="DeviceAliasParser" kind="page"><name>DeviceAliasParser</name>
+  </compound>
+  <compound refid="ShowZoneParser" kind="page"><name>ShowZoneParser</name>
+  </compound>
+  <compound refid="VW4InvalidAdded" kind="page"><name>VW4InvalidAdded</name>
   </compound>
   <compound refid="dir_93c6ba7fb77bae0709fae89c9c13b44a" kind="dir"><name>java</name>
   </compound>

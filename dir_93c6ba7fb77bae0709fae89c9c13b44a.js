@@ -30,6 +30,9 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
     [ "version.java", "version_8java.html", [
       [ "version", "classorg_1_1smallfoot_1_1parser_1_1version.html", null ]
     ] ],
+    [ "VW4InvalidAddedParser.java", "VW4InvalidAddedParser_8java.html", [
+      [ "VW4InvalidAddedParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" ]
+    ] ],
     [ "ZoneParser.java", "ZoneParser_8java.html", [
       [ "ZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" ]
     ] ],

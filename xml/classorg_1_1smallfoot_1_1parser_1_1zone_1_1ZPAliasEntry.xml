@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kind="class" prot="public">
     <compoundname>org::smallfoot::parser::zone::ZPAliasEntry</compoundname>
     <basecompoundref prot="public" virt="non-virtual">java::lang::Comparable&lt; ZPAliasEntry &gt;</basecompoundref>
@@ -153,24 +153,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="210">
+      <node id="236">
         <label>ZPAliasEntry</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry"/>
-        <childnode refid="211" relation="public-inheritance">
+        <childnode refid="237" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="211">
+      <node id="237">
         <label>Comparable&lt; ZPAliasEntry &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="212">
+      <node id="238">
         <label>ZPAliasEntry</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry"/>
-        <childnode refid="213" relation="public-inheritance">
+        <childnode refid="239" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="213">
+      <node id="239">
         <label>Comparable&lt; ZPAliasEntry &gt;</label>
       </node>
     </collaborationgraph>

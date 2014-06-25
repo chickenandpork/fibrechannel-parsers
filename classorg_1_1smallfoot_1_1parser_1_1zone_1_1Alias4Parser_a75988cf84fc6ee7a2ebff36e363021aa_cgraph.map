@@ -1,3 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html#af385e3c075112d912bb0dad0d9324372" title="Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug. " alt="" coords="105,5,202,30"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html#af385e3c075112d912bb0dad0d9324372" title="Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug. " alt="" coords="145,18,242,43"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a70080dd2601542e3fa52cfdac8e00afb" title="To test/show a descendant class, with a created parser, feed in the stdin, parse what it can..." alt="" coords="105,67,282,106"/>
+<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a083293963a3e77da41becf829be83aca" title="org.smallfoot.parser.zone.\lZoneParserI.zoneSize" alt="" coords="331,5,506,43"/>
+<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a5586367d58e0d7e6a4d5262d6dc87fd2" title="org.smallfoot.parser.zone.\lZoneParserI.aliasSize" alt="" coords="331,67,506,106"/>
+<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a5c646608669073b5c31bb44626baa48f" title="org.smallfoot.parser.zone.\lZoneParserI.aliasArray" alt="" coords="331,130,506,169"/>
 </map>

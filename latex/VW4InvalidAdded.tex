@@ -1,0 +1,13 @@
+The \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser} interprets the error content of a Virtual\+Wisdom4 Entity validation exception; this typically is a long set of multi-\/line messages such as\+:
+
+\begin{DoxyVerb}Location: [Line : 1234 , Column : 7]
+Invalid added child entities : 20c2000dec123456
+Entity: Cisco-000dec-123456:194 : hba \end{DoxyVerb}
+
+
+The result is a list of nicknames, all of which say that the W\+W\+P\+N has a nickname of \char`\"{}none\char`\"{} -- for example, as if the \doxyref{Nickname\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser} had read content such as\+:
+
+\begin{DoxyVerb}20c2000dec123456,"none" \end{DoxyVerb}
+
+
+This format has limited facility\+: it's intended for cases where an error message is used to exclude entities from an import file. In such case, the same import would be used to generate a list of W\+W\+P\+N/alias combinations, then the \char`\"{}exclusion\char`\"{} list would be read using this parser. 

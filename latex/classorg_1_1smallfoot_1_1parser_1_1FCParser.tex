@@ -1,14 +1,14 @@
-\section{F\-C\-Parser Class Reference}
-\label{classorg_1_1smallfoot_1_1parser_1_1FCParser}\index{F\-C\-Parser@{F\-C\-Parser}}
+\section{F\+C\+Parser Class Reference}
+\label{classorg_1_1smallfoot_1_1parser_1_1FCParser}\index{F\+C\+Parser@{F\+C\+Parser}}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static java.\-io.\-Input\-Stream {\bf open\-Stream} (String uri)  throws java.\-io.\-File\-Not\-Found\-Exception, java.\-net.\-Malformed\-U\-R\-L\-Exception, java.\-io.\-I\-O\-Exception     
-\begin{DoxyCompactList}\small\item\em Produce an Input\-Stream for the given uri in a way that corresponds to the url protocol. \end{DoxyCompactList}\item 
-static Input\-Stream {\bf open\-Source} (String url, boolean verbose)
-\begin{DoxyCompactList}\small\item\em Create a stream from a U\-R\-L or file name with a convenience workaround for no-\/proto U\-R\-Ls. \end{DoxyCompactList}\item 
-static {\bf Zone\-Parser} {\bf load\-File} (Input\-Stream is, boolean verbose)
-\begin{DoxyCompactList}\small\item\em Load a file from the resource given to a W\-W\-N/\-Nickname vector. \end{DoxyCompactList}\item 
+static java.\+io.\+Input\+Stream {\bf open\+Stream} (String uri)  throws java.\+io.\+File\+Not\+Found\+Exception, java.\+net.\+Malformed\+U\+R\+L\+Exception, java.\+io.\+I\+O\+Exception     
+\begin{DoxyCompactList}\small\item\em Produce an Input\+Stream for the given uri in a way that corresponds to the url protocol. \end{DoxyCompactList}\item 
+static Input\+Stream {\bf open\+Source} (String url, boolean verbose)
+\begin{DoxyCompactList}\small\item\em Create a stream from a U\+R\+L or file name with a convenience workaround for no-\/proto U\+R\+Ls. \end{DoxyCompactList}\item 
+static {\bf Zone\+Parser} {\bf load\+File} (Input\+Stream is, String args0, boolean verbose)
+\begin{DoxyCompactList}\small\item\em Load a file from the resource given to a W\+W\+N/\+Nickname vector. \end{DoxyCompactList}\item 
 static void {\bf main} (String args[$\,$])
 \begin{DoxyCompactList}\small\item\em Main function, as you can tell. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -16,39 +16,61 @@ static void {\bf main} (String args[$\,$])
 \subsection{Detailed Description}
 
 
-Definition at line 20 of file F\-C\-Parser.\-java.
+Definition at line 28 of file F\+C\+Parser.\+java.
 
 
 
 \subsection{Member Function Documentation}
-\index{org\-::smallfoot\-::parser\-::\-F\-C\-Parser@{org\-::smallfoot\-::parser\-::\-F\-C\-Parser}!load\-File@{load\-File}}
-\index{load\-File@{load\-File}!org::smallfoot::parser::FCParser@{org\-::smallfoot\-::parser\-::\-F\-C\-Parser}}
-\subsubsection[{load\-File}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Zone\-Parser} load\-File (
+\index{org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}!load\+File@{load\+File}}
+\index{load\+File@{load\+File}!org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}}
+\subsubsection[{load\+File}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Zone\+Parser} load\+File (
 \begin{DoxyParamCaption}
-\item[{Input\-Stream}]{is, }
+\item[{Input\+Stream}]{is, }
+\item[{String}]{args0, }
 \item[{boolean}]{verbose}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_ac04082b3e6b53cd43bbdc5ac4284f930}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_ac2a58d7e7ba14399f9a0c5dd55011d28}
 
 
-Load a file from the resource given to a W\-W\-N/\-Nickname vector. 
+Load a file from the resource given to a W\+W\+N/\+Nickname vector. 
 
 \begin{DoxyReturn}{Returns}
-the number of things loaded (used to trigger obsessive retries to get around choking org.\-apache.\-commons.\-io.\-input.\-Tee\-Input\-Stream ) 
+the number of things loaded (used to trigger obsessive retries to get around choking org.\+apache.\+commons.\+io.\+input.\+Tee\+Input\+Stream ) 
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parameters}
 {\em is} & the inputstream to parse from \\
+\hline
+{\em args0} & the args[0] value to substitute into the optional verbose output of oarsing results \\
 \hline
 {\em verbose} & if true, parser results will be shown to stdout \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 114 of file F\-C\-Parser.\-java.
+Definition at line 123 of file F\+C\+Parser.\+java.
 
-\index{org\-::smallfoot\-::parser\-::\-F\-C\-Parser@{org\-::smallfoot\-::parser\-::\-F\-C\-Parser}!main@{main}}
-\index{main@{main}!org::smallfoot::parser::FCParser@{org\-::smallfoot\-::parser\-::\-F\-C\-Parser}}
+
+
+References Zone\+Parser.\+alias\+Size(), and Zone\+Parser.\+zone\+Size().
+
+
+
+Referenced by F\+C\+Parser.\+main().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classorg_1_1smallfoot_1_1parser_1_1FCParser_ac2a58d7e7ba14399f9a0c5dd55011d28_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}!main@{main}}
+\index{main@{main}!org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}}
 \subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void main (
 \begin{DoxyParamCaption}
 \item[{String}]{args[$\,$]}
@@ -58,7 +80,7 @@ Definition at line 114 of file F\-C\-Parser.\-java.
 
 Main function, as you can tell. 
 
-this function merely parses the command-\/line to dispatch actions to the meat of the meal above. I'm using an actual Get\-Opt because, yes, I'm a U\-N\-I\-X/\-C hack, re-\/using 3-\/decades-\/old knowledge, but this also preserves both extensibility and the ability to use longopts in scripts as a way to self-\/document what the tool's doing.
+this function merely parses the command-\/line to dispatch actions to the meat of the meal above. I'm using an actual Get\+Opt because, yes, I'm a U\+N\+I\+X/\+C hack, re-\/using 3-\/decades-\/old knowledge, but this also preserves both extensibility and the ability to use longopts in scripts as a way to self-\/document what the tool's doing.
 
 No real intelligence herein except the parse-\/and-\/redirect action.
 
@@ -69,11 +91,26 @@ No real intelligence herein except the parse-\/and-\/redirect action.
 \end{DoxyParams}
 
 
-Definition at line 240 of file F\-C\-Parser.\-java.
+Definition at line 250 of file F\+C\+Parser.\+java.
 
-\index{org\-::smallfoot\-::parser\-::\-F\-C\-Parser@{org\-::smallfoot\-::parser\-::\-F\-C\-Parser}!open\-Source@{open\-Source}}
-\index{open\-Source@{open\-Source}!org::smallfoot::parser::FCParser@{org\-::smallfoot\-::parser\-::\-F\-C\-Parser}}
-\subsubsection[{open\-Source}]{\setlength{\rightskip}{0pt plus 5cm}static Input\-Stream open\-Source (
+
+
+References F\+C\+Parser.\+load\+File(), F\+C\+Parser.\+open\+Source(), and Zone\+Parser.\+summarize().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classorg_1_1smallfoot_1_1parser_1_1FCParser_a75988cf84fc6ee7a2ebff36e363021aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}!open\+Source@{open\+Source}}
+\index{open\+Source@{open\+Source}!org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}}
+\subsubsection[{open\+Source}]{\setlength{\rightskip}{0pt plus 5cm}static Input\+Stream open\+Source (
 \begin{DoxyParamCaption}
 \item[{String}]{url, }
 \item[{boolean}]{verbose}
@@ -81,12 +118,12 @@ Definition at line 240 of file F\-C\-Parser.\-java.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_afaa48a4dd8e8a976b5f69ccc616ff6e6}
 
 
-Create a stream from a U\-R\-L or file name with a convenience workaround for no-\/proto U\-R\-Ls. 
+Create a stream from a U\+R\+L or file name with a convenience workaround for no-\/proto U\+R\+Ls. 
 
-N\-O\-T\-E\-: changes java.\-util.\-Properties
+N\+O\+T\+E\+: changes java.\+util.\+Properties
 
 \begin{DoxyReturn}{Returns}
-the resulting Input\-Stream 
+the resulting Input\+Stream 
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parameters}
@@ -97,15 +134,19 @@ the resulting Input\-Stream
 \end{DoxyParams}
 
 
-Definition at line 57 of file F\-C\-Parser.\-java.
+Definition at line 65 of file F\+C\+Parser.\+java.
 
 
 
-References F\-C\-Parser.\-open\-Stream().
+References F\+C\+Parser.\+open\+Stream().
 
 
 
-Here is the call graph for this function\-:\nopagebreak
+Referenced by F\+C\+Parser.\+main().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -114,35 +155,35 @@ Here is the call graph for this function\-:\nopagebreak
 \end{figure}
 
 
-\index{org\-::smallfoot\-::parser\-::\-F\-C\-Parser@{org\-::smallfoot\-::parser\-::\-F\-C\-Parser}!open\-Stream@{open\-Stream}}
-\index{open\-Stream@{open\-Stream}!org::smallfoot::parser::FCParser@{org\-::smallfoot\-::parser\-::\-F\-C\-Parser}}
-\subsubsection[{open\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}static java.\-io.\-Input\-Stream open\-Stream (
+\index{org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}!open\+Stream@{open\+Stream}}
+\index{open\+Stream@{open\+Stream}!org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}}
+\subsubsection[{open\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}static java.\+io.\+Input\+Stream open\+Stream (
 \begin{DoxyParamCaption}
 \item[{String}]{uri}
 \end{DoxyParamCaption}
-) throws java.\-io.\-File\-Not\-Found\-Exception, java.\-net.\-Malformed\-U\-R\-L\-Exception, java.\-io.\-I\-O\-Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_a87eb2ebceee6e66dc59ed239d2220a56}
+) throws java.\+io.\+File\+Not\+Found\+Exception, java.\+net.\+Malformed\+U\+R\+L\+Exception, java.\+io.\+I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_a87eb2ebceee6e66dc59ed239d2220a56}
 
 
-Produce an Input\-Stream for the given uri in a way that corresponds to the url protocol. 
+Produce an Input\+Stream for the given uri in a way that corresponds to the url protocol. 
 
 \begin{DoxyReturn}{Returns}
-Input\-Stream ready to offer back the data 
+Input\+Stream ready to offer back the data 
 \end{DoxyReturn}
 
 \begin{DoxyParams}{Parameters}
-{\em uri} & the {\tt file\-://} resource of a file, ie \char`\"{}file\-:///sample.\-csv\char`\"{} \\
+{\em uri} & the {\tt file\+://} resource of a file, ie \char`\"{}file\+:///sample.\+csv\char`\"{} \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 28 of file F\-C\-Parser.\-java.
+Definition at line 36 of file F\+C\+Parser.\+java.
 
 
 
-Referenced by F\-C\-Parser.\-open\-Source().
+Referenced by F\+C\+Parser.\+open\+Source().
 
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-java/{\bf F\-C\-Parser.\-java}\end{DoxyCompactItemize}
+java/{\bf F\+C\+Parser.\+java}\end{DoxyCompactItemize}
