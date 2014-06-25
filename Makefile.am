@@ -30,9 +30,9 @@ doc: htdocs/README.dox Doxyfile
 
 htdocs/README.dox: README.md Makefile
 if DO_DOXYGEN_MD
-	awk 'BEGIN { print "@file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } { printf "%s\n",$$0; } END {print "" }' $< > $@
+	awk 'BEGIN { print "@file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } { printf "%s\n",$$0; } END {print "@tableofcontents" }' $< > $@
 else
-	awk 'BEGIN { print "/** @file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } /@PACKAGE@$$/ {next} /^=+$$/ {next} { printf " * %s\n",$$0; } END {print " */" }' $< > $@
+	awk 'BEGIN { print "/** @file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } /@PACKAGE@$$/ {next} /^=+$$/ {next} { printf " * %s\n",$$0; } END {print "@tableofcontents"; print " */" }' $< > $@
 endif DO_DOXYGEN_MD_FALSE
 endif
 

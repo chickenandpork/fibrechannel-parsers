@@ -1,8 +1,31 @@
-/* http://byaccj.sourceforge.net */
 %{
 import java.lang.Math;
-//import java.util.StringTokenizer;
 import java.io.*;
+
+/**
+ * @file vw4invalid.y
+ *
+ * @page formats Compatible File Formats
+ * @subpage VW4InvalidAdded
+ *
+ * @page VW4InvalidAdded VirtualWisdom4 Validation Errors
+ *
+ * The VW4InvalidAddedParser interprets the error content of a VirtualWisdom4 Entity validation exception
+ *
+ * a VirtualWisdom4 Validation error message is typically a long set of multi-line messages such as:
+ * @verbatim
+Location: [Line : 1234 , Column : 7]
+Invalid added child entities : 20c2000dec123456
+Entity: Cisco-000dec-123456:194 : hba @endverbatim
+ *
+ * The result is a list of nicknames, all of which say that the WWPN has a nickname of "none" -- for example, as if the NicknameParser had read content such as:
+ *
+ * @verbatim
+20c2000dec123456,"none" @endverbatim
+ *
+ * This format has limited facility: it's intended for cases where an error message is used to exclude entities from an import file.  In such case, the same import would be used to generate a list of WWPN/alias combinations, then the "exclusion" list would be read using this parser.
+ */
+
 %}
 
 /* YACC Declarations */

@@ -3,6 +3,29 @@
 import java.lang.Math;
 //import java.util.StringTokenizer;
 import java.io.*;
+
+/**
+ * @file bnazone.y
+ *
+ * @page formats Compatible File Formats
+ * @subpage BNAZoneParser
+
+ * @page BNAZoneParser BNA Database
+ *
+ * The BNAZoneParser parses the binary text records in a BNA server representing the zonesets and their aliases
+ *
+ * This parser is not normally used from a downloaded text; it's normally used when a client executes a query against the backing database of a BNA instance.  The resulting query tends to have data columns in resultset that are binary-coded to reduce parsing load.  These same binary tokens are parsed by BNAZoneParser to provide results similar to AliShowParser.
+ *
+ * There are times that the backing database is easier to query than switches
+ *
+ * Use this parser automatically by collecting using a bnapsql:// URL protocol with the "vict" or "vw4tools" project.  For example:
+ * 
+ *     java -jar vict.jar -N bnapsql://bna.example.com/
+ *
+ * or
+ *
+ *     java -jar vw4tools.jar -N bna://bna.example.com/
+ */
 %}
 
 /* YACC Declarations */

@@ -13,8 +13,16 @@ import org.smallfoot.parser.zone.BNAZoneParser;
 import org.smallfoot.parser.zone.DeviceAliasParser;
 import org.smallfoot.parser.zone.NicknameParser;
 import org.smallfoot.parser.zone.ShowZoneParser;
+import org.smallfoot.parser.zone.VW4InvalidAddedParser;
 import org.smallfoot.parser.zone.ZPAliasEntry;
 import org.smallfoot.parser.zone.ZoneParser;
+
+/** @file */
+
+/**
+ * @page formats Compatible File Formats
+ */
+
 
 
 public abstract class FCParser
@@ -126,6 +134,7 @@ public abstract class FCParser
         zpl.add( new BNAZoneParser(prop, false));
         zpl.add( new DeviceAliasParser(prop, false));
         zpl.add( new ShowZoneParser(prop, false));
+        zpl.add( new VW4InvalidAddedParser(prop, false));
 
         try
         {
