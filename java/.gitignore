@@ -8,13 +8,19 @@ DeviceAliasParserVal.java
 
 #generated autoconf
 Alias4Parser.java
+BNAPURLConnection.java
+DWHURLConnection.java
 FCParser.java
+MSDWHURLConnection.java
 NicknameParser.java
+OSMURLConnection.java
 ShowZoneParser.java
 bnazone.y
 devicealias.y
 showzone.y
+vw4invalid.y
 zonefile.y
+
 
 #generated buildproc
 fcparsers.class
@@ -23,6 +29,7 @@ classjava.stamp
 javaroot.stamp
 version.java
 bld/
+genproto/
 Makefile
 Makefile.in
 

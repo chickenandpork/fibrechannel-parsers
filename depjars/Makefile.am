@@ -43,6 +43,16 @@ jconn2-5.5.jar:
 	test \! -f $@ || jar tf $@ >/dev/null || rm $@
 	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
 
+JARS += mysql-connector-java-5.1.14.jar
+
+mysql-connector-java-5.1.14.jar:
+	test \! -f $${TMPDIR-/tmp}/$(@F) || jar tf $${TMPDIR-/tmp}/$(@F) >/dev/null || rm $${TMPDIR-/tmp}/$(@F)
+	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
+	test -f $@ || wget -O $@ http://mirrors.ibiblio.org/maven2/mysql/mysql-connector-java/5.1.14/$(@F) || curl -o $@ http://mirrors.ibiblio.org/maven2/mysql/mysql-connector-java/5.1.14/$(@F)
+	test \! -f $@ || jar tf $@ >/dev/null || rm $@
+	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
+
+
 
 BUILT_SOURCES := $(JARS)
 

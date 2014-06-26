@@ -1,5 +1,5 @@
 /* smallfoot.org is owned by allan.clark */
-package org.smallfoot.osmsql;
+package org.smallfoot.parser.osmsql;
 
 /**
  * @file

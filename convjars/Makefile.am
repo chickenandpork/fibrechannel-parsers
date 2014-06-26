@@ -7,7 +7,7 @@ BUILDTMP=$(shell date +%s)
 JAVAROOT = bld
 
 
-@PACKAGE@.jar: ../java/@PACKAGE@.jar ../depjars/commons-io-2.3.jar @GETOPTJAR@ ../depjars/jconn2-5.5.jar ../depjars/postgresql-9.1-902.jdbc4.jar
+@PACKAGE@.jar: ../java/@PACKAGE@.jar ../depjars/commons-io-2.3.jar @GETOPTJAR@ ../depjars/jconn2-5.5.jar ../depjars/postgresql-9.1-902.jdbc4.jar ../depjars/mysql-connector-java-5.1.14.jar
 	@-rm -fr $(@D)/.workdir
 	@mkdir -p $(@D)/.workdir/META-INF/services
 	@echo "Manifest-Version: 1.0" > $(@D)/.workdir/MANIFEST.MF

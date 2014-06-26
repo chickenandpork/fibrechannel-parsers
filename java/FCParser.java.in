@@ -75,7 +75,7 @@ public abstract class FCParser
         if ( (null == p.getProperty("java.protocol.handler.pkgs")) || (1 > p.getProperty("java.protocol.handler.pkgs").length()) )
             p.setProperty("java.protocol.handler.pkgs","org.smallfoot.parser");
         else
-            p.setProperty("java.protocol.handler.pkgs",p.getProperty("java.protocol.handler.pkgs")+"|org.smallfoot");
+            p.setProperty("java.protocol.handler.pkgs",p.getProperty("java.protocol.handler.pkgs")+"|org.smallfoot.parser");
         System.setProperties(p);
 
         //java.security.Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
@@ -351,6 +351,15 @@ public abstract class FCParser
                 catch (java.lang.ClassNotFoundException cnfe)
                 {
                     System.out.println("BNAPSQL DB Driver: ERR : "+cnfe.getMessage());
+                }
+                try
+                {
+                    Class.forName("com.mysql.jdbc.Driver");
+                    System.out.println("OSMSQL DB Driver: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("OSMSQL DB Driver: ERR : "+cnfe.getMessage());
                 }
                 break;
 

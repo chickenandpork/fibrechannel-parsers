@@ -1,5 +1,5 @@
 /* smallfoot.org is owned by allan.clark */
-package org.smallfoot.msosmsql;
+package org.smallfoot.parser.msosmsql;
 
 /**
  * @file
@@ -7,7 +7,7 @@ package org.smallfoot.msosmsql;
  * This class simply provides a specific URL pattern for the client extractor for a specific customer allowing a different database schema to be used
  */
 
-public class MSDWHURLConnection extends org.smallfoot.osmsql.OSMURLConnection
+public class MSDWHURLConnection extends org.smallfoot.parser.osmsql.OSMURLConnection
 {
     public MSDWHURLConnection(String connectionInfo, String username, String password)
     {
@@ -26,17 +26,17 @@ public class MSDWHURLConnection extends org.smallfoot.osmsql.OSMURLConnection
      * +--------------------+-------------------------+------------+
      * | name               | wwn                     | name2      |
      * +--------------------+-------------------------+------------+
-     * | MS-SQL-14          | 10:00:00:00:c9:12:34:56 | WEST_FAB_A |
-     * | MS-SQL-14          | 10:00:00:00:c9:12:34:57 | WEST_FAB_B |
-     * | MS-SQL-15          | 10:00:00:00:c9:12:34:58 | EAST_FAB_1 |
-     * | MS-SQL-15          | 10:00:00:00:c9:12:34:59 | EAST_FAB_2 |
+     * | MY-SQL-14          | 10:00:00:00:c9:12:34:56 | WEST_FAB_A |
+     * | MY-SQL-14          | 10:00:00:00:c9:12:34:57 | WEST_FAB_B |
+     * | MY-SQL-15          | 10:00:00:00:c9:12:34:58 | EAST_FAB_1 |
+     * | MY-SQL-15          | 10:00:00:00:c9:12:34:59 | EAST_FAB_2 |
      * +--------------------+-------------------------+------------+
      *
      * The output will be the A/B of the fabric appended to the alias with 1/2 converted to A/B:
-     * 10:00:00:00:c9:12:34:56,"MS-SQL-14_A"
-     * 10:00:00:00:c9:12:34:57,"MS-SQL-14_B"
-     * 10:00:00:00:c9:12:34:58,"MS-SQL-15_A"
-     * 10:00:00:00:c9:12:34:59,"MS-SQL-15_B"
+     * 10:00:00:00:c9:12:34:56,"MY-SQL-14_A"
+     * 10:00:00:00:c9:12:34:57,"MY-SQL-14_B"
+     * 10:00:00:00:c9:12:34:58,"MY-SQL-15_A"
+     * 10:00:00:00:c9:12:34:59,"MY-SQL-15_B"
      */
     public java.io.InputStream getInputStream()
     {

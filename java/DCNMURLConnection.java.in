@@ -1,5 +1,5 @@
 /* smallfoot.org is owned by allan.clark */
-package org.smallfoot.dcnmsql;
+package org.smallfoot.parser.dcnmsql;
 
 //import java.io.*;
 //import java.util.*;

@@ -1,5 +1,8 @@
 #generated buildproc
 commons-io-2.3-bin.tar.gz
 commons-io-2.3.jar
+jconn2-5.5.jar
+mysql-connector-java-5.1.14.jar
+postgresql-9.1-902.jdbc4.jar
 Makefile
 Makefile.in

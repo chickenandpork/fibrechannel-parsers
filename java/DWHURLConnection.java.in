@@ -1,5 +1,5 @@
 /* smallfoot.org is owned by allan.clark */
-package org.smallfoot.ocidwh;
+package org.smallfoot.parser.ocidwh;
 
 /**
  * @file
@@ -7,7 +7,7 @@ package org.smallfoot.ocidwh;
  * This class simply provides a second URL pattern for the client extractor
  */
 
-public class DWHURLConnection extends org.smallfoot.osmsql.OSMURLConnection
+public class DWHURLConnection extends org.smallfoot.parser.osmsql.OSMURLConnection
 {
     public DWHURLConnection(String connectionInfo, String username, String password)
     {
