@@ -16,9 +16,6 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  * @see http://www.cisco.com/en/US/docs/switches/datacenter/sw/6_x/dcnm/installation/published/installing_DCNM.pdf
  * @see http://www.cisco.com/en/US/docs/switches/datacenter/nexus5000/sw/configuration/guide/fm/gs.pdf
  *
- * @section Known Issues
- * - as of 2012-09-11 unknown test status
- *
  * @page formats Compatible File Formats
  * @subpage DCNMURLConnection
  *
