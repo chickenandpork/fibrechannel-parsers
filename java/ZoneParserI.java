@@ -224,7 +224,7 @@ System.out.println("append: item.obj: " + (null == item.obj ? "NULL" : item.obj.
             pq.add(e);
         int c = 0;
         for (ZPAliasEntry e: pq) c += e.wwns.size();
-        System.out.println("Aliases: "+c + " (name/WWPN tuples)");
+        System.out.println("Aliases: "+c + " (name/WWPN pairs)");
 
         if (checkProperty("debug.dumpAliases"))
             for (ZPAliasEntry e: pq)

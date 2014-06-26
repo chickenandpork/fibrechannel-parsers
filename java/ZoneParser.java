@@ -131,7 +131,7 @@ public abstract class ZoneParser extends Thread
                 pq.add(e);
             int c = 0;
             for (ZPAliasEntry e: pq) c += e.wwns.size();
-            System.out.println("Aliases: "+c + " (name/WWPN pairs)");
+            System.out.println("Aliases: "+c + " (name/WWPN tuples)");
 
             if (checkProperty("debug.dumpAliases"))
                 for (ZPAliasEntry e: pq)
