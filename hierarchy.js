@@ -31,6 +31,8 @@ var hierarchy =
     [ "URLStreamHandler", null, [
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler.html", null ],
-      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler.html", null ]
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler.html", null ],
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler.html", null ],
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler.html", null ]
     ] ]
 ];

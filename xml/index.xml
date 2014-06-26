@@ -278,6 +278,12 @@
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler" kind="class"><name>org::smallfoot::parser::bna::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler" kind="class"><name>org::smallfoot::parser::cmcne::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcfm::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler" kind="class"><name>org::smallfoot::parser::bnapsql::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
@@ -579,6 +585,10 @@
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits" kind="namespace"><name>org::smallfoot::parser::boneheadbits</name>
   </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1cmcne" kind="namespace"><name>org::smallfoot::parser::cmcne</name>
+  </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcfm" kind="namespace"><name>org::smallfoot::parser::dcfm</name>
+  </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1zone" kind="namespace"><name>org::smallfoot::parser::zone</name>
   </compound>
   <compound refid="Alias4Parser_8java" kind="file"><name>Alias4Parser.java</name>
@@ -590,6 +600,10 @@
   <compound refid="genproto_2bna_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="genproto_2bnapsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="genproto_2cmcne_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="genproto_2dcfm_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="BNAPURLConnection_8java" kind="file"><name>BNAPURLConnection.java</name>
   </compound>
@@ -646,6 +660,10 @@
   <compound refid="dir_cb015bdd6bbc27dab8cbcb9f530241fa" kind="dir"><name>java/genproto/bnapsql</name>
   </compound>
   <compound refid="dir_c4905ed7953f88dc206fb38741b9f54b" kind="dir"><name>java/bnapsql</name>
+  </compound>
+  <compound refid="dir_1daa675e43872d4aa9c16b7c1351d540" kind="dir"><name>java/genproto/cmcne</name>
+  </compound>
+  <compound refid="dir_625eb7975d706d6838cdaf30eed55f4a" kind="dir"><name>java/genproto/dcfm</name>
   </compound>
   <compound refid="dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb" kind="dir"><name>java/genproto</name>
   </compound>

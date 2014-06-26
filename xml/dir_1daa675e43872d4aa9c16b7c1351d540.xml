@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_1daa675e43872d4aa9c16b7c1351d540" kind="dir">
+    <compoundname>java/genproto/cmcne</compoundname>
+    <innerfile refid="genproto_2cmcne_2Handler_8java">Handler.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/genproto/cmcne/"/>
+  </compounddef>
+</doxygen>

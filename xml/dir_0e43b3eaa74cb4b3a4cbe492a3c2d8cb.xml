@@ -4,6 +4,8 @@
     <compoundname>java/genproto</compoundname>
     <innerdir refid="dir_9ab14bd24c83483f76923c4d364197b5">java/genproto/bna</innerdir>
     <innerdir refid="dir_cb015bdd6bbc27dab8cbcb9f530241fa">java/genproto/bnapsql</innerdir>
+    <innerdir refid="dir_1daa675e43872d4aa9c16b7c1351d540">java/genproto/cmcne</innerdir>
+    <innerdir refid="dir_625eb7975d706d6838cdaf30eed55f4a">java/genproto/dcfm</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
