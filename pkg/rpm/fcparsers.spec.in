@@ -1,0 +1,58 @@
+Summary: FibreChannel Parsing Resources
+Name: @PACKAGE@
+Version: @VERSION@
+Release: @BUILDID@
+License: GPL2
+Group: System Environment/Parsers
+URL: http://tech.chickenandporn.com/
+Source0: http://chickenandporn.com/r/%{name}-%{version}.tar.bz2
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+BuildArchitectures: noarch
+#BuildRequires: mysql-devel >= 5.1.0 , mysql-embedded >= 5.1.0
+BuildRequires: mysql-embedded-devel >= 5.1.0 byaccj
+Requires: mysql-embedded >= 5.1.0 p7zip
+#dammit, I hate the debug packages -- they even makes no sense in a non-executable payload
+%define debug_package %nil
+
+%description
+Tools and Resources collected from my "fctools" project (nee "vitools") to allow better code visibility and user- bugreports.
+
+I use these tools to parse and interpret Cisco Zoning information, Brocade Zoning information, CSV, and other resources.
+
+
+%package java
+Summary: FibreChannel Parsing Resources in Java
+Group: System Environment/Parsers
+
+%description java
+Tools and Resources collected from my "fctools" project for parsing various FibreChannel text objects.  Implemented in Java.
+
+
+%prep
+%setup
+
+%build
+%configure %{?configure_additional:%{configure_additional}} && make
+
+%install
+make install DESTDIR=%{buildroot}
+rm -fr %{buildroot}/%{_datadir}/@PACKAGE@/jars
+
+%clean
+%{__rm} -rf %{buildroot}
+
+%check
+%{!?skipcheck:make check}
+
+
+%files
+%defattr(-, root, root, 0644)
+
+%files java
+# exported in java/Makefile.am
+%{_datadir}/@PACKAGE@/@PACKAGE@.jar
+
+
+%changelog
+* Mon Oct 21 2013 Allan Clark <allanc@chickenandporn.com> - 0.3-1
+- Initial package (split from fctools-0.2-599)

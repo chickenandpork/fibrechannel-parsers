@@ -1,0 +1,132 @@
+/* smallfoot.org is owned by allan.clark */
+package org.smallfoot.msosmsql;
+
+/**
+ * @file
+ *
+ * This class simply provides a specific URL pattern for the client extractor for a specific customer allowing a different database schema to be used
+ */
+
+public class MSDWHURLConnection extends org.smallfoot.osmsql.OSMURLConnection
+{
+    public MSDWHURLConnection(String connectionInfo, String username, String password)
+    {
+        super(connectionInfo, username, password);
+    }
+
+    public MSDWHURLConnection(java.net.URL url)
+    {
+        super(url);
+    }
+
+    /**
+     * connect the result of a "SELECT DISTINCT host.name, host_port.wwn, fabric.name FROM host, host_port, port_connectivity, switch, fabric, switch_port WHERE host.id = host_port.hostId AND host_port.wwn = port_connectivity.connectedWwn AND port_connectivity.portId = switch_port.id AND switch_port.fabricId = fabric.id ORDER BY host.name ASC" to something that looks readable like an InputStream of CSV for the parser array
+     *
+     * this model/schema/query is used so that a htree-column output is returned such as:
+     * +--------------------+-------------------------+------------+
+     * | name               | wwn                     | name2      |
+     * +--------------------+-------------------------+------------+
+     * | MS-SQL-14          | 10:00:00:00:c9:12:34:56 | WEST_FAB_A |
+     * | MS-SQL-14          | 10:00:00:00:c9:12:34:57 | WEST_FAB_B |
+     * | MS-SQL-15          | 10:00:00:00:c9:12:34:58 | EAST_FAB_1 |
+     * | MS-SQL-15          | 10:00:00:00:c9:12:34:59 | EAST_FAB_2 |
+     * +--------------------+-------------------------+------------+
+     *
+     * The output will be the A/B of the fabric appended to the alias with 1/2 converted to A/B:
+     * 10:00:00:00:c9:12:34:56,"MS-SQL-14_A"
+     * 10:00:00:00:c9:12:34:57,"MS-SQL-14_B"
+     * 10:00:00:00:c9:12:34:58,"MS-SQL-15_A"
+     * 10:00:00:00:c9:12:34:59,"MS-SQL-15_B"
+     */
+    public java.io.InputStream getInputStream()
+    {
+        if (null == connection)
+            connect();
+
+        try
+        {
+            ResultCSVPipe res = new MSResultCSVPipe( connection.createStatement().executeQuery("SELECT DISTINCT host.name, host_port.wwn, fabric.name FROM host, host_port, port_connectivity, switch, fabric, switch_port WHERE host.id = host_port.hostId AND host_port.wwn = port_connectivity.connectedWwn AND port_connectivity.portId = switch_port.id AND switch_port.fabricId = fabric.id ORDER BY host.name ASC"));
+            new Thread(res).start();
+            return new java.io.PipedInputStream(res);
+        }
+        catch (java.sql.SQLException se)
+        {
+            System.err.println("SQLException: " + se.getMessage());
+            se.printStackTrace();
+            return null;
+        }
+        catch (java.io.IOException ioe)
+        {
+            System.err.println("IOException joining database output to piped input: " + ioe.getMessage());
+            return null;
+        }
+    }
+
+    /**
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  To be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources.
+     */
+    protected class MSResultCSVPipe extends ResultCSVPipe
+    {
+
+        public MSResultCSVPipe(java.sql.ResultSet source)
+        {
+            super(source);
+        }
+
+        public char uniqueness(String thirdRail)
+        {
+            if ('_' != thirdRail.charAt(thirdRail.length()-2))
+                return 'X';
+            switch (thirdRail.charAt(thirdRail.length()-1))
+            {
+            case '1':
+            case 'a':
+            case 'A':
+                return 'A';
+            case '2':
+            case 'b':
+            case 'B':
+                return 'B';
+            default:
+                return 'X';
+            }
+        }
+
+        public void run()
+        {
+            if (source != null)
+            {
+                try
+                {
+                    while (source.next())
+                    {
+                        String res = String.format("%s,\"%s_%c\"\n",source.getString(2), source.getString(1), uniqueness(source.getString(3)) );
+                        write(res.getBytes(), 0, res.length());
+                    }
+
+                    source.close();
+                }
+                catch (java.sql.SQLException se)
+                {
+                    System.err.println("SQLException: " + se.getMessage());
+                    se.printStackTrace();
+                }
+                catch (java.io.IOException ioe)
+                {
+                    System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage());
+                }
+            }
+
+            source = null;
+
+            try
+            {
+                this.close();
+            }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException closing datapath from database: " + ioe.getMessage());
+            }
+        }
+    }
+}

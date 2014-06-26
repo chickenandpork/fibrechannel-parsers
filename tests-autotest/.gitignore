@@ -1,0 +1,12 @@
+#generated autoconf
+Makefile
+Makefile.in
+atconfig
+atlocal
+testsuite.at
+
+#generated buildproc
+package.m4
+testsuite
+testsuite.log
+
