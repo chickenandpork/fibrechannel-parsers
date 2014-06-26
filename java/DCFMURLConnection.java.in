@@ -1,0 +1,369 @@
+/* smallfoot.org is owned by allan.clark */
+package org.smallfoot.bnapsql;
+
+//import java.io.*;
+//import java.util.*;
+//import javax.activation.DataSource;
+//import javax.activation.URLDataSource;
+//import gnu.getopt.Getopt;
+//import gnu.getopt.LongOpt;
+import org.smallfoot.parser.zone.BNAZoneParser;
+import org.smallfoot.parser.zone.ZPAliasEntry;
+
+/**
+ * @file
+ *
+ * @section Known Issues
+ * - as of 2012-09-11 unknown test status
+ * - as of 2012-09-16 may not accept "standard aliases shared to fabric" approach, may be only "McData Port Labels Not Shared to Fabric" approach (less common)
+ *   - http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf defines table model on Table 282, "defined_content", "active_content", or "ti_zone_content"
+ */
+
+public class DCFMURLConnection extends java.net.URLConnection
+{
+    /**
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  TO be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources.
+     */
+    class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
+    {
+        java.sql.ResultSet source;
+        BNAZoneParser aszp;
+        public ResultCSVPipe(java.sql.ResultSet source)
+        {
+            this (source, null);
+        }
+        public ResultCSVPipe(java.sql.ResultSet source, BNAZoneParser aszp)
+        {
+            this.source = source;
+            this.aszp = aszp;
+        }
+
+        public void run()
+        {
+            if (source != null)
+            {
+                try
+                {
+                    while (source.next())
+                    {
+                        String res = String.format("%s,\"%s\"\n",source.getString(1), source.getString(2));
+                        write(res.getBytes(), 0, res.length());
+                    }
+
+                    source.close();
+                }
+                catch (java.sql.SQLException se)
+                {
+                    System.err.println("SQLException: " + se.getMessage());
+                    se.printStackTrace();
+                }
+                catch (java.io.IOException ioe)
+                {
+                    System.err.println("IOException (@49) transferring data from database: " + ioe.getMessage());
+                }
+            }
+
+            source = null;
+
+            if (null != aszp)
+                try
+                {
+                    System.out.println("parsed " + aszp.zoneSize() + " zones, " + aszp.aliasSize() + " aliases");
+                    for (java.util.Enumeration<ZPAliasEntry> aliases = aszp.aliasElements(); aliases.hasMoreElements(); )
+                    {
+                        ZPAliasEntry alias = aliases.nextElement();
+
+                        for (String s: alias.getWWNArray())
+                        {
+                            String res = String.format("%s,\"%s\"\n",s, alias.name());
+                            System.out.println("ASZP Alias: "+res);
+                            write(res.getBytes(), 0, res.length());
+                        }
+                    }
+                }
+                catch (java.io.IOException ioe)
+                {
+                    System.err.println("IOException pasting bogus test content: " + ioe.getMessage());
+                }
+            aszp = null;
+
+            try
+            {
+                close();
+            }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException closing datapath from database: " + ioe.getMessage());
+            }
+        }
+    }
+
+    /**
+     * PipedOutputStream to push out a single column of a resultset as a stream of resulting data.  More reinforcement of the layers discussed in ResultCSVPipe but maybe a bit closer to streams of datablocks?
+     */
+    class ResultSetPipe extends java.io.PipedOutputStream implements Runnable
+    {
+        java.sql.ResultSet source;
+        int columnNumber;
+        public ResultSetPipe(java.sql.ResultSet source, int columnNumber)
+        {
+            this.source = source;
+            this.columnNumber = columnNumber;
+        }
+
+        public void run()
+        {
+            /**
+             * @jvmopt bnapsql.teeCSVPipe:
+             * For diagnostic purposes, -Dbnapsql.teeCSVPipe causes the data collected from the BNA server to be dumped out in raw-form.  This can be funneled back into a "vict.jar --nickname=file.txt" for re-parsing or repair
+             *
+             * For example:
+             * 1 java -Dbnapsql.teeCSVPipe=dump.txt -jar vict.jar --nickname=bnapsql://server/
+             * 2 java -jar vict.jar --nickname=dump.txt
+             */
+
+            String _tee = System.getProperties().getProperty("bnapsql.teeCSVPipe");
+            java.io.FileOutputStream tee = null;
+            try
+            {
+                if (null != _tee) tee = new java.io.FileOutputStream (_tee);
+            }
+            catch (java.io.FileNotFoundException fnfe)
+            {
+                System.err.println("FileNotFound: tee file "+_tee+" not found");
+            }
+
+            if (source != null)
+            {
+                try
+                {
+                    while (source.next())
+                    {
+                        if (null != source.getString(columnNumber))
+                            write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
+                        System.out.println("copied " + source.getString(columnNumber).length() + " bytes from result to stream: "+source.getString(columnNumber));
+                        if (null != tee) tee.write(source.getString(columnNumber).getBytes(), 0, source.getString(columnNumber).length());
+                    }
+
+                    source.close();
+                    if (null != tee) tee.close();
+//System.out.println("result stream closed");
+                }
+                catch (java.sql.SQLException se)
+                {
+                    System.err.println("SQLException: " + se.getMessage());
+                    se.printStackTrace();
+                }
+                catch (java.io.IOException ioe)
+                {
+                    System.err.println("IOException (@94) transferring data from database: " + ioe.getMessage());
+                }
+            }
+
+            source = null;
+
+            try
+            {
+                close();
+            }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException closing datapath from database: " + ioe.getMessage());
+            }
+        }
+
+        /**
+         * @throw java.io.IOException when java.io.PipedInputStream.PipedInputStream(PipedOutputStream) throws an IOException "when an I/O error occurs" (thanks, guys)
+         */
+        public java.io.InputStream getInputStream() throws java.io.IOException
+        {
+            return new java.io.PipedInputStream(this);
+        }
+    }
+
+    String connectionInfo = null;
+    java.util.Properties properties = new java.util.Properties();
+    java.sql.Connection connection;
+
+    public DCFMURLConnection(String connectionInfo, String username, String password)
+    {
+        super(URLof(connectionInfo));
+        try
+        {
+            Object o = Class.forName("com.sybase.jdbc2.jdbc.SybDriver");
+        }
+        catch (Exception e) {}
+        this.connectionInfo = connectionInfo;
+        properties.put("user",username);
+        properties.put("password",password);
+    }
+
+
+    public DCFMURLConnection(java.net.URL url)
+    {
+        super(url);
+        try
+        {
+            Object o = Class.forName("com.sybase.jdbc2.jdbc.SybDriver");
+        }
+        catch (Exception e) {}
+        System.out.println("**** WARNING ****\n**** WARNING ****\nDCFM Support is within infancy stage at best.  Alpha.  Schema not yet verified.  Good Luck!\nPlease send screencaps and/or text dump of output for analysis\n**** WARNING ****\n**** WARNING ****");
+        System.out.println("public DCFMURLConnection(java.net.URL "+url.toString()+")");
+        //String SybaseAnywhere = "jdbc.jdbcProgress:T:"+url.getHost()+":";
+        // jdbc:sybase:Tds:localhost:5000?USER=sa&PASSWORD=secret
+        String SybaseAnywhere = "jdbc:sybase:Tds:"+url.getHost()+":";
+
+        if (-1 == url.getPort())
+            SybaseAnywhere += "2638";
+        else
+            SybaseAnywhere += url.getPort();
+
+        //SybaseAnywhere += "/dcfmdb";
+        SybaseAnywhere += "?SERVICENAME=dcfmdb";
+
+        String user = null;
+        String pass = null;
+        if (null == url.getUserInfo())
+        {
+            user = "dcfm";
+            pass = "passw0rd";
+        }
+        else
+        {
+            System.out.println("authority = \""+url.getUserInfo()+"\"");
+            String[] a = url.getUserInfo().split(":");
+            if (1 <= (java.lang.reflect.Array.getLength(a)))
+                user = a[0];
+            if (2 <= (java.lang.reflect.Array.getLength(a)))
+                pass = a[1];
+        }
+
+        if ((null != user) && (null != pass))
+        {
+            SybaseAnywhere = SybaseAnywhere+"&USER="+user+"&PASSWORD="+pass;
+        }
+        else if (null != user)
+        {
+            SybaseAnywhere = SybaseAnywhere+"&USER="+user;
+        }
+
+        connectionInfo = SybaseAnywhere;
+        properties.put("user",user);
+        properties.put("password",pass);
+        System.out.println("fin: public DCFMURLConnection(java.net.URL "+url.toString()+")");
+    }
+
+    /**
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     *
+     * @param name ignored
+     * @param value ignored
+     */
+    public void setRequestHeader(String name, String value) { }
+
+    /**
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     *
+     * @param ignored ignored
+     */
+    public void setContentType(String ignored) { }
+
+    /**
+     * Stubbed, because there's nothing to send us.  Oh how did I get caught in the "Royal 'We'" ?
+     */
+    public java.io.OutputStream getOutputStream()
+    {
+        return null;
+    }
+
+
+    /**
+     * connect the result of a "psql -c "select wwn,name from device_port_info"" to something that looks readable like an InputStream
+     * may want to consider later (http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf):
+     * - select port_wwn,name from hba_target_info;
+     * - select port_nwwn,physical_port_nwwn,name from hba_port_details_info;
+     *
+     * NOTE: In converting to the older SybaseAnywhere, the datamodel may be similar to BNA: ftp://service.boulder.ibm.com/storage/san/dcfm/IBM_DCFM_v10.4.1_ReleaseNotes.pdf p 17
+     */
+    public java.io.InputStream getInputStream()
+    {
+        if (null == connection)
+            connect();
+
+        System.out.println("Now executing the command: "+ "SELECT wwn,name FROM device_port_info");
+        try
+        {
+            ResultSetPipe rsp = new ResultSetPipe(connection.createStatement().executeQuery("SELECT defined_content FROM zone_db_config"), 1);
+            BNAZoneParser aszp = new BNAZoneParser(rsp.getInputStream());
+            new Thread(aszp).start();
+            new Thread(rsp).start();
+            System.out.println("Newer zone content parsed; going to nickname format");
+
+            ResultCSVPipe res = new ResultCSVPipe( connection.createStatement().executeQuery("SELECT wwn,name FROM device_port_info WHERE name IS NOT NULL"), aszp);
+            new Thread(res).start();
+            return new java.io.PipedInputStream(res);
+        }
+        catch (java.sql.SQLException se)
+        {
+            System.err.println("SQLException: " + se.getMessage());
+            se.printStackTrace();
+            return null;
+        }
+        catch (java.io.IOException ioe)
+        {
+            System.err.println("IOException joining database output to piped input: " + ioe.getMessage());
+            return null;
+        }
+    }
+
+    /**
+     * openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client.
+     *
+     * @return populated connection as org.smallfoot.bnapsql.DCFMURLConnection(Connection)
+     * @param url URL to connect to
+     */
+    protected DCFMURLConnection openConnection(java.net.URL url)
+    {
+        return null;
+    }
+
+    static java.net.URL URLof(String connectionInfo)
+    {
+//System.out.println("static java.net.URL URLof(\""+connectionInfo+"\")");
+        String con[] = connectionInfo.split(":");
+        try
+        {
+//System.out.println("length of " + java.lang.reflect.Array.getLength(con));
+            for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.println("con["+i+"] is "+con[i]);
+            return new java.net.URL("bnapsql://" + con[3] + ":" + con[4] + "/" + con[5]);
+        }
+        catch (java.net.MalformedURLException mue)
+        {
+            return null;
+        }
+    }
+
+    public void connect()
+    {
+//System.out.println("void connect(), connectionInfo=\""+connectionInfo+"\", user=\""+properties.get("user")+"\", password=\""+properties.get("password")+"\"");
+        try
+        {
+            connection = java.sql.DriverManager.getConnection (connectionInfo, properties);
+        }
+        catch (java.sql.SQLException se)
+        {
+            String m = se.getMessage();
+            if (m.startsWith("FATAL: no pg_hba.conf entry for host"))
+                System.err.println("Connection error: " + se.getMessage() + "\n PLEASE add the client's IP address to the file C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\ni.e: host   all   all  0.0.0.0/0  md5\n(no BNA restart is required)");
+            else if (m.startsWith("Connection refused."))
+                System.err.println("Connection error: " + se.getMessage() + "\n PLEASE also confirm that no firewall on the server is instructed to block/refuse our connection");
+            else if (se.getMessage().startsWith("JZ006: "))
+                System.err.println("FATAL: Connection error: Timeout\n PLEASE ensure no firewall blocks our connection (on client host, interposing gateways, and server)");
+            else
+            {
+                System.err.println("Connection error: " + se.getMessage());
+                se.printStackTrace();
+            }
+        }
+    }
+}
