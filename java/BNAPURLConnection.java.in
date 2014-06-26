@@ -1,5 +1,5 @@
 /* smallfoot.org is owned by allan.clark */
-package org.smallfoot.bnapsql;
+package org.smallfoot.parser.bnapsql;
 
 //import java.io.*;
 //import java.util.*;

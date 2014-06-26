@@ -5,6 +5,7 @@ nodist_java_JAVA += DeviceAliasParser.java
 nodist_java_JAVA += Select2Sample.java
 nodist_java_JAVA += ShowZoneParser.java
 nodist_java_JAVA += VW4InvalidAddedParser.java
+nodist_java_JAVA += bnapsql/Handler.java BNAPURLConnection.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
@@ -22,6 +23,13 @@ AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES = FCParser.java
+
+# build the Handler stubs
+BUILT_SOURCES += bnapsql/Handler.java
+
+bnapsql/Handler.java: HandlerPrototype.javaproto
+	@mkdir -p $(@D)
+	sed -e 's/##protocol##/bnapsql/g' -e 's/##localtype##/BNAP/g' $< > $@
 
 
 if DO_BYACC

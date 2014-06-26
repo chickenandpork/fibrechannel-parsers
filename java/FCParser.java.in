@@ -53,6 +53,37 @@ public abstract class FCParser
     }
 
     /**
+     * Collect in a single place the process to register protocol handlers.
+     *
+     * This function checks for current protocol handlers and adds the ones we bring to that list.  If no "java.protocol.handler.pkgs" exists, we simply provide one.  System Properties are overwritten in this process.
+     *
+     * as the number of handlers increases, we can make corresponding changes herein without consuming projects having to know or care about this.
+     *
+     * The format of "java.protocol.handler.pkgs" is typically described in java.net.URL(String,String,int,String)
+     * @see java.lang.System.setProperty(String,String)
+     */
+    public static void registerProtocols()
+    {
+        java.util.Properties p = System.getProperties();
+        /*
+                if ( (null == p.getProperty("jdbc.drivers")) || (1 > p.getProperty("jdbc.drivers").length()) )
+                    p.setProperty("jdbc.drivers","org.postgresql|com.mysql.jdbc|com.sybase.jdbc4.jdbc.SybDriver");
+                else
+                    p.setProperty("jdbc.drivers",p.getProperty("jdbc.drivers")+"|org.postgresql|com.mysql.jdbc|com.sybase.jdbc4.jdbc.SybDriver");
+        */
+
+        if ( (null == p.getProperty("java.protocol.handler.pkgs")) || (1 > p.getProperty("java.protocol.handler.pkgs").length()) )
+            p.setProperty("java.protocol.handler.pkgs","org.smallfoot.parser");
+        else
+            p.setProperty("java.protocol.handler.pkgs",p.getProperty("java.protocol.handler.pkgs")+"|org.smallfoot");
+        System.setProperties(p);
+
+        //java.security.Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+    }
+
+
+
+    /**
      * Create a stream from a URL or file name with a convenience workaround for no-proto URLs
      *
      * NOTE: changes java.util.Properties
@@ -72,7 +103,8 @@ public abstract class FCParser
         for (int i = 1; i < params.length; i++)
         {
             String eq[] = params[i].split("=");
-            if (eq.length > 1) prop.setProperty(eq[0].toLowerCase(),eq[1]);
+            if (eq.length > 1)
+		prop.setProperty(eq[0].toLowerCase(),eq[1]);
         }
 
         java.io.InputStream is = null;
@@ -82,6 +114,16 @@ public abstract class FCParser
         }
         catch (Exception e)
         {
+	    /*
+	     * catch a MalformedURLException and check to see if any handler pkgs are registered
+	     *
+	     * This is done as a instanceof rather than a separate catch because we want to activate the same workaround anyhow
+	     */
+	    if (e instanceof java.net.MalformedURLException)
+	        if (e.getMessage().startsWith("unknown protocol: "))
+		    if ( (null == System.getProperties().getProperty("java.protocol.handler.pkgs")) || (1 > System.getProperties().getProperty("java.protocol.handler.pkgs").length()) )
+			System.err.println("WARNING: no additional protocols registered: java.protocol.handler.pkgs is null (but still activating file:// fallback)");
+
             /*
              * In the case of a bad URL, we could check to see if there's a missing protocol or whatnot,
              * but hey, why not just try to read it?  I could do a lot of work to accommodate
@@ -121,6 +163,7 @@ public abstract class FCParser
      */
     public static ZoneParser loadFile(InputStream is, String args0, boolean verbose)
     {
+	if (null == is) return null;
         java.util.Properties prop = new java.util.Properties();
         Vector<ZoneParser> zpl = new Vector();
 
@@ -268,6 +311,7 @@ public abstract class FCParser
         /* *@DO_GETOPTJAR_TRUE@/        org.smallfoot.getopt.GetOpt     g = new org.smallfoot.getopt.GetOpt("fcparser", args, options);        /@DO_GETOPTJAR_TRUE@* */
         /* *@DO_GETOPTJAR_FALSE@/       gnu.getopt.Getopt               g = new gnu.getopt.Getopt("fcparser", args, "HVN:", options);        /@DO_GETOPTJAR_FALSE@* */
 
+	FCParser.registerProtocols();
 
         int c;
         while ((c = g.getopt()) != -1)
@@ -276,7 +320,7 @@ public abstract class FCParser
             {
             case 'N': /* input Nicknames using file:, ftp:, http: via fibrechannel-parsers fcparsers.jar */
                 ZoneParser aszp = FCParser.loadFile(FCParser.openSource(args[1], false), null, /* verbose */ false);
-                aszp.summarize();
+                if (null != aszp) aszp.summarize();
                 break;
 
             /*
