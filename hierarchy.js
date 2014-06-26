@@ -33,6 +33,7 @@ var hierarchy =
     ] ],
     [ "URLConnection", null, [
       [ "BNAPURLConnection", "classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection.html", null ],
+      [ "DCNMURLConnection", "classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection.html", null ],
       [ "OSMURLConnection", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection.html", [
         [ "MSDWHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection.html", null ],
         [ "DWHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection.html", null ]
@@ -47,6 +48,8 @@ var hierarchy =
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler.html", null ],
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler.html", null ],
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler.html", null ]

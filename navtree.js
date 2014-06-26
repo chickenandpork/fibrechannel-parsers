@@ -13,7 +13,7 @@ var NAVTREE =
       [ "Data Structures", "annotated.html", "annotated" ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
@@ -27,7 +27,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AliShowZoneParser.html",
-"genproto_2osmsql_2Handler_8java.html"
+"enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType.html#acc26107efaf346173b211684eb2b580a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

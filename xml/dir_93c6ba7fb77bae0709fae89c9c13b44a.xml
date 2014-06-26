@@ -8,6 +8,7 @@
     <innerfile refid="AliShowZoneParser_8java">AliShowZoneParser.java</innerfile>
     <innerfile refid="BNAPURLConnection_8java">BNAPURLConnection.java</innerfile>
     <innerfile refid="BNAZoneParser_8java">BNAZoneParser.java</innerfile>
+    <innerfile refid="DCNMURLConnection_8java">DCNMURLConnection.java</innerfile>
     <innerfile refid="DeviceAliasParser_8java">DeviceAliasParser.java</innerfile>
     <innerfile refid="DWHURLConnection_8java">DWHURLConnection.java</innerfile>
     <innerfile refid="FCParser_8java">FCParser.java</innerfile>

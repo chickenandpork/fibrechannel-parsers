@@ -5,6 +5,8 @@ var namespaceorg_1_1smallfoot_1_1parser =
     [ "boneheadbits", "namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits.html", "namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits" ],
     [ "cmcne", "namespaceorg_1_1smallfoot_1_1parser_1_1cmcne.html", "namespaceorg_1_1smallfoot_1_1parser_1_1cmcne" ],
     [ "dcfm", "namespaceorg_1_1smallfoot_1_1parser_1_1dcfm.html", "namespaceorg_1_1smallfoot_1_1parser_1_1dcfm" ],
+    [ "dcnm", "namespaceorg_1_1smallfoot_1_1parser_1_1dcnm.html", "namespaceorg_1_1smallfoot_1_1parser_1_1dcnm" ],
+    [ "dcnmsql", "namespaceorg_1_1smallfoot_1_1parser_1_1dcnmsql.html", "namespaceorg_1_1smallfoot_1_1parser_1_1dcnmsql" ],
     [ "msosmsql", "namespaceorg_1_1smallfoot_1_1parser_1_1msosmsql.html", "namespaceorg_1_1smallfoot_1_1parser_1_1msosmsql" ],
     [ "ocidwh", "namespaceorg_1_1smallfoot_1_1parser_1_1ocidwh.html", "namespaceorg_1_1smallfoot_1_1parser_1_1ocidwh" ],
     [ "osmsql", "namespaceorg_1_1smallfoot_1_1parser_1_1osmsql.html", "namespaceorg_1_1smallfoot_1_1parser_1_1osmsql" ],

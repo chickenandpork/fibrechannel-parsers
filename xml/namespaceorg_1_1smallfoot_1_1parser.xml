@@ -10,6 +10,8 @@
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits">org::smallfoot::parser::boneheadbits</innernamespace>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1cmcne">org::smallfoot::parser::cmcne</innernamespace>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcfm">org::smallfoot::parser::dcfm</innernamespace>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcnm">org::smallfoot::parser::dcnm</innernamespace>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcnmsql">org::smallfoot::parser::dcnmsql</innernamespace>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1msosmsql">org::smallfoot::parser::msosmsql</innernamespace>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1ocidwh">org::smallfoot::parser::ocidwh</innernamespace>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1osmsql">org::smallfoot::parser::osmsql</innernamespace>

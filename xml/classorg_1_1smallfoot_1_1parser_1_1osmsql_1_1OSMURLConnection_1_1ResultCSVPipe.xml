@@ -60,34 +60,34 @@
     <detaileddescription>
 <para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="296">
+      <node id="347">
         <label>OSMURLConnection.ResultCSVPipe</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe"/>
-        <childnode refid="297" relation="public-inheritance">
+        <childnode refid="348" relation="public-inheritance">
         </childnode>
-        <childnode refid="298" relation="public-inheritance">
+        <childnode refid="349" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="297">
+      <node id="348">
         <label>PipedOutputStream</label>
       </node>
-      <node id="298">
+      <node id="349">
         <label>Runnable</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="299">
+      <node id="350">
         <label>OSMURLConnection.ResultCSVPipe</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe"/>
-        <childnode refid="300" relation="public-inheritance">
+        <childnode refid="351" relation="public-inheritance">
         </childnode>
-        <childnode refid="301" relation="public-inheritance">
+        <childnode refid="352" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="300">
+      <node id="351">
         <label>PipedOutputStream</label>
       </node>
-      <node id="301">
+      <node id="352">
         <label>Runnable</label>
       </node>
     </collaborationgraph>

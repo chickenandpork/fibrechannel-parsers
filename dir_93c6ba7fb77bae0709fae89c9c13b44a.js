@@ -14,6 +14,9 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
     [ "BNAZoneParser.java", "BNAZoneParser_8java.html", [
       [ "BNAZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" ]
     ] ],
+    [ "DCNMURLConnection.java", "DCNMURLConnection_8java.html", [
+      [ "DCNMURLConnection", "classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection.html", "classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection" ]
+    ] ],
     [ "DeviceAliasParser.java", "DeviceAliasParser_8java.html", [
       [ "DeviceAliasParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" ]
     ] ],
