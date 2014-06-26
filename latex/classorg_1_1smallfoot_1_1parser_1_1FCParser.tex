@@ -5,6 +5,8 @@
 \item 
 static java.\+io.\+Input\+Stream {\bf open\+Stream} (String uri)  throws java.\+io.\+File\+Not\+Found\+Exception, java.\+net.\+Malformed\+U\+R\+L\+Exception, java.\+io.\+I\+O\+Exception     
 \begin{DoxyCompactList}\small\item\em Produce an Input\+Stream for the given uri in a way that corresponds to the url protocol. \end{DoxyCompactList}\item 
+static void {\bf register\+Protocols} ()
+\begin{DoxyCompactList}\small\item\em Collect in a single place the process to register protocol handlers. \end{DoxyCompactList}\item 
 static Input\+Stream {\bf open\+Source} (String url, boolean verbose)
 \begin{DoxyCompactList}\small\item\em Create a stream from a U\+R\+L or file name with a convenience workaround for no-\/proto U\+R\+Ls. \end{DoxyCompactList}\item 
 static {\bf Zone\+Parser} {\bf load\+File} (Input\+Stream is, String args0, boolean verbose)
@@ -48,7 +50,7 @@ the number of things loaded (used to trigger obsessive retries to get around cho
 \end{DoxyParams}
 
 
-Definition at line 123 of file F\+C\+Parser.\+java.
+Definition at line 164 of file F\+C\+Parser.\+java.
 
 
 
@@ -91,11 +93,11 @@ No real intelligence herein except the parse-\/and-\/redirect action.
 \end{DoxyParams}
 
 
-Definition at line 250 of file F\+C\+Parser.\+java.
+Definition at line 295 of file F\+C\+Parser.\+java.
 
 
 
-References F\+C\+Parser.\+load\+File(), F\+C\+Parser.\+open\+Source(), and Zone\+Parser.\+summarize().
+References F\+C\+Parser.\+load\+File(), F\+C\+Parser.\+open\+Source(), F\+C\+Parser.\+register\+Protocols(), and Zone\+Parser.\+summarize().
 
 
 
@@ -134,7 +136,7 @@ the resulting Input\+Stream
 \end{DoxyParams}
 
 
-Definition at line 65 of file F\+C\+Parser.\+java.
+Definition at line 95 of file F\+C\+Parser.\+java.
 
 
 
@@ -181,6 +183,32 @@ Definition at line 36 of file F\+C\+Parser.\+java.
 
 
 Referenced by F\+C\+Parser.\+open\+Source().
+
+\index{org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}!register\+Protocols@{register\+Protocols}}
+\index{register\+Protocols@{register\+Protocols}!org\+::smallfoot\+::parser\+::\+F\+C\+Parser@{org\+::smallfoot\+::parser\+::\+F\+C\+Parser}}
+\subsubsection[{register\+Protocols}]{\setlength{\rightskip}{0pt plus 5cm}static void register\+Protocols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_a9f16799674af7de1e539f0b54dbea72a}
+
+
+Collect in a single place the process to register protocol handlers. 
+
+This function checks for current protocol handlers and adds the ones we bring to that list. If no \char`\"{}java.\+protocol.\+handler.\+pkgs\char`\"{} exists, we simply provide one. System Properties are overwritten in this process.
+
+as the number of handlers increases, we can make corresponding changes herein without consuming projects having to know or care about this.
+
+The format of \char`\"{}java.\+protocol.\+handler.\+pkgs\char`\"{} is typically described in java.\+net.\+U\+R\+L(\+String,\+String,int,\+String) \begin{DoxySeeAlso}{See also}
+java.\+lang.\+System.\+set\+Property(\+String,\+String) 
+\end{DoxySeeAlso}
+
+
+Definition at line 65 of file F\+C\+Parser.\+java.
+
+
+
+Referenced by F\+C\+Parser.\+main().
 
 
 

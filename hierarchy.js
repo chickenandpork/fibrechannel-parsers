@@ -22,7 +22,15 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "URLConnection", null, [
+      [ "BNAPURLConnection", "classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection.html", null ]
+    ] ],
     [ "version", "classorg_1_1smallfoot_1_1parser_1_1version.html", null ],
     [ "ZoneParserVal", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal.html", null ],
-    [ "ZPFCAliasEntry", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry.html", null ]
+    [ "ZPFCAliasEntry", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPFCAliasEntry.html", null ],
+    [ "URLStreamHandler", null, [
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler.html", null ],
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler.html", null ],
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler.html", null ]
+    ] ]
 ];

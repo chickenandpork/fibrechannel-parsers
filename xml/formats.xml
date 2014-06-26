@@ -4,11 +4,12 @@
     <compoundname>formats</compoundname>
     <title>Compatible File Formats</title>
     <innerpage refid="AliShowZoneParser">Brocade &quot;alishow&quot; and &quot;zoneshow&quot;</innerpage>
+    <innerpage refid="BNAPURLConnection">BNA Database</innerpage>
     <innerpage refid="BNAZoneParser">BNA Database</innerpage>
     <innerpage refid="DeviceAliasParser">Cisco &quot;show device-alias database&quot;</innerpage>
     <innerpage refid="ShowZoneParser">Cisco &quot;show zone&quot;</innerpage>
     <innerpage refid="VW4InvalidAdded">VirtualWisdom4 Validation Errors</innerpage>
     <detaileddescription>
-<para><ref refid="AliShowZoneParser" kindref="compound">Brocade &quot;alishow&quot; and &quot;zoneshow&quot;</ref></para><para><ref refid="BNAZoneParser" kindref="compound">BNA Database</ref></para><para><ref refid="DeviceAliasParser" kindref="compound">Cisco &quot;show device-alias database&quot;</ref></para><para><ref refid="ShowZoneParser" kindref="compound">Cisco &quot;show zone&quot;</ref></para><para><ref refid="VW4InvalidAdded" kindref="compound">VirtualWisdom4 Validation Errors</ref> </para>    </detaileddescription>
+<para><ref refid="AliShowZoneParser" kindref="compound">Brocade &quot;alishow&quot; and &quot;zoneshow&quot;</ref></para><para><ref refid="BNAPURLConnection" kindref="compound">BNA Database</ref></para><para><ref refid="BNAZoneParser" kindref="compound">BNA Database</ref></para><para><ref refid="DeviceAliasParser" kindref="compound">Cisco &quot;show device-alias database&quot;</ref></para><para><ref refid="ShowZoneParser" kindref="compound">Cisco &quot;show zone&quot;</ref></para><para><ref refid="VW4InvalidAdded" kindref="compound">VirtualWisdom4 Validation Errors</ref> </para>    </detaileddescription>
   </compounddef>
 </doxygen>

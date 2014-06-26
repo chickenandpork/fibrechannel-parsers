@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" kind="class" prot="package">
+    <compoundname>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PipedOutputStream</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" prot="package" static="no" mutable="no">
+        <type>java.sql.ResultSet</type>
+        <definition>java.sql.ResultSet source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="43" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1aba69de0d9eefee9055958ec4bc795910" prot="package" static="no" mutable="no">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref></type>
+        <definition>BNAZoneParser aszp</definition>
+        <argsstring></argsstring>
+        <name>aszp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="44" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResultCSVPipe</definition>
+        <argsstring>(java.sql.ResultSet source)</argsstring>
+        <name>ResultCSVPipe</name>
+        <param>
+          <type>java.sql.ResultSet</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="45" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2bda4f9ef7a24e3ad30a7f53cdc63481" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResultCSVPipe</definition>
+        <argsstring>(java.sql.ResultSet source, BNAZoneParser aszp)</argsstring>
+        <name>ResultCSVPipe</name>
+        <param>
+          <type>java.sql.ResultSet</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref></type>
+          <declname>aszp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="49" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="55" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="55" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PipedOutputStream to push out resultsets as CSV Nicknames. </para>    </briefdescription>
+    <detaileddescription>
+<para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. TO be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="206">
+        <label>BNAPURLConnection.ResultCSVPipe</label>
+        <childnode refid="207" relation="public-inheritance">
+        </childnode>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>Runnable</label>
+      </node>
+      <node id="207">
+        <label>PipedOutputStream</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="212">
+        <label>BNAZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
+        <childnode refid="213" relation="public-inheritance">
+        </childnode>
+        <childnode refid="218" relation="usage">
+          <edgelabel>yylval</edgelabel>
+          <edgelabel>yyval</edgelabel>
+          <edgelabel>valstk</edgelabel>
+        </childnode>
+      </node>
+      <node id="213">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+        <childnode refid="216" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="217" relation="usage">
+          <edgelabel>zones</edgelabel>
+        </childnode>
+      </node>
+      <node id="217">
+        <label>Vector&lt; ZPZoneEntry &gt;</label>
+      </node>
+      <node id="209">
+        <label>BNAPURLConnection.ResultCSVPipe</label>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+        <childnode refid="211" relation="public-inheritance">
+        </childnode>
+        <childnode refid="212" relation="usage">
+          <edgelabel>aszp</edgelabel>
+        </childnode>
+      </node>
+      <node id="216">
+        <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="215">
+        <label>Thread</label>
+      </node>
+      <node id="214">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="215" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>Runnable</label>
+      </node>
+      <node id="210">
+        <label>PipedOutputStream</label>
+      </node>
+      <node id="218">
+        <label>ZoneParserVal</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="42" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="41" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1aba69de0d9eefee9055958ec4bc795910" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</scope><name>aszp</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</scope><name>ResultCSVPipe</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2bda4f9ef7a24e3ad30a7f53cdc63481" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</scope><name>ResultCSVPipe</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</scope><name>source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

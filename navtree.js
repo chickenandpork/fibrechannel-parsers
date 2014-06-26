@@ -2,6 +2,10 @@ var NAVTREE =
 [
   [ "fcparsers", "index.html", [
     [ "Compatible File Formats", "formats.html", "formats" ],
+    [ "Compatibility", "Compatibility.html", [
+      [ "10.x, 11.x, 12.0 (with edit to data/databases/pg_hba.conf to allow host), 12.1 (pg_hba.conf edit, 12.1.0 and 12.1.4)", "Compatibility.html#BNA", null ]
+    ] ],
+    [ "JVM Options", "jvmopt.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ]
     ] ],

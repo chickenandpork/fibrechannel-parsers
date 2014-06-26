@@ -1,0 +1,7 @@
+connect the result of a \char`\"{}psql -\/c \char`\"{}select wwn,name from device\+\_\+port\+\_\+info\char`\"{}\char`\"{} to something that looks readable like an Input\+Stream may want to consider later ({\tt http\+://h10032.\+www1.\+hp.\+com/ctg/\+Manual/c02912115.\+pdf})\+:
+
+
+\begin{DoxyItemize}
+\item select port\+\_\+wwn,name from hba\+\_\+target\+\_\+info;
+\item select port\+\_\+nwwn,physical\+\_\+port\+\_\+nwwn,name from hba\+\_\+port\+\_\+details\+\_\+info;
+\end{DoxyItemize}\section{10.\+x, 11.\+x, 12.\+0 (with edit to data/databases/pg\+\_\+hba.\+conf to allow host), 12.\+1 (pg\+\_\+hba.\+conf edit, 12.\+1.\+0 and 12.\+1.\+4)}\label{Compatibility_BNA}

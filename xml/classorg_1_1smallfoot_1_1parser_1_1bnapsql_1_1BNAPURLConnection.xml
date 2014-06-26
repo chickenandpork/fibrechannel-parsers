@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::bnapsql::BNAPURLConnection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">URLConnection</basecompoundref>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" prot="package">org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe" prot="package">org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultSetPipe</innerclass>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a7e56aefae8a91fd879647078501bd2c8" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String connectionInfo</definition>
+        <argsstring></argsstring>
+        <name>connectionInfo</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="198" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" static="no" mutable="no">
+        <type>java.util.Properties</type>
+        <definition>java.util.Properties properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <initializer>= new java.util.Properties()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="199" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a6b788764b81c8f58b7654c790ec4988d" prot="package" static="no" mutable="no">
+        <type>java.sql.Connection</type>
+        <definition>java.sql.Connection connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="200" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a942ebf028e78ae94fa8cc50c219ec721" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BNAPURLConnection</definition>
+        <argsstring>(String connectionInfo, String username, String password)</argsstring>
+        <name>BNAPURLConnection</name>
+        <param>
+          <type>String</type>
+          <declname>connectionInfo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="202" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="202" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a647c74134f864d18c205065944e528b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BNAPURLConnection</definition>
+        <argsstring>(java.net.URL url)</argsstring>
+        <name>BNAPURLConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>Construct a connection URL per <ulink url="http://www.postgresql.org/docs/9.3/static/libpq-connect.html#LIBPQ-CONNSTRING">http://www.postgresql.org/docs/9.3/static/libpq-connect.html#LIBPQ-CONNSTRING</ulink>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>connection url of the form &quot;&lt;proto&gt;://user:pass@host:port/database&quot; parsed by a Java.net.URL constructor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="216" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="216" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setRequestHeader</definition>
+        <argsstring>(String name, String value)</argsstring>
+        <name>setRequestHeader</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Stubbed, because there&apos;s no change we want to accept yet. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sorry, apparently &quot;at this time&quot; is more professional, if you listen to the wordy airport announcements.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="260" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="260" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setContentType</definition>
+        <argsstring>(String ignored)</argsstring>
+        <name>setContentType</name>
+        <param>
+          <type>String</type>
+          <declname>ignored</declname>
+        </param>
+        <briefdescription>
+<para>Stubbed, because there&apos;s no change we want to accept yet. </para>        </briefdescription>
+        <detaileddescription>
+<para>Sorry, apparently &quot;at this time&quot; is more professional, if you listen to the wordy airport announcements.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ignored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="267" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="267" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.io.OutputStream</type>
+        <definition>java.io.OutputStream getOutputStream</definition>
+        <argsstring>()</argsstring>
+        <name>getOutputStream</name>
+        <briefdescription>
+<para>Stubbed, because there&apos;s nothing to send us. </para>        </briefdescription>
+        <detaileddescription>
+<para>Oh how did I get caught in the &quot;Royal &apos;We&apos;&quot; ? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="272" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.io.InputStream</type>
+        <definition>java.io.InputStream getInputStream</definition>
+        <argsstring>()</argsstring>
+        <name>getInputStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="jvmopt_1_jvmopt000001"><xreftitle>JVM Options</xreftitle><xrefdescription><para>debug.carleton: For testing and additional info, -Ddebug.carleton causes the &quot;old&quot; query to be swapped with a pull from hba_target_info </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="287" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="287" bodyend="330"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="BNAPURLConnection_8java" startline="359" endline="379">BNAPURLConnection.connect</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="359" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="359" bodyend="379"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a0924d1107a459be632532ef34324494e" compoundref="BNAPURLConnection_8java" startline="287" endline="330">BNAPURLConnection.getInputStream</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a4ad7fe915d0e811bd8f8ac7b5d22f4f9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection" kindref="compound">BNAPURLConnection</ref></type>
+        <definition>BNAPURLConnection openConnection</definition>
+        <argsstring>(java.net.URL url)</argsstring>
+        <name>openConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>populated connection as org.smallfoot.bnapsql.BNAPURLConnection(Connection) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL to connect to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="338" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="338" bodyend="341"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.net.URL</type>
+        <definition>static java.net.URL URLof</definition>
+        <argsstring>(String connectionInfo)</argsstring>
+        <name>URLof</name>
+        <param>
+          <type>String</type>
+          <declname>connectionInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="343" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="343" bodyend="357"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="156">
+        <label>BNAPURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection"/>
+        <childnode refid="157" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="157">
+        <label>URLConnection</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="158">
+        <label>BNAPURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>URLConnection</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="37" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="36" bodyend="380"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a942ebf028e78ae94fa8cc50c219ec721" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>BNAPURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a647c74134f864d18c205065944e528b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>BNAPURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>connect</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a6b788764b81c8f58b7654c790ec4988d" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>connection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a7e56aefae8a91fd879647078501bd2c8" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>connectionInfo</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>getInputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>getOutputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a4ad7fe915d0e811bd8f8ac7b5d22f4f9" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>openConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>properties</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>setContentType</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>setRequestHeader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection</scope><name>URLof</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="Compatibility" kind="page">
+    <compoundname>Compatibility</compoundname>
+    <detaileddescription>
+<para>connect the result of a &quot;psql -c &quot;select wwn,name from device_port_info&quot;&quot; to something that looks readable like an InputStream may want to consider later (<ulink url="http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf">http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf</ulink>):</para><para><itemizedlist>
+<listitem><para>select port_wwn,name from hba_target_info;</para></listitem><listitem><para>select port_nwwn,physical_port_nwwn,name from hba_port_details_info;</para></listitem></itemizedlist>
+</para><sect1 id="Compatibility_1BNA">
+<title>10.x, 11.x, 12.0 (with edit to data/databases/pg_hba.conf to allow host), 12.1 (pg_hba.conf edit, 12.1.0 and 12.1.4)</title>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

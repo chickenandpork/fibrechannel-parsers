@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="56" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="56" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="54" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a0ea9e3b522e448ac462274fe70e1be82" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="57" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="57" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="55" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a21e545865dbcf87cb4c1de2a7da51806" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="58" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="58" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="56" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a9e2c7c7373b818c86b2df7106a92327c" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="59" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="59" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="57" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1afa638b510be8421c552f8a71f91f6ec3" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="73" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="73" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="71" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ac89c2492d77f2a88c9ccb06cfa375c39" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="74" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="74" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="72" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a29aa9152242dba094643e0b3717b7de1" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="75" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="75" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="73" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a08bd7e4c8c0de0fbe835b3522cd6e9cb" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="76" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="76" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="74" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ad5004db9a2ef3a73534e240417580b8b" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="131" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="131" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="129" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ad0e1edc56977784ee3140880a4ab662f" prot="package" static="no" mutable="no">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="132" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="132" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="130" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="130" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a86d02a47805f45fe9925395fb890e547" prot="package" static="no" mutable="no">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="133" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="133" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="131" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1aaf3ab675514edcd808ad9e31c14bc243" prot="package" static="no" mutable="no">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="134" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="134" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="132" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a49423ca4199bedaafb0d36e3ce74ce40" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="135" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="135" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="133" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ab3627b14322e66c17a48d05c216c4da5" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="310" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="310" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="308" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="308" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a24b8b65b5b30d5d3f4d9cfd89f47bd8e" prot="package" static="no" mutable="no">
         <type>java.io.StreamTokenizer</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="311" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="311" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="309" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1acd46a0f826a276c736966f6193f717cc" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="312" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="312" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="310" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="310" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="319" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="319" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="317" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="317" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1abb93c7c711a3c0ee506f0e510bf368a9" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="320" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="320" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="318" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="318" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a94ab010de2cb6a11c04bbf095fb31e12" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="321" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="321" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="319" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="319" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a0bb57aaadfcbef38e67059219b4126c9" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="479" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="479" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="477" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="477" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a31c1ea5edb0bdd30006447b3f1e58d15" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="480" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="480" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="478" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="478" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ac0fe627e81502f1ccb08d1519bfa40f2" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="481" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="481" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="479" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="479" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2cdb474303672925b387e5f813343a82" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="482" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="482" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="480" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="480" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-attrib">
@@ -322,7 +322,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="72" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="72" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="70" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a39171a519b0927d419c1b50aeac99b8a" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -338,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="184" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="184" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="182" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2e0afb9a762a5c5bad3dcb9f4ea67508" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -354,7 +354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="187" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="187" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="185" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="185" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a76e5d053c1e04f4b4ad49b84fc440193" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -371,7 +371,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="190" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="190" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="188" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="188" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a9a9c55e1779bc144dee27b76fcf1be4e" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -387,7 +387,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="194" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="194" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="192" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a771f445cecdd000023eabc2556196d3f" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -404,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="197" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="197" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="195" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="195" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a326b811dc6a20004fd5462b50b2552b9" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -421,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="201" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="201" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="199" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ad5657f65d3a538951fc73836fb367373" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -437,7 +437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="205" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="205" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="203" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="203" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1aba56e7cdfd617dc786ca9452a8d56b60" prot="package" static="yes" mutable="no">
         <type>final int</type>
@@ -451,7 +451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="208" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="208" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="206" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a7682804618f55311e36c8338425eac69" prot="package" static="yes" mutable="no">
         <type>short</type>
@@ -464,7 +464,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="209" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="209" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="207" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="207" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a734735ae171a8a3bf7e651343fa35eb2" prot="package" static="yes" mutable="no">
         <type>short</type>
@@ -477,7 +477,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="241" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="241" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="239" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="239" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ae401f7abf70e23dd826ef078c900ffa6" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -491,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="273" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="273" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="271" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="271" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1abe4ca243dec8a5d592012c4e817e0b10" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -505,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="274" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="274" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="272" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="272" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a0c215687f88b02eedeece3e19b48bc00" prot="package" static="yes" mutable="no">
         <type>final String</type>
@@ -537,7 +537,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="275" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="275" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="273" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="273" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1aa90e232613bcc5abc359f1dfd9755e4a" prot="package" static="yes" mutable="no">
         <type>final String</type>
@@ -563,7 +563,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="294" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="294" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="292" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="292" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -579,7 +579,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="177" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="177" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="175" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ac29dbda3123c69acbc5bdba27772ff4b" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -593,7 +593,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="178" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="178" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="176" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a83b16cb3c39cd74db45e4e610823e2c4" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -607,7 +607,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="179" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="179" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="177" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a6cdf016becc8cc687612ded338623bfc" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -621,7 +621,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="180" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="180" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="178" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1aaef5d04e154fb070f09d2255a2ab594f" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -635,7 +635,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="181" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="181" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="179" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1afa1bd945463851953be939c8793faf70" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -649,7 +649,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="182" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="182" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="180" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a1c58472ea6621d2f613831e08d10dba3" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -663,7 +663,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="183" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="183" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="181" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="181" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-func">
@@ -682,7 +682,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="65" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="65" bodyend="69"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="63" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="63" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a7fca06f2aea68127ed9d54ee46be67ed" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -699,7 +699,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="80" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="80" bodyend="94"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="78" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="78" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a5b17a79d1f2f4e91db95a53420401505" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final int</type>
@@ -712,7 +712,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="95" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="95" bodyend="98"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="93" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="93" bodyend="96"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a3b3b21a1eb9702329844cc77d2d82a22" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -729,7 +729,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="99" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="99" bodyend="102"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="97" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="97" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a9bd929c959381696ac57117965762423" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final int</type>
@@ -746,7 +746,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="103" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="103" bodyend="106"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="101" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="101" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ad1071764e501d770efe1ade5ea8d7ee5" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final boolean</type>
@@ -759,7 +759,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="110" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="110" bodyend="115"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="108" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="108" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a8e626edce147080d6b74344124787ed7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -776,7 +776,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="119" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="119" bodyend="126"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="117" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="117" bodyend="124"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a15f32bea4b8f1c22ada11d651b67db4a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -789,7 +789,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="139" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="139" bodyend="144"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="137" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="137" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a546b106645004a3f569c40a7be9cecdb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -806,7 +806,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="145" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="145" bodyend="159"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="143" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="143" bodyend="157"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ad6e5325d5726d0823417eb248a201bc2" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -819,7 +819,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="160" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="160" bodyend="163"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="158" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="158" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a03184d479fc81e916502118e86acd1e7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -836,7 +836,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="164" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="164" bodyend="167"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="162" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="162" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1aff23f19244cb74af69b0d1598a019c91" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -853,7 +853,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="168" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="168" bodyend="171"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="166" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="166" bodyend="169"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a5b3da8f164c609de90b1205d63103862" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -870,7 +870,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="172" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="172" bodyend="175"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="170" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="170" bodyend="173"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1ac677a01b361642a02e9b23afb4163fce" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -887,7 +887,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="314" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="314" bodyend="317"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="312" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="312" bodyend="315"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1aa40b27ae32d6d1ae7160bd6256e08eb8" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -900,7 +900,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="323" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="323" bodyend="391"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="321" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="321" bodyend="389"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2d5e88a14a1ce23f517be13c8a7a0f92" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -921,7 +921,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="463" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="463" bodyend="472"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="461" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="461" bodyend="470"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1acd8617a8f2ac0de8bc1cc032cf449e19" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -934,7 +934,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="488" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="488" bodyend="672"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="486" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="486" bodyend="670"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">
@@ -949,7 +949,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="209" column="1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="207" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a7bfe55f022dd2ed471f804f7e83f3b19" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -962,7 +962,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="211" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="211" bodyend="240"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="209" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="209" bodyend="238"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -975,7 +975,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="241" column="1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="239" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1aa000c1557e5264cffbc58d37d7d67ce4" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -988,7 +988,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="243" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="243" bodyend="272"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="241" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="241" bodyend="270"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -1003,7 +1003,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="394" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="394" bodyend="403"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="392" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="392" bodyend="401"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a5deab139f9ad4072e1a497c5cccda0ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1020,7 +1020,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="406" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="406" bodyend="431"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="404" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="404" bodyend="429"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1033,7 +1033,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="434" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="434" bodyend="443"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="432" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="432" bodyend="441"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1050,7 +1050,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="446" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="446" bodyend="446"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="444" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="444" bodyend="444"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a461606a38dc40cb68f480cab9878d620" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1071,8 +1071,8 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="447" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="447" bodyend="447"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="BNAZoneParser_8java" startline="452" endline="458">BNAZoneParser.main</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="445" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="445" bodyend="445"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="BNAZoneParser_8java" startline="450" endline="456">BNAZoneParser.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a0908383bf408f9defeb19ebcd0d22a41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1089,7 +1089,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="448" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="448" bodyend="448"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="446" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="446" bodyend="446"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1aa2a719a8329c95bbe390011b3a200410" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1110,7 +1110,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="449" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="449" bodyend="449"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="447" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="447" bodyend="447"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -1130,8 +1130,8 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="452" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="452" bodyend="458"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a461606a38dc40cb68f480cab9878d620" compoundref="BNAZoneParser_8java" startline="447" endline="447">BNAZoneParser.BNAZoneParser</references>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="450" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="450" bodyend="456"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a461606a38dc40cb68f480cab9878d620" compoundref="BNAZoneParser_8java" startline="445" endline="445">BNAZoneParser.BNAZoneParser</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="213" endline="234">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
@@ -1140,73 +1140,73 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="144">
+      <node id="160">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="145" relation="public-inheritance">
+        <childnode refid="161" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="145">
+      <node id="161">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="146" relation="public-inheritance">
+        <childnode refid="162" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="147">
+      <node id="163">
         <label>Thread</label>
       </node>
-      <node id="146">
+      <node id="162">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="147" relation="public-inheritance">
+        <childnode refid="163" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="148">
+      <node id="164">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="149" relation="public-inheritance">
+        <childnode refid="165" relation="public-inheritance">
         </childnode>
-        <childnode refid="154" relation="usage">
+        <childnode refid="170" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="149">
+      <node id="165">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="150" relation="public-inheritance">
+        <childnode refid="166" relation="public-inheritance">
         </childnode>
-        <childnode refid="152" relation="usage">
+        <childnode refid="168" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="153" relation="usage">
+        <childnode refid="169" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="153">
+      <node id="169">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="152">
+      <node id="168">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="151">
+      <node id="167">
         <label>Thread</label>
       </node>
-      <node id="150">
+      <node id="166">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="151" relation="public-inheritance">
+        <childnode refid="167" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="154">
+      <node id="170">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="54" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="52" bodyend="689"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="52" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="50" bodyend="687"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParser</scope><name>[static initializer]</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::BNAZoneParser</scope><name>[static initializer]</name></member>

@@ -94,6 +94,20 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a9abd924b5ede07ba991db7da6fff9911" kind="function"><name>AliShowZoneParser</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a6b788764b81c8f58b7654c790ec4988d" kind="variable"><name>connection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a942ebf028e78ae94fa8cc50c219ec721" kind="function"><name>BNAPURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a647c74134f864d18c205065944e528b1" kind="function"><name>BNAPURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a4170f42681efaf92df5c2030f5298905" kind="function"><name>getOutputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a4ad7fe915d0e811bd8f8ac7b5d22f4f9" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" kind="function"><name>URLof</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kind="class"><name>org::smallfoot::parser::zone::BNAZoneParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a4adddc9d747bbbcd221d26df8c80d05f" kind="variable"><name>yydebug</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a0ea9e3b522e448ac462274fe70e1be82" kind="variable"><name>yynerrs</name></member>
@@ -255,10 +269,18 @@
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1FCParser" kind="class"><name>org::smallfoot::parser::FCParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" kind="function"><name>openStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a9f16799674af7de1e539f0b54dbea72a" kind="function"><name>registerProtocols</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1afaa48a4dd8e8a976b5f69ccc616ff6e6" kind="function"><name>openSource</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac2a58d7e7ba14399f9a0c5dd55011d28" kind="function"><name>loadFile</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6995194e0af7dc5aa27034287b79dbf3" kind="function"><name>usage</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler" kind="class"><name>org::smallfoot::parser::bna::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler" kind="class"><name>org::smallfoot::parser::bnapsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kind="class"><name>org::smallfoot::parser::zone::NicknameParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a4e1353cca944de55b1cff88ca87b23cd" kind="variable"><name>br</name></member>
@@ -280,6 +302,20 @@
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee" kind="class"><name>org::smallfoot::parser::ParserTee</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" kind="function"><name>pipeOutputStreamTo</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a0827a34f92131d39860a9f9df6a4b8c3" kind="function"><name>ParserTee</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1aba69de0d9eefee9055958ec4bc795910" kind="variable"><name>aszp</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2bda4f9ef7a24e3ad30a7f53cdc63481" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultSetPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" kind="variable"><name>columnNumber</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" kind="function"><name>ResultSetPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample" kind="class"><name>org::smallfoot::parser::boneheadbits::Select2Sample</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample_1ae4faf7ff4190d227357ef851490d7757" kind="function"><name>main</name></member>
@@ -537,6 +573,10 @@
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser" kind="namespace"><name>org::smallfoot::parser</name>
   </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1bna" kind="namespace"><name>org::smallfoot::parser::bna</name>
+  </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1bnapsql" kind="namespace"><name>org::smallfoot::parser::bnapsql</name>
+  </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits" kind="namespace"><name>org::smallfoot::parser::boneheadbits</name>
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1zone" kind="namespace"><name>org::smallfoot::parser::zone</name>
@@ -544,6 +584,14 @@
   <compound refid="Alias4Parser_8java" kind="file"><name>Alias4Parser.java</name>
   </compound>
   <compound refid="AliShowZoneParser_8java" kind="file"><name>AliShowZoneParser.java</name>
+  </compound>
+  <compound refid="bnapsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="genproto_2bna_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="genproto_2bnapsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="BNAPURLConnection_8java" kind="file"><name>BNAPURLConnection.java</name>
   </compound>
   <compound refid="BNAZoneParser_8java" kind="file"><name>BNAZoneParser.java</name>
   </compound>
@@ -579,6 +627,10 @@
   </compound>
   <compound refid="AliShowZoneParser" kind="page"><name>AliShowZoneParser</name>
   </compound>
+  <compound refid="BNAPURLConnection" kind="page"><name>BNAPURLConnection</name>
+  </compound>
+  <compound refid="Compatibility" kind="page"><name>Compatibility</name>
+  </compound>
   <compound refid="BNAZoneParser" kind="page"><name>BNAZoneParser</name>
   </compound>
   <compound refid="DeviceAliasParser" kind="page"><name>DeviceAliasParser</name>
@@ -586,6 +638,16 @@
   <compound refid="ShowZoneParser" kind="page"><name>ShowZoneParser</name>
   </compound>
   <compound refid="VW4InvalidAdded" kind="page"><name>VW4InvalidAdded</name>
+  </compound>
+  <compound refid="jvmopt" kind="page"><name>jvmopt</name>
+  </compound>
+  <compound refid="dir_9ab14bd24c83483f76923c4d364197b5" kind="dir"><name>java/genproto/bna</name>
+  </compound>
+  <compound refid="dir_cb015bdd6bbc27dab8cbcb9f530241fa" kind="dir"><name>java/genproto/bnapsql</name>
+  </compound>
+  <compound refid="dir_c4905ed7953f88dc206fb38741b9f54b" kind="dir"><name>java/bnapsql</name>
+  </compound>
+  <compound refid="dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb" kind="dir"><name>java/genproto</name>
   </compound>
   <compound refid="dir_93c6ba7fb77bae0709fae89c9c13b44a" kind="dir"><name>java</name>
   </compound>

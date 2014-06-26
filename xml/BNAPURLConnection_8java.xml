@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="BNAPURLConnection_8java" kind="file">
+    <compoundname>BNAPURLConnection.java</compoundname>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection" prot="public">org::smallfoot::parser::bnapsql::BNAPURLConnection</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" prot="package">org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe" prot="package">org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultSetPipe</innerclass>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1bnapsql">org::smallfoot::parser::bnapsql</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="BNAPURLConnection_8java_1Known">
+<title>Issues</title>
+<para><itemizedlist>
+<listitem><para>as of 2012-09-11 unknown test status</para></listitem><listitem><para>as of 2012-09-16 may not accept &quot;standard aliases shared to fabric&quot; approach, may be only &quot;McData Port Labels Not Shared to Fabric&quot; approach (less common)<itemizedlist>
+<listitem><para><ulink url="http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf">http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf</ulink> defines table model on Table 282, &quot;defined_content&quot;, &quot;active_content&quot;, or &quot;ti_zone_content&quot; </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></sect1>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java"/>
+  </compounddef>
+</doxygen>

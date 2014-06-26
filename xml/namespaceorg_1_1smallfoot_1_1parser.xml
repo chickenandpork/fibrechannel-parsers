@@ -5,6 +5,8 @@
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1FCParser" prot="public">org::smallfoot::parser::FCParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee" prot="public">org::smallfoot::parser::ParserTee</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1version" prot="public">org::smallfoot::parser::version</innerclass>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1bna">org::smallfoot::parser::bna</innernamespace>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1bnapsql">org::smallfoot::parser::bnapsql</innernamespace>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits">org::smallfoot::parser::boneheadbits</innernamespace>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1zone">org::smallfoot::parser::zone</innernamespace>
     <briefdescription>
