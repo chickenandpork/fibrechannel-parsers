@@ -23,7 +23,7 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  *
  * @page BNAPURLConnection BNA Database
  *
- * The BNAPURLConnection connects to BNA's backend database to provide the bnazone-formatted zone and alias information
+ * The BNAPURLConnection collects bna://, bnapsql://, cmcne://, and dcfm:// sources from BNA's backend database to provide the bnazone-formatted zone and alias information
  *
  * This collector/parser chain is more successful than text-based parsers simply because
  * it avoids human-error and the error of not reading the warning to avois putty log traces
