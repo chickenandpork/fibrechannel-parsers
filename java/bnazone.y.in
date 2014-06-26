@@ -8,7 +8,7 @@ import java.io.*;
  * @page formats Compatible File Formats
  * @subpage BNAZoneParser
 
- * @page BNAZoneParser BNA Database
+ * @page BNAZoneParser Brocade BNA Database
  *
  * The BNAZoneParser parses the binary text records in a BNA server representing the zonesets and their aliases
  *

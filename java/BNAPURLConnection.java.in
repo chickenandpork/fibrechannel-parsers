@@ -21,7 +21,7 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  * @page formats Compatible File Formats
  * @subpage BNAPURLConnection
  *
- * @page BNAPURLConnection BNA Database
+ * @page BNAPURLConnection Brocade BNA Database
  *
  * The BNAPURLConnection collects bna://, bnapsql://, cmcne://, and dcfm:// sources from BNA's backend database to provide the bnazone-formatted zone and alias information
  *

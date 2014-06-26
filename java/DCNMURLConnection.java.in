@@ -19,7 +19,7 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  * @page formats Compatible File Formats
  * @subpage DCNMURLConnection
  *
- * @page DCNMURLConnection DCNM Database
+ * @page DCNMURLConnection Cisco DCNM Database
  *
  * The DCNMURLConnection collects dcnm:// and dcnmsql:// sources from DCNM's backend database to search for aliases it may know
  *
