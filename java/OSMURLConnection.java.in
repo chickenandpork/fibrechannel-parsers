@@ -11,7 +11,7 @@ package org.smallfoot.parser.osmsql;
  * @page formats Compatible File Formats
  * @subpage OSMURLConnection
  *
- * @page OSMURLConnection OCI Database
+ * @page OSMURLConnection NetApp OCI Database
  *
  * The OSMURLConnection collects osmsql:// sources from OCI's backend database to parse for aliases it may know
  *

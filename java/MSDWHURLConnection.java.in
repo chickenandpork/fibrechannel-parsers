@@ -10,7 +10,7 @@ package org.smallfoot.parser.msosmsql;
  * @page formats Compatible File Formats
  * @subpage MSDWHURLConnection
  *
- * @page MSDWHURLConnection OCI Database
+ * @page MSDWHURLConnection NetApp OCI Database
  *
  * The MSDWHURLConnection collects msosmsql:// sources from OCI's backend database to search for aliases
  *
