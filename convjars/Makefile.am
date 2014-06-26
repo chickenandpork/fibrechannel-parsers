@@ -19,3 +19,7 @@ JAVAROOT = bld
 	(cd $(@D)/.workdir && jar cm MANIFEST.MF gnu org) > $@
 	rm -fr $(@D)/.workdir
 	touch $@
+
+check-local: @PACKAGE@.jar
+	java -jar $< --check
+

@@ -45,8 +45,7 @@ public abstract class FCParser
         {
             DataSource ds = new URLDataSource(new java.net.URL(uri));
 
-            /* documented above */
-            if (true == new Boolean (System.getProperties().getProperty("debug.showURLOpener")))
+	    if (false != Boolean.parseBoolean(System.getProperties().getProperty("debug.showURLOpener")))
                 System.out.println("using discovered URL opener: DataSource open to "+uri);
 
             return ds.getInputStream();
@@ -231,6 +230,9 @@ public abstract class FCParser
 
         System.out.println("   ie: "+progname+" --read import.json");
         System.out.println("   ie: "+progname+" -r import.json");
+
+        System.out.println("drivers: "+System.getProperties().getProperty("jdbc.drivers"));
+        System.out.println("handlers: "+System.getProperties().getProperty("java.protocol.handler.pkgs"));
     }
 
 
@@ -254,6 +256,7 @@ public abstract class FCParser
         /* Always always ALWAYS provide a quick reference and a version output */
         options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
         options.add(new LongOpt("version", LongOpt.NO_ARGUMENT, null, 'V'));
+        options.add(new LongOpt("check", LongOpt.NO_ARGUMENT, null, '!'));
 
         options.add(new LongOpt("nickname", LongOpt.REQUIRED_ARGUMENT, null, 'N'));
 
@@ -289,6 +292,23 @@ public abstract class FCParser
                 /* *@DO_GETOPTJAR_FALSE@/	System.out.println("@VERSION@-@BUILDID@");			/@DO_GETOPTJAR_FALSE@* */
                 return;
             }
+
+            case '!':   // check that external driver munginess loads
+                java.util.Properties p = System.getProperties();
+		for (String s: "jdbc.drivers,java.protocol.handler.pkgs".split(","))
+                    System.out.println("property " + s + " is " + p.getProperty(s));
+
+                try
+                {
+                    //Class.forName("com.progress.sql.jdbc.JdbcProgressDriver");
+                    Class.forName("org.postgresql.Driver");
+                    System.out.println("BNAPSQL DB Driver: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("BNAPSQL DB Driver: ERR : "+cnfe.getMessage());
+                }
+                break;
 
             default:
             case '?':
