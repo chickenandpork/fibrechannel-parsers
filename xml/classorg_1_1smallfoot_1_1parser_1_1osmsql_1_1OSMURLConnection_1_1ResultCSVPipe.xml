@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe" kind="class" prot="protected">
+    <compoundname>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PipedOutputStream</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" prot="protected" static="no" mutable="no">
+        <type>java.sql.ResultSet</type>
+        <definition>java.sql.ResultSet source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="44" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="44" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" compoundref="OSMURLConnection_8java" startline="46" endline="49">OSMURLConnection.ResultCSVPipe.ResultCSVPipe</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" compoundref="OSMURLConnection_8java" startline="51" endline="86">OSMURLConnection.ResultCSVPipe.run</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResultCSVPipe</definition>
+        <argsstring>(java.sql.ResultSet source)</argsstring>
+        <name>ResultCSVPipe</name>
+        <param>
+          <type>java.sql.ResultSet</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="46" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="46" bodyend="49"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" compoundref="OSMURLConnection_8java" startline="44">OSMURLConnection.ResultCSVPipe.source</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="51" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="51" bodyend="86"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" compoundref="OSMURLConnection_8java" startline="44">OSMURLConnection.ResultCSVPipe.source</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PipedOutputStream to push out resultsets as CSV Nicknames. </para>    </briefdescription>
+    <detaileddescription>
+<para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="296">
+        <label>OSMURLConnection.ResultCSVPipe</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe"/>
+        <childnode refid="297" relation="public-inheritance">
+        </childnode>
+        <childnode refid="298" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>PipedOutputStream</label>
+      </node>
+      <node id="298">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="299">
+        <label>OSMURLConnection.ResultCSVPipe</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe"/>
+        <childnode refid="300" relation="public-inheritance">
+        </childnode>
+        <childnode refid="301" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>PipedOutputStream</label>
+      </node>
+      <node id="301">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="43" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="42" bodyend="87"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</scope><name>ResultCSVPipe</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</scope><name>source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

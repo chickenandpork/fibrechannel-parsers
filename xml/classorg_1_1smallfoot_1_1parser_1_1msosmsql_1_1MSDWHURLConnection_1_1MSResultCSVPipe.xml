@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe" kind="class" prot="protected">
+    <compoundname>org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ResultCSVPipe</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a48969ca60c1736f7e57420019b30220c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MSResultCSVPipe</definition>
+        <argsstring>(java.sql.ResultSet source)</argsstring>
+        <name>MSResultCSVPipe</name>
+        <param>
+          <type>java.sql.ResultSet</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="101" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1ae8fd7d31a535c027fdd2a44607614324" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char uniqueness</definition>
+        <argsstring>(String thirdRail)</argsstring>
+        <name>uniqueness</name>
+        <param>
+          <type>String</type>
+          <declname>thirdRail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="106" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="106" bodyend="123"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" compoundref="MSDWHURLConnection_8java" startline="125" endline="160">MSDWHURLConnection.MSResultCSVPipe.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="125" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="125" bodyend="160"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1ae8fd7d31a535c027fdd2a44607614324" compoundref="MSDWHURLConnection_8java" startline="106" endline="123">MSDWHURLConnection.MSResultCSVPipe.uniqueness</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PipedOutputStream to push out resultsets as CSV Nicknames. </para>    </briefdescription>
+    <detaileddescription>
+<para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="275">
+        <label>ResultCSVPipe</label>
+      </node>
+      <node id="274">
+        <label>MSDWHURLConnection.MSResultCSVPipe</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe"/>
+        <childnode refid="275" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="277">
+        <label>ResultCSVPipe</label>
+      </node>
+      <node id="276">
+        <label>MSDWHURLConnection.MSResultCSVPipe</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="99" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="98" bodyend="161"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a48969ca60c1736f7e57420019b30220c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</scope><name>MSResultCSVPipe</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1ae8fd7d31a535c027fdd2a44607614324" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</scope><name>uniqueness</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

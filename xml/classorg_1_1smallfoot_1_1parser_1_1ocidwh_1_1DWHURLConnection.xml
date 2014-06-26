@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::ocidwh::DWHURLConnection</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" prot="public" virt="non-virtual">OSMURLConnection</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection_1a88014571c73a1e1c9460c6cdb477377a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DWHURLConnection</definition>
+        <argsstring>(String connectionInfo, String username, String password)</argsstring>
+        <name>DWHURLConnection</name>
+        <param>
+          <type>String</type>
+          <declname>connectionInfo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DWHURLConnection.java" line="26" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DWHURLConnection.java" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection_1aba004da75ce33b0d07d5a0d2544f0f08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DWHURLConnection</definition>
+        <argsstring>(java.net.URL url)</argsstring>
+        <name>DWHURLConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DWHURLConnection.java" line="31" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DWHURLConnection.java" bodystart="31" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="232">
+        <label>DWHURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection"/>
+        <childnode refid="233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="233">
+        <label>OSMURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection"/>
+        <childnode refid="234" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>URLConnection</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="235">
+        <label>DWHURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection"/>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>OSMURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection"/>
+        <childnode refid="237" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>URLConnection</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/DWHURLConnection.java" line="25" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DWHURLConnection.java" bodystart="24" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>connect</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>connection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a7e56aefae8a91fd879647078501bd2c8" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>connectionInfo</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection_1a88014571c73a1e1c9460c6cdb477377a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>DWHURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection_1aba004da75ce33b0d07d5a0d2544f0f08" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>DWHURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>getInputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>getOutputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a7396d4193bb0cff2d6bd176547f3d40b" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>openConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a8d24fe354da1d971ba65c3919942c0a8" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>OSMURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a463b0498cc546b8e181b4c9abc80ef91" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>OSMURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>properties</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>setContentType</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>setRequestHeader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::ocidwh::DWHURLConnection</scope><name>URLof</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

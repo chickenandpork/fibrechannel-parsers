@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::msosmsql::MSDWHURLConnection</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" prot="public" virt="non-virtual">OSMURLConnection</basecompoundref>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe" prot="protected">org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</innerclass>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a658c89e45145229c94d261bdbaa085b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MSDWHURLConnection</definition>
+        <argsstring>(String connectionInfo, String username, String password)</argsstring>
+        <name>MSDWHURLConnection</name>
+        <param>
+          <type>String</type>
+          <declname>connectionInfo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="27" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1abae9d7254fdf3bbe668232e54188a03f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MSDWHURLConnection</definition>
+        <argsstring>(java.net.URL url)</argsstring>
+        <name>MSDWHURLConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="32" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.io.InputStream</type>
+        <definition>java.io.InputStream getInputStream</definition>
+        <argsstring>()</argsstring>
+        <name>getInputStream</name>
+        <briefdescription>
+<para>connect the result of a </para>        </briefdescription>
+        <detaileddescription>
+<para>SELECT DISTINCT host.name, host_port.wwn, fabric.name FROM host, host_port, port_connectivity, switch, fabric, switch_port WHERE host.id = host_port.hostId AND host_port.wwn = port_connectivity.connectedWwn AND port_connectivity.portId = switch_port.id AND switch_port.fabricId = fabric.id ORDER BY host.name ASC</para><para>...to something that looks readable, such as an InputStream of CSV for the parser array</para><para>this model/schema/query is used so that a htree-column output is returned such as: +-----------------<mdash/>+----------------------<mdash/>+---------<mdash/>+ | name | wwn | name2 | +-----------------<mdash/>+----------------------<mdash/>+---------<mdash/>+ | MY-SQL-14 | 10:00:00:00:c9:12:34:56 | WEST_FAB_A | | MY-SQL-14 | 10:00:00:00:c9:12:34:57 | WEST_FAB_B | | MY-SQL-15 | 10:00:00:00:c9:12:34:58 | EAST_FAB_1 | | MY-SQL-15 | 10:00:00:00:c9:12:34:59 | EAST_FAB_2 | +-----------------<mdash/>+----------------------<mdash/>+---------<mdash/>+</para><para>The output will be the A/B of the fabric appended to the alias with 1/2 converted to A/B: 10:00:00:00:c9:12:34:56,&quot;MY-SQL-14_A&quot; 10:00:00:00:c9:12:34:57,&quot;MY-SQL-14_B&quot; 10:00:00:00:c9:12:34:58,&quot;MY-SQL-15_A&quot; 10:00:00:00:c9:12:34:59,&quot;MY-SQL-15_B&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="66" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="66" bodyend="88"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="OSMURLConnection_8java" startline="216" endline="228">OSMURLConnection.connect</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" compoundref="OSMURLConnection_8java" startline="92">OSMURLConnection.connection</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="269">
+        <label>OSMURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection"/>
+        <childnode refid="270" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>URLConnection</label>
+      </node>
+      <node id="268">
+        <label>MSDWHURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="272">
+        <label>OSMURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>URLConnection</label>
+      </node>
+      <node id="271">
+        <label>MSDWHURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection"/>
+        <childnode refid="272" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="26" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="25" bodyend="162"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>connect</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>connection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a7e56aefae8a91fd879647078501bd2c8" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>connectionInfo</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>getInputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>getOutputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a658c89e45145229c94d261bdbaa085b2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>MSDWHURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1abae9d7254fdf3bbe668232e54188a03f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>MSDWHURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a7396d4193bb0cff2d6bd176547f3d40b" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>openConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a8d24fe354da1d971ba65c3919942c0a8" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>OSMURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a463b0498cc546b8e181b4c9abc80ef91" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>OSMURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>properties</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>setContentType</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>setRequestHeader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>URLof</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

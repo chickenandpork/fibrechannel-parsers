@@ -26,7 +26,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"AliShowZoneParser.html"
+"AliShowZoneParser.html",
+"genproto_2osmsql_2Handler_8java.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

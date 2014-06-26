@@ -1,0 +1,242 @@
+\section{O\+S\+M\+U\+R\+L\+Connection Class Reference}
+\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection}\index{O\+S\+M\+U\+R\+L\+Connection@{O\+S\+M\+U\+R\+L\+Connection}}
+
+
+Inheritance diagram for O\+S\+M\+U\+R\+L\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for O\+S\+M\+U\+R\+L\+Connection\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf Result\+C\+S\+V\+Pipe}
+\begin{DoxyCompactList}\small\item\em Piped\+Output\+Stream to push out resultsets as C\+S\+V Nicknames. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf O\+S\+M\+U\+R\+L\+Connection} (String connection\+Info, String username, String password)
+\item 
+{\bf O\+S\+M\+U\+R\+L\+Connection} (java.\+net.\+U\+R\+L url)
+\item 
+void {\bf set\+Request\+Header} (String name, String value)
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's no change we want to accept yet. \end{DoxyCompactList}\item 
+void {\bf set\+Content\+Type} (String ignored)
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's no change we want to accept yet. \end{DoxyCompactList}\item 
+java.\+io.\+Output\+Stream {\bf get\+Output\+Stream} ()
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's nothing to send us. \end{DoxyCompactList}\item 
+java.\+io.\+Input\+Stream {\bf get\+Input\+Stream} ()
+\begin{DoxyCompactList}\small\item\em connect the result of a \char`\"{}\+S\+E\+L\+E\+C\+T hp.\+wwn, h.\+name F\+R\+O\+M host\+\_\+port hp J\+O\+I\+N host h O\+N (h.\+id = hp.\+hostid)\char`\"{} to something that looks readable like an Input\+Stream \end{DoxyCompactList}\item 
+void {\bf connect} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf O\+S\+M\+U\+R\+L\+Connection} {\bf open\+Connection} (java.\+net.\+U\+R\+L url)
+\begin{DoxyCompactList}\small\item\em open\+Connection(java.\+net.\+U\+R\+L) overrides java.\+net.\+U\+R\+L\+Stream\+Handler.\+open\+Connection(\+U\+R\+L) by wrapping a pgsql client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+java.\+sql.\+Connection {\bf connection}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 32 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!O\+S\+M\+U\+R\+L\+Connection@{O\+S\+M\+U\+R\+L\+Connection}}
+\index{O\+S\+M\+U\+R\+L\+Connection@{O\+S\+M\+U\+R\+L\+Connection}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{O\+S\+M\+U\+R\+L\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+S\+M\+U\+R\+L\+Connection} (
+\begin{DoxyParamCaption}
+\item[{String}]{connection\+Info, }
+\item[{String}]{username, }
+\item[{String}]{password}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_a8d24fe354da1d971ba65c3919942c0a8}
+
+
+Definition at line 94 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!O\+S\+M\+U\+R\+L\+Connection@{O\+S\+M\+U\+R\+L\+Connection}}
+\index{O\+S\+M\+U\+R\+L\+Connection@{O\+S\+M\+U\+R\+L\+Connection}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{O\+S\+M\+U\+R\+L\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+S\+M\+U\+R\+L\+Connection} (
+\begin{DoxyParamCaption}
+\item[{java.\+net.\+U\+R\+L}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_a463b0498cc546b8e181b4c9abc80ef91}
+
+
+Definition at line 103 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!connect@{connect}}
+\index{connect@{connect}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_a1396bf9b5defe9fa844a63b5cd40ac0e}
+
+
+Definition at line 216 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+
+
+References O\+S\+M\+U\+R\+L\+Connection.\+connection.
+
+
+
+Referenced by M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+get\+Input\+Stream(), and O\+S\+M\+U\+R\+L\+Connection.\+get\+Input\+Stream().
+
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!get\+Input\+Stream@{get\+Input\+Stream}}
+\index{get\+Input\+Stream@{get\+Input\+Stream}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{get\+Input\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}java.\+io.\+Input\+Stream get\+Input\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_a0924d1107a459be632532ef34324494e}
+
+
+connect the result of a \char`\"{}\+S\+E\+L\+E\+C\+T hp.\+wwn, h.\+name F\+R\+O\+M host\+\_\+port hp J\+O\+I\+N host h O\+N (h.\+id = hp.\+hostid)\char`\"{} to something that looks readable like an Input\+Stream 
+
+
+
+Definition at line 167 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+
+
+References O\+S\+M\+U\+R\+L\+Connection.\+connect(), and O\+S\+M\+U\+R\+L\+Connection.\+connection.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_a0924d1107a459be632532ef34324494e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!get\+Output\+Stream@{get\+Output\+Stream}}
+\index{get\+Output\+Stream@{get\+Output\+Stream}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{get\+Output\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}java.\+io.\+Output\+Stream get\+Output\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_a4170f42681efaf92df5c2030f5298905}
+
+
+Stubbed, because there's nothing to send us. 
+
+Oh how did I get caught in the \char`\"{}\+Royal '\+We'\char`\"{} ? 
+
+Definition at line 158 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!open\+Connection@{open\+Connection}}
+\index{open\+Connection@{open\+Connection}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{open\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+S\+M\+U\+R\+L\+Connection} open\+Connection (
+\begin{DoxyParamCaption}
+\item[{java.\+net.\+U\+R\+L}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_a7396d4193bb0cff2d6bd176547f3d40b}
+
+
+open\+Connection(java.\+net.\+U\+R\+L) overrides java.\+net.\+U\+R\+L\+Stream\+Handler.\+open\+Connection(\+U\+R\+L) by wrapping a pgsql client. 
+
+\begin{DoxyReturn}{Returns}
+populated connection as org.\+smallfoot.\+osmsql.\+O\+S\+M\+U\+R\+L\+Connection(\+Connection) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L to connect to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 197 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!set\+Content\+Type@{set\+Content\+Type}}
+\index{set\+Content\+Type@{set\+Content\+Type}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{set\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{String}]{ignored}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_aa608e58be69b0389d82d846a25091d36}
+
+
+Stubbed, because there's no change we want to accept yet. 
+
+Sorry, apparently \char`\"{}at this time\char`\"{} is more professional, if you listen to the wordy airport announcements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ignored} & ignored \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!set\+Request\+Header@{set\+Request\+Header}}
+\index{set\+Request\+Header@{set\+Request\+Header}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{set\+Request\+Header}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Request\+Header (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_ac2f45f32dfcaef408189cabb2644841c}
+
+
+Stubbed, because there's no change we want to accept yet. 
+
+Sorry, apparently \char`\"{}at this time\char`\"{} is more professional, if you listen to the wordy airport announcements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & ignored \\
+\hline
+{\em value} & ignored \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 144 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Field Documentation}
+\index{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}!connection@{connection}}
+\index{connection@{connection}!org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::osmsql\+::\+O\+S\+M\+U\+R\+L\+Connection}}
+\subsubsection[{connection}]{\setlength{\rightskip}{0pt plus 5cm}java.\+sql.\+Connection connection\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_a6b788764b81c8f58b7654c790ec4988d}
+
+
+Definition at line 92 of file O\+S\+M\+U\+R\+L\+Connection.\+java.
+
+
+
+Referenced by O\+S\+M\+U\+R\+L\+Connection.\+connect(), M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+get\+Input\+Stream(), and O\+S\+M\+U\+R\+L\+Connection.\+get\+Input\+Stream().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+java/{\bf O\+S\+M\+U\+R\+L\+Connection.\+java}\end{DoxyCompactItemize}

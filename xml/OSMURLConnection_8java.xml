@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="OSMURLConnection_8java" kind="file">
+    <compoundname>OSMURLConnection.java</compoundname>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" prot="public">org::smallfoot::parser::osmsql::OSMURLConnection</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe" prot="protected">org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</innerclass>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1osmsql">org::smallfoot::parser::osmsql</innernamespace>
+    <briefdescription>
+<para>This class provides the connection infor to query the underlying OnCommand System Manager tables. </para>    </briefdescription>
+    <detaileddescription>
+<para>These are typically in a database called &quot;dwh_inventory&quot; (Data Warehouse), under userID &quot;dwh&quot;, password &quot;password&quot;. </para>    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java"/>
+  </compounddef>
+</doxygen>

@@ -9,8 +9,11 @@
     <innerfile refid="BNAPURLConnection_8java">BNAPURLConnection.java</innerfile>
     <innerfile refid="BNAZoneParser_8java">BNAZoneParser.java</innerfile>
     <innerfile refid="DeviceAliasParser_8java">DeviceAliasParser.java</innerfile>
+    <innerfile refid="DWHURLConnection_8java">DWHURLConnection.java</innerfile>
     <innerfile refid="FCParser_8java">FCParser.java</innerfile>
+    <innerfile refid="MSDWHURLConnection_8java">MSDWHURLConnection.java</innerfile>
     <innerfile refid="NicknameParser_8java">NicknameParser.java</innerfile>
+    <innerfile refid="OSMURLConnection_8java">OSMURLConnection.java</innerfile>
     <innerfile refid="ParserTee_8java">ParserTee.java</innerfile>
     <innerfile refid="Select2Sample_8java">Select2Sample.java</innerfile>
     <innerfile refid="ShowZoneParser_8java">ShowZoneParser.java</innerfile>

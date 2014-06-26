@@ -267,6 +267,10 @@
     <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a9e86c3fd05c684d8834cccae3c0f0ca1" kind="variable"><name>DEV_VIRTUALIZER</name></member>
     <member refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType_1a16792ac0d619df5babc1a94c7a0296ff" kind="variable"><name>DEV_OTHER</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection" kind="class"><name>org::smallfoot::parser::ocidwh::DWHURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection_1a88014571c73a1e1c9460c6cdb477377a" kind="function"><name>DWHURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection_1aba004da75ce33b0d07d5a0d2544f0f08" kind="function"><name>DWHURLConnection</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1FCParser" kind="class"><name>org::smallfoot::parser::FCParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" kind="function"><name>openStream</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a9f16799674af7de1e539f0b54dbea72a" kind="function"><name>registerProtocols</name></member>
@@ -274,6 +278,9 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac2a58d7e7ba14399f9a0c5dd55011d28" kind="function"><name>loadFile</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6995194e0af7dc5aa27034287b79dbf3" kind="function"><name>usage</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::osmsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler" kind="class"><name>org::smallfoot::parser::bna::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
@@ -284,9 +291,25 @@
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcfm::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::msosmsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler" kind="class"><name>org::smallfoot::parser::bnapsql::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler" kind="class"><name>org::smallfoot::parser::ocidwh::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" kind="class"><name>org::smallfoot::parser::msosmsql::MSDWHURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a658c89e45145229c94d261bdbaa085b2" kind="function"><name>MSDWHURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1abae9d7254fdf3bbe668232e54188a03f" kind="function"><name>MSDWHURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe" kind="class"><name>org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a48969ca60c1736f7e57420019b30220c" kind="function"><name>MSResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1ae8fd7d31a535c027fdd2a44607614324" kind="function"><name>uniqueness</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kind="class"><name>org::smallfoot::parser::zone::NicknameParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a4e1353cca944de55b1cff88ca87b23cd" kind="variable"><name>br</name></member>
@@ -305,9 +328,28 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" kind="function"><name>aliasSize</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" kind="class"><name>org::smallfoot::parser::osmsql::OSMURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" kind="variable"><name>connection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a8d24fe354da1d971ba65c3919942c0a8" kind="function"><name>OSMURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a463b0498cc546b8e181b4c9abc80ef91" kind="function"><name>OSMURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a4170f42681efaf92df5c2030f5298905" kind="function"><name>getOutputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a7396d4193bb0cff2d6bd176547f3d40b" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" kind="function"><name>URLof</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee" kind="class"><name>org::smallfoot::parser::ParserTee</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" kind="function"><name>pipeOutputStreamTo</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a0827a34f92131d39860a9f9df6a4b8c3" kind="function"><name>ParserTee</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
@@ -589,6 +631,12 @@
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcfm" kind="namespace"><name>org::smallfoot::parser::dcfm</name>
   </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1msosmsql" kind="namespace"><name>org::smallfoot::parser::msosmsql</name>
+  </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1ocidwh" kind="namespace"><name>org::smallfoot::parser::ocidwh</name>
+  </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1osmsql" kind="namespace"><name>org::smallfoot::parser::osmsql</name>
+  </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1zone" kind="namespace"><name>org::smallfoot::parser::zone</name>
   </compound>
   <compound refid="Alias4Parser_8java" kind="file"><name>Alias4Parser.java</name>
@@ -605,15 +653,27 @@
   </compound>
   <compound refid="genproto_2dcfm_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
+  <compound refid="genproto_2msosmsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="genproto_2ocidwh_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="genproto_2osmsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
   <compound refid="BNAPURLConnection_8java" kind="file"><name>BNAPURLConnection.java</name>
   </compound>
   <compound refid="BNAZoneParser_8java" kind="file"><name>BNAZoneParser.java</name>
   </compound>
   <compound refid="DeviceAliasParser_8java" kind="file"><name>DeviceAliasParser.java</name>
   </compound>
+  <compound refid="DWHURLConnection_8java" kind="file"><name>DWHURLConnection.java</name>
+  </compound>
   <compound refid="FCParser_8java" kind="file"><name>FCParser.java</name>
   </compound>
+  <compound refid="MSDWHURLConnection_8java" kind="file"><name>MSDWHURLConnection.java</name>
+  </compound>
   <compound refid="NicknameParser_8java" kind="file"><name>NicknameParser.java</name>
+  </compound>
+  <compound refid="OSMURLConnection_8java" kind="file"><name>OSMURLConnection.java</name>
   </compound>
   <compound refid="ParserTee_8java" kind="file"><name>ParserTee.java</name>
   </compound>
@@ -649,6 +709,12 @@
   </compound>
   <compound refid="DeviceAliasParser" kind="page"><name>DeviceAliasParser</name>
   </compound>
+  <compound refid="DWHURLConnection" kind="page"><name>DWHURLConnection</name>
+  </compound>
+  <compound refid="MSDWHURLConnection" kind="page"><name>MSDWHURLConnection</name>
+  </compound>
+  <compound refid="OSMURLConnection" kind="page"><name>OSMURLConnection</name>
+  </compound>
   <compound refid="ShowZoneParser" kind="page"><name>ShowZoneParser</name>
   </compound>
   <compound refid="VW4InvalidAdded" kind="page"><name>VW4InvalidAdded</name>
@@ -668,5 +734,11 @@
   <compound refid="dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb" kind="dir"><name>java/genproto</name>
   </compound>
   <compound refid="dir_93c6ba7fb77bae0709fae89c9c13b44a" kind="dir"><name>java</name>
+  </compound>
+  <compound refid="dir_daea5a5e15a03b5a636711ea6b9b0987" kind="dir"><name>java/genproto/msosmsql</name>
+  </compound>
+  <compound refid="dir_50e20d61f67e286b4715d2e1bc365b76" kind="dir"><name>java/genproto/ocidwh</name>
+  </compound>
+  <compound refid="dir_d7e3ce18747015d129b8f64d6faa4b30" kind="dir"><name>java/genproto/osmsql</name>
   </compound>
 </doxygenindex>

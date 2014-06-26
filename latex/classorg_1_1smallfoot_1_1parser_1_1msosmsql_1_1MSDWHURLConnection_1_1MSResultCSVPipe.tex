@@ -1,0 +1,106 @@
+\section{M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+M\+S\+Result\+C\+S\+V\+Pipe Class Reference}
+\label{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe}\index{M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+M\+S\+Result\+C\+S\+V\+Pipe@{M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+M\+S\+Result\+C\+S\+V\+Pipe}}
+
+
+Piped\+Output\+Stream to push out resultsets as C\+S\+V Nicknames.  
+
+
+
+
+Inheritance diagram for M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+M\+S\+Result\+C\+S\+V\+Pipe\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+M\+S\+Result\+C\+S\+V\+Pipe\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf M\+S\+Result\+C\+S\+V\+Pipe} (java.\+sql.\+Result\+Set source)
+\item 
+char {\bf uniqueness} (String third\+Rail)
+\item 
+void {\bf run} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Piped\+Output\+Stream to push out resultsets as C\+S\+V Nicknames. 
+
+No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of W\+W\+N/\+Nickname pairs, but this fits into the stream-\/reading I've currently got. To be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-\/offs and go with data blocks streaming from various resources. 
+
+Definition at line 98 of file M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe@{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe}!M\+S\+Result\+C\+S\+V\+Pipe@{M\+S\+Result\+C\+S\+V\+Pipe}}
+\index{M\+S\+Result\+C\+S\+V\+Pipe@{M\+S\+Result\+C\+S\+V\+Pipe}!org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe@{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe}}
+\subsubsection[{M\+S\+Result\+C\+S\+V\+Pipe}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+S\+Result\+C\+S\+V\+Pipe} (
+\begin{DoxyParamCaption}
+\item[{java.\+sql.\+Result\+Set}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_a48969ca60c1736f7e57420019b30220c}
+
+
+Definition at line 101 of file M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe@{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe}!run@{run}}
+\index{run@{run}!org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe@{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_a13a43e6d814de94978c515cb084873b1}
+
+
+Definition at line 125 of file M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+References M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+M\+S\+Result\+C\+S\+V\+Pipe.\+uniqueness().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_a13a43e6d814de94978c515cb084873b1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe@{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe}!uniqueness@{uniqueness}}
+\index{uniqueness@{uniqueness}!org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe@{org\+::smallfoot\+::parser\+::msosmsql\+::\+M\+S\+D\+W\+H\+U\+R\+L\+Connection\+::\+M\+S\+Result\+C\+S\+V\+Pipe}}
+\subsubsection[{uniqueness}]{\setlength{\rightskip}{0pt plus 5cm}char uniqueness (
+\begin{DoxyParamCaption}
+\item[{String}]{third\+Rail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_ae8fd7d31a535c027fdd2a44607614324}
+
+
+Definition at line 106 of file M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+Referenced by M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+M\+S\+Result\+C\+S\+V\+Pipe.\+run().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+java/{\bf M\+S\+D\+W\+H\+U\+R\+L\+Connection.\+java}\end{DoxyCompactItemize}

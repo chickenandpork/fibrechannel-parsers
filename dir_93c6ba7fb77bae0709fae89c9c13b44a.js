@@ -17,11 +17,22 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
     [ "DeviceAliasParser.java", "DeviceAliasParser_8java.html", [
       [ "DeviceAliasParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" ]
     ] ],
+    [ "DWHURLConnection.java", "DWHURLConnection_8java.html", [
+      [ "DWHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection.html", "classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection" ]
+    ] ],
     [ "FCParser.java", "FCParser_8java.html", [
       [ "FCParser", "classorg_1_1smallfoot_1_1parser_1_1FCParser.html", null ]
     ] ],
+    [ "MSDWHURLConnection.java", "MSDWHURLConnection_8java.html", [
+      [ "MSDWHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection.html", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" ],
+      [ "MSResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe.html", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe" ]
+    ] ],
     [ "NicknameParser.java", "NicknameParser_8java.html", [
       [ "NicknameParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" ]
+    ] ],
+    [ "OSMURLConnection.java", "OSMURLConnection_8java.html", [
+      [ "OSMURLConnection", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection.html", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" ],
+      [ "ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe.html", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe" ]
     ] ],
     [ "ParserTee.java", "ParserTee_8java.html", [
       [ "ParserTee", "classorg_1_1smallfoot_1_1parser_1_1ParserTee.html", "classorg_1_1smallfoot_1_1parser_1_1ParserTee" ]

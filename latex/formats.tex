@@ -6,6 +6,12 @@
 
 \doxyref{Cisco \char`\"{}show device-\/alias database\char`\"{}}{p.}{DeviceAliasParser}
 
+\doxyref{O\+C\+I Database}{p.}{DWHURLConnection}
+
+\doxyref{O\+C\+I Database}{p.}{MSDWHURLConnection}
+
+\doxyref{O\+C\+I Database}{p.}{OSMURLConnection}
+
 \doxyref{Cisco \char`\"{}show zone\char`\"{}}{p.}{ShowZoneParser}
 
 \doxyref{Virtual\+Wisdom4 Validation Errors}{p.}{VW4InvalidAdded} \section{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}\label{AliShowZoneParser}
@@ -81,7 +87,7 @@ The result is a list of nicknames, such as\+:
  \section{B\+N\+A Database}\label{BNAPURLConnection}
 The \doxyref{B\+N\+A\+P\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection} collects bna\+://, bnapsql\+://, cmcne\+://, and dcfm\+:// sources from B\+N\+A's backend database to provide the bnazone-\/formatted zone and alias information
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avois putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{B\+N\+A Database}\label{BNAZoneParser}
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{B\+N\+A Database}\label{BNAZoneParser}
 The \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} parses the binary text records in a B\+N\+A server representing the zonesets and their aliases
 
 This parser is not normally used from a downloaded text; it's normally used when a client executes a query against the backing database of a B\+N\+A instance. The resulting query tends to have data columns in resultset that are binary-\/coded to reduce parsing load. These same binary tokens are parsed by \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} to provide results similar to Ali\+Show\+Parser.
@@ -133,7 +139,18 @@ with the following result of W\+W\+P\+N/alias pairs\+: \begin{DoxyVerb}10000000c
 22000024ff123456,"oracle10_hba1"
 5000097201234554,"vmax-18641-fa06a0"
 5000097201234558,"vmax-18641-fa07a0" \end{DoxyVerb}
- \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZoneParser}
+ \section{O\+C\+I Database}\label{DWHURLConnection}
+The \doxyref{D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection} collects ocidwh\+:// sources from O\+C\+I's backend database to search for aliases
+
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{O\+C\+I Database}\label{MSDWHURLConnection}
+The \doxyref{M\+S\+D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection} collects msosmsql\+:// sources from O\+C\+I's backend database to search for aliases
+
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{O\+C\+I Database}\label{OSMURLConnection}
+The \doxyref{O\+S\+M\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection} collects osmsql\+:// sources from O\+C\+I's backend database to parse for aliases it may know
+
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information.
+
+Testing of this data was done with an exported config database from jessigg called \char`\"{}dwh\+\_\+inventory.\+sql\char`\"{} loaded using\+: /usr/local/mysql/bin/mysqladmin create dwh\+\_\+inventory /usr/local/mysql/bin/mysql -\/u root mysql \char`\"{}grant connect on dwh\+\_\+inventory.$\ast$ to dwh identified by 'password'\char`\"{} /usr/local/mysql/bin/mysqladmin reload grant /usr/local/mysql/bin/mysql -\/u root dwh\+\_\+inventory $<$ $\sim$/dwh\+\_\+inventory.sql \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZoneParser}
 The \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show zone\char`\"{} command
 
 As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.

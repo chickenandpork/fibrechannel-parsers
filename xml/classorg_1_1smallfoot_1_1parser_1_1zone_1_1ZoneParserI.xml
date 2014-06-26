@@ -507,84 +507,84 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="284">
+      <node id="364">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="279" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="286">
+      <node id="366">
         <label>ShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser"/>
-        <childnode refid="279" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="279">
+      <node id="359">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="280" relation="public-inheritance">
+        <childnode refid="360" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="287">
+      <node id="367">
         <label>VW4InvalidAddedParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser"/>
-        <childnode refid="279" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="281">
+      <node id="361">
         <label>Thread</label>
       </node>
-      <node id="280">
+      <node id="360">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="281" relation="public-inheritance">
+        <childnode refid="361" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="282">
+      <node id="362">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="279" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="285">
+      <node id="365">
         <label>DeviceAliasParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser"/>
-        <childnode refid="279" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="283">
+      <node id="363">
         <label>AliShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser"/>
-        <childnode refid="279" relation="public-inheritance">
+        <childnode refid="359" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="288">
+      <node id="368">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="289" relation="public-inheritance">
+        <childnode refid="369" relation="public-inheritance">
         </childnode>
-        <childnode refid="291" relation="usage">
+        <childnode refid="371" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="292" relation="usage">
+        <childnode refid="372" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="292">
+      <node id="372">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="291">
+      <node id="371">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="290">
+      <node id="370">
         <label>Thread</label>
       </node>
-      <node id="289">
+      <node id="369">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="290" relation="public-inheritance">
+        <childnode refid="370" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

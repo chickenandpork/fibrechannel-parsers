@@ -90,76 +90,76 @@
     <detaileddescription>
 <para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. TO be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="222">
+      <node id="302">
         <label>BNAPURLConnection.ResultCSVPipe</label>
-        <childnode refid="223" relation="public-inheritance">
+        <childnode refid="303" relation="public-inheritance">
         </childnode>
-        <childnode refid="224" relation="public-inheritance">
+        <childnode refid="304" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="224">
+      <node id="304">
         <label>Runnable</label>
       </node>
-      <node id="223">
+      <node id="303">
         <label>PipedOutputStream</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="228">
+      <node id="308">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="229" relation="public-inheritance">
+        <childnode refid="309" relation="public-inheritance">
         </childnode>
-        <childnode refid="234" relation="usage">
+        <childnode refid="314" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="229">
+      <node id="309">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="230" relation="public-inheritance">
+        <childnode refid="310" relation="public-inheritance">
         </childnode>
-        <childnode refid="232" relation="usage">
+        <childnode refid="312" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="233" relation="usage">
+        <childnode refid="313" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="233">
+      <node id="313">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="225">
+      <node id="305">
         <label>BNAPURLConnection.ResultCSVPipe</label>
-        <childnode refid="226" relation="public-inheritance">
+        <childnode refid="306" relation="public-inheritance">
         </childnode>
-        <childnode refid="227" relation="public-inheritance">
+        <childnode refid="307" relation="public-inheritance">
         </childnode>
-        <childnode refid="228" relation="usage">
+        <childnode refid="308" relation="usage">
           <edgelabel>aszp</edgelabel>
         </childnode>
       </node>
-      <node id="232">
+      <node id="312">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="231">
+      <node id="311">
         <label>Thread</label>
       </node>
-      <node id="230">
+      <node id="310">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="231" relation="public-inheritance">
+        <childnode refid="311" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="227">
+      <node id="307">
         <label>Runnable</label>
       </node>
-      <node id="226">
+      <node id="306">
         <label>PipedOutputStream</label>
       </node>
-      <node id="234">
+      <node id="314">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
