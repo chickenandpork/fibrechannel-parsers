@@ -4,7 +4,23 @@ package org.smallfoot.parser.osmsql;
 /**
  * @file
  *
- * This class provides the connection infor to query the underlying OnCommand System Manager tables.  These are typically in a database called "dwh_inventory" (Data Warehouse), under userID "dwh", password "password".
+ * This class provides the connection infor to query the underlying OnCommand System
+ * Manager tables.  These are typically in a database called "dwh_inventory"
+ * (Data Warehouse), under userID "dwh", password "password".
+ *
+ * @page formats Compatible File Formats
+ * @subpage OSMURLConnection
+ *
+ * @page OSMURLConnection OCI Database
+ *
+ * The OSMURLConnection collects osmsql:// sources from OCI's backend database to parse for aliases it may know
+ *
+ * This collector/parser chain is more successful than text-based parsers simply because
+ * it avoids human-error and the error of not reading the warning to avoid putty log traces
+ * and other "nearly 100% unmodified" methods of transferring content.  Additionally, this
+ * is an entirely binary connection, so the user cannot accidentally edit the content.
+ * Finally, as BNA may harvest from and provide config to many fabrics at once, this is
+ * typically "a broader net to cast" to collect information.
  *
  * Testing of this data was done with an exported config database from jessigg called "dwh_inventory.sql" loaded using:
  *      /usr/local/mysql/bin/mysqladmin create dwh_inventory
@@ -16,7 +32,12 @@ package org.smallfoot.parser.osmsql;
 public class OSMURLConnection extends java.net.URLConnection
 {
     /**
-     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  To be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources.
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan
+     * of this method of doing so, I'd rather have the upstream consume data block of
+     * WWN/Nickname pairs, but this fits into the stream-reading I've currently got. 
+     * To be shallow, it fits the current dataflow, although very soon I'm sure there
+     * will be a need to strip off the layers of hand-offs and go with data blocks
+     * streaming from various resources.
      */
     protected class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
     {
@@ -113,7 +134,9 @@ public class OSMURLConnection extends java.net.URLConnection
     }
 
     /**
-     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently
+     * "at this time" is more professional, if you listen to the wordy airport
+     * announcements.
      *
      * @param name ignored
      * @param value ignored
@@ -121,7 +144,9 @@ public class OSMURLConnection extends java.net.URLConnection
     public void setRequestHeader(String name, String value) { }
 
     /**
-     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently
+     * "at this time" is more professional, if you listen to the wordy airport
+     * announcements.
      *
      * @param ignored ignored
      */
@@ -137,9 +162,7 @@ public class OSMURLConnection extends java.net.URLConnection
 
 
     /**
-     * connect the result of a "psql -c "select wwn,name from device_port_info"" to something that looks readable like an InputStream
-     * - select port_wwn,name from hba_target_info;
-     * - select port_nwwn,physical_port_nwwn,name from hba_port_details_info;
+     * connect the result of a "SELECT hp.wwn, h.name FROM host_port hp JOIN host h ON (h.id = hp.hostid)" to something that looks readable like an InputStream
      */
     public java.io.InputStream getInputStream()
     {

@@ -4,7 +4,22 @@ package org.smallfoot.parser.msosmsql;
 /**
  * @file
  *
- * This class simply provides a specific URL pattern for the client extractor for a specific customer allowing a different database schema to be used
+ * This class simply provides a specific URL pattern for the client extractor for a specific
+ * customer allowing a different database schema to be used
+ *
+ * @page formats Compatible File Formats
+ * @subpage MSDWHURLConnection
+ *
+ * @page MSDWHURLConnection OCI Database
+ *
+ * The MSDWHURLConnection collects msosmsql:// sources from OCI's backend database to search for aliases
+ *
+ * This collector/parser chain is more successful than text-based parsers simply because
+ * it avoids human-error and the error of not reading the warning to avoid putty log traces
+ * and other "nearly 100% unmodified" methods of transferring content.  Additionally, this
+ * is an entirely binary connection, so the user cannot accidentally edit the content.
+ * Finally, as BNA may harvest from and provide config to many fabrics at once, this is
+ * typically "a broader net to cast" to collect information.
  */
 
 public class MSDWHURLConnection extends org.smallfoot.parser.osmsql.OSMURLConnection
@@ -20,7 +35,17 @@ public class MSDWHURLConnection extends org.smallfoot.parser.osmsql.OSMURLConnec
     }
 
     /**
-     * connect the result of a "SELECT DISTINCT host.name, host_port.wwn, fabric.name FROM host, host_port, port_connectivity, switch, fabric, switch_port WHERE host.id = host_port.hostId AND host_port.wwn = port_connectivity.connectedWwn AND port_connectivity.portId = switch_port.id AND switch_port.fabricId = fabric.id ORDER BY host.name ASC" to something that looks readable like an InputStream of CSV for the parser array
+     * connect the result of a
+     *
+     *     SELECT DISTINCT host.name, host_port.wwn, fabric.name
+     *     FROM host, host_port, port_connectivity, switch, fabric, switch_port
+     *     WHERE host.id = host_port.hostId
+     *       AND host_port.wwn = port_connectivity.connectedWwn
+     *       AND port_connectivity.portId = switch_port.id
+     *       AND switch_port.fabricId = fabric.id
+     *     ORDER BY host.name ASC
+     *
+     * ...to something that looks readable, such as an InputStream of CSV for the parser array
      *
      * this model/schema/query is used so that a htree-column output is returned such as:
      * +--------------------+-------------------------+------------+
@@ -63,7 +88,12 @@ public class MSDWHURLConnection extends org.smallfoot.parser.osmsql.OSMURLConnec
     }
 
     /**
-     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  To be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources.
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan
+     * of this method of doing so, I'd rather have the upstream consume data block of
+     * WWN/Nickname pairs, but this fits into the stream-reading I've currently got. 
+     * To be shallow, it fits the current dataflow, although very soon I'm sure there
+     * will be a need to strip off the layers of hand-offs and go with data blocks
+     * streaming from various resources.
      */
     protected class MSResultCSVPipe extends ResultCSVPipe
     {

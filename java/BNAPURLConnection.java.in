@@ -26,7 +26,7 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  * The BNAPURLConnection collects bna://, bnapsql://, cmcne://, and dcfm:// sources from BNA's backend database to provide the bnazone-formatted zone and alias information
  *
  * This collector/parser chain is more successful than text-based parsers simply because
- * it avoids human-error and the error of not reading the warning to avois putty log traces
+ * it avoids human-error and the error of not reading the warning to avoid putty log traces
  * and other "nearly 100% unmodified" methods of transferring content.  Additionally, this
  * is an entirely binary connection, so the user cannot accidentally edit the content. 
  * Finally, as BNA may harvest from and provide config to many fabrics at once, this is
