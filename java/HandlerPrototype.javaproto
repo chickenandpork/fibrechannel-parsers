@@ -4,7 +4,7 @@ package org.smallfoot.parser.##protocol##;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLStreamHandler;
-import org.smallfoot.parser.##protocol##.##localtype##URLConnection;
+import org.smallfoot.parser.##localtypepkg##.##localtype##URLConnection;
 //import java.io.*;
 //import java.util.*;
 //import javax.activation.DataSource;
@@ -23,7 +23,7 @@ public class Handler extends URLStreamHandler
     /**
      * openConnection(URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a proper connection with prototype-matching call and parameters
      *
-     * @return populated connection as org.smallfoot.parser.##protocol##.##localtype##URLConnection(Connection)
+     * @return populated connection as org.smallfoot.parser.##localtypepkg##.##localtype##URLConnection(Connection)
      * @param url URL to which we need to connect
      */
     protected URLConnection openConnection(URL url)
