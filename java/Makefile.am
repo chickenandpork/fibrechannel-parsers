@@ -7,6 +7,7 @@ nodist_java_JAVA += ShowZoneParser.java
 nodist_java_JAVA += VW4InvalidAddedParser.java
 nodist_java_JAVA += genproto/bna/Handler.java genproto/bnapsql/Handler.java genproto/cmcne/Handler.java genproto/dcfm/Handler.java BNAPURLConnection.java
 nodist_java_JAVA += genproto/ocidwh/Handler.java genproto/osmsql/Handler.java genproto/msosmsql/Handler.java OSMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java
+nodist_java_JAVA += genproto/dcnm/Handler.java genproto/dcnmsql/Handler.java DCNMURLConnection.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
@@ -28,6 +29,7 @@ BUILT_SOURCES = FCParser.java
 # build the Handler stubs
 BUILT_SOURCES += genproto/bna/Handler.java genproto/bnapsql/Handler.java genproto/cmcne/Handler.java genproto/dcfm/Handler.java
 BUILT_SOURCES += genproto/ocidwh/Handler.java genproto/osmsql/Handler.java genproto/msosmsql/Handler.java
+BUILT_SOURCES += genproto/dcnmsql/Handler.java
 
 genproto/bna/Handler.java: HandlerPrototype.javaproto
 	@mkdir -p $(@D)
@@ -56,6 +58,14 @@ genproto/osmsql/Handler.java: HandlerPrototype.javaproto
 genproto/msosmsql/Handler.java: HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/msosmsql/g' -e 's/##localtype##/MSDWH/g' -e 's/##localtypepkg##/msosmsql/g' $< > $@
+
+genproto/dcnmsql/Handler.java: HandlerPrototype.javaproto
+	@mkdir -p $(@D)
+	sed -e 's/##protocol##/dcnmsql/g' -e 's/##localtype##/DCNM/g' -e 's/##localtypepkg##/dcnmsql/g' $< > $@
+
+genproto/dcnm/Handler.java: HandlerPrototype.javaproto
+	@mkdir -p $(@D)
+	sed -e 's/##protocol##/dcnm/g' -e 's/##localtype##/DCNM/g' -e 's/##localtypepkg##/dcnmsql/g' $< > $@
 
 
 if DO_BYACC

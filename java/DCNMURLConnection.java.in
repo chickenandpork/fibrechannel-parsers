@@ -18,12 +18,31 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  *
  * @section Known Issues
  * - as of 2012-09-11 unknown test status
+ *
+ * @page formats Compatible File Formats
+ * @subpage DCNMURLConnection
+ *
+ * @page DCNMURLConnection DCNM Database
+ *
+ * The DCNMURLConnection collects dcnm:// and dcnmsql:// sources from DCNM's backend database to search for aliases it may know
+ *
+ * This collector/parser chain is more successful than text-based parsers simply because
+ * it avoids human-error and the error of not reading the warning to avoid putty log traces
+ * and other "nearly 100% unmodified" methods of transferring content.  Additionally, this
+ * is an entirely binary connection, so the user cannot accidentally edit the content.
+ * Finally, as BNA may harvest from and provide config to many fabrics at once, this is
+ * typically "a broader net to cast" to collect information.
  */
 
 public class DCNMURLConnection extends java.net.URLConnection
 {
     /**
-     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  TO be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources.
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan
+     * of this method of doing so, I'd rather have the upstream consume data block of
+     * WWN/Nickname pairs, but this fits into the stream-reading I've currently got. 
+     * To be shallow, it fits the current dataflow, although very soon I'm sure there
+     * will be a need to strip off the layers of hand-offs and go with data blocks
+     * streaming form various resources.
      */
     class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
     {
@@ -105,7 +124,9 @@ for (java.sql.ResultSet source: sources)
     }
 
     /**
-     * PipedOutputStream to push out a single column of a resultset as a stream of resulting data.  More reinforcement of the layers discussed in ResultCSVPipe but maybe a bit closer to streams of datablocks?
+     * PipedOutputStream to push out a single column of a resultset as a stream of
+     * resulting data.  More reinforcement of the layers discussed in ResultCSVPipe
+     * but maybe a bit closer to streams of datablocks?
      */
     class ResultSetPipe extends java.io.PipedOutputStream implements Runnable
     {
@@ -233,7 +254,9 @@ for (java.sql.ResultSet source: sources)
     }
 
     /**
-     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently
+     * "at this time" is more professional, if you listen to the wordy airport
+     * announcements.
      *
      * @param name ignored
      * @param value ignored
@@ -241,7 +264,9 @@ for (java.sql.ResultSet source: sources)
     public void setRequestHeader(String name, String value) { }
 
     /**
-     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently
+     * "at this time" is more professional, if you listen to the wordy airport
+     * announcements.
      *
      * @param ignored ignored
      */
@@ -257,7 +282,9 @@ for (java.sql.ResultSet source: sources)
 
 
     /**
-     * connect the result of a "psql -c "select wwn,alias from device_alias"" to something that looks readable like an InputStream
+     * connect the result of a "psql -c "select wwn,alias from device_alias"" to
+     * something that looks readable like an InputStream
+     *
      * may want to consider later (@see http://www.cisco.com/en/US/docs/switches/datacenter/mds9000/sw/6_x/technical/reference/DCNM-SAN_Published/db_tab.html)
      * - select e.wwn,z.name from end_port e, zone_member z where z.endport_id = e.id and z.type = 2;
      */
