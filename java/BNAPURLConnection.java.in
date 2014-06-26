@@ -17,6 +17,20 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  * - as of 2012-09-11 unknown test status
  * - as of 2012-09-16 may not accept "standard aliases shared to fabric" approach, may be only "McData Port Labels Not Shared to Fabric" approach (less common)
  *   - http://h10032.www1.hp.com/ctg/Manual/c02912115.pdf defines table model on Table 282, "defined_content", "active_content", or "ti_zone_content"
+ *
+ * @page formats Compatible File Formats
+ * @subpage BNAPURLConnection
+ *
+ * @page BNAPURLConnection BNA Database
+ *
+ * The BNAPURLConnection connects to BNA's backend database to provide the bnazone-formatted zone and alias information
+ *
+ * This collector/parser chain is more successful than text-based parsers simply because
+ * it avoids human-error and the error of not reading the warning to avois putty log traces
+ * and other "nearly 100% unmodified" methods of transferring content.  Additionally, this
+ * is an entirely binary connection, so the user cannot accidentally edit the content. 
+ * Finally, as BNA may harvest from and provide config to many fabrics at once, this is
+ * typically "a broader net to cast" to collect information.
  */
 
 public class BNAPURLConnection extends java.net.URLConnection
