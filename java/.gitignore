@@ -20,6 +20,7 @@ devicealias.y
 showzone.y
 vw4invalid.y
 zonefile.y
+VW4InvalidAddedParser.java
 
 
 #generated buildproc

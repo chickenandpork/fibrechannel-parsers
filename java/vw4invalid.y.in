@@ -50,7 +50,7 @@ Entity: Cisco-000dec-123456:194 : hba @endverbatim
 
 input:  /* empty string */
  | input LOCATION ':' '[' LINE ':' ALPHANUM ',' COLUMN ':' ALPHANUM ']'
- | input INVALID ADDED CHILD ENTITIES ':' WWPN { addAlias (new ZoneParserVal("none"), $7); $$ = $1;}    /* void ZoneParserI::addAlias(String name, String wwn) */
+ | input INVALID ADDED CHILD ENTITIES ':' WWPN { addAlias ("none-"+($7.sval), $7.sval); $$ = $1;}    /* void ZoneParserI::addAlias(String name, String wwn) */
  | input ENTITY ':' ALPHANUM ':' HBA
  | input ENTITY ':' ALPHANUM ':' ALPHANUM ':' HBA
  ;
