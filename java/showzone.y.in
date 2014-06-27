@@ -96,6 +96,7 @@ zoneline: /* empty */
 
 effectiveLine: FCALIAS NAME ALPHANUM PWWN ALPHANUM { addAlias ($3, $5); }
  | FCALIAS NAME ALPHANUM VSAN ALPHANUM PWWN ALPHANUM { addAlias ($3, $7); }
+ | FCALIAS NAME ALPHANUM VSAN ALPHANUM PWWN ALPHANUM '[' ALPHANUM ']' { addAlias ($9, $7); }
  ;
 
 
@@ -186,6 +187,8 @@ effectiveLine: FCALIAS NAME ALPHANUM PWWN ALPHANUM { addAlias ($3, $5); }
 
 	    case ':':
 	    case ';':
+	    case '[':
+	    case ']':
 	        if (verboseStringtokenizer) System.out.println("returning anticipated char "+ tok + " \"" + (char) tok + "\"");
 		return tok;
 	}
