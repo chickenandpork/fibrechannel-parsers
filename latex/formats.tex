@@ -1,10 +1,10 @@
 \doxyref{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}{p.}{AliShowZoneParser}
 
-\doxyref{B\+N\+A Database}{p.}{BNAPURLConnection}
+\doxyref{Brocade B\+N\+A Database}{p.}{BNAPURLConnection}
 
-\doxyref{B\+N\+A Database}{p.}{BNAZoneParser}
+\doxyref{Brocade B\+N\+A Database}{p.}{BNAZoneParser}
 
-\doxyref{D\+C\+N\+M Database}{p.}{DCNMURLConnection}
+\doxyref{Cisco D\+C\+N\+M Database}{p.}{DCNMURLConnection}
 
 \doxyref{Cisco \char`\"{}show device-\/alias database\char`\"{}}{p.}{DeviceAliasParser}
 
@@ -86,10 +86,10 @@ The result is a list of nicknames, such as\+:
 10000000c9444421,"NASMany_654321"
 10000000c9444430,"NASMany_654321"
 10000000c9444431,"NASMany_654321" \end{DoxyVerb}
- \section{B\+N\+A Database}\label{BNAPURLConnection}
+ \section{Brocade B\+N\+A Database}\label{BNAPURLConnection}
 The \doxyref{B\+N\+A\+P\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection} collects bna\+://, bnapsql\+://, cmcne\+://, and dcfm\+:// sources from B\+N\+A's backend database to provide the bnazone-\/formatted zone and alias information
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{B\+N\+A Database}\label{BNAZoneParser}
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Brocade B\+N\+A Database}\label{BNAZoneParser}
 The \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} parses the binary text records in a B\+N\+A server representing the zonesets and their aliases
 
 This parser is not normally used from a downloaded text; it's normally used when a client executes a query against the backing database of a B\+N\+A instance. The resulting query tends to have data columns in resultset that are binary-\/coded to reduce parsing load. These same binary tokens are parsed by \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} to provide results similar to Ali\+Show\+Parser.
@@ -101,7 +101,7 @@ Use this parser automatically by collecting using a bnapsql\+:// U\+R\+L protoco
 
 
 or \begin{DoxyVerb}java -jar vw4tools.jar -N bna://bna.example.com/\end{DoxyVerb}
- \section{D\+C\+N\+M Database}\label{DCNMURLConnection}
+ \section{Cisco D\+C\+N\+M Database}\label{DCNMURLConnection}
 The \doxyref{D\+C\+N\+M\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection} collects dcnm\+:// and dcnmsql\+:// sources from D\+C\+N\+M's backend database to search for aliases it may know
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Cisco \char`\"{}show device-\/alias database\char`\"{}}\label{DeviceAliasParser}

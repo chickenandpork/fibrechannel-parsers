@@ -288,8 +288,8 @@
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1FCParser" kind="class"><name>org::smallfoot::parser::FCParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" kind="function"><name>openStream</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a9f16799674af7de1e539f0b54dbea72a" kind="function"><name>registerProtocols</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1afaa48a4dd8e8a976b5f69ccc616ff6e6" kind="function"><name>openSource</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac2a58d7e7ba14399f9a0c5dd55011d28" kind="function"><name>loadFile</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6085cf44eb1e750084cff1666eeae8ba" kind="function"><name>openSource</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" kind="function"><name>loadFile</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6995194e0af7dc5aa27034287b79dbf3" kind="function"><name>usage</name></member>
   </compound>

@@ -47,7 +47,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/ZoneParser.java" line="9" column="1"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac2a58d7e7ba14399f9a0c5dd55011d28" compoundref="FCParser_8java" startline="164" endline="262">FCParser.loadFile</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="164" endline="261">FCParser.loadFile</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="121" endline="141">ZoneParser.summarize</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a83a569eb17c8c2ba71b1b866f05e4df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -89,7 +89,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/ZoneParser.java" line="15" column="1"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1ac2a58d7e7ba14399f9a0c5dd55011d28" compoundref="FCParser_8java" startline="164" endline="262">FCParser.loadFile</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="164" endline="261">FCParser.loadFile</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="121" endline="141">ZoneParser.summarize</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a19567e6611303b1035a1a101b00310e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -344,7 +344,7 @@
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ac04020e56b85b1d8b222f5e344924336">ZoneParser.aliasSize</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a6837faff1f96406f15225cf38c2186e9">ZoneParser.zoneSize</references>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample_1ae4faf7ff4190d227357ef851490d7757" compoundref="Select2Sample_8java" startline="12" endline="42">Select2Sample.main</referencedby>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="295" endline="375">FCParser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="294" endline="375">FCParser.main</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParser_8java" startline="110" endline="114">ZoneParser.testSummary</referencedby>
       </memberdef>
       </sectiondef>

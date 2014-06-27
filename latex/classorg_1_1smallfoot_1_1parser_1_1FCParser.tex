@@ -7,9 +7,9 @@ static java.\+io.\+Input\+Stream {\bf open\+Stream} (String uri)  throws java.\+
 \begin{DoxyCompactList}\small\item\em Produce an Input\+Stream for the given uri in a way that corresponds to the url protocol. \end{DoxyCompactList}\item 
 static void {\bf register\+Protocols} ()
 \begin{DoxyCompactList}\small\item\em Collect in a single place the process to register protocol handlers. \end{DoxyCompactList}\item 
-static Input\+Stream {\bf open\+Source} (String url, boolean verbose)
+static Input\+Stream {\bf open\+Source} (String url, boolean verbose, java.\+util.\+Properties prop)
 \begin{DoxyCompactList}\small\item\em Create a stream from a U\+R\+L or file name with a convenience workaround for no-\/proto U\+R\+Ls. \end{DoxyCompactList}\item 
-static {\bf Zone\+Parser} {\bf load\+File} (Input\+Stream is, String args0, boolean verbose)
+static {\bf Zone\+Parser} {\bf load\+File} (Input\+Stream is, String args0, boolean verbose, java.\+util.\+Properties prop)
 \begin{DoxyCompactList}\small\item\em Load a file from the resource given to a W\+W\+N/\+Nickname vector. \end{DoxyCompactList}\item 
 static void {\bf main} (String args[$\,$])
 \begin{DoxyCompactList}\small\item\em Main function, as you can tell. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -29,9 +29,10 @@ Definition at line 28 of file F\+C\+Parser.\+java.
 \begin{DoxyParamCaption}
 \item[{Input\+Stream}]{is, }
 \item[{String}]{args0, }
-\item[{boolean}]{verbose}
+\item[{boolean}]{verbose, }
+\item[{java.\+util.\+Properties}]{prop}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_ac2a58d7e7ba14399f9a0c5dd55011d28}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_a47b0fe73f5a3ae8d0b5e23da3b1b4b63}
 
 
 Load a file from the resource given to a W\+W\+N/\+Nickname vector. 
@@ -46,6 +47,8 @@ the number of things loaded (used to trigger obsessive retries to get around cho
 {\em args0} & the args[0] value to substitute into the optional verbose output of oarsing results \\
 \hline
 {\em verbose} & if true, parser results will be shown to stdout \\
+\hline
+{\em prop} & Properties through which to pass post-\/\+U\+R\+L options \\
 \hline
 \end{DoxyParams}
 
@@ -62,11 +65,12 @@ Referenced by F\+C\+Parser.\+main().
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=264pt]{classorg_1_1smallfoot_1_1parser_1_1FCParser_ac2a58d7e7ba14399f9a0c5dd55011d28_cgraph}
+\includegraphics[width=264pt]{classorg_1_1smallfoot_1_1parser_1_1FCParser_a47b0fe73f5a3ae8d0b5e23da3b1b4b63_cgraph}
 \end{center}
 \end{figure}
 
@@ -93,7 +97,7 @@ No real intelligence herein except the parse-\/and-\/redirect action.
 \end{DoxyParams}
 
 
-Definition at line 295 of file F\+C\+Parser.\+java.
+Definition at line 294 of file F\+C\+Parser.\+java.
 
 
 
@@ -101,7 +105,8 @@ References F\+C\+Parser.\+load\+File(), F\+C\+Parser.\+open\+Source(), F\+C\+Par
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -115,9 +120,10 @@ Here is the call graph for this function\+:\nopagebreak
 \subsubsection[{open\+Source}]{\setlength{\rightskip}{0pt plus 5cm}static Input\+Stream open\+Source (
 \begin{DoxyParamCaption}
 \item[{String}]{url, }
-\item[{boolean}]{verbose}
+\item[{boolean}]{verbose, }
+\item[{java.\+util.\+Properties}]{prop}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_afaa48a4dd8e8a976b5f69ccc616ff6e6}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1FCParser_a6085cf44eb1e750084cff1666eeae8ba}
 
 
 Create a stream from a U\+R\+L or file name with a convenience workaround for no-\/proto U\+R\+Ls. 
@@ -133,10 +139,12 @@ the resulting Input\+Stream
 \hline
 {\em verbose} & whether to report errors to stdout or run quietly \\
 \hline
+{\em prop} & Properties through which to pass post-\/\+U\+R\+L options \\
+\hline
 \end{DoxyParams}
 
 
-Definition at line 95 of file F\+C\+Parser.\+java.
+Definition at line 96 of file F\+C\+Parser.\+java.
 
 
 
@@ -148,11 +156,12 @@ Referenced by F\+C\+Parser.\+main().
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=220pt]{classorg_1_1smallfoot_1_1parser_1_1FCParser_afaa48a4dd8e8a976b5f69ccc616ff6e6_cgraph}
+\includegraphics[width=220pt]{classorg_1_1smallfoot_1_1parser_1_1FCParser_a6085cf44eb1e750084cff1666eeae8ba_cgraph}
 \end{center}
 \end{figure}
 
