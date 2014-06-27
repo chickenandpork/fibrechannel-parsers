@@ -91,14 +91,13 @@ public abstract class FCParser
      * @return the resulting InputStream
      * @param url the resource to open
      * @param verbose whether to report errors to stdout or run quietly
+     * @param prop Properties through which to pass post-URL options
      */
-    public static InputStream openSource(String url, boolean verbose)
+    public static InputStream openSource(String url, boolean verbose, java.util.Properties prop)
     {
         String[] params = url.split(";");
         int colWWN=0;
         int colNickname=1;
-
-        java.util.Properties prop = new java.util.Properties();
 
         for (int i = 1; i < params.length; i++)
         {
@@ -160,11 +159,11 @@ public abstract class FCParser
      * @param is the inputstream to parse from
      * @param args0 the args[0] value to substitute into the optional verbose output of oarsing results
      * @param verbose if true, parser results will be shown to stdout
+     * @param prop Properties through which to pass post-URL options
      */
-    public static ZoneParser loadFile(InputStream is, String args0, boolean verbose)
+    public static ZoneParser loadFile(InputStream is, String args0, boolean verbose, java.util.Properties prop)
     {
 	if (null == is) return null;
-        java.util.Properties prop = new java.util.Properties();
         Vector<ZoneParser> zpl = new Vector();
 
         /* tried 2013-04-23 with 18 ParserTees feeding a NicknameParser, a AliShowZoneParser, and 16 Alias4Parsers */
@@ -295,6 +294,7 @@ public abstract class FCParser
     public static void main(String args[])
     {
         Vector<LongOpt> options = new Vector(3,2);
+        java.util.Properties prop = new java.util.Properties();
 
         /* Always always ALWAYS provide a quick reference and a version output */
         options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
@@ -319,7 +319,7 @@ public abstract class FCParser
             switch (c)
             {
             case 'N': /* input Nicknames using file:, ftp:, http: via fibrechannel-parsers fcparsers.jar */
-                ZoneParser aszp = FCParser.loadFile(FCParser.openSource(args[1], false), null, /* verbose */ false);
+                ZoneParser aszp = FCParser.loadFile(FCParser.openSource(args[1], false, prop), null, /* verbose */ false, prop);
                 if (null != aszp) aszp.summarize();
                 break;
 

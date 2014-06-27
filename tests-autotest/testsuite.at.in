@@ -13,6 +13,29 @@ AT_CHECK([java -jar $abs_top_builddir/convjars/@PACKAGE@.jar --version], 0, [fcp
 AT_CLEANUP()
 
 
+AT_SETUP(CSV NicknameParser)
+dnl      ------------------
+
+AT_DATA([alias.csv], [50:0A:09:85:98:12:34:56,NetApp-123456,50:0A:09:83:98:12:34:56
+50:0A:09:86:98:12:34:56,NetApp-123456,50:0A:09:84:98:12:34:56
+10:00:00:00:c9:12:34:56,Oracle01,10:00:00:00:c9:12:34:58
+10:00:00:00:c9:12:34:57,Oracle01,10:00:00:00:c9:12:34:55
+])
+
+AT_CHECK([java -Ddebug.yystate=NicknameParser -Ddebug.verboseAddAlias=NicknameParser -Ddebug.verboseTokenizer=NicknameParser -jar $abs_top_builddir/convjars/fcparsers.jar -N 'alias.csv;wwn=2;nickname=1'], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=NicknameParser -jar $abs_top_builddir/convjars/fcparsers.jar -N 'alias.csv;wwn=2;nickname=1'], 0, [Parse results for NicknameParser:
+Zones: 0
+Aliases: 4 (names with one or more WWPNs)
+Aliases: 4 (name/WWPN tuples)
+Alias: 500a098398123456, NetApp-123456
+Alias: 500a098498123456, NetApp-123456
+Alias: 10000000c9123458, Oracle01
+Alias: 10000000c9123455, Oracle01
+], [stderr])
+
+AT_CLEANUP()
+
+
 AT_SETUP(VW4 Invalid Added Parser)
 dnl      ------------------------
 
