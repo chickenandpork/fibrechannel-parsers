@@ -71,6 +71,7 @@ zone name SANASVR002_FabA vsan 100
 input: /* empty string */
  | ALPHANUM input
  | input zone
+ | input effectiveLine
  ;
 
 zone: ZONE
