@@ -394,6 +394,28 @@ AT_CLEANUP()
 
 
 
+AT_SETUP(Cisco ZoneShow Parser postfixed WWPN)
+dnl      ------------------------------
+
+AT_CHECK([java -Ddebug.verboseTokenizer=ShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.ShowZoneParser < abs_top_srcdir/samples/non-fcalias.shzone ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=ShowZoneParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.ShowZoneParser < abs_top_srcdir/samples/non-fcalias.shzone ], 0, [stdout], [stderr])
+AT_CHECK([sort stdout], 0, [Alias: 10000000c9123456, Dell0012_a_01_p0
+Alias: 10000000c9123457, Dell0012_a_01_p1
+Alias: 10000000c9123458, Dell0012_c_01_p0
+Alias: 10000000c9123459, Dell0012_d_01_p1
+Alias: 5000097208000190, SYM0000_05G0
+Alias: 5000097208000194, SYM0000_06G0
+Aliases: 6 (name/WWPN pairs)
+Aliases: 6 (names with one or more WWPNs)
+Parse results for ShowZoneParser:
+Zones: 0
+], [stderr])
+
+
+AT_CLEANUP()
+
+
+
 AT_SETUP(User-given bnazone testcase)
 dnl      ---------------------------
 

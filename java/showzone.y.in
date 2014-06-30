@@ -59,7 +59,6 @@ zone name SANASVR002_FabA vsan 100
 
 /* YACC Declarations */
 %token ALPHANUM
-%token DEVICEALIAS
 %token FCALIAS
 %token NAME
 %token PWWN
@@ -97,6 +96,7 @@ zoneline: /* empty */
 
 effectiveLine: FCALIAS NAME ALPHANUM PWWN ALPHANUM { addAlias ($3, $5); }
  | FCALIAS NAME ALPHANUM VSAN ALPHANUM PWWN ALPHANUM { addAlias ($3, $7); }
+ | PWWN ALPHANUM '[' ALPHANUM ']' { addAlias ($4, $2); }
  | FCALIAS NAME ALPHANUM VSAN ALPHANUM PWWN ALPHANUM '[' ALPHANUM ']' { addAlias ($9, $7); }
  ;
 
