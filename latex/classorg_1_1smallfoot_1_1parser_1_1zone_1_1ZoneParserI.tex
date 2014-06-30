@@ -54,9 +54,47 @@ void {\bf test\+Summary} (String args[$\,$])
 
 
 \subsection{Detailed Description}
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]{\bfseries debug.\+verbose\+Tokenizer} (values\+: true, \doxyref{Alias4\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser}, \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser}, \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser}, \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser}, \doxyref{Nickname\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser}, \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser}, \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser}) can be set to either \char`\"{}true\char`\"{}, or to the name of a specific parser (ie \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser}) to cause the parser's tokenizing and returned tokens to be displayed. Of note\+: this will show when the parser sees a value it doesn't like, such as an improper symbol, word, or key term. This can be helpful in diagnosing why the parser gave up and/or the calling process didn't feel this parser's results were worth keeping or using. \doxyref{Alias4\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser} and \doxyref{Nickname\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser} are not L\+A\+L\+R-\/based but do give some indications by this option.\end{DoxyRefDesc}
 
 
-Definition at line 7 of file Zone\+Parser\+I.\+java.
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]
+\begin{DoxyCode}
+java -Ddebug.verboseTokenizer=NicknameParser -jar fcparser.jar -N ... 
+\end{DoxyCode}
+\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]{\bfseries debug.\+dump\+Aliases} (values\+: true, \doxyref{Alias4\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser}, \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser}, \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser}, \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser}, \doxyref{Nickname\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser}, \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser}, \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser}) can be used to tell most parsers to dump out their results for diagnostics. Setting it to \char`\"{}true\char`\"{} would cause all to dump their results; setting to the name of a Parser (ie \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser}, \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser}, \doxyref{Nickname\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser}) would cause that individual parser to show its results. These names are the same names listed at the end of a parse attempt for convenience/aide-\/memoire.\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]
+\begin{DoxyCode}
+java -Ddebug.dumpAliases=AliShowZoneParser -jar fcparser.jar -N ...  
+\end{DoxyCode}
+\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]{\bfseries debug.\+verbose\+Add\+Alias}\+: (values\+: true, \doxyref{Alias4\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser}, \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser}, \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser}, \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser}, \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser}, \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser}) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]{\bfseries debug.\+verbose\+Add\+Zone}\+: (values\+: true, \doxyref{Alias4\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser}, \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser}, \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser}, \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser}, \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser}, \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser}) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]{\bfseries debug.\+verbose\+Append\+Zone}\+: (values\+: true, \doxyref{Alias4\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser}, \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser}, \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser}, \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser}, \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser}, \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser}) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]{\bfseries debug.\+yystate}\+: (values\+: true, \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser}, \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser}, \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser}, \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser}, \doxyref{V\+W4\+Invalid\+Added\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser}) Although not much use without looking inside the code, setting this value allows you to see the debug information from inside the L\+A\+L\+R state machine itself. This might give some insight as to why some parse attempts are failing, or how the state-\/machine needs to be extended to accommodate more situations. \end{DoxyRefDesc}
+
+
+Definition at line 63 of file Zone\+Parser\+I.\+java.
 
 
 
@@ -79,7 +117,7 @@ Create a parser with a new stream, defaulting to no debug, and verbose Z\+P debu
 \end{DoxyParams}
 
 
-Definition at line 33 of file Zone\+Parser\+I.\+java.
+Definition at line 89 of file Zone\+Parser\+I.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}!Zone\+Parser\+I@{Zone\+Parser\+I}}
 \index{Zone\+Parser\+I@{Zone\+Parser\+I}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}}
@@ -94,7 +132,7 @@ Create a parser with a no stream or reader, fairly uncivilized, defaulting to no
 
 
 
-Definition at line 42 of file Zone\+Parser\+I.\+java.
+Definition at line 98 of file Zone\+Parser\+I.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}!Zone\+Parser\+I@{Zone\+Parser\+I}}
 \index{Zone\+Parser\+I@{Zone\+Parser\+I}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}}
@@ -117,7 +155,7 @@ Create a parser with a new stream.
 \end{DoxyParams}
 
 
-Definition at line 54 of file Zone\+Parser\+I.\+java.
+Definition at line 110 of file Zone\+Parser\+I.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}!Zone\+Parser\+I@{Zone\+Parser\+I}}
 \index{Zone\+Parser\+I@{Zone\+Parser\+I}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}}
@@ -137,7 +175,7 @@ Create a parser with a new reader, defaulting to no debug, and verbose Z\+P debu
 \end{DoxyParams}
 
 
-Definition at line 65 of file Zone\+Parser\+I.\+java.
+Definition at line 121 of file Zone\+Parser\+I.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}!Zone\+Parser\+I@{Zone\+Parser\+I}}
 \index{Zone\+Parser\+I@{Zone\+Parser\+I}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}}
@@ -160,7 +198,7 @@ Create a parser, setting the debug to true or false.
 \end{DoxyParams}
 
 
-Definition at line 77 of file Zone\+Parser\+I.\+java.
+Definition at line 133 of file Zone\+Parser\+I.\+java.
 
 
 
@@ -198,7 +236,7 @@ Create a parser, setting the debug to true or false.
 \end{DoxyParams}
 
 
-Definition at line 91 of file Zone\+Parser\+I.\+java.
+Definition at line 147 of file Zone\+Parser\+I.\+java.
 
 
 
@@ -212,7 +250,7 @@ Definition at line 91 of file Zone\+Parser\+I.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a5c646608669073b5c31bb44626baa48f}
 
 
-Definition at line 19 of file Zone\+Parser\+I.\+java.
+Definition at line 75 of file Zone\+Parser\+I.\+java.
 
 
 
@@ -227,7 +265,7 @@ Referenced by Zone\+Parser\+I.\+test\+Summary().
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a1631138fd08af051dc26686c00768ab3}
 
 
-Definition at line 17 of file Zone\+Parser\+I.\+java.
+Definition at line 73 of file Zone\+Parser\+I.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}!alias\+Size@{alias\+Size}}
 \index{alias\+Size@{alias\+Size}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}}
@@ -238,7 +276,7 @@ Definition at line 17 of file Zone\+Parser\+I.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a5586367d58e0d7e6a4d5262d6dc87fd2}
 
 
-Definition at line 21 of file Zone\+Parser\+I.\+java.
+Definition at line 77 of file Zone\+Parser\+I.\+java.
 
 
 
@@ -284,7 +322,7 @@ To test/show a descendant class, with a created parser, feed in the stdin, parse
 \end{DoxyParams}
 
 
-Definition at line 213 of file Zone\+Parser\+I.\+java.
+Definition at line 269 of file Zone\+Parser\+I.\+java.
 
 
 
@@ -292,7 +330,7 @@ References Zone\+Parser\+I.\+alias\+Array(), Zone\+Parser\+I.\+alias\+Size(), an
 
 
 
-Referenced by Alias4\+Parser.\+main(), B\+N\+A\+Zone\+Parser.\+main(), V\+W4\+Invalid\+Added\+Parser.\+main(), Show\+Zone\+Parser.\+main(), Device\+Alias\+Parser.\+main(), and Ali\+Show\+Zone\+Parser.\+main().
+Referenced by Alias4\+Parser.\+main(), B\+N\+A\+Zone\+Parser.\+main(), V\+W4\+Invalid\+Added\+Parser.\+main(), Device\+Alias\+Parser.\+main(), Show\+Zone\+Parser.\+main(), and Ali\+Show\+Zone\+Parser.\+main().
 
 
 
@@ -314,7 +352,7 @@ Here is the call graph for this function\+:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a17bb9b86877d4493c7ad4ba284f7c945}
 
 
-Definition at line 13 of file Zone\+Parser\+I.\+java.
+Definition at line 69 of file Zone\+Parser\+I.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}!zone\+Size@{zone\+Size}}
 \index{zone\+Size@{zone\+Size}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser\+I}}
@@ -325,7 +363,7 @@ Definition at line 13 of file Zone\+Parser\+I.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_a083293963a3e77da41becf829be83aca}
 
 
-Definition at line 15 of file Zone\+Parser\+I.\+java.
+Definition at line 71 of file Zone\+Parser\+I.\+java.
 
 
 

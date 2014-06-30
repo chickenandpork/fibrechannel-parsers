@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-128</span>
+   &#160;<span id="projectnumber">0.3-135</span>
    </div>
   </td>
  </tr>
@@ -65,14 +65,24 @@ $(document).ready(function(){initNavTree('jvmopt.html','');});
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt><a class="anchor" id="_jvmopt000001"></a>Global <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection.html#a0924d1107a459be632532ef34324494e">BNAPURLConnection.getInputStream</a>  ()</dt>
-<dd>debug.carleton: For testing and additional info, -Ddebug.carleton causes the "old" query to be swapped with a pull from hba_target_info </dd>
+<dd><b>debug.carleton</b>: For testing and additional info, -Ddebug.carleton causes the "old" query to be swapped with a pull from hba_target_info  </dd>
+<dt><a class="anchor" id="_jvmopt000003"></a>Class <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html">ZoneParserI</a>  </dt>
+<dd><p class="startdd"><b>debug.verboseTokenizer</b> (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, NicknameParser, ShowZoneParser, VW4InvalidAddedParser) can be set to either "true", or to the name of a specific parser (ie ShowZoneParser) to cause the parser's tokenizing and returned tokens to be displayed. Of note: this will show when the parser sees a value it doesn't like, such as an improper symbol, word, or key term. This can be helpful in diagnosing why the parser gave up and/or the calling process didn't feel this parser's results were worth keeping or using. Alias4Parser and NicknameParser are not LALR-based but do give some indications by this option.</p>
+<div class="fragment"><div class="line">java -Ddebug.verboseTokenizer=NicknameParser -jar fcparser.jar -N ... </div>
+</div><!-- fragment --><p><b>debug.dumpAliases</b> (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, NicknameParser, ShowZoneParser, VW4InvalidAddedParser) can be used to tell most parsers to dump out their results for diagnostics. Setting it to "true" would cause all to dump their results; setting to the name of a Parser (ie ShowZoneParser, VW4InvalidAddedParser, NicknameParser) would cause that individual parser to show its results. These names are the same names listed at the end of a parse attempt for convenience/aide-memoire.</p>
+<div class="fragment"><div class="line">java -Ddebug.dumpAliases=AliShowZoneParser -jar fcparser.jar -N ...  </div>
+</div><!-- fragment --><p><b>debug.verboseAddAlias</b>: (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</p>
+<p><b>debug.verboseAddZone</b>: (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</p>
+<p><b>debug.verboseAppendZone</b>: (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</p>
+<p class="enddd"><b>debug.yystate</b>: (values: true, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser) Although not much use without looking inside the code, setting this value allows you to see the debug information from inside the LALR state machine itself. This might give some insight as to why some parse attempts are failing, or how the state-machine needs to be extended to accommodate more situations. </p>
+</dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 27 2014 10:00:41 for fcparsers by
+    <li class="footer">Generated on Mon Jun 30 2014 14:46:13 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

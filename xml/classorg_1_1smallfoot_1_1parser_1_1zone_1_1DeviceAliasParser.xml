@@ -1107,7 +1107,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="510" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="510" bodyend="516"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1af519c80bc4449da0ad3d5e335175b967" compoundref="DeviceAliasParser_8java" startline="506" endline="506">DeviceAliasParser.DeviceAliasParser</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="213" endline="234">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="269" endline="290">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>

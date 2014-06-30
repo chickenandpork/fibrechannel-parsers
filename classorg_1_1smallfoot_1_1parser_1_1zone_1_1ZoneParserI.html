@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-128</span>
+   &#160;<span id="projectnumber">0.3-135</span>
    </div>
   </td>
  </tr>
@@ -169,8 +169,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad8cf81600663ab2330a929bfefaecacd inherit pub_methods_classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00007">7</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<div class="textblock"><dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000003">JVM Options:</a></b></dt><dd><b>debug.verboseTokenizer</b> (values: true, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html">Alias4Parser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html">AliShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html">BNAZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html">DeviceAliasParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html">NicknameParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html">ShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html">VW4InvalidAddedParser</a>) can be set to either "true", or to the name of a specific parser (ie <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html">ShowZoneParser</a>) to cause the parser's tokenizing and returned tokens to be displayed. Of note: this will show when the parser sees a value it doesn't like, such as an improper symbol, word, or key term. This can be helpful in diagnosing why the parser gave up and/or the calling process didn't feel this parser's results were worth keeping or using. <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html">Alias4Parser</a> and <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html">NicknameParser</a> are not LALR-based but do give some indications by this option.</dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000004">JVM Options:</a></b></dt><dd><div class="fragment"><div class="line">java -Ddebug.verboseTokenizer=NicknameParser -jar fcparser.jar -N ... </div>
+</div><!-- fragment --></dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000005">JVM Options:</a></b></dt><dd><b>debug.dumpAliases</b> (values: true, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html">Alias4Parser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html">AliShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html">BNAZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html">DeviceAliasParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html">NicknameParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html">ShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html">VW4InvalidAddedParser</a>) can be used to tell most parsers to dump out their results for diagnostics. Setting it to "true" would cause all to dump their results; setting to the name of a Parser (ie <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html">ShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html">VW4InvalidAddedParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html">NicknameParser</a>) would cause that individual parser to show its results. These names are the same names listed at the end of a parse attempt for convenience/aide-memoire.</dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000006">JVM Options:</a></b></dt><dd><div class="fragment"><div class="line">java -Ddebug.dumpAliases=AliShowZoneParser -jar fcparser.jar -N ...  </div>
+</div><!-- fragment --></dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000007">JVM Options:</a></b></dt><dd><b>debug.verboseAddAlias</b>: (values: true, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html">Alias4Parser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html">AliShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html">BNAZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html">DeviceAliasParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html">ShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html">VW4InvalidAddedParser</a>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000008">JVM Options:</a></b></dt><dd><b>debug.verboseAddZone</b>: (values: true, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html">Alias4Parser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html">AliShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html">BNAZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html">DeviceAliasParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html">ShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html">VW4InvalidAddedParser</a>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000009">JVM Options:</a></b></dt><dd><b>debug.verboseAppendZone</b>: (values: true, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html">Alias4Parser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html">AliShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html">BNAZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html">DeviceAliasParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html">ShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html">VW4InvalidAddedParser</a>) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000010">JVM Options:</a></b></dt><dd><b>debug.yystate</b>: (values: true, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html">AliShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html">BNAZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html">DeviceAliasParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html">ShowZoneParser</a>, <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html">VW4InvalidAddedParser</a>) Although not much use without looking inside the code, setting this value allows you to see the debug information from inside the LALR state machine itself. This might give some insight as to why some parse attempts are failing, or how the state-machine needs to be extended to accommodate more situations. </dd></dl>
+
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00063">63</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a78ce415d9f6ed283bce24ee9f700cedb"></a>
 <div class="memitem">
@@ -202,7 +212,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00033">33</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00089">89</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
 </div>
 </div>
@@ -229,7 +239,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug. </p>
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00042">42</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00098">98</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
 </div>
 </div>
@@ -274,7 +284,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00054">54</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00110">110</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
 </div>
 </div>
@@ -308,7 +318,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00065">65</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00121">121</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
 </div>
 </div>
@@ -353,7 +363,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00077">77</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00133">133</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
 <p>References <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#ab23378f817a0790a310e852b89a5eb1d">ZoneParserI.setDebug()</a>, and <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a19567e6611303b1035a1a101b00310e2">ZoneParserI.setReader()</a>.</p>
 
@@ -409,7 +419,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00091">91</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00147">147</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
 </div>
 </div>
@@ -435,9 +445,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00019">19</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00075">75</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00213">ZoneParserI.testSummary()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00269">ZoneParserI.testSummary()</a>.</p>
 
 </div>
 </div>
@@ -462,7 +472,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00017">17</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00073">73</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
 </div>
 </div>
@@ -487,9 +497,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00021">21</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00077">77</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00213">ZoneParserI.testSummary()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00269">ZoneParserI.testSummary()</a>.</p>
 
 </div>
 </div>
@@ -515,7 +525,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00077">ZoneParserI.ZoneParserI()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00133">ZoneParserI.ZoneParserI()</a>.</p>
 
 </div>
 </div>
@@ -541,7 +551,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00077">ZoneParserI.ZoneParserI()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00133">ZoneParserI.ZoneParserI()</a>.</p>
 
 </div>
 </div>
@@ -575,11 +585,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00213">213</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00269">269</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
-<p>References <a class="el" href="ZoneParserI_8java_source.html#l00019">ZoneParserI.aliasArray()</a>, <a class="el" href="ZoneParserI_8java_source.html#l00021">ZoneParserI.aliasSize()</a>, and <a class="el" href="ZoneParserI_8java_source.html#l00015">ZoneParserI.zoneSize()</a>.</p>
+<p>References <a class="el" href="ZoneParserI_8java_source.html#l00075">ZoneParserI.aliasArray()</a>, <a class="el" href="ZoneParserI_8java_source.html#l00077">ZoneParserI.aliasSize()</a>, and <a class="el" href="ZoneParserI_8java_source.html#l00071">ZoneParserI.zoneSize()</a>.</p>
 
-<p>Referenced by <a class="el" href="Alias4Parser_8java_source.html#l00118">Alias4Parser.main()</a>, <a class="el" href="BNAZoneParser_8java_source.html#l00450">BNAZoneParser.main()</a>, <a class="el" href="VW4InvalidAddedParser_8java_source.html#l00469">VW4InvalidAddedParser.main()</a>, <a class="el" href="ShowZoneParser_8java_source.html#l00503">ShowZoneParser.main()</a>, <a class="el" href="DeviceAliasParser_8java_source.html#l00510">DeviceAliasParser.main()</a>, and <a class="el" href="AliShowZoneParser_8java_source.html#l00579">AliShowZoneParser.main()</a>.</p>
+<p>Referenced by <a class="el" href="Alias4Parser_8java_source.html#l00118">Alias4Parser.main()</a>, <a class="el" href="BNAZoneParser_8java_source.html#l00450">BNAZoneParser.main()</a>, <a class="el" href="VW4InvalidAddedParser_8java_source.html#l00469">VW4InvalidAddedParser.main()</a>, <a class="el" href="DeviceAliasParser_8java_source.html#l00510">DeviceAliasParser.main()</a>, <a class="el" href="ShowZoneParser_8java_source.html#l00510">ShowZoneParser.main()</a>, and <a class="el" href="AliShowZoneParser_8java_source.html#l00579">AliShowZoneParser.main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -613,7 +623,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00013">13</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00069">69</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
 </div>
 </div>
@@ -638,9 +648,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00015">15</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
+<p>Definition at line <a class="el" href="ZoneParserI_8java_source.html#l00071">71</a> of file <a class="el" href="ZoneParserI_8java_source.html">ZoneParserI.java</a>.</p>
 
-<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00213">ZoneParserI.testSummary()</a>.</p>
+<p>Referenced by <a class="el" href="ZoneParserI_8java_source.html#l00269">ZoneParserI.testSummary()</a>.</p>
 
 </div>
 </div>
@@ -653,7 +663,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceorg.html">org</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot.html">smallfoot</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot_1_1parser.html">parser</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot_1_1parser_1_1zone.html">zone</a></li><li class="navelem"><a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html">ZoneParserI</a></li>
-    <li class="footer">Generated on Fri Jun 27 2014 10:00:42 for fcparsers by
+    <li class="footer">Generated on Mon Jun 30 2014 14:46:13 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

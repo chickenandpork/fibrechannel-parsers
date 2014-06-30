@@ -1,5 +1,29 @@
 
 \begin{DoxyRefList}
 \item[\label{jvmopt__jvmopt000001}%
-Global \doxyref{B\+N\+A\+P\+U\+R\+L\+Connection.get\+Input\+Stream}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_a0924d1107a459be632532ef34324494e} ()]debug.\+carleton\+: For testing and additional info, -\/\+Ddebug.\+carleton causes the \char`\"{}old\char`\"{} query to be swapped with a pull from hba\+\_\+target\+\_\+info 
+Global \doxyref{B\+N\+A\+P\+U\+R\+L\+Connection.get\+Input\+Stream}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_a0924d1107a459be632532ef34324494e} ()]{\bfseries debug.\+carleton}\+: For testing and additional info, -\/\+Ddebug.\+carleton causes the \char`\"{}old\char`\"{} query to be swapped with a pull from hba\+\_\+target\+\_\+info  
+\item[\label{jvmopt__jvmopt000003}%
+Class \doxyref{Zone\+Parser\+I}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI} ]{\bfseries debug.\+verbose\+Tokenizer} (values\+: true, Alias4\+Parser, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Nickname\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) can be set to either \char`\"{}true\char`\"{}, or to the name of a specific parser (ie Show\+Zone\+Parser) to cause the parser's tokenizing and returned tokens to be displayed. Of note\+: this will show when the parser sees a value it doesn't like, such as an improper symbol, word, or key term. This can be helpful in diagnosing why the parser gave up and/or the calling process didn't feel this parser's results were worth keeping or using. Alias4\+Parser and Nickname\+Parser are not L\+A\+L\+R-\/based but do give some indications by this option.
+
+
+\begin{DoxyCode}
+java -Ddebug.verboseTokenizer=NicknameParser -jar fcparser.jar -N ... 
+\end{DoxyCode}
+
+
+{\bfseries debug.\+dump\+Aliases} (values\+: true, Alias4\+Parser, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Nickname\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) can be used to tell most parsers to dump out their results for diagnostics. Setting it to \char`\"{}true\char`\"{} would cause all to dump their results; setting to the name of a Parser (ie Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser, Nickname\+Parser) would cause that individual parser to show its results. These names are the same names listed at the end of a parse attempt for convenience/aide-\/memoire.
+
+
+\begin{DoxyCode}
+java -Ddebug.dumpAliases=AliShowZoneParser -jar fcparser.jar -N ...  
+\end{DoxyCode}
+
+
+{\bfseries debug.\+verbose\+Add\+Alias}\+: (values\+: true, Alias4\+Parser, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.
+
+{\bfseries debug.\+verbose\+Add\+Zone}\+: (values\+: true, Alias4\+Parser, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.
+
+{\bfseries debug.\+verbose\+Append\+Zone}\+: (values\+: true, Alias4\+Parser, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.
+
+{\bfseries debug.\+yystate}\+: (values\+: true, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) Although not much use without looking inside the code, setting this value allows you to see the debug information from inside the L\+A\+L\+R state machine itself. This might give some insight as to why some parse attempts are failing, or how the state-\/machine needs to be extended to accommodate more situations. 
 \end{DoxyRefList}

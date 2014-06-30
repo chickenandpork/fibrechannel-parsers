@@ -183,7 +183,7 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="jvmopt_1_jvmopt000001"><xreftitle>JVM Options</xreftitle><xrefdescription><para>debug.carleton: For testing and additional info, -Ddebug.carleton causes the &quot;old&quot; query to be swapped with a pull from hba_target_info </para></xrefdescription></xrefsect></para>        </inbodydescription>
+<para><xrefsect id="jvmopt_1_jvmopt000001"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.carleton</bold>: For testing and additional info, -Ddebug.carleton causes the &quot;old&quot; query to be swapped with a pull from hba_target_info </para></xrefdescription></xrefsect></para>        </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="287" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="287" bodyend="330"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="BNAPURLConnection_8java" startline="359" endline="379">BNAPURLConnection.connect</references>
       </memberdef>
