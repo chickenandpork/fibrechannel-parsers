@@ -299,7 +299,7 @@ public class BNAPURLConnection extends java.net.URLConnection
 //System.out.println("Newer zone content parsed; going to nickname format");
 
 /**
-* @jvmopt debug.carleton:
+* @jvmopt <b>debug.carleton</b>:
 * For testing and additional info, -Ddebug.carleton causes the "old" query to be swapped with a pull from hba_target_info
 */
 

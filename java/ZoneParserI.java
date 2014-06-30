@@ -4,6 +4,62 @@ import java.io.*;
 import java.util.TreeMap;
 import java.util.Vector;
 
+/** @file */
+
+/**
+ * @jvmopt <b>debug.verboseTokenizer</b>
+ * (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, NicknameParser, ShowZoneParser, VW4InvalidAddedParser)
+ * can be set to either "true", or to the name of a specific
+ * parser (ie ShowZoneParser) to cause the parser's tokenizing and returned tokens
+ * to be displayed.  Of note: this will show when the parser sees a value it
+ * doesn't like, such as an improper symbol, word, or key term.  This can be
+ * helpful in diagnosing why the parser gave up and/or the calling process didn't
+ * feel this parser's results were worth keeping or using.  Alias4Parser and
+ * NicknameParser are not LALR-based but do give some indications by this option.
+ * 
+ * @jvmopt
+ * @code java -Ddebug.verboseTokenizer=NicknameParser -jar fcparser.jar -N ... @endcode
+ *
+ * @jvmopt <b>debug.dumpAliases</b>
+ * (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, NicknameParser, ShowZoneParser, VW4InvalidAddedParser)
+ * can be used to tell most parsers to dump out their results
+ * for diagnostics.  Setting it to "true" would cause all to dump their results;
+ * setting to the name of a Parser (ie ShowZoneParser, VW4InvalidAddedParser,
+ * NicknameParser) would cause that individual parser to show its results.  These
+ * names are the same names listed at the end of a parse attempt for
+ * convenience/aide-memoire.
+ *
+ * @jvmopt
+ * @code java -Ddebug.dumpAliases=AliShowZoneParser -jar fcparser.jar -N ...  @endcode
+ *
+ * @jvmopt <b>debug.verboseAddAlias</b>:
+ * (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser)
+ * Although not much use without looking inside the code, setting this value allows you
+ * to see when the parser is storing a new alias block/set internally for retrieval by
+ * the calling function.  It might help you to see where the incorrect data is coming from.
+ *
+ * @jvmopt <b>debug.verboseAddZone</b>:
+ * (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser)
+ * Although not much use without looking inside the code, setting this value allows you
+ * to see when the parser is storing a new zone block internally for retrieval by the
+ * calling function.  It might help you to see where the incorrect data is coming from.
+ *
+ * @jvmopt <b>debug.verboseAppendZone</b>:
+ * (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser)
+ * Although not much use without looking inside the code, setting this value allows you
+ * to see when the parser is adding data to an existing zone value internally for retrieval by
+ * the calling function.  It might help you to see where the incorrect data is coming from.
+ *
+ * @jvmopt <b>debug.yystate</b>:
+ * (values: true, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser)
+ * Although not much use without looking inside the code, setting this value allows you
+ * to see the debug information from inside the LALR state machine itself.  This might give
+ * some insight as to why some parse attempts are failing, or how the state-machine needs to
+ * be extended to accommodate more situations.
+ */
+
+
+
 public abstract class ZoneParserI extends ZoneParser
 {
 
