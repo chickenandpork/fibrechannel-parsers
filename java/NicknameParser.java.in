@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class NicknameParser extends ZoneParser
+public class NicknameParser extends ZoneParserI
 {
     BufferedReader br;
     java.util.Vector<ZPAliasEntry> aliases = new java.util.Vector();
@@ -17,11 +17,10 @@ public class NicknameParser extends ZoneParser
      * Create a parser, setting the debug to true or false
      *
      * @param properties additional name-value pair collection
-     * @param debugMe true for debugging, false for no debug.
      */
-    public NicknameParser(java.util.Properties properties, boolean debugMe)
+    public NicknameParser(java.util.Properties properties)
     {
-        super (properties, debugMe);
+        super (properties);
 
         if (null != properties)
         {

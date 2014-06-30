@@ -168,14 +168,14 @@ public abstract class FCParser
 
         /* tried 2013-04-23 with 18 ParserTees feeding a NicknameParser, a AliShowZoneParser, and 16 Alias4Parsers */
         /* tried 2013-04-23 with 17 ParserTees feeding a NicknameParser, 2 AliShowZoneParser, and 14 Alias4Parsers */
-        zpl.add( new NicknameParser(prop, false));
-        zpl.add( new AliShowZoneParser(prop, false));
-        zpl.add( new Alias4Parser(prop, false));
+        zpl.add( new NicknameParser(prop));
+        zpl.add( new AliShowZoneParser(prop));
+        zpl.add( new Alias4Parser(prop));
 
-        zpl.add( new BNAZoneParser(prop, false));
-        zpl.add( new DeviceAliasParser(prop, false));
-        zpl.add( new ShowZoneParser(prop, false));
-        zpl.add( new VW4InvalidAddedParser(prop, false));
+        zpl.add( new BNAZoneParser(prop));
+        zpl.add( new DeviceAliasParser(prop));
+        zpl.add( new ShowZoneParser(prop));
+        zpl.add( new VW4InvalidAddedParser(prop));
 
         try
         {
@@ -294,7 +294,7 @@ public abstract class FCParser
     public static void main(String args[])
     {
         Vector<LongOpt> options = new Vector(3,2);
-        java.util.Properties prop = new java.util.Properties();
+        java.util.Properties prop = System.getProperties();
 
         /* Always always ALWAYS provide a quick reference and a version output */
         options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
@@ -338,9 +338,8 @@ public abstract class FCParser
             }
 
             case '!':   // check that external driver munginess loads
-                java.util.Properties p = System.getProperties();
 		for (String s: "jdbc.drivers,java.protocol.handler.pkgs".split(","))
-                    System.out.println("property " + s + " is " + p.getProperty(s));
+                    System.out.println("property " + s + " is " + prop.getProperty(s));
 
                 try
                 {

@@ -21,9 +21,9 @@ public class Alias4Parser extends ZoneParserI
         br = new BufferedReader(is);
     }
 
-    public Alias4Parser(java.util.Properties in, boolean debugMe)
+    public Alias4Parser(java.util.Properties in)
     {
-        super(in, debugMe);
+        super(in);
     }
 
 

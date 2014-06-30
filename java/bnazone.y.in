@@ -191,7 +191,7 @@ public void run()
 public void setDebug(boolean debug) { yydebug=debug; }
 public BNAZoneParser(InputStream in, boolean debugMe) { super(in, debugMe); }
 public BNAZoneParser(InputStream in) { super(in); }
-public BNAZoneParser(java.util.Properties in, boolean debugMe) { super(in, debugMe); }
+public BNAZoneParser(java.util.Properties in) { super(in); }
 
 
 public static void main(String args[])

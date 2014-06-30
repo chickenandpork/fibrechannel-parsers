@@ -142,11 +142,10 @@ public abstract class ZoneParserI extends ZoneParser
      * Create a parser, setting the debug to true or false
      *
      * @param properties additional name-value pair collection
-     * @param debugMe true for debugging, false for no debug.
      */
-    public ZoneParserI(java.util.Properties properties, boolean debugMe)
+    public ZoneParserI(java.util.Properties properties)
     {
-        this((Reader) null,debugMe);
+        super(properties);
     }
 
 

@@ -17,12 +17,11 @@ public abstract class ZoneParser extends Thread
     public abstract void setReader(java.io.Reader is);
     public abstract void setDebug(boolean debug);
 
-
+    
     java.util.Properties _prop = null;
     boolean checkProperty(String n)
     {
         if (null == _prop) _prop = System.getProperties();
-        //return ( (null != _prop.getProperty(n)) && (false != Boolean.parseBoolean(_prop.getProperty(n))) );
         return (
                    Boolean.parseBoolean(_prop.getProperty(n))
                    || (getClass().getName().equalsIgnoreCase(_prop.getProperty(n)))
@@ -93,11 +92,12 @@ public abstract class ZoneParser extends Thread
      * Create a parser, setting the debug to true or false
      *
      * @param properties additional name-value pair collection
-     * @param debugMe true for debugging, false for no debug.
      */
-    public ZoneParser(java.util.Properties properties, boolean debugMe)
+    public ZoneParser(java.util.Properties properties)
     {
-        this((Reader) null,debugMe);
+        //this((Reader) null);
+        _prop = properties;
+        setDebug(checkProperty("debug.yystate"));
     }
 
 
@@ -137,6 +137,8 @@ public abstract class ZoneParser extends Thread
                 for (ZPAliasEntry e: pq)
                     for (String s: e.wwns)
                         System.out.println("Alias: "+s+", "+e.name());
+	    else
+System.out.println(_prop.getProperty("debug.dumpAliases"));
         }
     }
 }
