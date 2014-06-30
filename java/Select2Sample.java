@@ -15,7 +15,7 @@ public class Select2Sample
 
 	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 	try {
-	BNAZoneParser b = new BNAZoneParser(new java.util.Properties(), false);
+	BNAZoneParser b = new BNAZoneParser(System.getProperties());
 	OutputStream outpipe = ParserTee.pipeOutputStreamTo (b);
 	PrintStream outpr = new PrintStream (outpipe, true);
 
