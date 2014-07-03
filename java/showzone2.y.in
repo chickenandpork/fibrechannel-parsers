@@ -10,6 +10,13 @@ import java.io.*;
  *
  * The ShowZone2Parser parses the output of a Cisco SAN switch with the "show zone" command in a more aggressive manner
  *
+ * This parser was added based on Grzeg Sliwka running into some of the most interesting zones I have seen.  I don't think it will handle every situation, as follows:
+ * <ol>
+ * <li>If a zone has two "fcalias name XXX" values, it may be applied to both sets of members</li>
+ * <li>If a zone has a device-alias, the name will not get resolved; this assumes that if the name is known, ever, it'll be somewhere in the file (which will cause a name/wwn mapping to be added)</li>
+ * <li>If a zone has a device-alias, the dereferenced name's WWN will not get added to the zone (yet)</li>
+ * </ol>
+ *
  * As always, this parser is more successful when the content is treated like
  * binary: don't edit it.  In particular, the use of a putty log to capture output
  * while querying the switch leads to parser exceptions because the interactive
