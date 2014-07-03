@@ -160,6 +160,13 @@ This collector/parser chain is more successful than text-\/based parsers simply 
 Testing of this data was done with an exported config database from jessigg called \char`\"{}dwh\+\_\+inventory.\+sql\char`\"{} loaded using\+: /usr/local/mysql/bin/mysqladmin create dwh\+\_\+inventory /usr/local/mysql/bin/mysql -\/u root mysql \char`\"{}grant connect on dwh\+\_\+inventory.$\ast$ to dwh identified by 'password'\char`\"{} /usr/local/mysql/bin/mysqladmin reload grant /usr/local/mysql/bin/mysql -\/u root dwh\+\_\+inventory $<$ $\sim$/dwh\+\_\+inventory.sql \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZone2Parser}
 The \doxyref{Show\+Zone2\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show zone\char`\"{} command in a more aggressive manner
 
+This parser was added based on Grzeg Sliwka running into some of the most interesting zones I have seen. I don't think it will handle every situation, as follows\+: 
+\begin{DoxyEnumerate}
+\item If a zone has two \char`\"{}fcalias name X\+X\+X\char`\"{} values, it may be applied to both sets of members 
+\item If a zone has a device-\/alias, the name will not get resolved; this assumes that if the name is known, ever, it'll be somewhere in the file (which will cause a name/wwn mapping to be added) 
+\item If a zone has a device-\/alias, the dereferenced name's W\+W\+N will not get added to the zone (yet) 
+\end{DoxyEnumerate}
+
 As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
 
 When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:

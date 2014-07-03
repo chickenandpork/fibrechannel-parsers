@@ -64,6 +64,14 @@ $(document).ready(function(){initNavTree('ShowZone2Parser.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>The <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser.html">ShowZone2Parser</a> parses the output of a Cisco SAN switch with the "show zone" command in a more aggressive manner</p>
+<p>This parser was added based on Grzeg Sliwka running into some of the most interesting zones I have seen. I don't think it will handle every situation, as follows: </p><ol>
+<li>
+If a zone has two "fcalias name XXX" values, it may be applied to both sets of members </li>
+<li>
+If a zone has a device-alias, the name will not get resolved; this assumes that if the name is known, ever, it'll be somewhere in the file (which will cause a name/wwn mapping to be added) </li>
+<li>
+If a zone has a device-alias, the dereferenced name's WWN will not get added to the zone (yet) </li>
+</ol>
 <p>As always, this parser is more successful when the content is treated like binary: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.2.3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.</p>
 <p>When collecting aliases using an ssh command, it's better to execute that command noninteractively:</p>
 <p>In UNIX, Linux, Ubuntu, OSX, or the 6000 other licensees of the USL codebase: </p><pre class="fragment">ssh username@switch44.example.com "show zone" &gt; switch44.shzone
@@ -96,7 +104,7 @@ zone name SANASVR002_FabA vsan 100
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="formats.html">Compatible File Formats</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 00:00:39 for fcparsers by
+    <li class="footer">Generated on Thu Jul 3 2014 00:04:01 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
