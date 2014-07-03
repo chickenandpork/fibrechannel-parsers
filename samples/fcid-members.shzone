@@ -10,7 +10,7 @@ zone name SANASVR001_FabA vsan 100
 
 zone name SANASVR002_FabA vsan 100
     fcid 0x123456
-    pwwn 50:06:0e:80:12:34:56:7a [SANASVR003_FabA]
+    pwwn 50:06:0e:80:12:34:56:7a [HDS0123457_CL7E]
     pwwn 50:06:0e:80:12:34:56:7b [HDS0123457_CL7F]
     device-alias UnresolvedHost
 
@@ -18,7 +18,7 @@ zone name SANASVR003_FabA vsan 100
   fcalias name NASHead_123468 vsan 100
     pwwn 10:00:00:00:c9:12:34:68
 
-  fcalias name vclprFpdc01_hba2_A1 vsan 100
+  fcalias name HDS0123457_CL7G vsan 100
     pwwn 50:06:0e:80:12:34:56:7c
 
   fcalias name HDS0123457_CL7F vsan 100
@@ -28,7 +28,7 @@ zone name SANASVR004_FabA vsan 100
   fcalias name NASHead_123469 vsan 100
     pwwn 10:00:00:00:c9:12:34:69
 
-  fcalias name vclprFpdc01_hba2_A1 vsan 100
+  fcalias name HDS0123457_CL7J vsan 100
     pwwn 50:06:0e:80:12:34:56:7e
 
   fcalias name HDS0123457_CL7F vsan 100
