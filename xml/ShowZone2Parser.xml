@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="ShowZone2Parser" kind="page">
+    <compoundname>ShowZone2Parser</compoundname>
+    <title>Cisco &quot;show zone&quot;</title>
+    <detaileddescription>
+<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser" kindref="compound">ShowZone2Parser</ref> parses the output of a Cisco SAN switch with the &quot;show zone&quot; command in a more aggressive manner</para><para>As always, this parser is more successful when the content is treated like binary: don&apos;t edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.2.3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.</para><para>When collecting aliases using an ssh command, it&apos;s better to execute that command noninteractively:</para><para>In UNIX, Linux, Ubuntu, OSX, or the 6000 other licensees of the USL codebase: <verbatim>ssh username@switch44.example.com &quot;show zone&quot; &gt; switch44.shzone
+</verbatim></para><para>In windows, using the <ulink url="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">putty</ulink> tools: <verbatim>plink.exe -l username -pw p4ssw0rd switch44.example.com &quot;show zone&quot; &gt; switch44.shzone
+</verbatim></para><para>This leads to a better chance to parse 100% of the output with more accuracy, but I guess following this recommendation is up to the user, and to the engineer suggesting how he or she should collect the text for parsing.</para><para><verbatim>zone name SANASVR001_FabA vsan 100
+  fcalias name Oracle_123466 vsan 100
+    pwwn 10:00:00:00:c9:12:34:66
+
+  fcalias name HDS0123457_CL7F vsan 100
+    pwwn 50:06:0e:80:12:34:56:78
+
+  fcalias name HDS0123457_CL7F vsan 100
+    pwwn 50:06:0e:80:12:34:56:79
+
+zone name SANASVR003_FabA vsan 100
+    fcid 0x123456
+    pwwn 50:06:0e:80:12:34:56:79
+    pwwn 10:00:00:00:c9:12:34:67 [Oracle_123467]
+    device-alias SomeUnresolvedHost
+
+zone name SANASVR002_FabA vsan 100
+  fcalias name Oracle_123467 vsan 100
+    pwwn 10:00:00:00:c9:12:34:67 </verbatim></para><para>The resulting content from this example would be the following WWPN/alias pairs: <verbatim>10000000c9123466,&quot;Oracle_123466&quot;
+10000000c9123467,&quot;Oracle_123467&quot;
+50060e8012345678,&quot;HDS0123457_CL7F&quot;
+50060e8012345679,&quot;HDS0123457_CL7F&quot; </verbatim> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

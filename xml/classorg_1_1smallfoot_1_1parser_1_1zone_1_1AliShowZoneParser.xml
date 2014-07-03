@@ -1162,18 +1162,14 @@ null,null,null,null,&quot;ZONE&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1
         <location file="/Users/allan.clark/src/fcparsers/java/AliShowZoneParser.java" line="575" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/AliShowZoneParser.java" bodystart="575" bodyend="575"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="AliShowZoneParser_8java" startline="579" endline="585">AliShowZoneParser.main</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a9abd924b5ede07ba991db7da6fff9911" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a17b50844ec3130260c2258a3a2d78e08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>AliShowZoneParser</definition>
-        <argsstring>(java.util.Properties in, boolean debugMe)</argsstring>
+        <argsstring>(java.util.Properties in)</argsstring>
         <name>AliShowZoneParser</name>
         <param>
           <type>java.util.Properties</type>
           <declname>in</declname>
-        </param>
-        <param>
-          <type>boolean</type>
-          <declname>debugMe</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1203,7 +1199,7 @@ null,null,null,null,&quot;ZONE&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/AliShowZoneParser.java" line="579" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/AliShowZoneParser.java" bodystart="579" bodyend="585"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a5e03a31a37a94bc78cf316ea5a3ee575" compoundref="AliShowZoneParser_8java" startline="575" endline="575">AliShowZoneParser.AliShowZoneParser</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="269" endline="290">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="281" endline="302">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1211,66 +1207,66 @@ null,null,null,null,&quot;ZONE&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="206">
+      <node id="224">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="207" relation="public-inheritance">
+        <childnode refid="225" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="208">
+      <node id="226">
         <label>Thread</label>
       </node>
-      <node id="207">
+      <node id="225">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="208" relation="public-inheritance">
+        <childnode refid="226" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="205">
+      <node id="223">
         <label>AliShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser"/>
-        <childnode refid="206" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="210">
+      <node id="228">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="211" relation="public-inheritance">
+        <childnode refid="229" relation="public-inheritance">
         </childnode>
-        <childnode refid="213" relation="usage">
+        <childnode refid="231" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="214" relation="usage">
+        <childnode refid="232" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="214">
+      <node id="232">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="213">
+      <node id="231">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="212">
+      <node id="230">
         <label>Thread</label>
       </node>
-      <node id="211">
+      <node id="229">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="212" relation="public-inheritance">
+        <childnode refid="230" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="215">
+      <node id="233">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
-      <node id="209">
+      <node id="227">
         <label>AliShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser"/>
-        <childnode refid="210" relation="public-inheritance">
+        <childnode refid="228" relation="public-inheritance">
         </childnode>
-        <childnode refid="215" relation="usage">
+        <childnode refid="233" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
@@ -1294,7 +1290,7 @@ null,null,null,null,&quot;ZONE&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a071816722bbf8f31f56a3b27f5c84fa6" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>aliases</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>aliasSize</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a5e03a31a37a94bc78cf316ea5a3ee575" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>AliShowZoneParser</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a9abd924b5ede07ba991db7da6fff9911" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>AliShowZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a17b50844ec3130260c2258a3a2d78e08" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>AliShowZoneParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1afa1bd945463851953be939c8793faf70" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ALPHANUM</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ad9eac83891611fa5e2e983328603eb8a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>appendZoneAlphanum</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a72139940d21d763668f7f4cc6588b9f4" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>CFG</name></member>
@@ -1378,13 +1374,13 @@ null,null,null,null,&quot;ZONE&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a18c7e8b0a1166e23d1fc9605e4740ccc" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1abe50de6630cefa98b757505c1b5fda0b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1aab55b15bec7ad0340c51c26dca3b8dc6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParser</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a11196447ea6972d5c557a52a9da5150f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adaa143b6f1a7f0df5fe512786c8d58a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a78ce415d9f6ed283bce24ee9f700cedb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a678cd3827f5f34241ba56702cd5663a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae2743a1693169cd3b5ebc8fcafa07c74" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1acc9e1015da0abae3030920bc213a20c6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParserI</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae37df97616010e6203984ccf9c42e669" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab16d7753f7d4aa5e5674582e3daae58b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>zones</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>zoneSize</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1acd46a0f826a276c736966f6193f717cc" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::AliShowZoneParser</scope><name>zpquiet</name></member>

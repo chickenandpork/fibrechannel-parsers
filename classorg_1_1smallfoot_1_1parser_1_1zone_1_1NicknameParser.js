@@ -1,6 +1,6 @@
 var classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser =
 [
-    [ "NicknameParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html#a10dcfd6538205f982dcb9ffd412ff588", null ],
+    [ "NicknameParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html#ac7c2594b796ab3c7107f9a55b4fc8488", null ],
     [ "NicknameParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html#a4de85135c75bd7120150390def731fbd", null ],
     [ "aliasArray", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html#a5c646608669073b5c31bb44626baa48f", null ],
     [ "aliasElements", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html#a1631138fd08af051dc26686c00768ab3", null ],

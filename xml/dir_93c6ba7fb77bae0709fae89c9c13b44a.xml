@@ -17,6 +17,7 @@
     <innerfile refid="OSMURLConnection_8java">OSMURLConnection.java</innerfile>
     <innerfile refid="ParserTee_8java">ParserTee.java</innerfile>
     <innerfile refid="Select2Sample_8java">Select2Sample.java</innerfile>
+    <innerfile refid="ShowZone2Parser_8java">ShowZone2Parser.java</innerfile>
     <innerfile refid="ShowZoneParser_8java">ShowZoneParser.java</innerfile>
     <innerfile refid="version_8java">version.java</innerfile>
     <innerfile refid="VW4InvalidAddedParser_8java">VW4InvalidAddedParser.java</innerfile>

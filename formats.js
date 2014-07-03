@@ -8,6 +8,7 @@ var formats =
     [ "NetApp OCI Database", "DWHURLConnection.html", null ],
     [ "NetApp OCI Database", "MSDWHURLConnection.html", null ],
     [ "NetApp OCI Database", "OSMURLConnection.html", null ],
+    [ "Cisco \"show zone\"", "ShowZone2Parser.html", null ],
     [ "Cisco \"show zone\"", "ShowZoneParser.html", null ],
     [ "VirtualWisdom4 Validation Errors", "VW4InvalidAdded.html", null ]
 ];

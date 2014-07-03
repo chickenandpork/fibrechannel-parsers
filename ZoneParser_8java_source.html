@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-135</span>
+   &#160;<span id="projectnumber">0.3-140</span>
    </div>
   </td>
  </tr>
@@ -87,87 +87,87 @@ $(document).ready(function(){initNavTree('ZoneParser_8java_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a19567e6611303b1035a1a101b00310e2">setReader</a>(java.io.Reader is);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keywordtype">void</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ab23378f817a0790a310e852b89a5eb1d">setDebug</a>(<span class="keywordtype">boolean</span> debug);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    java.util.Properties _prop = null;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">boolean</span> checkProperty(String n)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">if</span> (null == _prop) _prop = System.getProperties();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">//return ( (null != _prop.getProperty(n)) &amp;&amp; (false != Boolean.parseBoolean(_prop.getProperty(n))) );</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">return</span> (</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                   Boolean.parseBoolean(_prop.getProperty(n))</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                   || (getClass().getName().equalsIgnoreCase(_prop.getProperty(n)))</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                   || (getClass().getName().replaceAll(<span class="stringliteral">&quot;^.*\\.&quot;</span>,<span class="stringliteral">&quot;&quot;</span>).equalsIgnoreCase(_prop.getProperty(n)))</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;               );</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> (</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                   Boolean.parseBoolean(_prop.getProperty(n))</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                   || (getClass().getName().equalsIgnoreCase(_prop.getProperty(n)))</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                   || (getClass().getName().replaceAll(<span class="stringliteral">&quot;^.*\\.&quot;</span>,<span class="stringliteral">&quot;&quot;</span>).equalsIgnoreCase(_prop.getProperty(n)))</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;               );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * Create a parser with a new stream, defaulting to no debug, and verbose ZP debug</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     * @param in InputStream that is the source of bytes to consume</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a89f1cfcb18c2aaa76794a8ce060637fb">   40</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a89f1cfcb18c2aaa76794a8ce060637fb">ZoneParser</a>(java.io.InputStream in)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">this</span>(in, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     * Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adc74e849472a0632eb0910b719acfa77">   49</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adc74e849472a0632eb0910b719acfa77">ZoneParser</a>()</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">this</span>((Reader) null, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">     * Create a parser with a new stream</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     * @param in InputStream that is the source of bytes to consume</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     * @param debugMe true for debugging, false for no debug.</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a18c7e8b0a1166e23d1fc9605e4740ccc">   61</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a18c7e8b0a1166e23d1fc9605e4740ccc">ZoneParser</a>(java.io.InputStream in, <span class="keywordtype">boolean</span> debugMe)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">this</span>(<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(in)), debugMe);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     * Create a parser with a new reader, defaulting to no debug, and verbose ZP debug</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     * @param in Reader that is the source of bytes to consume</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#abe50de6630cefa98b757505c1b5fda0b">   72</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#abe50de6630cefa98b757505c1b5fda0b">ZoneParser</a>(Reader in)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">this</span>(in, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">     * Create a parser, setting the debug to true or false</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">     * @param in Reader that is the source of bytes to consume</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     * @param debugMe true for debugging, false for no debug.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aab55b15bec7ad0340c51c26dca3b8dc6">   84</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aab55b15bec7ad0340c51c26dca3b8dc6">ZoneParser</a>(Reader in, <span class="keywordtype">boolean</span> debugMe)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span> (null != in) <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a19567e6611303b1035a1a101b00310e2">setReader</a>(in);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ab23378f817a0790a310e852b89a5eb1d">setDebug</a>(debugMe);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * Create a parser with a new stream, defaulting to no debug, and verbose ZP debug</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * @param in InputStream that is the source of bytes to consume</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a89f1cfcb18c2aaa76794a8ce060637fb">   39</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a89f1cfcb18c2aaa76794a8ce060637fb">ZoneParser</a>(java.io.InputStream in)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">this</span>(in, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     * Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adc74e849472a0632eb0910b719acfa77">   48</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adc74e849472a0632eb0910b719acfa77">ZoneParser</a>()</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">this</span>((Reader) null, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">     * Create a parser with a new stream</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">     * @param in InputStream that is the source of bytes to consume</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     * @param debugMe true for debugging, false for no debug.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a18c7e8b0a1166e23d1fc9605e4740ccc">   60</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a18c7e8b0a1166e23d1fc9605e4740ccc">ZoneParser</a>(java.io.InputStream in, <span class="keywordtype">boolean</span> debugMe)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">this</span>(<span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(in)), debugMe);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">     * Create a parser with a new reader, defaulting to no debug, and verbose ZP debug</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     * @param in Reader that is the source of bytes to consume</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#abe50de6630cefa98b757505c1b5fda0b">   71</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#abe50de6630cefa98b757505c1b5fda0b">ZoneParser</a>(Reader in)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">this</span>(in, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">     * Create a parser, setting the debug to true or false</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">     * @param in Reader that is the source of bytes to consume</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">     * @param debugMe true for debugging, false for no debug.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aab55b15bec7ad0340c51c26dca3b8dc6">   83</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aab55b15bec7ad0340c51c26dca3b8dc6">ZoneParser</a>(Reader in, <span class="keywordtype">boolean</span> debugMe)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span> (null != in) <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a19567e6611303b1035a1a101b00310e2">setReader</a>(in);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ab23378f817a0790a310e852b89a5eb1d">setDebug</a>(debugMe);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">     * Create a parser, setting the debug to true or false</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">     * @param properties additional name-value pair collection</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">     * @param debugMe true for debugging, false for no debug.</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a11196447ea6972d5c557a52a9da5150f">   98</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a11196447ea6972d5c557a52a9da5150f">ZoneParser</a>(java.util.Properties properties, <span class="keywordtype">boolean</span> debugMe)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keyword">this</span>((Reader) null,debugMe);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">     * Create a parser, setting the debug to true or false</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">     *</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">     * @param properties additional name-value pair collection</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adaa143b6f1a7f0df5fe512786c8d58a1">   96</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adaa143b6f1a7f0df5fe512786c8d58a1">ZoneParser</a>(java.util.Properties properties)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">//this((Reader) null);</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        _prop = properties;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ab23378f817a0790a310e852b89a5eb1d">setDebug</a>(checkProperty(<span class="stringliteral">&quot;debug.yystate&quot;</span>));</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
@@ -217,15 +217,15 @@ $(document).ready(function(){initNavTree('ZoneParser_8java_source.html','');});
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_a19567e6611303b1035a1a101b00310e2"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a19567e6611303b1035a1a101b00310e2">org.smallfoot.parser.zone.ZoneParser.setReader</a></div><div class="ttdeci">abstract void setReader(java.io.Reader is)</div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry.html">org.smallfoot.parser.zone.ZPAliasEntry</a></div><div class="ttdef"><b>Definition:</b> <a href="ZPAliasEntry_8java_source.html#l00003">ZPAliasEntry.java:3</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html">org.smallfoot.parser.zone.ZoneParser</a></div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00005">ZoneParser.java:5</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_a11196447ea6972d5c557a52a9da5150f"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a11196447ea6972d5c557a52a9da5150f">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(java.util.Properties properties, boolean debugMe)</div><div class="ttdoc">Create a parser, setting the debug to true or false. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00098">ZoneParser.java:98</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_adc74e849472a0632eb0910b719acfa77"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adc74e849472a0632eb0910b719acfa77">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser()</div><div class="ttdoc">Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00049">ZoneParser.java:49</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_adc74e849472a0632eb0910b719acfa77"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adc74e849472a0632eb0910b719acfa77">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser()</div><div class="ttdoc">Create a parser with a no stream or reader, fairly uncivilized, defaulting to no debug. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00048">ZoneParser.java:48</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_a83a569eb17c8c2ba71b1b866f05e4df3"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a83a569eb17c8c2ba71b1b866f05e4df3">org.smallfoot.parser.zone.ZoneParser.aliasElements</a></div><div class="ttdeci">abstract java.util.Enumeration&lt; ZPAliasEntry &gt; aliasElements()</div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_aa17ce2b8c32af2a9550b43506c727efc"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aa17ce2b8c32af2a9550b43506c727efc">org.smallfoot.parser.zone.ZoneParser.aliasArray</a></div><div class="ttdeci">abstract ZPAliasEntry[] aliasArray()</div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_aab55b15bec7ad0340c51c26dca3b8dc6"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aab55b15bec7ad0340c51c26dca3b8dc6">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(Reader in, boolean debugMe)</div><div class="ttdoc">Create a parser, setting the debug to true or false. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00084">ZoneParser.java:84</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_a89f1cfcb18c2aaa76794a8ce060637fb"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a89f1cfcb18c2aaa76794a8ce060637fb">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(java.io.InputStream in)</div><div class="ttdoc">Create a parser with a new stream, defaulting to no debug, and verbose ZP debug. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00040">ZoneParser.java:40</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_aab55b15bec7ad0340c51c26dca3b8dc6"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aab55b15bec7ad0340c51c26dca3b8dc6">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(Reader in, boolean debugMe)</div><div class="ttdoc">Create a parser, setting the debug to true or false. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00083">ZoneParser.java:83</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_adaa143b6f1a7f0df5fe512786c8d58a1"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#adaa143b6f1a7f0df5fe512786c8d58a1">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(java.util.Properties properties)</div><div class="ttdoc">Create a parser, setting the debug to true or false. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00096">ZoneParser.java:96</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_a89f1cfcb18c2aaa76794a8ce060637fb"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a89f1cfcb18c2aaa76794a8ce060637fb">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(java.io.InputStream in)</div><div class="ttdoc">Create a parser with a new stream, defaulting to no debug, and verbose ZP debug. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00039">ZoneParser.java:39</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_afdaf0b0fa88db2d36aca3bfed387f230"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#afdaf0b0fa88db2d36aca3bfed387f230">org.smallfoot.parser.zone.ZoneParser.zoneElements</a></div><div class="ttdeci">abstract java.util.Enumeration&lt; ZPZoneEntry &gt; zoneElements()</div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_abe50de6630cefa98b757505c1b5fda0b"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#abe50de6630cefa98b757505c1b5fda0b">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(Reader in)</div><div class="ttdoc">Create a parser with a new reader, defaulting to no debug, and verbose ZP debug. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00072">ZoneParser.java:72</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_a18c7e8b0a1166e23d1fc9605e4740ccc"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a18c7e8b0a1166e23d1fc9605e4740ccc">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(java.io.InputStream in, boolean debugMe)</div><div class="ttdoc">Create a parser with a new stream. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00061">ZoneParser.java:61</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_abe50de6630cefa98b757505c1b5fda0b"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#abe50de6630cefa98b757505c1b5fda0b">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(Reader in)</div><div class="ttdoc">Create a parser with a new reader, defaulting to no debug, and verbose ZP debug. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00071">ZoneParser.java:71</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_a18c7e8b0a1166e23d1fc9605e4740ccc"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a18c7e8b0a1166e23d1fc9605e4740ccc">org.smallfoot.parser.zone.ZoneParser.ZoneParser</a></div><div class="ttdeci">ZoneParser(java.io.InputStream in, boolean debugMe)</div><div class="ttdoc">Create a parser with a new stream. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00060">ZoneParser.java:60</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_a6837faff1f96406f15225cf38c2186e9"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a6837faff1f96406f15225cf38c2186e9">org.smallfoot.parser.zone.ZoneParser.zoneSize</a></div><div class="ttdeci">abstract int zoneSize()</div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_html_ad8cf81600663ab2330a929bfefaecacd"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ad8cf81600663ab2330a929bfefaecacd">org.smallfoot.parser.zone.ZoneParser.summarize</a></div><div class="ttdeci">void summarize()</div><div class="ttdoc">Summarize the parsing results to stdout. </div><div class="ttdef"><b>Definition:</b> <a href="ZoneParser_8java_source.html#l00121">ZoneParser.java:121</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('ZoneParser_8java_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><a class="el" href="ZoneParser_8java.html">ZoneParser.java</a></li>
-    <li class="footer">Generated on Mon Jun 30 2014 14:46:13 for fcparsers by
+    <li class="footer">Generated on Thu Jul 3 2014 00:00:39 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

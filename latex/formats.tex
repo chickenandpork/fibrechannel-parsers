@@ -14,6 +14,8 @@
 
 \doxyref{Net\+App O\+C\+I Database}{p.}{OSMURLConnection}
 
+\doxyref{Cisco \char`\"{}show zone\char`\"{}}{p.}{ShowZone2Parser}
+
 \doxyref{Cisco \char`\"{}show zone\char`\"{}}{p.}{ShowZoneParser}
 
 \doxyref{Virtual\+Wisdom4 Validation Errors}{p.}{VW4InvalidAdded} \section{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}\label{AliShowZoneParser}
@@ -155,7 +157,49 @@ The \doxyref{O\+S\+M\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information.
 
-Testing of this data was done with an exported config database from jessigg called \char`\"{}dwh\+\_\+inventory.\+sql\char`\"{} loaded using\+: /usr/local/mysql/bin/mysqladmin create dwh\+\_\+inventory /usr/local/mysql/bin/mysql -\/u root mysql \char`\"{}grant connect on dwh\+\_\+inventory.$\ast$ to dwh identified by 'password'\char`\"{} /usr/local/mysql/bin/mysqladmin reload grant /usr/local/mysql/bin/mysql -\/u root dwh\+\_\+inventory $<$ $\sim$/dwh\+\_\+inventory.sql \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZoneParser}
+Testing of this data was done with an exported config database from jessigg called \char`\"{}dwh\+\_\+inventory.\+sql\char`\"{} loaded using\+: /usr/local/mysql/bin/mysqladmin create dwh\+\_\+inventory /usr/local/mysql/bin/mysql -\/u root mysql \char`\"{}grant connect on dwh\+\_\+inventory.$\ast$ to dwh identified by 'password'\char`\"{} /usr/local/mysql/bin/mysqladmin reload grant /usr/local/mysql/bin/mysql -\/u root dwh\+\_\+inventory $<$ $\sim$/dwh\+\_\+inventory.sql \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZone2Parser}
+The \doxyref{Show\+Zone2\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show zone\char`\"{} command in a more aggressive manner
+
+As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
+
+When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:
+
+In U\+N\+I\+X, Linux, Ubuntu, O\+S\+X, or the 6000 other licensees of the U\+S\+L codebase\+: \begin{DoxyVerb}ssh username@switch44.example.com "show zone" > switch44.shzone
+\end{DoxyVerb}
+
+
+In windows, using the {\tt putty} tools\+: \begin{DoxyVerb}plink.exe -l username -pw p4ssw0rd switch44.example.com "show zone" > switch44.shzone
+\end{DoxyVerb}
+
+
+This leads to a better chance to parse 100\% of the output with more accuracy, but I guess following this recommendation is up to the user, and to the engineer suggesting how he or she should collect the text for parsing.
+
+\begin{DoxyVerb}zone name SANASVR001_FabA vsan 100
+  fcalias name Oracle_123466 vsan 100
+    pwwn 10:00:00:00:c9:12:34:66
+
+  fcalias name HDS0123457_CL7F vsan 100
+    pwwn 50:06:0e:80:12:34:56:78
+
+  fcalias name HDS0123457_CL7F vsan 100
+    pwwn 50:06:0e:80:12:34:56:79
+
+zone name SANASVR003_FabA vsan 100
+    fcid 0x123456
+    pwwn 50:06:0e:80:12:34:56:79
+    pwwn 10:00:00:00:c9:12:34:67 [Oracle_123467]
+    device-alias SomeUnresolvedHost
+
+zone name SANASVR002_FabA vsan 100
+  fcalias name Oracle_123467 vsan 100
+    pwwn 10:00:00:00:c9:12:34:67 \end{DoxyVerb}
+
+
+The resulting content from this example would be the following W\+W\+P\+N/alias pairs\+: \begin{DoxyVerb}10000000c9123466,"Oracle_123466"
+10000000c9123467,"Oracle_123467"
+50060e8012345678,"HDS0123457_CL7F"
+50060e8012345679,"HDS0123457_CL7F" \end{DoxyVerb}
+ \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZoneParser}
 The \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show zone\char`\"{} command
 
 As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.

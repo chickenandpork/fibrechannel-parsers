@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="18" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="18" bodyend="21"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="18" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="18" bodyend="22"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="23" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="23" bodyend="26"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="24" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="24" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a615bd9484115d596c7ea43e7a74f0b17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.util.Iterator&lt; String &gt;</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="27" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="27" bodyend="30"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="28" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="28" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1ad91f327feecd7baf6b0a99938adb5201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String[]</type>
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="31" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="31" bodyend="34"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="32" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="32" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a202e7da3074eb820067bc4e288aa0744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="36" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="36" bodyend="39"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="37" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="37" bodyend="40"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -153,28 +153,28 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="419">
+      <node id="455">
         <label>ZPAliasEntry</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry"/>
-        <childnode refid="420" relation="public-inheritance">
+        <childnode refid="456" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="420">
+      <node id="456">
         <label>Comparable&lt; ZPAliasEntry &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="421">
+      <node id="457">
         <label>ZPAliasEntry</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry"/>
-        <childnode refid="422" relation="public-inheritance">
+        <childnode refid="458" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="422">
+      <node id="458">
         <label>Comparable&lt; ZPAliasEntry &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="4" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="3" bodyend="40"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="4" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="3" bodyend="41"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a2f5f3c0590fde4600fee4ae884b30454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>addAlias</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a202e7da3074eb820067bc4e288aa0744" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>compareTo</name></member>

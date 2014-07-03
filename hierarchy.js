@@ -20,12 +20,13 @@ var hierarchy =
     ] ],
     [ "Thread", null, [
       [ "ZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html", [
-        [ "NicknameParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html", null ],
         [ "ZoneParserI", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html", [
           [ "Alias4Parser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html", null ],
           [ "AliShowZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html", null ],
           [ "BNAZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html", null ],
           [ "DeviceAliasParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser.html", null ],
+          [ "NicknameParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html", null ],
+          [ "ShowZone2Parser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser.html", null ],
           [ "ShowZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html", null ],
           [ "VW4InvalidAddedParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html", null ]
         ] ]

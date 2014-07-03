@@ -1158,18 +1158,14 @@ null,null,null,null,null,null,null,&quot;LOCATION&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="465" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="465" bodyend="465"/>
       </memberdef>
-      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a266237757cc1ac1aa85f2ca408c80c98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a137efd4997364aa3550fbbd28fe8354a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>VW4InvalidAddedParser</definition>
-        <argsstring>(java.util.Properties in, boolean debugMe)</argsstring>
+        <argsstring>(java.util.Properties in)</argsstring>
         <name>VW4InvalidAddedParser</name>
         <param>
           <type>java.util.Properties</type>
           <declname>in</declname>
-        </param>
-        <param>
-          <type>boolean</type>
-          <declname>debugMe</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1198,7 +1194,7 @@ null,null,null,null,null,null,null,&quot;LOCATION&quot;,&quot;<ref refid="classo
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="469" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="469" bodyend="475"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="269" endline="290">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="281" endline="302">ZoneParserI.testSummary</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a883f64011f4bd6ffb448ae0eaac1bcda" compoundref="VW4InvalidAddedParser_8java" startline="464" endline="464">VW4InvalidAddedParser.VW4InvalidAddedParser</references>
       </memberdef>
       </sectiondef>
@@ -1207,68 +1203,68 @@ null,null,null,null,null,null,null,&quot;LOCATION&quot;,&quot;<ref refid="classo
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="381">
+      <node id="414">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="382" relation="public-inheritance">
+        <childnode refid="415" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="380">
+      <node id="413">
         <label>VW4InvalidAddedParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser"/>
-        <childnode refid="381" relation="public-inheritance">
+        <childnode refid="414" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="383">
+      <node id="416">
         <label>Thread</label>
       </node>
-      <node id="382">
+      <node id="415">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="416" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="385">
+      <node id="418">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="386" relation="public-inheritance">
+        <childnode refid="419" relation="public-inheritance">
         </childnode>
-        <childnode refid="388" relation="usage">
+        <childnode refid="421" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="389" relation="usage">
+        <childnode refid="422" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="389">
+      <node id="422">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="384">
+      <node id="417">
         <label>VW4InvalidAddedParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser"/>
-        <childnode refid="385" relation="public-inheritance">
+        <childnode refid="418" relation="public-inheritance">
         </childnode>
-        <childnode refid="390" relation="usage">
+        <childnode refid="423" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="388">
+      <node id="421">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="387">
+      <node id="420">
         <label>Thread</label>
       </node>
-      <node id="386">
+      <node id="419">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="387" relation="public-inheritance">
+        <childnode refid="420" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="390">
+      <node id="423">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
@@ -1334,7 +1330,7 @@ null,null,null,null,null,null,null,&quot;LOCATION&quot;,&quot;<ref refid="classo
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>verboseStringtokenizer</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a883f64011f4bd6ffb448ae0eaac1bcda" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>VW4InvalidAddedParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aceee193982e5d541a3a302bdf288cb0a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>VW4InvalidAddedParser</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a266237757cc1ac1aa85f2ca408c80c98" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>VW4InvalidAddedParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a137efd4997364aa3550fbbd28fe8354a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>VW4InvalidAddedParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab9a3de9a217cad4ad00a26e6324f275e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>WWPN</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a9e2c7c7373b818c86b2df7106a92327c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>yychar</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a734735ae171a8a3bf7e651343fa35eb2" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>yycheck</name></member>
@@ -1375,13 +1371,13 @@ null,null,null,null,null,null,null,&quot;LOCATION&quot;,&quot;<ref refid="classo
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a18c7e8b0a1166e23d1fc9605e4740ccc" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1abe50de6630cefa98b757505c1b5fda0b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1aab55b15bec7ad0340c51c26dca3b8dc6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParser</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a11196447ea6972d5c557a52a9da5150f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adaa143b6f1a7f0df5fe512786c8d58a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParser</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a78ce415d9f6ed283bce24ee9f700cedb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a678cd3827f5f34241ba56702cd5663a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae2743a1693169cd3b5ebc8fcafa07c74" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1acc9e1015da0abae3030920bc213a20c6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParserI</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae37df97616010e6203984ccf9c42e669" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab16d7753f7d4aa5e5674582e3daae58b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ZoneParserI</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>zones</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>zoneSize</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1acd46a0f826a276c736966f6193f717cc" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>zpquiet</name></member>
