@@ -416,6 +416,33 @@ AT_CLEANUP()
 
 
 
+AT_SETUP(Cisco ZoneShow2 Parser fcaliases)
+dnl      --------------------------------
+
+AT_CHECK([java -Ddebug.verboseTokenizer=ShowZone2Parser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.ShowZone2Parser < abs_top_srcdir/samples/fcid-members.shzone ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=ShowZone2Parser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.ShowZone2Parser < abs_top_srcdir/samples/fcid-members.shzone ], 0, [stdout], [stderr])
+AT_CHECK([sort stdout], 0, [Alias: 10000000c9123466, Oracle_123466
+Alias: 10000000c9123468, NASHead_123468
+Alias: 10000000c9123469, NASHead_123469
+Alias: 50060e8012345678, HDS0123457_CL7F
+Alias: 50060e8012345679, HDS0123457_CL7F
+Alias: 50060e801234567a, SANASVR003_FabA
+Alias: 50060e801234567b, HDS0123457_CL7F
+Alias: 50060e801234567c, vclprFpdc01_hba2_A1
+Alias: 50060e801234567d, HDS0123457_CL7F
+Alias: 50060e801234567e, vclprFpdc01_hba2_A1
+Alias: 50060e801234567f, HDS0123457_CL7F
+Aliases: 11 (name/WWPN pairs)
+Aliases: 6 (names with one or more WWPNs)
+Parse results for ShowZone2Parser:
+Zones: 4
+], [stderr])
+
+
+AT_CLEANUP()
+
+
+
 AT_SETUP(User-given bnazone testcase)
 dnl      ---------------------------
 

@@ -4,6 +4,7 @@ nodist_java_JAVA += BNAZoneParser.java
 nodist_java_JAVA += DeviceAliasParser.java
 nodist_java_JAVA += Select2Sample.java
 nodist_java_JAVA += ShowZoneParser.java
+nodist_java_JAVA += ShowZone2Parser.java
 nodist_java_JAVA += VW4InvalidAddedParser.java
 nodist_java_JAVA += genproto/bna/Handler.java genproto/bnapsql/Handler.java genproto/cmcne/Handler.java genproto/dcfm/Handler.java BNAPURLConnection.java
 nodist_java_JAVA += genproto/ocidwh/Handler.java genproto/osmsql/Handler.java genproto/msosmsql/Handler.java OSMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java
@@ -84,6 +85,11 @@ BUILT_SOURCES += ShowZoneParser.java
 
 ShowZoneParser.java: showzone.y
 	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=ShowZoneParser -J $<
+
+BUILT_SOURCES += ShowZone2Parser.java
+
+ShowZone2Parser.java: showzone2.y
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=ShowZone2Parser -J $<
 
 BUILT_SOURCES += DeviceAliasParser.java
 

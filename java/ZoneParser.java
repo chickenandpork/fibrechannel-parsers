@@ -137,8 +137,6 @@ public abstract class ZoneParser extends Thread
                 for (ZPAliasEntry e: pq)
                     for (String s: e.wwns)
                         System.out.println("Alias: "+s+", "+e.name());
-	    else
-System.out.println(_prop.getProperty("debug.dumpAliases"));
         }
     }
 }

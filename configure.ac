@@ -185,6 +185,7 @@ AC_CONFIG_FILES(Makefile
   convjars/Makefile 
   depjars/Makefile 
   java/Makefile java/zonefile.y java/bnazone.y java/NicknameParser.java java/Alias4Parser.java java/devicealias.y java/showzone.y java/vw4invalid.y
+  java/showzone2.y
   java/BNAPURLConnection.java java/DWHURLConnection.java java/MSDWHURLConnection.java java/OSMURLConnection.java java/DCNMURLConnection.java
   java/FCParser.java
   java/version.java

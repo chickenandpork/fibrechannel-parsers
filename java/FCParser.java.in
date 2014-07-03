@@ -13,6 +13,7 @@ import org.smallfoot.parser.zone.BNAZoneParser;
 import org.smallfoot.parser.zone.DeviceAliasParser;
 import org.smallfoot.parser.zone.NicknameParser;
 import org.smallfoot.parser.zone.ShowZoneParser;
+import org.smallfoot.parser.zone.ShowZone2Parser;
 import org.smallfoot.parser.zone.VW4InvalidAddedParser;
 import org.smallfoot.parser.zone.ZPAliasEntry;
 import org.smallfoot.parser.zone.ZoneParser;
@@ -175,6 +176,7 @@ public abstract class FCParser
         zpl.add( new BNAZoneParser(prop));
         zpl.add( new DeviceAliasParser(prop));
         zpl.add( new ShowZoneParser(prop));
+        zpl.add( new ShowZone2Parser(prop));
         zpl.add( new VW4InvalidAddedParser(prop));
 
         try

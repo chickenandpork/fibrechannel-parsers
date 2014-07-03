@@ -1,0 +1,294 @@
+%{
+import java.lang.Math;
+import java.io.*;
+
+/**
+ * @page formats Compatible File Formats
+ * @subpage ShowZone2Parser
+ *
+ * @page ShowZone2Parser Cisco "show zone"
+ *
+ * The ShowZone2Parser parses the output of a Cisco SAN switch with the "show zone" command in a more aggressive manner
+ *
+ * As always, this parser is more successful when the content is treated like
+ * binary: don't edit it.  In particular, the use of a putty log to capture output
+ * while querying the switch leads to parser exceptions because the interactive
+ * "you have connected to blah blah system version 1.2.3, the weather is fabulous
+ * and I have 42 pages of boilerplate to spit out before you enter the command for
+ * aliases... hit enter to continue... have some backspaces..." is included.  As
+ * are the backspaces.
+ *
+ * When collecting aliases using an ssh command, it's better to execute that command noninteractively:
+ *
+ * In UNIX, Linux, Ubuntu, OSX, or the 6000 other licensees of the USL codebase:
+ *
+ *     ssh username@switch44.example.com "show zone" > switch44.shzone
+ *
+ * In windows, using the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">putty</a> tools:
+ *
+ *     plink.exe -l username -pw p4ssw0rd switch44.example.com "show zone" > switch44.shzone
+ *
+ * This leads to a better chance to parse 100% of the output with more accuracy,
+ * but I guess following this recommendation is up to the user, and to the engineer
+ * suggesting how he or she should collect the text for parsing.
+ *
+ * @verbatim
+zone name SANASVR001_FabA vsan 100
+  fcalias name Oracle_123466 vsan 100
+    pwwn 10:00:00:00:c9:12:34:66
+
+  fcalias name HDS0123457_CL7F vsan 100
+    pwwn 50:06:0e:80:12:34:56:78
+
+  fcalias name HDS0123457_CL7F vsan 100
+    pwwn 50:06:0e:80:12:34:56:79
+
+zone name SANASVR003_FabA vsan 100
+    fcid 0x123456
+    pwwn 50:06:0e:80:12:34:56:79
+    pwwn 10:00:00:00:c9:12:34:67 [Oracle_123467]
+    device-alias SomeUnresolvedHost
+
+zone name SANASVR002_FabA vsan 100
+  fcalias name Oracle_123467 vsan 100
+    pwwn 10:00:00:00:c9:12:34:67 @endverbatim
+ *
+ * The resulting content from this example would be the following WWPN/alias pairs:
+ * @verbatim
+10000000c9123466,"Oracle_123466"
+10000000c9123467,"Oracle_123467"
+50060e8012345678,"HDS0123457_CL7F"
+50060e8012345679,"HDS0123457_CL7F" @endverbatim
+ */
+
+%}
+
+/* YACC Declarations */
+%token ALPHANUM
+%token FCALIAS
+%token DEVICEALIAS
+%token NAME
+%token PWWN
+%token VSAN
+%token ZONE
+%token FCID
+
+/* Grammar follows */
+%%
+input: /* empty string */
+ | ALPHANUM input
+ | input zone
+ ;
+
+zone: ZONE
+ | ZONE NAME ALPHANUM zonemembers { addZone($3, $4); }
+ | ZONE NAME ALPHANUM VSAN ALPHANUM zonemembers { addZone($3, $6); }
+ ;
+
+zonemembers: /* empty */
+ | FCID ALPHANUM zonemembers { $$ = $3; }
+ | DEVICEALIAS ALPHANUM zonemembers { $$ = $3; }
+ | DEVICEALIAS ALPHANUM VSAN ALPHANUM zonemembers { $$ = $5; }
+ | FCALIAS NAME ALPHANUM zonemembers { addAlias($3, $4); $$ = $4; }
+ | FCALIAS NAME ALPHANUM VSAN ALPHANUM zonemembers { addAlias($3, $6); $$ = $6; }
+ | PWWN ALPHANUM zonemembers { $$ = appendZoneAlphanum($2, $3); }
+ | PWWN ALPHANUM '[' ALPHANUM ']' zonemembers { addAlias($4, $2); $$ = appendZoneAlphanum($2, $6); }
+ ;
+
+/*
+ * zone name SANASVR001_FabA vsan 100
+ *   fcalias name Oracle_123466 vsan 100
+ *     pwwn 10:00:00:00:c9:12:34:66
+ *
+ *   fcalias name HDS0123457_CL7F vsan 100
+ *     pwwn 50:06:0e:80:12:34:56:78
+ *
+ *   fcalias name HDS0123457_CL7F vsan 100
+ *     pwwn 50:06:0e:80:12:34:56:79
+ */
+
+effectiveLine: FCALIAS NAME ALPHANUM PWWN ALPHANUM { addAlias ($3, $5); }
+ | FCALIAS NAME ALPHANUM VSAN ALPHANUM PWWN ALPHANUM { addAlias ($3, $7); }
+ | PWWN ALPHANUM '[' ALPHANUM ']' { addAlias ($4, $2); }
+ | FCALIAS NAME ALPHANUM VSAN ALPHANUM PWWN ALPHANUM '[' ALPHANUM ']' { addAlias ($9, $7); }
+ ;
+
+
+%%
+
+    String ins;
+    java.io.StreamTokenizer st;
+    boolean zpquiet = true;
+
+    void yyerror(String s)
+    {
+        if (!zpquiet) System.out.println("parser error: "+s);
+    }
+
+    boolean verboseStringtokenizer = checkProperty("debug.verboseTokenizer");
+    boolean newline = true;
+
+    int yylex()
+    {
+        String s;
+        int tok;
+        Double d;
+
+	try {
+        tok = st.nextToken();
+	} catch (java.io.IOException ioe) { return 0; }
+	if (verboseStringtokenizer) System.out.println("token#: "+tok+": status: "+st.toString());
+	switch(tok)
+	{
+	    case java.io.StreamTokenizer.TT_EOF:
+//System.out.println("returning java.io.StreamTokenizer.TT_EOF");
+            if (!newline)
+            {
+                newline=true;
+		st.pushBack();
+		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_EOL in lieu of TT_EOF");
+                return '\n'; //So we look like classic YACC example
+            }
+            else
+                return 0;
+	
+	    case java.io.StreamTokenizer.TT_EOL:
+		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_EOL");
+                newline=true;
+		return '\n';
+
+	    case java.io.StreamTokenizer.TT_WORD:
+	        if (st.sval.equalsIgnoreCase("zone"))
+		{
+		    if (!newline)
+		    {
+			newline=true;
+			st.pushBack();
+		        if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_EOL in lieu of TT_WORD:ZONE \"" + st.sval + "\"");
+			return '\n';
+		    }
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ZONE \"" + st.sval + "\"");
+		    return ZONE;
+		}
+	        else if (st.sval.equalsIgnoreCase("device-alias"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:DEVICEALIAS \"" + st.sval + "\"");
+		    return DEVICEALIAS;
+		}
+	        else if (st.sval.equalsIgnoreCase("fcalias"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:FCALIAS \"" + st.sval + "\"");
+		    return FCALIAS;
+		}
+	        else if (st.sval.equalsIgnoreCase("fcid"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:FCID \"" + st.sval + "\"");
+		    return FCID;
+		}
+	        else if (st.sval.equalsIgnoreCase("name"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:NAME \"" + st.sval + "\"");
+		    return NAME;
+		}
+	        else if (st.sval.equalsIgnoreCase("pwwn"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:PWWN \"" + st.sval + "\"");
+		    return PWWN;
+		}
+	        else if (st.sval.equalsIgnoreCase("vsan"))
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:VSAN \"" + st.sval + "\"");
+		    return VSAN;
+		}
+		if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
+		yylval = new ZoneParserVal(st.sval);
+		return ALPHANUM;
+
+	    case java.io.StreamTokenizer.TT_NUMBER:
+	        if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_NUMBER \"" + st.sval + "\" as \"" + st.nval + "\"");
+		yylval = new ZoneParserVal(st.nval);
+		return ALPHANUM;
+
+	    case ':':
+	    case ';':
+	    case '[':
+	    case ']':
+	        if (verboseStringtokenizer) System.out.println("returning anticipated char "+ tok + " \"" + (char) tok + "\"");
+		return tok;
+	}
+
+	// bogusity
+	if (verboseStringtokenizer) System.out.println("returning bogus char "+ tok + " \"" + (char) tok + "\"");
+	return '\n';
+    }
+
+
+public void parse()
+{
+ try
+ {
+ yyparse();
+ }
+ catch (Exception e)
+ {
+ }
+}
+
+
+public void setReader(Reader in)
+{
+  //nothing to do
+ st = new java.io.StreamTokenizer(in);
+ // reset the parser to effect a parseNumbers(false) which doesn't exist
+ st.resetSyntax();
+ st.wordChars('a', 'z');
+ st.wordChars('A', 'Z');
+ st.wordChars(128 + 32, 255);
+ st.whitespaceChars(0, ' ');
+ st.commentChar('/');
+ st.quoteChar('"');
+ st.quoteChar('\'');
+
+ // ok, dots, numbers, things accepted as WWNs or names are generally "words"
+ st.wordChars((int) '.', (int) '.');
+ st.wordChars((int) '#', (int) '#');
+ st.wordChars((int) '0', (int) '0');
+ st.wordChars((int) '1', (int) '9');
+ st.wordChars((int) ':', (int) ':');
+ st.wordChars((int) '_', (int) '_');
+ st.wordChars((int) '-', (int) '-');
+
+ // It's ordinary, and returned so that we can use as a separator.  Later, it's possible to just treat as a separator to be a bit more accepting of "xxx xxx xxx" as "xxx; xxx; xxx"
+ st.ordinaryChar((int) ';');
+
+ //st.ordinaryChar((int) ':');
+ st.eolIsSignificant(false);
+
+ //newline=true;
+}
+
+
+public void run()
+{
+  if (0 != yyparse())
+    try
+    {
+        /* if the parse is incomplete, drain the channel */
+        while (java.io.StreamTokenizer.TT_EOF != st.nextToken()) ;
+    }
+    catch (IOException e) { debug(getClass().getName()+" I.O Error: "+e.getMessage()); }
+}
+
+public void setDebug(boolean debug) { yydebug=debug; }
+
+public ShowZone2Parser(InputStream in, boolean debugMe) { super(in, debugMe); }
+public ShowZone2Parser(java.util.Properties in) { super(in); }
+
+
+public static void main(String args[])
+{
+    String p = System.getProperties().getProperty("debug.yystate");
+
+    ShowZone2Parser aszp = new ShowZone2Parser(System.in, (null != p) && ((p.equalsIgnoreCase("ShowZone2Parser")) || (p.equalsIgnoreCase("true"))));
+    aszp.testSummary(args);
+}
