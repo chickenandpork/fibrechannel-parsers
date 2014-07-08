@@ -298,9 +298,32 @@ public abstract class FCParser
         Vector<LongOpt> options = new Vector(3,2);
         java.util.Properties prop = System.getProperties();
 
-        /* Always always ALWAYS provide a quick reference and a version output */
+	/**
+         * Always always ALWAYS provide a quick reference and a version output
+	 * 
+	 * @cmdopt -H|--help Show a simple help screen as a reminder of options which are understood by the application
+	 * @cmdopt @code java -jar @PACKAGE@.jar --help @endcode
+	 * 
+	 * @cmdopt -V|--version Show the current release version for reference
+	 * @cmdopt @code java -jar @PACKAGE@.jar --version
+	 *  @VERSION@-@BUILDID@ @endcode
+	 * 
+	 * @cmdopt -N|--nickname={file/uri} Import nicknames by parsing a text stream from various sources
+	 * @cmdopt @code java -jar @PACKAGE@.jar --nickname=switch44.zoneshow
+	 * Parse results for AliShowZoneParser:
+	 * Zones: 44
+	 * Aliases: 112 (names with one or more WWPNs)
+	 * Aliases: 136 (name/WWPN tuples) @endcode
+	 * In this example, a zone file was parsed by the AliShowZoneParser resulting in 112
+         * nicknames; due to duplicate nicknames, there are actually 136 unique WWPN/alias
+         * tuples, which means that (136-112) 24 of the WWPNs have the same alias as other
+         * WWPNs
+	 * 
+	 * @cmdopt -!|--check Run an internal check that dependent drivers are available and registered
+	 */
         options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
         options.add(new LongOpt("version", LongOpt.NO_ARGUMENT, null, 'V'));
+
         options.add(new LongOpt("check", LongOpt.NO_ARGUMENT, null, '!'));
 
         options.add(new LongOpt("nickname", LongOpt.REQUIRED_ARGUMENT, null, 'N'));

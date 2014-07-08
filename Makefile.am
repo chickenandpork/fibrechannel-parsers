@@ -13,16 +13,10 @@ CONFIG_STATUS_DEPENDENCIES = gitdescribe
 EXTRA_DIST = @PACKAGE@.spec gitdescribe
 
 
-
-#dwd.zip: Doxyfile
-#	$(DOXYGEN)
-#	rm -f $@
-#	for i in $$(basename -s .awk $$(grep -l @page scripts/*.awk) ; basename -s .xsl $$(grep -l @page scripts/*.xsl)) ; do ls htdocs/html/$$i.html; done | zip $@ -@
-#	unzip -t $@ >/dev/null
-#endif
+SOURCES = java/Alias4Parser.java.in java/FCParser.java.in java/NicknameParser.java.in java/ParserTee.java java/VW4InvalidAddedParser.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java java/ZoneParser.java java/ZoneParserI.java
 
 if DO_DOXYGEN
-doc: htdocs/README.dox Doxyfile
+doc: htdocs/README.dox Doxyfile $(SOURCES)
 	$(DOXYGEN)
 	@if test \! -d $(<D)/.git; then echo "subdir $(<D) not set as a gh-pages branch; see http://rickfoosusa.blogspot.com/2011/10/howto-use-doxygen-with-github.html"; git branch|grep gh-pages || echo git clone --branch gh-pages $$(git config --get remote.origin.url) $(<D); grep $(<D) .gitignore || echo "echo $(<D) > .gitignore"; echo "then delete everything in $(<D), commit, and push"; exit 1; fi
 	@grep $(<D) .gitignore || { echo "echo $(<D) > .gitignore"; exit 1; }
@@ -39,9 +33,8 @@ endif
 
 
 
-
 if DO_ASTYLE
-formatting: java/Alias4Parser.java.in java/FCParser.java.in java/NicknameParser.java.in java/ParserTee.java java/VW4InvalidAddedParser.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java java/ZoneParser.java java/ZoneParserI.java
+formatting: $(SOURCES)
 if DO_GITFORMATTING
 	@git ls-files --other --exclude-standard --directory || { echo "###################### unignored local files: git add, git commit ?"; }
 	@git diff --exit-code || { echo "###################### unstaged changes: git commit -a"; exit 1; }
