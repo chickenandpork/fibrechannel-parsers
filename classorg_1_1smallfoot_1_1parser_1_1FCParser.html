@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-140</span>
+   &#160;<span id="projectnumber">0.3-145</span>
    </div>
   </td>
  </tr>
@@ -199,6 +199,22 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+<p>Always always ALWAYS provide a quick reference and a version output</p>
+<dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000001">Commandline Options:</a></b></dt><dd>-H|&ndash;help Show a simple help screen as a reminder of options which are understood by the application </dd></dl>
+<dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000002">Commandline Options:</a></b></dt><dd><div class="fragment"><div class="line">java -jar fcparsers.jar --help </div>
+</div><!-- fragment --></dd></dl>
+<dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000003">Commandline Options:</a></b></dt><dd>-V|&ndash;version Show the current release version for reference </dd></dl>
+<dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000004">Commandline Options:</a></b></dt><dd><div class="fragment"><div class="line">java -jar fcparsers.jar --version</div>
+<div class="line">0.3-145 </div>
+</div><!-- fragment --></dd></dl>
+<dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000005">Commandline Options:</a></b></dt><dd>-N|&ndash;nickname={file/uri} Import nicknames by parsing a text stream from various sources </dd></dl>
+<dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000006">Commandline Options:</a></b></dt><dd><div class="fragment"><div class="line"> java -jar fcparsers.jar --nickname=switch44.zoneshow</div>
+<div class="line">Parse results <span class="keywordflow">for</span> AliShowZoneParser:</div>
+<div class="line">Zones: 44</div>
+<div class="line">Aliases: 112 (names with one or more WWPNs)</div>
+<div class="line">Aliases: 136 (name/WWPN tuples) </div>
+</div><!-- fragment --> In this example, a zone file was parsed by the AliShowZoneParser resulting in 112 nicknames; due to duplicate nicknames, there are actually 136 unique WWPN/alias tuples, which means that (136-112) 24 of the WWPNs have the same alias as other WWPNs</dd></dl>
+<dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000007">Commandline Options:</a></b></dt><dd>-!|&ndash;check Run an internal check that dependent drivers are available and registered </dd></dl>
 
 <p>Definition at line <a class="el" href="FCParser_8java_source.html#l00296">296</a> of file <a class="el" href="FCParser_8java_source.html">FCParser.java</a>.</p>
 
@@ -360,7 +376,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceorg.html">org</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot.html">smallfoot</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot_1_1parser.html">parser</a></li><li class="navelem"><a class="el" href="classorg_1_1smallfoot_1_1parser_1_1FCParser.html">FCParser</a></li>
-    <li class="footer">Generated on Thu Jul 3 2014 00:04:01 for fcparsers by
+    <li class="footer">Generated on Mon Jul 14 2014 02:34:35 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

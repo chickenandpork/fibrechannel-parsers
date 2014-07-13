@@ -6,6 +6,7 @@ var NAVTREE =
       [ "10.x, 11.x, 12.0 (with edit to data/databases/pg_hba.conf to allow host), 12.1 (pg_hba.conf edit, 12.1.0 and 12.1.4)", "Compatibility.html#BNA", null ]
     ] ],
     [ "JVM Options", "jvmopt.html", null ],
+    [ "Commandline Options", "cmdopt.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ]
     ] ],
@@ -27,7 +28,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AliShowZoneParser.html",
-"dir_cb015bdd6bbc27dab8cbcb9f530241fa.html"
+"dir_c4905ed7953f88dc206fb38741b9f54b.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

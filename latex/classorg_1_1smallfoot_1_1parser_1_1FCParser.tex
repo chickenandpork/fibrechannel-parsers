@@ -94,6 +94,45 @@ No real intelligence herein except the parse-\/and-\/redirect action.
 {\em args} & as you'd expect, these are commandline arguments given when the jar is activated \\
 \hline
 \end{DoxyParams}
+Always always A\+L\+W\+A\+Y\+S provide a quick reference and a version output
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/\+H$\vert$--help Show a simple help screen as a reminder of options which are understood by the application \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+java -jar fcparsers.jar --help 
+\end{DoxyCode}
+\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/\+V$\vert$--version Show the current release version for reference \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+java -jar fcparsers.jar --version
+0.3-145 
+\end{DoxyCode}
+\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/\+N$\vert$--nickname=\{file/uri\} Import nicknames by parsing a text stream from various sources \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+ java -jar fcparsers.jar --nickname=switch44.zoneshow
+Parse results \textcolor{keywordflow}{for} AliShowZoneParser:
+Zones: 44
+Aliases: 112 (names with one or more WWPNs)
+Aliases: 136 (name/WWPN tuples) 
+\end{DoxyCode}
+ In this example, a zone file was parsed by the Ali\+Show\+Zone\+Parser resulting in 112 nicknames; due to duplicate nicknames, there are actually 136 unique W\+W\+P\+N/alias tuples, which means that (136-\/112) 24 of the W\+W\+P\+Ns have the same alias as other W\+W\+P\+Ns\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/!$\vert$--check Run an internal check that dependent drivers are available and registered \end{DoxyRefDesc}
 
 
 Definition at line 296 of file F\+C\+Parser.\+java.

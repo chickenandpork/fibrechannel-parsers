@@ -847,6 +847,8 @@
   </compound>
   <compound refid="jvmopt" kind="page"><name>jvmopt</name>
   </compound>
+  <compound refid="cmdopt" kind="page"><name>cmdopt</name>
+  </compound>
   <compound refid="dir_9ab14bd24c83483f76923c4d364197b5" kind="dir"><name>java/genproto/bna</name>
   </compound>
   <compound refid="dir_cb015bdd6bbc27dab8cbcb9f530241fa" kind="dir"><name>java/genproto/bnapsql</name>
