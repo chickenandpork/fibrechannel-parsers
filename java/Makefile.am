@@ -1,14 +1,17 @@
-nodist_java_JAVA = Alias4Parser.java FCParser.java NicknameParser.java ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java ZPZoneEntry.java ZoneParser.java ZoneParserVal.java ZoneParserI.java
+nodist_java_JAVA  = $(srcdir)/Alias4Parser.java $(srcdir)/FCParser.java $(srcdir)/NicknameParser.java
+nodist_java_JAVA += $(srcdir)/ParserTee.java $(srcdir)/ZPAliasEntry.java $(srcdir)/ZPFCAliasEntry.java
+nodist_java_JAVA += $(srcdir)/ZPZoneEntry.java $(srcdir)/ZoneParser.java $(srcdir)/ZoneParserVal.java
+nodist_java_JAVA += $(srcdir)/ZoneParserI.java
+nodist_java_JAVA += $(srcdir)/Select2Sample.java
 nodist_java_JAVA += AliShowZoneParser.java
 nodist_java_JAVA += BNAZoneParser.java
 nodist_java_JAVA += DeviceAliasParser.java
-nodist_java_JAVA += Select2Sample.java
 nodist_java_JAVA += ShowZoneParser.java
 nodist_java_JAVA += ShowZone2Parser.java
 nodist_java_JAVA += VW4InvalidAddedParser.java
-nodist_java_JAVA += genproto/bna/Handler.java genproto/bnapsql/Handler.java genproto/cmcne/Handler.java genproto/dcfm/Handler.java BNAPURLConnection.java
-nodist_java_JAVA += genproto/ocidwh/Handler.java genproto/osmsql/Handler.java genproto/msosmsql/Handler.java OSMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java
-nodist_java_JAVA += genproto/dcnm/Handler.java genproto/dcnmsql/Handler.java DCNMURLConnection.java
+nodist_java_JAVA += $(abs_builddir)/genproto/bna/Handler.java $(abs_builddir)/genproto/bnapsql/Handler.java $(abs_builddir)/genproto/cmcne/Handler.java $(abs_builddir)/genproto/dcfm/Handler.java BNAPURLConnection.java
+nodist_java_JAVA += $(abs_builddir)/genproto/ocidwh/Handler.java $(abs_builddir)/genproto/osmsql/Handler.java $(abs_builddir)/genproto/msosmsql/Handler.java OSMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java
+nodist_java_JAVA += $(abs_builddir)/genproto/dcnm/Handler.java $(abs_builddir)/genproto/dcnmsql/Handler.java DCNMURLConnection.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
@@ -17,8 +20,13 @@ nodist_java_DATA = @PACKAGE@.jar
 # https://downloads.sourceforge.net/project/byaccj/byaccj/1.15/byaccj1.15_macosx.tar.gz?r=http%3A%2F%2Fbyaccj.sourceforge.net%2F&ts=1347235095&use_mirror=voxel
 
 
-EXTRA_DIST = $(nodist_java_JAVA)  zonefile.y bnazone.y version.java.in HandlerPrototype.javaproto
-CONFIG_CLEAN_FILES = @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java Alias4Parser.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java
+EXTRA_DIST  = Alias4Parser.java FCParser.java NicknameParser.java
+EXTRA_DIST += ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java
+EXTRA_DIST += ZPZoneEntry.java ZoneParser.java ZoneParserVal.java
+EXTRA_DIST += ZoneParserI.java
+EXTRA_DIST += Select2Sample.java
+EXTRA_DIST += zonefile.y bnazone.y version.java.in HandlerPrototype.javaproto
+CONFIG_CLEAN_FILES =  @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java Alias4Parser.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java
 CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.java version.java
 CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y zonefile.y
 
@@ -28,43 +36,39 @@ BUILDTMP=$(shell date +%s)
 BUILT_SOURCES = FCParser.java
 
 # build the Handler stubs
-BUILT_SOURCES += genproto/bna/Handler.java genproto/bnapsql/Handler.java genproto/cmcne/Handler.java genproto/dcfm/Handler.java
-BUILT_SOURCES += genproto/ocidwh/Handler.java genproto/osmsql/Handler.java genproto/msosmsql/Handler.java
-BUILT_SOURCES += genproto/dcnmsql/Handler.java
-
-genproto/bna/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/bna/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/bna/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
 
-genproto/bnapsql/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/bnapsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/bnapsql/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
 
-genproto/cmcne/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/cmcne/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/cmcne/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
 
-genproto/dcfm/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/dcfm/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/dcfm/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
 
-genproto/ocidwh/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/ocidwh/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/ocidwh/g' -e 's/##localtype##/DWH/g' -e 's/##localtypepkg##/ocidwh/g' $< > $@
 
-genproto/osmsql/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/osmsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/osmsql/g' -e 's/##localtype##/OSM/g' -e 's/##localtypepkg##/osmsql/g' $< > $@
 
-genproto/msosmsql/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/msosmsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/msosmsql/g' -e 's/##localtype##/MSDWH/g' -e 's/##localtypepkg##/msosmsql/g' $< > $@
 
-genproto/dcnmsql/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/dcnmsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/dcnmsql/g' -e 's/##localtype##/DCNM/g' -e 's/##localtypepkg##/dcnmsql/g' $< > $@
 
-genproto/dcnm/Handler.java: HandlerPrototype.javaproto
+$(abs_builddir)/genproto/dcnm/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/dcnm/g' -e 's/##localtype##/DCNM/g' -e 's/##localtypepkg##/dcnmsql/g' $< > $@
 
@@ -111,6 +115,7 @@ javaroot.stamp: $(nodist_java_JAVA)
 	mkdir -p $(JAVAROOT) && touch $@
 
 @PACKAGE@.jar: classjava.stamp
+	pwd
 	awk -v BUILDTOP="bld" '/^package / {gsub (";$$",""); gsub ("\\.","/",$$2); SUBS[$$2]=$$2 } END { FIRST=0; for (n in SUBS) { if (0 == FIRST++) printf "jar cvf $@"; printf " -C %s %s",BUILDTOP,n }; printf "\n"; }' $(nodist_java_JAVA) | $(SHELL)
 	touch @PACKAGE@.class
 
