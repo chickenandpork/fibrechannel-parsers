@@ -5,10 +5,10 @@ AT_SETUP(version)
 dnl      ------
 
 AT_CHECK([java -jar $abs_top_builddir/convjars/@PACKAGE@.jar -V|awk '{print $1,$2,$3}'], 0, [fcparser version @VERSION@-@BUILDID@
-], [])
+], [stderr])
 
 AT_CHECK([java -jar $abs_top_builddir/convjars/@PACKAGE@.jar --version|awk '{print $1,$2,$3}'], 0, [fcparser version @VERSION@-@BUILDID@
-], [])
+], [stderr])
 
 AT_CLEANUP()
 

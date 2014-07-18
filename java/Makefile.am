@@ -28,7 +28,8 @@ EXTRA_DIST += Select2Sample.java
 EXTRA_DIST += zonefile.y bnazone.y version.java.in HandlerPrototype.javaproto
 CONFIG_CLEAN_FILES =  @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java Alias4Parser.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java
 CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.java version.java
-CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y zonefile.y
+CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y showzone2.y zonefile.y vw4invalid.y
+CONFIG_CLEAN_FILES += BNAPURLConnection.java DCNMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java OSMURLConnection.java
 
 AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar
 
@@ -122,6 +123,7 @@ javaroot.stamp: $(nodist_java_JAVA)
 clean-local:
 	CLASSES=`for i in $(nodist_java_JAVA); do awk -v FILE="$$i" '/^package / {gsub (";$$",""); gsub (".java",".class",FILE); gsub ("\\\\.","/",$$2); printf "%s/%s\n",$$2,FILE}' $(srcdir)/$$i; done`; (cd $(top_builddir)/ && rm -f $$CLASSES)
 	rm -f @PACKAGE@.jar $(notdir $(subdir)).jar $(BUILT_SOURCES)
+	rm -fr $(JAVAROOT) genproto 
 
 if DO_CHECKLOCAL_PARSER
 check-local: BNAZoneParser.java BNAZoneParserVal.java test-bnazone.txt

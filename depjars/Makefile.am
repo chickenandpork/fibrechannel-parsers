@@ -61,6 +61,8 @@ BUILT_SOURCES := $(JARS)
 check-local: $(JARS)
 	for i in $<; do jar tf $$i >/dev/null || exit 1; done
 
+clean-local:
+	rm -f commons-io-2.3-bin.tar.gz
+
 JAVAROOT = bld
 #BUILT_SOURCES += javaroot.stamp
-
