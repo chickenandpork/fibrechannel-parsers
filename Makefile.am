@@ -56,7 +56,8 @@ endif DO_GITFORMATTING
 
 
 if HAVE_RPMBUILD
-srpm: distcheck
+#srpm: distcheck
+srpm: re-dist-bzip2
 	@mkdir -p $$(rpm --eval '%{_srcrpmdir}')
 	@RPMBUILD@ -ts $(PACKAGE)-$(VERSION).tar.bz2
 if DO_SUDOPOSTMOVE
