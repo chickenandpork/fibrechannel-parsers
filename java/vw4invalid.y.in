@@ -12,6 +12,10 @@ import java.io.*;
  *
  * a VirtualWisdom4 Validation error message is typically a long set of multi-line messages such as:
  * @verbatim
+Invalid entity type
+Entity: Oracle44 : banana
+Location: [Line : 2 , Column : 19]
+
 Location: [Line : 1234 , Column : 7]
 Invalid added child entities : 20c2000dec123456
 Entity: Cisco-000dec-123456:194 : hba @endverbatim
@@ -27,17 +31,30 @@ Entity: Cisco-000dec-123456:194 : hba @endverbatim
 %}
 
 /* YACC Declarations */
-%token LOCATION	/* start of line "Location: [Line : 2999 , Column : 7]" */
-%token LINE
-%token COLUMN
-%token INVALID	/* start of line "Invalid added child entities : 20c2000dec123456" */
-%token ADDED
-%token CHILD
-%token ENTITIES
-%token WWPN
-%token ENTITY	/* start of line "Entity: Cisco-000dec-123456:194 : hba" */
-%token ALPHANUM
-%token HBA
+%token	ALPHANUM
+%token	ALREADY
+%token	ADDED
+%token	CHILD
+%token	COLUMN
+%token	EDIT
+%token	EXIST
+%token	ENTITIES
+%token	ENTITY	/* start of line "Entity: Cisco-000dec-123456:194 : hba" */
+%token	GIVEN
+%token	HBA
+%token	HOST
+%token	INVALID	/* start of line "Invalid added child entities : 20c2000dec123456" */
+%token	IOMODULE
+%token	LINE
+%token	LOCATION	/* start of line "Location: [Line : 2999 , Column : 7]" */
+%token	MODIFY
+%token	NAME
+%token	OVERWRITE
+%token	TO
+%token	TYPE
+%token	USE
+%token	WITH
+%token	WWPN
 
 /* Grammar follows */
 %%
@@ -51,8 +68,15 @@ Entity: Cisco-000dec-123456:194 : hba @endverbatim
 input:  /* empty string */
  | input LOCATION ':' '[' LINE ':' ALPHANUM ',' COLUMN ':' ALPHANUM ']'
  | input INVALID ADDED CHILD ENTITIES ':' WWPN { addAlias ("none-"+($7.sval), $7.sval); $$ = $1;}    /* void ZoneParserI::addAlias(String name, String wwn) */
- | input ENTITY ':' ALPHANUM ':' HBA
- | input ENTITY ':' ALPHANUM ':' ALPHANUM ':' HBA
+ | input INVALID ENTITY TYPE ENTITY ':' ALPHANUM  ':' ALPHANUM 		/* ignore invalid entities for removal */
+ | input ENTITY ':' ALPHANUM ':' entitytype
+ | input ENTITY ':' ALPHANUM ALPHANUM ':' entitytype
+ | input ENTITY ':' ALPHANUM ':' ALPHANUM ':' entitytype
+ | input ENTITY WITH GIVEN NAME ALREADY EXIST USE EDIT TYPE MODIFY TO OVERWRITE ENTITY ':' ALPHANUM ':' HOST
+ ;
+
+entitytype: HBA
+ | IOMODULE
  ;
 
 %%
@@ -101,7 +125,7 @@ input:  /* empty string */
 		return '\n';
 
             case java.io.StreamTokenizer.TT_WORD:
-                if (verboseStringtokenizer) System.out.println("checking java.io.StreamTokenizer.TT_WORD:ALPHANUM \"" + st.sval + "\"");
+                if (verboseStringtokenizer) System.out.println("checking java.io.StreamTokenizer.TT_WORD:@124@ALPHANUM \"" + st.sval + "\"");
                 if (st.sval.equalsIgnoreCase("location"))
                 {
                     if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:LOCATION \"" + st.sval + "\"");
@@ -115,6 +139,13 @@ input:  /* empty string */
                     return LINE;
                 }
 
+/* %token ALREADY */
+                if (st.sval.equalsIgnoreCase("already"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALREADY \"" + st.sval + "\"");
+                    return ALREADY;
+                }
+
 /* %token COLUMN */
                 if (st.sval.equalsIgnoreCase("column"))
                 {
@@ -122,11 +153,39 @@ input:  /* empty string */
                     return COLUMN;
                 }
 
+/* %token EDIT */
+                if (st.sval.equalsIgnoreCase("edit"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:EDIT \"" + st.sval + "\"");
+                    return EDIT;
+                }
+
+/* %token EXIST */
+                if ( (st.sval.equalsIgnoreCase("exist.")) || (st.sval.equalsIgnoreCase("exists.")) )
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:EXIST \"" + st.sval + "\"");
+                    return EXIST;
+                }
+
+/* %token GIVEN */
+                if (st.sval.equalsIgnoreCase("given"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:GIVEN \"" + st.sval + "\"");
+                    return GIVEN;
+                }
+
 /* %token INVALID */
                 if (st.sval.equalsIgnoreCase("invalid"))
                 {
                     if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:INVALID \"" + st.sval + "\"");
                     return INVALID;
+                }
+
+/* %token IOMODULE */
+                if (st.sval.equalsIgnoreCase("iomodule"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:IOMODULE \"" + st.sval + "\"");
+                    return IOMODULE;
                 }
 
 /* %token ADDED */
@@ -162,6 +221,62 @@ input:  /* empty string */
                 {
                     if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:HBA \"" + st.sval + "\"");
                     return HBA;
+                }
+
+/* %token HOST */
+                if (st.sval.equalsIgnoreCase("host"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:HOST \"" + st.sval + "\"");
+                    return HOST;
+                }
+
+/* %token MODIFY */
+                if (st.sval.equalsIgnoreCase("modify"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:MODIFY \"" + st.sval + "\"");
+                    return MODIFY;
+                }
+
+/* %token NAME */
+                if (st.sval.equalsIgnoreCase("name"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:NAME \"" + st.sval + "\"");
+                    return NAME;
+                }
+
+/* %token OVERWRITE */
+                if (st.sval.equalsIgnoreCase("overwrite."))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:OVERWRITE \"" + st.sval + "\"");
+                    return OVERWRITE;
+                }
+
+/* %token TO */
+                if (st.sval.equalsIgnoreCase("to"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:TO \"" + st.sval + "\"");
+                    return TO;
+                }
+
+/* %token TYPE */
+                if (st.sval.equalsIgnoreCase("type"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:TYPE \"" + st.sval + "\"");
+                    return TYPE;
+                }
+
+/* %token USE */
+                if (st.sval.equalsIgnoreCase("use"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:USE \"" + st.sval + "\"");
+                    return USE;
+                }
+
+/* %token WITH */
+                if (st.sval.equalsIgnoreCase("with"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:WITH \"" + st.sval + "\"");
+                    return WITH;
                 }
 
 /* %token WWPN */

@@ -64,6 +64,55 @@ Alias: 20c5000dec123456, none-20c5000dec123456
 AT_CLEANUP()
 
 
+AT_SETUP(VW4 Invalid Modified Parser)
+dnl      ------------------------
+
+AT_DATA([alias4file.csv], [[
+Invalid added child entities : 20c3000dec123456
+Entity: Cisco-000dec-123456:195 : hba
+Location: [Line : 16 , Column : 7]
+Entity with given name already exist. Use edit type MODIFY to overwrite.
+Entity: chr2dv3db04n1 : host
+Location: [Line : 2690 , Column : 7]
+]])
+
+AT_CHECK([java -Ddebug.yystate=VW4InvalidAddedParser -Ddebug.verboseAddAlias=VW4InvalidAddedParser -Ddebug.verboseTokenizer=VW4InvalidAddedParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.VW4InvalidAddedParser < alias4file.csv ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=VW4InvalidAddedParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.VW4InvalidAddedParser < alias4file.csv ], 0, [Parse results for VW4InvalidAddedParser:
+Zones: 0
+Aliases: 1 (names with one or more WWPNs)
+Aliases: 1 (name/WWPN pairs)
+Alias: 20c3000dec123456, none-20c3000dec123456
+], [stderr])
+
+AT_CLEANUP()
+
+
+AT_SETUP(VW4 Invalid Entity Parser)
+dnl      ------------------------
+
+AT_DATA([alias4file.csv], [[
+Invalid added child entities : 20c3000dec123456
+Entity: Cisco-000dec-123456:195 : hba
+Location: [Line : 16 , Column : 7]
+Invalid entity type
+Entity: Oracle44 : array
+Location: [Line : 2 , Column : 19]
+Invalid entity type
+Entity: server12345 : array
+Location: [Line : 46 , Column : 7]
+]])
+
+AT_CHECK([java -Ddebug.yystate=VW4InvalidAddedParser -Ddebug.verboseAddAlias=VW4InvalidAddedParser -Ddebug.verboseTokenizer=VW4InvalidAddedParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.VW4InvalidAddedParser < alias4file.csv ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=VW4InvalidAddedParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.VW4InvalidAddedParser < alias4file.csv ], 0, [Parse results for VW4InvalidAddedParser:
+Zones: 0
+Aliases: 1 (names with one or more WWPNs)
+Aliases: 1 (name/WWPN pairs)
+Alias: 20c3000dec123456, none-20c3000dec123456
+], [stderr])
+
+AT_CLEANUP()
+
+
 AT_SETUP(Alias4File Parser)
 dnl      -----------------
 
