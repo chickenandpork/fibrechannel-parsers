@@ -1128,7 +1128,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" line="450" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAZoneParser.java" bodystart="450" bodyend="456"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a461606a38dc40cb68f480cab9878d620" compoundref="BNAZoneParser_8java" startline="445" endline="445">BNAZoneParser.BNAZoneParser</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="281" endline="302">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="296" endline="317">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>

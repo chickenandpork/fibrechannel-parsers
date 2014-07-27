@@ -1106,7 +1106,7 @@ null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classorg_1_1smal
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/ShowZoneParser.java" line="511" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ShowZoneParser.java" bodystart="511" bodyend="517"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser_1ad59f06b7fec9a2ac88e1660c2d45289d" compoundref="ShowZoneParser_8java" startline="507" endline="507">ShowZoneParser.ShowZoneParser</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="281" endline="302">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="296" endline="317">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>

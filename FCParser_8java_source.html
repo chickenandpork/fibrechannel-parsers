@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-151</span>
+   &#160;<span id="projectnumber">0.3-152</span>
    </div>
   </td>
  </tr>
@@ -369,15 +369,15 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        java.util.Properties prop = System.getProperties();</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">        /**</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">         * Always always ALWAYS provide a quick reference and a version output</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">         * </span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">             * Always always ALWAYS provide a quick reference and a version output</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">         * @cmdopt -H|--help Show a simple help screen as a reminder of options which are understood by the application</span></div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">         * @cmdopt @code java -jar fcparsers.jar --help @endcode</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">         * </span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">         * @cmdopt -V|--version Show the current release version for reference</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">         * @cmdopt @code java -jar fcparsers.jar --version</span></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">         *  0.3-151 @endcode</span></div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">         * </span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">         *  0.3-152 @endcode</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="comment">         * @cmdopt -N|--nickname={file/uri} Import nicknames by parsing a text stream from various sources</span></div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">         * @cmdopt @code java -jar fcparsers.jar --nickname=switch44.zoneshow</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">         * Parse results for AliShowZoneParser:</span></div>
@@ -385,10 +385,10 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">         * Aliases: 112 (names with one or more WWPNs)</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">         * Aliases: 136 (name/WWPN tuples) @endcode</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">         * In this example, a zone file was parsed by the AliShowZoneParser resulting in 112</span></div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">         * nicknames; due to duplicate nicknames, there are actually 136 unique WWPN/alias</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">         * tuples, which means that (136-112) 24 of the WWPNs have the same alias as other</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">         * WWPNs</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">         * </span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">             * nicknames; due to duplicate nicknames, there are actually 136 unique WWPN/alias</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="comment">             * tuples, which means that (136-112) 24 of the WWPNs have the same alias as other</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="comment">             * WWPNs</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="comment">         * @cmdopt -!|--check Run an internal check that dependent drivers are available and registered</span></div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="comment">         */</span></div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        options.add(<span class="keyword">new</span> LongOpt(<span class="stringliteral">&quot;help&quot;</span>, LongOpt.NO_ARGUMENT, null, <span class="charliteral">&#39;H&#39;</span>));</div>
@@ -427,8 +427,8 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">                 * NOTE: the following two pieces of code react as do the instantation of variable &quot;g&quot; above</span></div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">                 */</span></div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="comment">/* */</span>   System.out.println(g.consistentVersion(<span class="stringliteral">&quot;0.3-151&quot;</span>));     <span class="comment">/* */</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="comment">/* *#/  System.out.println(&quot;0.3-151&quot;);                  /#* */</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <span class="comment">/* */</span>   System.out.println(g.consistentVersion(<span class="stringliteral">&quot;0.3-152&quot;</span>));     <span class="comment">/* */</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <span class="comment">/* *#/  System.out.println(&quot;0.3-152&quot;);                  /#* */</span></div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            }</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
@@ -500,7 +500,7 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><a class="el" href="FCParser_8java.html">FCParser.java</a></li>
-    <li class="footer">Generated on Sat Jul 26 2014 23:46:43 for fcparsers by
+    <li class="footer">Generated on Sun Jul 27 2014 00:01:56 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

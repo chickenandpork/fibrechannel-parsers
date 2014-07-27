@@ -1394,7 +1394,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="635" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="635" bodyend="641"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="281" endline="302">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="296" endline="317">ZoneParserI.testSummary</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a883f64011f4bd6ffb448ae0eaac1bcda" compoundref="VW4InvalidAddedParser_8java" startline="630" endline="630">VW4InvalidAddedParser.VW4InvalidAddedParser</references>
       </memberdef>
       </sectiondef>

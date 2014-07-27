@@ -245,7 +245,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" line="118" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java" bodystart="118" bodyend="123"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1af385e3c075112d912bb0dad0d9324372" compoundref="Alias4Parser_8java" startline="85" endline="88">Alias4Parser.Alias4Parser</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="281" endline="302">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="296" endline="317">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>

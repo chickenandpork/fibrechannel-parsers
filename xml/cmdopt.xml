@@ -8,7 +8,7 @@
 <varlistentry><term><anchor id="cmdopt_1_cmdopt000001"/>Global <ref refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" kindref="member">FCParser.main</ref>  (String args[])</term></varlistentry>
 <listitem><para>-H|<ndash/>help Show a simple help screen as a reminder of options which are understood by the application </para><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--help<sp/></highlight></codeline>
 </programlisting></para><para>-V|<ndash/>version Show the current release version for reference </para><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--version</highlight></codeline>
-<codeline><highlight class="normal">0.3-151<sp/></highlight></codeline>
+<codeline><highlight class="normal">0.3-152<sp/></highlight></codeline>
 </programlisting></para><para>-N|<ndash/>nickname={file/uri} Import nicknames by parsing a text stream from various sources </para><para><programlisting><codeline><highlight class="normal"><sp/>java<sp/>-jar<sp/>fcparsers.jar<sp/>--nickname=switch44.zoneshow</highlight></codeline>
 <codeline><highlight class="normal">Parse<sp/>results<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>AliShowZoneParser:</highlight></codeline>
 <codeline><highlight class="normal">Zones:<sp/>44</highlight></codeline>
