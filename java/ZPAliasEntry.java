@@ -17,7 +17,7 @@ public class ZPAliasEntry implements java.lang.Comparable<ZPAliasEntry>
     }
     void addAlias (String wwn)
     {
-	if (null != wwn)
+        if (null != wwn)
             wwns.add(wwn.trim().toLowerCase().replaceAll(":",""));
     }
 

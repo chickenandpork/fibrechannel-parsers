@@ -46,7 +46,7 @@ public abstract class FCParser
         {
             DataSource ds = new URLDataSource(new java.net.URL(uri));
 
-	    if (false != Boolean.parseBoolean(System.getProperties().getProperty("debug.showURLOpener")))
+            if (false != Boolean.parseBoolean(System.getProperties().getProperty("debug.showURLOpener")))
                 System.out.println("using discovered URL opener: DataSource open to "+uri);
 
             return ds.getInputStream();
@@ -104,7 +104,7 @@ public abstract class FCParser
         {
             String eq[] = params[i].split("=");
             if (eq.length > 1)
-		prop.setProperty(eq[0].toLowerCase(),eq[1]);
+                prop.setProperty(eq[0].toLowerCase(),eq[1]);
         }
 
         java.io.InputStream is = null;
@@ -114,15 +114,15 @@ public abstract class FCParser
         }
         catch (Exception e)
         {
-	    /*
-	     * catch a MalformedURLException and check to see if any handler pkgs are registered
-	     *
-	     * This is done as a instanceof rather than a separate catch because we want to activate the same workaround anyhow
-	     */
-	    if (e instanceof java.net.MalformedURLException)
-	        if (e.getMessage().startsWith("unknown protocol: "))
-		    if ( (null == System.getProperties().getProperty("java.protocol.handler.pkgs")) || (1 > System.getProperties().getProperty("java.protocol.handler.pkgs").length()) )
-			System.err.println("WARNING: no additional protocols registered: java.protocol.handler.pkgs is null (but still activating file:// fallback)");
+            /*
+             * catch a MalformedURLException and check to see if any handler pkgs are registered
+             *
+             * This is done as a instanceof rather than a separate catch because we want to activate the same workaround anyhow
+             */
+            if (e instanceof java.net.MalformedURLException)
+                if (e.getMessage().startsWith("unknown protocol: "))
+                    if ( (null == System.getProperties().getProperty("java.protocol.handler.pkgs")) || (1 > System.getProperties().getProperty("java.protocol.handler.pkgs").length()) )
+                        System.err.println("WARNING: no additional protocols registered: java.protocol.handler.pkgs is null (but still activating file:// fallback)");
 
             /*
              * In the case of a bad URL, we could check to see if there's a missing protocol or whatnot,
@@ -164,7 +164,7 @@ public abstract class FCParser
      */
     public static ZoneParser loadFile(InputStream is, String args0, boolean verbose, java.util.Properties prop)
     {
-	if (null == is) return null;
+        if (null == is) return null;
         Vector<ZoneParser> zpl = new Vector();
 
         /* tried 2013-04-23 with 18 ParserTees feeding a NicknameParser, a AliShowZoneParser, and 16 Alias4Parsers */
@@ -298,29 +298,29 @@ public abstract class FCParser
         Vector<LongOpt> options = new Vector(3,2);
         java.util.Properties prop = System.getProperties();
 
-	/**
-         * Always always ALWAYS provide a quick reference and a version output
-	 * 
-	 * @cmdopt -H|--help Show a simple help screen as a reminder of options which are understood by the application
-	 * @cmdopt @code java -jar @PACKAGE@.jar --help @endcode
-	 * 
-	 * @cmdopt -V|--version Show the current release version for reference
-	 * @cmdopt @code java -jar @PACKAGE@.jar --version
-	 *  @VERSION@-@BUILDID@ @endcode
-	 * 
-	 * @cmdopt -N|--nickname={file/uri} Import nicknames by parsing a text stream from various sources
-	 * @cmdopt @code java -jar @PACKAGE@.jar --nickname=switch44.zoneshow
-	 * Parse results for AliShowZoneParser:
-	 * Zones: 44
-	 * Aliases: 112 (names with one or more WWPNs)
-	 * Aliases: 136 (name/WWPN tuples) @endcode
-	 * In this example, a zone file was parsed by the AliShowZoneParser resulting in 112
-         * nicknames; due to duplicate nicknames, there are actually 136 unique WWPN/alias
-         * tuples, which means that (136-112) 24 of the WWPNs have the same alias as other
-         * WWPNs
-	 * 
-	 * @cmdopt -!|--check Run an internal check that dependent drivers are available and registered
-	 */
+        /**
+             * Always always ALWAYS provide a quick reference and a version output
+         *
+         * @cmdopt -H|--help Show a simple help screen as a reminder of options which are understood by the application
+         * @cmdopt @code java -jar @PACKAGE@.jar --help @endcode
+         *
+         * @cmdopt -V|--version Show the current release version for reference
+         * @cmdopt @code java -jar @PACKAGE@.jar --version
+         *  @VERSION@-@BUILDID@ @endcode
+         *
+         * @cmdopt -N|--nickname={file/uri} Import nicknames by parsing a text stream from various sources
+         * @cmdopt @code java -jar @PACKAGE@.jar --nickname=switch44.zoneshow
+         * Parse results for AliShowZoneParser:
+         * Zones: 44
+         * Aliases: 112 (names with one or more WWPNs)
+         * Aliases: 136 (name/WWPN tuples) @endcode
+         * In this example, a zone file was parsed by the AliShowZoneParser resulting in 112
+             * nicknames; due to duplicate nicknames, there are actually 136 unique WWPN/alias
+             * tuples, which means that (136-112) 24 of the WWPNs have the same alias as other
+             * WWPNs
+         *
+         * @cmdopt -!|--check Run an internal check that dependent drivers are available and registered
+         */
         options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
         options.add(new LongOpt("version", LongOpt.NO_ARGUMENT, null, 'V'));
 
@@ -336,7 +336,7 @@ public abstract class FCParser
         /* *@DO_GETOPTJAR_TRUE@/        org.smallfoot.getopt.GetOpt     g = new org.smallfoot.getopt.GetOpt("fcparser", args, options);        /@DO_GETOPTJAR_TRUE@* */
         /* *@DO_GETOPTJAR_FALSE@/       gnu.getopt.Getopt               g = new gnu.getopt.Getopt("fcparser", args, "HVN:", options);        /@DO_GETOPTJAR_FALSE@* */
 
-	FCParser.registerProtocols();
+        FCParser.registerProtocols();
 
         int c;
         while ((c = g.getopt()) != -1)
@@ -363,7 +363,7 @@ public abstract class FCParser
             }
 
             case '!':   // check that external driver munginess loads
-		for (String s: "jdbc.drivers,java.protocol.handler.pkgs".split(","))
+                for (String s: "jdbc.drivers,java.protocol.handler.pkgs".split(","))
                     System.out.println("property " + s + " is " + prop.getProperty(s));
 
                 try

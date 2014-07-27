@@ -17,7 +17,7 @@ public abstract class ZoneParser extends Thread
     public abstract void setReader(java.io.Reader is);
     public abstract void setDebug(boolean debug);
 
-    
+
     java.util.Properties _prop = null;
     boolean checkProperty(String n)
     {

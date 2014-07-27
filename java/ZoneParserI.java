@@ -16,7 +16,7 @@ import java.util.Vector;
  * helpful in diagnosing why the parser gave up and/or the calling process didn't
  * feel this parser's results were worth keeping or using.  Alias4Parser and
  * NicknameParser are not LALR-based but do give some indications by this option.
- * 
+ *
  * @jvmopt
  * @code java -Ddebug.verboseTokenizer=NicknameParser -jar fcparser.jar -N ... @endcode
  *
@@ -66,15 +66,30 @@ public abstract class ZoneParserI extends ZoneParser
     java.util.Vector<ZPZoneEntry> zones = new java.util.Vector();
     TreeMap<String,ZPAliasEntry> aliases = new TreeMap<String,ZPAliasEntry>();
 
-    public java.util.Enumeration<ZPZoneEntry> zoneElements() { return zones.elements(); }
+    public java.util.Enumeration<ZPZoneEntry> zoneElements()
+    {
+        return zones.elements();
+    }
 
-    public int zoneSize() { return zones.size(); }
+    public int zoneSize()
+    {
+        return zones.size();
+    }
 
-    public java.util.Enumeration<ZPAliasEntry> aliasElements() { return new java.util.Vector<ZPAliasEntry>(aliases.values()).elements(); }
+    public java.util.Enumeration<ZPAliasEntry> aliasElements()
+    {
+        return new java.util.Vector<ZPAliasEntry>(aliases.values()).elements();
+    }
 
-    public ZPAliasEntry[] aliasArray() { return aliases.values().toArray(new ZPAliasEntry[1]); }
+    public ZPAliasEntry[] aliasArray()
+    {
+        return aliases.values().toArray(new ZPAliasEntry[1]);
+    }
 
-    public int aliasSize() { return aliases.size(); }
+    public int aliasSize()
+    {
+        return aliases.size();
+    }
 
     //public ZPAliasEntry[] aliases() { return (ZPAliasEntry[]) aliases.toArray(); }
 
@@ -150,126 +165,126 @@ public abstract class ZoneParserI extends ZoneParser
 
 
 
-void addZone(ZoneParserVal name, ZoneParserVal list)
-{
-if (checkProperty("debug.verboseAddZone"))
-{
-System.out.println("addZone(?/?): ZZone: " + name.sval + " -- xx");
-System.out.println("name.sval: " + (null == name.sval ? "NULL" : name.sval));
-System.out.println("name.obj: " + (null == name.obj ? "NULL" : name.obj.getClass().getName()));
-System.out.println("list.sval: " + (null == list.sval ? "NULL" : list.sval));
-System.out.println("list.obj: " + (null == list.obj ? "NULL" : list.obj.getClass().getName()));
-}
-
-    if (null != list.sval)
-        addZone (name.sval, list.sval);
-    else if (list.obj.getClass() == java.util.Vector.class)
-        addZone (name.sval, (java.util.Vector<ZoneParserVal>) list.obj);
-    else if (list.obj.getClass() == ZoneParserVal.class)
-        addZone (name, (ZoneParserVal)list.obj);
-}
-
-void addZone(String name, String list)
-{
-if (checkProperty("debug.verboseAddZone"))
-{
-System.out.println("addZone(S/S): name: " + (null == name ? "NULL" : name));
-System.out.println("list: " + (null == list ? "NULL" : list));
-}
-    zones.add(new ZPZoneEntry (name,list));
-}
-
-void addZone(String name, java.util.Vector<ZoneParserVal> list)
-{
-if (checkProperty("debug.verboseAddZone"))
-{
-System.out.println("addZone(S/V): name: " + (null == name ? "NULL" : name));
-System.out.println("list: " + (null == list ? "NULL" : list));
-}
-    ZPZoneEntry ze = new ZPZoneEntry (name);
-    for (java.util.Enumeration<ZoneParserVal> e = list.elements(); e.hasMoreElements();)
+    void addZone(ZoneParserVal name, ZoneParserVal list)
     {
-       ze.addZone(e.nextElement().sval);
+        if (checkProperty("debug.verboseAddZone"))
+        {
+            System.out.println("addZone(?/?): ZZone: " + name.sval + " -- xx");
+            System.out.println("name.sval: " + (null == name.sval ? "NULL" : name.sval));
+            System.out.println("name.obj: " + (null == name.obj ? "NULL" : name.obj.getClass().getName()));
+            System.out.println("list.sval: " + (null == list.sval ? "NULL" : list.sval));
+            System.out.println("list.obj: " + (null == list.obj ? "NULL" : list.obj.getClass().getName()));
+        }
+
+        if (null != list.sval)
+            addZone (name.sval, list.sval);
+        else if (list.obj.getClass() == java.util.Vector.class)
+            addZone (name.sval, (java.util.Vector<ZoneParserVal>) list.obj);
+        else if (list.obj.getClass() == ZoneParserVal.class)
+            addZone (name, (ZoneParserVal)list.obj);
     }
 
-    zones.add(ze);
- }
-
-void addAlias(ZoneParserVal name, ZoneParserVal list)
-{
-if (checkProperty("debug.verboseAddAlias"))
-{
-System.out.println("addAlias(?/?): ZZone: " + name.sval + " -- xx");
-System.out.println("name.sval: " + (null == name.sval ? "NULL" : name.sval));
-System.out.println("name.obj: " + (null == name.obj ? "NULL" : name.obj.getClass().getName()));
-System.out.println("list.sval: " + (null == list.sval ? "NULL" : list.sval));
-System.out.println("list.obj: " + (null == list.obj ? "NULL" : list.obj.getClass().getName()));
-}
-    if (null != list.sval)
-        addAlias (name.sval, list.sval);
-    else if (list.obj.getClass() == java.util.Vector.class)
-        addAlias (name.sval, (java.util.Vector<ZoneParserVal>) list.obj);
-    else if (list.obj.getClass() == ZoneParserVal.class)
-        addAlias (name, (ZoneParserVal)list.obj);
-}
-
-void addAlias(String name, String wwn)
-{
-    name = name.replaceAll("\"","").trim();
-    wwn = wwn.replaceAll("\"","");
-
-    if (checkProperty("debug.verboseAddAlias"))
-	System.out.println("addAlias(S/S): " + (null == name ? "NULL" : name) + " --> wwn: "+wwn);
-
-    ZPAliasEntry zpa;
-
-    if (null != (zpa = aliases.get(name)))
-	zpa.addAlias(wwn);
-    else
-        aliases.put(name, new ZPAliasEntry (name,wwn));
-}
-
-void addAlias(String name, java.util.Vector<ZoneParserVal> list)
-{
-    if (checkProperty("debug.verboseAddAlias"))
-	System.out.println("addAlias(S/L): " + (null == name ? "NULL" : name));
-
-    name = name.replaceAll("\"","").trim();
-    ZPAliasEntry ze = aliases.get(name);
-    if (null == ze)
+    void addZone(String name, String list)
     {
-	ze = new ZPAliasEntry (name);
-        aliases.put(name,ze);
+        if (checkProperty("debug.verboseAddZone"))
+        {
+            System.out.println("addZone(S/S): name: " + (null == name ? "NULL" : name));
+            System.out.println("list: " + (null == list ? "NULL" : list));
+        }
+        zones.add(new ZPZoneEntry (name,list));
     }
-    for (java.util.Enumeration<ZoneParserVal> e = list.elements(); e.hasMoreElements();)
-    {
-       ze.addAlias(e.nextElement().sval);
-    }
- }
 
-ZoneParserVal appendZoneAlphanum(ZoneParserVal list, ZoneParserVal item)
-{
-if (checkProperty("debug.verboseAppendZone"))
-{
-System.out.println("append: list.sval: " + (null == list.sval ? "NULL" : list.sval));
-System.out.println("append: list.obj: " + (null == list.obj ? "NULL" : list.obj.getClass().getName()));
-System.out.println("append: item.sval: " + (null == item.sval ? "NULL" : item.sval));
-System.out.println("append: item.obj: " + (null == item.obj ? "NULL" : item.obj.getClass().getName()));
-}
-    if ( (null != list.obj)  && (list.obj.getClass().getName().equals(java.util.Vector.class.getName())) )
+    void addZone(String name, java.util.Vector<ZoneParserVal> list)
     {
-        ((java.util.Vector) list.obj).add(item);
-        return list;
+        if (checkProperty("debug.verboseAddZone"))
+        {
+            System.out.println("addZone(S/V): name: " + (null == name ? "NULL" : name));
+            System.out.println("list: " + (null == list ? "NULL" : list));
+        }
+        ZPZoneEntry ze = new ZPZoneEntry (name);
+        for (java.util.Enumeration<ZoneParserVal> e = list.elements(); e.hasMoreElements();)
+        {
+            ze.addZone(e.nextElement().sval);
+        }
+
+        zones.add(ze);
     }
-    else
+
+    void addAlias(ZoneParserVal name, ZoneParserVal list)
     {
-        java.util.Vector<ZoneParserVal> li = new java.util.Vector(2,2);
-        ZoneParserVal retNewList = new ZoneParserVal(li);
-        li.add(list);
-        li.add(item);
-        return retNewList;
+        if (checkProperty("debug.verboseAddAlias"))
+        {
+            System.out.println("addAlias(?/?): ZZone: " + name.sval + " -- xx");
+            System.out.println("name.sval: " + (null == name.sval ? "NULL" : name.sval));
+            System.out.println("name.obj: " + (null == name.obj ? "NULL" : name.obj.getClass().getName()));
+            System.out.println("list.sval: " + (null == list.sval ? "NULL" : list.sval));
+            System.out.println("list.obj: " + (null == list.obj ? "NULL" : list.obj.getClass().getName()));
+        }
+        if (null != list.sval)
+            addAlias (name.sval, list.sval);
+        else if (list.obj.getClass() == java.util.Vector.class)
+            addAlias (name.sval, (java.util.Vector<ZoneParserVal>) list.obj);
+        else if (list.obj.getClass() == ZoneParserVal.class)
+            addAlias (name, (ZoneParserVal)list.obj);
     }
-}
+
+    void addAlias(String name, String wwn)
+    {
+        name = name.replaceAll("\"","").trim();
+        wwn = wwn.replaceAll("\"","");
+
+        if (checkProperty("debug.verboseAddAlias"))
+            System.out.println("addAlias(S/S): " + (null == name ? "NULL" : name) + " --> wwn: "+wwn);
+
+        ZPAliasEntry zpa;
+
+        if (null != (zpa = aliases.get(name)))
+            zpa.addAlias(wwn);
+        else
+            aliases.put(name, new ZPAliasEntry (name,wwn));
+    }
+
+    void addAlias(String name, java.util.Vector<ZoneParserVal> list)
+    {
+        if (checkProperty("debug.verboseAddAlias"))
+            System.out.println("addAlias(S/L): " + (null == name ? "NULL" : name));
+
+        name = name.replaceAll("\"","").trim();
+        ZPAliasEntry ze = aliases.get(name);
+        if (null == ze)
+        {
+            ze = new ZPAliasEntry (name);
+            aliases.put(name,ze);
+        }
+        for (java.util.Enumeration<ZoneParserVal> e = list.elements(); e.hasMoreElements();)
+        {
+            ze.addAlias(e.nextElement().sval);
+        }
+    }
+
+    ZoneParserVal appendZoneAlphanum(ZoneParserVal list, ZoneParserVal item)
+    {
+        if (checkProperty("debug.verboseAppendZone"))
+        {
+            System.out.println("append: list.sval: " + (null == list.sval ? "NULL" : list.sval));
+            System.out.println("append: list.obj: " + (null == list.obj ? "NULL" : list.obj.getClass().getName()));
+            System.out.println("append: item.sval: " + (null == item.sval ? "NULL" : item.sval));
+            System.out.println("append: item.obj: " + (null == item.obj ? "NULL" : item.obj.getClass().getName()));
+        }
+        if ( (null != list.obj)  && (list.obj.getClass().getName().equals(java.util.Vector.class.getName())) )
+        {
+            ((java.util.Vector) list.obj).add(item);
+            return list;
+        }
+        else
+        {
+            java.util.Vector<ZoneParserVal> li = new java.util.Vector(2,2);
+            ZoneParserVal retNewList = new ZoneParserVal(li);
+            li.add(list);
+            li.add(item);
+            return retNewList;
+        }
+    }
 
 
 
@@ -285,20 +300,20 @@ System.out.println("append: item.obj: " + (null == item.obj ? "NULL" : item.obj.
         System.out.println("Zones: "+zoneSize());
         System.out.println("Aliases: "+aliasSize() + " (names with one or more WWPNs)");
 
-	if (0 < aliasSize())
-	{
-        java.util.PriorityQueue<ZPAliasEntry> pq = new java.util.PriorityQueue(aliasSize());
-        for (ZPAliasEntry e: aliasArray())
-            pq.add(e);
-        int c = 0;
-        for (ZPAliasEntry e: pq) c += e.wwns.size();
-        System.out.println("Aliases: "+c + " (name/WWPN pairs)");
+        if (0 < aliasSize())
+        {
+            java.util.PriorityQueue<ZPAliasEntry> pq = new java.util.PriorityQueue(aliasSize());
+            for (ZPAliasEntry e: aliasArray())
+                pq.add(e);
+            int c = 0;
+            for (ZPAliasEntry e: pq) c += e.wwns.size();
+            System.out.println("Aliases: "+c + " (name/WWPN pairs)");
 
-        if (checkProperty("debug.dumpAliases"))
-            for (ZPAliasEntry e: pq)
-                for (String s: e.wwns)
-                    System.out.println("Alias: "+s+", "+e.name());
-	}
+            if (checkProperty("debug.dumpAliases"))
+                for (ZPAliasEntry e: pq)
+                    for (String s: e.wwns)
+                        System.out.println("Alias: "+s+", "+e.name());
+        }
     }
 
 }
