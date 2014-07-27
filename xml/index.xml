@@ -595,17 +595,30 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abe4ca243dec8a5d592012c4e817e0b10" kind="variable"><name>YYMAXTOKEN</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a0c215687f88b02eedeece3e19b48bc00" kind="variable"><name>yyname</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aa90e232613bcc5abc359f1dfd9755e4a" kind="variable"><name>yyrule</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6a4b0f294229cb6f7a9379147c5bf760" kind="variable"><name>LOCATION</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a243829ef5cd46d7de88e0d5ac30d0b44" kind="variable"><name>LINE</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a393daa759a1143577ed9c520408718e9" kind="variable"><name>COLUMN</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab78b371699c59ad27fd9f486d3923203" kind="variable"><name>INVALID</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa1bd945463851953be939c8793faf70" kind="variable"><name>ALPHANUM</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a3bf756aa7c437ba6a6a0e7e6424199ec" kind="variable"><name>ALREADY</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a47f0373b201de53529ea39cfdb320a9a" kind="variable"><name>ADDED</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a88f4cd11b8a94e957069b64101ff8f09" kind="variable"><name>CHILD</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a393daa759a1143577ed9c520408718e9" kind="variable"><name>COLUMN</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1902040f07e240e77bb1ba5549f2b745" kind="variable"><name>EDIT</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4a662f099a679e179bb1b75d11cd2a12" kind="variable"><name>EXIST</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7d254cfa99265d281a12aca532b81672" kind="variable"><name>ENTITIES</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab9a3de9a217cad4ad00a26e6324f275e" kind="variable"><name>WWPN</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kind="variable"><name>ENTITY</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa1bd945463851953be939c8793faf70" kind="variable"><name>ALPHANUM</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5a65b12c5522a6d25127c217482c5363" kind="variable"><name>GIVEN</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2b4ade66a5ea6528e4e8c93cdae23124" kind="variable"><name>HBA</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1adb0f39c8f9a78aa93c3dbc737072be9b" kind="variable"><name>HOST</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab78b371699c59ad27fd9f486d3923203" kind="variable"><name>INVALID</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a405402cdaf2dfb65818b04223e46e7de" kind="variable"><name>IOMODULE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a243829ef5cd46d7de88e0d5ac30d0b44" kind="variable"><name>LINE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6a4b0f294229cb6f7a9379147c5bf760" kind="variable"><name>LOCATION</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" kind="variable"><name>MODIFY</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" kind="variable"><name>NAME</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" kind="variable"><name>OVERWRITE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" kind="variable"><name>TO</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a390c06a62a1f43eafa8f24f3a4220d6d" kind="variable"><name>TYPE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ada97f579938168a01770caf9bf98f7fb" kind="variable"><name>USE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a642913b35322b319f3f2dd25ab20e9ba" kind="variable"><name>WITH</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab9a3de9a217cad4ad00a26e6324f275e" kind="variable"><name>WWPN</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1c58472ea6621d2f613831e08d10dba3" kind="variable"><name>YYERRCODE</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad5b3677e61ca769d9d9e5cf9cfa1b33c" kind="function"><name>debug</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7fca06f2aea68127ed9d54ee46be67ed" kind="function"><name>state_push</name></member>
