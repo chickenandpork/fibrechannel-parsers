@@ -72,10 +72,11 @@ input:  /* empty string */
  | input ENTITY ':' ALPHANUM ':' entitytype
  | input ENTITY ':' ALPHANUM ALPHANUM ':' entitytype
  | input ENTITY ':' ALPHANUM ':' ALPHANUM ':' entitytype
- | input ENTITY WITH GIVEN NAME ALREADY EXIST USE EDIT TYPE MODIFY TO OVERWRITE ENTITY ':' ALPHANUM ':' HOST
+ | input ENTITY WITH GIVEN NAME ALREADY EXIST USE EDIT TYPE MODIFY TO OVERWRITE ENTITY ':' ALPHANUM ':' entitytype { addItem("reservedAliases", $16.sval); $$ = $1; }
  ;
 
 entitytype: HBA
+ | HOST
  | IOMODULE
  ;
 
@@ -322,6 +323,22 @@ public void parse()
  catch (Exception e)
  {
  }
+}
+
+java.util.Vector<String> reservedAliases = new java.util.Vector<String> (5,5);
+
+public java.util.Vector items(String name)
+{
+    if (!name.equalsIgnoreCase("reservedAliases")) return null;
+
+    return reservedAliases;
+}
+
+public void addItem (String name, String item)
+{
+    if (!name.equalsIgnoreCase("reservedAliases")) return;
+
+    reservedAliases.add(item);
 }
 
 

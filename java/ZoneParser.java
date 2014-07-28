@@ -8,6 +8,8 @@ public abstract class ZoneParser extends Thread
 
     public abstract int zoneSize();
 
+    public abstract java.util.Vector items(String name);
+
     public abstract java.util.Enumeration<ZPAliasEntry> aliasElements();
 
     public abstract ZPAliasEntry[] aliasArray();

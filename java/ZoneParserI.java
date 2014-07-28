@@ -32,6 +32,15 @@ import java.util.Vector;
  * @jvmopt
  * @code java -Ddebug.dumpAliases=AliShowZoneParser -jar fcparser.jar -N ...  @endcode
  *
+ * @jvmopt <b>debug.dumpItems</b>
+ * (values: Aliases, reservedAliases)
+ * can be used to tell most parsers to dump out additional results directly
+ * for diagnostics.  For example, VW4InvalidAddedParser can track post-remove
+ * aliases in the mapping "reservedAliases"
+ *
+ * @jvmopt
+ * @code java -Ddebug.dumpItems=reservedAliases -jar fcparser.jar -N ...  @endcode
+ *
  * @jvmopt <b>debug.verboseAddAlias</b>:
  * (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser)
  * Although not much use without looking inside the code, setting this value allows you
@@ -75,6 +84,8 @@ public abstract class ZoneParserI extends ZoneParser
     {
         return zones.size();
     }
+
+    public java.util.Vector items(String name) { return null; }
 
     public java.util.Enumeration<ZPAliasEntry> aliasElements()
     {
@@ -313,6 +324,18 @@ public abstract class ZoneParserI extends ZoneParser
                 for (ZPAliasEntry e: pq)
                     for (String s: e.wwns)
                         System.out.println("Alias: "+s+", "+e.name());
+
+            if ( (null != System.getProperties().getProperty("debug.dumpItems")) && (0 < System.getProperties().getProperty("debug.dumpItems").length()) )
+	    {
+		Vector di = items(System.getProperties().getProperty("debug.dumpItems"));
+                for (Object o: di.toArray())
+		{
+		    if (o instanceof String)
+                        System.out.println("item: "+o);
+                    else
+                        System.out.println("unknown item: "+o.getClass().getName());
+		}
+	    }
         }
     }
 
