@@ -132,7 +132,18 @@ AC_SUBST(faebase, [/home/services])
 AC_SUBST(emaildest, [ftpupdates])
 AC_SUBST(httpconfd, [/etc/httpd/conf.d])
 AC_SUBST(localreposroot, [/var/ftp])
-AC_SUBST(localreposversion, [CentOS5.6])
+
+AC_ARG_WITH(distname,
+[AS_HELP_STRING([--with-distname],[Define a repository name; default=guess])],
+[
+    DISTNAME=$withval
+],
+[
+    DISTNAME=$(cat /etc/redhat-release /dev/null 2>/dev/null | awk 'BEGIN {REL=""} /^CentOS release/ { REL=$1$3} END { if ("" == REL) print "unknown"; else print REL} ')
+])
+
+AC_SUBST(localreposversion, ${DISTNAME})
+
 
 AC_ARG_ENABLE(autotest,
 [AS_HELP_STRING([--enable-autotest],[Enable autotest testcases; breaks: make distcheck; default=disabled])],
