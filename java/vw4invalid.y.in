@@ -50,6 +50,7 @@ Entity: Cisco-000dec-123456:194 : hba @endverbatim
 %token	MODIFY
 %token	NAME
 %token	OVERWRITE
+%token	STORAGEARRAY
 %token	TO
 %token	TYPE
 %token	USE
@@ -73,11 +74,13 @@ input:  /* empty string */
  | input ENTITY ':' ALPHANUM ALPHANUM ':' entitytype
  | input ENTITY ':' ALPHANUM ':' ALPHANUM ':' entitytype
  | input ENTITY WITH GIVEN NAME ALREADY EXIST USE EDIT TYPE MODIFY TO OVERWRITE ENTITY ':' ALPHANUM ':' entitytype { addItem("reservedAliases", $16.sval); $$ = $1; }
+ | input ENTITY WITH GIVEN NAME ALREADY EXIST USE EDIT TYPE MODIFY TO OVERWRITE ENTITY ':' ALPHANUM ALPHANUM ':' entitytype { addItem("reservedAliases", $16.sval+" "+$17.sval); $$ = $1; }
  ;
 
 entitytype: HBA
  | HOST
  | IOMODULE
+ | STORAGEARRAY
  ;
 
 %%
@@ -252,6 +255,13 @@ entitytype: HBA
                     return OVERWRITE;
                 }
 
+/* %token STORAGEARRAY */
+                if (st.sval.equalsIgnoreCase("storagearray"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:STORAGEARRAY \"" + st.sval + "\"");
+                    return STORAGEARRAY;
+                }
+
 /* %token TO */
                 if (st.sval.equalsIgnoreCase("to"))
                 {
@@ -337,6 +347,7 @@ public java.util.Vector items(String name)
 public void addItem (String name, String item)
 {
     if (!name.equalsIgnoreCase("reservedAliases")) return;
+System.out.println(name+" adding "+item);
 
     reservedAliases.add(item);
 }

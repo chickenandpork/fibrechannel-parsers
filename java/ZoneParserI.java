@@ -324,6 +324,7 @@ public abstract class ZoneParserI extends ZoneParser
                 for (ZPAliasEntry e: pq)
                     for (String s: e.wwns)
                         System.out.println("Alias: "+s+", "+e.name());
+        }
 
             if ( (null != System.getProperties().getProperty("debug.dumpItems")) && (0 < System.getProperties().getProperty("debug.dumpItems").length()) )
 	    {
@@ -336,7 +337,6 @@ public abstract class ZoneParserI extends ZoneParser
                         System.out.println("unknown item: "+o.getClass().getName());
 		}
 	    }
-        }
     }
 
 }
