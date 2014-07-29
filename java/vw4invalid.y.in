@@ -347,7 +347,6 @@ public java.util.Vector items(String name)
 public void addItem (String name, String item)
 {
     if (!name.equalsIgnoreCase("reservedAliases")) return;
-System.out.println(name+" adding "+item);
 
     reservedAliases.add(item);
 }
