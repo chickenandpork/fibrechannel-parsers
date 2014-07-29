@@ -1,7 +1,8 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a70080dd2601542e3fa52cfdac8e00afb" title="To test/show a descendant class, with a created parser, feed in the stdin, parse what it can..." alt="" coords="105,67,282,106"/>
-<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html#a883f64011f4bd6ffb448ae0eaac1bcda" title="VW4InvalidAddedParser" alt="" coords="110,130,277,155"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a70080dd2601542e3fa52cfdac8e00afb" title="To test/show a descendant class, with a created parser, feed in the stdin, parse what it can..." alt="" coords="105,99,282,138"/>
+<area shape="rect" id="node7" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html#a883f64011f4bd6ffb448ae0eaac1bcda" title="VW4InvalidAddedParser" alt="" coords="110,162,277,187"/>
 <area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a083293963a3e77da41becf829be83aca" title="org.smallfoot.parser.zone.\lZoneParserI.zoneSize" alt="" coords="331,5,506,43"/>
 <area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a5586367d58e0d7e6a4d5262d6dc87fd2" title="org.smallfoot.parser.zone.\lZoneParserI.aliasSize" alt="" coords="331,67,506,106"/>
 <area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#a5c646608669073b5c31bb44626baa48f" title="org.smallfoot.parser.zone.\lZoneParserI.aliasArray" alt="" coords="331,130,506,169"/>
+<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html#af0a81691449a6211ef6b9ffc8b62bb0a" title="org.smallfoot.parser.zone.\lZoneParserI.items" alt="" coords="331,193,506,231"/>
 </map>

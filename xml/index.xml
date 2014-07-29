@@ -576,6 +576,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" kind="variable"><name>verboseStringtokenizer</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abb93c7c711a3c0ee506f0e510bf368a9" kind="variable"><name>newline</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a94ab010de2cb6a11c04bbf095fb31e12" kind="variable"><name>manualPushBackALPHANUM</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abeee1efc2021e962b6851723fc346cd8" kind="variable"><name>reservedAliases</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a0bb57aaadfcbef38e67059219b4126c9" kind="variable"><name>yyn</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a31c1ea5edb0bdd30006447b3f1e58d15" kind="variable"><name>yym</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac0fe627e81502f1ccb08d1519bfa40f2" kind="variable"><name>yystate</name></member>
@@ -614,6 +615,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" kind="variable"><name>MODIFY</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" kind="variable"><name>NAME</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" kind="variable"><name>OVERWRITE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4f3c3f4cc5cb69cb338e109bead06ddb" kind="variable"><name>STORAGEARRAY</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" kind="variable"><name>TO</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a390c06a62a1f43eafa8f24f3a4220d6d" kind="variable"><name>TYPE</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ada97f579938168a01770caf9bf98f7fb" kind="variable"><name>USE</name></member>
@@ -642,6 +644,8 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2e87c5ede6b7235170d287cd2e254454" kind="function"><name>[static initializer]</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aa000c1557e5264cffbc58d37d7d67ce4" kind="function"><name>yycheck</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad7c704b34912678d95c13243cacf9d7f" kind="function"><name>parse</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1af0a81691449a6211ef6b9ffc8b62bb0a" kind="function"><name>items</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66ee8ab84d5c5705c2ddf0c60cb3c2a3" kind="function"><name>addItem</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5deab139f9ad4072e1a497c5cccda0ea" kind="function"><name>setReader</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6c13d260cf71d0554f789c4641a9f18b" kind="function"><name>setDebug</name></member>
@@ -654,6 +658,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" kind="variable"><name>_prop</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1afdaf0b0fa88db2d36aca3bfed387f230" kind="function"><name>zoneElements</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a6837faff1f96406f15225cf38c2186e9" kind="function"><name>zoneSize</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a3ea3a6b94716d0bec1c6c97cda981a14" kind="function"><name>items</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a83a569eb17c8c2ba71b1b866f05e4df3" kind="function"><name>aliasElements</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1aa17ce2b8c32af2a9550b43506c727efc" kind="function"><name>aliasArray</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ac04020e56b85b1d8b222f5e344924336" kind="function"><name>aliasSize</name></member>
@@ -674,6 +679,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a071816722bbf8f31f56a3b27f5c84fa6" kind="variable"><name>aliases</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a17bb9b86877d4493c7ad4ba284f7c945" kind="function"><name>zoneElements</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" kind="function"><name>zoneSize</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1af0a81691449a6211ef6b9ffc8b62bb0a" kind="function"><name>items</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a1631138fd08af051dc26686c00768ab3" kind="function"><name>aliasElements</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5c646608669073b5c31bb44626baa48f" kind="function"><name>aliasArray</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" kind="function"><name>aliasSize</name></member>

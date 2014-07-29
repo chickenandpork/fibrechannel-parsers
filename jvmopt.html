@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-152</span>
+   &#160;<span id="projectnumber">0.3-155</span>
    </div>
   </td>
  </tr>
@@ -71,6 +71,8 @@ $(document).ready(function(){initNavTree('jvmopt.html','');});
 <div class="fragment"><div class="line">java -Ddebug.verboseTokenizer=NicknameParser -jar fcparser.jar -N ... </div>
 </div><!-- fragment --><p><b>debug.dumpAliases</b> (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, NicknameParser, ShowZoneParser, VW4InvalidAddedParser) can be used to tell most parsers to dump out their results for diagnostics. Setting it to "true" would cause all to dump their results; setting to the name of a Parser (ie ShowZoneParser, VW4InvalidAddedParser, NicknameParser) would cause that individual parser to show its results. These names are the same names listed at the end of a parse attempt for convenience/aide-memoire.</p>
 <div class="fragment"><div class="line">java -Ddebug.dumpAliases=AliShowZoneParser -jar fcparser.jar -N ...  </div>
+</div><!-- fragment --><p><b>debug.dumpItems</b> (values: Aliases, reservedAliases) can be used to tell most parsers to dump out additional results directly for diagnostics. For example, VW4InvalidAddedParser can track post-remove aliases in the mapping "reservedAliases"</p>
+<div class="fragment"><div class="line">java -Ddebug.dumpItems=reservedAliases -jar fcparser.jar -N ...  </div>
 </div><!-- fragment --><p><b>debug.verboseAddAlias</b>: (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</p>
 <p><b>debug.verboseAddZone</b>: (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</p>
 <p><b>debug.verboseAppendZone</b>: (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, ShowZoneParser, VW4InvalidAddedParser) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</p>
@@ -82,7 +84,7 @@ $(document).ready(function(){initNavTree('jvmopt.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jul 27 2014 00:01:57 for fcparsers by
+    <li class="footer">Generated on Tue Jul 29 2014 00:39:12 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

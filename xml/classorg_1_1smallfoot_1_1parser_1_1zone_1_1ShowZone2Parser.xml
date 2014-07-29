@@ -1143,7 +1143,7 @@ null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classorg_1_1smal
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/ShowZone2Parser.java" line="543" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ShowZone2Parser.java" bodystart="543" bodyend="549"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser_1ac0171dd74737c84c40cf82385b0bcf2d" compoundref="ShowZone2Parser_8java" startline="539" endline="539">ShowZone2Parser.ShowZone2Parser</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="296" endline="317">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="307" endline="340">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1151,68 +1151,68 @@ null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classorg_1_1smal
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="389">
+      <node id="390">
         <label>ShowZone2Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser"/>
-        <childnode refid="390" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="390">
-        <label>ZoneParserI</label>
-        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
         <childnode refid="391" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="392">
+      <node id="391">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="393">
         <label>Thread</label>
       </node>
-      <node id="391">
+      <node id="392">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="392" relation="public-inheritance">
+        <childnode refid="393" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="393">
+      <node id="394">
         <label>ShowZone2Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser"/>
-        <childnode refid="394" relation="public-inheritance">
+        <childnode refid="395" relation="public-inheritance">
         </childnode>
-        <childnode refid="399" relation="usage">
+        <childnode refid="400" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="394">
+      <node id="395">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="395" relation="public-inheritance">
-        </childnode>
-        <childnode refid="397" relation="usage">
-          <edgelabel>aliases</edgelabel>
+        <childnode refid="396" relation="public-inheritance">
         </childnode>
         <childnode refid="398" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="399" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="398">
+      <node id="399">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="397">
+      <node id="398">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="396">
+      <node id="397">
         <label>Thread</label>
       </node>
-      <node id="395">
+      <node id="396">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="396" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="399">
+      <node id="400">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
@@ -1243,6 +1243,7 @@ null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classorg_1_1smal
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser_1a5c1abb27893ba44fb2d5cbb6e6b6f897" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ShowZone2Parser</scope><name>FCID</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser_1ad1071764e501d770efe1ade5ea8d7ee5" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ShowZone2Parser</scope><name>init_stacks</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser_1ab3627b14322e66c17a48d05c216c4da5" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ShowZone2Parser</scope><name>ins</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1af0a81691449a6211ef6b9ffc8b62bb0a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ShowZone2Parser</scope><name>items</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ShowZone2Parser</scope><name>main</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser_1a66fe0c51d242ca6db52c31bf73a55f8e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ShowZone2Parser</scope><name>NAME</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser_1abb93c7c711a3c0ee506f0e510bf368a9" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ShowZone2Parser</scope><name>newline</name></member>

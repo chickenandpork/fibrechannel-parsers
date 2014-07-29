@@ -63,28 +63,28 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="299">
+      <node id="300">
         <label>URLStreamHandler</label>
       </node>
-      <node id="298">
+      <node id="299">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler"/>
-        <childnode refid="299" relation="public-inheritance">
+        <childnode refid="300" relation="public-inheritance">
         </childnode>
-        <childnode refid="299" relation="public-inheritance">
+        <childnode refid="300" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="301">
+      <node id="302">
         <label>URLStreamHandler</label>
       </node>
-      <node id="300">
+      <node id="301">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler"/>
-        <childnode refid="301" relation="public-inheritance">
+        <childnode refid="302" relation="public-inheritance">
         </childnode>
-        <childnode refid="301" relation="public-inheritance">
+        <childnode refid="302" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

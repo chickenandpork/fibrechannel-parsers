@@ -26,6 +26,8 @@ $<$ Z\+P\+Zone\+Entry $>$ {\bf zone\+Elements} ()
 \item 
 abstract int {\bf zone\+Size} ()
 \item 
+abstract java.\+util.\+Vector {\bf items} (String name)
+\item 
 abstract java.\+util.\+Enumeration\\*
 $<$ {\bf Z\+P\+Alias\+Entry} $>$ {\bf alias\+Elements} ()
 \item 
@@ -81,7 +83,7 @@ Create a parser with a new stream, defaulting to no debug, and verbose Z\+P debu
 \end{DoxyParams}
 
 
-Definition at line 39 of file Zone\+Parser.\+java.
+Definition at line 41 of file Zone\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}!Zone\+Parser@{Zone\+Parser}}
 \index{Zone\+Parser@{Zone\+Parser}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}}
@@ -96,7 +98,7 @@ Create a parser with a no stream or reader, fairly uncivilized, defaulting to no
 
 
 
-Definition at line 48 of file Zone\+Parser.\+java.
+Definition at line 50 of file Zone\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}!Zone\+Parser@{Zone\+Parser}}
 \index{Zone\+Parser@{Zone\+Parser}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}}
@@ -119,7 +121,7 @@ Create a parser with a new stream.
 \end{DoxyParams}
 
 
-Definition at line 60 of file Zone\+Parser.\+java.
+Definition at line 62 of file Zone\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}!Zone\+Parser@{Zone\+Parser}}
 \index{Zone\+Parser@{Zone\+Parser}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}}
@@ -139,7 +141,7 @@ Create a parser with a new reader, defaulting to no debug, and verbose Z\+P debu
 \end{DoxyParams}
 
 
-Definition at line 71 of file Zone\+Parser.\+java.
+Definition at line 73 of file Zone\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}!Zone\+Parser@{Zone\+Parser}}
 \index{Zone\+Parser@{Zone\+Parser}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}}
@@ -162,7 +164,7 @@ Create a parser, setting the debug to true or false.
 \end{DoxyParams}
 
 
-Definition at line 83 of file Zone\+Parser.\+java.
+Definition at line 85 of file Zone\+Parser.\+java.
 
 
 
@@ -197,7 +199,7 @@ Create a parser, setting the debug to true or false.
 \end{DoxyParams}
 
 
-Definition at line 96 of file Zone\+Parser.\+java.
+Definition at line 98 of file Zone\+Parser.\+java.
 
 
 
@@ -246,6 +248,13 @@ Referenced by Zone\+Parser.\+summarize().
 
 Referenced by F\+C\+Parser.\+load\+File(), and Zone\+Parser.\+summarize().
 
+\index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}!items@{items}}
+\index{items@{items}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}}
+\subsubsection[{items}]{\setlength{\rightskip}{0pt plus 5cm}abstract java.\+util.\+Vector items (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [abstract]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_a3ea3a6b94716d0bec1c6c97cda981a14}
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}!set\+Debug@{set\+Debug}}
 \index{set\+Debug@{set\+Debug}!org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Zone\+Parser}}
 \subsubsection[{set\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}abstract void set\+Debug (
@@ -281,7 +290,7 @@ Summarize the parsing results to stdout.
 
 
 
-Definition at line 121 of file Zone\+Parser.\+java.
+Definition at line 123 of file Zone\+Parser.\+java.
 
 
 
@@ -320,7 +329,7 @@ To test/show a descendant class, with a created parser, feed in the stdin, parse
 \end{DoxyParams}
 
 
-Definition at line 110 of file Zone\+Parser.\+java.
+Definition at line 112 of file Zone\+Parser.\+java.
 
 
 

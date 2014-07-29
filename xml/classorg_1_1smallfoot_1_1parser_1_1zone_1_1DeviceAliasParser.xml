@@ -1103,7 +1103,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="510" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="510" bodyend="516"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1af519c80bc4449da0ad3d5e335175b967" compoundref="DeviceAliasParser_8java" startline="506" endline="506">DeviceAliasParser.DeviceAliasParser</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="296" endline="317">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="307" endline="340">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1111,68 +1111,68 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="254">
+      <node id="255">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="255" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="256">
-        <label>Thread</label>
-      </node>
-      <node id="255">
-        <label>ZoneParser</label>
-        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
         <childnode refid="256" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="253">
+      <node id="257">
+        <label>Thread</label>
+      </node>
+      <node id="256">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="254">
         <label>DeviceAliasParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser"/>
-        <childnode refid="254" relation="public-inheritance">
+        <childnode refid="255" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="258">
+      <node id="259">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="259" relation="public-inheritance">
-        </childnode>
-        <childnode refid="261" relation="usage">
-          <edgelabel>aliases</edgelabel>
+        <childnode refid="260" relation="public-inheritance">
         </childnode>
         <childnode refid="262" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="263" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="262">
+      <node id="263">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="261">
+      <node id="262">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="260">
+      <node id="261">
         <label>Thread</label>
       </node>
-      <node id="259">
+      <node id="260">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="260" relation="public-inheritance">
+        <childnode refid="261" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="257">
+      <node id="258">
         <label>DeviceAliasParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser"/>
-        <childnode refid="258" relation="public-inheritance">
+        <childnode refid="259" relation="public-inheritance">
         </childnode>
-        <childnode refid="263" relation="usage">
+        <childnode refid="264" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="263">
+      <node id="264">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
@@ -1203,6 +1203,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a5b3da8f164c609de90b1205d63103862" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>dup_yyval</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ad1071764e501d770efe1ade5ea8d7ee5" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>init_stacks</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ab3627b14322e66c17a48d05c216c4da5" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>ins</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1af0a81691449a6211ef6b9ffc8b62bb0a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>items</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>main</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a66fe0c51d242ca6db52c31bf73a55f8e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>NAME</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1abb93c7c711a3c0ee506f0e510bf368a9" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>newline</name></member>

@@ -184,7 +184,7 @@
 <para><verbatim>Always always ALWAYS provide a quick reference and a version output
 </verbatim></para><para><xrefsect id="cmdopt_1_cmdopt000001"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-H|<ndash/>help Show a simple help screen as a reminder of options which are understood by the application </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000002"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--help<sp/></highlight></codeline>
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000003"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-V|<ndash/>version Show the current release version for reference </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000004"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--version</highlight></codeline>
-<codeline><highlight class="normal">0.3-152<sp/></highlight></codeline>
+<codeline><highlight class="normal">0.3-155<sp/></highlight></codeline>
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000005"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-N|<ndash/>nickname={file/uri} Import nicknames by parsing a text stream from various sources </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000006"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal"><sp/>java<sp/>-jar<sp/>fcparsers.jar<sp/>--nickname=switch44.zoneshow</highlight></codeline>
 <codeline><highlight class="normal">Parse<sp/>results<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>AliShowZoneParser:</highlight></codeline>
 <codeline><highlight class="normal">Zones:<sp/>44</highlight></codeline>
@@ -195,7 +195,7 @@
         <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="165" endline="263">FCParser.loadFile</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6085cf44eb1e750084cff1666eeae8ba" compoundref="FCParser_8java" startline="97" endline="154">FCParser.openSource</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a9f16799674af7de1e539f0b54dbea72a" compoundref="FCParser_8java" startline="66" endline="83">FCParser.registerProtocols</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="121" endline="141">ZoneParser.summarize</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="123" endline="143">ZoneParser.summarize</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">

@@ -107,82 +107,82 @@
     <detaileddescription>
 <para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="342">
+      <node id="343">
         <label>DCNMURLConnection.ResultCSVPipe</label>
-        <childnode refid="343" relation="public-inheritance">
-        </childnode>
         <childnode refid="344" relation="public-inheritance">
         </childnode>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="344">
+      <node id="345">
         <label>Runnable</label>
       </node>
-      <node id="343">
+      <node id="344">
         <label>PipedOutputStream</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="349">
+      <node id="350">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="350" relation="public-inheritance">
+        <childnode refid="351" relation="public-inheritance">
         </childnode>
-        <childnode refid="355" relation="usage">
+        <childnode refid="356" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="350">
+      <node id="351">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="351" relation="public-inheritance">
-        </childnode>
-        <childnode refid="353" relation="usage">
-          <edgelabel>aliases</edgelabel>
+        <childnode refid="352" relation="public-inheritance">
         </childnode>
         <childnode refid="354" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="355" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="354">
+      <node id="355">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="345">
+      <node id="346">
         <label>DCNMURLConnection.ResultCSVPipe</label>
-        <childnode refid="346" relation="public-inheritance">
-        </childnode>
         <childnode refid="347" relation="public-inheritance">
         </childnode>
-        <childnode refid="348" relation="usage">
-          <edgelabel>sources</edgelabel>
+        <childnode refid="348" relation="public-inheritance">
         </childnode>
         <childnode refid="349" relation="usage">
+          <edgelabel>sources</edgelabel>
+        </childnode>
+        <childnode refid="350" relation="usage">
           <edgelabel>aszp</edgelabel>
         </childnode>
       </node>
-      <node id="348">
+      <node id="349">
         <label>Vector&lt; java.sql.ResultSet &gt;</label>
       </node>
-      <node id="353">
+      <node id="354">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="352">
+      <node id="353">
         <label>Thread</label>
       </node>
-      <node id="351">
+      <node id="352">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="352" relation="public-inheritance">
+        <childnode refid="353" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="347">
+      <node id="348">
         <label>Runnable</label>
       </node>
-      <node id="346">
+      <node id="347">
         <label>PipedOutputStream</label>
       </node>
-      <node id="355">
+      <node id="356">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>

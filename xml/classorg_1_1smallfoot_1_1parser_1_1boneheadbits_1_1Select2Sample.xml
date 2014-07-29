@@ -21,7 +21,7 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/Select2Sample.java" line="12" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Select2Sample.java" bodystart="12" bodyend="42"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" compoundref="ParserTee_8java" startline="42" endline="49">ParserTee.pipeOutputStreamTo</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="121" endline="141">ZoneParser.summarize</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="123" endline="143">ZoneParser.summarize</references>
       </memberdef>
       </sectiondef>
     <briefdescription>

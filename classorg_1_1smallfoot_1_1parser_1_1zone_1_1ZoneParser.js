@@ -9,6 +9,7 @@ var classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser =
     [ "aliasArray", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aa17ce2b8c32af2a9550b43506c727efc", null ],
     [ "aliasElements", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a83a569eb17c8c2ba71b1b866f05e4df3", null ],
     [ "aliasSize", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ac04020e56b85b1d8b222f5e344924336", null ],
+    [ "items", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a3ea3a6b94716d0bec1c6c97cda981a14", null ],
     [ "setDebug", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ab23378f817a0790a310e852b89a5eb1d", null ],
     [ "setReader", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a19567e6611303b1035a1a101b00310e2", null ],
     [ "summarize", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ad8cf81600663ab2330a929bfefaecacd", null ],

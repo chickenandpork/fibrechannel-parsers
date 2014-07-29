@@ -19,6 +19,14 @@ java -Ddebug.dumpAliases=AliShowZoneParser -jar fcparser.jar -N ...
 \end{DoxyCode}
 
 
+{\bfseries debug.\+dump\+Items} (values\+: Aliases, reserved\+Aliases) can be used to tell most parsers to dump out additional results directly for diagnostics. For example, V\+W4\+Invalid\+Added\+Parser can track post-\/remove aliases in the mapping \char`\"{}reserved\+Aliases\char`\"{}
+
+
+\begin{DoxyCode}
+java -Ddebug.dumpItems=reservedAliases -jar fcparser.jar -N ...  
+\end{DoxyCode}
+
+
 {\bfseries debug.\+verbose\+Add\+Alias}\+: (values\+: true, Alias4\+Parser, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.
 
 {\bfseries debug.\+verbose\+Add\+Zone}\+: (values\+: true, Alias4\+Parser, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.
