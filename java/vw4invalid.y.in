@@ -40,6 +40,7 @@ Entity: Cisco-000dec-123456:194 : hba @endverbatim
 %token	EXIST
 %token	ENTITIES
 %token	ENTITY	/* start of line "Entity: Cisco-000dec-123456:194 : hba" */
+%token	FCPORT
 %token	GIVEN
 %token	HBA
 %token	HOST
@@ -51,6 +52,7 @@ Entity: Cisco-000dec-123456:194 : hba @endverbatim
 %token	NAME
 %token	OVERWRITE
 %token	STORAGEARRAY
+%token	STORAGECONTROLLER
 %token	TO
 %token	TYPE
 %token	USE
@@ -77,10 +79,12 @@ input:  /* empty string */
  | input ENTITY WITH GIVEN NAME ALREADY EXIST USE EDIT TYPE MODIFY TO OVERWRITE ENTITY ':' ALPHANUM ALPHANUM ':' entitytype { addItem("reservedAliases", $16.sval+" "+$17.sval); $$ = $1; }
  ;
 
-entitytype: HBA
+entitytype: FCPORT
+ | HBA
  | HOST
  | IOMODULE
  | STORAGEARRAY
+ | STORAGECONTROLLER
  ;
 
 %%
