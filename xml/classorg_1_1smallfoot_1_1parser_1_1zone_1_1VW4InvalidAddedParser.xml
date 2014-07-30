@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="346" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="346" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="353" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="353" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24b8b65b5b30d5d3f4d9cfd89f47bd8e" prot="package" static="no" mutable="no">
         <type>java.io.StreamTokenizer</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="347" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="347" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="354" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1acd46a0f826a276c736966f6193f717cc" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="348" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="348" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="355" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="355" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="355" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="355" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="362" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="362" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abb93c7c711a3c0ee506f0e510bf368a9" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="356" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="356" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="363" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="363" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a94ab010de2cb6a11c04bbf095fb31e12" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="357" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="357" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="364" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="364" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abeee1efc2021e962b6851723fc346cd8" prot="package" static="no" mutable="no">
         <type>java.util.Vector&lt; String &gt;</type>
@@ -268,7 +268,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="596" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="596" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="603" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="603" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a0bb57aaadfcbef38e67059219b4126c9" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="692" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="692" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="698" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="698" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a31c1ea5edb0bdd30006447b3f1e58d15" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -294,7 +294,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="693" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="693" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="699" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="699" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ac0fe627e81502f1ccb08d1519bfa40f2" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -307,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="694" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="694" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="700" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="700" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2cdb474303672925b387e5f813343a82" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -320,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="695" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="695" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="701" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="701" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-attrib">
@@ -345,7 +345,7 @@
         <name>yylhs</name>
         <initializer>= {                           -1,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    1,
-    1,    1,    1,
+    1,    1,    1,    1,    1,
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="206" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="206" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="208" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="208" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2e0afb9a762a5c5bad3dcb9f4ea67508" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -362,7 +362,7 @@
         <name>yylen</name>
         <initializer>= {                            2,
     0,   12,    7,    9,    6,    7,    8,   18,   19,    1,
-    1,    1,    1,
+    1,    1,    1,    1,    1,
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -370,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="210" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="210" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="212" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="212" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a76e5d053c1e04f4b4ad49b84fc440193" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -380,10 +380,11 @@
         <initializer>= {                         1,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-    0,    0,    0,   10,   11,   12,   13,    5,    0,    0,
-    0,    0,    6,    0,    3,    0,    0,    0,    7,    0,
-    0,    0,    4,    0,    0,    0,    0,    0,    0,    2,
-    0,    0,    0,    0,    0,    0,    0,    8,    9,
+    0,    0,    0,   10,   11,   12,   13,   14,   15,    5,
+    0,    0,    0,    0,    6,    0,    3,    0,    0,    0,
+    7,    0,    0,    0,    4,    0,    0,    0,    0,    0,
+    0,    2,    0,    0,    0,    0,    0,    0,    0,    8,
+    9,
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -391,7 +392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="214" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="214" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="216" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a9a9c55e1779bc144dee27b76fcf1be4e" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -399,28 +400,7 @@
         <argsstring>[]</argsstring>
         <name>yydgoto</name>
         <initializer>= {                          1,
-   28,
-}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="222" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="222" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a771f445cecdd000023eabc2556196d3f" prot="package" static="yes" mutable="no">
-        <type>final short</type>
-        <definition>final short yysindex[]</definition>
-        <argsstring>[]</argsstring>
-        <name>yysindex</name>
-        <initializer>= {                         0,
- -245,  -58, -247,  -50, -257, -246, -250, -264,  -70, -252,
-  -57, -241, -239, -243, -229,  -28, -251,  -27,  -26,  -25,
- -228, -263,  -24,    0,    0,    0,    0,    0, -242, -221,
- -217, -238,    0, -263,    0,  -16,   -1, -218,    0, -212,
- -215, -231,    0,  -10, -224, -207, -226,  -41, -222,    0,
- -211,   -3, -201,  -56,    1, -263, -263,    0,    0,
+   30,
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -429,6 +409,28 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="225" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a771f445cecdd000023eabc2556196d3f" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short yysindex[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yysindex</name>
+        <initializer>= {                         0,
+ -243,  -58, -236,  -53, -261, -250, -252, -270,  -72, -249,
+  -57, -233, -237, -240, -225,  -24, -253,  -23,  -22,  -21,
+ -222, -257,  -20,    0,    0,    0,    0,    0,    0,    0,
+ -241, -214, -213, -235,    0, -257,    0,  -13,    3, -212,
+    0, -209, -210, -231,    0,   -6, -221, -203, -224,  -37,
+ -219,    0, -207,    1, -197,  -56,    4, -257, -257,    0,
+    0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="228" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a326b811dc6a20004fd5462b50b2552b9" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -441,7 +443,8 @@
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-    0,    0,    0,    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+    0,
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -449,7 +452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="233" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="233" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="237" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad5657f65d3a538951fc73836fb367373" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -465,21 +468,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="241" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="241" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="246" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="246" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aba56e7cdfd617dc786ca9452a8d56b60" prot="package" static="yes" mutable="no">
         <type>final int</type>
         <definition>final int YYTABLESIZE</definition>
         <argsstring></argsstring>
         <name>YYTABLESIZE</name>
-        <initializer>=222</initializer>
+        <initializer>=224</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="244" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="244" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="249" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="249" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7682804618f55311e36c8338425eac69" prot="package" static="yes" mutable="no">
         <type>short</type>
@@ -492,7 +495,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="245" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="245" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="250" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="250" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a734735ae171a8a3bf7e651343fa35eb2" prot="package" static="yes" mutable="no">
         <type>short</type>
@@ -505,7 +508,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="274" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="274" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="279" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ae401f7abf70e23dd826ef078c900ffa6" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -519,21 +522,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="303" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="303" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="308" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="308" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abe4ca243dec8a5d592012c4e817e0b10" prot="package" static="yes" mutable="no">
         <type>final short</type>
         <definition>final short YYMAXTOKEN</definition>
         <argsstring></argsstring>
         <name>YYMAXTOKEN</name>
-        <initializer>=281</initializer>
+        <initializer>=283</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="304" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="304" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="309" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a0c215687f88b02eedeece3e19b48bc00" prot="package" static="yes" mutable="no">
         <type>final String</type>
@@ -558,9 +561,9 @@ null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
 null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
 null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
 null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a3bf756aa7c437ba6a6a0e7e6424199ec" kindref="member">ALREADY</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a47f0373b201de53529ea39cfdb320a9a" kindref="member">ADDED</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a88f4cd11b8a94e957069b64101ff8f09" kindref="member">CHILD</ref>&quot;,
-&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a393daa759a1143577ed9c520408718e9" kindref="member">COLUMN</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1902040f07e240e77bb1ba5549f2b745" kindref="member">EDIT</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4a662f099a679e179bb1b75d11cd2a12" kindref="member">EXIST</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7d254cfa99265d281a12aca532b81672" kindref="member">ENTITIES</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kindref="member">ENTITY</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5a65b12c5522a6d25127c217482c5363" kindref="member">GIVEN</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2b4ade66a5ea6528e4e8c93cdae23124" kindref="member">HBA</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1adb0f39c8f9a78aa93c3dbc737072be9b" kindref="member">HOST</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab78b371699c59ad27fd9f486d3923203" kindref="member">INVALID</ref>&quot;,
-&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a405402cdaf2dfb65818b04223e46e7de" kindref="member">IOMODULE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a243829ef5cd46d7de88e0d5ac30d0b44" kindref="member">LINE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6a4b0f294229cb6f7a9379147c5bf760" kindref="member">LOCATION</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" kindref="member">MODIFY</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" kindref="member">NAME</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" kindref="member">OVERWRITE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4f3c3f4cc5cb69cb338e109bead06ddb" kindref="member">STORAGEARRAY</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" kindref="member">TO</ref>&quot;,
-&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a390c06a62a1f43eafa8f24f3a4220d6d" kindref="member">TYPE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ada97f579938168a01770caf9bf98f7fb" kindref="member">USE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a642913b35322b319f3f2dd25ab20e9ba" kindref="member">WITH</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab9a3de9a217cad4ad00a26e6324f275e" kindref="member">WWPN</ref>&quot;,
+&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a393daa759a1143577ed9c520408718e9" kindref="member">COLUMN</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1902040f07e240e77bb1ba5549f2b745" kindref="member">EDIT</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4a662f099a679e179bb1b75d11cd2a12" kindref="member">EXIST</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7d254cfa99265d281a12aca532b81672" kindref="member">ENTITIES</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kindref="member">ENTITY</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6930494544f9c86e15f42f3790bac9e6" kindref="member">FCPORT</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5a65b12c5522a6d25127c217482c5363" kindref="member">GIVEN</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2b4ade66a5ea6528e4e8c93cdae23124" kindref="member">HBA</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1adb0f39c8f9a78aa93c3dbc737072be9b" kindref="member">HOST</ref>&quot;,
+&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab78b371699c59ad27fd9f486d3923203" kindref="member">INVALID</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a405402cdaf2dfb65818b04223e46e7de" kindref="member">IOMODULE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a243829ef5cd46d7de88e0d5ac30d0b44" kindref="member">LINE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6a4b0f294229cb6f7a9379147c5bf760" kindref="member">LOCATION</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" kindref="member">MODIFY</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" kindref="member">NAME</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" kindref="member">OVERWRITE</ref>&quot;,
+&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4f3c3f4cc5cb69cb338e109bead06ddb" kindref="member">STORAGEARRAY</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad2cdbf0e60bbb0dc1662cd366ac92bf0" kindref="member">STORAGECONTROLLER</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" kindref="member">TO</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a390c06a62a1f43eafa8f24f3a4220d6d" kindref="member">TYPE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ada97f579938168a01770caf9bf98f7fb" kindref="member">USE</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a642913b35322b319f3f2dd25ab20e9ba" kindref="member">WITH</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab9a3de9a217cad4ad00a26e6324f275e" kindref="member">WWPN</ref>&quot;,
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -568,7 +571,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="305" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="305" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="310" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="310" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aa90e232613bcc5abc359f1dfd9755e4a" prot="package" static="yes" mutable="no">
         <type>final String</type>
@@ -586,10 +589,12 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
 &quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kindref="member">ENTITY</ref> &apos;:&apos; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa1bd945463851953be939c8793faf70" kindref="member">ALPHANUM</ref> &apos;:&apos; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa1bd945463851953be939c8793faf70" kindref="member">ALPHANUM</ref> &apos;:&apos; entitytype&quot;,
 &quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kindref="member">ENTITY</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a642913b35322b319f3f2dd25ab20e9ba" kindref="member">WITH</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5a65b12c5522a6d25127c217482c5363" kindref="member">GIVEN</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" kindref="member">NAME</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a3bf756aa7c437ba6a6a0e7e6424199ec" kindref="member">ALREADY</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4a662f099a679e179bb1b75d11cd2a12" kindref="member">EXIST</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ada97f579938168a01770caf9bf98f7fb" kindref="member">USE</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1902040f07e240e77bb1ba5549f2b745" kindref="member">EDIT</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a390c06a62a1f43eafa8f24f3a4220d6d" kindref="member">TYPE</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" kindref="member">MODIFY</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" kindref="member">TO</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" kindref="member">OVERWRITE</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kindref="member">ENTITY</ref> &apos;:&apos; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa1bd945463851953be939c8793faf70" kindref="member">ALPHANUM</ref> &apos;:&apos; entitytype&quot;,
 &quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kindref="member">ENTITY</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a642913b35322b319f3f2dd25ab20e9ba" kindref="member">WITH</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5a65b12c5522a6d25127c217482c5363" kindref="member">GIVEN</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" kindref="member">NAME</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a3bf756aa7c437ba6a6a0e7e6424199ec" kindref="member">ALREADY</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4a662f099a679e179bb1b75d11cd2a12" kindref="member">EXIST</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ada97f579938168a01770caf9bf98f7fb" kindref="member">USE</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1902040f07e240e77bb1ba5549f2b745" kindref="member">EDIT</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a390c06a62a1f43eafa8f24f3a4220d6d" kindref="member">TYPE</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" kindref="member">MODIFY</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" kindref="member">TO</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" kindref="member">OVERWRITE</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" kindref="member">ENTITY</ref> &apos;:&apos; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa1bd945463851953be939c8793faf70" kindref="member">ALPHANUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa1bd945463851953be939c8793faf70" kindref="member">ALPHANUM</ref> &apos;:&apos; entitytype&quot;,
+&quot;entitytype : <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6930494544f9c86e15f42f3790bac9e6" kindref="member">FCPORT</ref>&quot;,
 &quot;entitytype : <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2b4ade66a5ea6528e4e8c93cdae23124" kindref="member">HBA</ref>&quot;,
 &quot;entitytype : <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1adb0f39c8f9a78aa93c3dbc737072be9b" kindref="member">HOST</ref>&quot;,
 &quot;entitytype : <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a405402cdaf2dfb65818b04223e46e7de" kindref="member">IOMODULE</ref>&quot;,
 &quot;entitytype : <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4f3c3f4cc5cb69cb338e109bead06ddb" kindref="member">STORAGEARRAY</ref>&quot;,
+&quot;entitytype : <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad2cdbf0e60bbb0dc1662cd366ac92bf0" kindref="member">STORAGECONTROLLER</ref>&quot;,
 }</initializer>
         <briefdescription>
         </briefdescription>
@@ -597,7 +602,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="327" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="327" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="332" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="332" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -727,11 +732,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="188" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="188" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5a65b12c5522a6d25127c217482c5363" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6930494544f9c86e15f42f3790bac9e6" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short GIVEN</definition>
+        <definition>final short FCPORT</definition>
         <argsstring></argsstring>
-        <name>GIVEN</name>
+        <name>FCPORT</name>
         <initializer>=266</initializer>
         <briefdescription>
         </briefdescription>
@@ -741,11 +746,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="189" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="189" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2b4ade66a5ea6528e4e8c93cdae23124" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5a65b12c5522a6d25127c217482c5363" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short HBA</definition>
+        <definition>final short GIVEN</definition>
         <argsstring></argsstring>
-        <name>HBA</name>
+        <name>GIVEN</name>
         <initializer>=267</initializer>
         <briefdescription>
         </briefdescription>
@@ -755,11 +760,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="190" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="190" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1adb0f39c8f9a78aa93c3dbc737072be9b" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2b4ade66a5ea6528e4e8c93cdae23124" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short HOST</definition>
+        <definition>final short HBA</definition>
         <argsstring></argsstring>
-        <name>HOST</name>
+        <name>HBA</name>
         <initializer>=268</initializer>
         <briefdescription>
         </briefdescription>
@@ -769,11 +774,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="191" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="191" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab78b371699c59ad27fd9f486d3923203" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1adb0f39c8f9a78aa93c3dbc737072be9b" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short INVALID</definition>
+        <definition>final short HOST</definition>
         <argsstring></argsstring>
-        <name>INVALID</name>
+        <name>HOST</name>
         <initializer>=269</initializer>
         <briefdescription>
         </briefdescription>
@@ -783,11 +788,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="192" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="192" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a405402cdaf2dfb65818b04223e46e7de" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab78b371699c59ad27fd9f486d3923203" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short IOMODULE</definition>
+        <definition>final short INVALID</definition>
         <argsstring></argsstring>
-        <name>IOMODULE</name>
+        <name>INVALID</name>
         <initializer>=270</initializer>
         <briefdescription>
         </briefdescription>
@@ -797,11 +802,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="193" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="193" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a243829ef5cd46d7de88e0d5ac30d0b44" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a405402cdaf2dfb65818b04223e46e7de" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short LINE</definition>
+        <definition>final short IOMODULE</definition>
         <argsstring></argsstring>
-        <name>LINE</name>
+        <name>IOMODULE</name>
         <initializer>=271</initializer>
         <briefdescription>
         </briefdescription>
@@ -811,11 +816,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="194" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="194" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6a4b0f294229cb6f7a9379147c5bf760" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a243829ef5cd46d7de88e0d5ac30d0b44" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short LOCATION</definition>
+        <definition>final short LINE</definition>
         <argsstring></argsstring>
-        <name>LOCATION</name>
+        <name>LINE</name>
         <initializer>=272</initializer>
         <briefdescription>
         </briefdescription>
@@ -825,11 +830,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="195" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="195" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6a4b0f294229cb6f7a9379147c5bf760" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short MODIFY</definition>
+        <definition>final short LOCATION</definition>
         <argsstring></argsstring>
-        <name>MODIFY</name>
+        <name>LOCATION</name>
         <initializer>=273</initializer>
         <briefdescription>
         </briefdescription>
@@ -839,11 +844,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="196" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="196" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short NAME</definition>
+        <definition>final short MODIFY</definition>
         <argsstring></argsstring>
-        <name>NAME</name>
+        <name>MODIFY</name>
         <initializer>=274</initializer>
         <briefdescription>
         </briefdescription>
@@ -853,11 +858,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="197" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="197" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short OVERWRITE</definition>
+        <definition>final short NAME</definition>
         <argsstring></argsstring>
-        <name>OVERWRITE</name>
+        <name>NAME</name>
         <initializer>=275</initializer>
         <briefdescription>
         </briefdescription>
@@ -867,11 +872,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="198" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="198" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4f3c3f4cc5cb69cb338e109bead06ddb" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short STORAGEARRAY</definition>
+        <definition>final short OVERWRITE</definition>
         <argsstring></argsstring>
-        <name>STORAGEARRAY</name>
+        <name>OVERWRITE</name>
         <initializer>=276</initializer>
         <briefdescription>
         </briefdescription>
@@ -881,11 +886,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="199" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="199" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4f3c3f4cc5cb69cb338e109bead06ddb" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short TO</definition>
+        <definition>final short STORAGEARRAY</definition>
         <argsstring></argsstring>
-        <name>TO</name>
+        <name>STORAGEARRAY</name>
         <initializer>=277</initializer>
         <briefdescription>
         </briefdescription>
@@ -895,11 +900,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="200" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="200" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a390c06a62a1f43eafa8f24f3a4220d6d" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad2cdbf0e60bbb0dc1662cd366ac92bf0" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short TYPE</definition>
+        <definition>final short STORAGECONTROLLER</definition>
         <argsstring></argsstring>
-        <name>TYPE</name>
+        <name>STORAGECONTROLLER</name>
         <initializer>=278</initializer>
         <briefdescription>
         </briefdescription>
@@ -909,11 +914,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="201" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="201" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ada97f579938168a01770caf9bf98f7fb" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short USE</definition>
+        <definition>final short TO</definition>
         <argsstring></argsstring>
-        <name>USE</name>
+        <name>TO</name>
         <initializer>=279</initializer>
         <briefdescription>
         </briefdescription>
@@ -923,11 +928,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="202" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="202" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a642913b35322b319f3f2dd25ab20e9ba" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a390c06a62a1f43eafa8f24f3a4220d6d" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short WITH</definition>
+        <definition>final short TYPE</definition>
         <argsstring></argsstring>
-        <name>WITH</name>
+        <name>TYPE</name>
         <initializer>=280</initializer>
         <briefdescription>
         </briefdescription>
@@ -937,11 +942,11 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="203" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="203" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab9a3de9a217cad4ad00a26e6324f275e" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ada97f579938168a01770caf9bf98f7fb" prot="public" static="yes" mutable="no">
         <type>final short</type>
-        <definition>final short WWPN</definition>
+        <definition>final short USE</definition>
         <argsstring></argsstring>
-        <name>WWPN</name>
+        <name>USE</name>
         <initializer>=281</initializer>
         <briefdescription>
         </briefdescription>
@@ -950,6 +955,34 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="204" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a642913b35322b319f3f2dd25ab20e9ba" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short WITH</definition>
+        <argsstring></argsstring>
+        <name>WITH</name>
+        <initializer>=282</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="205" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab9a3de9a217cad4ad00a26e6324f275e" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short WWPN</definition>
+        <argsstring></argsstring>
+        <name>WWPN</name>
+        <initializer>=283</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="206" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="206" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1c58472ea6621d2f613831e08d10dba3" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -963,7 +996,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="205" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="205" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="207" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="207" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-func">
@@ -1187,7 +1220,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="350" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="350" bodyend="353"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="357" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="357" bodyend="360"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aa40b27ae32d6d1ae7160bd6256e08eb8" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -1200,7 +1233,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="359" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="359" bodyend="582"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="366" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="366" bodyend="589"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2d5e88a14a1ce23f517be13c8a7a0f92" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1221,7 +1254,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="676" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="676" bodyend="685"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="682" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="682" bodyend="691"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1acd8617a8f2ac0de8bc1cc032cf449e19" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -1234,7 +1267,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="701" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="701" bodyend="877"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="707" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="707" bodyend="883"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">
@@ -1249,7 +1282,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="245" column="1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="250" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7bfe55f022dd2ed471f804f7e83f3b19" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1262,7 +1295,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="247" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="247" bodyend="273"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="252" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="252" bodyend="278"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1275,7 +1308,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="274" column="1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="279" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aa000c1557e5264cffbc58d37d7d67ce4" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1288,7 +1321,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="276" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="276" bodyend="302"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="281" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="281" bodyend="307"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -1303,7 +1336,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="585" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="585" bodyend="594"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="592" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="592" bodyend="601"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1af0a81691449a6211ef6b9ffc8b62bb0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.util.Vector</type>
@@ -1320,7 +1353,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="598" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="598" bodyend="603"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="605" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="605" bodyend="610"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66ee8ab84d5c5705c2ddf0c60cb3c2a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1341,7 +1374,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="605" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="605" bodyend="611"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="612" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="612" bodyend="617"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5deab139f9ad4072e1a497c5cccda0ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1358,7 +1391,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="614" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="614" bodyend="644"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="620" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="620" bodyend="650"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1371,7 +1404,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="647" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="647" bodyend="656"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="653" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="653" bodyend="662"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1388,7 +1421,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="659" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="659" bodyend="659"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="665" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="665" bodyend="665"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a883f64011f4bd6ffb448ae0eaac1bcda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1409,8 +1442,8 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="660" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="660" bodyend="660"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="VW4InvalidAddedParser_8java" startline="665" endline="671">VW4InvalidAddedParser.main</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="666" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="666" bodyend="666"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="VW4InvalidAddedParser_8java" startline="671" endline="677">VW4InvalidAddedParser.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1aceee193982e5d541a3a302bdf288cb0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1427,7 +1460,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="661" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="661" bodyend="661"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="667" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="667" bodyend="667"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a137efd4997364aa3550fbbd28fe8354a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1444,7 +1477,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="662" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="662" bodyend="662"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="668" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="668" bodyend="668"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -1464,9 +1497,9 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="665" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="665" bodyend="671"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="671" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="671" bodyend="677"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="307" endline="340">ZoneParserI.testSummary</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a883f64011f4bd6ffb448ae0eaac1bcda" compoundref="VW4InvalidAddedParser_8java" startline="660" endline="660">VW4InvalidAddedParser.VW4InvalidAddedParser</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a883f64011f4bd6ffb448ae0eaac1bcda" compoundref="VW4InvalidAddedParser_8java" startline="666" endline="666">VW4InvalidAddedParser.VW4InvalidAddedParser</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1546,7 +1579,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="57" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="55" bodyend="894"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" line="57" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VW4InvalidAddedParser.java" bodystart="55" bodyend="900"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>[static initializer]</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>[static initializer]</name></member>
@@ -1576,6 +1609,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7d254cfa99265d281a12aca532b81672" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ENTITIES</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a24aaff68b061db04aba7d2161699b139" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>ENTITY</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4a662f099a679e179bb1b75d11cd2a12" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>EXIST</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6930494544f9c86e15f42f3790bac9e6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>FCPORT</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a5a65b12c5522a6d25127c217482c5363" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>GIVEN</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a2b4ade66a5ea6528e4e8c93cdae23124" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>HBA</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1adb0f39c8f9a78aa93c3dbc737072be9b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>HOST</name></member>
@@ -1608,6 +1642,7 @@ null,null,null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classo
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a29aa9152242dba094643e0b3717b7de1" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>stateptrmax</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1afa638b510be8421c552f8a71f91f6ec3" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>statestk</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4f3c3f4cc5cb69cb338e109bead06ddb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>STORAGEARRAY</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad2cdbf0e60bbb0dc1662cd366ac92bf0" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>STORAGECONTROLLER</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>summarize</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>testSummary</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::VW4InvalidAddedParser</scope><name>TO</name></member>
