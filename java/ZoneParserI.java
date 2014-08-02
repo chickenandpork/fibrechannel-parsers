@@ -85,7 +85,10 @@ public abstract class ZoneParserI extends ZoneParser
         return zones.size();
     }
 
-    public java.util.Vector items(String name) { return null; }
+    public java.util.Vector items(String name)
+    {
+        return null;
+    }
 
     public java.util.Enumeration<ZPAliasEntry> aliasElements()
     {
@@ -326,17 +329,17 @@ public abstract class ZoneParserI extends ZoneParser
                         System.out.println("Alias: "+s+", "+e.name());
         }
 
-            if ( (null != System.getProperties().getProperty("debug.dumpItems")) && (0 < System.getProperties().getProperty("debug.dumpItems").length()) )
-	    {
-		Vector di = items(System.getProperties().getProperty("debug.dumpItems"));
-                for (Object o: di.toArray())
-		{
-		    if (o instanceof String)
-                        System.out.println("item: "+o);
-                    else
-                        System.out.println("unknown item: "+o.getClass().getName());
-		}
-	    }
+        if ( (null != System.getProperties().getProperty("debug.dumpItems")) && (0 < System.getProperties().getProperty("debug.dumpItems").length()) )
+        {
+            Vector di = items(System.getProperties().getProperty("debug.dumpItems"));
+            for (Object o: di.toArray())
+            {
+                if (o instanceof String)
+                    System.out.println("item: "+o);
+                else
+                    System.out.println("unknown item: "+o.getClass().getName());
+            }
+        }
     }
 
 }
