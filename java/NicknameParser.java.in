@@ -8,6 +8,7 @@ public class NicknameParser extends ZoneParserI
 {
     BufferedReader br;
     java.util.Vector<ZPAliasEntry> aliases = new java.util.Vector();
+    java.util.HashSet<String> dupeStop = new java.util.HashSet<String>();
     boolean zpquiet;
 
     int colWWN=0;
@@ -70,6 +71,13 @@ public class NicknameParser extends ZoneParserI
         else return aliases.size();
     }
 
+    protected void addAlias(String nick, String WWN)
+    {
+        if (dupeStop.contains(WWN)) return;
+	dupeStop.add(WWN);
+	aliases.add(new ZPAliasEntry(nick, WWN));
+    }
+
     public void run()
     {
         String line;
@@ -85,9 +93,9 @@ public class NicknameParser extends ZoneParserI
                     if (lb.length <= colNickname)
                         ;
                     else if (lb[colWWN].matches("^[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]$"))
-                        aliases.add(new ZPAliasEntry(lb[colNickname],lb[colWWN]));
+                        addAlias(lb[colNickname],lb[colWWN]);
                     else if (lb[colWWN].matches("^[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]$"))
-                        aliases.add(new ZPAliasEntry(lb[colNickname],lb[colWWN]));
+                        addAlias(lb[colNickname],lb[colWWN]);
                     else if (checkProperty("debug.verboseTokenizer"))
                         System.out.println("WWN("+colWWN+") \""+lb[colWWN]+"\" is name("+colNickname+") "+lb[colNickname]);
                 }

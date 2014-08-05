@@ -36,6 +36,24 @@ Alias: 10000000c9123455, Oracle01
 AT_CLEANUP()
 
 
+AT_SETUP(CSV NicknameParser Dupe WWPN)
+dnl      ----------------------------
+
+AT_DATA([alias.csv], [10:00:00:00:c9:12:34:56,Oracle01
+10:00:00:00:c9:12:34:56,Oracle01
+])
+
+AT_CHECK([java -Ddebug.yystate=NicknameParser -Ddebug.verboseAddAlias=NicknameParser -Ddebug.verboseTokenizer=NicknameParser -jar $abs_top_builddir/convjars/fcparsers.jar -N alias.csv], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=NicknameParser -jar $abs_top_builddir/convjars/fcparsers.jar -N alias.csv], 0, [Parse results for NicknameParser:
+Zones: 0
+Aliases: 1 (names with one or more WWPNs)
+Aliases: 1 (name/WWPN tuples)
+Alias: 10000000c9123456, Oracle01
+], [stderr])
+
+AT_CLEANUP()
+
+
 AT_SETUP(VW4 Invalid Added Parser)
 dnl      ------------------------
 
