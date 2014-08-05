@@ -1199,7 +1199,7 @@ null,null,null,null,&quot;ZONE&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/AliShowZoneParser.java" line="579" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/AliShowZoneParser.java" bodystart="579" bodyend="585"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a5e03a31a37a94bc78cf316ea5a3ee575" compoundref="AliShowZoneParser_8java" startline="575" endline="575">AliShowZoneParser.AliShowZoneParser</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="307" endline="340">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="310" endline="343">ZoneParserI.testSummary</references>
       </memberdef>
       </sectiondef>
     <briefdescription>

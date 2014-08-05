@@ -334,6 +334,7 @@
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kind="class"><name>org::smallfoot::parser::zone::NicknameParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a4e1353cca944de55b1cff88ca87b23cd" kind="variable"><name>br</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a0dc8b05b3f25e59bc98f90dc8c64857c" kind="variable"><name>aliases</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5c6dc08d17828cc9d70bc64b4fb6bf38" kind="variable"><name>dupeStop</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1acd46a0f826a276c736966f6193f717cc" kind="variable"><name>zpquiet</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a341bcf40e54fcdc15748aa1675957256" kind="variable"><name>colWWN</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a250553b93f729354b4125eeda5f9ffea" kind="variable"><name>colNickname</name></member>
@@ -347,6 +348,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5c646608669073b5c31bb44626baa48f" kind="function"><name>aliasArray</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" kind="function"><name>aliasSize</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9bc4ab801fe78c7087eea21e8fcf2953" kind="function"><name>addAlias</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" kind="class"><name>org::smallfoot::parser::osmsql::OSMURLConnection</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>

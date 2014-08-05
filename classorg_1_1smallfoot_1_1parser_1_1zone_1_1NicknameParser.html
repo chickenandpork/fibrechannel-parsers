@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-157</span>
+   &#160;<span id="projectnumber">0.3-159</span>
    </div>
   </td>
  </tr>
@@ -67,7 +67,8 @@ $(document).ready(function(){initNavTree('classorg_1_1smallfoot_1_1parser_1_1zon
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">NicknameParser Class Reference</div>  </div>
 </div><!--header-->
@@ -195,6 +196,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8cf81600663ab2330a929bfefaecacd inherit pub_methods_classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ad8cf81600663ab2330a929bfefaecacd">summarize</a> ()</td></tr>
 <tr class="memdesc:ad8cf81600663ab2330a929bfefaecacd inherit pub_methods_classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"><td class="mdescLeft">&#160;</td><td class="mdescRight">Summarize the parsing results to stdout.  <a href="#ad8cf81600663ab2330a929bfefaecacd">More...</a><br /></td></tr>
 <tr class="separator:ad8cf81600663ab2330a929bfefaecacd inherit pub_methods_classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9bc4ab801fe78c7087eea21e8fcf2953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html#a9bc4ab801fe78c7087eea21e8fcf2953">addAlias</a> (String nick, String WWN)</td></tr>
+<tr class="separator:a9bc4ab801fe78c7087eea21e8fcf2953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -230,7 +236,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00021">21</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00022">22</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
@@ -266,11 +272,49 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00036">36</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00037">37</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9bc4ab801fe78c7087eea21e8fcf2953"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addAlias </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>nick</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>WWN</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00074">74</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+
+<p>Referenced by <a class="el" href="NicknameParser_8java_source.html#l00081">NicknameParser.run()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a5c646608669073b5c31bb44626baa48f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +336,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00062">62</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00063">63</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
@@ -317,7 +361,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00056">56</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00057">57</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
@@ -342,7 +386,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00067">67</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00068">68</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
@@ -367,7 +411,18 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00073">73</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00081">81</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+
+<p>References <a class="el" href="NicknameParser_8java_source.html#l00074">NicknameParser.addAlias()</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a13a43e6d814de94978c515cb084873b1_cgraph.png" border="0" usemap="#classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a13a43e6d814de94978c515cb084873b1_cgraph" alt=""/></div>
+<map name="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a13a43e6d814de94978c515cb084873b1_cgraph" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a13a43e6d814de94978c515cb084873b1_cgraph">
+<area shape="rect" id="node2" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html#a9bc4ab801fe78c7087eea21e8fcf2953" title="addAlias" alt="" coords="93,5,166,30"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -393,7 +448,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00032">32</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00033">33</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
@@ -419,7 +474,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00051">51</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00052">52</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
@@ -444,7 +499,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00041">41</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00042">42</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
@@ -469,7 +524,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00046">46</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
+<p>Definition at line <a class="el" href="NicknameParser_8java_source.html#l00047">47</a> of file <a class="el" href="NicknameParser_8java_source.html">NicknameParser.java</a>.</p>
 
 </div>
 </div>
@@ -482,7 +537,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceorg.html">org</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot.html">smallfoot</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot_1_1parser.html">parser</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot_1_1parser_1_1zone.html">zone</a></li><li class="navelem"><a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html">NicknameParser</a></li>
-    <li class="footer">Generated on Thu Jul 31 2014 17:04:21 for fcparsers by
+    <li class="footer">Generated on Tue Aug 5 2014 08:12:31 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>
