@@ -603,6 +603,8 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a47f0373b201de53529ea39cfdb320a9a" kind="variable"><name>ADDED</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a88f4cd11b8a94e957069b64101ff8f09" kind="variable"><name>CHILD</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a393daa759a1143577ed9c520408718e9" kind="variable"><name>COLUMN</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ab8deb1199b66df49d12f84442cb8de2e" kind="variable"><name>DISCOVERED</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a142e251b5aa41d18d88b73c6be2e269d" kind="variable"><name>DUPLICATE</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a1902040f07e240e77bb1ba5549f2b745" kind="variable"><name>EDIT</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4a662f099a679e179bb1b75d11cd2a12" kind="variable"><name>EXIST</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a7d254cfa99265d281a12aca532b81672" kind="variable"><name>ENTITIES</name></member>
@@ -617,7 +619,9 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6a4b0f294229cb6f7a9379147c5bf760" kind="variable"><name>LOCATION</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a14c89b298a62b2bdc9d611a71c63ad16" kind="variable"><name>MODIFY</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a66fe0c51d242ca6db52c31bf73a55f8e" kind="variable"><name>NAME</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a6f7e99cd40c1299c3ed40c1a3cc4c2ac" kind="variable"><name>NEW</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1abd34a7b067c88fc0b70dd620bee70509" kind="variable"><name>OVERWRITE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a3a8ccb1909c76941366d54d0449318da" kind="variable"><name>PORT</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a4f3c3f4cc5cb69cb338e109bead06ddb" kind="variable"><name>STORAGEARRAY</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1ad2cdbf0e60bbb0dc1662cd366ac92bf0" kind="variable"><name>STORAGECONTROLLER</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser_1a000a73b82b33ba5273b81874784e4a44" kind="variable"><name>TO</name></member>
