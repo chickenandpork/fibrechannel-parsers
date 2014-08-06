@@ -16,6 +16,14 @@ Invalid entity type
 Entity: Oracle44 : banana
 Location: [Line : 2 , Column : 19]
 
+New port entities can not be imported. These are automatically discovered.
+Entity: a12345_CL0B : fcport
+Location: [Line : 16 , Column : 7]
+
+Duplicate entity in import file
+Entity: a12345_CL1B : fcport
+Location: [Line : 23 , Column : 7]
+
 Location: [Line : 1234 , Column : 7]
 Invalid added child entities : 20c2000dec123456
 Entity: Cisco-000dec-123456:194 : hba @endverbatim
@@ -36,6 +44,8 @@ Entity: Cisco-000dec-123456:194 : hba @endverbatim
 %token	ADDED
 %token	CHILD
 %token	COLUMN
+%token	DISCOVERED
+%token	DUPLICATE
 %token	EDIT
 %token	EXIST
 %token	ENTITIES
@@ -50,7 +60,9 @@ Entity: Cisco-000dec-123456:194 : hba @endverbatim
 %token	LOCATION	/* start of line "Location: [Line : 2999 , Column : 7]" */
 %token	MODIFY
 %token	NAME
+%token	NEW
 %token	OVERWRITE
+%token	PORT
 %token	STORAGEARRAY
 %token	STORAGECONTROLLER
 %token	TO
@@ -77,7 +89,15 @@ input:  /* empty string */
  | input ENTITY ':' ALPHANUM ':' ALPHANUM ':' entitytype
  | input ENTITY WITH GIVEN NAME ALREADY EXIST USE EDIT TYPE MODIFY TO OVERWRITE ENTITY ':' ALPHANUM ':' entitytype { addItem("reservedAliases", $16.sval); $$ = $1; }
  | input ENTITY WITH GIVEN NAME ALREADY EXIST USE EDIT TYPE MODIFY TO OVERWRITE ENTITY ':' ALPHANUM ALPHANUM ':' entitytype { addItem("reservedAliases", $16.sval+" "+$17.sval); $$ = $1; }
+ | input NEW PORT ENTITIES ALPHANUM ALPHANUM ALPHANUM ALPHANUM ALPHANUM ALPHANUM ALPHANUM DISCOVERED ENTITY ':' ALPHANUM ':' entitytype { addItem("reservedAliases", $15.sval); $$ = $1; }
+ | input NEW PORT ENTITIES ALPHANUM ALPHANUM ALPHANUM ALPHANUM ALPHANUM ALPHANUM ALPHANUM DISCOVERED ENTITY ':' ALPHANUM ALPHANUM ':' entitytype { addItem("reservedAliases", $15.sval+" "+$16.sval); $$ = $1; }
+ | input DUPLICATE ENTITY ALPHANUM ALPHANUM ALPHANUM ENTITY ':' ALPHANUM ':' entitytype { addItem("reservedAliases", $10.sval); $$ = $1; }
+ | input DUPLICATE ENTITY ALPHANUM ALPHANUM ALPHANUM ENTITY ':' ALPHANUM ALPHANUM ':' entitytype { addItem("reservedAliases", $10.sval+" "+$11.sval); $$ = $1; }
  ;
+
+/* new port entities can not be imported.  These are automatically discovered. */
+/* Duplicate entity in import file Entity: a10998_CL4B : fcport */
+
 
 entitytype: FCPORT
  | HBA
@@ -161,6 +181,20 @@ entitytype: FCPORT
                     return COLUMN;
                 }
 
+/* %token DISCOVERED */
+                if (st.sval.equalsIgnoreCase("discovered."))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:DISCOVERED \"" + st.sval + "\"");
+                    return DISCOVERED;
+                }
+
+/* %token DUPLICATE */
+                if (st.sval.equalsIgnoreCase("duplicate"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:DUPLICATE \"" + st.sval + "\"");
+                    return DUPLICATE;
+                }
+
 /* %token EDIT */
                 if (st.sval.equalsIgnoreCase("edit"))
                 {
@@ -224,6 +258,13 @@ entitytype: FCPORT
                     return ENTITY;
                 }
 
+/* %token FCPORT */
+                if (st.sval.equalsIgnoreCase("fcport"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:FCPORT \"" + st.sval + "\"");
+                    return FCPORT;
+                }
+
 /* %token HBA */
                 if (st.sval.equalsIgnoreCase("hba"))
                 {
@@ -252,11 +293,25 @@ entitytype: FCPORT
                     return NAME;
                 }
 
+/* %token NEW */
+                if (st.sval.equalsIgnoreCase("new"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:NEW \"" + st.sval + "\"");
+                    return NEW;
+                }
+
 /* %token OVERWRITE */
                 if (st.sval.equalsIgnoreCase("overwrite."))
                 {
                     if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:OVERWRITE \"" + st.sval + "\"");
                     return OVERWRITE;
+                }
+
+/* %token PORT */
+                if (st.sval.equalsIgnoreCase("port"))
+                {
+                    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:PORT \"" + st.sval + "\"");
+                    return PORT;
                 }
 
 /* %token STORAGEARRAY */
@@ -350,6 +405,9 @@ public java.util.Vector items(String name)
 
 public void addItem (String name, String item)
 {
+    if (checkProperty("debug.verboseAddItem"))
+	System.out.println("adding "+item+" to itemList "+name);
+
     if (!name.equalsIgnoreCase("reservedAliases")) return;
 
     reservedAliases.add(item);
