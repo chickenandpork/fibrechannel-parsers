@@ -54,6 +54,12 @@ public class BNAPURLConnection extends java.net.URLConnection
 
         public void run()
         {
+	       /*
+		* While running:
+		*
+		* aszp is the result of the SELECT defined_content FROM zone_db_config
+		* source is the result of the SELECT wwn,name FROM device_port_info WHERE name IS NOT NULL
+		*/
             if (source != null)
             {
                 try
@@ -232,7 +238,9 @@ public class BNAPURLConnection extends java.net.URLConnection
         String pass = null;
         if (null == url.getUserInfo())
         {
+	    /* "dcmuser" per NetworkAdvisor_IP_Manual_1200.pdf */
             user = "dcmadmin";
+	    /* "password" per NetworkAdvisor_IP_Manual_1200.pdf */
             pass = "passw0rd";
         }
         else
