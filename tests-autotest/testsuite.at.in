@@ -10,6 +10,21 @@ AT_CHECK([java -jar $abs_top_builddir/convjars/@PACKAGE@.jar -V|awk '{print $1,$
 AT_CHECK([java -jar $abs_top_builddir/convjars/@PACKAGE@.jar --version|awk '{print $1,$2,$3}'], 0, [fcparser version @VERSION@-@BUILDID@
 ], [stderr])
 
+AT_CHECK([java -jar $abs_top_builddir/convjars/@PACKAGE@.jar --check], 0, [property jdbc.drivers is null
+property java.protocol.handler.pkgs is org.smallfoot.parser
+BNAPSQL DB Driver: OK
+BNA Protocol Handler: OK
+BNA(PSQL) Protocol Handler: OK
+BNA(CMCNE) Protocol Handler: OK
+BNA(DCFM) Protocol Handler: OK
+OSMSQL DB Driver: OK
+(MS)OSMSQL Protocol Handler: OK
+OCI(DWH) Protocol Handler: OK
+OCI(OSMSQL) Protocol Handler: OK
+DCNM Protocol Handler: OK
+DCNM(SQL) Protocol Handler: OK
+], [stderr])
+
 AT_CLEANUP()
 
 
