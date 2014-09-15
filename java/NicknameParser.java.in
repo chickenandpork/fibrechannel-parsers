@@ -74,8 +74,8 @@ public class NicknameParser extends ZoneParserI
     protected void addAlias(String nick, String WWN)
     {
         if (dupeStop.contains(WWN)) return;
-	dupeStop.add(WWN);
-	aliases.add(new ZPAliasEntry(nick, WWN));
+        dupeStop.add(WWN);
+        aliases.add(new ZPAliasEntry(nick, WWN));
     }
 
     public void run()

@@ -377,26 +377,42 @@ public abstract class FCParser
                     System.out.println("BNAPSQL DB Driver: ERR : "+cnfe.getMessage());
                 }
 
-		try {
-		    Class.forName("org.smallfoot.parser.bna.Handler"); System.out.println("BNA Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("BNA Protocol Handler: ERR : "+cnfe.getMessage());
-		}
-		try {
-		    Class.forName("org.smallfoot.parser.bnapsql.Handler"); System.out.println("BNA(PSQL) Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("BNA(PSQL) Protocol Handler: ERR : "+cnfe.getMessage());
-		}
-		try {
-		    Class.forName("org.smallfoot.parser.cmcne.Handler"); System.out.println("BNA(CMCNE) Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("BNA(CMCNE) Protocol Handler: ERR : "+cnfe.getMessage());
-		}
-		try {
-		    Class.forName("org.smallfoot.parser.dcfm.Handler"); System.out.println("BNA(DCFM) Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("BNA(DCFM) Protocol Handler: ERR : "+cnfe.getMessage());
-		}
+                try
+                {
+                    Class.forName("org.smallfoot.parser.bna.Handler");
+                    System.out.println("BNA Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("BNA Protocol Handler: ERR : "+cnfe.getMessage());
+                }
+                try
+                {
+                    Class.forName("org.smallfoot.parser.bnapsql.Handler");
+                    System.out.println("BNA(PSQL) Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("BNA(PSQL) Protocol Handler: ERR : "+cnfe.getMessage());
+                }
+                try
+                {
+                    Class.forName("org.smallfoot.parser.cmcne.Handler");
+                    System.out.println("BNA(CMCNE) Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("BNA(CMCNE) Protocol Handler: ERR : "+cnfe.getMessage());
+                }
+                try
+                {
+                    Class.forName("org.smallfoot.parser.dcfm.Handler");
+                    System.out.println("BNA(DCFM) Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("BNA(DCFM) Protocol Handler: ERR : "+cnfe.getMessage());
+                }
                 try
                 {
                     Class.forName("com.mysql.jdbc.Driver");
@@ -407,32 +423,52 @@ public abstract class FCParser
                     System.out.println("OSMSQL DB Driver: ERR : "+cnfe.getMessage());
                 }
 
-		try {
-		    Class.forName("org.smallfoot.parser.msosmsql.Handler"); System.out.println("(MS)OSMSQL Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("(MS)OSMSQL Protocol Handler: ERR : "+cnfe.getMessage());
-		}
-		try {
-		    Class.forName("org.smallfoot.parser.ocidwh.Handler"); System.out.println("OCI(DWH) Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("OCI(DWH) Protocol Handler: ERR : "+cnfe.getMessage());
-		}
-		try {
-		    Class.forName("org.smallfoot.parser.osmsql.Handler"); System.out.println("OCI(OSMSQL) Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("OCI(OSMSQL) Protocol Handler: ERR : "+cnfe.getMessage());
-		}
+                try
+                {
+                    Class.forName("org.smallfoot.parser.msosmsql.Handler");
+                    System.out.println("(MS)OSMSQL Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("(MS)OSMSQL Protocol Handler: ERR : "+cnfe.getMessage());
+                }
+                try
+                {
+                    Class.forName("org.smallfoot.parser.ocidwh.Handler");
+                    System.out.println("OCI(DWH) Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("OCI(DWH) Protocol Handler: ERR : "+cnfe.getMessage());
+                }
+                try
+                {
+                    Class.forName("org.smallfoot.parser.osmsql.Handler");
+                    System.out.println("OCI(OSMSQL) Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("OCI(OSMSQL) Protocol Handler: ERR : "+cnfe.getMessage());
+                }
 
-		try {
-		    Class.forName("org.smallfoot.parser.dcnm.Handler"); System.out.println("DCNM Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("DCNM Protocol Handler: ERR : "+cnfe.getMessage());
-		}
-		try {
-		    Class.forName("org.smallfoot.parser.dcnmsql.Handler"); System.out.println("DCNM(SQL) Protocol Handler: OK");
-		} catch (java.lang.ClassNotFoundException cnfe) {
-		    System.out.println("DCNM(SQL) Protocol Handler: ERR : "+cnfe.getMessage());
-		}
+                try
+                {
+                    Class.forName("org.smallfoot.parser.dcnm.Handler");
+                    System.out.println("DCNM Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("DCNM Protocol Handler: ERR : "+cnfe.getMessage());
+                }
+                try
+                {
+                    Class.forName("org.smallfoot.parser.dcnmsql.Handler");
+                    System.out.println("DCNM(SQL) Protocol Handler: OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("DCNM(SQL) Protocol Handler: ERR : "+cnfe.getMessage());
+                }
                 break;
 
             default:
