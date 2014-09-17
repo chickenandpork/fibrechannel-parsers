@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="120" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="120" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="126" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="121" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="121" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="127" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="127" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="122" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="122" bodyend="126"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="128" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="128" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
 <para><xrefsect id="jvmopt_1_jvmopt000002"><xreftitle>JVM Options</xreftitle><xrefdescription><para>bnapsql.teeCSVPipe: For diagnostic purposes, -Dbnapsql.teeCSVPipe causes the data collected from the BNA server to be dumped out in raw-form. This can be funneled back into a &quot;vict.jar --nickname=file.txt&quot; for re-parsing or repair</para></xrefdescription></xrefsect></para><para>For example: 1 java -Dbnapsql.teeCSVPipe=dump.txt -jar vict.jar <ndash/>nickname=bnapsql://server/ 2 java -jar vict.jar <ndash/>nickname=dump.txt</para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="128" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="128" bodyend="187"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="134" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="134" bodyend="193"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.InputStream</type>
@@ -87,7 +87,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="192" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="192" bodyend="195"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="198" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="198" bodyend="201"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -124,7 +124,7 @@
         <label>Runnable</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="119" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="118" bodyend="196"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="125" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="124" bodyend="202"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultSetPipe</scope><name>columnNumber</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultSetPipe</scope><name>getInputStream</name></member>

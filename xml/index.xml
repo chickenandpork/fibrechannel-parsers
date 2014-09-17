@@ -55,6 +55,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1aa90e232613bcc5abc359f1dfd9755e4a" kind="variable"><name>yyrule</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a8ddd6c0fce0f972519976a2c9ca1aadd" kind="variable"><name>ZONE</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1abb724776f23235ae5f3a3be5505b18bb" kind="variable"><name>ALIAS</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a51a80cdf90fbf1f9a6376820fa39f92b" kind="variable"><name>ALIZONESHOWCOMMAND</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1afa1bd945463851953be939c8793faf70" kind="variable"><name>ALPHANUM</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1aaad5529e606ecc0d1b9d999e10b586ef" kind="variable"><name>DEFINED</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a4cc50a8b35772de680ba99be3e9a6dcc" kind="variable"><name>EFFECTIVE</name></member>
