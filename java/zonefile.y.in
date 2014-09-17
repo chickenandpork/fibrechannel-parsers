@@ -94,6 +94,7 @@ Effective configuration:
 /* YACC Declarations */
 %token ZONE
 %token ALIAS
+%token ALIZONESHOWCOMMAND
 %token ALPHANUM
 %token DEFINED
 %token EFFECTIVE
@@ -107,9 +108,17 @@ Effective configuration:
 /* Grammar follows */
 %%
 input: /* empty string */
+ | input preamble
  | input DEFINED CONFIGURATION sectionDefined
  | input EFFECTIVE CONFIGURATION sectionEffective
  | input sectionEffective
+ ;
+
+preamble: alphanumstream '>' ALIZONESHOWCOMMAND
+ ;
+
+alphanumstream: /* empty */
+ | alphanumstream ALPHANUM { $$ = $1; }
  ;
 
 sectionEffective: /* empty */
@@ -193,6 +202,11 @@ itemlist: ALPHANUM { $$ = $1; }
 		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALIAS \"" + st.sval + "\"");
 		    return ALIAS;
 		}
+	        if ( (st.sval.equalsIgnoreCase("alishow")) || (st.sval.equalsIgnoreCase("zoneshow")) )
+		{
+		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:ALISHOW/ZONESHOW COMMAND \"" + st.sval + "\"");
+		    return ALIZONESHOWCOMMAND;
+		}
 	        if (st.sval.equalsIgnoreCase("cfg:"))
 		{
 		    if (verboseStringtokenizer) System.out.println("returning java.io.StreamTokenizer.TT_WORD:CFG \"" + st.sval + "\"");
@@ -246,6 +260,7 @@ itemlist: ALPHANUM { $$ = $1; }
 
 	    case ':':
 	    case ';':
+	    case '>':
 	        if (verboseStringtokenizer) System.out.println("returning anticipated char "+ tok + " \"" + (char) tok + "\"");
 		return tok;
 	}

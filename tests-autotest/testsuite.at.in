@@ -350,6 +350,54 @@ AT_CLEANUP()
 
 
 
+AT_SETUP(alishow Regression Putty Shows Command)
+
+AT_DATA([puttyShowsCommand.alishow], [SW12A:scott> alishow
+Defined configuration:
+ cfg:   SAN_CFG_A
+ cfg:   SAN_CFG_B
+ alias: NASMany_654321
+                10:00:00:00:c9:44:44:10; 10:00:00:00:c9:44:44:11
+                10:00:00:00:c9:44:44:20; 10:00:00:00:c9:44:44:21
+                10:00:00:00:c9:44:44:30; 10:00:00:00:c9:44:44:31
+])
+
+AT_CHECK([java -Ddebug.verboseAppendZone=AliShowZoneParser -Ddebug.verboseAddZone=AliShowZoneParser -Ddebug.dumpAliases=AliShowZoneParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.AliShowZoneParser < puttyShowsCommand.alishow], 0, [append: list.sval: 10:00:00:00:c9:44:44:31
+append: list.obj: NULL
+append: item.sval: 10:00:00:00:c9:44:44:30
+append: item.obj: NULL
+append: list.sval: NULL
+append: list.obj: java.util.Vector
+append: item.sval: 10:00:00:00:c9:44:44:21
+append: item.obj: NULL
+append: list.sval: NULL
+append: list.obj: java.util.Vector
+append: item.sval: 10:00:00:00:c9:44:44:20
+append: item.obj: NULL
+append: list.sval: NULL
+append: list.obj: java.util.Vector
+append: item.sval: 10:00:00:00:c9:44:44:11
+append: item.obj: NULL
+append: list.sval: NULL
+append: list.obj: java.util.Vector
+append: item.sval: 10:00:00:00:c9:44:44:10
+append: item.obj: NULL
+Parse results for AliShowZoneParser:
+Zones: 0
+Aliases: 1 (names with one or more WWPNs)
+Aliases: 6 (name/WWPN pairs)
+Alias: 10000000c9444410, NASMany_654321
+Alias: 10000000c9444411, NASMany_654321
+Alias: 10000000c9444420, NASMany_654321
+Alias: 10000000c9444421, NASMany_654321
+Alias: 10000000c9444430, NASMany_654321
+Alias: 10000000c9444431, NASMany_654321
+], [])
+
+AT_CLEANUP()
+
+
+
 AT_SETUP(Cisco device-alias Parser)
 dnl      -------------------------
 
