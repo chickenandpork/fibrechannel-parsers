@@ -1,0 +1,257 @@
+package org.smallfoot.parser;
+
+import gnu.getopt.Getopt;
+import gnu.getopt.LongOpt;
+import java.net.URL;
+import java.net.URLDecoder;
+import java.util.Vector;
+import org.smallfoot.parser.ssh.SSHURLConnection;
+
+/** @file */
+
+/**
+ * @page formats Compatible File Formats
+ */
+
+public class SSHCLI
+{
+    SSHURLConnection connection = null;
+
+    void checkHandlers(String u)
+    {
+	System.out.println("property java.protocol.handler.pkgs is " + System.getProperties().getProperty("java.protocol.handler.pkgs"));
+	if (null != u)
+	{
+	    String proto = u.split(":")[0];
+	    if (null == proto)
+	    {
+		System.out.println("url \""+u+"\" has no proto");
+	    }
+	    else
+	    {
+		System.out.println("url \""+u+"\" has proto \""+proto+"\"");
+		for (String s:System.getProperties().getProperty("java.protocol.handler.pkgs").split("\\|"))
+		{
+		    String c = s+"."+proto+".Handler";
+                try
+                {
+                    Class.forName(c);
+                    System.out.println("Handler \""+c+"\" OK");
+                }
+                catch (java.lang.ClassNotFoundException cnfe)
+                {
+                    System.out.println("Handler \""+c+"\"  Not Found (java.lang.ClassNotFoundException: "+cnfe.getMessage()+")");
+                }
+		}
+	    }
+	}
+    }
+
+    void _execCommand(String s, boolean dryrun)
+    {
+System.out.println("exec "+s+" dr: "+dryrun);
+	String command = null;
+
+System.out.println("nonproto "+s+" dr: "+dryrun+" matches: "+s.matches("[a-z]+://.*"));
+	if (s.matches("[a-z]+://.*"))
+	{
+System.out.println("hasproto "+s+" dr: "+dryrun);
+	    try
+	    {
+	    	URL x = new URL(s);
+	    	if (null != x)
+	    	{
+System.out.println("nonnull URL "+s+" dr: "+dryrun);
+	        connection = new SSHURLConnection(x);
+	        command = URLDecoder.decode(connection.command());
+	    	}
+	    	else
+	    	{
+System.out.println("null URL "+s+" dr: "+dryrun);
+	        command = URLDecoder.decode(s);
+	    	}
+	    }
+	    catch (java.net.MalformedURLException mue)
+	    {
+System.out.println("MUE: connect to "+s+": "+mue.getMessage());
+		if (null == connection)
+		{
+	    	    checkHandlers(s);
+		    return;
+		}
+	        command = URLDecoder.decode(s);
+	    }
+	}
+	else
+	    command = URLDecoder.decode(s);
+
+	if (null != connection)
+	{
+	    if (dryrun)
+		System.out.println("dryrun: connect to "+connection.server()+" and execute: \""+connection.command()+"\"");
+	    else
+		try
+		{
+		connection.exec(command);
+		}
+		catch (org.apache.commons.net.ssh.SSHException ce)
+		{
+		    System.err.println("Connection Exception (running \""+command+"\"): "+ce.getMessage());
+		}
+		catch (java.io.IOException ioe)
+		{
+		    System.err.println("I/O Exception (running \""+command+"\"): "+ioe.getMessage());
+		}
+		finally
+		{
+		    connection.disconnect();
+		}
+	}
+    }
+    
+
+
+    /**
+     * Collect in a single place the process to register protocol handlers.
+     *
+     * This function checks for current protocol handlers and adds the ones we bring to that list.  If no "java.protocol.handler.pkgs" exists, we simply provide one.  System Properties are overwritten in this process.
+     *
+     * as the number of handlers increases, we can make corresponding changes herein without consuming projects having to know or care about this.
+     *
+     * The format of "java.protocol.handler.pkgs" is typically described in java.net.URL(String,String,int,String)
+     * @see java.lang.System.setProperty(String,String)
+     */
+    public static void registerProtocols()
+    {
+        java.util.Properties p = System.getProperties();
+        /*
+                if ( (null == p.getProperty("jdbc.drivers")) || (1 > p.getProperty("jdbc.drivers").length()) )
+                    p.setProperty("jdbc.drivers","org.postgresql|com.mysql.jdbc|com.sybase.jdbc4.jdbc.SybDriver");
+                else
+                    p.setProperty("jdbc.drivers",p.getProperty("jdbc.drivers")+"|org.postgresql|com.mysql.jdbc|com.sybase.jdbc4.jdbc.SybDriver");
+        */
+
+        if ( (null == p.getProperty("java.protocol.handler.pkgs")) || (1 > p.getProperty("java.protocol.handler.pkgs").length()) )
+            p.setProperty("java.protocol.handler.pkgs","org.smallfoot.parser");
+        else
+            p.setProperty("java.protocol.handler.pkgs",p.getProperty("java.protocol.handler.pkgs")+"|org.smallfoot.parser");
+        System.setProperties(p);
+
+        //java.security.Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+    }
+
+    public SSHCLI() { registerProtocols(); }
+
+    /**
+     * Usage messages are useful to those of us with short memories as well (hey, I just need to add swap!)
+     *
+     * @param progname the name of the program (args[0]) to print on a usage message
+     */
+    static void usage(String progname)
+    {
+        System.out.println("Usage: "+progname+" -V|--version|-H|--help");
+        System.out.println("     : "+progname+" --test=<ssh command URL>");
+        System.out.println("     : "+progname+" --server=<ssh url> --test=<command>");
+
+        System.out.println("   ie: "+progname+" --test=ssh://scott:tiger@server.example.com/shutdown+-h+now");
+        System.out.println("   ie: "+progname+" --server=ssh://scott:tiger@server.example.com/ --test=shutdown+-h+now");
+
+        //System.out.println("drivers: "+System.getProperties().getProperty("jdbc.drivers"));
+        //System.out.println("handlers: "+System.getProperties().getProperty("java.protocol.handler.pkgs"));
+    }
+
+
+    /**
+     * Main function, as you can tell.
+     *
+     * this function merely parses the command-line to dispatch actions to the meat of the meal above.
+     * I'm using an actual GetOpt because, yes, I'm a UNIX/C hack, re-using 3-decades-old knowledge,
+     * but this also preserves both extensibility and the ability to use longopts in scripts as a
+     * way to self-document what the tool's doing.
+     *
+     * No real intelligence herein except the parse-and-redirect action.
+     *
+     * @param args as you'd expect, these are commandline arguments given when the jar is activated
+     */
+    public static void main(String args[])
+    {
+        Vector<LongOpt> options = new Vector(3,2);
+        java.util.Properties prop = System.getProperties();
+	SSHCLI m = new SSHCLI();
+
+        /**
+         * Always always ALWAYS provide a quick reference and a version output
+         *
+         * @cmdopt -H|--help Show a simple help screen as a reminder of options which are understood by the application
+         * @cmdopt @code java -jar @PACKAGE@.jar --help @endcode
+         *
+         * @cmdopt -V|--version Show the current release version for reference
+         * @cmdopt @code java -jar @PACKAGE@.jar --version
+         *  @VERSION@-@BUILDID@ @endcode
+         *
+         * @cmdopt -!|--check Run an internal check that dependent drivers are available and registered
+         */
+        options.add(new LongOpt("help", LongOpt.NO_ARGUMENT, null, 'H'));
+        options.add(new LongOpt("version", LongOpt.NO_ARGUMENT, null, 'V'));
+
+        options.add(new LongOpt("check", LongOpt.NO_ARGUMENT, null, '!'));
+        options.add(new LongOpt("checkhandler", LongOpt.OPTIONAL_ARGUMENT, null, '^'));
+
+        options.add(new LongOpt("test", LongOpt.REQUIRED_ARGUMENT, null, 't'));
+        options.add(new LongOpt("exec", LongOpt.REQUIRED_ARGUMENT, null, 'e'));
+
+        /*
+         * NOTE: the following two pieces of code react to a choice at compile-time to
+         * use extended getopt; only one of the next two likes is visible at the same
+         * time
+         */
+        /* *@DO_GETOPTJAR_TRUE@/        org.smallfoot.getopt.GetOpt     g = new org.smallfoot.getopt.GetOpt("SSHCLI", args, options);        /@DO_GETOPTJAR_TRUE@* */
+        /* *@DO_GETOPTJAR_FALSE@/       gnu.getopt.Getopt               g = new gnu.getopt.Getopt("SSHCLI", args, "HV!t:", options);        /@DO_GETOPTJAR_FALSE@* */
+
+        //m.registerProtocols();
+
+        int c;
+        while ((c = g.getopt()) != -1)
+        {
+            switch (c)
+            {
+            case 't': /* indicate what would be done for the given command in optarg */
+		m._execCommand(g.getOptarg(), /* dry-run? */ true);
+                break;
+
+            case 'e': /* execute a command */
+		m._execCommand(g.getOptarg(), /* dry-run? */ false);
+                break;
+
+            /*
+             * Follows is the "house-keeping": versions, usage, and the catch-all for bad options.
+             */
+            case 'V':
+            {
+                /*
+                 * NOTE: the following two pieces of code react as do the instantation of variable "g" above
+                 */
+
+                /* *@DO_GETOPTJAR_TRUE@/        System.out.println(g.consistentVersion("@VERSION@-@BUILDID@")); /@DO_GETOPTJAR_TRUE@* */
+                /* *@DO_GETOPTJAR_FALSE@/       System.out.println("@VERSION@-@BUILDID@");                      /@DO_GETOPTJAR_FALSE@* */
+                return;
+            }
+
+            case '!':   // check that external driver munginess loads
+                System.out.println("OK");
+		break;
+
+            case '^':   // check that external driver loads for a specific protocol
+		    m.checkHandlers(g.getOptarg());
+		break;
+
+            default:
+            case '?':
+            case 'H':
+                /* *@DO_GETOPTJAR_TRUE@/        FCParser.usage(g.progname());                   /@DO_GETOPTJAR_TRUE@* */
+                /* *@DO_GETOPTJAR_FALSE@/       FCParser.usage("SSHCLI");                     /@DO_GETOPTJAR_FALSE@* */
+                break;
+	    }
+	}
+    }
+}

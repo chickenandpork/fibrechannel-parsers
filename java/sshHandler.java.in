@@ -1,0 +1,33 @@
+/* smallfoot.org is owned by allan.clark */
+package org.smallfoot.parser.ssh;
+
+import java.net.URL;
+import java.net.URLConnection;
+import java.net.URLStreamHandler;
+//import java.io.*;
+//import java.util.*;
+//import javax.activation.DataSource;
+//import javax.activation.URLDataSource;
+//import gnu.getopt.Getopt;
+//import gnu.getopt.LongOpt;
+
+/**
+ * @file
+ *
+ * This class has a specific naming scheme which causes it to be used when Java needs to open a connection to a URL of the form ssh://user:pass@server/ by passing control over to the proper class.
+ */
+
+public class Handler extends URLStreamHandler
+{
+    /**
+     * openConnection(URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a proper connection with prototype-matching call and parameters
+     *
+     * @return populated connection as org.smallfoot.parser.ssh.SSHURLConnection()
+     * @param url URL to which we need to connect
+     */
+    protected URLConnection openConnection(URL url)
+    {
+        return new SSHURLConnection(url);
+    }
+}
+

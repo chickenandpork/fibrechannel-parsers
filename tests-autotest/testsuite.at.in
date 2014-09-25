@@ -25,6 +25,9 @@ DCNM Protocol Handler: OK
 DCNM(SQL) Protocol Handler: OK
 ], [stderr])
 
+AT_CHECK([java -cp $abs_top_builddir/convjars/@PACKAGE@.jar org.smallfoot.parser.SSHCLI --version|awk '{print $1,$2,$3}'], 0, [SSHCLI version @VERSION@-@BUILDID@
+], [stderr])
+
 AT_CLEANUP()
 
 

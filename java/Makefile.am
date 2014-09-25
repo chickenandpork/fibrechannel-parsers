@@ -2,6 +2,7 @@ nodist_java_JAVA  = $(srcdir)/Alias4Parser.java $(srcdir)/FCParser.java $(srcdir
 nodist_java_JAVA += $(srcdir)/ParserTee.java $(srcdir)/ZPAliasEntry.java $(srcdir)/ZPFCAliasEntry.java
 nodist_java_JAVA += $(srcdir)/ZPZoneEntry.java $(srcdir)/ZoneParser.java $(srcdir)/ZoneParserVal.java
 nodist_java_JAVA += $(srcdir)/ZoneParserI.java
+nodist_java_JAVA += $(srcdir)/SSHCLI.java $(abs_builddir)/ssh/Handler.java $(srcdir)/SSHURLConnection.java
 nodist_java_JAVA += $(srcdir)/Select2Sample.java
 nodist_java_JAVA += AliShowZoneParser.java
 nodist_java_JAVA += BNAZoneParser.java
@@ -25,13 +26,14 @@ EXTRA_DIST += ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java
 EXTRA_DIST += ZPZoneEntry.java ZoneParser.java ZoneParserVal.java
 EXTRA_DIST += ZoneParserI.java
 EXTRA_DIST += Select2Sample.java
+EXTRA_DIST += SSHCLI.java.in
 EXTRA_DIST += zonefile.y bnazone.y version.java.in HandlerPrototype.javaproto
 CONFIG_CLEAN_FILES =  @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java Alias4Parser.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java
 CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.java version.java
 CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y showzone2.y zonefile.y vw4invalid.y
 CONFIG_CLEAN_FILES += BNAPURLConnection.java DCNMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java OSMURLConnection.java
 
-AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar
+AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar:$(top_builddir)/depjars/commons-net-ssh.jar:$(top_builddir)/depjars/bcpg-jdk15on-149.jar:$(top_builddir)/depjars/bcpkix-jdk15on-149.jar:$(top_builddir)/depjars/bcprov-jdk15on-149.jar
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES = FCParser.java
