@@ -1,6 +1,7 @@
 depjardir = @datadir@/@PACKAGE@/jars
 dist_depjar_DATA = $(JARS)
 
+dist_data_DATA = jconn2-5.5.jar mysql-connector-java-5.1.14.jar postgresql-9.1-902.jdbc4.jar
 
 EXTRA_DIST = $(nodist_pkgdata_JAVA)
 CONFIG_CLEAN_FILES = $(JARS)
