@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::ssh::Handler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">URLStreamHandler</basecompoundref>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>URLConnection</type>
+        <definition>URLConnection openConnection</definition>
+        <argsstring>(URL url)</argsstring>
+        <name>openConnection</name>
+        <param>
+          <type>URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kindref="member">openConnection(URL)</ref> overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a proper connection with prototype-matching call and parameters </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>populated connection as <ref refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" kindref="compound">org.smallfoot.parser.ssh.SSHURLConnection()</ref> </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL to which we need to connect </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" line="28" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" bodystart="28" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="326">
+        <label>URLStreamHandler</label>
+      </node>
+      <node id="325">
+        <label>Handler</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler"/>
+        <childnode refid="326" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="328">
+        <label>URLStreamHandler</label>
+      </node>
+      <node id="327">
+        <label>Handler</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler"/>
+        <childnode refid="328" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" line="21" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" bodystart="20" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ssh::Handler</scope><name>openConnection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

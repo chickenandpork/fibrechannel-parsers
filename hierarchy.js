@@ -15,6 +15,7 @@ var hierarchy =
       [ "OSMURLConnection.ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe.html", null ]
     ] ],
     [ "Select2Sample", "classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample.html", null ],
+    [ "SSHCLI", "classorg_1_1smallfoot_1_1parser_1_1SSHCLI.html", null ],
     [ "TeeInputStream", null, [
       [ "ParserTee", "classorg_1_1smallfoot_1_1parser_1_1ParserTee.html", null ]
     ] ],
@@ -38,7 +39,8 @@ var hierarchy =
       [ "OSMURLConnection", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection.html", [
         [ "MSDWHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection.html", null ],
         [ "DWHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection.html", null ]
-      ] ]
+      ] ],
+      [ "SSHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection.html", null ]
     ] ],
     [ "version", "classorg_1_1smallfoot_1_1parser_1_1version.html", null ],
     [ "ZoneParserVal", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal.html", null ],
@@ -53,6 +55,7 @@ var hierarchy =
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler.html", null ],
-      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler.html", null ]
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler.html", null ],
+      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler.html", null ]
     ] ]
 ];

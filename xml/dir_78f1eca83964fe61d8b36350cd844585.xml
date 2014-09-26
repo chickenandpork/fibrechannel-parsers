@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_78f1eca83964fe61d8b36350cd844585" kind="dir">
+    <compoundname>java/ssh</compoundname>
+    <innerfile refid="ssh_2Handler_8java">Handler.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/ssh/"/>
+  </compounddef>
+</doxygen>

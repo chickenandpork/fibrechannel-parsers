@@ -1,0 +1,324 @@
+\section{S\+S\+H\+U\+R\+L\+Connection Class Reference}
+\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection}\index{S\+S\+H\+U\+R\+L\+Connection@{S\+S\+H\+U\+R\+L\+Connection}}
+
+
+Inheritance diagram for S\+S\+H\+U\+R\+L\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for S\+S\+H\+U\+R\+L\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf S\+S\+H\+U\+R\+L\+Connection} (java.\+net.\+U\+R\+L url)
+\item 
+void {\bf set\+Request\+Header} (String name, String value)
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's no change we want to accept yet. \end{DoxyCompactList}\item 
+void {\bf set\+Content\+Type} (String ignored)
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's no change we want to accept yet. \end{DoxyCompactList}\item 
+java.\+io.\+Output\+Stream {\bf get\+Output\+Stream} ()
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's nothing to send us. \end{DoxyCompactList}\item 
+void {\bf connect} ()
+\item 
+void {\bf exec} (String s)  throws S\+S\+H\+Exception, I\+O\+Exception     
+\item 
+void {\bf disconnect} ()
+\item 
+String {\bf server} ()
+\item 
+String {\bf command} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf S\+S\+H\+U\+R\+L\+Connection} {\bf open\+Connection} (java.\+net.\+U\+R\+L url)
+\begin{DoxyCompactList}\small\item\em open\+Connection(java.\+net.\+U\+R\+L) overrides java.\+net.\+U\+R\+L\+Stream\+Handler.\+open\+Connection(\+U\+R\+L) by wrapping a pgsql client. \end{DoxyCompactList}\item 
+void {\bf \+\_\+connect} ()  throws I\+O\+Exception, Socket\+Exception, User\+Auth\+Exception     
+\item 
+Session {\bf \+\_\+session} ()  throws Connection\+Exception, I\+O\+Exception, Transport\+Exception     
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+S\+H\+Client {\bf client}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 33 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!S\+S\+H\+U\+R\+L\+Connection@{S\+S\+H\+U\+R\+L\+Connection}}
+\index{S\+S\+H\+U\+R\+L\+Connection@{S\+S\+H\+U\+R\+L\+Connection}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{S\+S\+H\+U\+R\+L\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+H\+U\+R\+L\+Connection} (
+\begin{DoxyParamCaption}
+\item[{java.\+net.\+U\+R\+L}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a03dd6080401a7e3f81cc7ea98be0e9e9}
+
+
+Definition at line 37 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!\+\_\+connect@{\+\_\+connect}}
+\index{\+\_\+connect@{\+\_\+connect}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{\+\_\+connect}]{\setlength{\rightskip}{0pt plus 5cm}void \+\_\+connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception, Socket\+Exception, User\+Auth\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_aa4711ecd1154e59ce7dabf904ed49c16}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Socket\+Exception} & from client.\+connect() \\
+\hline
+{\em User\+Auth\+Exception} & from client.\+auth\+Password(...) \\
+\hline
+{\em I\+O\+Exception} & from client.\+connect() \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 104 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+Referenced by S\+S\+H\+U\+R\+L\+Connection.\+\_\+session(), and S\+S\+H\+U\+R\+L\+Connection.\+connect().
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!\+\_\+session@{\+\_\+session}}
+\index{\+\_\+session@{\+\_\+session}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{\+\_\+session}]{\setlength{\rightskip}{0pt plus 5cm}Session \+\_\+session (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Connection\+Exception, I\+O\+Exception, Transport\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a0a6cc494e46f52b56f10362524e74496}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & from client.\+connect() in \doxyref{\+\_\+connect()}{p.}{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_aa4711ecd1154e59ce7dabf904ed49c16} \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 128 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+References S\+S\+H\+U\+R\+L\+Connection.\+\_\+connect().
+
+
+
+Referenced by S\+S\+H\+U\+R\+L\+Connection.\+exec().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a0a6cc494e46f52b56f10362524e74496_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!command@{command}}
+\index{command@{command}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{command}]{\setlength{\rightskip}{0pt plus 5cm}String command (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_afd5aca5710671c827da3c15fe9301b6d}
+
+
+Definition at line 154 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!connect@{connect}}
+\index{connect@{connect}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a1396bf9b5defe9fa844a63b5cd40ac0e}
+
+
+Definition at line 90 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+References S\+S\+H\+U\+R\+L\+Connection.\+\_\+connect().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a1396bf9b5defe9fa844a63b5cd40ac0e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{disconnect}]{\setlength{\rightskip}{0pt plus 5cm}void disconnect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a960705de531a20389fb29928d43258c3}
+
+
+Definition at line 141 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!exec@{exec}}
+\index{exec@{exec}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{exec}]{\setlength{\rightskip}{0pt plus 5cm}void exec (
+\begin{DoxyParamCaption}
+\item[{String}]{s}
+\end{DoxyParamCaption}
+) throws S\+S\+H\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_af2b580734225ddbdaedca5601f2a58f3}
+
+
+Definition at line 136 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+References S\+S\+H\+U\+R\+L\+Connection.\+\_\+session().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_af2b580734225ddbdaedca5601f2a58f3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!get\+Output\+Stream@{get\+Output\+Stream}}
+\index{get\+Output\+Stream@{get\+Output\+Stream}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{get\+Output\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}java.\+io.\+Output\+Stream get\+Output\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a4170f42681efaf92df5c2030f5298905}
+
+
+Stubbed, because there's nothing to send us. 
+
+
+
+Definition at line 73 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!open\+Connection@{open\+Connection}}
+\index{open\+Connection@{open\+Connection}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{open\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+H\+U\+R\+L\+Connection} open\+Connection (
+\begin{DoxyParamCaption}
+\item[{java.\+net.\+U\+R\+L}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a7b0dab8c83390bb2153effb21a76165d}
+
+
+open\+Connection(java.\+net.\+U\+R\+L) overrides java.\+net.\+U\+R\+L\+Stream\+Handler.\+open\+Connection(\+U\+R\+L) by wrapping a pgsql client. 
+
+\begin{DoxyReturn}{Returns}
+populated connection as org.\+smallfoot.\+dcnmsql.\+S\+S\+H\+U\+R\+L\+Connection(\+Connection) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L to connect to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 85 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!server@{server}}
+\index{server@{server}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{server}]{\setlength{\rightskip}{0pt plus 5cm}String server (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_ae27bfcfb9f9afbc62d4382c7e88717b0}
+
+
+Definition at line 152 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!set\+Content\+Type@{set\+Content\+Type}}
+\index{set\+Content\+Type@{set\+Content\+Type}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{set\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{String}]{ignored}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_aa608e58be69b0389d82d846a25091d36}
+
+
+Stubbed, because there's no change we want to accept yet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ignored} & ignored \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!set\+Request\+Header@{set\+Request\+Header}}
+\index{set\+Request\+Header@{set\+Request\+Header}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{set\+Request\+Header}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Request\+Header (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_ac2f45f32dfcaef408189cabb2644841c}
+
+
+Stubbed, because there's no change we want to accept yet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & ignored \\
+\hline
+{\em value} & ignored \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Field Documentation}
+\index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!client@{client}}
+\index{client@{client}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
+\subsubsection[{client}]{\setlength{\rightskip}{0pt plus 5cm}S\+S\+H\+Client client\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a303d55bce78d2db7330dbadff8401d7a}
+
+
+Definition at line 35 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+java/{\bf S\+S\+H\+U\+R\+L\+Connection.\+java}\end{DoxyCompactItemize}

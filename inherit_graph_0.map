@@ -2,6 +2,7 @@
 <area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection.html" title="BNAPURLConnection" alt="" coords="173,5,325,30"/>
 <area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection.html" title="DCNMURLConnection" alt="" coords="172,54,327,79"/>
 <area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection.html" title="OSMURLConnection" alt="" coords="176,103,322,129"/>
-<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection.html" title="MSDWHURLConnection" alt="" coords="376,78,544,103"/>
-<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection.html" title="DWHURLConnection" alt="" coords="386,127,534,153"/>
+<area shape="rect" id="node7" href="$classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection.html" title="SSHURLConnection" alt="" coords="178,153,321,178"/>
+<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection.html" title="MSDWHURLConnection" alt="" coords="376,79,544,105"/>
+<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection.html" title="DWHURLConnection" alt="" coords="386,129,534,154"/>
 </map>

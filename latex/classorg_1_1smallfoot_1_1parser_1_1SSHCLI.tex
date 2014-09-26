@@ -1,0 +1,178 @@
+\section{S\+S\+H\+C\+L\+I Class Reference}
+\label{classorg_1_1smallfoot_1_1parser_1_1SSHCLI}\index{S\+S\+H\+C\+L\+I@{S\+S\+H\+C\+L\+I}}
+
+
+Collaboration diagram for S\+S\+H\+C\+L\+I\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classorg_1_1smallfoot_1_1parser_1_1SSHCLI__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf exec} (String s, boolean dryrun)
+\item 
+{\bf S\+S\+H\+C\+L\+I} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void {\bf register\+Protocols} ()
+\begin{DoxyCompactList}\small\item\em Collect in a single place the process to register protocol handlers. \end{DoxyCompactList}\item 
+static void {\bf main} (String args[$\,$])
+\begin{DoxyCompactList}\small\item\em Main function, as you can tell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file S\+S\+H\+C\+L\+I.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I@{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I}!S\+S\+H\+C\+L\+I@{S\+S\+H\+C\+L\+I}}
+\index{S\+S\+H\+C\+L\+I@{S\+S\+H\+C\+L\+I}!org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I@{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I}}
+\subsubsection[{S\+S\+H\+C\+L\+I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+S\+H\+C\+L\+I} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1SSHCLI_a53499c1d4a23ab8a0b628e3da735ce4e}
+
+
+Definition at line 145 of file S\+S\+H\+C\+L\+I.\+java.
+
+
+
+References S\+S\+H\+C\+L\+I.\+register\+Protocols().
+
+
+
+Referenced by S\+S\+H\+C\+L\+I.\+main().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{classorg_1_1smallfoot_1_1parser_1_1SSHCLI_a53499c1d4a23ab8a0b628e3da735ce4e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I@{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I}!exec@{exec}}
+\index{exec@{exec}!org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I@{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I}}
+\subsubsection[{exec}]{\setlength{\rightskip}{0pt plus 5cm}void exec (
+\begin{DoxyParamCaption}
+\item[{String}]{s, }
+\item[{boolean}]{dryrun}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1SSHCLI_af1d72beee29abf6498b85fa1188bb8d1}
+
+
+Definition at line 51 of file S\+S\+H\+C\+L\+I.\+java.
+
+\index{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I@{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I}!main@{main}}
+\index{main@{main}!org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I@{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void main (
+\begin{DoxyParamCaption}
+\item[{String}]{args[$\,$]}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1SSHCLI_a75988cf84fc6ee7a2ebff36e363021aa}
+
+
+Main function, as you can tell. 
+
+this function merely parses the command-\/line to dispatch actions to the meat of the meal above. I'm using an actual Get\+Opt because, yes, I'm a U\+N\+I\+X/\+C hack, re-\/using 3-\/decades-\/old knowledge, but this also preserves both extensibility and the ability to use longopts in scripts as a way to self-\/document what the tool's doing.
+
+No real intelligence herein except the parse-\/and-\/redirect action.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & as you'd expect, these are commandline arguments given when the jar is activated \\
+\hline
+\end{DoxyParams}
+Always always A\+L\+W\+A\+Y\+S provide a quick reference and a version output
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/\+H$\vert$--help Show a simple help screen as a reminder of options which are understood by the application \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+java -jar fcparsers.jar --help 
+\end{DoxyCode}
+\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/\+V$\vert$--version Show the current release version for reference \end{DoxyRefDesc}
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]
+\begin{DoxyCode}
+java -jar fcparsers.jar --version
+0.3-166 
+\end{DoxyCode}
+\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{Commandline Options}
+\item[{\bf Commandline Options}]-\/!$\vert$--check Run an internal check that dependent drivers are available and registered \end{DoxyRefDesc}
+
+
+Definition at line 178 of file S\+S\+H\+C\+L\+I.\+java.
+
+
+
+References S\+S\+H\+C\+L\+I.\+S\+S\+H\+C\+L\+I().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classorg_1_1smallfoot_1_1parser_1_1SSHCLI_a75988cf84fc6ee7a2ebff36e363021aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I@{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I}!register\+Protocols@{register\+Protocols}}
+\index{register\+Protocols@{register\+Protocols}!org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I@{org\+::smallfoot\+::parser\+::\+S\+S\+H\+C\+L\+I}}
+\subsubsection[{register\+Protocols}]{\setlength{\rightskip}{0pt plus 5cm}static void register\+Protocols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1SSHCLI_a9f16799674af7de1e539f0b54dbea72a}
+
+
+Collect in a single place the process to register protocol handlers. 
+
+This function checks for current protocol handlers and adds the ones we bring to that list. If no \char`\"{}java.\+protocol.\+handler.\+pkgs\char`\"{} exists, we simply provide one. System Properties are overwritten in this process.
+
+as the number of handlers increases, we can make corresponding changes herein without consuming projects having to know or care about this.
+
+The format of \char`\"{}java.\+protocol.\+handler.\+pkgs\char`\"{} is typically described in java.\+net.\+U\+R\+L(\+String,\+String,int,\+String) \begin{DoxySeeAlso}{See also}
+java.\+lang.\+System.\+set\+Property(\+String,\+String) 
+\end{DoxySeeAlso}
+
+
+Definition at line 126 of file S\+S\+H\+C\+L\+I.\+java.
+
+
+
+Referenced by S\+S\+H\+C\+L\+I.\+S\+S\+H\+C\+L\+I().
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+java/{\bf S\+S\+H\+C\+L\+I.\+java}\end{DoxyCompactItemize}

@@ -2,6 +2,7 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
 [
     [ "bnapsql", "dir_c4905ed7953f88dc206fb38741b9f54b.html", "dir_c4905ed7953f88dc206fb38741b9f54b" ],
     [ "genproto", "dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb.html", "dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb" ],
+    [ "ssh", "dir_78f1eca83964fe61d8b36350cd844585.html", "dir_78f1eca83964fe61d8b36350cd844585" ],
     [ "Alias4Parser.java", "Alias4Parser_8java.html", [
       [ "Alias4Parser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" ]
     ] ],
@@ -48,6 +49,12 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
     ] ],
     [ "ShowZoneParser.java", "ShowZoneParser_8java.html", [
       [ "ShowZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" ]
+    ] ],
+    [ "SSHCLI.java", "SSHCLI_8java.html", [
+      [ "SSHCLI", "classorg_1_1smallfoot_1_1parser_1_1SSHCLI.html", "classorg_1_1smallfoot_1_1parser_1_1SSHCLI" ]
+    ] ],
+    [ "SSHURLConnection.java", "SSHURLConnection_8java.html", [
+      [ "SSHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection.html", "classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" ]
     ] ],
     [ "version.java", "version_8java.html", [
       [ "version", "classorg_1_1smallfoot_1_1parser_1_1version.html", null ]

@@ -59,24 +59,24 @@
     <detaileddescription>
 <para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="318">
+      <node id="336">
         <label>ResultCSVPipe</label>
       </node>
-      <node id="317">
+      <node id="335">
         <label>MSDWHURLConnection.MSResultCSVPipe</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe"/>
-        <childnode refid="318" relation="public-inheritance">
+        <childnode refid="336" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="320">
+      <node id="338">
         <label>ResultCSVPipe</label>
       </node>
-      <node id="319">
+      <node id="337">
         <label>MSDWHURLConnection.MSResultCSVPipe</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe"/>
-        <childnode refid="320" relation="public-inheritance">
+        <childnode refid="338" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

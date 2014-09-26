@@ -10,8 +10,10 @@ var namespaceorg_1_1smallfoot_1_1parser =
     [ "msosmsql", "namespaceorg_1_1smallfoot_1_1parser_1_1msosmsql.html", "namespaceorg_1_1smallfoot_1_1parser_1_1msosmsql" ],
     [ "ocidwh", "namespaceorg_1_1smallfoot_1_1parser_1_1ocidwh.html", "namespaceorg_1_1smallfoot_1_1parser_1_1ocidwh" ],
     [ "osmsql", "namespaceorg_1_1smallfoot_1_1parser_1_1osmsql.html", "namespaceorg_1_1smallfoot_1_1parser_1_1osmsql" ],
+    [ "ssh", "namespaceorg_1_1smallfoot_1_1parser_1_1ssh.html", "namespaceorg_1_1smallfoot_1_1parser_1_1ssh" ],
     [ "zone", "namespaceorg_1_1smallfoot_1_1parser_1_1zone.html", "namespaceorg_1_1smallfoot_1_1parser_1_1zone" ],
     [ "FCParser", "classorg_1_1smallfoot_1_1parser_1_1FCParser.html", null ],
     [ "ParserTee", "classorg_1_1smallfoot_1_1parser_1_1ParserTee.html", "classorg_1_1smallfoot_1_1parser_1_1ParserTee" ],
+    [ "SSHCLI", "classorg_1_1smallfoot_1_1parser_1_1SSHCLI.html", "classorg_1_1smallfoot_1_1parser_1_1SSHCLI" ],
     [ "version", "classorg_1_1smallfoot_1_1parser_1_1version.html", null ]
 ];

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="SSHURLConnection" kind="page">
+    <compoundname>SSHURLConnection</compoundname>
+    <title>SSH Query</title>
+    <detaileddescription>
+<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" kindref="compound">SSHURLConnection</ref> batch-executes a command via SSH </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

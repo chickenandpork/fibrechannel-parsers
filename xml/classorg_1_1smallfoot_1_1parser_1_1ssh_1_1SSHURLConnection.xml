@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::ssh::SSHURLConnection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">URLConnection</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a303d55bce78d2db7330dbadff8401d7a" prot="protected" static="no" mutable="no">
+        <type>SSHClient</type>
+        <definition>SSHClient client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="35" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1adaf456b2ae21274f05ed32d31cbec7fa" prot="private" static="no" mutable="no">
+        <type>Session</type>
+        <definition>Session _session</definition>
+        <argsstring></argsstring>
+        <name>_session</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="124" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a03dd6080401a7e3f81cc7ea98be0e9e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SSHURLConnection</definition>
+        <argsstring>(java.net.URL url)</argsstring>
+        <name>SSHURLConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="37" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="37" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setRequestHeader</definition>
+        <argsstring>(String name, String value)</argsstring>
+        <name>setRequestHeader</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Stubbed, because there&apos;s no change we want to accept yet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="61" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setContentType</definition>
+        <argsstring>(String ignored)</argsstring>
+        <name>setContentType</name>
+        <param>
+          <type>String</type>
+          <declname>ignored</declname>
+        </param>
+        <briefdescription>
+<para>Stubbed, because there&apos;s no change we want to accept yet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ignored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="68" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.io.OutputStream</type>
+        <definition>java.io.OutputStream getOutputStream</definition>
+        <argsstring>()</argsstring>
+        <name>getOutputStream</name>
+        <briefdescription>
+<para>Stubbed, because there&apos;s nothing to send us. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="73" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="90" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="90" bodyend="97"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" compoundref="SSHURLConnection_8java" startline="104" endline="121">SSHURLConnection._connect</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1af2b580734225ddbdaedca5601f2a58f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void exec</definition>
+        <argsstring>(String s)</argsstring>
+        <name>exec</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <exceptions> throws SSHException, IOException     </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="136" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="136" bodyend="139"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a0a6cc494e46f52b56f10362524e74496" compoundref="SSHURLConnection_8java" startline="128" endline="134">SSHURLConnection._session</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a960705de531a20389fb29928d43258c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void disconnect</definition>
+        <argsstring>()</argsstring>
+        <name>disconnect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="141" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="141" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1ae27bfcfb9f9afbc62d4382c7e88717b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String server</definition>
+        <argsstring>()</argsstring>
+        <name>server</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="152" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="152" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1afd5aca5710671c827da3c15fe9301b6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String command</definition>
+        <argsstring>()</argsstring>
+        <name>command</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="154" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="154" bodyend="154"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a7b0dab8c83390bb2153effb21a76165d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" kindref="compound">SSHURLConnection</ref></type>
+        <definition>SSHURLConnection openConnection</definition>
+        <argsstring>(java.net.URL url)</argsstring>
+        <name>openConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>populated connection as org.smallfoot.dcnmsql.SSHURLConnection(Connection) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL to connect to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="85" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void _connect</definition>
+        <argsstring>()</argsstring>
+        <name>_connect</name>
+        <exceptions> throws IOException, SocketException, UserAuthException     </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>SocketException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from client.connect() </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>UserAuthException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from client.authPassword(...) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from client.connect() </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="104" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="104" bodyend="121"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a0a6cc494e46f52b56f10362524e74496" compoundref="SSHURLConnection_8java" startline="128" endline="134">SSHURLConnection._session</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="SSHURLConnection_8java" startline="90" endline="97">SSHURLConnection.connect</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a0a6cc494e46f52b56f10362524e74496" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Session</type>
+        <definition>Session _session</definition>
+        <argsstring>()</argsstring>
+        <name>_session</name>
+        <exceptions> throws ConnectionException, IOException, TransportException     </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>from client.connect() in <ref refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" kindref="member">_connect()</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="128" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="128" bodyend="134"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" compoundref="SSHURLConnection_8java" startline="104" endline="121">SSHURLConnection._connect</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1af2b580734225ddbdaedca5601f2a58f3" compoundref="SSHURLConnection_8java" startline="136" endline="139">SSHURLConnection.exec</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="436">
+        <label>URLConnection</label>
+      </node>
+      <node id="435">
+        <label>SSHURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection"/>
+        <childnode refid="436" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="439">
+        <label>SSHClient</label>
+      </node>
+      <node id="438">
+        <label>URLConnection</label>
+      </node>
+      <node id="437">
+        <label>SSHURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection"/>
+        <childnode refid="438" relation="public-inheritance">
+        </childnode>
+        <childnode refid="439" relation="usage">
+          <edgelabel>client</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="34" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="33" bodyend="155"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>_connect</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1adaf456b2ae21274f05ed32d31cbec7fa" prot="private" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>_session</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a0a6cc494e46f52b56f10362524e74496" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>_session</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a303d55bce78d2db7330dbadff8401d7a" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>client</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1afd5aca5710671c827da3c15fe9301b6d" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>command</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>connect</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a960705de531a20389fb29928d43258c3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>disconnect</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1af2b580734225ddbdaedca5601f2a58f3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>exec</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>getOutputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a7b0dab8c83390bb2153effb21a76165d" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>openConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1ae27bfcfb9f9afbc62d4382c7e88717b0" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>server</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>setContentType</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>setRequestHeader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a03dd6080401a7e3f81cc7ea98be0e9e9" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>SSHURLConnection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

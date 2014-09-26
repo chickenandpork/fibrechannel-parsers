@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::SSHCLI</compoundname>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a60a52bdfd1de61bdcce4243f686c87c5" prot="package" static="no" mutable="no">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" kindref="compound">SSHURLConnection</ref></type>
+        <definition>SSHURLConnection connection</definition>
+        <argsstring></argsstring>
+        <name>connection</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="19" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1ae194547756a5cd259beab8bb7e6d6742" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void checkHandlers</definition>
+        <argsstring>(String u)</argsstring>
+        <name>checkHandlers</name>
+        <param>
+          <type>String</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="21" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="21" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1af47e14d82b2c2c175e2bb5f4be9c5a03" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void _execCommand</definition>
+        <argsstring>(String s, boolean dryrun)</argsstring>
+        <name>_execCommand</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>dryrun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="56" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="56" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1af1d72beee29abf6498b85fa1188bb8d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void exec</definition>
+        <argsstring>(String s, boolean dryrun)</argsstring>
+        <name>exec</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>dryrun</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="51" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SSHCLI</definition>
+        <argsstring>()</argsstring>
+        <name>SSHCLI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="145" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="145" bodyend="145"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a9f16799674af7de1e539f0b54dbea72a" compoundref="SSHCLI_8java" startline="126" endline="143">SSHCLI.registerProtocols</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="SSHCLI_8java" startline="178" endline="258">SSHCLI.main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a9f16799674af7de1e539f0b54dbea72a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void registerProtocols</definition>
+        <argsstring>()</argsstring>
+        <name>registerProtocols</name>
+        <briefdescription>
+<para>Collect in a single place the process to register protocol handlers. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function checks for current protocol handlers and adds the ones we bring to that list. If no &quot;java.protocol.handler.pkgs&quot; exists, we simply provide one. System Properties are overwritten in this process.</para><para>as the number of handlers increases, we can make corresponding changes herein without consuming projects having to know or care about this.</para><para>The format of &quot;java.protocol.handler.pkgs&quot; is typically described in java.net.URL(String,String,int,String) <simplesect kind="see"><para>java.lang.System.setProperty(String,String) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="126" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="126" bodyend="143"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" compoundref="SSHCLI_8java" startline="145" endline="145">SSHCLI.SSHCLI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void main</definition>
+        <argsstring>(String args[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>String</type>
+          <declname>args</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>Main function, as you can tell. </para>        </briefdescription>
+        <detaileddescription>
+<para>this function merely parses the command-line to dispatch actions to the meat of the meal above. I&apos;m using an actual GetOpt because, yes, I&apos;m a UNIX/C hack, re-using 3-decades-old knowledge, but this also preserves both extensibility and the ability to use longopts in scripts as a way to self-document what the tool&apos;s doing.</para><para>No real intelligence herein except the parse-and-redirect action.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>as you&apos;d expect, these are commandline arguments given when the jar is activated </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Always always ALWAYS provide a quick reference and a version output</para><para><xrefsect id="cmdopt_1_cmdopt000008"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-H|<ndash/>help Show a simple help screen as a reminder of options which are understood by the application </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000009"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--help<sp/></highlight></codeline>
+</programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000010"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-V|<ndash/>version Show the current release version for reference </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000011"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--version</highlight></codeline>
+<codeline><highlight class="normal">0.3-166<sp/></highlight></codeline>
+</programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000012"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-!|<ndash/>check Run an internal check that dependent drivers are available and registered </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="178" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="178" bodyend="258"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" compoundref="SSHCLI_8java" startline="145" endline="145">SSHCLI.SSHCLI</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a6995194e0af7dc5aa27034287b79dbf3" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void usage</definition>
+        <argsstring>(String progname)</argsstring>
+        <name>usage</name>
+        <param>
+          <type>String</type>
+          <declname>progname</declname>
+        </param>
+        <briefdescription>
+<para>Usage messages are useful to those of us with short memories as well (hey, I just need to add swap!) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>progname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the name of the program (args[0]) to print on a usage message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="152" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="152" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="431">
+        <label>SSHCLI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI"/>
+        <childnode refid="432" relation="usage">
+          <edgelabel>connection</edgelabel>
+        </childnode>
+      </node>
+      <node id="434">
+        <label>SSHClient</label>
+      </node>
+      <node id="433">
+        <label>URLConnection</label>
+      </node>
+      <node id="432">
+        <label>SSHURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection"/>
+        <childnode refid="433" relation="public-inheritance">
+        </childnode>
+        <childnode refid="434" relation="usage">
+          <edgelabel>client</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="18" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="17" bodyend="259"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1af47e14d82b2c2c175e2bb5f4be9c5a03" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>_execCommand</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1ae194547756a5cd259beab8bb7e6d6742" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>checkHandlers</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a60a52bdfd1de61bdcce4243f686c87c5" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>connection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1af1d72beee29abf6498b85fa1188bb8d1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>exec</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>main</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a9f16799674af7de1e539f0b54dbea72a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>registerProtocols</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>SSHCLI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a6995194e0af7dc5aa27034287b79dbf3" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>usage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

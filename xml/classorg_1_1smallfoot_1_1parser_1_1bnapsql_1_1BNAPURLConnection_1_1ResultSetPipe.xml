@@ -95,32 +95,32 @@
     <detaileddescription>
 <para>More reinforcement of the layers discussed in ResultCSVPipe but maybe a bit closer to streams of datablocks? </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="382">
+      <node id="394">
         <label>BNAPURLConnection.ResultSetPipe</label>
-        <childnode refid="383" relation="public-inheritance">
+        <childnode refid="395" relation="public-inheritance">
         </childnode>
-        <childnode refid="384" relation="public-inheritance">
+        <childnode refid="396" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="383">
+      <node id="395">
         <label>PipedOutputStream</label>
       </node>
-      <node id="384">
+      <node id="396">
         <label>Runnable</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="385">
+      <node id="397">
         <label>BNAPURLConnection.ResultSetPipe</label>
-        <childnode refid="386" relation="public-inheritance">
+        <childnode refid="398" relation="public-inheritance">
         </childnode>
-        <childnode refid="387" relation="public-inheritance">
+        <childnode refid="399" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="386">
+      <node id="398">
         <label>PipedOutputStream</label>
       </node>
-      <node id="387">
+      <node id="399">
         <label>Runnable</label>
       </node>
     </collaborationgraph>

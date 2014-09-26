@@ -4,6 +4,7 @@
     <compoundname>java</compoundname>
     <innerdir refid="dir_c4905ed7953f88dc206fb38741b9f54b">java/bnapsql</innerdir>
     <innerdir refid="dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb">java/genproto</innerdir>
+    <innerdir refid="dir_78f1eca83964fe61d8b36350cd844585">java/ssh</innerdir>
     <innerfile refid="Alias4Parser_8java">Alias4Parser.java</innerfile>
     <innerfile refid="AliShowZoneParser_8java">AliShowZoneParser.java</innerfile>
     <innerfile refid="BNAPURLConnection_8java">BNAPURLConnection.java</innerfile>
@@ -19,6 +20,8 @@
     <innerfile refid="Select2Sample_8java">Select2Sample.java</innerfile>
     <innerfile refid="ShowZone2Parser_8java">ShowZone2Parser.java</innerfile>
     <innerfile refid="ShowZoneParser_8java">ShowZoneParser.java</innerfile>
+    <innerfile refid="SSHCLI_8java">SSHCLI.java</innerfile>
+    <innerfile refid="SSHURLConnection_8java">SSHURLConnection.java</innerfile>
     <innerfile refid="version_8java">version.java</innerfile>
     <innerfile refid="VW4InvalidAddedParser_8java">VW4InvalidAddedParser.java</innerfile>
     <innerfile refid="ZoneParser_8java">ZoneParser.java</innerfile>

@@ -521,96 +521,96 @@
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000007"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpItems</bold> (values: Aliases, reservedAliases) can be used to tell most parsers to dump out additional results directly for diagnostics. For example, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref> can track post-remove aliases in the mapping &quot;reservedAliases&quot;</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000008"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpItems=reservedAliases<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000009"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAddAlias</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000010"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAddZone</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000011"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAppendZone</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000012"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.yystate</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see the debug information from inside the LALR state machine itself. This might give some insight as to why some parse attempts are failing, or how the state-machine needs to be extended to accommodate more situations. </para></xrefdescription></xrefsect></para>    </detaileddescription>
     <inheritancegraph>
-      <node id="444">
+      <node id="472">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="448">
+      <node id="476">
         <label>ShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="447">
+      <node id="475">
         <label>ShowZone2Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="439">
+      <node id="467">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="440" relation="public-inheritance">
+        <childnode refid="468" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="446">
+      <node id="474">
         <label>NicknameParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="449">
+      <node id="477">
         <label>VW4InvalidAddedParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="441">
+      <node id="469">
         <label>Thread</label>
       </node>
-      <node id="440">
+      <node id="468">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="441" relation="public-inheritance">
+        <childnode refid="469" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="442">
+      <node id="470">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="445">
+      <node id="473">
         <label>DeviceAliasParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="443">
+      <node id="471">
         <label>AliShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser"/>
-        <childnode refid="439" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="450">
+      <node id="478">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="451" relation="public-inheritance">
+        <childnode refid="479" relation="public-inheritance">
         </childnode>
-        <childnode refid="453" relation="usage">
+        <childnode refid="481" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="454" relation="usage">
+        <childnode refid="482" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="454">
+      <node id="482">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="453">
+      <node id="481">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="452">
+      <node id="480">
         <label>Thread</label>
       </node>
-      <node id="451">
+      <node id="479">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="452" relation="public-inheritance">
+        <childnode refid="480" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

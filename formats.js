@@ -10,5 +10,6 @@ var formats =
     [ "NetApp OCI Database", "OSMURLConnection.html", null ],
     [ "Cisco \"show zone\"", "ShowZone2Parser.html", null ],
     [ "Cisco \"show zone\"", "ShowZoneParser.html", null ],
+    [ "SSH Query", "SSHURLConnection.html", null ],
     [ "VirtualWisdom4 Validation Errors", "VW4InvalidAdded.html", null ]
 ];

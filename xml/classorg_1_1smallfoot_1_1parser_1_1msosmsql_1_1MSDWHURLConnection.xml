@@ -68,36 +68,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="312">
+      <node id="330">
         <label>OSMURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection"/>
-        <childnode refid="313" relation="public-inheritance">
+        <childnode refid="331" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="313">
+      <node id="331">
         <label>URLConnection</label>
       </node>
-      <node id="311">
+      <node id="329">
         <label>MSDWHURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection"/>
-        <childnode refid="312" relation="public-inheritance">
+        <childnode refid="330" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="315">
+      <node id="333">
         <label>OSMURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection"/>
-        <childnode refid="316" relation="public-inheritance">
+        <childnode refid="334" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="316">
+      <node id="334">
         <label>URLConnection</label>
       </node>
-      <node id="314">
+      <node id="332">
         <label>MSDWHURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection"/>
-        <childnode refid="315" relation="public-inheritance">
+        <childnode refid="333" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
