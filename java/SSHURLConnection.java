@@ -143,7 +143,7 @@ public class SSHURLConnection extends java.net.URLConnection
 	try
 	{
  	    client.getConnection().join();
- 	    client.disconnect();
+ 	    if (client.isConnected()) client.disconnect();
 	}
 	catch (java.lang.InterruptedException ie) { System.err.println("Interrupted: "+ie.getMessage()); }
 	catch (java.io.IOException ioe) { System.err.println("I/O Exception disconnecting: "+ioe.getMessage()); }

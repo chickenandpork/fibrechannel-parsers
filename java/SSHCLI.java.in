@@ -5,6 +5,7 @@ import gnu.getopt.LongOpt;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.util.Vector;
+import org.apache.commons.net.ssh.SSHException;
 import org.smallfoot.parser.ssh.SSHURLConnection;
 
 /** @file */
@@ -47,33 +48,32 @@ public class SSHCLI
 	}
     }
 
+    public void exec(String s, boolean dryrun)
+    {
+	_execCommand(s, dryrun);
+    }
+
     void _execCommand(String s, boolean dryrun)
     {
-System.out.println("exec "+s+" dr: "+dryrun);
 	String command = null;
 
-System.out.println("nonproto "+s+" dr: "+dryrun+" matches: "+s.matches("[a-z]+://.*"));
 	if (s.matches("[a-z]+://.*"))
 	{
-System.out.println("hasproto "+s+" dr: "+dryrun);
 	    try
 	    {
 	    	URL x = new URL(s);
 	    	if (null != x)
 	    	{
-System.out.println("nonnull URL "+s+" dr: "+dryrun);
 	        connection = new SSHURLConnection(x);
 	        command = URLDecoder.decode(connection.command());
 	    	}
 	    	else
 	    	{
-System.out.println("null URL "+s+" dr: "+dryrun);
 	        command = URLDecoder.decode(s);
 	    	}
 	    }
 	    catch (java.net.MalformedURLException mue)
 	    {
-System.out.println("MUE: connect to "+s+": "+mue.getMessage());
 		if (null == connection)
 		{
 	    	    checkHandlers(s);
@@ -92,15 +92,17 @@ System.out.println("MUE: connect to "+s+": "+mue.getMessage());
 	    else
 		try
 		{
-		connection.exec(command);
+		    connection.exec(command);
 		}
-		catch (org.apache.commons.net.ssh.SSHException ce)
+		catch (SSHException se)
 		{
-		    System.err.println("Connection Exception (running \""+command+"\"): "+ce.getMessage());
+		    connection.disconnect();
+		    System.err.println("SSH Connection Exception (running \""+command+"\"): "+se.getMessage());
 		}
 		catch (java.io.IOException ioe)
 		{
-		    System.err.println("I/O Exception (running \""+command+"\"): "+ioe.getMessage());
+		    connection.disconnect();
+		    System.err.println("I/O Exception: "+ioe.getMessage());
 		}
 		finally
 		{
