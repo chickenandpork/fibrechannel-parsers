@@ -192,25 +192,58 @@ AC_ARG_WITH(userbnatestcase,
 AC_SUBST([USERBNATESTCASE], ${USERBNATESTCASE})
 
 
-AC_ARG_WITH(commons-net-ssh,
-[AS_HELP_STRING([--with-commons-net-ssh],[Enable inclusion of a commons-net-ssh .jar; default=svn co and build])],
+AC_ARG_WITH(sshjar,
+[AS_HELP_STRING([--with-sshjar],[Enable inclusion of a sshjar .jar; default=svn co and build])],
 [
-AC_MSG_CHECKING([for commons-net-ssh.jar])
+AC_MSG_CHECKING([for ssh jar])
     case "$withval" in
-	"yes") WITH_COMMONSNETSSHJAR=$((locate commons-net-ssh.jar) | grep -v .workdir | head -1) ;;
-	"no")  WITH_COMMONSNETSSHJAR=build  ;;
-	*) WITH_COMMONSNETSSHJAR="$withval" ;;
+	"yes") WITH_SSHJAR=ltb-commons-net-ssh ;
+	    AC_MSG_RESULT([look-then-build commons-net-ssh])
+	    ;;
+	"no")  WITH_SSHJAR=build-commons-net-ssh ;
+	    AC_MSG_RESULT([build commons-net-ssh])
+	    ;;
+	*) WITH_SSHJAR=ltb-commons-net-ssh ;
+	    AC_MSG_RESULT([look-then-build commons-net-ssh])
+	    ;;
     esac
 ],
 [
-AC_MSG_CHECKING([for commons-net-ssh.jar])
-    WITH_COMMONSNETSSHJAR=$((locate commons-net-ssh.jar) | grep -v .workdir | head -1) ;
-    if test -z "${WITH_COMMONSNETSSHJAR}"; then WITH_COMMONSNETSSHJAR=build; fi
-AC_MSG_RESULT([${WITH_COMMONSNETSSHJAR}])
+AC_MSG_CHECKING([for ssh jar])
+WITH_SSHJAR=ltb-commons-net-ssh ;
+AC_MSG_RESULT([look-then-build commons-net-ssh])
 ])
-AM_CONDITIONAL(BUILD_COMMONSNETSSHJAR, test "$WITH_COMMONSNETSSHJAR" = build)
-AC_SUBST([COMMONSNETSSHJAR], ${WITH_COMMONSNETSSHJAR})
+if test x${WITH_SSHJAR} = xltb-commons-net-ssh
+then
+    SSHJAR=$((locate commons-net-ssh.jar) | grep -v .workdir | head -1)
+    if test -n "${SSHJAR}"
+    then
+	WITH_SSHJAR=build-commons-net-ssh
+    fi
+fi
 
+if test x${WITH_SSHJAR} = xltb-net-schmizz-sshj
+then
+    SSHJAR=$((locate net-schmizz-sshj.jar) | grep -v .workdir | head -1)
+    if test -n "${SSHJAR}"
+    then
+	WITH_SSHJAR=build-net-schmizz-sshj
+    fi
+fi
+
+AM_CONDITIONAL(BUILD_COMMONSNETSSHJAR, test "$WITH_SSHJAR" = build-commons-net-ssh)
+AM_CONDITIONAL(BUILD_NETSCHMIZZSSHJJAR, test "$WITH_SSHJAR" = build-net-schmizz-sshj)
+case ${WITH_SSHJAR} in
+    *-commons-net-ssh)
+	SSHJAR=commons-net-ssh.jar ;;
+    *-net-schmizz-sshj)
+	SSHJAR=net-schmizz-sshj.jar ;;
+    *)
+	SSHJAR=net-schmizz-sshj.jar ;;
+esac
+AC_SUBST([SSHJAR], ${SSHJAR})
+AC_MSG_CHECKING([    ssh jar])
+AC_MSG_RESULT([${SSHJAR} (${WITH_SSHJAR})])
 
 
 AC_ARG_WITH(sudopostmove,
