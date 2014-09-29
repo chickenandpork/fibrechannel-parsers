@@ -131,7 +131,6 @@ public class SSHURLConnection extends java.net.URLConnection
      */
     protected void _connect() throws IOException, SocketException, UserAuthException
     {
-System.out.println("_connect()");
 	if (! client.isConnected())
         {
             /**
