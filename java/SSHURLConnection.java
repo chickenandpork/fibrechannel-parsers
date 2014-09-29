@@ -89,6 +89,7 @@ public class SSHURLConnection extends java.net.URLConnection
 
     public void connect()
     {
+//System.out.println("connect()");
  	try
  	{
             _connect();
@@ -103,9 +104,10 @@ public class SSHURLConnection extends java.net.URLConnection
      */
     protected void _connect() throws IOException, SocketException, UserAuthException
     {
+//System.out.println("_connect()");
 	if (! client.isConnected())
         {
-	    client.connect(url.getHost());
+	    client.connect(url.getHost(),url.getPort());
             if (null != url.getUserInfo())
             {
 	        String user = null, pass = null;
@@ -115,6 +117,17 @@ public class SSHURLConnection extends java.net.URLConnection
                     user = a[0];
                 if (2 <= (java.lang.reflect.Array.getLength(a)))
                     pass = a[1];
+        	/**
+	         * @jvmopt <b>debug.dumpSSHAuthInfo</b>
+	         * (values: true, false)
+	         * can be used to dump out the User/Pass Authentication info before the client connects to the remote server.  Note that this can cause plaintext revelation of private credential info
+	         *
+	         * @jvmopt
+	         * @code java -Ddebug.dumpSSHAuthInfo=true -jar fcparser.jar -N ...  @endcode
+	         */
+        	if (false != Boolean.parseBoolean(System.getProperties().getProperty("debug.dumpSSHAuthInfo")))
+            System.out.println("running with: u ["+user+"] p ["+pass+"]");
+
  	        client.authPassword(user, pass);
 	    }
 	}
@@ -127,6 +140,7 @@ public class SSHURLConnection extends java.net.URLConnection
      */
     protected Session _session() throws ConnectionException, IOException, TransportException
     {
+//System.out.println("_session()");
 	_connect();
 	if (null == _session) { _session = client.startSession(); }
 

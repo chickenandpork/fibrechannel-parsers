@@ -55,6 +55,16 @@ public class SSHCLI
 
     void _execCommand(String s, boolean dryrun)
     {
+	/**
+	 * @jvmopt <b>debug.dumpSSHExecCommand</b>
+	 * (values: true, false)
+	 * can be used to dump out the command to run before the SSH client connects to the remote server.  Note that this can cause plaintext revelation of private credential info
+	 *
+	 * @jvmopt
+	 * @code java -Ddebug.dumpSSHExecCommand=true -jar fcparser.jar -N ...  @endcode
+	 */
+	if (false != Boolean.parseBoolean(System.getProperties().getProperty("debug.dumpSSHExecCommand")))
+	    System.out.println("running with: ["+s+"]");
 	String command = null;
 
 	if (s.matches("[a-z]+://.*"))
