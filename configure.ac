@@ -203,20 +203,20 @@ AC_MSG_CHECKING([for ssh jar])
 	"no")  WITH_SSHJAR=build-commons-net-ssh ;
 	    AC_MSG_RESULT([build commons-net-ssh])
 	    ;;
-	*) WITH_SSHJAR=ltb-commons-net-ssh ;
-	    AC_MSG_RESULT([look-then-build commons-net-ssh])
+	*) WITH_SSHJAR=ltb-net-schmizz-sshj
+	    AC_MSG_RESULT([look-then-build net-schmizz-sshj])
 	    ;;
     esac
 ],
 [
 AC_MSG_CHECKING([for ssh jar])
-WITH_SSHJAR=ltb-commons-net-ssh ;
-AC_MSG_RESULT([look-then-build commons-net-ssh])
+WITH_SSHJAR=ltb-net-schmizz-sshj ;
+AC_MSG_RESULT([default: look-then-build net-schmizz-sshj])
 ])
 if test x${WITH_SSHJAR} = xltb-commons-net-ssh
 then
     SSHJAR=$((locate commons-net-ssh.jar) | grep -v .workdir | head -1)
-    if test -n "${SSHJAR}"
+    if test -z "${SSHJAR}"
     then
 	WITH_SSHJAR=build-commons-net-ssh
     fi
@@ -225,13 +225,15 @@ fi
 if test x${WITH_SSHJAR} = xltb-net-schmizz-sshj
 then
     SSHJAR=$((locate net-schmizz-sshj.jar) | grep -v .workdir | head -1)
-    if test -n "${SSHJAR}"
+    if test -z "${SSHJAR}"
     then
 	WITH_SSHJAR=build-net-schmizz-sshj
     fi
 fi
 
 AM_CONDITIONAL(BUILD_COMMONSNETSSHJAR, test "$WITH_SSHJAR" = build-commons-net-ssh)
+AM_CONDITIONAL(DO_COMMONSNETSSHJAR, test $(echo "$WITH_SSHJAR"|cut -d - -f2-11) = commons-net-ssh)
+AM_CONDITIONAL(DO_NETSCHMIZZSSHJJAR, test $(echo "$WITH_SSHJAR"|cut -d - -f2-11) = net-schmizz-sshj)
 AM_CONDITIONAL(BUILD_NETSCHMIZZSSHJJAR, test "$WITH_SSHJAR" = build-net-schmizz-sshj)
 case ${WITH_SSHJAR} in
     *-commons-net-ssh)
@@ -270,6 +272,7 @@ AC_CONFIG_FILES(Makefile
   java/BNAPURLConnection.java java/DWHURLConnection.java java/MSDWHURLConnection.java java/OSMURLConnection.java java/DCNMURLConnection.java
   java/FCParser.java
   java/SSHCLI.java java/ssh/Handler.java:java/sshHandler.java.in
+  java/SSHURLConnection.java
   java/version.java
   tests-autotest/Makefile tests-autotest/atlocal tests-autotest/testsuite.at
 )

@@ -33,7 +33,7 @@ CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.jav
 CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y showzone2.y zonefile.y vw4invalid.y
 CONFIG_CLEAN_FILES += BNAPURLConnection.java DCNMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java OSMURLConnection.java
 
-AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar:$(top_builddir)/depjars/commons-net-ssh.jar:$(top_builddir)/depjars/bcpg-jdk15on-149.jar:$(top_builddir)/depjars/bcpkix-jdk15on-149.jar:$(top_builddir)/depjars/bcprov-jdk15on-149.jar
+AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar:$(top_builddir)/depjars/ssh.jar:$(top_builddir)/depjars/bcpg-jdk15on-149.jar:$(top_builddir)/depjars/bcpkix-jdk15on-149.jar:$(top_builddir)/depjars/bcprov-jdk15on-149.jar
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES = FCParser.java

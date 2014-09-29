@@ -29,5 +29,7 @@ public class Handler extends URLStreamHandler
     {
         return new SSHURLConnection(url);
     }
+
+    protected int getDefaultPort() { return 22; }
 }
 

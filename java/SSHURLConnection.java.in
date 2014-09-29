@@ -9,8 +9,10 @@ package org.smallfoot.parser.ssh;
 //import gnu.getopt.LongOpt;
 import java.io.IOException;
 import java.net.SocketException;
+import java.net.URL;
 import java.net.URLDecoder;
 import java.security.PublicKey;
+/* *@DO_COMMONSNETSSHJAR_TRUE@/        
 import org.apache.commons.net.ssh.SSHClient;
 import org.apache.commons.net.ssh.connection.ConnectionException;
 import org.apache.commons.net.ssh.connection.Session;
@@ -18,6 +20,17 @@ import org.apache.commons.net.ssh.transport.TransportException;
 import org.apache.commons.net.ssh.userauth.UserAuthException;
 import org.apache.commons.net.ssh.SSHException;
 import org.apache.commons.net.ssh.HostKeyVerifier;
+/@DO_COMMONSNETSSHJAR_TRUE@* */
+
+/* *@DO_NETSCHMIZZSSHJJAR_TRUE@/       
+import net.schmizz.sshj.SSHClient;
+import net.schmizz.sshj.common.SSHException;
+import net.schmizz.sshj.connection.ConnectionException;
+import net.schmizz.sshj.connection.channel.direct.Session;
+import net.schmizz.sshj.transport.TransportException;
+import net.schmizz.sshj.transport.verification.HostKeyVerifier;
+import net.schmizz.sshj.userauth.UserAuthException;
+/@DO_NETSCHMIZZSSHJJAR_TRUE@* */
 
 /**
  * @file
@@ -37,6 +50,16 @@ public class SSHURLConnection extends java.net.URLConnection
     public SSHURLConnection(java.net.URL url)
     {
         super(url);
+
+	/* I'm finding that the default port number is never checked in ssh.Handler */
+	if (0 > this.url.getPort())
+	try {
+	    this.url = new URL(url.getProtocol()+"://"+url.getUserInfo()+"@"+url.getHost()+":22/"+url.getPath());
+	} catch (java.net.MalformedURLException mue) {
+	    //System.out.println("mue in :"+url.getProtocol()+"://"+url.getUserInfo()+"@"+url.getHost()+":22/"+url.getPath());
+	}
+	//System.out.println("new SSHURLConnection with: "+this.url.toString());
+
 	client = new SSHClient();
 	//client.initUserKnownHosts();
 	//if (url.getPort() != client.DEFAULT_PORT)
@@ -44,6 +67,10 @@ public class SSHURLConnection extends java.net.URLConnection
 
         client.addHostKeyVerifier( new HostKeyVerifier()
         {
+            public boolean verify(String hostname, int port, PublicKey key)
+            {
+                return true;
+            }
             public boolean verify(String hostname, PublicKey key)
             {
                 return true;
@@ -104,9 +131,19 @@ public class SSHURLConnection extends java.net.URLConnection
      */
     protected void _connect() throws IOException, SocketException, UserAuthException
     {
-//System.out.println("_connect()");
+System.out.println("_connect()");
 	if (! client.isConnected())
         {
+            /**
+	     * @jvmopt <b>debug.dumpSSHPreConnect</b>
+	     * (values: true, false)
+	     * can be used to dump out the User/Pass Authentication info before the client connects to the remote server.  Note that this can cause plaintext revelation of private credential info
+	     *
+	     * @jvmopt
+	     * @code java -Ddebug.dumpSSHPreConnect=true -jar fcparser.jar -N ...  @endcode
+	     */
+	    if (false != Boolean.parseBoolean(System.getProperties().getProperty("debug.dumpSSHPreConnect")))
+                System.out.println("_connect() to: h ["+url.getHost()+"] p ["+url.getPort()+"]");
 	    client.connect(url.getHost(),url.getPort());
             if (null != url.getUserInfo())
             {
@@ -149,7 +186,7 @@ public class SSHURLConnection extends java.net.URLConnection
 
     public void exec(String s) throws SSHException, IOException
     {
-	_session().exec((null == s ? URLDecoder.decode(url.getPath().replaceFirst("^/","")) : s));
+	_session().exec((null == s ? URLDecoder.decode(url.getPath().replaceFirst("^/","")) : s.replaceFirst("^/","")));
     }
 
     public void disconnect()

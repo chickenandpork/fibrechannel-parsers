@@ -5,7 +5,8 @@ import gnu.getopt.LongOpt;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.util.Vector;
-import org.apache.commons.net.ssh.SSHException;
+/* *@DO_COMMONSNETSSHJAR_TRUE@/  	import org.apache.commons.net.ssh.SSHException;	/@DO_COMMONSNETSSHJAR_TRUE@* */
+/* *@DO_NETSCHMIZZSSHJJAR_TRUE@/  	import net.schmizz.sshj.common.SSHException;	/@DO_NETSCHMIZZSSHJJAR_TRUE@* */
 import org.smallfoot.parser.ssh.SSHURLConnection;
 
 /** @file */
@@ -149,7 +150,13 @@ public class SSHCLI
             p.setProperty("java.protocol.handler.pkgs",p.getProperty("java.protocol.handler.pkgs")+"|org.smallfoot.parser");
         System.setProperties(p);
 
-        //java.security.Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+	/**
+	 * commons.net.ssh seems to fall apart when addProvider() is used -- registering
+	 * a dupe and crapping-the-bed -- but net.schmizz.sshj needs this
+	 */
+	/* *@DO_NETSCHMIZZSSHJJAR_TRUE@/
+            //java.security.Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
+	/@DO_NETSCHMIZZSSHJJAR_TRUE@* */
     }
 
     public SSHCLI() { registerProtocols(); }

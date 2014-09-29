@@ -70,7 +70,7 @@ jzlib-1.1.2.jar: jzlib-1.1.2.zip
 	(cd $$(basename $(@F) .jar)-bld && jar cf ../$(@F) com)
 
 
-JARS += commons-net-ssh.jar
+JARS += ssh.jar
 
 if BUILD_COMMONSNETSSHJAR
 #dnl Apache License-2.0
@@ -82,18 +82,30 @@ commons-net-ssh.jar: slf4j-api-1.7.5.jar jzlib-1.1.2.jar bcpkix-jdk15on-149.jar 
 else
 if BUILD_NETSCHMIZZSSHJJAR
 #dnl Apache License-2.0
-https://codeload.github.com/hierynomus/sshj/zip/master
-commons-net-ssh.jar: 
+
+net-schmizz-sshj-src.tar:
 	test \! -f $${TMPDIR-/tmp}/$(@F) || jar tf $${TMPDIR-/tmp}/$(@F) >/dev/null || rm $${TMPDIR-/tmp}/$(@F)
 	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
 	test -f $@ || wget -O $@ https://codeload.github.com/hierynomus/sshj/zip/master || curl -o $@ https://codeload.github.com/hierynomus/sshj/zip/master
 	test \! -f $@ || jar tf $@ >/dev/null || rm $@
-	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
-else
-commons-net-ssh.jar: @COMMONSNETSSHJAR@
+
+junit.jar:
+	test \! -f $${TMPDIR-/tmp}/$(@F) || jar tf $${TMPDIR-/tmp}/$(@F) >/dev/null || rm $${TMPDIR-/tmp}/$(@F)
+	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
+	test -f $@ || wget -O $@ http://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11.jar || curl -Lo $@ http://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11.jar
+	test \! -f $@ || jar tf $@ >/dev/null || rm $@
+
+net-schmizz-sshj.jar: net-schmizz-sshj-src.tar junit.jar slf4j-api-1.7.5.jar jzlib-1.1.2.jar bcpkix-jdk15on-149.jar bcprov-jdk15on-149.jar bcpg-jdk15on-149.jar
+	test -d $$(basename $(@F) .jar) && rm -fr $$(basename $(@F) .jar)/* || true
+	test -d $$(basename $(@F) .jar) || mkdir -p $$(basename $(@F) .jar)
+	cat $^ | (cd $$(basename $(@F) .jar) && tar xzf -)
+	$(JAVAC) -cp junit.jar:slf4j-api-1.7.5.jar:jzlib-1.1.2.jar:bcpkix-jdk15on-149.jar:bcprov-jdk15on-149.jar:$$(basename $(@F) .jar)/sshj-master/src/main/java -d $$(basename $(@F) .jar) $$(find $$(basename $(@F) .jar)/sshj-master/src/main/java/net -name *.java)
+	(cd $$(basename $(@F) .jar) && jar cf ../$(@F) net)
+endif
+endif
+
+ssh.jar: @SSHJAR@
 	cp $< $@
-endif
-endif
 
 JARS += bcprov-jdk15on-149.jar bcpkix-jdk15on-149.jar bcpg-jdk15on-149.jar
 
