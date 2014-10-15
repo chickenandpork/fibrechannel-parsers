@@ -28,8 +28,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="37" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="37" bodyend="54"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6085cf44eb1e750084cff1666eeae8ba" compoundref="FCParser_8java" startline="97" endline="154">FCParser.openSource</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="38" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="38" bodyend="55"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6085cf44eb1e750084cff1666eeae8ba" compoundref="FCParser_8java" startline="98" endline="155">FCParser.openSource</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a9f16799674af7de1e539f0b54dbea72a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -43,8 +43,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="66" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="66" bodyend="83"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="296" endline="483">FCParser.main</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="67" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="67" bodyend="84"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="298" endline="485">FCParser.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6085cf44eb1e750084cff1666eeae8ba" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>InputStream</type>
@@ -92,9 +92,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="97" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="97" bodyend="154"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" compoundref="FCParser_8java" startline="37" endline="54">FCParser.openStream</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="296" endline="483">FCParser.main</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="98" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="98" bodyend="155"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a87eb2ebceee6e66dc59ed239d2220a56" compoundref="FCParser_8java" startline="38" endline="55">FCParser.openStream</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="298" endline="485">FCParser.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" kindref="compound">ZoneParser</ref></type>
@@ -153,10 +153,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="165" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="165" bodyend="263"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="166" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="166" bodyend="265"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ac04020e56b85b1d8b222f5e344924336">ZoneParser.aliasSize</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a6837faff1f96406f15225cf38c2186e9">ZoneParser.zoneSize</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="296" endline="483">FCParser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="298" endline="485">FCParser.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -184,17 +184,17 @@
 <para><verbatim>Always always ALWAYS provide a quick reference and a version output
 </verbatim></para><para><xrefsect id="cmdopt_1_cmdopt000001"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-H|<ndash/>help Show a simple help screen as a reminder of options which are understood by the application </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000002"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--help<sp/></highlight></codeline>
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000003"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-V|<ndash/>version Show the current release version for reference </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000004"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--version</highlight></codeline>
-<codeline><highlight class="normal">0.3-166<sp/></highlight></codeline>
+<codeline><highlight class="normal">0.3-177<sp/></highlight></codeline>
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000005"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-N|<ndash/>nickname={file/uri} Import nicknames by parsing a text stream from various sources </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000006"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal"><sp/>java<sp/>-jar<sp/>fcparsers.jar<sp/>--nickname=switch44.zoneshow</highlight></codeline>
 <codeline><highlight class="normal">Parse<sp/>results<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>AliShowZoneParser:</highlight></codeline>
 <codeline><highlight class="normal">Zones:<sp/>44</highlight></codeline>
 <codeline><highlight class="normal">Aliases:<sp/>112<sp/>(names<sp/>with<sp/>one<sp/>or<sp/>more<sp/>WWPNs)</highlight></codeline>
 <codeline><highlight class="normal">Aliases:<sp/>136<sp/>(name/WWPN<sp/>tuples)<sp/></highlight></codeline>
 </programlisting> In this example, a zone file was parsed by the AliShowZoneParser resulting in 112 nicknames; due to duplicate nicknames, there are actually 136 unique WWPN/alias tuples, which means that (136-112) 24 of the WWPNs have the same alias as other WWPNs</para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000007"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-!|<ndash/>check Run an internal check that dependent drivers are available and registered </para></xrefdescription></xrefsect></para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="296" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="296" bodyend="483"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="165" endline="263">FCParser.loadFile</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6085cf44eb1e750084cff1666eeae8ba" compoundref="FCParser_8java" startline="97" endline="154">FCParser.openSource</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a9f16799674af7de1e539f0b54dbea72a" compoundref="FCParser_8java" startline="66" endline="83">FCParser.registerProtocols</references>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="298" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="298" bodyend="485"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="166" endline="265">FCParser.loadFile</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6085cf44eb1e750084cff1666eeae8ba" compoundref="FCParser_8java" startline="98" endline="155">FCParser.openSource</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a9f16799674af7de1e539f0b54dbea72a" compoundref="FCParser_8java" startline="67" endline="84">FCParser.registerProtocols</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="123" endline="143">ZoneParser.summarize</references>
       </memberdef>
       </sectiondef>
@@ -222,14 +222,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="270" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="270" bodyend="280"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="272" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="272" bodyend="282"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="30" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="29" bodyend="485"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/FCParser.java" line="31" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/FCParser.java" bodystart="30" bodyend="487"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::FCParser</scope><name>loadFile</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::FCParser</scope><name>main</name></member>

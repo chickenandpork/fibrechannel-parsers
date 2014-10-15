@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-167</span>
+   &#160;<span id="projectnumber">0.3-177</span>
    </div>
   </td>
  </tr>
@@ -66,7 +66,13 @@ $(document).ready(function(){initNavTree('jvmopt.html','');});
 <div class="textblock"><dl class="reflist">
 <dt><a class="anchor" id="_jvmopt000001"></a>Global <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection.html#a0924d1107a459be632532ef34324494e">BNAPURLConnection.getInputStream</a>  ()</dt>
 <dd><b>debug.carleton</b>: For testing and additional info, -Ddebug.carleton causes the "old" query to be swapped with a pull from hba_target_info  </dd>
-<dt><a class="anchor" id="_jvmopt000003"></a>Class <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html">ZoneParserI</a>  </dt>
+<dt><a class="anchor" id="_jvmopt000005"></a>Global <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection.html#aa4711ecd1154e59ce7dabf904ed49c16">SSHURLConnection._connect</a>  ()</dt>
+<dd><p class="startdd"><b>debug.dumpSSHPreConnect</b> (values: true, false) can be used to dump out the User/Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info</p>
+<div class="fragment"><div class="line">java -Ddebug.dumpSSHPreConnect=<span class="keyword">true</span> -jar fcparser.jar -N ...  </div>
+</div><!-- fragment --> <p><b>debug.dumpSSHAuthInfo</b> (values: true, false) can be used to dump out the User/Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info</p>
+<div class="fragment"><div class="line">java -Ddebug.dumpSSHAuthInfo=<span class="keyword">true</span> -jar fcparser.jar -N ...  </div>
+</div><!-- fragment -->  </dd>
+<dt><a class="anchor" id="_jvmopt000009"></a>Class <a class="el" href="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html">ZoneParserI</a>  </dt>
 <dd><p class="startdd"><b>debug.verboseTokenizer</b> (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, NicknameParser, ShowZoneParser, VW4InvalidAddedParser) can be set to either "true", or to the name of a specific parser (ie ShowZoneParser) to cause the parser's tokenizing and returned tokens to be displayed. Of note: this will show when the parser sees a value it doesn't like, such as an improper symbol, word, or key term. This can be helpful in diagnosing why the parser gave up and/or the calling process didn't feel this parser's results were worth keeping or using. Alias4Parser and NicknameParser are not LALR-based but do give some indications by this option.</p>
 <div class="fragment"><div class="line">java -Ddebug.verboseTokenizer=NicknameParser -jar fcparser.jar -N ... </div>
 </div><!-- fragment --><p><b>debug.dumpAliases</b> (values: true, Alias4Parser, AliShowZoneParser, BNAZoneParser, DeviceAliasParser, NicknameParser, ShowZoneParser, VW4InvalidAddedParser) can be used to tell most parsers to dump out their results for diagnostics. Setting it to "true" would cause all to dump their results; setting to the name of a Parser (ie ShowZoneParser, VW4InvalidAddedParser, NicknameParser) would cause that individual parser to show its results. These names are the same names listed at the end of a parse attempt for convenience/aide-memoire.</p>
@@ -84,7 +90,7 @@ $(document).ready(function(){initNavTree('jvmopt.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 25 2014 20:32:37 for fcparsers by
+    <li class="footer">Generated on Wed Oct 15 2014 07:42:41 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -36,24 +36,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="310">
+      <node id="324">
         <label>URLStreamHandler</label>
       </node>
-      <node id="309">
+      <node id="323">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler"/>
-        <childnode refid="310" relation="public-inheritance">
+        <childnode refid="324" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="312">
+      <node id="326">
         <label>URLStreamHandler</label>
       </node>
-      <node id="311">
+      <node id="325">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler"/>
-        <childnode refid="312" relation="public-inheritance">
+        <childnode refid="326" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -56,6 +56,9 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
     [ "SSHURLConnection.java", "SSHURLConnection_8java.html", [
       [ "SSHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection.html", "classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" ]
     ] ],
+    [ "TSVParser.java", "TSVParser_8java.html", [
+      [ "TSVParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser" ]
+    ] ],
     [ "version.java", "version_8java.html", [
       [ "version", "classorg_1_1smallfoot_1_1parser_1_1version.html", null ]
     ] ],

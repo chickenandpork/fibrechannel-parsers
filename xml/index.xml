@@ -324,6 +324,7 @@
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler" kind="class"><name>org::smallfoot::parser::ssh::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" kind="class"><name>org::smallfoot::parser::msosmsql::MSDWHURLConnection</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a658c89e45145229c94d261bdbaa085b2" kind="function"><name>MSDWHURLConnection</name></member>
@@ -392,19 +393,19 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" kind="function"><name>ResultCSVPipe</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
   </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultSetPipe</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" kind="variable"><name>columnNumber</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" kind="function"><name>ResultSetPipe</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
-  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe" kind="class"><name>org::smallfoot::parser::dcnmsql::DCNMURLConnection::ResultSetPipe</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" kind="variable"><name>columnNumber</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" kind="function"><name>ResultSetPipe</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultSetPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" kind="variable"><name>columnNumber</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" kind="function"><name>ResultSetPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample" kind="class"><name>org::smallfoot::parser::boneheadbits::Select2Sample</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample_1ae4faf7ff4190d227357ef851490d7757" kind="function"><name>main</name></member>
@@ -584,6 +585,25 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a7b0dab8c83390bb2153effb21a76165d" kind="function"><name>openConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" kind="function"><name>_connect</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a0a6cc494e46f52b56f10362524e74496" kind="function"><name>_session</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser" kind="class"><name>org::smallfoot::parser::zone::TSVParser</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a4e1353cca944de55b1cff88ca87b23cd" kind="variable"><name>br</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a0dc8b05b3f25e59bc98f90dc8c64857c" kind="variable"><name>aliases</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5c6dc08d17828cc9d70bc64b4fb6bf38" kind="variable"><name>dupeStop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1acd46a0f826a276c736966f6193f717cc" kind="variable"><name>zpquiet</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a341bcf40e54fcdc15748aa1675957256" kind="variable"><name>colWWN</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a250553b93f729354b4125eeda5f9ffea" kind="variable"><name>colNickname</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5d68ab2a1eb8d2cf433b820917cdcf67" kind="function"><name>TSVParser</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a6c13d260cf71d0554f789c4641a9f18b" kind="function"><name>setDebug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1af52753f8f60f2d564d0bd84f665e7d2c" kind="function"><name>TSVParser</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a17bb9b86877d4493c7ad4ba284f7c945" kind="function"><name>zoneElements</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a083293963a3e77da41becf829be83aca" kind="function"><name>zoneSize</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1aa89f56e94a76b211df071f905e7288ae" kind="function"><name>setReader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a1631138fd08af051dc26686c00768ab3" kind="function"><name>aliasElements</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5c646608669073b5c31bb44626baa48f" kind="function"><name>aliasArray</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" kind="function"><name>aliasSize</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a9bc4ab801fe78c7087eea21e8fcf2953" kind="function"><name>addAlias</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1version" kind="class"><name>org::smallfoot::parser::version</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1version_1ae4faf7ff4190d227357ef851490d7757" kind="function"><name>main</name></member>
@@ -867,6 +887,8 @@
   <compound refid="SSHCLI_8java" kind="file"><name>SSHCLI.java</name>
   </compound>
   <compound refid="SSHURLConnection_8java" kind="file"><name>SSHURLConnection.java</name>
+  </compound>
+  <compound refid="TSVParser_8java" kind="file"><name>TSVParser.java</name>
   </compound>
   <compound refid="version_8java" kind="file"><name>version.java</name>
   </compound>

@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::zone::TSVParser</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" prot="public" virt="non-virtual">ZoneParserI</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a4e1353cca944de55b1cff88ca87b23cd" prot="package" static="no" mutable="no">
+        <type>BufferedReader</type>
+        <definition>BufferedReader br</definition>
+        <argsstring></argsstring>
+        <name>br</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="9" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a0dc8b05b3f25e59bc98f90dc8c64857c" prot="package" static="no" mutable="no">
+        <type>java.util.Vector&lt; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref> &gt;</type>
+        <definition>java.util.Vector&lt;ZPAliasEntry&gt; aliases</definition>
+        <argsstring></argsstring>
+        <name>aliases</name>
+        <initializer>= new java.util.Vector()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="10" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5c6dc08d17828cc9d70bc64b4fb6bf38" prot="package" static="no" mutable="no">
+        <type>java.util.HashSet&lt; String &gt;</type>
+        <definition>java.util.HashSet&lt;String&gt; dupeStop</definition>
+        <argsstring></argsstring>
+        <name>dupeStop</name>
+        <initializer>= new java.util.HashSet&lt;String&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="11" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1acd46a0f826a276c736966f6193f717cc" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean zpquiet</definition>
+        <argsstring></argsstring>
+        <name>zpquiet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="12" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a341bcf40e54fcdc15748aa1675957256" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int colWWN</definition>
+        <argsstring></argsstring>
+        <name>colWWN</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="14" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a250553b93f729354b4125eeda5f9ffea" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int colNickname</definition>
+        <argsstring></argsstring>
+        <name>colNickname</name>
+        <initializer>=1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="15" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5d68ab2a1eb8d2cf433b820917cdcf67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TSVParser</definition>
+        <argsstring>(java.util.Properties properties)</argsstring>
+        <name>TSVParser</name>
+        <param>
+          <type>java.util.Properties</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+<para>Create a parser, setting the debug to true or false. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>additional name-value pair collection </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="22" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDebug</definition>
+        <argsstring>(boolean debug)</argsstring>
+        <name>setDebug</name>
+        <param>
+          <type>boolean</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="33" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1af52753f8f60f2d564d0bd84f665e7d2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TSVParser</definition>
+        <argsstring>(InputStream in, boolean debugMe)</argsstring>
+        <name>TSVParser</name>
+        <param>
+          <type>InputStream</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>debugMe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="37" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a17bb9b86877d4493c7ad4ba284f7c945" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.util.Enumeration&lt; ZPZoneEntry &gt;</type>
+        <definition>java.util.Enumeration&lt;ZPZoneEntry&gt; zoneElements</definition>
+        <argsstring>()</argsstring>
+        <name>zoneElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="42" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a083293963a3e77da41becf829be83aca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int zoneSize</definition>
+        <argsstring>()</argsstring>
+        <name>zoneSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="47" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1aa89f56e94a76b211df071f905e7288ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setReader</definition>
+        <argsstring>(java.io.Reader is)</argsstring>
+        <name>setReader</name>
+        <param>
+          <type>java.io.Reader</type>
+          <declname>is</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="52" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a1631138fd08af051dc26686c00768ab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.util.Enumeration&lt; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref> &gt;</type>
+        <definition>java.util.Enumeration&lt;ZPAliasEntry&gt; aliasElements</definition>
+        <argsstring>()</argsstring>
+        <name>aliasElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="57" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5c646608669073b5c31bb44626baa48f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref>[]</type>
+        <definition>ZPAliasEntry [] aliasArray</definition>
+        <argsstring>()</argsstring>
+        <name>aliasArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="63" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int aliasSize</definition>
+        <argsstring>()</argsstring>
+        <name>aliasSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="68" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="81" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="81" bodyend="107"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a9bc4ab801fe78c7087eea21e8fcf2953" compoundref="TSVParser_8java" startline="74" endline="79">TSVParser.addAlias</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a9bc4ab801fe78c7087eea21e8fcf2953" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void addAlias</definition>
+        <argsstring>(String nick, String WWN)</argsstring>
+        <name>addAlias</name>
+        <param>
+          <type>String</type>
+          <declname>nick</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>WWN</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="74" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="74" bodyend="79"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a13a43e6d814de94978c515cb084873b1" compoundref="TSVParser_8java" startline="81" endline="107">TSVParser.run</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="455">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="457">
+        <label>Thread</label>
+      </node>
+      <node id="456">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="457" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>TSVParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser"/>
+        <childnode refid="455" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="465">
+        <label>BufferedReader</label>
+      </node>
+      <node id="459">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="460" relation="public-inheritance">
+        </childnode>
+        <childnode refid="462" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="463" relation="usage">
+          <edgelabel>zones</edgelabel>
+        </childnode>
+      </node>
+      <node id="463">
+        <label>Vector&lt; ZPZoneEntry &gt;</label>
+      </node>
+      <node id="462">
+        <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="461">
+        <label>Thread</label>
+      </node>
+      <node id="460">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="461" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>Vector&lt; org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="458">
+        <label>TSVParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+        <childnode refid="464" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>br</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/TSVParser.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/TSVParser.java" bodystart="7" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>_prop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a9bc4ab801fe78c7087eea21e8fcf2953" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a49f8902117520ae3cc27b7bddb370a0e" prot="package" virt="non-virtual" ambiguityscope="org::smallfoot::parser::zone::ZoneParserI."><scope>org::smallfoot::parser::zone::TSVParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab02480bb67091ad319f56a9dd13ea899" prot="package" virt="non-virtual" ambiguityscope="org::smallfoot::parser::zone::ZoneParserI."><scope>org::smallfoot::parser::zone::TSVParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a55d78812ef0e9e26eabc46c0269ec3ad" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0cfe7f047edd054bac3bc33e9b611afd" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a830731cb1af2631d89e512f38460be81" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5c646608669073b5c31bb44626baa48f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>aliasArray</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a1631138fd08af051dc26686c00768ab3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>aliasElements</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a0dc8b05b3f25e59bc98f90dc8c64857c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>aliases</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>aliasSize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ad9eac83891611fa5e2e983328603eb8a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>appendZoneAlphanum</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a4e1353cca944de55b1cff88ca87b23cd" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>br</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a5cb1996c3b0edb483631b6c82fd82608" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>checkProperty</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a250553b93f729354b4125eeda5f9ffea" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>colNickname</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a341bcf40e54fcdc15748aa1675957256" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>colWWN</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5c6dc08d17828cc9d70bc64b4fb6bf38" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>dupeStop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1af0a81691449a6211ef6b9ffc8b62bb0a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>items</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>setDebug</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1aa89f56e94a76b211df071f905e7288ae" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>setReader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>summarize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>testSummary</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5d68ab2a1eb8d2cf433b820917cdcf67" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>TSVParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1af52753f8f60f2d564d0bd84f665e7d2c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>TSVParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a17bb9b86877d4493c7ad4ba284f7c945" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>zoneElements</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a89f1cfcb18c2aaa76794a8ce060637fb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adc74e849472a0632eb0910b719acfa77" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a18c7e8b0a1166e23d1fc9605e4740ccc" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1abe50de6630cefa98b757505c1b5fda0b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1aab55b15bec7ad0340c51c26dca3b8dc6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adaa143b6f1a7f0df5fe512786c8d58a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a78ce415d9f6ed283bce24ee9f700cedb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a678cd3827f5f34241ba56702cd5663a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae2743a1693169cd3b5ebc8fcafa07c74" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1acc9e1015da0abae3030920bc213a20c6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab16d7753f7d4aa5e5674582e3daae58b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>zones</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a083293963a3e77da41becf829be83aca" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>zoneSize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1acd46a0f826a276c736966f6193f717cc" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::TSVParser</scope><name>zpquiet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

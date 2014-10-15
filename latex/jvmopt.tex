@@ -2,7 +2,23 @@
 \begin{DoxyRefList}
 \item[\label{jvmopt__jvmopt000001}%
 Global \doxyref{B\+N\+A\+P\+U\+R\+L\+Connection.get\+Input\+Stream}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_a0924d1107a459be632532ef34324494e} ()]{\bfseries debug.\+carleton}\+: For testing and additional info, -\/\+Ddebug.\+carleton causes the \char`\"{}old\char`\"{} query to be swapped with a pull from hba\+\_\+target\+\_\+info  
-\item[\label{jvmopt__jvmopt000003}%
+\item[\label{jvmopt__jvmopt000005}%
+Global \doxyref{S\+S\+H\+U\+R\+L\+Connection.\+\_\+connect}{p.}{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_aa4711ecd1154e59ce7dabf904ed49c16} ()]{\bfseries debug.\+dump\+S\+S\+H\+Pre\+Connect} (values\+: true, false) can be used to dump out the User/\+Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info
+
+
+\begin{DoxyCode}
+java -Ddebug.dumpSSHPreConnect=\textcolor{keyword}{true} -jar fcparser.jar -N ...  
+\end{DoxyCode}
+ 
+
+{\bfseries debug.\+dump\+S\+S\+H\+Auth\+Info} (values\+: true, false) can be used to dump out the User/\+Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info
+
+
+\begin{DoxyCode}
+java -Ddebug.dumpSSHAuthInfo=\textcolor{keyword}{true} -jar fcparser.jar -N ...  
+\end{DoxyCode}
+  
+\item[\label{jvmopt__jvmopt000009}%
 Class \doxyref{Zone\+Parser\+I}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI} ]{\bfseries debug.\+verbose\+Tokenizer} (values\+: true, Alias4\+Parser, Ali\+Show\+Zone\+Parser, B\+N\+A\+Zone\+Parser, Device\+Alias\+Parser, Nickname\+Parser, Show\+Zone\+Parser, V\+W4\+Invalid\+Added\+Parser) can be set to either \char`\"{}true\char`\"{}, or to the name of a specific parser (ie Show\+Zone\+Parser) to cause the parser's tokenizing and returned tokens to be displayed. Of note\+: this will show when the parser sees a value it doesn't like, such as an improper symbol, word, or key term. This can be helpful in diagnosing why the parser gave up and/or the calling process didn't feel this parser's results were worth keeping or using. Alias4\+Parser and Nickname\+Parser are not L\+A\+L\+R-\/based but do give some indications by this option.
 
 

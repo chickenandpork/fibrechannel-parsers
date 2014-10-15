@@ -2,8 +2,7 @@
 \label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection}\index{S\+S\+H\+U\+R\+L\+Connection@{S\+S\+H\+U\+R\+L\+Connection}}
 
 
-Inheritance diagram for S\+S\+H\+U\+R\+L\+Connection\+:
-\nopagebreak
+Inheritance diagram for S\+S\+H\+U\+R\+L\+Connection\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,8 +11,7 @@ Inheritance diagram for S\+S\+H\+U\+R\+L\+Connection\+:
 \end{figure}
 
 
-Collaboration diagram for S\+S\+H\+U\+R\+L\+Connection\+:
-\nopagebreak
+Collaboration diagram for S\+S\+H\+U\+R\+L\+Connection\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -60,7 +58,7 @@ S\+S\+H\+Client {\bf client}
 \subsection{Detailed Description}
 
 
-Definition at line 33 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 46 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -74,7 +72,7 @@ Definition at line 33 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a03dd6080401a7e3f81cc7ea98be0e9e9}
 
 
-Definition at line 37 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 50 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -95,9 +93,31 @@ Definition at line 37 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 {\em I\+O\+Exception} & from client.\+connect() \\
 \hline
 \end{DoxyExceptions}
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]{\bfseries debug.\+dump\+S\+S\+H\+Pre\+Connect} (values\+: true, false) can be used to dump out the User/\+Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info\end{DoxyRefDesc}
 
 
-Definition at line 104 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]
+\begin{DoxyCode}
+java -Ddebug.dumpSSHPreConnect=\textcolor{keyword}{true} -jar fcparser.jar -N ...  
+\end{DoxyCode}
+ \end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]{\bfseries debug.\+dump\+S\+S\+H\+Auth\+Info} (values\+: true, false) can be used to dump out the User/\+Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info\end{DoxyRefDesc}
+
+
+\begin{DoxyRefDesc}{J\+V\+M Options}
+\item[{\bf J\+V\+M Options}]
+\begin{DoxyCode}
+java -Ddebug.dumpSSHAuthInfo=\textcolor{keyword}{true} -jar fcparser.jar -N ...  
+\end{DoxyCode}
+ \end{DoxyRefDesc}
+
+
+Definition at line 132 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -117,7 +137,7 @@ Referenced by S\+S\+H\+U\+R\+L\+Connection.\+\_\+session(), and S\+S\+H\+U\+R\+L
 \end{DoxyExceptions}
 
 
-Definition at line 128 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 177 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -129,8 +149,7 @@ Referenced by S\+S\+H\+U\+R\+L\+Connection.\+exec().
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -148,7 +167,7 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_afd5aca5710671c827da3c15fe9301b6d}
 
 
-Definition at line 154 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 204 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!connect@{connect}}
 \index{connect@{connect}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
@@ -159,7 +178,7 @@ Definition at line 154 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a1396bf9b5defe9fa844a63b5cd40ac0e}
 
 
-Definition at line 90 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 117 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -167,8 +186,7 @@ References S\+S\+H\+U\+R\+L\+Connection.\+\_\+connect().
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -186,7 +204,7 @@ Here is the call graph for this function\+:
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a960705de531a20389fb29928d43258c3}
 
 
-Definition at line 141 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 191 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!exec@{exec}}
 \index{exec@{exec}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
@@ -197,7 +215,7 @@ Definition at line 141 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 ) throws S\+S\+H\+Exception, I\+O\+Exception\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_af2b580734225ddbdaedca5601f2a58f3}
 
 
-Definition at line 136 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 186 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -205,8 +223,7 @@ References S\+S\+H\+U\+R\+L\+Connection.\+\_\+session().
 
 
 
-Here is the call graph for this function\+:
-\nopagebreak
+Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -228,7 +245,7 @@ Stubbed, because there's nothing to send us.
 
 
 
-Definition at line 73 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 100 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!open\+Connection@{open\+Connection}}
 \index{open\+Connection@{open\+Connection}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
@@ -251,7 +268,7 @@ populated connection as org.\+smallfoot.\+dcnmsql.\+S\+S\+H\+U\+R\+L\+Connection
 \end{DoxyParams}
 
 
-Definition at line 85 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 112 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!server@{server}}
 \index{server@{server}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
@@ -262,7 +279,7 @@ Definition at line 85 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_ae27bfcfb9f9afbc62d4382c7e88717b0}
 
 
-Definition at line 152 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 202 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!set\+Content\+Type@{set\+Content\+Type}}
 \index{set\+Content\+Type@{set\+Content\+Type}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
@@ -282,7 +299,7 @@ Stubbed, because there's no change we want to accept yet.
 \end{DoxyParams}
 
 
-Definition at line 68 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 95 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}!set\+Request\+Header@{set\+Request\+Header}}
 \index{set\+Request\+Header@{set\+Request\+Header}!org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::ssh\+::\+S\+S\+H\+U\+R\+L\+Connection}}
@@ -305,7 +322,7 @@ Stubbed, because there's no change we want to accept yet.
 \end{DoxyParams}
 
 
-Definition at line 61 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 88 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -315,7 +332,7 @@ Definition at line 61 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 \subsubsection[{client}]{\setlength{\rightskip}{0pt plus 5cm}S\+S\+H\+Client client\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_a303d55bce78d2db7330dbadff8401d7a}
 
 
-Definition at line 35 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
+Definition at line 48 of file S\+S\+H\+U\+R\+L\+Connection.\+java.
 
 
 

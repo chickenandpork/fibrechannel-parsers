@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-167</span>
+   &#160;<span id="projectnumber">0.3-177</span>
    </div>
   </td>
  </tr>
@@ -78,15 +78,11 @@ $(document).ready(function(){initNavTree('classorg_1_1smallfoot_1_1parser_1_1ssh
 Inheritance diagram for SSHURLConnection:</div>
 <div class="dyncontent">
 <div class="center"><img src="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection__inherit__graph.png" border="0" usemap="#SSHURLConnection_inherit__map" alt="Inheritance graph"/></div>
-<map name="SSHURLConnection_inherit__map" id="SSHURLConnection_inherit__map">
-</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for SSHURLConnection:</div>
 <div class="dyncontent">
 <div class="center"><img src="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection__coll__graph.png" border="0" usemap="#SSHURLConnection_coll__map" alt="Collaboration graph"/></div>
-<map name="SSHURLConnection_coll__map" id="SSHURLConnection_coll__map">
-</map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -130,7 +126,7 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00033">33</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00046">46</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a03dd6080401a7e3f81cc7ea98be0e9e9"></a>
 <div class="memitem">
@@ -154,7 +150,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00037">37</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00050">50</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -187,10 +183,16 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000005">JVM Options:</a></b></dt><dd><b>debug.dumpSSHPreConnect</b> (values: true, false) can be used to dump out the User/Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info</dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000006">JVM Options:</a></b></dt><dd><div class="fragment"><div class="line">java -Ddebug.dumpSSHPreConnect=<span class="keyword">true</span> -jar fcparser.jar -N ...  </div>
+</div><!-- fragment --> </dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000007">JVM Options:</a></b></dt><dd><b>debug.dumpSSHAuthInfo</b> (values: true, false) can be used to dump out the User/Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info</dd></dl>
+<dl class="jvmopt"><dt><b><a class="el" href="jvmopt.html#_jvmopt000008">JVM Options:</a></b></dt><dd><div class="fragment"><div class="line">java -Ddebug.dumpSSHAuthInfo=<span class="keyword">true</span> -jar fcparser.jar -N ...  </div>
+</div><!-- fragment --> </dd></dl>
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00104">104</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00132">132</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
-<p>Referenced by <a class="el" href="SSHURLConnection_8java_source.html#l00128">SSHURLConnection._session()</a>, and <a class="el" href="SSHURLConnection_8java_source.html#l00090">SSHURLConnection.connect()</a>.</p>
+<p>Referenced by <a class="el" href="SSHURLConnection_8java_source.html#l00177">SSHURLConnection._session()</a>, and <a class="el" href="SSHURLConnection_8java_source.html#l00117">SSHURLConnection.connect()</a>.</p>
 
 </div>
 </div>
@@ -221,11 +223,11 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00128">128</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00177">177</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
-<p>References <a class="el" href="SSHURLConnection_8java_source.html#l00104">SSHURLConnection._connect()</a>.</p>
+<p>References <a class="el" href="SSHURLConnection_8java_source.html#l00132">SSHURLConnection._connect()</a>.</p>
 
-<p>Referenced by <a class="el" href="SSHURLConnection_8java_source.html#l00136">SSHURLConnection.exec()</a>.</p>
+<p>Referenced by <a class="el" href="SSHURLConnection_8java_source.html#l00186">SSHURLConnection.exec()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -259,7 +261,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00154">154</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00204">204</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -284,9 +286,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00090">90</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00117">117</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
-<p>References <a class="el" href="SSHURLConnection_8java_source.html#l00104">SSHURLConnection._connect()</a>.</p>
+<p>References <a class="el" href="SSHURLConnection_8java_source.html#l00132">SSHURLConnection._connect()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -320,7 +322,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00141">141</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00191">191</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -346,9 +348,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00136">136</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00186">186</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
-<p>References <a class="el" href="SSHURLConnection_8java_source.html#l00128">SSHURLConnection._session()</a>.</p>
+<p>References <a class="el" href="SSHURLConnection_8java_source.html#l00177">SSHURLConnection._session()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -384,7 +386,7 @@ Here is the call graph for this function:</div>
 
 <p>Stubbed, because there's nothing to send us. </p>
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00073">73</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00100">100</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -419,7 +421,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00085">85</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00112">112</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -444,7 +446,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00152">152</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00202">202</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -478,7 +480,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00068">68</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00095">95</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -523,7 +525,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00061">61</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00088">88</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -546,7 +548,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00035">35</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHURLConnection_8java_source.html#l00048">48</a> of file <a class="el" href="SSHURLConnection_8java_source.html">SSHURLConnection.java</a>.</p>
 
 </div>
 </div>
@@ -559,7 +561,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceorg.html">org</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot.html">smallfoot</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot_1_1parser.html">parser</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot_1_1parser_1_1ssh.html">ssh</a></li><li class="navelem"><a class="el" href="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection.html">SSHURLConnection</a></li>
-    <li class="footer">Generated on Thu Sep 25 2014 20:32:37 for fcparsers by
+    <li class="footer">Generated on Wed Oct 15 2014 07:42:41 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="19" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="19" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="20" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="20" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-func">
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="21" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="21" bodyend="49"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="22" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="22" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1af47e14d82b2c2c175e2bb5f4be9c5a03" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -54,8 +54,9 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="56" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="56" bodyend="112"/>
+<para><xrefsect id="jvmopt_1_jvmopt000003"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpSSHExecCommand</bold> (values: true, false) can be used to dump out the command to run before the SSH client connects to the remote server. Note that this can cause plaintext revelation of private credential info</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000004"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpSSHExecCommand=</highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
+</programlisting> </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="57" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="57" bodyend="123"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -78,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="51" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="51" bodyend="54"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="52" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -91,9 +92,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="145" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="145" bodyend="145"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a9f16799674af7de1e539f0b54dbea72a" compoundref="SSHCLI_8java" startline="126" endline="143">SSHCLI.registerProtocols</references>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="SSHCLI_8java" startline="178" endline="258">SSHCLI.main</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="162" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="162" bodyend="162"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a9f16799674af7de1e539f0b54dbea72a" compoundref="SSHCLI_8java" startline="137" endline="160">SSHCLI.registerProtocols</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="SSHCLI_8java" startline="195" endline="275">SSHCLI.main</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -108,9 +109,9 @@
 <para>This function checks for current protocol handlers and adds the ones we bring to that list. If no &quot;java.protocol.handler.pkgs&quot; exists, we simply provide one. System Properties are overwritten in this process.</para><para>as the number of handlers increases, we can make corresponding changes herein without consuming projects having to know or care about this.</para><para>The format of &quot;java.protocol.handler.pkgs&quot; is typically described in java.net.URL(String,String,int,String) <simplesect kind="see"><para>java.lang.System.setProperty(String,String) </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="126" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="126" bodyend="143"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" compoundref="SSHCLI_8java" startline="145" endline="145">SSHCLI.SSHCLI</referencedby>
+<para>commons.net.ssh seems to fall apart when addProvider() is used <ndash/> registering a dupe and crapping-the-bed <ndash/> but net.schmizz.sshj needs this</para>        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="137" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="137" bodyend="160"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" compoundref="SSHCLI_8java" startline="162" endline="162">SSHCLI.SSHCLI</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -137,10 +138,10 @@
         <inbodydescription>
 <para>Always always ALWAYS provide a quick reference and a version output</para><para><xrefsect id="cmdopt_1_cmdopt000008"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-H|<ndash/>help Show a simple help screen as a reminder of options which are understood by the application </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000009"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--help<sp/></highlight></codeline>
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000010"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-V|<ndash/>version Show the current release version for reference </para></xrefdescription></xrefsect><xrefsect id="cmdopt_1_cmdopt000011"><xreftitle>Commandline Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparsers.jar<sp/>--version</highlight></codeline>
-<codeline><highlight class="normal">0.3-166<sp/></highlight></codeline>
+<codeline><highlight class="normal">0.3-177<sp/></highlight></codeline>
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="cmdopt_1_cmdopt000012"><xreftitle>Commandline Options</xreftitle><xrefdescription><para>-!|<ndash/>check Run an internal check that dependent drivers are available and registered </para></xrefdescription></xrefsect></para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="178" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="178" bodyend="258"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" compoundref="SSHCLI_8java" startline="145" endline="145">SSHCLI.SSHCLI</references>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="195" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="195" bodyend="275"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1a53499c1d4a23ab8a0b628e3da735ce4e" compoundref="SSHCLI_8java" startline="162" endline="162">SSHCLI.SSHCLI</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">
@@ -167,7 +168,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="152" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="152" bodyend="163"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="169" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="169" bodyend="180"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -175,30 +176,30 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="431">
+      <node id="445">
         <label>SSHCLI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI"/>
-        <childnode refid="432" relation="usage">
+        <childnode refid="446" relation="usage">
           <edgelabel>connection</edgelabel>
         </childnode>
       </node>
-      <node id="434">
+      <node id="448">
         <label>SSHClient</label>
       </node>
-      <node id="433">
+      <node id="447">
         <label>URLConnection</label>
       </node>
-      <node id="432">
+      <node id="446">
         <label>SSHURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection"/>
-        <childnode refid="433" relation="public-inheritance">
+        <childnode refid="447" relation="public-inheritance">
         </childnode>
-        <childnode refid="434" relation="usage">
+        <childnode refid="448" relation="usage">
           <edgelabel>client</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="18" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="17" bodyend="259"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" line="19" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHCLI.java" bodystart="18" bodyend="276"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1af47e14d82b2c2c175e2bb5f4be9c5a03" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>_execCommand</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1SSHCLI_1ae194547756a5cd259beab8bb7e6d6742" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::SSHCLI</scope><name>checkHandlers</name></member>

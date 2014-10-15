@@ -46,7 +46,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/ZoneParser.java" line="9" column="1"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="165" endline="263">FCParser.loadFile</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="166" endline="265">FCParser.loadFile</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="123" endline="143">ZoneParser.summarize</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a3ea3a6b94716d0bec1c6c97cda981a14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -105,7 +105,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/ZoneParser.java" line="17" column="1"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="165" endline="263">FCParser.loadFile</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a47b0fe73f5a3ae8d0b5e23da3b1b4b63" compoundref="FCParser_8java" startline="166" endline="265">FCParser.loadFile</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="123" endline="143">ZoneParser.summarize</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a19567e6611303b1035a1a101b00310e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -350,7 +350,7 @@
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ac04020e56b85b1d8b222f5e344924336">ZoneParser.aliasSize</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a6837faff1f96406f15225cf38c2186e9">ZoneParser.zoneSize</references>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample_1ae4faf7ff4190d227357ef851490d7757" compoundref="Select2Sample_8java" startline="12" endline="42">Select2Sample.main</referencedby>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="296" endline="483">FCParser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="FCParser_8java" startline="298" endline="485">FCParser.main</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParser_8java" startline="112" endline="116">ZoneParser.testSummary</referencedby>
       </memberdef>
       </sectiondef>
@@ -378,78 +378,84 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="459">
+      <node id="485">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="463">
+      <node id="489">
         <label>ShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="462">
+      <node id="488">
         <label>ShowZone2Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="456">
+      <node id="482">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="454" relation="public-inheritance">
+        <childnode refid="480" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="461">
+      <node id="487">
         <label>NicknameParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="464">
+      <node id="491">
         <label>VW4InvalidAddedParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="455">
+      <node id="481">
         <label>Thread</label>
       </node>
-      <node id="454">
+      <node id="480">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="455" relation="public-inheritance">
+        <childnode refid="481" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="457">
+      <node id="483">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="460">
+      <node id="486">
         <label>DeviceAliasParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="458">
+      <node id="490">
+        <label>TSVParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser"/>
+        <childnode refid="482" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="484">
         <label>AliShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="466">
+      <node id="493">
         <label>Thread</label>
       </node>
-      <node id="465">
+      <node id="492">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="466" relation="public-inheritance">
+        <childnode refid="493" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

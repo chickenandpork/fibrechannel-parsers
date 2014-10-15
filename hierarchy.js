@@ -29,6 +29,7 @@ var hierarchy =
           [ "NicknameParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser.html", null ],
           [ "ShowZone2Parser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser.html", null ],
           [ "ShowZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html", null ],
+          [ "TSVParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser.html", null ],
           [ "VW4InvalidAddedParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html", null ]
         ] ]
       ] ]

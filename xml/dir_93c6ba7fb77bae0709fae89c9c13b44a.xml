@@ -22,6 +22,7 @@
     <innerfile refid="ShowZoneParser_8java">ShowZoneParser.java</innerfile>
     <innerfile refid="SSHCLI_8java">SSHCLI.java</innerfile>
     <innerfile refid="SSHURLConnection_8java">SSHURLConnection.java</innerfile>
+    <innerfile refid="TSVParser_8java">TSVParser.java</innerfile>
     <innerfile refid="version_8java">version.java</innerfile>
     <innerfile refid="VW4InvalidAddedParser_8java">VW4InvalidAddedParser.java</innerfile>
     <innerfile refid="ZoneParser_8java">ZoneParser.java</innerfile>

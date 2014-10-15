@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-167</span>
+   &#160;<span id="projectnumber">0.3-177</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00017">17</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00018">18</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a53499c1d4a23ab8a0b628e3da735ce4e"></a>
 <div class="memitem">
@@ -122,11 +122,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00145">145</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00162">162</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
 
-<p>References <a class="el" href="SSHCLI_8java_source.html#l00126">SSHCLI.registerProtocols()</a>.</p>
+<p>References <a class="el" href="SSHCLI_8java_source.html#l00137">SSHCLI.registerProtocols()</a>.</p>
 
-<p>Referenced by <a class="el" href="SSHCLI_8java_source.html#l00178">SSHCLI.main()</a>.</p>
+<p>Referenced by <a class="el" href="SSHCLI_8java_source.html#l00195">SSHCLI.main()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -172,7 +172,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00051">51</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00052">52</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
 
 </div>
 </div>
@@ -213,13 +213,13 @@ Here is the call graph for this function:</div>
 </div><!-- fragment --></dd></dl>
 <dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000010">Commandline Options:</a></b></dt><dd>-V|&ndash;version Show the current release version for reference </dd></dl>
 <dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000011">Commandline Options:</a></b></dt><dd><div class="fragment"><div class="line">java -jar fcparsers.jar --version</div>
-<div class="line">0.3-166 </div>
+<div class="line">0.3-177 </div>
 </div><!-- fragment --></dd></dl>
 <dl class="cmdopt"><dt><b><a class="el" href="cmdopt.html#_cmdopt000012">Commandline Options:</a></b></dt><dd>-!|&ndash;check Run an internal check that dependent drivers are available and registered </dd></dl>
 
-<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00178">178</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00195">195</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
 
-<p>References <a class="el" href="SSHCLI_8java_source.html#l00145">SSHCLI.SSHCLI()</a>.</p>
+<p>References <a class="el" href="SSHCLI_8java_source.html#l00162">SSHCLI.SSHCLI()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -257,10 +257,11 @@ Here is the call graph for this function:</div>
 <p>This function checks for current protocol handlers and adds the ones we bring to that list. If no "java.protocol.handler.pkgs" exists, we simply provide one. System Properties are overwritten in this process.</p>
 <p>as the number of handlers increases, we can make corresponding changes herein without consuming projects having to know or care about this.</p>
 <p>The format of "java.protocol.handler.pkgs" is typically described in java.net.URL(String,String,int,String) </p><dl class="section see"><dt>See also</dt><dd>java.lang.System.setProperty(String,String) </dd></dl>
+<p>commons.net.ssh seems to fall apart when addProvider() is used &ndash; registering a dupe and crapping-the-bed &ndash; but net.schmizz.sshj needs this</p>
 
-<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00126">126</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
+<p>Definition at line <a class="el" href="SSHCLI_8java_source.html#l00137">137</a> of file <a class="el" href="SSHCLI_8java_source.html">SSHCLI.java</a>.</p>
 
-<p>Referenced by <a class="el" href="SSHCLI_8java_source.html#l00145">SSHCLI.SSHCLI()</a>.</p>
+<p>Referenced by <a class="el" href="SSHCLI_8java_source.html#l00162">SSHCLI.SSHCLI()</a>.</p>
 
 </div>
 </div>
@@ -273,7 +274,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceorg.html">org</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot.html">smallfoot</a></li><li class="navelem"><a class="el" href="namespaceorg_1_1smallfoot_1_1parser.html">parser</a></li><li class="navelem"><a class="el" href="classorg_1_1smallfoot_1_1parser_1_1SSHCLI.html">SSHCLI</a></li>
-    <li class="footer">Generated on Thu Sep 25 2014 20:32:37 for fcparsers by
+    <li class="footer">Generated on Wed Oct 15 2014 07:42:41 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

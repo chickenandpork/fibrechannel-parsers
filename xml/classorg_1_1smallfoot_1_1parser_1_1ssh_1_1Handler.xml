@@ -30,35 +30,49 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" line="28" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" bodystart="28" bodyend="31"/>
       </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int getDefaultPort</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" line="33" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" bodystart="33" bodyend="33"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="326">
+      <node id="340">
         <label>URLStreamHandler</label>
       </node>
-      <node id="325">
+      <node id="339">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler"/>
-        <childnode refid="326" relation="public-inheritance">
+        <childnode refid="340" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="328">
+      <node id="342">
         <label>URLStreamHandler</label>
       </node>
-      <node id="327">
+      <node id="341">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler"/>
-        <childnode refid="328" relation="public-inheritance">
+        <childnode refid="342" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" line="21" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" bodystart="20" bodyend="32"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" line="21" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ssh/Handler.java" bodystart="20" bodyend="34"/>
     <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ssh::Handler</scope><name>getDefaultPort</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ssh::Handler</scope><name>openConnection</name></member>
     </listofallmembers>
   </compounddef>
