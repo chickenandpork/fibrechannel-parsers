@@ -1,0 +1,108 @@
+package org.smallfoot.parser.zone;
+
+import java.io.*;
+import java.util.*;
+
+
+public class TSVParser extends ZoneParserI
+{
+    BufferedReader br;
+    java.util.Vector<ZPAliasEntry> aliases = new java.util.Vector();
+    java.util.HashSet<String> dupeStop = new java.util.HashSet<String>();
+    boolean zpquiet;
+
+    int colWWN=0;
+    int colNickname=1;
+
+    /**
+     * Create a parser, setting the debug to true or false
+     *
+     * @param properties additional name-value pair collection
+     */
+    public TSVParser(java.util.Properties properties)
+    {
+        super (properties);
+
+        if (null != properties)
+        {
+            colWWN=Integer.parseInt(properties.getProperty("wwn","0"));
+            colNickname=Integer.parseInt(properties.getProperty("nickname","1"));
+        }
+    }
+
+    public void setDebug(boolean debug)
+    {
+        zpquiet = !debug;
+    }
+    public TSVParser(InputStream in, boolean debugMe)
+    {
+        super(in, debugMe);
+    }
+
+    public java.util.Enumeration<ZPZoneEntry> zoneElements()
+    {
+        return null;
+    }
+
+    public int zoneSize()
+    {
+        return 0;
+    }
+
+    public void setReader(java.io.Reader is)
+    {
+        br = new BufferedReader(is);
+    }
+
+    public java.util.Enumeration<ZPAliasEntry> aliasElements()
+    {
+        if (null == aliases) return null;
+        else return aliases.elements();
+    }
+
+    public ZPAliasEntry[] aliasArray()
+    {
+        return aliases.toArray(new ZPAliasEntry[1]);
+    }
+
+    public int aliasSize()
+    {
+        if (null == aliases) return 0;
+        else return aliases.size();
+    }
+
+    protected void addAlias(String nick, String WWN)
+    {
+        if (dupeStop.contains(WWN)) return;
+        dupeStop.add(WWN);
+        aliases.add(new ZPAliasEntry(nick, WWN));
+    }
+
+    public void run()
+    {
+        String line;
+
+        if (null != br)
+            try
+            {
+                while (null != (line = br.readLine()))
+                {
+                    String[] lb = line.split("(	| )");	// this is indeed a TAB and a SPACE, not whitespace!
+                    if (lb.length <= colWWN)
+                        ;
+                    if (lb.length <= colNickname)
+                        ;
+                    else if (lb[colWWN].matches("^[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]$"))
+                        addAlias(lb[colNickname],lb[colWWN]);
+                    else if (lb[colWWN].matches("^[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]:[0-9a-fA-F][0-9a-fA-F]$"))
+                        addAlias(lb[colNickname],lb[colWWN]);
+                    else if (checkProperty("debug.verboseTokenizer"))
+                        System.out.println("WWN("+colWWN+") \""+lb[colWWN]+"\" is name("+colNickname+") "+lb[colNickname]);
+                }
+            }
+            catch (java.io.IOException ioe)
+            {
+                if (!zpquiet) System.out.println(getClass().getName() + " I/O Error: " + ioe.getMessage());
+            }
+    }
+}

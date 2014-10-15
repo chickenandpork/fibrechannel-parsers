@@ -3,7 +3,7 @@ nodist_java_JAVA += $(srcdir)/ParserTee.java $(srcdir)/ZPAliasEntry.java $(srcdi
 nodist_java_JAVA += $(srcdir)/ZPZoneEntry.java $(srcdir)/ZoneParser.java $(srcdir)/ZoneParserVal.java
 nodist_java_JAVA += $(srcdir)/ZoneParserI.java
 nodist_java_JAVA += $(srcdir)/SSHCLI.java $(abs_builddir)/ssh/Handler.java $(srcdir)/SSHURLConnection.java
-nodist_java_JAVA += $(srcdir)/Select2Sample.java
+nodist_java_JAVA += $(srcdir)/Select2Sample.java $(srcdir)/TSVParser.java
 nodist_java_JAVA += AliShowZoneParser.java
 nodist_java_JAVA += BNAZoneParser.java
 nodist_java_JAVA += DeviceAliasParser.java
@@ -21,7 +21,7 @@ nodist_java_DATA = @PACKAGE@.jar
 # https://downloads.sourceforge.net/project/byaccj/byaccj/1.15/byaccj1.15_macosx.tar.gz?r=http%3A%2F%2Fbyaccj.sourceforge.net%2F&ts=1347235095&use_mirror=voxel
 
 
-EXTRA_DIST  = Alias4Parser.java FCParser.java NicknameParser.java
+EXTRA_DIST  = Alias4Parser.java FCParser.java NicknameParser.java TSVParser.java
 EXTRA_DIST += ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java
 EXTRA_DIST += ZPZoneEntry.java ZoneParser.java ZoneParserVal.java
 EXTRA_DIST += ZoneParserI.java
@@ -29,7 +29,7 @@ EXTRA_DIST += Select2Sample.java
 EXTRA_DIST += SSHCLI.java.in SSHURLConnection.java sshHandler.java.in
 EXTRA_DIST += zonefile.y bnazone.y version.java.in HandlerPrototype.javaproto
 CONFIG_CLEAN_FILES =  @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java Alias4Parser.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java
-CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.java version.java
+CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.java version.java TSVParser.java
 CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y showzone2.y zonefile.y vw4invalid.y
 CONFIG_CLEAN_FILES += BNAPURLConnection.java DCNMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java OSMURLConnection.java
 
