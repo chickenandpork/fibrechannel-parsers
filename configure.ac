@@ -273,6 +273,7 @@ AC_CONFIG_FILES(Makefile
   java/FCParser.java
   java/SSHCLI.java java/ssh/Handler.java:java/sshHandler.java.in
   java/SSHURLConnection.java
+  java/VCenterURLConnection.java
   java/version.java
   tests-autotest/Makefile tests-autotest/atlocal tests-autotest/testsuite.at
 )

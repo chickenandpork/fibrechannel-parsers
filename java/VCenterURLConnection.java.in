@@ -1,0 +1,280 @@
+/* smallfoot.org is owned by allan.clark */
+package org.smallfoot.parser.vmware;
+
+import com.vmware.vim25.mo.Folder;
+import com.vmware.vim25.mo.ManagedEntity;
+import com.vmware.vim25.mo.InventoryNavigator;
+import com.vmware.vim25.mo.ServiceInstance;
+//import com.vmware.vim25.mo.VirtualMachine;
+//import com.vmware.vim25.VirtualMachineCapability;
+//import com.vmware.vim25.VirtualMachineConfigInfo;
+
+import com.vmware.vim25.mo.*;
+import com.vmware.vim25.*;
+import java.net.*;
+
+
+/**
+ * @file
+ *
+ * This class provides the connection and query of a vCenter instance, which is by default found at https://IP.IP.IP.IP/sdk
+ */
+
+public class VCenterURLConnection extends java.net.URLConnection
+{
+    public class VCCException extends Exception
+    {
+        protected String suggestion = null;
+        public String suggestion()
+        {
+            return suggestion;
+        }
+
+        public VCCException(Throwable t, String suggestion)
+        {
+            super (t);
+            this.suggestion = suggestion;
+        }
+        public VCCException(String s, String suggestion)
+        {
+            super(s);
+            this.suggestion = suggestion;
+        }
+    };
+
+
+
+    public VCenterURLConnection(java.net.URL url)
+    {
+        super(url);
+    }
+
+    /**
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     *
+     * @param name ignored
+     * @param value ignored
+     */
+    public void setRequestHeader(String name, String value) { }
+
+    /**
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     *
+     * @param ignored ignored
+     */
+    public void setContentType(String ignored) { }
+
+    /**
+     * Stubbed, because there's nothing to send us.  Oh how did I get caught in the "Royal 'We'" ?
+     */
+    public java.io.OutputStream getOutputStream()
+    {
+        return null;
+    }
+
+
+    /**
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  To be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources.
+     *
+     * future: get the list of WWNs and server hostnames/HBAs as a CSV pipe
+     */
+    public java.io.InputStream getInputStream()
+    {
+        return null;
+    }
+
+
+    protected ServiceInstance serviceinstance = null;
+    protected ServiceInstance serviceinstance() throws VCCException
+    {
+        if (null == url) return serviceinstance;
+
+        if (null == serviceinstance)
+        {
+            String[] auth = url.getUserInfo().split(":");
+            String user = null;
+            String pass = null;
+            try
+            {
+                user = auth[0];
+                pass = auth[1];
+            }
+            catch (java.lang.ArrayIndexOutOfBoundsException aioobe) {}
+
+            try
+            {
+                serviceinstance = new ServiceInstance(url, user, pass, true);
+            }
+            catch (java.rmi.RemoteException re)
+            {
+                if (null == re.getCause())
+                    throw new VCCException(re, "verify that the host exists (DNS, ping) and accepting connections using that user/pass");
+                else if (re.getCause().getClass().equals(java.net.UnknownHostException.class))
+                    throw new VCCException(re.getCause(), "verify that the host exists (DNS, ping) and accepting connections");
+                else if (re.getCause().getClass().equals(com.vmware.vim25.InvalidLogin.class))
+                    throw new VCCException(re.getCause(), "verify that the host accepts the given user/pass");
+                else
+                    throw new VCCException(re.getCause(), "unsure what to do with a "+re.getCause().getClass().getName()+" for "+url);
+            }
+            catch (java.net.MalformedURLException mue)
+            {
+                throw new VCCException(mue, "verify that the URL \""+url+"\" is a proper (rfc-1738) URL: https://user:pass@host:port");
+            }
+        }
+
+        return serviceinstance;
+    }
+
+
+    /**
+     * openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client.
+     *
+     * @return populated connection as org.smallfoot.vmware.VCenterURLConnection(Connection)
+     * @param url URL to connect to
+     */
+    protected VCenterURLConnection openConnection(java.net.URL url)
+    {
+        return null;
+    }
+
+    public void connect()
+    {
+        try
+        {
+            ServiceInstance si = serviceinstance();
+        }
+        catch (VCCException vce) {}
+    }
+
+    protected ManagedEntity[] esxs = null;	/**< singleton loaded by esxs() */
+
+    ManagedEntity[] esxs() throws VCCException
+    {
+        if (null == esxs)
+        {
+            long start = System.currentTimeMillis();
+
+            try
+            {
+                Folder rootFolder = null;
+                String name = null;
+
+                if (null != serviceinstance())
+                    if (null != (rootFolder = serviceinstance().getRootFolder()))
+                        if (null != (name = rootFolder.getName()))
+                            try
+                            {
+                                /**
+                                 * @jvmopt debug.vme.showRootFolder:
+                                 * For testing and additional info, -Ddebug.vme.showRootFolder causes the data collector to display the VCenter's root folder.
+                                 */
+
+                                if (false != Boolean.parseBoolean(System.getProperties().getProperty("debug.vme.showRootFolder")))
+                                    System.out.println("root:" + name);
+
+                                esxs = new InventoryNavigator(rootFolder).searchManagedEntities(new String[][] { {"HostSystem", "name" }, }, true);
+                                long end = System.currentTimeMillis();
+                                long interrogation = end-start;
+                            }
+                            catch (com.vmware.vim25.InvalidProperty ip)
+                            {
+                                long end = System.currentTimeMillis();
+                                long interrogation = end-start;
+                                return null;
+                            }
+                            catch (com.vmware.vim25.RuntimeFault rf)
+                            {
+                                long end = System.currentTimeMillis();
+                                long interrogation = end-start;
+                                return null;
+                            }
+                            catch (java.rmi.RemoteException re)
+                            {
+                                long end = System.currentTimeMillis();
+                                long interrogation = end-start;
+                                throw new VCCException(re.getCause(), "remote issue querying established connect; simply retry");
+                            }
+            }
+            catch (VCCException vce)
+            {
+                long end = System.currentTimeMillis();
+                long interrogation = end-start;
+                throw vce;
+            }
+        }
+
+        return esxs;
+    }
+
+    int countESXs()
+    {
+        ManagedEntity[] e;
+        try
+        {
+            e = esxs();
+        }
+        catch (VCCException vce)
+        {
+            System.out.println("VCenterConnectionException: "+vce.getCause().getClass().getName()+": "+vce.suggestion());
+            return 0;
+        }
+
+        if (null == e)
+        {
+            return 0;
+        }
+        else return e.length;
+    }
+
+    int countESXsWithExc() throws VCCException
+    {
+        ManagedEntity[] e = esxs();
+        if (null == e)
+        {
+            return 0;
+        }
+        else return e.length;
+    }
+
+    static int getESXCount(java.net.URL url)
+    {
+        VCenterURLConnection vc = new VCenterURLConnection(url);
+        return vc.countESXs();
+    }
+
+    static int getESXCountWithExc(java.net.URL url) throws VCCException
+    {
+        VCenterURLConnection vc = new VCenterURLConnection(url);
+        return vc.countESXsWithExc();
+    }
+
+    /*
+     * si = new ServiceInstance(new java.net.URL("https://vc-qe-auto-1/sdk"), "Administrator", "V1.admin", true);
+     * si = new ServiceInstance(new java.net.URL("https://vcenterserver.example.com/sdk"), "root", "vmware", true);
+     */
+
+    static int getESXCount(String server)
+    {
+        try
+        {
+            return getESXCount(new java.net.URL(server));
+        }
+        catch (java.net.MalformedURLException mue)
+        {
+            return -3;
+        }
+    }
+
+    static int getESXCountWithExc(String server) throws VCCException
+    {
+        try
+        {
+            return getESXCountWithExc(new java.net.URL(server));
+        }
+        catch (java.net.MalformedURLException mue)
+        {
+            return -3;
+        }
+    }
+
+}

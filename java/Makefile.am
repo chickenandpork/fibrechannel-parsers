@@ -13,6 +13,7 @@ nodist_java_JAVA += VW4InvalidAddedParser.java
 nodist_java_JAVA += $(abs_builddir)/genproto/bna/Handler.java $(abs_builddir)/genproto/bnapsql/Handler.java $(abs_builddir)/genproto/cmcne/Handler.java $(abs_builddir)/genproto/dcfm/Handler.java BNAPURLConnection.java
 nodist_java_JAVA += $(abs_builddir)/genproto/ocidwh/Handler.java $(abs_builddir)/genproto/osmsql/Handler.java $(abs_builddir)/genproto/msosmsql/Handler.java OSMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java
 nodist_java_JAVA += $(abs_builddir)/genproto/dcnm/Handler.java $(abs_builddir)/genproto/dcnmsql/Handler.java DCNMURLConnection.java DCNMSQLURLConnection.java
+nodist_java_JAVA += $(abs_builddir)/genproto/vmware/Handler.java VCenterURLConnection.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
@@ -31,9 +32,9 @@ EXTRA_DIST += zonefile.y bnazone.y version.java.in HandlerPrototype.javaproto
 CONFIG_CLEAN_FILES =  @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java Alias4Parser.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java
 CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.java version.java TSVParser.java
 CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y showzone2.y zonefile.y vw4invalid.y
-CONFIG_CLEAN_FILES += BNAPURLConnection.java DCNMURLConnection.java DCNMSQLURLConnection.java DWHURLConnection.java MSDWHURLConnection.java OSMURLConnection.java
+CONFIG_CLEAN_FILES += BNAPURLConnection.java DCNMURLConnection.java DCNMSQLURLConnection.java DWHURLConnection.java MSDWHURLConnection.java OSMURLConnection.java VCenterURLConnection.java
 
-AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar:$(top_builddir)/depjars/ssh.jar:$(top_builddir)/depjars/bcpg-jdk15on-151.jar:$(top_builddir)/depjars/bcpkix-jdk15on-151.jar:$(top_builddir)/depjars/bcprov-jdk15on-151.jar
+AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar:$(top_builddir)/depjars/ssh.jar:$(top_builddir)/depjars/bcpg-jdk15on-151.jar:$(top_builddir)/depjars/bcpkix-jdk15on-151.jar:$(top_builddir)/depjars/bcprov-jdk15on-151.jar:$(top_builddir)/depjars/vijava5120121125.jar:$(top_builddir)/depjars/dom4j-1.6.1.jar
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES = FCParser.java
@@ -75,6 +76,9 @@ $(abs_builddir)/genproto/dcnm/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/dcnm/g' -e 's/##localtype##/DCNM/g' -e 's/##localtypepkg##/dcnm/g' $< > $@
 
+$(abs_builddir)/genproto/vmware/Handler.java: $(srcdir)/HandlerPrototype.javaproto
+	@mkdir -p $(@D)
+	sed -e 's/##protocol##/vmware/g' -e 's/##localtype##/VCenter/g' -e 's/##localtypepkg##/vmware/g' $< > $@
 
 if DO_BYACC
 

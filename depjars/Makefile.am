@@ -55,6 +55,20 @@ mysql-connector-java-5.1.14.jar:
 
 
 
+JARS += vijava5120121125.jar
+
+vijava5120121125.jar: vijava5120121125.zip
+	unzip -oj $< '$@' && touch $@
+
+vijava5120121125.zip:
+	test -f $${TMPDIR-/tmp}/$(@F) && unzip -t $${TMPDIR-/tmp}/$(@F) >/dev/null 2>&1 || rm -f $${TMPDIR-/tmp}/$(@F)
+	test -f $${TMPDIR-/tmp}/$(@F) && ln $${TMPDIR-/tmp}/$(@F) $@ || true
+	test \! -f $@ && test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
+	test -f $@ || curl -Lo $@ http://superb-dca2.dl.sourceforge.net/project/vijava/vijava/VI%20Java%20API%205.1/$(@F)
+	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
+	-touch $@
+
+
 #dnl com.jcraft.jzlib BSD
 jzlib-1.1.2.zip:
 	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
