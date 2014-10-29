@@ -1,5 +1,5 @@
 /* smallfoot.org is owned by allan.clark */
-package org.smallfoot.parser.dcnm;
+package org.smallfoot.parser.dcnmsql;
 
 //import java.io.*;
 //import java.util.*;
@@ -17,11 +17,11 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  * @see http://www.cisco.com/en/US/docs/switches/datacenter/nexus5000/sw/configuration/guide/fm/gs.pdf
  *
  * @page formats Compatible File Formats
- * @subpage DCNMURLConnection
+ * @subpage DCNMSQLURLConnection
  *
- * @page DCNMURLConnection Cisco DCNM Database
+ * @page DCNMSQLURLConnection Cisco DCNM Database
  *
- * The DCNMURLConnection collects dcnm:// and dcnmsql:// sources from DCNM's backend database to search for aliases it may know
+ * The DCNMSQLURLConnection collects dcnmsql:// sources from DCNM's backend database to search for aliases it may know
  *
  * This collector/parser chain is more successful than text-based parsers simply because
  * it avoids human-error and the error of not reading the warning to avoid putty log traces
@@ -31,7 +31,7 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
  * typically "a broader net to cast" to collect information.
  */
 
-public class DCNMURLConnection extends java.net.URLConnection
+public class DCNMSQLURLConnection extends java.net.URLConnection
 {
     /**
      * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan
@@ -200,7 +200,7 @@ for (java.sql.ResultSet source: sources)
     java.util.Properties properties = new java.util.Properties();
     java.sql.Connection connection;
 
-    public DCNMURLConnection(String connectionInfo, String username, String password)
+    public DCNMSQLURLConnection(String connectionInfo, String username, String password)
     {
         super(URLof(connectionInfo));
         this.connectionInfo = connectionInfo;
@@ -209,10 +209,10 @@ for (java.sql.ResultSet source: sources)
     }
 
 
-    public DCNMURLConnection(java.net.URL url)
+    public DCNMSQLURLConnection(java.net.URL url)
     {
         super(url);
-//System.out.println("public DCNMURLConnection(java.net.URL "+url.toString()+")");
+//System.out.println("public DCNMSQLURLConnection(java.net.URL "+url.toString()+")");
         //String ProgressStrocity = "jdbc.jdbcProgress:T:"+url.getHost()+":";
         // jdbc:postgresql://host:port/database
         String ProgressStrocity = "jdbc:postgresql://"+url.getHost()+":";
@@ -247,7 +247,7 @@ for (java.sql.ResultSet source: sources)
         connectionInfo = ProgressStrocity;
         properties.put("user",user);
         properties.put("password",pass);
-//System.out.println("fin: public DCNMURLConnection(java.net.URL "+url.toString()+")");
+//System.out.println("fin: public DCNMSQLURLConnection(java.net.URL "+url.toString()+")");
     }
 
     /**
@@ -319,10 +319,10 @@ for (java.sql.ResultSet source: sources)
     /**
      * openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client.
      *
-     * @return populated connection as org.smallfoot.dcnmsql.DCNMURLConnection(Connection)
+     * @return populated connection as org.smallfoot.dcnmsql.DCNMSQLURLConnection(Connection)
      * @param url URL to connect to
      */
-    protected DCNMURLConnection openConnection(java.net.URL url)
+    protected DCNMSQLURLConnection openConnection(java.net.URL url)
     {
         return null;
     }
