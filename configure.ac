@@ -182,17 +182,17 @@ AC_ARG_WITH(jconn2jar,
 [AS_HELP_STRING([--with-jconn2jar],[Enable inclusion of an improved jconn2 .jar; default=search])],
 [
     case "$withval" in
-	"yes") WITH_JCONN2JAR=$((locate /jconn2-5.5.jar; echo "no"; ) | grep -v .workdir | head -1) ;;
+	"yes") WITH_JCONN2JAR=$((locate /jconn2-5.5.jar; echo "yes"; ) | grep -v .workdir | head -1) ;;
 	"no")  WITH_JCONN2JAR=no  ;;
 	*) WITH_JCONN2JAR="$withval" ;;
     esac
 ],
 [
 AC_MSG_CHECKING([for jconn2-5.5.jar])
-    WITH_JCONN2JAR=$((locate /jconn2-5.5.jar; echo "no"; ) | grep -v .workdir | head -1) ;
+    WITH_JCONN2JAR=$((locate /jconn2-5.5.jar; echo "yes"; ) | grep -v .workdir | head -1) ;
 AC_MSG_RESULT([${WITH_JCONN2JAR}])
 ])
-AM_CONDITIONAL(FETCH_JCONN2JAR, test "$WITH_JCONN2JAR" != no)
+AM_CONDITIONAL(FETCH_JCONN2JAR, test "$WITH_JCONN2JAR" = yes)
 AC_SUBST([JCONN2JAR], ${WITH_JCONN2JAR})
 
 
