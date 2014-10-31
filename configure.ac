@@ -254,6 +254,8 @@ AM_CONDITIONAL(DO_COMMONSNETSSHJAR, test $(echo "$WITH_SSHJAR"|cut -d - -f2-11) 
 AM_CONDITIONAL(DO_NETSCHMIZZSSHJJAR, test $(echo "$WITH_SSHJAR"|cut -d - -f2-11) = net-schmizz-sshj)
 AM_CONDITIONAL(BUILD_NETSCHMIZZSSHJJAR, test "$WITH_SSHJAR" = build-net-schmizz-sshj)
 case ${WITH_SSHJAR} in
+    ltb-*)
+        ;;
     *-commons-net-ssh)
 	SSHJAR=commons-net-ssh.jar ;;
     *-net-schmizz-sshj)
