@@ -164,14 +164,14 @@ AC_ARG_WITH(getoptplus,
 [AS_HELP_STRING([--with-getoptplus],[Enable inclusion of an improved getopt .jar; default=search])],
 [
     case "$withval" in
-	"yes") WITH_GETOPTJAR=$((locate getopt.jar) | grep -v .workdir | head -1) ;;
+	"yes") WITH_GETOPTJAR=$((locate /getopt.jar) | grep -v .workdir | head -1) ;;
 	"no")  WITH_GETOPTJAR=no  ;;
 	*) WITH_GETOPTJAR="$withval" ;;
     esac
 ],
 [
 AC_MSG_CHECKING([for getopt.jar])
-    WITH_GETOPTJAR=$((locate getopt.jar) | grep -v .workdir | head -1) ;
+    WITH_GETOPTJAR=$((locate /getopt.jar) | grep -v .workdir | head -1) ;
 AC_MSG_RESULT([${WITH_GETOPTJAR}])
 ])
 AM_CONDITIONAL(DO_GETOPTJAR, test "$WITH_GETOPTJAR" != no)
@@ -215,7 +215,7 @@ AC_MSG_RESULT([default: look-then-build net-schmizz-sshj])
 ])
 if test x${WITH_SSHJAR} = xltb-commons-net-ssh
 then
-    SSHJAR=$((locate commons-net-ssh.jar) | grep -v .workdir | head -1)
+    SSHJAR=$((locate /commons-net-ssh.jar) | grep -v .workdir | head -1)
     if test -z "${SSHJAR}"
     then
 	WITH_SSHJAR=build-commons-net-ssh
@@ -224,7 +224,7 @@ fi
 
 if test x${WITH_SSHJAR} = xltb-net-schmizz-sshj
 then
-    SSHJAR=$((locate net-schmizz-sshj.jar) | grep -v .workdir | head -1)
+    SSHJAR=$((locate /net-schmizz-sshj.jar) | grep -v .workdir | head -1)
     if test -z "${SSHJAR}"
     then
 	WITH_SSHJAR=build-net-schmizz-sshj
