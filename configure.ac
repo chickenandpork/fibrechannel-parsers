@@ -178,6 +178,24 @@ AM_CONDITIONAL(DO_GETOPTJAR, test "$WITH_GETOPTJAR" != no)
 AC_SUBST([GETOPTJAR], ${WITH_GETOPTJAR})
 
 
+AC_ARG_WITH(jconn2jar,
+[AS_HELP_STRING([--with-jconn2jar],[Enable inclusion of an improved jconn2 .jar; default=search])],
+[
+    case "$withval" in
+	"yes") WITH_JCONN2JAR=$((locate /jconn2-5.5.jar; echo "no"; ) | grep -v .workdir | head -1) ;;
+	"no")  WITH_JCONN2JAR=no  ;;
+	*) WITH_JCONN2JAR="$withval" ;;
+    esac
+],
+[
+AC_MSG_CHECKING([for jconn2-5.5.jar])
+    WITH_JCONN2JAR=$((locate /jconn2-5.5.jar; echo "no"; ) | grep -v .workdir | head -1) ;
+AC_MSG_RESULT([${WITH_JCONN2JAR}])
+])
+AM_CONDITIONAL(FETCH_JCONN2JAR, test "$WITH_JCONN2JAR" != no)
+AC_SUBST([JCONN2JAR], ${WITH_JCONN2JAR})
+
+
 AC_MSG_CHECKING([for user-defined bna testcase])
 AC_ARG_WITH(userbnatestcase,
 [AS_HELP_STRING([--with-userbnatestcase],[Enable a one-off test using a user-defined testcase; default=ignore])],
