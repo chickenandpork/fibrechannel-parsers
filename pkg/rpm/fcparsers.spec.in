@@ -62,7 +62,7 @@ rm -fr %{buildroot}/%{_datadir}/@PACKAGE@/jars
 
 %files java-connectors
 # exported in depjars/Makefile.am
-%{_datadir}/jconn2-5.5.jar
+%{_datadir}/jconn2.jar
 %{_datadir}/mysql-connector-java-5.1.14.jar
 %{_datadir}/postgresql-9.1-902.jdbc4.jar
 
