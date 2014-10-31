@@ -105,11 +105,11 @@ else
 if BUILD_NETSCHMIZZSSHJJAR
 #dnl Apache License-2.0
 
-net-schmizz-sshj-src.tar:
-	test \! -f $${TMPDIR-/tmp}/$(@F) || jar tf $${TMPDIR-/tmp}/$(@F) >/dev/null || rm $${TMPDIR-/tmp}/$(@F)
+net-schmizz-sshj-src.zip:
+	test \! -f $${TMPDIR-/tmp}/$(@F) || unzip -t $${TMPDIR-/tmp}/$(@F) >/dev/null || rm $${TMPDIR-/tmp}/$(@F)
 	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
 	test -f $@ || wget -O $@ https://codeload.github.com/hierynomus/sshj/zip/master || curl -o $@ https://codeload.github.com/hierynomus/sshj/zip/master
-	test \! -f $@ || jar tf $@ >/dev/null || rm $@
+	test \! -f $@ || unzip -t $@ >/dev/null || rm $@
 
 junit.jar:
 	test \! -f $${TMPDIR-/tmp}/$(@F) || jar tf $${TMPDIR-/tmp}/$(@F) >/dev/null || rm $${TMPDIR-/tmp}/$(@F)
@@ -117,10 +117,10 @@ junit.jar:
 	test -f $@ || wget -O $@ http://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11.jar || curl -Lo $@ http://search.maven.org/remotecontent?filepath=junit/junit/4.11/junit-4.11.jar
 	test \! -f $@ || jar tf $@ >/dev/null || rm $@
 
-net-schmizz-sshj.jar: net-schmizz-sshj-src.tar junit.jar slf4j-api-1.7.5.jar jzlib-1.1.2.jar bcpkix-jdk15on-151.jar bcprov-jdk15on-151.jar bcpg-jdk15on-151.jar
+net-schmizz-sshj.jar: net-schmizz-sshj-src.zip junit.jar slf4j-api-1.7.5.jar jzlib-1.1.2.jar bcpkix-jdk15on-151.jar bcprov-jdk15on-151.jar bcpg-jdk15on-151.jar
 	test -d $$(basename $(@F) .jar) && rm -fr $$(basename $(@F) .jar)/* || true
 	test -d $$(basename $(@F) .jar) || mkdir -p $$(basename $(@F) .jar)
-	cat $^ | (cd $$(basename $(@F) .jar) && tar xzf -)
+	FP=$(cd $(<D) && pwd); if test -z "$${FP}"; then FP=..; fi; (cd $$(basename $(@F) .jar) && unzip $${FP}/$(<F) >/dev/null)
 	$(JAVAC) -cp junit.jar:slf4j-api-1.7.5.jar:jzlib-1.1.2.jar:bcpkix-jdk15on-151.jar:bcprov-jdk15on-151.jar:$$(basename $(@F) .jar)/sshj-master/src/main/java -d $$(basename $(@F) .jar) $$(find $$(basename $(@F) .jar)/sshj-master/src/main/java/net -name *.java)
 	(cd $$(basename $(@F) .jar) && jar cf ../$(@F) net)
 endif
