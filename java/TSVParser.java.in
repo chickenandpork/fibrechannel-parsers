@@ -90,7 +90,7 @@ public class TSVParser extends ZoneParserI
                     String[] lb = line.split("(	| )");	// this is indeed a TAB and a SPACE, not whitespace!
                     if (lb.length <= colWWN)
                         ;
-                    if (lb.length <= colNickname)
+                    else if (lb.length <= colNickname)
                         ;
                     else if (lb[colWWN].matches("^[0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F]$"))
                         addAlias(lb[colNickname],lb[colWWN]);

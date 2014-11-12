@@ -703,8 +703,8 @@ EXCLUDE_SYMLINKS       = NO
 
 EXCLUDE_PATTERNS       = */.workdir/* \
                          */.svn/* \
-                         */win32/* \
-                         */nginx-1.0.6/*
+                         */.git/* \
+                         */win32/*
 
 
 # The EXCLUDE_SYMBOLS tag can be used to specify one or more symbol names
