@@ -1,4 +1,4 @@
-nodist_java_JAVA  = $(srcdir)/Alias4Parser.java $(srcdir)/FCParser.java $(srcdir)/NicknameParser.java
+nodist_java_JAVA  = $(srcdir)/Alias4Parser.java $(srcdir)/FCParser.java $(srcdir)/NicknameParser.java $(srcdir)/SwappedNicknameParser.java
 nodist_java_JAVA += $(srcdir)/ParserTee.java $(srcdir)/ZPAliasEntry.java $(srcdir)/ZPFCAliasEntry.java
 nodist_java_JAVA += $(srcdir)/ZPZoneEntry.java $(srcdir)/ZoneParser.java $(srcdir)/ZoneParserVal.java
 nodist_java_JAVA += $(srcdir)/ZoneParserI.java
@@ -22,7 +22,7 @@ nodist_java_DATA = @PACKAGE@.jar
 # https://downloads.sourceforge.net/project/byaccj/byaccj/1.15/byaccj1.15_macosx.tar.gz?r=http%3A%2F%2Fbyaccj.sourceforge.net%2F&ts=1347235095&use_mirror=voxel
 
 
-EXTRA_DIST  = Alias4Parser.java FCParser.java NicknameParser.java TSVParser.java
+EXTRA_DIST  = Alias4Parser.java FCParser.java NicknameParser.java TSVParser.java SwappedNicknameParser.java
 EXTRA_DIST += ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java
 EXTRA_DIST += ZPZoneEntry.java ZoneParser.java ZoneParserVal.java
 EXTRA_DIST += ZoneParserI.java

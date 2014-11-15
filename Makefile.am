@@ -16,7 +16,7 @@ EXTRA_DIST += samples/non-fcalias.shzone samples/preambled.devicealias samples/s
 EXTRA_DIST += samples/simple-multicfg.zoneshow samples/simple.devicealias samples/simple.shzone samples/simple.zoneshow
 
 
-SOURCES = java/Alias4Parser.java.in java/FCParser.java.in java/NicknameParser.java.in java/ParserTee.java java/VW4InvalidAddedParser.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java java/ZoneParser.java java/ZoneParserI.java
+SOURCES = java/Alias4Parser.java.in java/FCParser.java.in java/NicknameParser.java.in java/ParserTee.java java/VW4InvalidAddedParser.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java java/ZoneParser.java java/ZoneParserI.java java/SwappedNicknameParser.java
 
 if DO_DOXYGEN
 doc: htdocs/README.dox Doxyfile $(SOURCES)

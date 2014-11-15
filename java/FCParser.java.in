@@ -14,6 +14,7 @@ import org.smallfoot.parser.zone.DeviceAliasParser;
 import org.smallfoot.parser.zone.NicknameParser;
 import org.smallfoot.parser.zone.ShowZoneParser;
 import org.smallfoot.parser.zone.ShowZone2Parser;
+import org.smallfoot.parser.zone.SwappedNicknameParser;
 import org.smallfoot.parser.zone.TSVParser;
 import org.smallfoot.parser.zone.VW4InvalidAddedParser;
 import org.smallfoot.parser.zone.ZPAliasEntry;
@@ -170,6 +171,7 @@ public abstract class FCParser
 
         /* tried 2013-04-23 with 18 ParserTees feeding a NicknameParser, a AliShowZoneParser, and 16 Alias4Parsers */
         /* tried 2013-04-23 with 17 ParserTees feeding a NicknameParser, 2 AliShowZoneParser, and 14 Alias4Parsers */
+        zpl.add( new SwappedNicknameParser(prop));
         zpl.add( new TSVParser(prop));
         zpl.add( new NicknameParser(prop));
         zpl.add( new AliShowZoneParser(prop));

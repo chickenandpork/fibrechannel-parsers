@@ -30,6 +30,14 @@ public class NicknameParser extends ZoneParserI
         }
     }
 
+    protected NicknameParser(java.util.Properties properties, int colWWN, int colNickname)
+    {
+        super (properties);
+
+        this.colWWN=colWWN;
+        this.colNickname=colNickname;
+    }
+
     public void setDebug(boolean debug)
     {
         zpquiet = !debug;
