@@ -15,6 +15,8 @@ nodist_java_JAVA += $(abs_builddir)/genproto/ocidwh/Handler.java $(abs_builddir)
 nodist_java_JAVA += $(abs_builddir)/genproto/dcnm/Handler.java $(abs_builddir)/genproto/dcnmsql/Handler.java DCNMURLConnection.java DCNMSQLURLConnection.java
 nodist_java_JAVA += $(abs_builddir)/genproto/vmware/Handler.java VCenterURLConnection.java
 nodist_java_JAVA += $(abs_builddir)/genproto/cimcql/Handler.java CIMXMLCQLURLConnection.java
+nodist_java_JAVA += $(abs_builddir)/genproto/bnacql/Handler.java BNACQLURLConnection.java
+nodist_java_JAVA += $(abs_builddir)/genproto/dcnmcql/Handler.java DCNMCQLURLConnection.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
@@ -47,6 +49,10 @@ $(abs_builddir)/genproto/bna/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/bna/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
 
+$(abs_builddir)/genproto/bnacql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
+	@mkdir -p $(@D)
+	sed -e 's/##protocol##/bnacql/g' -e 's/##localtype##/BNACQL/g' -e 's/##localtypepkg##/bnacql/g' $< > $@
+
 $(abs_builddir)/genproto/bnapsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/bnapsql/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
@@ -78,6 +84,10 @@ $(abs_builddir)/genproto/dcnmsql/Handler.java: $(srcdir)/HandlerPrototype.javapr
 $(abs_builddir)/genproto/dcnm/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
 	sed -e 's/##protocol##/dcnm/g' -e 's/##localtype##/DCNM/g' -e 's/##localtypepkg##/dcnm/g' $< > $@
+
+$(abs_builddir)/genproto/dcnmcql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
+	@mkdir -p $(@D)
+	sed -e 's/##protocol##/dcnmcql/g' -e 's/##localtype##/DCNMCQL/g' -e 's/##localtypepkg##/dcnmcql/g' $< > $@
 
 $(abs_builddir)/genproto/vmware/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)

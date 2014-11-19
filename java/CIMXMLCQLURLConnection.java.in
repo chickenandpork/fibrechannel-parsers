@@ -58,7 +58,7 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
     {
         protected javax.wbem.CloseableIterator<CIMInstance> source;
 
-        public ResultCSVPipe(javax.wbem.CloseableIterator<CIMInstance> source)
+        public ResultCSVPipe(javax.wbem.CloseableIterator<CIMInstance> source, String propWWPN, String propName)
         {
             this.source = source;
         }
@@ -72,7 +72,8 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
                     while (source.hasNext())
                     {
 			CIMInstance w = source.next();
-                        String res = String.format("%s,\"%s\"\n",w.getProperty("pwwn").getValue(), w.getProperty("name").getValue());
+//System.out.println("Grabbing properties: wwpn="+propWWPN+" name="+propName);
+                        String res = String.format("%s,\"%s\"\n",w.getProperty(propWWPN).getValue(), w.getProperty(propName).getValue());
                         write(res.getBytes(), 0, res.length());
                     }
                 }
@@ -101,21 +102,28 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
     protected WBEMClient client = null;
     protected CIMObjectPath cop = null;
     protected String path = "/cimv2";
+    protected String className = "CIM_Object";
+    protected String propWWPN = null;
+    protected String propName = null;
 
-    public CIMXMLCQLURLConnection(String connectionInfo, String username, String password)
+    public CIMXMLCQLURLConnection(String connectionInfo, String username, String password, String path, String className, String propWWPN, String propName)
     {
-        super(URLof(connectionInfo));
-//System.out.println("CIMXMLCQLURLConnection with url "+URLof(connectionInfo).toString()+" from "+connectionInfo);
+        super(fixURLPath(URLof(connectionInfo), path));
+//System.out.println("CIMXMLCQLURLConnection with url "+URLof(connectionInfo).toString()+" from "+connectionInfo+", wwpn="+propWWPN+", name="+propName);
         this.connectionInfo = connectionInfo;
         properties.put("user",username);
         properties.put("password",password);
+	this.path = path;
+	this.className = className;
+	this.propWWPN = propWWPN;
+	this.propName = propName;
     }
 
 
-    public CIMXMLCQLURLConnection(java.net.URL url)
+    public CIMXMLCQLURLConnection(java.net.URL url, String path, String className, String propWWPN, String propName)
     {
-        super(url);
-//System.out.println("CIMXMLCQLURLConnection with url "+url.toString());
+        super(fixURLPath(url, path));
+//System.out.println("CIMXMLCQLURLConnection with url "+url.toString()+" from "+connectionInfo+", wwpn="+propWWPN+", name="+propName);
         String work = "jdbc:mysql://"+url.getHost()+":";
 
         if (-1 == url.getPort())
@@ -144,6 +152,10 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
         connectionInfo = work;
         properties.put("user",user);
         properties.put("password",pass);
+	this.path = path;
+	this.className = className;
+	this.propWWPN = propWWPN;
+	this.propName = propName;
     }
 
     /**
@@ -183,9 +195,9 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
         try
         {
 //System.out.println("gathering inputstream via "+client.toString());
-            javax.cim.CIMObjectPath cop = new javax.cim.CIMObjectPath(path+":CISCO_DeviceAlias");
-//System.out.println("gathering inputstream: cop == "+cop);
-            ResultCSVPipe res = new ResultCSVPipe( client.execQuery(cop, String.format("select pwwn,name from CISCO_DeviceAlias"), "WQL") );
+            javax.cim.CIMObjectPath cop = new javax.cim.CIMObjectPath(path+":"+className);
+//System.out.println("gathering inputstream: cop == "+cop+" wwpn="+propWWPN+" name="+propName);
+            ResultCSVPipe res = new ResultCSVPipe( client.execQuery(cop, String.format("select pwwn,name from %s", className), "WQL"), propWWPN, propName);
             new Thread(res).start();
             return new java.io.PipedInputStream(res);
         }
@@ -236,7 +248,7 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
     {
         String uri = "http://"+u.getHost();
         if (-1 != u.getPort()) uri += ":"+u.getPort();
-        uri += u.getPath().replaceFirst("//", "/");
+        uri += u.getPath().replaceFirst("//", "/").replaceAll("/$","");
 //System.out.println("connecting via getWBEMClient("+u.toString()+") -> \""+uri+"\"");
 
         CIMObjectPath cns = new CIMObjectPath(uri);
@@ -259,6 +271,28 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
     protected CIMXMLCQLURLConnection openConnection(java.net.URL url)
     {
         return null;
+    }
+
+    static java.net.URL fixURLPath(java.net.URL u, String path)
+    {
+	String p = u.getPath();
+	if (! p.equals("/"))
+	    path = p;
+
+	path = path.replaceFirst("//", "/").replaceAll("/$","");
+
+	try {
+	return new java.net.URL(String.format("%s://%s%s%s%s", u.getProtocol(),
+	    (0 < u.getUserInfo().length() ? u.getUserInfo()+"@" : ""),
+	    u.getHost(),
+	    (0 < u.getPort() ? ":"+u.getPort() : ""),
+	    path.replaceFirst("//", "/").replaceAll("/$",""))
+	);
+	}
+	catch (MalformedURLException e)
+	{
+	    return u;
+	}
     }
 
     static java.net.URL URLof(String connectionInfo)
@@ -284,7 +318,7 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
             client = getWBEMClient(u);
             path = u.getPath();
 
-            cop = new javax.cim.CIMObjectPath(path+":CISCO_DeviceAlias");
+            cop = new javax.cim.CIMObjectPath(path+":"+className);
 //System.out.println("connection gives a CIMObjectPath "+cop.toString());
 
             //connection = java.sql.DriverManager.getConnection (connectionInfo, properties);
