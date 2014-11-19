@@ -13,6 +13,6 @@ public class SwappedNicknameParser extends NicknameParser
      */
     public SwappedNicknameParser(java.util.Properties properties)
     {
-        super (properties, 1, 0);
+        super (properties, 1, 0, true);
     }
 }
