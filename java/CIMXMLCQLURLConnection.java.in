@@ -1,0 +1,298 @@
+/* smallfoot.org is owned by allan.clark */
+package org.smallfoot.parser.cimcql;
+
+import java.io.*;
+import java.net.MalformedURLException;
+import java.util.Vector;
+import java.util.Hashtable;
+import java.util.Properties;
+import javax.activation.DataSource;
+import javax.activation.URLDataSource;
+import javax.cim.CIMDataType;
+import javax.cim.CIMInstance;
+import javax.cim.CIMObjectPath;
+import javax.cim.CIMProperty;
+import javax.security.auth.Subject;
+import javax.wbem.client.PasswordCredential;
+import javax.wbem.client.UserPrincipal;
+import javax.wbem.client.WBEMClient;
+import javax.wbem.client.WBEMClientFactory;
+import javax.wbem.WBEMException;
+import org.sblim.cimclient.discovery.Discoverer;
+import org.sblim.cimclient.discovery.DiscovererFactory;
+import org.sblim.cimclient.discovery.WBEMServiceAdvertisement;
+//import org.sblim.cimclient.samples.Jsr48CimSample;
+import org.smallfoot.parser.FCParser;
+
+/**
+ * @file
+ *
+ * This class provides the connection info to query a CIM-XML Service via WQL Query
+ *
+ * @page formats Compatible File Formats
+ * @subpage CIMXMLCQLURLConnection
+ *
+ * @page CIMXMLCQLURLConnection CIM-XML CIMOM Database
+ *
+ * The CIMXMLCQLURLConnection collects cimwql:// CIMInstances from a CIM-XML Database
+ *
+ * This collector/parser chain is more successful than text-based parsers simply because
+ * it avoids human-error and the error of not reading the warning to avoid putty log traces
+ * and other "nearly 100% unmodified" methods of transferring content.  Additionally, this
+ * is an entirely binary connection, so the user cannot accidentally edit the content.
+ * Finally, as BNA may harvest from and provide config to many fabrics at once, this is
+ * typically "a broader net to cast" to collect information.
+ */
+
+public class CIMXMLCQLURLConnection extends java.net.URLConnection
+{
+    /**
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan
+     * of this method of doing so, I'd rather have the upstream consume data block of
+     * WWN/Nickname pairs, but this fits into the stream-reading I've currently got. 
+     * To be shallow, it fits the current dataflow, although very soon I'm sure there
+     * will be a need to strip off the layers of hand-offs and go with data blocks
+     * streaming from various resources.
+     */
+    protected class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
+    {
+        protected javax.wbem.CloseableIterator<CIMInstance> source;
+
+        public ResultCSVPipe(javax.wbem.CloseableIterator<CIMInstance> source)
+        {
+            this.source = source;
+        }
+
+        public void run()
+        {
+            if (source != null)
+            {
+                try
+                {
+                    while (source.hasNext())
+                    {
+			CIMInstance w = source.next();
+                        String res = String.format("%s,\"%s\"\n",w.getProperty("pwwn").getValue(), w.getProperty("name").getValue());
+                        write(res.getBytes(), 0, res.length());
+                    }
+                }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException passing data from CIM/WBEM Client to input stream: " + ioe.getMessage());
+            }
+
+            	source = null;
+            }
+
+            try
+            {
+                this.close();
+            }
+            catch (java.io.IOException ioe)
+            {
+                System.err.println("IOException closing datapath from database: " + ioe.getMessage());
+            }
+        }
+    }
+
+
+    String connectionInfo = null;
+    java.util.Properties properties = new java.util.Properties();
+    protected WBEMClient client = null;
+    protected CIMObjectPath cop = null;
+    protected String path = "/cimv2";
+
+    public CIMXMLCQLURLConnection(String connectionInfo, String username, String password)
+    {
+        super(URLof(connectionInfo));
+//System.out.println("CIMXMLCQLURLConnection with url "+URLof(connectionInfo).toString()+" from "+connectionInfo);
+        this.connectionInfo = connectionInfo;
+        properties.put("user",username);
+        properties.put("password",password);
+    }
+
+
+    public CIMXMLCQLURLConnection(java.net.URL url)
+    {
+        super(url);
+//System.out.println("CIMXMLCQLURLConnection with url "+url.toString());
+        String work = "jdbc:mysql://"+url.getHost()+":";
+
+        if (-1 == url.getPort())
+            work += "3306";
+        else
+            work += url.getPort();
+
+        work += "/dwh_inventory";
+
+        String user = null;
+        String pass = null;
+        if (null == url.getUserInfo())
+        {
+            user = "dwh";
+            pass = "password";
+        }
+        else
+        {
+            String[] a = url.getUserInfo().split(":");
+            if (1 <= (java.lang.reflect.Array.getLength(a)))
+                user = a[0];
+            if (2 <= (java.lang.reflect.Array.getLength(a)))
+                pass = a[1];
+        }
+
+        connectionInfo = work;
+        properties.put("user",user);
+        properties.put("password",pass);
+    }
+
+    /**
+     * Stubbed, because there's no change we want to accept yet
+     *
+     * @param name ignored
+     * @param value ignored
+     */
+    public void setRequestHeader(String name, String value) { }
+
+    /**
+     * Stubbed, because there's no change we want to accept yet
+     *
+     * @param ignored ignored
+     */
+    public void setContentType(String ignored) { }
+
+    /**
+     * Stubbed, because there's nothing to send us.  Oh how did I get caught in the "Royal 'We'" ?
+     */
+    public java.io.OutputStream getOutputStream()
+    {
+        return null;
+    }
+
+
+    /**
+     * connect the result of a "SELECT hp.wwn, h.name FROM host_port hp JOIN host h ON (h.id = hp.hostid)" to something that looks readable like an InputStream
+     */
+    public java.io.InputStream getInputStream()
+    {
+        if (null == client)
+            connect();
+	if (null == client)
+            return null;
+
+        try
+        {
+//System.out.println("gathering inputstream via "+client.toString());
+            javax.cim.CIMObjectPath cop = new javax.cim.CIMObjectPath(path+":CISCO_DeviceAlias");
+//System.out.println("gathering inputstream: cop == "+cop);
+            ResultCSVPipe res = new ResultCSVPipe( client.execQuery(cop, String.format("select pwwn,name from CISCO_DeviceAlias"), "WQL") );
+            new Thread(res).start();
+            return new java.io.PipedInputStream(res);
+        }
+        catch (WBEMException e)
+        {
+            System.err.println("WBEM Exception: " + e.getMessage());
+            e.printStackTrace();
+            return null;
+        }
+        catch (java.io.IOException ioe)
+        {
+            System.err.println("IOException joining database output to piped input: " + ioe.getMessage());
+            return null;
+        }
+    }
+
+
+    static public Subject getSubjectAuth (String authInfo)
+    {
+//System.out.println("Authorizating via getSubjectAuth("+authInfo+")");
+        if (null == authInfo) return null;
+        if (0 == authInfo.length()) return null;
+
+        String[] w = authInfo.split(":");
+        Subject s = new Subject();
+
+        switch (w.length)
+        {
+        case 0:
+            return null;
+        default:
+        case 2:
+            s.getPrivateCredentials().add(new PasswordCredential(w[1]));
+        /* fall-thru */
+        case 1:
+            s.getPrincipals().add(new UserPrincipal(w[0]));
+
+//System.out.println("w[0] is "+w[0]);
+//System.out.println("w[1] is "+w[1]);
+        }
+
+        return s;
+    }
+
+
+
+    static public WBEMClient getWBEMClient(java.net.URL u) throws WBEMException
+    {
+        String uri = "http://"+u.getHost();
+        if (-1 != u.getPort()) uri += ":"+u.getPort();
+        uri += u.getPath().replaceFirst("//", "/");
+//System.out.println("connecting via getWBEMClient("+u.toString()+") -> \""+uri+"\"");
+
+        CIMObjectPath cns = new CIMObjectPath(uri);
+        WBEMClient w = WBEMClientFactory.getClient("CIM-XML");
+        w.initialize(cns, getSubjectAuth(u.getUserInfo()), null);
+//System.out.println((null == w ? "not ": "")+"connected via getWBEMClient("+u.toString()+") -> \""+uri+"\"");
+
+        return w;
+    }
+
+
+
+
+    /**
+     * openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client.
+     *
+     * @return populated connection as org.smallfoot.cimwql.CIMXMLCQLURLConnection(Connection)
+     * @param url URL to connect to
+     */
+    protected CIMXMLCQLURLConnection openConnection(java.net.URL url)
+    {
+        return null;
+    }
+
+    static java.net.URL URLof(String connectionInfo)
+    {
+        String con[] = connectionInfo.split(":");
+        try
+        {
+            for (int i=0; i < java.lang.reflect.Array.getLength(con); i++) System.out.println("con["+i+"] is "+con[i]);
+            return new java.net.URL("cimcql://" + con[3] + ":" + con[4] + "/" + con[5]);
+        }
+        catch (java.net.MalformedURLException mue)
+        {
+            return null;
+        }
+    }
+
+    public void connect()
+    {
+        try
+        {
+//System.out.println("connecting via connect() with URL = "+this.url.toString());
+            java.net.URL u = this.url;
+            client = getWBEMClient(u);
+            path = u.getPath();
+
+            cop = new javax.cim.CIMObjectPath(path+":CISCO_DeviceAlias");
+//System.out.println("connection gives a CIMObjectPath "+cop.toString());
+
+            //connection = java.sql.DriverManager.getConnection (connectionInfo, properties);
+        }
+        catch (WBEMException e)
+        {
+            System.err.println("WBEM Exception: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
