@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="DCNMURLConnection" kind="page">
-    <compoundname>DCNMURLConnection</compoundname>
-    <title>Cisco DCNM Database</title>
-    <detaileddescription>
-<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection" kindref="compound">DCNMURLConnection</ref> collects dcnm:// and dcnmsql:// sources from DCNM&apos;s backend database to search for aliases it may know</para><para>This collector/parser chain is more successful than text-based parsers simply because it avoids human-error and the error of not reading the warning to avoid putty log traces and other &quot;nearly 100% unmodified&quot; methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as DCNM may harvest from and provide config to many fabrics at once, this is typically &quot;a broader net to cast&quot; to collect information. </para>    </detaileddescription>
-  </compounddef>
-</doxygen>

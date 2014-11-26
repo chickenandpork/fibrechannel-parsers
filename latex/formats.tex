@@ -1,28 +1,24 @@
 \doxyref{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}{p.}{AliShowZoneParser}
 
-\doxyref{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database}{p.}{BNACQLURLConnection}
+\doxyref{Brocade objects from C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database (B\+N\+A, C\+M\+C\+N\+E, H\+P\+N\+A) (alpha)}{p.}{BNACQLURLConnection}
 
-\doxyref{Brocade B\+N\+A Database}{p.}{BNAPURLConnection}
+\doxyref{Brocade B\+N\+A back-\/end Database}{p.}{BNAPURLConnection}
 
 \doxyref{Brocade B\+N\+A Database}{p.}{BNAZoneParser}
 
-\doxyref{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database}{p.}{CIMXMLCQLURLConnection}
+\doxyref{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database via W\+Q\+L}{p.}{CIMXMLCQLURLConnection}
 
-\doxyref{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database}{p.}{CIMXMLWQLURLConnection}
+\doxyref{Cisco-\/specific objects from C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database (D\+C\+N\+M)}{p.}{DCNMCQLURLConnection}
 
-\doxyref{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database}{p.}{DCNMCQLURLConnection}
-
-\doxyref{Cisco D\+C\+N\+M Database}{p.}{DCNMSQLURLConnection}
-
-\doxyref{Cisco D\+C\+N\+M Database}{p.}{DCNMURLConnection}
+\doxyref{Cisco D\+C\+N\+M back-\/end Database}{p.}{DCNMSQLURLConnection}
 
 \doxyref{Cisco \char`\"{}show device-\/alias database\char`\"{}}{p.}{DeviceAliasParser}
 
-\doxyref{Net\+App O\+C\+I Database}{p.}{DWHURLConnection}
+\doxyref{Net\+App O\+C\+I back-\/end Database (ocidwh)}{p.}{DWHURLConnection}
 
-\doxyref{Net\+App O\+C\+I Database}{p.}{MSDWHURLConnection}
+\doxyref{Net\+App O\+C\+I back-\/end Database (msosmsql)}{p.}{MSDWHURLConnection}
 
-\doxyref{Net\+App O\+C\+I Database}{p.}{OSMURLConnection}
+\doxyref{Net\+App O\+C\+I back-\/end Database (osmsql)}{p.}{OSMURLConnection}
 
 \doxyref{Cisco \char`\"{}show zone\char`\"{}}{p.}{ShowZone2Parser}
 
@@ -100,10 +96,10 @@ The result is a list of nicknames, such as\+:
 10000000c9444421,"NASMany_654321"
 10000000c9444430,"NASMany_654321"
 10000000c9444431,"NASMany_654321" \end{DoxyVerb}
- \section{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database}\label{BNACQLURLConnection}
+ \section{Brocade objects from C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database (B\+N\+A, C\+M\+C\+N\+E, H\+P\+N\+A) (alpha)}\label{BNACQLURLConnection}
 The \doxyref{B\+N\+A\+C\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection} collects bnacql\+:// Brocade\+\_\+\+Alias from a B\+N\+A Server via C\+I\+M-\/\+X\+M\+L Database
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Brocade B\+N\+A Database}\label{BNAPURLConnection}
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Brocade B\+N\+A back-\/end Database}\label{BNAPURLConnection}
 The \doxyref{B\+N\+A\+P\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection} collects bna\+://, bnapsql\+://, cmcne\+://, and dcfm\+:// sources from B\+N\+A's backend database to provide the bnazone-\/formatted zone and alias information
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Brocade B\+N\+A Database}\label{BNAZoneParser}
@@ -118,20 +114,16 @@ Use this parser automatically by collecting using a bnapsql\+:// U\+R\+L protoco
 
 
 or \begin{DoxyVerb}java -jar vw4tools.jar -N bna://bna.example.com/\end{DoxyVerb}
- \section{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database}\label{CIMXMLCQLURLConnection}
-The \doxyref{C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection} collects cimwql\+:// C\+I\+M\+Instances from a C\+I\+M-\/\+X\+M\+L Database
+ \section{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database via W\+Q\+L}\label{CIMXMLCQLURLConnection}
+The \doxyref{C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection} collects cimwql\+:// C\+I\+M\+Instances from a C\+I\+M-\/\+X\+M\+L Database.
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database}\label{CIMXMLWQLURLConnection}
-The \doxyref{C\+I\+M\+X\+M\+L\+W\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection} collects cimcql\+:// C\+I\+M\+Instances from a C\+I\+M-\/\+X\+M\+L Database
+This class is specialized via B\+N\+A\+C\+Q\+L\+U\+R\+L\+Connection or D\+C\+N\+M\+C\+Q\+L\+U\+R\+L\+Connection to set certain default attribute names, paths, and class names to make use more convenient
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database}\label{DCNMCQLURLConnection}
-The \doxyref{D\+C\+N\+M\+C\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection} collects bnacql\+:// Cisco\+\_\+\+Device\+Alias from a D\+C\+N\+M Server via C\+I\+M-\/\+X\+M\+L Database
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Cisco-\/specific objects from C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database (D\+C\+N\+M)}\label{DCNMCQLURLConnection}
+The \doxyref{D\+C\+N\+M\+C\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection} collects dcnmcql\+:// Cisco\+\_\+\+Device\+Alias from a D\+C\+N\+M Server via C\+I\+M-\/\+X\+M\+L Database
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as D\+C\+N\+M may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Cisco D\+C\+N\+M Database}\label{DCNMSQLURLConnection}
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as D\+C\+N\+M may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Cisco D\+C\+N\+M back-\/end Database}\label{DCNMSQLURLConnection}
 The \doxyref{D\+C\+N\+M\+S\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection} collects dcnmsql\+:// sources from D\+C\+N\+M's backend database to search for aliases it may know
-
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as D\+C\+N\+M may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Cisco D\+C\+N\+M Database}\label{DCNMURLConnection}
-The \doxyref{D\+C\+N\+M\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection} collects dcnm\+:// and dcnmsql\+:// sources from D\+C\+N\+M's backend database to search for aliases it may know
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as D\+C\+N\+M may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Cisco \char`\"{}show device-\/alias database\char`\"{}}\label{DeviceAliasParser}
 The \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show device-\/alias database\char`\"{} command
@@ -173,13 +165,13 @@ with the following result of W\+W\+P\+N/alias pairs\+: \begin{DoxyVerb}10000000c
 22000024ff123456,"oracle10_hba1"
 5000097201234554,"vmax-18641-fa06a0"
 5000097201234558,"vmax-18641-fa07a0" \end{DoxyVerb}
- \section{Net\+App O\+C\+I Database}\label{DWHURLConnection}
+ \section{Net\+App O\+C\+I back-\/end Database (ocidwh)}\label{DWHURLConnection}
 The \doxyref{D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection} collects ocidwh\+:// sources from O\+C\+I's backend database to search for aliases
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Net\+App O\+C\+I Database}\label{MSDWHURLConnection}
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Net\+App O\+C\+I back-\/end Database (msosmsql)}\label{MSDWHURLConnection}
 The \doxyref{M\+S\+D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection} collects msosmsql\+:// sources from O\+C\+I's backend database to search for aliases
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Net\+App O\+C\+I Database}\label{OSMURLConnection}
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Net\+App O\+C\+I back-\/end Database (osmsql)}\label{OSMURLConnection}
 The \doxyref{O\+S\+M\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection} collects osmsql\+:// sources from O\+C\+I's backend database to parse for aliases it may know
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information.

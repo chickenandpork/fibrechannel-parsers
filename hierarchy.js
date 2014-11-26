@@ -10,7 +10,6 @@ var hierarchy =
     [ "FCParser", "classorg_1_1smallfoot_1_1parser_1_1FCParser.html", null ],
     [ "PipedOutputStream", null, [
       [ "CIMXMLCQLURLConnection.ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe.html", null ],
-      [ "CIMXMLWQLURLConnection.ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe.html", null ],
       [ "OSMURLConnection.ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe.html", null ]
     ] ],
     [ "ResultCSVPipe", null, [
@@ -18,7 +17,6 @@ var hierarchy =
     ] ],
     [ "Runnable", null, [
       [ "CIMXMLCQLURLConnection.ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe.html", null ],
-      [ "CIMXMLWQLURLConnection.ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe.html", null ],
       [ "OSMURLConnection.ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe.html", null ]
     ] ],
     [ "Select2Sample", "classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample.html", null ],
@@ -49,8 +47,6 @@ var hierarchy =
         [ "BNACQLURLConnection", "classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html", null ],
         [ "DCNMCQLURLConnection", "classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection.html", null ]
       ] ],
-      [ "CIMXMLWQLURLConnection", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection.html", null ],
-      [ "DCNMURLConnection", "classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection.html", null ],
       [ "DCNMSQLURLConnection", "classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection.html", null ],
       [ "OSMURLConnection", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection.html", [
         [ "MSDWHURLConnection", "classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection.html", null ],

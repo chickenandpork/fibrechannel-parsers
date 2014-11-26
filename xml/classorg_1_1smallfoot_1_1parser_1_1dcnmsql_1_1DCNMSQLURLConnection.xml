@@ -250,30 +250,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="427">
+      <node id="402">
         <label>DCNMSQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection"/>
-        <childnode refid="428" relation="public-inheritance">
+        <childnode refid="403" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="428">
+      <node id="403">
         <label>URLConnection</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="429">
+      <node id="404">
         <label>DCNMSQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection"/>
-        <childnode refid="430" relation="public-inheritance">
+        <childnode refid="405" relation="public-inheritance">
         </childnode>
-        <childnode refid="431" relation="usage">
+        <childnode refid="406" relation="usage">
           <edgelabel>properties</edgelabel>
         </childnode>
       </node>
-      <node id="430">
+      <node id="405">
         <label>URLConnection</label>
       </node>
-      <node id="431">
+      <node id="406">
         <label>Properties</label>
       </node>
     </collaborationgraph>

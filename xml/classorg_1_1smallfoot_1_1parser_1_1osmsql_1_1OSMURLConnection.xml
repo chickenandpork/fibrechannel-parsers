@@ -255,42 +255,42 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="544">
+      <node id="514">
         <label>DWHURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection"/>
-        <childnode refid="541" relation="public-inheritance">
+        <childnode refid="511" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="541">
+      <node id="511">
         <label>OSMURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection"/>
-        <childnode refid="542" relation="public-inheritance">
+        <childnode refid="512" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="542">
+      <node id="512">
         <label>URLConnection</label>
       </node>
-      <node id="543">
+      <node id="513">
         <label>MSDWHURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection"/>
-        <childnode refid="541" relation="public-inheritance">
+        <childnode refid="511" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="545">
+      <node id="515">
         <label>OSMURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection"/>
-        <childnode refid="546" relation="public-inheritance">
+        <childnode refid="516" relation="public-inheritance">
         </childnode>
-        <childnode refid="547" relation="usage">
+        <childnode refid="517" relation="usage">
           <edgelabel>properties</edgelabel>
         </childnode>
       </node>
-      <node id="546">
+      <node id="516">
         <label>URLConnection</label>
       </node>
-      <node id="547">
+      <node id="517">
         <label>Properties</label>
       </node>
     </collaborationgraph>

@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-198</span>
+   &#160;<span id="projectnumber">0.3-202</span>
    </div>
   </td>
  </tr>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a6085cf44eb1e750084cff1666eeae8ba">   99</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">static</span> InputStream <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a6085cf44eb1e750084cff1666eeae8ba">openSource</a>(String url, <span class="keywordtype">boolean</span> verbose, java.util.Properties prop)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordflow">if</span> (verbose) System.out.println(<span class="stringliteral">&quot;Opening \&quot;&quot;</span>+url+<span class="stringliteral">&quot;\&quot;&quot;</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">//if (verbose) System.out.println(&quot;Opening \&quot;&quot;+url+&quot;\&quot;&quot;);</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        String[] params = url.split(<span class="stringliteral">&quot;;&quot;</span>);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 1; i &lt; params.length; i++)</div>
@@ -185,8 +185,8 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">catch</span> (Exception e)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordflow">if</span> (verbose) System.out.println(<span class="stringliteral">&quot;Enacting convenience workaround due to &quot;</span>+e.getClass().getName().replaceAll(<span class="stringliteral">&quot;^.*\\.&quot;</span>,<span class="stringliteral">&quot;&quot;</span>)+<span class="stringliteral">&quot;: &quot;</span>+e.getMessage()+<span class="stringliteral">&quot; from url &quot;</span>+url);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordflow">if</span> (verbose) e.printStackTrace();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="comment">//if (verbose) System.out.println(&quot;Enacting convenience workaround due to &quot;+e.getClass().getName().replaceAll(&quot;^.*\\.&quot;,&quot;&quot;)+&quot;: &quot;+e.getMessage()+&quot; from url &quot;+url);</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="comment">//if (verbose) e.printStackTrace();</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="comment">/*</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">             * catch a MalformedURLException and check to see if any handler pkgs are registered</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">             *</span></div>
@@ -382,7 +382,7 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">         * @cmdopt -V|--version Show the current release version for reference</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="comment">         * @cmdopt @code java -jar fcparsers.jar --version</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">         *  0.3-198 @endcode</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="comment">         *  0.3-202 @endcode</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">         * @cmdopt -N|--nickname={file/uri} Import nicknames by parsing a text stream from various sources</span></div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="comment">         * @cmdopt @code java -jar fcparsers.jar --nickname=switch44.zoneshow</span></div>
@@ -441,8 +441,8 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="comment">                 * NOTE: the following two pieces of code react as do the instantation of variable &quot;g&quot; above</span></div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="comment">                 */</span></div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                <span class="comment">/* */</span>   System.out.println(g.consistentVersion(<span class="stringliteral">&quot;0.3-198&quot;</span>));     <span class="comment">/* */</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="comment">/* *#/  System.out.println(&quot;0.3-198&quot;);                  /#* */</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                <span class="comment">/* */</span>   System.out.println(g.consistentVersion(<span class="stringliteral">&quot;0.3-202&quot;</span>));     <span class="comment">/* */</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="comment">/* *#/  System.out.println(&quot;0.3-202&quot;);                  /#* */</span></div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            }</div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
@@ -611,7 +611,7 @@ $(document).ready(function(){initNavTree('FCParser_8java_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><a class="el" href="FCParser_8java.html">FCParser.java</a></li>
-    <li class="footer">Generated on Tue Nov 25 2014 16:36:16 for fcparsers by
+    <li class="footer">Generated on Wed Nov 26 2014 09:31:13 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

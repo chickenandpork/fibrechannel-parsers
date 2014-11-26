@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="87" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="87" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="95" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a33f211087f486d6a140a235e1218c93c" prot="protected" static="no" mutable="no">
         <type>ManagedEntity[]</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="149" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="149" bodyend="-1"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="157" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="157" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -86,7 +86,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="58" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="58" bodyend="58"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="60" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="60" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -111,7 +111,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="65" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="65" bodyend="65"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="69" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="69" bodyend="69"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.OutputStream</type>
@@ -124,7 +124,7 @@
 <para>Oh how did I get caught in the &quot;Royal &apos;We&apos;&quot; ? </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="70" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="70" bodyend="73"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="74" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="74" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.InputStream</type>
@@ -137,7 +137,7 @@
 <para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources.</para><para>future: get the list of WWNs and server hostnames/HBAs as a CSV pipe </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="81" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="81" bodyend="84"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="89" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="89" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -150,8 +150,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="140" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="140" bodyend="147"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a7814c248aee2412ec423663437885bf2" compoundref="VCenterURLConnection_8java" startline="88" endline="126">VCenterURLConnection.serviceinstance</references>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="148" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="148" bodyend="155"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a7814c248aee2412ec423663437885bf2" compoundref="VCenterURLConnection_8java" startline="96" endline="134">VCenterURLConnection.serviceinstance</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -167,8 +167,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="88" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="88" bodyend="126"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="VCenterURLConnection_8java" startline="140" endline="147">VCenterURLConnection.connect</referencedby>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="96" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="96" bodyend="134"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="VCenterURLConnection_8java" startline="148" endline="155">VCenterURLConnection.connect</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1ab9dd96154df9f896438760d4bdabf7d6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection" kindref="compound">VCenterURLConnection</ref></type>
@@ -194,7 +194,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="135" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="135" bodyend="138"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="143" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="143" bodyend="146"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-func">
@@ -210,7 +210,7 @@
         </detaileddescription>
         <inbodydescription>
 <para><xrefsect id="jvmopt_1_jvmopt000009"><xreftitle>JVM Options</xreftitle><xrefdescription><para>debug.vme.showRootFolder: For testing and additional info, -Ddebug.vme.showRootFolder causes the data collector to display the VCenter&apos;s root folder. </para></xrefdescription></xrefsect></para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="151" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="151" bodyend="207"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="159" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="159" bodyend="215"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1af5dfb62a43b98d4448f55d43bef78a17" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -223,7 +223,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="209" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="209" bodyend="227"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="217" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="217" bodyend="235"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a8db76927ad0fda2ef0ef1a21496eafaa" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -237,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="229" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="229" bodyend="237"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="237" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="237" bodyend="245"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="239" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="239" bodyend="243"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="247" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="247" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a10cda8fbfd6b9e57e8b725d6630ecc54" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -274,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="245" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="245" bodyend="249"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="253" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="253" bodyend="257"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1af649e730ee3abdbad014696e42c1cb2e" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -291,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="256" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="256" bodyend="266"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="264" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="264" bodyend="274"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a472bb7e0a8ada08a3ef49aa7695d732d" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="268" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="268" bodyend="278"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="276" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="276" bodyend="286"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -317,40 +317,40 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="700">
+      <node id="643">
         <label>VCenterURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection"/>
-        <childnode refid="701" relation="public-inheritance">
+        <childnode refid="644" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="701">
+      <node id="644">
         <label>URLConnection</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="702">
+      <node id="645">
         <label>VCenterURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection"/>
-        <childnode refid="703" relation="public-inheritance">
+        <childnode refid="646" relation="public-inheritance">
         </childnode>
-        <childnode refid="704" relation="usage">
+        <childnode refid="647" relation="usage">
           <edgelabel>esxs</edgelabel>
         </childnode>
-        <childnode refid="705" relation="usage">
+        <childnode refid="648" relation="usage">
           <edgelabel>serviceinstance</edgelabel>
         </childnode>
       </node>
-      <node id="704">
+      <node id="647">
         <label>ManagedEntity</label>
       </node>
-      <node id="703">
+      <node id="646">
         <label>URLConnection</label>
       </node>
-      <node id="705">
+      <node id="648">
         <label>ServiceInstance</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="24" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="23" bodyend="280"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="24" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="23" bodyend="288"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::vmware::VCenterURLConnection</scope><name>connect</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1af5dfb62a43b98d4448f55d43bef78a17" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::vmware::VCenterURLConnection</scope><name>countESXs</name></member>

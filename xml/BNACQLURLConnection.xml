@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="BNACQLURLConnection" kind="page">
     <compoundname>BNACQLURLConnection</compoundname>
-    <title>CIM-XML CIMOM Database</title>
+    <title>Brocade objects from CIM-XML CIMOM Database (BNA, CMCNE, HPNA) (alpha)</title>
     <detaileddescription>
 <para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection" kindref="compound">BNACQLURLConnection</ref> collects bnacql:// Brocade_Alias from a BNA Server via CIM-XML Database</para><para>This collector/parser chain is more successful than text-based parsers simply because it avoids human-error and the error of not reading the warning to avoid putty log traces and other &quot;nearly 100% unmodified&quot; methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as BNA may harvest from and provide config to many fabrics at once, this is typically &quot;a broader net to cast&quot; to collect information. </para>    </detaileddescription>
   </compounddef>

@@ -187,24 +187,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="758">
+      <node id="701">
         <label>ZPAliasEntry</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry"/>
-        <childnode refid="759" relation="public-inheritance">
+        <childnode refid="702" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="759">
+      <node id="702">
         <label>Comparable&lt; ZPAliasEntry &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="760">
+      <node id="703">
         <label>ZPAliasEntry</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry"/>
-        <childnode refid="761" relation="public-inheritance">
+        <childnode refid="704" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="761">
+      <node id="704">
         <label>Comparable&lt; ZPAliasEntry &gt;</label>
       </node>
     </collaborationgraph>

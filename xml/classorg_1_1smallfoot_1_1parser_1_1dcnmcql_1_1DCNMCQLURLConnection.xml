@@ -52,54 +52,54 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="418">
+      <node id="393">
         <label>DCNMCQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection"/>
-        <childnode refid="419" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="419">
+      <node id="394">
         <label>CIMXMLCQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection"/>
-        <childnode refid="420" relation="public-inheritance">
+        <childnode refid="395" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="420">
+      <node id="395">
         <label>URLConnection</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="421">
+      <node id="396">
         <label>DCNMCQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection"/>
-        <childnode refid="422" relation="public-inheritance">
+        <childnode refid="397" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="424">
+      <node id="399">
         <label>WBEMClient</label>
       </node>
-      <node id="422">
+      <node id="397">
         <label>CIMXMLCQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection"/>
-        <childnode refid="423" relation="public-inheritance">
+        <childnode refid="398" relation="public-inheritance">
         </childnode>
-        <childnode refid="424" relation="usage">
+        <childnode refid="399" relation="usage">
           <edgelabel>client</edgelabel>
         </childnode>
-        <childnode refid="425" relation="usage">
+        <childnode refid="400" relation="usage">
           <edgelabel>cop</edgelabel>
         </childnode>
-        <childnode refid="426" relation="usage">
+        <childnode refid="401" relation="usage">
           <edgelabel>properties</edgelabel>
         </childnode>
       </node>
-      <node id="423">
+      <node id="398">
         <label>URLConnection</label>
       </node>
-      <node id="425">
+      <node id="400">
         <label>CIMObjectPath</label>
       </node>
-      <node id="426">
+      <node id="401">
         <label>Properties</label>
       </node>
     </collaborationgraph>

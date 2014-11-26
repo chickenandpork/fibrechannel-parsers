@@ -254,30 +254,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="385">
+      <node id="367">
         <label>BNAPURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection"/>
-        <childnode refid="386" relation="public-inheritance">
+        <childnode refid="368" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="386">
+      <node id="368">
         <label>URLConnection</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="387">
+      <node id="369">
         <label>BNAPURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection"/>
-        <childnode refid="388" relation="public-inheritance">
+        <childnode refid="370" relation="public-inheritance">
         </childnode>
-        <childnode refid="389" relation="usage">
+        <childnode refid="371" relation="usage">
           <edgelabel>properties</edgelabel>
         </childnode>
       </node>
-      <node id="388">
+      <node id="370">
         <label>URLConnection</label>
       </node>
-      <node id="389">
+      <node id="371">
         <label>Properties</label>
       </node>
     </collaborationgraph>

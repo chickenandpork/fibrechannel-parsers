@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="OSMURLConnection" kind="page">
     <compoundname>OSMURLConnection</compoundname>
-    <title>NetApp OCI Database</title>
+    <title>NetApp OCI back-end Database (osmsql)</title>
     <detaileddescription>
 <para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" kindref="compound">OSMURLConnection</ref> collects osmsql:// sources from OCI&apos;s backend database to parse for aliases it may know</para><para>This collector/parser chain is more successful than text-based parsers simply because it avoids human-error and the error of not reading the warning to avoid putty log traces and other &quot;nearly 100% unmodified&quot; methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as BNA may harvest from and provide config to many fabrics at once, this is typically &quot;a broader net to cast&quot; to collect information.</para><para>Testing of this data was done with an exported config database from jessigg called &quot;dwh_inventory.sql&quot; loaded using: /usr/local/mysql/bin/mysqladmin create dwh_inventory /usr/local/mysql/bin/mysql -u root mysql &quot;grant connect on dwh_inventory.* to dwh identified by &apos;password&apos;&quot; /usr/local/mysql/bin/mysqladmin reload grant /usr/local/mysql/bin/mysql -u root dwh_inventory &lt; ~/dwh_inventory.sql </para>    </detaileddescription>
   </compounddef>

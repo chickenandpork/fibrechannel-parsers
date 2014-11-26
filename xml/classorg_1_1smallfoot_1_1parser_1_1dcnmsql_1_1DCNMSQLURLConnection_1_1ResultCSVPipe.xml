@@ -107,88 +107,88 @@
     <detaileddescription>
 <para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="599">
+      <node id="548">
         <label>DCNMSQLURLConnection.ResultCSVPipe</label>
-        <childnode refid="600" relation="public-inheritance">
+        <childnode refid="549" relation="public-inheritance">
         </childnode>
-        <childnode refid="601" relation="public-inheritance">
+        <childnode refid="550" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="600">
+      <node id="549">
         <label>PipedOutputStream</label>
       </node>
-      <node id="601">
+      <node id="550">
         <label>Runnable</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="606">
+      <node id="555">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="607" relation="public-inheritance">
+        <childnode refid="556" relation="public-inheritance">
         </childnode>
-        <childnode refid="613" relation="usage">
+        <childnode refid="562" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="607">
+      <node id="556">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="608" relation="public-inheritance">
+        <childnode refid="557" relation="public-inheritance">
         </childnode>
-        <childnode refid="611" relation="usage">
+        <childnode refid="560" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="612" relation="usage">
+        <childnode refid="561" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="612">
+      <node id="561">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="605">
+      <node id="554">
         <label>Vector&lt; java.sql.ResultSet &gt;</label>
       </node>
-      <node id="602">
+      <node id="551">
         <label>DCNMSQLURLConnection.ResultCSVPipe</label>
-        <childnode refid="603" relation="public-inheritance">
+        <childnode refid="552" relation="public-inheritance">
         </childnode>
-        <childnode refid="604" relation="public-inheritance">
+        <childnode refid="553" relation="public-inheritance">
         </childnode>
-        <childnode refid="605" relation="usage">
+        <childnode refid="554" relation="usage">
           <edgelabel>sources</edgelabel>
         </childnode>
-        <childnode refid="606" relation="usage">
+        <childnode refid="555" relation="usage">
           <edgelabel>aszp</edgelabel>
         </childnode>
       </node>
-      <node id="611">
+      <node id="560">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="609">
+      <node id="558">
         <label>Thread</label>
       </node>
-      <node id="603">
+      <node id="552">
         <label>PipedOutputStream</label>
       </node>
-      <node id="608">
+      <node id="557">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="609" relation="public-inheritance">
+        <childnode refid="558" relation="public-inheritance">
         </childnode>
-        <childnode refid="610" relation="usage">
+        <childnode refid="559" relation="usage">
           <edgelabel>_prop</edgelabel>
         </childnode>
       </node>
-      <node id="604">
+      <node id="553">
         <label>Runnable</label>
       </node>
-      <node id="610">
+      <node id="559">
         <label>Properties</label>
       </node>
-      <node id="613">
+      <node id="562">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>

@@ -16,7 +16,7 @@
         <briefdescription>
 <para><ref refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kindref="member">openConnection(URL)</ref> overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a proper connection with prototype-matching call and parameters </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>populated connection as <ref refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection" kindref="compound">org.smallfoot.parser.dcnm.DCNMURLConnection(Connection)</ref> </para></simplesect>
+<para><simplesect kind="return"><para>populated connection as org.smallfoot.parser.dcnm.DCNMURLConnection(Connection) </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>url</parametername>
@@ -36,24 +36,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="501">
+      <node id="459">
         <label>URLStreamHandler</label>
       </node>
-      <node id="500">
+      <node id="458">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler"/>
-        <childnode refid="501" relation="public-inheritance">
+        <childnode refid="459" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="503">
+      <node id="461">
         <label>URLStreamHandler</label>
       </node>
-      <node id="502">
+      <node id="460">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler"/>
-        <childnode refid="503" relation="public-inheritance">
+        <childnode refid="461" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

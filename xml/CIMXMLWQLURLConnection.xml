@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="CIMXMLWQLURLConnection" kind="page">
-    <compoundname>CIMXMLWQLURLConnection</compoundname>
-    <title>CIM-XML CIMOM Database</title>
-    <detaileddescription>
-<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection" kindref="compound">CIMXMLWQLURLConnection</ref> collects cimcql:// CIMInstances from a CIM-XML Database</para><para>This collector/parser chain is more successful than text-based parsers simply because it avoids human-error and the error of not reading the warning to avoid putty log traces and other &quot;nearly 100% unmodified&quot; methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as BNA may harvest from and provide config to many fabrics at once, this is typically &quot;a broader net to cast&quot; to collect information. </para>    </detaileddescription>
-  </compounddef>
-</doxygen>

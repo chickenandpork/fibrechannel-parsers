@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="MSDWHURLConnection" kind="page">
     <compoundname>MSDWHURLConnection</compoundname>
-    <title>NetApp OCI Database</title>
+    <title>NetApp OCI back-end Database (msosmsql)</title>
     <detaileddescription>
 <para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" kindref="compound">MSDWHURLConnection</ref> collects msosmsql:// sources from OCI&apos;s backend database to search for aliases</para><para>This collector/parser chain is more successful than text-based parsers simply because it avoids human-error and the error of not reading the warning to avoid putty log traces and other &quot;nearly 100% unmodified&quot; methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as BNA may harvest from and provide config to many fabrics at once, this is typically &quot;a broader net to cast&quot; to collect information. </para>    </detaileddescription>
   </compounddef>

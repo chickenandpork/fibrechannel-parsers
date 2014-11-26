@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="DCNMCQLURLConnection" kind="page">
     <compoundname>DCNMCQLURLConnection</compoundname>
-    <title>CIM-XML CIMOM Database</title>
+    <title>Cisco-specific objects from CIM-XML CIMOM Database (DCNM)</title>
     <detaileddescription>
-<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection" kindref="compound">DCNMCQLURLConnection</ref> collects bnacql:// Cisco_DeviceAlias from a DCNM Server via CIM-XML Database</para><para>This collector/parser chain is more successful than text-based parsers simply because it avoids human-error and the error of not reading the warning to avoid putty log traces and other &quot;nearly 100% unmodified&quot; methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as DCNM may harvest from and provide config to many fabrics at once, this is typically &quot;a broader net to cast&quot; to collect information. </para>    </detaileddescription>
+<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection" kindref="compound">DCNMCQLURLConnection</ref> collects dcnmcql:// Cisco_DeviceAlias from a DCNM Server via CIM-XML Database</para><para>This collector/parser chain is more successful than text-based parsers simply because it avoids human-error and the error of not reading the warning to avoid putty log traces and other &quot;nearly 100% unmodified&quot; methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as DCNM may harvest from and provide config to many fabrics at once, this is typically &quot;a broader net to cast&quot; to collect information. </para>    </detaileddescription>
   </compounddef>
 </doxygen>
