@@ -27,6 +27,7 @@ doc: htdocs/README.dox Doxyfile $(SOURCES)
 	if test -n "$(DOXYMESSAGE)" ; then (cd $(<D) && git commit -a -m "$(DOXYMESSAGE)" && git push); fi
 
 htdocs/README.dox: README.md Makefile
+	mkdir -p $(@D)
 if DO_DOXYGEN_MD
 	awk 'BEGIN { print "@file "; print "@mainpage JavaDoc API Markup for @PACKAGE@"; } { printf "%s\n",$$0; } END {print "@tableofcontents" }' $< > $@
 else
