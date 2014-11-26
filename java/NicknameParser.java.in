@@ -37,7 +37,7 @@ public class NicknameParser extends ZoneParserI
 
         this.colWWN=colWWN;
         this.colNickname=colNickname;
-        if (pedantic) this.pedantic = (colWWN > colNickname ? colWWN+1 : colNickname+1); 
+        if (pedantic) this.pedantic = (colWWN > colNickname ? colWWN+1 : colNickname+1);
     }
 
     public void setDebug(boolean debug)
@@ -99,7 +99,7 @@ public class NicknameParser extends ZoneParserI
                 {
                     String[] lb = line.split(",");
                     if (  (-1 < pedantic) && (lb.length > pedantic) )
-			;
+                        ;
                     else if (lb.length <= colWWN)
                         ;
                     else if (lb.length <= colNickname)

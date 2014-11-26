@@ -23,16 +23,16 @@ public class ZPAliasEntry implements java.lang.Comparable<ZPAliasEntry>
 
     public void addAlias (ZPAliasEntry zpa)
     {
-	addAlias(zpa.wwns);
+        addAlias(zpa.wwns);
     }
 
     void addAlias (java.lang.Iterable<String> col)
     {
         if (null != col)
-	{
-	    for (java.util.Iterator<String> i = col.iterator(); i.hasNext(); )
-		wwns.add(i.next().trim().toLowerCase().replaceAll(":",""));
-	}
+        {
+            for (java.util.Iterator<String> i = col.iterator(); i.hasNext(); )
+                wwns.add(i.next().trim().toLowerCase().replaceAll(":",""));
+        }
     }
 
     public String name()
