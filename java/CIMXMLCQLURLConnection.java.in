@@ -32,9 +32,11 @@ import org.smallfoot.parser.FCParser;
  * @page formats Compatible File Formats
  * @subpage CIMXMLCQLURLConnection
  *
- * @page CIMXMLCQLURLConnection CIM-XML CIMOM Database
+ * @page CIMXMLCQLURLConnection CIM-XML CIMOM Database via WQL
  *
- * The CIMXMLCQLURLConnection collects cimwql:// CIMInstances from a CIM-XML Database
+ * The CIMXMLCQLURLConnection collects cimwql:// CIMInstances from a CIM-XML Database.
+ * This class is specialized via BNACQLURLConnection or DCNMCQLURLConnection to set certain
+ * default attribute names, paths, and class names to make use more convenient
  *
  * This collector/parser chain is more successful than text-based parsers simply because
  * it avoids human-error and the error of not reading the warning to avoid putty log traces

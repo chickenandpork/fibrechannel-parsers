@@ -22,7 +22,12 @@ import org.smallfoot.parser.zone.ZPAliasEntry;
 public class DCFMURLConnection extends java.net.URLConnection
 {
     /**
-     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  TO be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming form various resources.
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not
+     * a fan of this method of doing so, I'd rather have the upstream consume data block of
+     * WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  To be
+     * shallow, it fits the current dataflow, although very soon I'm sure there will be a need
+     * to strip off the layers of hand-offs and go with data blocks streaming form various
+     * resources.
      */
     class ResultCSVPipe extends java.io.PipedOutputStream implements Runnable
     {

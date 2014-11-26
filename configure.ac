@@ -289,7 +289,7 @@ AC_CONFIG_FILES(Makefile
   depjars/Makefile 
   java/Makefile java/zonefile.y java/bnazone.y java/NicknameParser.java java/TSVParser.java java/Alias4Parser.java java/devicealias.y java/showzone.y java/vw4invalid.y
   java/showzone2.y
-  java/BNAPURLConnection.java java/DWHURLConnection.java java/MSDWHURLConnection.java java/OSMURLConnection.java java/DCNMURLConnection.java java/DCNMSQLURLConnection.java
+  java/BNAPURLConnection.java java/DWHURLConnection.java java/MSDWHURLConnection.java java/OSMURLConnection.java java/DCNMSQLURLConnection.java
   java/CIMXMLCQLURLConnection.java
   java/FCParser.java
   java/SSHCLI.java java/ssh/Handler.java:java/sshHandler.java.in

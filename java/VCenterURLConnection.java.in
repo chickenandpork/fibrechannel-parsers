@@ -50,7 +50,9 @@ public class VCenterURLConnection extends java.net.URLConnection
     }
 
     /**
-     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently
+     * "at this time" is more professional, if you listen to the wordy airport
+     * announcements.
      *
      * @param name ignored
      * @param value ignored
@@ -58,7 +60,9 @@ public class VCenterURLConnection extends java.net.URLConnection
     public void setRequestHeader(String name, String value) { }
 
     /**
-     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently "at this time" is more professional, if you listen to the wordy airport announcements.
+     * Stubbed, because there's no change we want to accept yet.  Sorry, apparently
+     * "at this time" is more professional, if you listen to the wordy airport
+     * announcements.
      *
      * @param ignored ignored
      */
@@ -74,7 +78,11 @@ public class VCenterURLConnection extends java.net.URLConnection
 
 
     /**
-     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I've currently got.  To be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources.
+     * PipedOutputStream to push out resultsets as CSV Nicknames.  No, I'm not a fan of this
+     * method of doing so, I'd rather have the upstream consume data block of WWN/Nickname
+     * pairs, but this fits into the stream-reading I've currently got.  To be shallow, it
+     * fits the current dataflow, although very soon I'm sure there will be a need to strip
+     * off the layers of hand-offs and go with data blocks streaming from various resources.
      *
      * future: get the list of WWNs and server hostnames/HBAs as a CSV pipe
      */

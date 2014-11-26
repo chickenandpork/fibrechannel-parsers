@@ -9,7 +9,7 @@ package org.smallfoot.parser.ocidwh;
  * @page formats Compatible File Formats
  * @subpage DWHURLConnection
  *
- * @page DWHURLConnection NetApp OCI Database
+ * @page DWHURLConnection NetApp OCI back-end Database (ocidwh)
  *
  * The DWHURLConnection collects ocidwh:// sources from OCI's backend database to search for aliases
  *
