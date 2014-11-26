@@ -33,9 +33,9 @@ import org.smallfoot.parser.cimcql.CIMXMLCQLURLConnection;
  * @page formats Compatible File Formats
  * @subpage DCNMCQLURLConnection
  *
- * @page DCNMCQLURLConnection CIM-XML CIMOM Database
+ * @page DCNMCQLURLConnection Cisco-specific objects from CIM-XML CIMOM Database (DCNM)
  *
- * The DCNMCQLURLConnection collects bnacql:// Cisco_DeviceAlias from a DCNM Server via CIM-XML Database
+ * The DCNMCQLURLConnection collects dcnmcql:// Cisco_DeviceAlias from a DCNM Server via CIM-XML Database
  *
  * This collector/parser chain is more successful than text-based parsers simply because
  * it avoids human-error and the error of not reading the warning to avoid putty log traces

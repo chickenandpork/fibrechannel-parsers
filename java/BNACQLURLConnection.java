@@ -33,7 +33,7 @@ import org.smallfoot.parser.cimcql.CIMXMLCQLURLConnection;
  * @page formats Compatible File Formats
  * @subpage BNACQLURLConnection
  *
- * @page BNACQLURLConnection CIM-XML CIMOM Database
+ * @page BNACQLURLConnection Brocade objects from CIM-XML CIMOM Database (BNA, CMCNE, HPNA) (alpha)
  *
  * The BNACQLURLConnection collects bnacql:// Brocade_Alias from a BNA Server via CIM-XML Database
  *
