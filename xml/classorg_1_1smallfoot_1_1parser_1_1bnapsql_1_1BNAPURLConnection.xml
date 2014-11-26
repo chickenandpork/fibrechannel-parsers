@@ -254,25 +254,31 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="263">
+      <node id="385">
         <label>BNAPURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection"/>
-        <childnode refid="264" relation="public-inheritance">
+        <childnode refid="386" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="264">
+      <node id="386">
         <label>URLConnection</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="265">
+      <node id="387">
         <label>BNAPURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection"/>
-        <childnode refid="266" relation="public-inheritance">
+        <childnode refid="388" relation="public-inheritance">
+        </childnode>
+        <childnode refid="389" relation="usage">
+          <edgelabel>properties</edgelabel>
         </childnode>
       </node>
-      <node id="266">
+      <node id="388">
         <label>URLConnection</label>
+      </node>
+      <node id="389">
+        <label>Properties</label>
       </node>
     </collaborationgraph>
     <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="37" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="36" bodyend="388"/>

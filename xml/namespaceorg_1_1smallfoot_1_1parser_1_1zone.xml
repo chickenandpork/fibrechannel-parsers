@@ -9,6 +9,7 @@
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" prot="public">org::smallfoot::parser::zone::NicknameParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser" prot="public">org::smallfoot::parser::zone::ShowZone2Parser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" prot="public">org::smallfoot::parser::zone::ShowZoneParser</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser" prot="public">org::smallfoot::parser::zone::SwappedNicknameParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser" prot="public">org::smallfoot::parser::zone::TSVParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" prot="public">org::smallfoot::parser::zone::VW4InvalidAddedParser</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" prot="public">org::smallfoot::parser::zone::ZoneParser</innerclass>

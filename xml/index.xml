@@ -95,6 +95,10 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a17b50844ec3130260c2258a3a2d78e08" kind="function"><name>AliShowZoneParser</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection" kind="class"><name>org::smallfoot::parser::bnacql::BNACQLURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_1a42330dd92e9ddf705e7338a411aa5956" kind="function"><name>BNACQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_1ac2ad967a2d959c61ccc7b8fed4250e16" kind="function"><name>BNACQLURLConnection</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
@@ -185,19 +189,77 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a7f848f7fa16da15b846b783d07328f76" kind="function"><name>BNAZoneParser</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
   </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection" kind="class"><name>org::smallfoot::parser::dcnmsql::DCNMURLConnection</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" kind="variable"><name>connection</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a5bd96cd9bd64ccb5fc14b14588589222" kind="function"><name>DCNMURLConnection</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a45111fe81b743a1ac2cce923660c68c2" kind="function"><name>DCNMURLConnection</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a4170f42681efaf92df5c2030f5298905" kind="function"><name>getOutputStream</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a8ac3a6437651e5511697958565eafb24" kind="function"><name>openConnection</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" kind="function"><name>URLof</name></member>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection" kind="class"><name>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a6a3e18a04de8a1a1ac2a25d15b2fffd1" kind="variable"><name>client</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0baa21aef3abf22826d04b324a5c6f5d" kind="variable"><name>cop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" kind="variable"><name>path</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1abc3f4a3a7207586bb03ae4c95eea6810" kind="variable"><name>className</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" kind="variable"><name>propWWPN</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" kind="variable"><name>propName</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" kind="function"><name>CIMXMLCQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1afba634ab6ebfeb95ecea6767c3eac453" kind="function"><name>CIMXMLCQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a4170f42681efaf92df5c2030f5298905" kind="function"><name>getOutputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aadf7257e3a434bec0920b9e3b07e3edd" kind="function"><name>getSubjectAuth</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" kind="function"><name>getWBEMClient</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aab79a15d0c3bbe8d874b5ba29b97f921" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa742680415a248d60d3c595c6cc4c58e" kind="function"><name>fixURLPath</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" kind="function"><name>URLof</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection" kind="class"><name>org::smallfoot::parser::cimcql::CIMXMLWQLURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a6a3e18a04de8a1a1ac2a25d15b2fffd1" kind="variable"><name>client</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a0baa21aef3abf22826d04b324a5c6f5d" kind="variable"><name>cop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" kind="variable"><name>path</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a1200398e0ad83652415985b771e5c94c" kind="function"><name>CIMXMLWQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a409930c4fafbd2383b2dd1f7d95080db" kind="function"><name>CIMXMLWQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a4170f42681efaf92df5c2030f5298905" kind="function"><name>getOutputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1aadf7257e3a434bec0920b9e3b07e3edd" kind="function"><name>getSubjectAuth</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" kind="function"><name>getWBEMClient</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a742dd64dc4239ad685726425e8843ec0" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" kind="function"><name>URLof</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection" kind="class"><name>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection_1a28e26cd5c622999dc79e7b74d1203349" kind="function"><name>DCNMCQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection_1a8393b7c7f0bd57a255a4123016011930" kind="function"><name>DCNMCQLURLConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection" kind="class"><name>org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a6b788764b81c8f58b7654c790ec4988d" kind="variable"><name>connection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a8324bf249757551b4fbd128e84864c8b" kind="function"><name>DCNMSQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1ac4a5f26b253d332290de3a50b4ea26dc" kind="function"><name>DCNMSQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a4170f42681efaf92df5c2030f5298905" kind="function"><name>getOutputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1aba592eb88bed369db81edef9a8eb9513" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" kind="function"><name>URLof</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection" kind="class"><name>org::smallfoot::parser::dcnm::DCNMURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" kind="variable"><name>connection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a5bd96cd9bd64ccb5fc14b14588589222" kind="function"><name>DCNMURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a45111fe81b743a1ac2cce923660c68c2" kind="function"><name>DCNMURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a4170f42681efaf92df5c2030f5298905" kind="function"><name>getOutputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a8ac3a6437651e5511697958565eafb24" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" kind="function"><name>URLof</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kind="class"><name>org::smallfoot::parser::zone::DeviceAliasParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a4adddc9d747bbbcd221d26df8c80d05f" kind="variable"><name>yydebug</name></member>
@@ -294,37 +356,48 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1FCParser_1a6995194e0af7dc5aa27034287b79dbf3" kind="function"><name>usage</name></member>
   </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcfm::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnm::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnmsql::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::msosmsql::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler" kind="class"><name>org::smallfoot::parser::ocidwh::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::osmsql::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler" kind="class"><name>org::smallfoot::parser::bnapsql::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1Handler" kind="class"><name>org::smallfoot::parser::vmware::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler" kind="class"><name>org::smallfoot::parser::bna::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler" kind="class"><name>org::smallfoot::parser::cmcne::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler" kind="class"><name>org::smallfoot::parser::ssh::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1Handler" kind="class"><name>org::smallfoot::parser::bnacql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler" kind="class"><name>org::smallfoot::parser::bnapsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler" kind="class"><name>org::smallfoot::parser::cimcql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler" kind="class"><name>org::smallfoot::parser::cmcne::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcfm::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnm::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnmcql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnmsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::msosmsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" kind="class"><name>org::smallfoot::parser::msosmsql::MSDWHURLConnection</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a658c89e45145229c94d261bdbaa085b2" kind="function"><name>MSDWHURLConnection</name></member>
@@ -341,6 +414,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a0dc8b05b3f25e59bc98f90dc8c64857c" kind="variable"><name>aliases</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5c6dc08d17828cc9d70bc64b4fb6bf38" kind="variable"><name>dupeStop</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1acd46a0f826a276c736966f6193f717cc" kind="variable"><name>zpquiet</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1af26e25032f46caaa1ead40bbb43f7ec0" kind="variable"><name>pedantic</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a341bcf40e54fcdc15748aa1675957256" kind="variable"><name>colWWN</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a250553b93f729354b4125eeda5f9ffea" kind="variable"><name>colNickname</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1ac7c2594b796ab3c7107f9a55b4fc8488" kind="function"><name>NicknameParser</name></member>
@@ -353,6 +427,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5c646608669073b5c31bb44626baa48f" kind="function"><name>aliasArray</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" kind="function"><name>aliasSize</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9541dfa4225692671d2e0b5ef0f57059" kind="function"><name>NicknameParser</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9bc4ab801fe78c7087eea21e8fcf2953" kind="function"><name>addAlias</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" kind="class"><name>org::smallfoot::parser::osmsql::OSMURLConnection</name>
@@ -373,13 +448,23 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" kind="function"><name>pipeOutputStreamTo</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a0827a34f92131d39860a9f9df6a4b8c3" kind="function"><name>ParserTee</name></member>
   </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::dcnmsql::DCNMURLConnection::ResultCSVPipe</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultCSVPipe_1a69646c2d78f647d120f8eb7573a78a5d" kind="variable"><name>sources</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultCSVPipe_1aba69de0d9eefee9055958ec4bc795910" kind="variable"><name>aszp</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" kind="function"><name>ResultCSVPipe</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultCSVPipe_1a2bda4f9ef7a24e3ad30a7f53cdc63481" kind="function"><name>ResultCSVPipe</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultCSVPipe_1ab0f36f62992913ae7853dde97a8af3e0" kind="function"><name>add</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::dcnm::DCNMURLConnection::ResultCSVPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultCSVPipe_1a69646c2d78f647d120f8eb7573a78a5d" kind="variable"><name>sources</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultCSVPipe_1aba69de0d9eefee9055958ec4bc795910" kind="variable"><name>aszp</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultCSVPipe_1a2bda4f9ef7a24e3ad30a7f53cdc63481" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultCSVPipe_1ab0f36f62992913ae7853dde97a8af3e0" kind="function"><name>add</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection::ResultCSVPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1aba69451974e3a12eee61d115c7a023d1" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1a56f057df31a3d6feded3e02c1bee778a" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
@@ -388,17 +473,25 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2bda4f9ef7a24e3ad30a7f53cdc63481" kind="function"><name>ResultCSVPipe</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
   </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" kind="function"><name>ResultCSVPipe</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::cimcql::CIMXMLWQLURLConnection::ResultCSVPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1aba69451974e3a12eee61d115c7a023d1" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1afa761c88a0bb2b1fcfc2bb1786166134" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
   </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe" kind="class"><name>org::smallfoot::parser::dcnmsql::DCNMURLConnection::ResultSetPipe</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" kind="variable"><name>columnNumber</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" kind="function"><name>ResultSetPipe</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe" kind="class"><name>org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection::ResultCSVPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe_1a69646c2d78f647d120f8eb7573a78a5d" kind="variable"><name>sources</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe_1aba69de0d9eefee9055958ec4bc795910" kind="variable"><name>aszp</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe_1a2bda4f9ef7a24e3ad30a7f53cdc63481" kind="function"><name>ResultCSVPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe_1ab0f36f62992913ae7853dde97a8af3e0" kind="function"><name>add</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe" kind="class"><name>org::smallfoot::parser::dcnm::DCNMURLConnection::ResultSetPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" kind="variable"><name>columnNumber</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" kind="function"><name>ResultSetPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe" kind="class"><name>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultSetPipe</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
@@ -406,6 +499,13 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" kind="function"><name>ResultSetPipe</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultSetPipe" kind="class"><name>org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection::ResultSetPipe</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" kind="variable"><name>source</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" kind="variable"><name>columnNumber</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" kind="function"><name>ResultSetPipe</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample" kind="class"><name>org::smallfoot::parser::boneheadbits::Select2Sample</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample_1ae4faf7ff4190d227357ef851490d7757" kind="function"><name>main</name></member>
@@ -586,6 +686,9 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" kind="function"><name>_connect</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a0a6cc494e46f52b56f10362524e74496" kind="function"><name>_session</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser" kind="class"><name>org::smallfoot::parser::zone::SwappedNicknameParser</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser_1aa6d52f1f45582ec5c6552f419fd07e31" kind="function"><name>SwappedNicknameParser</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser" kind="class"><name>org::smallfoot::parser::zone::TSVParser</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a4e1353cca944de55b1cff88ca87b23cd" kind="variable"><name>br</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a0dc8b05b3f25e59bc98f90dc8c64857c" kind="variable"><name>aliases</name></member>
@@ -604,6 +707,31 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" kind="function"><name>aliasSize</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a9bc4ab801fe78c7087eea21e8fcf2953" kind="function"><name>addAlias</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException" kind="class"><name>org::smallfoot::parser::vmware::VCenterURLConnection::VCCException</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1afad3c6a96d0606cd42424460b1ccb1e2" kind="variable"><name>suggestion</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a437e1ec98952c7e3ab073f488dd912be" kind="function"><name>suggestion</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a562b750126b91c20ad98c0f563111edb" kind="function"><name>VCCException</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a19e2b0ee4e76114ef6b639a0c4c675b8" kind="function"><name>VCCException</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection" kind="class"><name>org::smallfoot::parser::vmware::VCenterURLConnection</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a0766f2c999f41d3990f184648d52ff57" kind="variable"><name>serviceinstance</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a33f211087f486d6a140a235e1218c93c" kind="variable"><name>esxs</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1ae4dbad88006c923ad217ac25aaeac1a1" kind="function"><name>VCenterURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a4170f42681efaf92df5c2030f5298905" kind="function"><name>getOutputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a7814c248aee2412ec423663437885bf2" kind="function"><name>serviceinstance</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1ab9dd96154df9f896438760d4bdabf7d6" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a76163131ec70b42c7d8637b1024fefb5" kind="function"><name>esxs</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1af5dfb62a43b98d4448f55d43bef78a17" kind="function"><name>countESXs</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a8db76927ad0fda2ef0ef1a21496eafaa" kind="function"><name>countESXsWithExc</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a4894f60184ab8295a7f3fd220650d01b" kind="function"><name>getESXCount</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a10cda8fbfd6b9e57e8b725d6630ecc54" kind="function"><name>getESXCountWithExc</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1af649e730ee3abdbad014696e42c1cb2e" kind="function"><name>getESXCount</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1a472bb7e0a8ada08a3ef49aa7695d732d" kind="function"><name>getESXCountWithExc</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1version" kind="class"><name>org::smallfoot::parser::version</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1version_1ae4faf7ff4190d227357ef851490d7757" kind="function"><name>main</name></member>
@@ -775,6 +903,8 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a8dcddc25ac6822355c96c048ec6425ff" kind="function"><name>ZPAliasEntry</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1afb41473f6f2d96fe5a59cfba35e4272b" kind="function"><name>ZPAliasEntry</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a2f5f3c0590fde4600fee4ae884b30454" kind="function"><name>addAlias</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a2d6b39cc90ea6219c68615847f3b7e8d" kind="function"><name>addAlias</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1aec823a1eff2b5333c693248b642141a6" kind="function"><name>addAlias</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1afa2149aced9d90555f788dfc81c23d15" kind="function"><name>name</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a615bd9484115d596c7ea43e7a74f0b17" kind="function"><name>getWWNs</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1ad91f327feecd7baf6b0a99938adb5201" kind="function"><name>getWWNArray</name></member>
@@ -798,7 +928,13 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1a2c91423fb426e7c594b82743ee2ebb86" kind="function"><name>ZPZoneEntry</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPZoneEntry_1add1c7d44303c1a81f18d2371b14f254f" kind="function"><name>addZone</name></member>
   </compound>
+  <compound refid="namespacecom_1_1vmware_1_1vim25" kind="namespace"><name>com::vmware::vim25</name>
+  </compound>
+  <compound refid="namespacecom_1_1vmware_1_1vim25_1_1mo" kind="namespace"><name>com::vmware::vim25::mo</name>
+  </compound>
   <compound refid="namespacejava_1_1io" kind="namespace"><name>java::io</name>
+  </compound>
+  <compound refid="namespacejava_1_1net" kind="namespace"><name>java::net</name>
   </compound>
   <compound refid="namespacejava_1_1util" kind="namespace"><name>java::util</name>
   </compound>
@@ -810,15 +946,21 @@
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1bna" kind="namespace"><name>org::smallfoot::parser::bna</name>
   </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1bnacql" kind="namespace"><name>org::smallfoot::parser::bnacql</name>
+  </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1bnapsql" kind="namespace"><name>org::smallfoot::parser::bnapsql</name>
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits" kind="namespace"><name>org::smallfoot::parser::boneheadbits</name>
+  </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1cimcql" kind="namespace"><name>org::smallfoot::parser::cimcql</name>
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1cmcne" kind="namespace"><name>org::smallfoot::parser::cmcne</name>
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcfm" kind="namespace"><name>org::smallfoot::parser::dcfm</name>
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcnm" kind="namespace"><name>org::smallfoot::parser::dcnm</name>
+  </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcnmcql" kind="namespace"><name>org::smallfoot::parser::dcnmcql</name>
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcnmsql" kind="namespace"><name>org::smallfoot::parser::dcnmsql</name>
   </compound>
@@ -830,23 +972,51 @@
   </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1ssh" kind="namespace"><name>org::smallfoot::parser::ssh</name>
   </compound>
+  <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1vmware" kind="namespace"><name>org::smallfoot::parser::vmware</name>
+  </compound>
   <compound refid="namespaceorg_1_1smallfoot_1_1parser_1_1zone" kind="namespace"><name>org::smallfoot::parser::zone</name>
   </compound>
   <compound refid="Alias4Parser_8java" kind="file"><name>Alias4Parser.java</name>
   </compound>
   <compound refid="AliShowZoneParser_8java" kind="file"><name>AliShowZoneParser.java</name>
   </compound>
-  <compound refid="bnapsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="BNACQLURLConnection_8java" kind="file"><name>BNACQLURLConnection.java</name>
+  </compound>
+  <compound refid="BNAPURLConnection_8java" kind="file"><name>BNAPURLConnection.java</name>
+  </compound>
+  <compound refid="BNAZoneParser_8java" kind="file"><name>BNAZoneParser.java</name>
+  </compound>
+  <compound refid="CIMXMLCQLURLConnection_8java" kind="file"><name>CIMXMLCQLURLConnection.java</name>
+  </compound>
+  <compound refid="CIMXMLWQLURLConnection_8java" kind="file"><name>CIMXMLWQLURLConnection.java</name>
+  </compound>
+  <compound refid="DCNMCQLURLConnection_8java" kind="file"><name>DCNMCQLURLConnection.java</name>
+  </compound>
+  <compound refid="DCNMSQLURLConnection_8java" kind="file"><name>DCNMSQLURLConnection.java</name>
+  </compound>
+  <compound refid="DCNMURLConnection_8java" kind="file"><name>DCNMURLConnection.java</name>
+  </compound>
+  <compound refid="DeviceAliasParser_8java" kind="file"><name>DeviceAliasParser.java</name>
+  </compound>
+  <compound refid="DWHURLConnection_8java" kind="file"><name>DWHURLConnection.java</name>
+  </compound>
+  <compound refid="FCParser_8java" kind="file"><name>FCParser.java</name>
   </compound>
   <compound refid="genproto_2bna_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
+  <compound refid="genproto_2bnacql_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
   <compound refid="genproto_2bnapsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="genproto_2cimcql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="genproto_2cmcne_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="genproto_2dcfm_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="genproto_2dcnm_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="genproto_2dcnmcql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="genproto_2dcnmsql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
@@ -856,19 +1026,9 @@
   </compound>
   <compound refid="genproto_2osmsql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
+  <compound refid="genproto_2vmware_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
   <compound refid="ssh_2Handler_8java" kind="file"><name>Handler.java</name>
-  </compound>
-  <compound refid="BNAPURLConnection_8java" kind="file"><name>BNAPURLConnection.java</name>
-  </compound>
-  <compound refid="BNAZoneParser_8java" kind="file"><name>BNAZoneParser.java</name>
-  </compound>
-  <compound refid="DCNMURLConnection_8java" kind="file"><name>DCNMURLConnection.java</name>
-  </compound>
-  <compound refid="DeviceAliasParser_8java" kind="file"><name>DeviceAliasParser.java</name>
-  </compound>
-  <compound refid="DWHURLConnection_8java" kind="file"><name>DWHURLConnection.java</name>
-  </compound>
-  <compound refid="FCParser_8java" kind="file"><name>FCParser.java</name>
   </compound>
   <compound refid="MSDWHURLConnection_8java" kind="file"><name>MSDWHURLConnection.java</name>
   </compound>
@@ -888,7 +1048,11 @@
   </compound>
   <compound refid="SSHURLConnection_8java" kind="file"><name>SSHURLConnection.java</name>
   </compound>
+  <compound refid="SwappedNicknameParser_8java" kind="file"><name>SwappedNicknameParser.java</name>
+  </compound>
   <compound refid="TSVParser_8java" kind="file"><name>TSVParser.java</name>
+  </compound>
+  <compound refid="VCenterURLConnection_8java" kind="file"><name>VCenterURLConnection.java</name>
   </compound>
   <compound refid="version_8java" kind="file"><name>version.java</name>
   </compound>
@@ -910,11 +1074,21 @@
   </compound>
   <compound refid="AliShowZoneParser" kind="page"><name>AliShowZoneParser</name>
   </compound>
+  <compound refid="BNACQLURLConnection" kind="page"><name>BNACQLURLConnection</name>
+  </compound>
   <compound refid="BNAPURLConnection" kind="page"><name>BNAPURLConnection</name>
   </compound>
   <compound refid="Compatibility" kind="page"><name>Compatibility</name>
   </compound>
   <compound refid="BNAZoneParser" kind="page"><name>BNAZoneParser</name>
+  </compound>
+  <compound refid="CIMXMLCQLURLConnection" kind="page"><name>CIMXMLCQLURLConnection</name>
+  </compound>
+  <compound refid="CIMXMLWQLURLConnection" kind="page"><name>CIMXMLWQLURLConnection</name>
+  </compound>
+  <compound refid="DCNMCQLURLConnection" kind="page"><name>DCNMCQLURLConnection</name>
+  </compound>
+  <compound refid="DCNMSQLURLConnection" kind="page"><name>DCNMSQLURLConnection</name>
   </compound>
   <compound refid="DCNMURLConnection" kind="page"><name>DCNMURLConnection</name>
   </compound>
@@ -940,15 +1114,19 @@
   </compound>
   <compound refid="dir_9ab14bd24c83483f76923c4d364197b5" kind="dir"><name>java/genproto/bna</name>
   </compound>
+  <compound refid="dir_7d2d6ec2c0f74019ddb571c371755f50" kind="dir"><name>java/genproto/bnacql</name>
+  </compound>
   <compound refid="dir_cb015bdd6bbc27dab8cbcb9f530241fa" kind="dir"><name>java/genproto/bnapsql</name>
   </compound>
-  <compound refid="dir_c4905ed7953f88dc206fb38741b9f54b" kind="dir"><name>java/bnapsql</name>
+  <compound refid="dir_5c5f5170099a0ff00a58e67a9cac939f" kind="dir"><name>java/genproto/cimcql</name>
   </compound>
   <compound refid="dir_1daa675e43872d4aa9c16b7c1351d540" kind="dir"><name>java/genproto/cmcne</name>
   </compound>
   <compound refid="dir_625eb7975d706d6838cdaf30eed55f4a" kind="dir"><name>java/genproto/dcfm</name>
   </compound>
   <compound refid="dir_ae3b636822a08fbdb0f59ee3d581e8b9" kind="dir"><name>java/genproto/dcnm</name>
+  </compound>
+  <compound refid="dir_071e5978995a6bdbb4f4891334cbfb92" kind="dir"><name>java/genproto/dcnmcql</name>
   </compound>
   <compound refid="dir_6e666b79531569a534d53eaad8139f9c" kind="dir"><name>java/genproto/dcnmsql</name>
   </compound>
@@ -963,5 +1141,7 @@
   <compound refid="dir_d7e3ce18747015d129b8f64d6faa4b30" kind="dir"><name>java/genproto/osmsql</name>
   </compound>
   <compound refid="dir_78f1eca83964fe61d8b36350cd844585" kind="dir"><name>java/ssh</name>
+  </compound>
+  <compound refid="dir_ddc1521b0e0353c4b1a175d3ebf5eedb" kind="dir"><name>java/genproto/vmware</name>
   </compound>
 </doxygenindex>

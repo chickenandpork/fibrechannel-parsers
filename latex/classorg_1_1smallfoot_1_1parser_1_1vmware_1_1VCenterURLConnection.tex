@@ -1,0 +1,250 @@
+\section{V\+Center\+U\+R\+L\+Connection Class Reference}
+\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection}\index{V\+Center\+U\+R\+L\+Connection@{V\+Center\+U\+R\+L\+Connection}}
+
+
+Inheritance diagram for V\+Center\+U\+R\+L\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for V\+Center\+U\+R\+L\+Connection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class {\bf V\+C\+C\+Exception}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf V\+Center\+U\+R\+L\+Connection} (java.\+net.\+U\+R\+L url)
+\item 
+void {\bf set\+Request\+Header} (String name, String value)
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's no change we want to accept yet. \end{DoxyCompactList}\item 
+void {\bf set\+Content\+Type} (String ignored)
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's no change we want to accept yet. \end{DoxyCompactList}\item 
+java.\+io.\+Output\+Stream {\bf get\+Output\+Stream} ()
+\begin{DoxyCompactList}\small\item\em Stubbed, because there's nothing to send us. \end{DoxyCompactList}\item 
+java.\+io.\+Input\+Stream {\bf get\+Input\+Stream} ()
+\begin{DoxyCompactList}\small\item\em Piped\+Output\+Stream to push out resultsets as C\+S\+V Nicknames. \end{DoxyCompactList}\item 
+void {\bf connect} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Service\+Instance {\bf serviceinstance} ()  throws V\+C\+C\+Exception     
+\item 
+{\bf V\+Center\+U\+R\+L\+Connection} {\bf open\+Connection} (java.\+net.\+U\+R\+L url)
+\begin{DoxyCompactList}\small\item\em open\+Connection(java.\+net.\+U\+R\+L) overrides java.\+net.\+U\+R\+L\+Stream\+Handler.\+open\+Connection(\+U\+R\+L) by wrapping a pgsql client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Service\+Instance {\bf serviceinstance} = null
+\item 
+Managed\+Entity[$\,$] {\bf esxs} = null
+\begin{DoxyCompactList}\small\item\em singleton loaded by esxs() \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 23 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!V\+Center\+U\+R\+L\+Connection@{V\+Center\+U\+R\+L\+Connection}}
+\index{V\+Center\+U\+R\+L\+Connection@{V\+Center\+U\+R\+L\+Connection}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{V\+Center\+U\+R\+L\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\+Center\+U\+R\+L\+Connection} (
+\begin{DoxyParamCaption}
+\item[{java.\+net.\+U\+R\+L}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_ae4dbad88006c923ad217ac25aaeac1a1}
+
+
+Definition at line 47 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!connect@{connect}}
+\index{connect@{connect}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{connect}]{\setlength{\rightskip}{0pt plus 5cm}void connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_a1396bf9b5defe9fa844a63b5cd40ac0e}
+
+
+Definition at line 140 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+
+
+References V\+Center\+U\+R\+L\+Connection.\+serviceinstance().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_a1396bf9b5defe9fa844a63b5cd40ac0e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!get\+Input\+Stream@{get\+Input\+Stream}}
+\index{get\+Input\+Stream@{get\+Input\+Stream}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{get\+Input\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}java.\+io.\+Input\+Stream get\+Input\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_a0924d1107a459be632532ef34324494e}
+
+
+Piped\+Output\+Stream to push out resultsets as C\+S\+V Nicknames. 
+
+No, I'm not a fan of this method of doing so, I'd rather have the upstream consume data block of W\+W\+N/\+Nickname pairs, but this fits into the stream-\/reading I've currently got. To be shallow, it fits the current dataflow, although very soon I'm sure there will be a need to strip off the layers of hand-\/offs and go with data blocks streaming from various resources.
+
+future\+: get the list of W\+W\+Ns and server hostnames/\+H\+B\+As as a C\+S\+V pipe 
+
+Definition at line 81 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!get\+Output\+Stream@{get\+Output\+Stream}}
+\index{get\+Output\+Stream@{get\+Output\+Stream}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{get\+Output\+Stream}]{\setlength{\rightskip}{0pt plus 5cm}java.\+io.\+Output\+Stream get\+Output\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_a4170f42681efaf92df5c2030f5298905}
+
+
+Stubbed, because there's nothing to send us. 
+
+Oh how did I get caught in the \char`\"{}\+Royal '\+We'\char`\"{} ? 
+
+Definition at line 70 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!open\+Connection@{open\+Connection}}
+\index{open\+Connection@{open\+Connection}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{open\+Connection}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\+Center\+U\+R\+L\+Connection} open\+Connection (
+\begin{DoxyParamCaption}
+\item[{java.\+net.\+U\+R\+L}]{url}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_ab9dd96154df9f896438760d4bdabf7d6}
+
+
+open\+Connection(java.\+net.\+U\+R\+L) overrides java.\+net.\+U\+R\+L\+Stream\+Handler.\+open\+Connection(\+U\+R\+L) by wrapping a pgsql client. 
+
+\begin{DoxyReturn}{Returns}
+populated connection as org.\+smallfoot.\+vmware.\+V\+Center\+U\+R\+L\+Connection(\+Connection) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em url} & U\+R\+L to connect to \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!serviceinstance@{serviceinstance}}
+\index{serviceinstance@{serviceinstance}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{serviceinstance}]{\setlength{\rightskip}{0pt plus 5cm}Service\+Instance serviceinstance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws {\bf V\+C\+C\+Exception}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_a7814c248aee2412ec423663437885bf2}
+
+
+Definition at line 88 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+
+
+Referenced by V\+Center\+U\+R\+L\+Connection.\+connect().
+
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!set\+Content\+Type@{set\+Content\+Type}}
+\index{set\+Content\+Type@{set\+Content\+Type}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{set\+Content\+Type}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Content\+Type (
+\begin{DoxyParamCaption}
+\item[{String}]{ignored}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_aa608e58be69b0389d82d846a25091d36}
+
+
+Stubbed, because there's no change we want to accept yet. 
+
+Sorry, apparently \char`\"{}at this time\char`\"{} is more professional, if you listen to the wordy airport announcements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ignored} & ignored \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!set\+Request\+Header@{set\+Request\+Header}}
+\index{set\+Request\+Header@{set\+Request\+Header}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{set\+Request\+Header}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Request\+Header (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_ac2f45f32dfcaef408189cabb2644841c}
+
+
+Stubbed, because there's no change we want to accept yet. 
+
+Sorry, apparently \char`\"{}at this time\char`\"{} is more professional, if you listen to the wordy airport announcements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & ignored \\
+\hline
+{\em value} & ignored \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+
+
+\subsection{Field Documentation}
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!esxs@{esxs}}
+\index{esxs@{esxs}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{esxs}]{\setlength{\rightskip}{0pt plus 5cm}Managed\+Entity [$\,$] esxs = null\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_a33f211087f486d6a140a235e1218c93c}
+
+
+singleton loaded by esxs() 
+
+
+
+Definition at line 149 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+\index{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}!serviceinstance@{serviceinstance}}
+\index{serviceinstance@{serviceinstance}!org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::vmware\+::\+V\+Center\+U\+R\+L\+Connection}}
+\subsubsection[{serviceinstance}]{\setlength{\rightskip}{0pt plus 5cm}Service\+Instance serviceinstance = null\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_a0766f2c999f41d3990f184648d52ff57}
+
+
+Definition at line 87 of file V\+Center\+U\+R\+L\+Connection.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+java/{\bf V\+Center\+U\+R\+L\+Connection.\+java}\end{DoxyCompactItemize}

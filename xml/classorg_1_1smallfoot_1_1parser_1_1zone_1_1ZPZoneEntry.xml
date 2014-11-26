@@ -93,12 +93,12 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="521">
+      <node id="766">
         <label>Vector&lt; String &gt;</label>
       </node>
-      <node id="520">
+      <node id="765">
         <label>ZPZoneEntry</label>
-        <childnode refid="521" relation="usage">
+        <childnode refid="766" relation="usage">
           <edgelabel>members</edgelabel>
         </childnode>
       </node>

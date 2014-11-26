@@ -1,4 +1,5 @@
 <map id="NicknameParser" name="NicknameParser">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html" title="ZoneParserI" alt="" coords="17,155,111,181"/>
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html" title="ZoneParser" alt="" coords="19,81,109,106"/>
+<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser.html" title="SwappedNicknameParser" alt="" coords="4,305,179,330"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html" title="ZoneParserI" alt="" coords="45,155,139,181"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html" title="ZoneParser" alt="" coords="47,81,137,106"/>
 </map>

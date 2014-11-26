@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_ddc1521b0e0353c4b1a175d3ebf5eedb" kind="dir">
+    <compoundname>java/genproto/vmware</compoundname>
+    <innerfile refid="genproto_2vmware_2Handler_8java">Handler.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/genproto/vmware/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe" kind="class" prot="package">
+    <compoundname>org::smallfoot::parser::dcnm::DCNMURLConnection::ResultSetPipe</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PipedOutputStream</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" prot="package" static="no" mutable="no">
+        <type>java.sql.ResultSet</type>
+        <definition>java.sql.ResultSet source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" line="130" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int columnNumber</definition>
+        <argsstring></argsstring>
+        <name>columnNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" line="131" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResultSetPipe</definition>
+        <argsstring>(java.sql.ResultSet source, int columnNumber)</argsstring>
+        <name>ResultSetPipe</name>
+        <param>
+          <type>java.sql.ResultSet</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>columnNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" line="132" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" bodystart="132" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" line="138" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" bodystart="138" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.io.InputStream</type>
+        <definition>java.io.InputStream getInputStream</definition>
+        <argsstring>()</argsstring>
+        <name>getInputStream</name>
+        <exceptions> throws java.io.IOException         </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>java.io.IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>when java.io.PipedInputStream.PipedInputStream(PipedOutputStream) throws an IOException &quot;when an I/O error occurs&quot; (thanks, guys) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" line="193" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" bodystart="193" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PipedOutputStream to push out a single column of a resultset as a stream of resulting data. </para>    </briefdescription>
+    <detaileddescription>
+<para>More reinforcement of the layers discussed in ResultCSVPipe but maybe a bit closer to streams of datablocks? </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="614">
+        <label>DCNMURLConnection.ResultSetPipe</label>
+        <childnode refid="615" relation="public-inheritance">
+        </childnode>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="615">
+        <label>PipedOutputStream</label>
+      </node>
+      <node id="616">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="617">
+        <label>DCNMURLConnection.ResultSetPipe</label>
+        <childnode refid="618" relation="public-inheritance">
+        </childnode>
+        <childnode refid="619" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="618">
+        <label>PipedOutputStream</label>
+      </node>
+      <node id="619">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" line="129" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMURLConnection.java" bodystart="128" bodyend="197"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a3079902a8f3f6bb62c1042384acbd7bc" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::dcnm::DCNMURLConnection::ResultSetPipe</scope><name>columnNumber</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a0924d1107a459be632532ef34324494e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnm::DCNMURLConnection::ResultSetPipe</scope><name>getInputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1ab6d322eecd11a2c3f3ab21d3f39bbdc5" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnm::DCNMURLConnection::ResultSetPipe</scope><name>ResultSetPipe</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnm::DCNMURLConnection::ResultSetPipe</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1DCNMURLConnection_1_1ResultSetPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::dcnm::DCNMURLConnection::ResultSetPipe</scope><name>source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

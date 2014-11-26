@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection" prot="public" virt="non-virtual">CIMXMLCQLURLConnection</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection_1a28e26cd5c622999dc79e7b74d1203349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DCNMCQLURLConnection</definition>
+        <argsstring>(String connectionInfo, String username, String password)</argsstring>
+        <name>DCNMCQLURLConnection</name>
+        <param>
+          <type>String</type>
+          <declname>connectionInfo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" line="50" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="50" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection_1a8393b7c7f0bd57a255a4123016011930" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DCNMCQLURLConnection</definition>
+        <argsstring>(java.net.URL url)</argsstring>
+        <name>DCNMCQLURLConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" line="55" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="418">
+        <label>DCNMCQLURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection"/>
+        <childnode refid="419" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>CIMXMLCQLURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection"/>
+        <childnode refid="420" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>URLConnection</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="421">
+        <label>DCNMCQLURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection"/>
+        <childnode refid="422" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>WBEMClient</label>
+      </node>
+      <node id="422">
+        <label>CIMXMLCQLURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection"/>
+        <childnode refid="423" relation="public-inheritance">
+        </childnode>
+        <childnode refid="424" relation="usage">
+          <edgelabel>client</edgelabel>
+        </childnode>
+        <childnode refid="425" relation="usage">
+          <edgelabel>cop</edgelabel>
+        </childnode>
+        <childnode refid="426" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="423">
+        <label>URLConnection</label>
+      </node>
+      <node id="425">
+        <label>CIMObjectPath</label>
+      </node>
+      <node id="426">
+        <label>Properties</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" line="49" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="48" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>CIMXMLCQLURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1afba634ab6ebfeb95ecea6767c3eac453" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>CIMXMLCQLURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1abc3f4a3a7207586bb03ae4c95eea6810" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>className</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a6a3e18a04de8a1a1ac2a25d15b2fffd1" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>client</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>connect</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a7e56aefae8a91fd879647078501bd2c8" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>connectionInfo</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0baa21aef3abf22826d04b324a5c6f5d" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>cop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection_1a28e26cd5c622999dc79e7b74d1203349" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>DCNMCQLURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection_1a8393b7c7f0bd57a255a4123016011930" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>DCNMCQLURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa742680415a248d60d3c595c6cc4c58e" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>fixURLPath</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>getInputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>getOutputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aadf7257e3a434bec0920b9e3b07e3edd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>getSubjectAuth</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>getWBEMClient</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aab79a15d0c3bbe8d874b5ba29b97f921" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>openConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>path</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>properties</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>propName</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>propWWPN</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>setContentType</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>setRequestHeader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>URLof</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

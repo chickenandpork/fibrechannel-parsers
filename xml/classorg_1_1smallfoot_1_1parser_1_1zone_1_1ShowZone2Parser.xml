@@ -1151,68 +1151,74 @@ null,null,null,null,null,&quot;ALPHANUM&quot;,&quot;<ref refid="classorg_1_1smal
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="422">
+      <node id="634">
         <label>ShowZone2Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser"/>
-        <childnode refid="423" relation="public-inheritance">
+        <childnode refid="635" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="423">
+      <node id="635">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="424" relation="public-inheritance">
+        <childnode refid="636" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="425">
+      <node id="637">
         <label>Thread</label>
       </node>
-      <node id="424">
+      <node id="636">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="425" relation="public-inheritance">
+        <childnode refid="637" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="426">
+      <node id="638">
         <label>ShowZone2Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser"/>
-        <childnode refid="427" relation="public-inheritance">
+        <childnode refid="639" relation="public-inheritance">
         </childnode>
-        <childnode refid="432" relation="usage">
+        <childnode refid="645" relation="usage">
           <edgelabel>yylval</edgelabel>
           <edgelabel>yyval</edgelabel>
           <edgelabel>valstk</edgelabel>
         </childnode>
       </node>
-      <node id="427">
+      <node id="639">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="428" relation="public-inheritance">
+        <childnode refid="640" relation="public-inheritance">
         </childnode>
-        <childnode refid="430" relation="usage">
+        <childnode refid="643" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="431" relation="usage">
+        <childnode refid="644" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="431">
+      <node id="644">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="430">
+      <node id="643">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="429">
+      <node id="641">
         <label>Thread</label>
       </node>
-      <node id="428">
+      <node id="640">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="429" relation="public-inheritance">
+        <childnode refid="641" relation="public-inheritance">
+        </childnode>
+        <childnode refid="642" relation="usage">
+          <edgelabel>_prop</edgelabel>
         </childnode>
       </node>
-      <node id="432">
+      <node id="642">
+        <label>Properties</label>
+      </node>
+      <node id="645">
         <label>ZoneParserVal</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>

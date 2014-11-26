@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">URLConnection</basecompoundref>
+    <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection" prot="public" virt="non-virtual">BNACQLURLConnection</derivedcompoundref>
+    <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection" prot="public" virt="non-virtual">DCNMCQLURLConnection</derivedcompoundref>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe" prot="protected">org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection::ResultCSVPipe</innerclass>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a7e56aefae8a91fd879647078501bd2c8" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String connectionInfo</definition>
+        <argsstring></argsstring>
+        <name>connectionInfo</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="100" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" static="no" mutable="no">
+        <type>java.util.Properties</type>
+        <definition>java.util.Properties properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <initializer>= new java.util.Properties()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="101" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a6a3e18a04de8a1a1ac2a25d15b2fffd1" prot="protected" static="no" mutable="no">
+        <type>WBEMClient</type>
+        <definition>WBEMClient client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="102" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0baa21aef3abf22826d04b324a5c6f5d" prot="protected" static="no" mutable="no">
+        <type>CIMObjectPath</type>
+        <definition>CIMObjectPath cop</definition>
+        <argsstring></argsstring>
+        <name>cop</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="103" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <initializer>= &quot;/cimv2&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="104" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="104" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" compoundref="CIMXMLCQLURLConnection_8java" startline="109" endline="120">CIMXMLCQLURLConnection.CIMXMLCQLURLConnection</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1abc3f4a3a7207586bb03ae4c95eea6810" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String className</definition>
+        <argsstring></argsstring>
+        <name>className</name>
+        <initializer>= &quot;CIM_Object&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="105" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="105" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" compoundref="CIMXMLCQLURLConnection_8java" startline="109" endline="120">CIMXMLCQLURLConnection.CIMXMLCQLURLConnection</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String propWWPN</definition>
+        <argsstring></argsstring>
+        <name>propWWPN</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="106" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="106" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" compoundref="CIMXMLCQLURLConnection_8java" startline="109" endline="120">CIMXMLCQLURLConnection.CIMXMLCQLURLConnection</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" compoundref="CIMXMLCQLURLConnection_8java" startline="66" endline="96">CIMXMLCQLURLConnection.ResultCSVPipe.run</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String propName</definition>
+        <argsstring></argsstring>
+        <name>propName</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="107" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" compoundref="CIMXMLCQLURLConnection_8java" startline="109" endline="120">CIMXMLCQLURLConnection.CIMXMLCQLURLConnection</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" compoundref="CIMXMLCQLURLConnection_8java" startline="66" endline="96">CIMXMLCQLURLConnection.ResultCSVPipe.run</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CIMXMLCQLURLConnection</definition>
+        <argsstring>(String connectionInfo, String username, String password, String path, String className, String propWWPN, String propName)</argsstring>
+        <name>CIMXMLCQLURLConnection</name>
+        <param>
+          <type>String</type>
+          <declname>connectionInfo</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>password</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>className</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>propWWPN</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>propName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="109" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="109" bodyend="120"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1abc3f4a3a7207586bb03ae4c95eea6810" compoundref="CIMXMLCQLURLConnection_8java" startline="105">CIMXMLCQLURLConnection.className</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" compoundref="CIMXMLCQLURLConnection_8java" startline="104">CIMXMLCQLURLConnection.path</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" compoundref="CIMXMLCQLURLConnection_8java" startline="107">CIMXMLCQLURLConnection.propName</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" compoundref="CIMXMLCQLURLConnection_8java" startline="106">CIMXMLCQLURLConnection.propWWPN</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1afba634ab6ebfeb95ecea6767c3eac453" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CIMXMLCQLURLConnection</definition>
+        <argsstring>(java.net.URL url, String path, String className, String propWWPN, String propName)</argsstring>
+        <name>CIMXMLCQLURLConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>className</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>propWWPN</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>propName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="123" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="123" bodyend="159"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1abc3f4a3a7207586bb03ae4c95eea6810" compoundref="CIMXMLCQLURLConnection_8java" startline="105">CIMXMLCQLURLConnection.className</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" compoundref="CIMXMLCQLURLConnection_8java" startline="104">CIMXMLCQLURLConnection.path</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" compoundref="CIMXMLCQLURLConnection_8java" startline="107">CIMXMLCQLURLConnection.propName</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" compoundref="CIMXMLCQLURLConnection_8java" startline="106">CIMXMLCQLURLConnection.propWWPN</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setRequestHeader</definition>
+        <argsstring>(String name, String value)</argsstring>
+        <name>setRequestHeader</name>
+        <param>
+          <type>String</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Stubbed, because there&apos;s no change we want to accept yet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="167" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setContentType</definition>
+        <argsstring>(String ignored)</argsstring>
+        <name>setContentType</name>
+        <param>
+          <type>String</type>
+          <declname>ignored</declname>
+        </param>
+        <briefdescription>
+<para>Stubbed, because there&apos;s no change we want to accept yet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ignored</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ignored </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="174" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="174" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.io.OutputStream</type>
+        <definition>java.io.OutputStream getOutputStream</definition>
+        <argsstring>()</argsstring>
+        <name>getOutputStream</name>
+        <briefdescription>
+<para>Stubbed, because there&apos;s nothing to send us. </para>        </briefdescription>
+        <detaileddescription>
+<para>Oh how did I get caught in the &quot;Royal &apos;We&apos;&quot; ? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="179" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.io.InputStream</type>
+        <definition>java.io.InputStream getInputStream</definition>
+        <argsstring>()</argsstring>
+        <name>getInputStream</name>
+        <briefdescription>
+<para>connect the result of a &quot;SELECT hp.wwn, h.name FROM host_port hp JOIN host h ON (h.id = hp.hostid)&quot; to something that looks readable like an InputStream </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="188" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="188" bodyend="215"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="CIMXMLCQLURLConnection_8java" startline="312" endline="331">CIMXMLCQLURLConnection.connect</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void connect</definition>
+        <argsstring>()</argsstring>
+        <name>connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="312" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="312" bodyend="331"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" compoundref="CIMXMLCQLURLConnection_8java" startline="247" endline="260">CIMXMLCQLURLConnection.getWBEMClient</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0924d1107a459be632532ef34324494e" compoundref="CIMXMLCQLURLConnection_8java" startline="188" endline="215">CIMXMLCQLURLConnection.getInputStream</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aadf7257e3a434bec0920b9e3b07e3edd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Subject</type>
+        <definition>static Subject getSubjectAuth</definition>
+        <argsstring>(String authInfo)</argsstring>
+        <name>getSubjectAuth</name>
+        <param>
+          <type>String</type>
+          <declname>authInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="218" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="218" bodyend="243"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" compoundref="CIMXMLCQLURLConnection_8java" startline="247" endline="260">CIMXMLCQLURLConnection.getWBEMClient</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>WBEMClient</type>
+        <definition>static WBEMClient getWBEMClient</definition>
+        <argsstring>(java.net.URL u)</argsstring>
+        <name>getWBEMClient</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>u</declname>
+        </param>
+        <exceptions> throws WBEMException     </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="247" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="247" bodyend="260"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aadf7257e3a434bec0920b9e3b07e3edd" compoundref="CIMXMLCQLURLConnection_8java" startline="218" endline="243">CIMXMLCQLURLConnection.getSubjectAuth</references>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="CIMXMLCQLURLConnection_8java" startline="312" endline="331">CIMXMLCQLURLConnection.connect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aab79a15d0c3bbe8d874b5ba29b97f921" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection" kindref="compound">CIMXMLCQLURLConnection</ref></type>
+        <definition>CIMXMLCQLURLConnection openConnection</definition>
+        <argsstring>(java.net.URL url)</argsstring>
+        <name>openConnection</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>openConnection(java.net.URL) overrides java.net.URLStreamHandler.openConnection(URL) by wrapping a pgsql client. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>populated connection as org.smallfoot.cimwql.CIMXMLCQLURLConnection(Connection) </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL to connect to </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="271" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="271" bodyend="274"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa742680415a248d60d3c595c6cc4c58e" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.net.URL</type>
+        <definition>static java.net.URL fixURLPath</definition>
+        <argsstring>(java.net.URL u, String path)</argsstring>
+        <name>fixURLPath</name>
+        <param>
+          <type>java.net.URL</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="276" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="276" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>java.net.URL</type>
+        <definition>static java.net.URL URLof</definition>
+        <argsstring>(String connectionInfo)</argsstring>
+        <name>URLof</name>
+        <param>
+          <type>String</type>
+          <declname>connectionInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="298" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="298" bodyend="310"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="404">
+        <label>BNACQLURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>DCNMCQLURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>CIMXMLCQLURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection"/>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>URLConnection</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="408">
+        <label>WBEMClient</label>
+      </node>
+      <node id="406">
+        <label>CIMXMLCQLURLConnection</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection"/>
+        <childnode refid="407" relation="public-inheritance">
+        </childnode>
+        <childnode refid="408" relation="usage">
+          <edgelabel>client</edgelabel>
+        </childnode>
+        <childnode refid="409" relation="usage">
+          <edgelabel>cop</edgelabel>
+        </childnode>
+        <childnode refid="410" relation="usage">
+          <edgelabel>properties</edgelabel>
+        </childnode>
+      </node>
+      <node id="407">
+        <label>URLConnection</label>
+      </node>
+      <node id="409">
+        <label>CIMObjectPath</label>
+      </node>
+      <node id="410">
+        <label>Properties</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="48" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="47" bodyend="332"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>CIMXMLCQLURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1afba634ab6ebfeb95ecea6767c3eac453" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>CIMXMLCQLURLConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1abc3f4a3a7207586bb03ae4c95eea6810" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>className</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a6a3e18a04de8a1a1ac2a25d15b2fffd1" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>client</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>connect</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a7e56aefae8a91fd879647078501bd2c8" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>connectionInfo</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0baa21aef3abf22826d04b324a5c6f5d" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>cop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa742680415a248d60d3c595c6cc4c58e" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>fixURLPath</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>getInputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>getOutputStream</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aadf7257e3a434bec0920b9e3b07e3edd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>getSubjectAuth</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>getWBEMClient</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aab79a15d0c3bbe8d874b5ba29b97f921" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>openConnection</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>path</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>properties</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>propName</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>propWWPN</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>setContentType</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>setRequestHeader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection</scope><name>URLof</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

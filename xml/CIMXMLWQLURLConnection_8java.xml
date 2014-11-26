@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="CIMXMLWQLURLConnection_8java" kind="file">
+    <compoundname>CIMXMLWQLURLConnection.java</compoundname>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection" prot="public">org::smallfoot::parser::cimcql::CIMXMLWQLURLConnection</innerclass>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe" prot="protected">org::smallfoot::parser::cimcql::CIMXMLWQLURLConnection::ResultCSVPipe</innerclass>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1cimcql">org::smallfoot::parser::cimcql</innernamespace>
+    <briefdescription>
+<para>This class provides the connection info to query a CIM-XML Service via WQL Query. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java"/>
+  </compounddef>
+</doxygen>

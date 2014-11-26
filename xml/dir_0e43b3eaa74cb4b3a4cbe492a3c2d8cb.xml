@@ -3,14 +3,18 @@
   <compounddef id="dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb" kind="dir">
     <compoundname>java/genproto</compoundname>
     <innerdir refid="dir_9ab14bd24c83483f76923c4d364197b5">java/genproto/bna</innerdir>
+    <innerdir refid="dir_7d2d6ec2c0f74019ddb571c371755f50">java/genproto/bnacql</innerdir>
     <innerdir refid="dir_cb015bdd6bbc27dab8cbcb9f530241fa">java/genproto/bnapsql</innerdir>
+    <innerdir refid="dir_5c5f5170099a0ff00a58e67a9cac939f">java/genproto/cimcql</innerdir>
     <innerdir refid="dir_1daa675e43872d4aa9c16b7c1351d540">java/genproto/cmcne</innerdir>
     <innerdir refid="dir_625eb7975d706d6838cdaf30eed55f4a">java/genproto/dcfm</innerdir>
     <innerdir refid="dir_ae3b636822a08fbdb0f59ee3d581e8b9">java/genproto/dcnm</innerdir>
+    <innerdir refid="dir_071e5978995a6bdbb4f4891334cbfb92">java/genproto/dcnmcql</innerdir>
     <innerdir refid="dir_6e666b79531569a534d53eaad8139f9c">java/genproto/dcnmsql</innerdir>
     <innerdir refid="dir_daea5a5e15a03b5a636711ea6b9b0987">java/genproto/msosmsql</innerdir>
     <innerdir refid="dir_50e20d61f67e286b4715d2e1bc365b76">java/genproto/ocidwh</innerdir>
     <innerdir refid="dir_d7e3ce18747015d129b8f64d6faa4b30">java/genproto/osmsql</innerdir>
+    <innerdir refid="dir_ddc1521b0e0353c4b1a175d3ebf5eedb">java/genproto/vmware</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

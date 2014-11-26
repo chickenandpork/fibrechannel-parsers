@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespacecom_1_1vmware_1_1vim25_1_1mo" kind="namespace">
+    <compoundname>com::vmware::vim25::mo</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="1" column="1"/>
+  </compounddef>
+</doxygen>

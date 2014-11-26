@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe" kind="class" prot="protected">
+    <compoundname>org::smallfoot::parser::cimcql::CIMXMLWQLURLConnection::ResultCSVPipe</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">PipedOutputStream</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1aba69451974e3a12eee61d115c7a023d1" prot="protected" static="no" mutable="no">
+        <type>javax.wbem.CloseableIterator&lt; CIMInstance &gt;</type>
+        <definition>javax.wbem.CloseableIterator&lt;CIMInstance&gt; source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java" line="59" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1afa761c88a0bb2b1fcfc2bb1786166134" compoundref="CIMXMLWQLURLConnection_8java" startline="61" endline="64">CIMXMLWQLURLConnection.ResultCSVPipe.ResultCSVPipe</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1afa761c88a0bb2b1fcfc2bb1786166134" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ResultCSVPipe</definition>
+        <argsstring>(javax.wbem.CloseableIterator&lt; CIMInstance &gt; source)</argsstring>
+        <name>ResultCSVPipe</name>
+        <param>
+          <type>javax.wbem.CloseableIterator&lt; CIMInstance &gt;</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java" line="61" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java" bodystart="61" bodyend="64"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1aba69451974e3a12eee61d115c7a023d1" compoundref="CIMXMLWQLURLConnection_8java" startline="59">CIMXMLWQLURLConnection.ResultCSVPipe.source</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java" line="66" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java" bodystart="66" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PipedOutputStream to push out resultsets as CSV Nicknames. </para>    </briefdescription>
+    <detaileddescription>
+<para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="594">
+        <label>PipedOutputStream</label>
+      </node>
+      <node id="595">
+        <label>Runnable</label>
+      </node>
+      <node id="593">
+        <label>CIMXMLWQLURLConnection.ResultCSVPipe</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="597">
+        <label>PipedOutputStream</label>
+      </node>
+      <node id="598">
+        <label>Runnable</label>
+      </node>
+      <node id="596">
+        <label>CIMXMLWQLURLConnection.ResultCSVPipe</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe"/>
+        <childnode refid="597" relation="public-inheritance">
+        </childnode>
+        <childnode refid="598" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java" line="58" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLWQLURLConnection.java" bodystart="57" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1afa761c88a0bb2b1fcfc2bb1786166134" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLWQLURLConnection::ResultCSVPipe</scope><name>ResultCSVPipe</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLWQLURLConnection::ResultCSVPipe</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLWQLURLConnection_1_1ResultCSVPipe_1aba69451974e3a12eee61d115c7a023d1" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLWQLURLConnection::ResultCSVPipe</scope><name>source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

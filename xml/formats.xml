@@ -4,8 +4,13 @@
     <compoundname>formats</compoundname>
     <title>Compatible File Formats</title>
     <innerpage refid="AliShowZoneParser">Brocade &quot;alishow&quot; and &quot;zoneshow&quot;</innerpage>
+    <innerpage refid="BNACQLURLConnection">CIM-XML CIMOM Database</innerpage>
     <innerpage refid="BNAPURLConnection">Brocade BNA Database</innerpage>
     <innerpage refid="BNAZoneParser">Brocade BNA Database</innerpage>
+    <innerpage refid="CIMXMLCQLURLConnection">CIM-XML CIMOM Database</innerpage>
+    <innerpage refid="CIMXMLWQLURLConnection">CIM-XML CIMOM Database</innerpage>
+    <innerpage refid="DCNMCQLURLConnection">CIM-XML CIMOM Database</innerpage>
+    <innerpage refid="DCNMSQLURLConnection">Cisco DCNM Database</innerpage>
     <innerpage refid="DCNMURLConnection">Cisco DCNM Database</innerpage>
     <innerpage refid="DeviceAliasParser">Cisco &quot;show device-alias database&quot;</innerpage>
     <innerpage refid="DWHURLConnection">NetApp OCI Database</innerpage>
@@ -16,6 +21,6 @@
     <innerpage refid="SSHURLConnection">SSH Query</innerpage>
     <innerpage refid="VW4InvalidAdded">VirtualWisdom4 Validation Errors</innerpage>
     <detaileddescription>
-<para><ref refid="AliShowZoneParser" kindref="compound">Brocade &quot;alishow&quot; and &quot;zoneshow&quot;</ref></para><para><ref refid="BNAPURLConnection" kindref="compound">Brocade BNA Database</ref></para><para><ref refid="BNAZoneParser" kindref="compound">Brocade BNA Database</ref></para><para><ref refid="DCNMURLConnection" kindref="compound">Cisco DCNM Database</ref></para><para><ref refid="DeviceAliasParser" kindref="compound">Cisco &quot;show device-alias database&quot;</ref></para><para><ref refid="DWHURLConnection" kindref="compound">NetApp OCI Database</ref></para><para><ref refid="MSDWHURLConnection" kindref="compound">NetApp OCI Database</ref></para><para><ref refid="OSMURLConnection" kindref="compound">NetApp OCI Database</ref></para><para><ref refid="ShowZone2Parser" kindref="compound">Cisco &quot;show zone&quot;</ref></para><para><ref refid="ShowZoneParser" kindref="compound">Cisco &quot;show zone&quot;</ref></para><para><ref refid="SSHURLConnection" kindref="compound">SSH Query</ref></para><para><ref refid="VW4InvalidAdded" kindref="compound">VirtualWisdom4 Validation Errors</ref> </para>    </detaileddescription>
+<para><ref refid="AliShowZoneParser" kindref="compound">Brocade &quot;alishow&quot; and &quot;zoneshow&quot;</ref></para><para><ref refid="BNACQLURLConnection" kindref="compound">CIM-XML CIMOM Database</ref></para><para><ref refid="BNAPURLConnection" kindref="compound">Brocade BNA Database</ref></para><para><ref refid="BNAZoneParser" kindref="compound">Brocade BNA Database</ref></para><para><ref refid="CIMXMLCQLURLConnection" kindref="compound">CIM-XML CIMOM Database</ref></para><para><ref refid="CIMXMLWQLURLConnection" kindref="compound">CIM-XML CIMOM Database</ref></para><para><ref refid="DCNMCQLURLConnection" kindref="compound">CIM-XML CIMOM Database</ref></para><para><ref refid="DCNMSQLURLConnection" kindref="compound">Cisco DCNM Database</ref></para><para><ref refid="DCNMURLConnection" kindref="compound">Cisco DCNM Database</ref></para><para><ref refid="DeviceAliasParser" kindref="compound">Cisco &quot;show device-alias database&quot;</ref></para><para><ref refid="DWHURLConnection" kindref="compound">NetApp OCI Database</ref></para><para><ref refid="MSDWHURLConnection" kindref="compound">NetApp OCI Database</ref></para><para><ref refid="OSMURLConnection" kindref="compound">NetApp OCI Database</ref></para><para><ref refid="ShowZone2Parser" kindref="compound">Cisco &quot;show zone&quot;</ref></para><para><ref refid="ShowZoneParser" kindref="compound">Cisco &quot;show zone&quot;</ref></para><para><ref refid="SSHURLConnection" kindref="compound">SSH Query</ref></para><para><ref refid="VW4InvalidAdded" kindref="compound">VirtualWisdom4 Validation Errors</ref> </para>    </detaileddescription>
   </compounddef>
 </doxygen>

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::vmware::VCenterURLConnection::VCCException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1afad3c6a96d0606cd42424460b1ccb1e2" prot="protected" static="no" mutable="no">
+        <type>String</type>
+        <definition>String suggestion</definition>
+        <argsstring></argsstring>
+        <name>suggestion</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="27" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a437e1ec98952c7e3ab073f488dd912be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String suggestion</definition>
+        <argsstring>()</argsstring>
+        <name>suggestion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="28" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="28" bodyend="31"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a562b750126b91c20ad98c0f563111edb" compoundref="VCenterURLConnection_8java" startline="33" endline="37">VCenterURLConnection.VCCException.VCCException</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a562b750126b91c20ad98c0f563111edb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>VCCException</definition>
+        <argsstring>(Throwable t, String suggestion)</argsstring>
+        <name>VCCException</name>
+        <param>
+          <type>Throwable</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>suggestion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="33" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="33" bodyend="37"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a437e1ec98952c7e3ab073f488dd912be" compoundref="VCenterURLConnection_8java" startline="28" endline="31">VCenterURLConnection.VCCException.suggestion</references>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a19e2b0ee4e76114ef6b639a0c4c675b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>VCCException</definition>
+        <argsstring>(String s, String suggestion)</argsstring>
+        <name>VCCException</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>suggestion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="38" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="38" bodyend="42"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a437e1ec98952c7e3ab073f488dd912be" compoundref="VCenterURLConnection_8java" startline="28" endline="31">VCenterURLConnection.VCCException.suggestion</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="697">
+        <label>Exception</label>
+      </node>
+      <node id="696">
+        <label>VCenterURLConnection.VCCException</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="699">
+        <label>Exception</label>
+      </node>
+      <node id="698">
+        <label>VCenterURLConnection.VCCException</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException"/>
+        <childnode refid="699" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="26" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="25" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1afad3c6a96d0606cd42424460b1ccb1e2" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::vmware::VCenterURLConnection::VCCException</scope><name>suggestion</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a437e1ec98952c7e3ab073f488dd912be" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::vmware::VCenterURLConnection::VCCException</scope><name>suggestion</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a562b750126b91c20ad98c0f563111edb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::vmware::VCenterURLConnection::VCCException</scope><name>VCCException</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a19e2b0ee4e76114ef6b639a0c4c675b8" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::vmware::VCenterURLConnection::VCCException</scope><name>VCCException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

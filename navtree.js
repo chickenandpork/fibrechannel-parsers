@@ -15,7 +15,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
@@ -28,7 +28,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AliShowZoneParser.html",
-"classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aa17ce2b8c32af2a9550b43506c727efc"
+"classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser.html#ad7c704b34912678d95c13243cacf9d7f",
+"namespaceorg_1_1smallfoot_1_1parser_1_1dcfm.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

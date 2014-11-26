@@ -2,13 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="dir_93c6ba7fb77bae0709fae89c9c13b44a" kind="dir">
     <compoundname>java</compoundname>
-    <innerdir refid="dir_c4905ed7953f88dc206fb38741b9f54b">java/bnapsql</innerdir>
     <innerdir refid="dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb">java/genproto</innerdir>
     <innerdir refid="dir_78f1eca83964fe61d8b36350cd844585">java/ssh</innerdir>
     <innerfile refid="Alias4Parser_8java">Alias4Parser.java</innerfile>
     <innerfile refid="AliShowZoneParser_8java">AliShowZoneParser.java</innerfile>
+    <innerfile refid="BNACQLURLConnection_8java">BNACQLURLConnection.java</innerfile>
     <innerfile refid="BNAPURLConnection_8java">BNAPURLConnection.java</innerfile>
     <innerfile refid="BNAZoneParser_8java">BNAZoneParser.java</innerfile>
+    <innerfile refid="CIMXMLCQLURLConnection_8java">CIMXMLCQLURLConnection.java</innerfile>
+    <innerfile refid="CIMXMLWQLURLConnection_8java">CIMXMLWQLURLConnection.java</innerfile>
+    <innerfile refid="DCNMCQLURLConnection_8java">DCNMCQLURLConnection.java</innerfile>
+    <innerfile refid="DCNMSQLURLConnection_8java">DCNMSQLURLConnection.java</innerfile>
     <innerfile refid="DCNMURLConnection_8java">DCNMURLConnection.java</innerfile>
     <innerfile refid="DeviceAliasParser_8java">DeviceAliasParser.java</innerfile>
     <innerfile refid="DWHURLConnection_8java">DWHURLConnection.java</innerfile>
@@ -22,7 +26,9 @@
     <innerfile refid="ShowZoneParser_8java">ShowZoneParser.java</innerfile>
     <innerfile refid="SSHCLI_8java">SSHCLI.java</innerfile>
     <innerfile refid="SSHURLConnection_8java">SSHURLConnection.java</innerfile>
+    <innerfile refid="SwappedNicknameParser_8java">SwappedNicknameParser.java</innerfile>
     <innerfile refid="TSVParser_8java">TSVParser.java</innerfile>
+    <innerfile refid="VCenterURLConnection_8java">VCenterURLConnection.java</innerfile>
     <innerfile refid="version_8java">version.java</innerfile>
     <innerfile refid="VW4InvalidAddedParser_8java">VW4InvalidAddedParser.java</innerfile>
     <innerfile refid="ZoneParser_8java">ZoneParser.java</innerfile>

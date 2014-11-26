@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::zone::SwappedNicknameParser</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" prot="public" virt="non-virtual">NicknameParser</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser_1aa6d52f1f45582ec5c6552f419fd07e31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SwappedNicknameParser</definition>
+        <argsstring>(java.util.Properties properties)</argsstring>
+        <name>SwappedNicknameParser</name>
+        <param>
+          <type>java.util.Properties</type>
+          <declname>properties</declname>
+        </param>
+        <briefdescription>
+<para>Create a parser, setting the debug to true or false. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>properties</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>additional name-value pair collection </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/SwappedNicknameParser.java" line="14" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SwappedNicknameParser.java" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="670">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>NicknameParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser"/>
+        <childnode refid="670" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>SwappedNicknameParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser"/>
+        <childnode refid="669" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>Thread</label>
+      </node>
+      <node id="671">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="672" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="682">
+        <label>BufferedReader</label>
+      </node>
+      <node id="675">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="676" relation="public-inheritance">
+        </childnode>
+        <childnode refid="679" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="680" relation="usage">
+          <edgelabel>zones</edgelabel>
+        </childnode>
+      </node>
+      <node id="680">
+        <label>Vector&lt; ZPZoneEntry &gt;</label>
+      </node>
+      <node id="674">
+        <label>NicknameParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+        <childnode refid="681" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="682" relation="usage">
+          <edgelabel>br</edgelabel>
+        </childnode>
+      </node>
+      <node id="679">
+        <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="673">
+        <label>SwappedNicknameParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser"/>
+        <childnode refid="674" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="677">
+        <label>Thread</label>
+      </node>
+      <node id="676">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="677" relation="public-inheritance">
+        </childnode>
+        <childnode refid="678" relation="usage">
+          <edgelabel>_prop</edgelabel>
+        </childnode>
+      </node>
+      <node id="681">
+        <label>Vector&lt; org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="678">
+        <label>Properties</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/SwappedNicknameParser.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SwappedNicknameParser.java" bodystart="7" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>_prop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9bc4ab801fe78c7087eea21e8fcf2953" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a49f8902117520ae3cc27b7bddb370a0e" prot="package" virt="non-virtual" ambiguityscope="org::smallfoot::parser::zone::ZoneParserI."><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab02480bb67091ad319f56a9dd13ea899" prot="package" virt="non-virtual" ambiguityscope="org::smallfoot::parser::zone::ZoneParserI."><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a55d78812ef0e9e26eabc46c0269ec3ad" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0cfe7f047edd054bac3bc33e9b611afd" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a830731cb1af2631d89e512f38460be81" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5c646608669073b5c31bb44626baa48f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>aliasArray</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a1631138fd08af051dc26686c00768ab3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>aliasElements</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a0dc8b05b3f25e59bc98f90dc8c64857c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>aliases</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>aliasSize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ad9eac83891611fa5e2e983328603eb8a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>appendZoneAlphanum</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a4e1353cca944de55b1cff88ca87b23cd" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>br</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a5cb1996c3b0edb483631b6c82fd82608" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>checkProperty</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a250553b93f729354b4125eeda5f9ffea" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>colNickname</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a341bcf40e54fcdc15748aa1675957256" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>colWWN</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5c6dc08d17828cc9d70bc64b4fb6bf38" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>dupeStop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1af0a81691449a6211ef6b9ffc8b62bb0a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>items</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1ac7c2594b796ab3c7107f9a55b4fc8488" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>NicknameParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9541dfa4225692671d2e0b5ef0f57059" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>NicknameParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a4de85135c75bd7120150390def731fbd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>NicknameParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1af26e25032f46caaa1ead40bbb43f7ec0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>pedantic</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>setDebug</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1aa89f56e94a76b211df071f905e7288ae" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>setReader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>summarize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser_1aa6d52f1f45582ec5c6552f419fd07e31" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>SwappedNicknameParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>testSummary</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a17bb9b86877d4493c7ad4ba284f7c945" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>zoneElements</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a89f1cfcb18c2aaa76794a8ce060637fb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adc74e849472a0632eb0910b719acfa77" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a18c7e8b0a1166e23d1fc9605e4740ccc" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1abe50de6630cefa98b757505c1b5fda0b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1aab55b15bec7ad0340c51c26dca3b8dc6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adaa143b6f1a7f0df5fe512786c8d58a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a78ce415d9f6ed283bce24ee9f700cedb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a678cd3827f5f34241ba56702cd5663a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae2743a1693169cd3b5ebc8fcafa07c74" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1acc9e1015da0abae3030920bc213a20c6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab16d7753f7d4aa5e5674582e3daae58b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>zones</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a083293963a3e77da41becf829be83aca" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>zoneSize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1acd46a0f826a276c736966f6193f717cc" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>zpquiet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

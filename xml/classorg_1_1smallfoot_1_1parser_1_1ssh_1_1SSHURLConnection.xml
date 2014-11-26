@@ -296,29 +296,29 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="450">
+      <node id="664">
         <label>URLConnection</label>
       </node>
-      <node id="449">
+      <node id="663">
         <label>SSHURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection"/>
-        <childnode refid="450" relation="public-inheritance">
+        <childnode refid="664" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="453">
+      <node id="667">
         <label>SSHClient</label>
       </node>
-      <node id="452">
+      <node id="666">
         <label>URLConnection</label>
       </node>
-      <node id="451">
+      <node id="665">
         <label>SSHURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection"/>
-        <childnode refid="452" relation="public-inheritance">
+        <childnode refid="666" relation="public-inheritance">
         </childnode>
-        <childnode refid="453" relation="usage">
+        <childnode refid="667" relation="usage">
           <edgelabel>client</edgelabel>
         </childnode>
       </node>

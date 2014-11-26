@@ -517,108 +517,120 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><xrefsect id="jvmopt_1_jvmopt000009"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseTokenizer</bold> (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) can be set to either &quot;true&quot;, or to the name of a specific parser (ie <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>) to cause the parser&apos;s tokenizing and returned tokens to be displayed. Of note: this will show when the parser sees a value it doesn&apos;t like, such as an improper symbol, word, or key term. This can be helpful in diagnosing why the parser gave up and/or the calling process didn&apos;t feel this parser&apos;s results were worth keeping or using. <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref> and <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref> are not LALR-based but do give some indications by this option.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000010"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.verboseTokenizer=NicknameParser<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/></highlight></codeline>
-</programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000011"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpAliases</bold> (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) can be used to tell most parsers to dump out their results for diagnostics. Setting it to &quot;true&quot; would cause all to dump their results; setting to the name of a Parser (ie <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref>) would cause that individual parser to show its results. These names are the same names listed at the end of a parse attempt for convenience/aide-memoire.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000012"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpAliases=AliShowZoneParser<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
-</programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000013"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpItems</bold> (values: Aliases, reservedAliases) can be used to tell most parsers to dump out additional results directly for diagnostics. For example, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref> can track post-remove aliases in the mapping &quot;reservedAliases&quot;</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000014"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpItems=reservedAliases<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
-</programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000015"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAddAlias</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000016"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAddZone</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000017"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAppendZone</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000018"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.yystate</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see the debug information from inside the LALR state machine itself. This might give some insight as to why some parse attempts are failing, or how the state-machine needs to be extended to accommodate more situations. </para></xrefdescription></xrefsect></para>    </detaileddescription>
+<para><xrefsect id="jvmopt_1_jvmopt000010"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseTokenizer</bold> (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) can be set to either &quot;true&quot;, or to the name of a specific parser (ie <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>) to cause the parser&apos;s tokenizing and returned tokens to be displayed. Of note: this will show when the parser sees a value it doesn&apos;t like, such as an improper symbol, word, or key term. This can be helpful in diagnosing why the parser gave up and/or the calling process didn&apos;t feel this parser&apos;s results were worth keeping or using. <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref> and <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref> are not LALR-based but do give some indications by this option.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000011"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.verboseTokenizer=NicknameParser<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/></highlight></codeline>
+</programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000012"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpAliases</bold> (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) can be used to tell most parsers to dump out their results for diagnostics. Setting it to &quot;true&quot; would cause all to dump their results; setting to the name of a Parser (ie <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref>) would cause that individual parser to show its results. These names are the same names listed at the end of a parse attempt for convenience/aide-memoire.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000013"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpAliases=AliShowZoneParser<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
+</programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000014"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpItems</bold> (values: Aliases, reservedAliases) can be used to tell most parsers to dump out additional results directly for diagnostics. For example, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref> can track post-remove aliases in the mapping &quot;reservedAliases&quot;</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000015"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpItems=reservedAliases<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
+</programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000016"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAddAlias</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000017"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAddZone</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000018"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAppendZone</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000019"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.yystate</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see the debug information from inside the LALR state machine itself. This might give some insight as to why some parse attempts are failing, or how the state-machine needs to be extended to accommodate more situations. </para></xrefdescription></xrefsect></para>    </detaileddescription>
     <inheritancegraph>
-      <node id="499">
+      <node id="742">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="503">
+      <node id="747">
         <label>ShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="502">
+      <node id="746">
         <label>ShowZone2Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="494">
+      <node id="737">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="495" relation="public-inheritance">
+        <childnode refid="738" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="501">
+      <node id="744">
         <label>NicknameParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="505">
+      <node id="749">
         <label>VW4InvalidAddedParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="496">
+      <node id="745">
+        <label>SwappedNicknameParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser"/>
+        <childnode refid="744" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="739">
         <label>Thread</label>
       </node>
-      <node id="495">
+      <node id="738">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="496" relation="public-inheritance">
+        <childnode refid="739" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="497">
+      <node id="740">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="500">
+      <node id="743">
         <label>DeviceAliasParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="504">
+      <node id="748">
         <label>TSVParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="498">
+      <node id="741">
         <label>AliShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="737" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="506">
+      <node id="750">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="507" relation="public-inheritance">
+        <childnode refid="751" relation="public-inheritance">
         </childnode>
-        <childnode refid="509" relation="usage">
+        <childnode refid="754" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="510" relation="usage">
+        <childnode refid="755" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="510">
+      <node id="755">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="509">
+      <node id="754">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="508">
+      <node id="752">
         <label>Thread</label>
       </node>
-      <node id="507">
+      <node id="751">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="508" relation="public-inheritance">
+        <childnode refid="752" relation="public-inheritance">
         </childnode>
+        <childnode refid="753" relation="usage">
+          <edgelabel>_prop</edgelabel>
+        </childnode>
+      </node>
+      <node id="753">
+        <label>Properties</label>
       </node>
     </collaborationgraph>
     <location file="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" line="73" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZoneParserI.java" bodystart="72" bodyend="345"/>
