@@ -234,7 +234,7 @@ AC_MSG_RESULT([default: look-then-build net-schmizz-sshj])
 if test x${WITH_SSHJAR} = xltb-commons-net-ssh
 then
     SSHJAR=$((locate /commons-net-ssh.jar) | grep -v .workdir | head -1)
-    if test -z "${SSHJAR}"
+    if test -z "${SSHJAR}" -o \! -f "${SSHJAR}"
     then
 	WITH_SSHJAR=build-commons-net-ssh
     fi
@@ -243,7 +243,7 @@ fi
 if test x${WITH_SSHJAR} = xltb-net-schmizz-sshj
 then
     SSHJAR=$((locate /net-schmizz-sshj.jar) | grep -v .workdir | head -1)
-    if test -z "${SSHJAR}"
+    if test -z "${SSHJAR}" -o \! -f "${SSHJAR}"
     then
 	WITH_SSHJAR=build-net-schmizz-sshj
     fi
