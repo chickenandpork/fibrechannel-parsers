@@ -30,4 +30,6 @@ public class Handler extends URLStreamHandler
     {
         return new ##localtype##URLConnection(url);
     }
+
+    protected int getDefaultPort() { return ##defaultPort##; }
 }

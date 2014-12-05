@@ -292,11 +292,11 @@ AC_CONFIG_FILES(Makefile
   java/BNAPURLConnection.java java/DWHURLConnection.java java/MSDWHURLConnection.java java/OSMURLConnection.java java/DCNMSQLURLConnection.java
   java/CIMXMLCQLURLConnection.java
   java/FCParser.java
-  java/SSHCLI.java java/ssh/Handler.java:java/sshHandler.java.in
+  java/SSHCLI.java
   java/SSHURLConnection.java
   java/VCenterURLConnection.java
   java/version.java
-  tests-autotest/Makefile tests-autotest/atlocal tests-autotest/testsuite.at
+  tests-autotest/Makefile tests-autotest/testsuite.at
 )
 
 if test "x$RPMBUILD" != "xmissing rpmbuild"

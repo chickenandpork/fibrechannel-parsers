@@ -185,7 +185,9 @@ check-local: $(JARS)
 	for i in $<; do jar tf $$i >/dev/null || exit 1; done
 
 clean-local:
-	rm -f commons-io-2.3-bin.tar.gz
+	rm -f commons-io-2.3-bin.tar.gz sblim-cim-client2-2.2.5-bin.zip slf4j-1.7.5.zip vijava5120121125.zip
+	rm -f sblim-cim-client2-2.2.5.jar
+
 
 JAVAROOT = bld
 #BUILT_SOURCES += javaroot.stamp

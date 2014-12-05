@@ -122,14 +122,21 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
     }
 
 
+    public CIMXMLCQLURLConnection(java.net.URL url)
+    {
+        //super(fixURLPath(url, "/root"));
+	this(url, "/root", "CIM_Collection", "name", "CIM_Name");
+    }
+
+
     public CIMXMLCQLURLConnection(java.net.URL url, String path, String className, String propWWPN, String propName)
     {
         super(fixURLPath(url, path));
 //System.out.println("CIMXMLCQLURLConnection with url "+url.toString()+" from "+connectionInfo+", wwpn="+propWWPN+", name="+propName);
-        String work = "jdbc:mysql://"+url.getHost()+":";
+        String work = "http://"+url.getHost()+":";
 
         if (-1 == url.getPort())
-            work += "3306";
+            work += "80";
         else
             work += url.getPort();
 
@@ -139,7 +146,7 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
         String pass = null;
         if (null == url.getUserInfo())
         {
-            user = "dwh";
+            user = "user";
             pass = "password";
         }
         else

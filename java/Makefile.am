@@ -2,7 +2,7 @@ nodist_java_JAVA  = $(srcdir)/Alias4Parser.java $(srcdir)/FCParser.java $(srcdir
 nodist_java_JAVA += $(srcdir)/ParserTee.java $(srcdir)/ZPAliasEntry.java $(srcdir)/ZPFCAliasEntry.java
 nodist_java_JAVA += $(srcdir)/ZPZoneEntry.java $(srcdir)/ZoneParser.java $(srcdir)/ZoneParserVal.java
 nodist_java_JAVA += $(srcdir)/ZoneParserI.java
-nodist_java_JAVA += $(srcdir)/SSHCLI.java $(abs_builddir)/ssh/Handler.java $(srcdir)/SSHURLConnection.java
+nodist_java_JAVA += $(builddir)/SSHCLI.java $(abs_builddir)/genproto/ssh/Handler.java $(srcdir)/SSHURLConnection.java
 nodist_java_JAVA += $(srcdir)/Select2Sample.java $(srcdir)/TSVParser.java
 nodist_java_JAVA += AliShowZoneParser.java
 nodist_java_JAVA += BNAZoneParser.java
@@ -15,8 +15,8 @@ nodist_java_JAVA += $(abs_builddir)/genproto/ocidwh/Handler.java $(abs_builddir)
 nodist_java_JAVA += $(abs_builddir)/genproto/dcnm/Handler.java $(abs_builddir)/genproto/dcnmsql/Handler.java DCNMSQLURLConnection.java
 nodist_java_JAVA += $(abs_builddir)/genproto/vmware/Handler.java VCenterURLConnection.java
 nodist_java_JAVA += $(abs_builddir)/genproto/cimcql/Handler.java CIMXMLCQLURLConnection.java
-nodist_java_JAVA += $(abs_builddir)/genproto/bnacql/Handler.java BNACQLURLConnection.java
-nodist_java_JAVA += $(abs_builddir)/genproto/dcnmcql/Handler.java DCNMCQLURLConnection.java
+nodist_java_JAVA += $(abs_builddir)/genproto/bnacql/Handler.java $(srcdir)/BNACQLURLConnection.java
+nodist_java_JAVA += $(abs_builddir)/genproto/dcnmcql/Handler.java $(srcdir)/DCNMCQLURLConnection.java
 nodist_java_JAVA += version.java
 javadir = $(pkgdir)
 
@@ -30,16 +30,18 @@ EXTRA_DIST += ParserTee.java ZPAliasEntry.java ZPFCAliasEntry.java
 EXTRA_DIST += ZPZoneEntry.java ZoneParser.java ZoneParserVal.java
 EXTRA_DIST += ZoneParserI.java
 EXTRA_DIST += Select2Sample.java
-EXTRA_DIST += SSHCLI.java.in SSHURLConnection.java sshHandler.java.in
-EXTRA_DIST += CIMXMLCQLURLConnection.java.in
+EXTRA_DIST += SSHCLI.java.in SSHURLConnection.java
+EXTRA_DIST += CIMXMLCQLURLConnection.java.in BNACQLURLConnection.java DCNMCQLURLConnection.java
+EXTRA_DIST += DCNMSQLURLConnection.java.in
 EXTRA_DIST += zonefile.y bnazone.y version.java.in HandlerPrototype.javaproto
 CONFIG_CLEAN_FILES =  @PACKAGE@.jar AliShowZoneParser.java AliShowZoneParserVal.java Alias4Parser.java BNAZoneParser.java BNAZoneParserVal.java DeviceAliasParser.java
 CONFIG_CLEAN_FILES += DeviceAliasParserVal.java FCParser.java NicknameParser.java version.java TSVParser.java
 CONFIG_CLEAN_FILES += CIMXMLCQLURLConnection.java
 CONFIG_CLEAN_FILES += bnazone.y devicealias.y showzone.y showzone2.y zonefile.y vw4invalid.y
 CONFIG_CLEAN_FILES += BNAPURLConnection.java DCNMSQLURLConnection.java DWHURLConnection.java MSDWHURLConnection.java OSMURLConnection.java VCenterURLConnection.java
+CONFIG_CLEAN_FILES += SSHCLI.java SSHURLConnection.java
 
-AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(top_builddir)/depjars/commons-io-2.3.jar:$(top_builddir)/depjars/ssh.jar:$(top_builddir)/depjars/bcpg-jdk15on-151.jar:$(top_builddir)/depjars/bcpkix-jdk15on-151.jar:$(top_builddir)/depjars/bcprov-jdk15on-151.jar:$(top_builddir)/depjars/vijava5120121125.jar:$(top_builddir)/depjars/dom4j-1.6.1.jar:$(top_builddir)/depjars/sblim-cim-client2.jar
+AM_JAVACFLAGS= @JAVAC_FLAGS@ -cp $(JAVAROOT):@GETOPTJAR@:$(abs_top_builddir)/depjars/commons-io-2.3.jar:$(abs_top_srcdir)/depjars/ssh.jar:$(abs_top_srcdir)/depjars/bcpg-jdk15on-151.jar:$(abs_top_srcdir)/depjars/bcpkix-jdk15on-151.jar:$(abs_top_srcdir)/depjars/bcprov-jdk15on-151.jar:$(abs_top_builddir)/depjars/vijava5120121125.jar:$(abs_top_builddir)/depjars/dom4j-1.6.1.jar:$(abs_top_builddir)/depjars/sblim-cim-client2.jar
 
 BUILDTMP=$(shell date +%s)
 BUILT_SOURCES = FCParser.java
@@ -47,55 +49,59 @@ BUILT_SOURCES = FCParser.java
 # build the Handler stubs
 $(abs_builddir)/genproto/bna/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/bna/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
+	sed -e 's/##protocol##/bna/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' -e 's/##defaultPort##/5432/g' $< > $@
 
 $(abs_builddir)/genproto/bnacql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/bnacql/g' -e 's/##localtype##/BNACQL/g' -e 's/##localtypepkg##/bnacql/g' $< > $@
+	sed -e 's/##protocol##/bnacql/g' -e 's/##localtype##/BNACQL/g' -e 's/##localtypepkg##/bnacql/g' -e 's/##defaultPort##/80/g' $< > $@
 
 $(abs_builddir)/genproto/bnapsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/bnapsql/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
+	sed -e 's/##protocol##/bnapsql/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' -e 's/##defaultPort##/5432/g' $< > $@
 
 $(abs_builddir)/genproto/cmcne/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/cmcne/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
+	sed -e 's/##protocol##/cmcne/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' -e 's/##defaultPort##/5432/g' $< > $@
 
 $(abs_builddir)/genproto/dcfm/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/dcfm/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' $< > $@
+	sed -e 's/##protocol##/dcfm/g' -e 's/##localtype##/BNAP/g' -e 's/##localtypepkg##/bnapsql/g' -e 's/##defaultPort##/5432/g' $< > $@
 
 $(abs_builddir)/genproto/ocidwh/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/ocidwh/g' -e 's/##localtype##/DWH/g' -e 's/##localtypepkg##/ocidwh/g' $< > $@
+	sed -e 's/##protocol##/ocidwh/g' -e 's/##localtype##/DWH/g' -e 's/##localtypepkg##/ocidwh/g' -e 's/##defaultPort##/3306/g' $< > $@
 
 $(abs_builddir)/genproto/osmsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/osmsql/g' -e 's/##localtype##/OSM/g' -e 's/##localtypepkg##/osmsql/g' $< > $@
+	sed -e 's/##protocol##/osmsql/g' -e 's/##localtype##/OSM/g' -e 's/##localtypepkg##/osmsql/g' -e 's/##defaultPort##/3306/g' $< > $@
 
 $(abs_builddir)/genproto/msosmsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/msosmsql/g' -e 's/##localtype##/MSDWH/g' -e 's/##localtypepkg##/msosmsql/g' $< > $@
+	sed -e 's/##protocol##/msosmsql/g' -e 's/##localtype##/MSDWH/g' -e 's/##localtypepkg##/msosmsql/g' -e 's/##defaultPort##/3306/g' $< > $@
 
 $(abs_builddir)/genproto/dcnmsql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/dcnmsql/g' -e 's/##localtype##/DCNMSQL/g' -e 's/##localtypepkg##/dcnmsql/g' $< > $@
+	sed -e 's/##protocol##/dcnmsql/g' -e 's/##localtype##/DCNMSQL/g' -e 's/##localtypepkg##/dcnmsql/g' -e 's/##defaultPort##/5432/g' $< > $@
 
 $(abs_builddir)/genproto/dcnm/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/dcnm/g' -e 's/##localtype##/DCNM/g' -e 's/##localtypepkg##/dcnm/g' $< > $@
+	sed -e 's/##protocol##/dcnm/g' -e 's/##localtype##/DCNMSQL/g' -e 's/##localtypepkg##/dcnmsql/g' -e 's/##defaultPort##/5432/g' $< > $@
 
 $(abs_builddir)/genproto/dcnmcql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/dcnmcql/g' -e 's/##localtype##/DCNMCQL/g' -e 's/##localtypepkg##/dcnmcql/g' $< > $@
+	sed -e 's/##protocol##/dcnmcql/g' -e 's/##localtype##/DCNMCQL/g' -e 's/##localtypepkg##/dcnmcql/g' -e 's/##defaultPort##/80/g' $< > $@
 
 $(abs_builddir)/genproto/vmware/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/vmware/g' -e 's/##localtype##/VCenter/g' -e 's/##localtypepkg##/vmware/g' $< > $@
+	sed -e 's/##protocol##/vmware/g' -e 's/##localtype##/VCenter/g' -e 's/##localtypepkg##/vmware/g' -e 's/##defaultPort##/80/g' $< > $@
 
 $(abs_builddir)/genproto/cimcql/Handler.java: $(srcdir)/HandlerPrototype.javaproto
 	@mkdir -p $(@D)
-	sed -e 's/##protocol##/cimcql/g' -e 's/##localtype##/CIMXMLCQL/g' -e 's/##localtypepkg##/cimcql/g' $< > $@
+	sed -e 's/##protocol##/cimcql/g' -e 's/##localtype##/CIMXMLCQL/g' -e 's/##localtypepkg##/cimcql/g' -e 's/##defaultPort##/80/g' $< > $@
+
+$(abs_builddir)/genproto/ssh/Handler.java: $(srcdir)/HandlerPrototype.javaproto
+	@mkdir -p $(@D)
+	sed -e 's/##protocol##/ssh/g' -e 's/##localtype##/SSH/g' -e 's/##localtypepkg##/ssh/g' -e 's/##defaultPort##/22/g' $< > $@
 
 if DO_BYACC
 
