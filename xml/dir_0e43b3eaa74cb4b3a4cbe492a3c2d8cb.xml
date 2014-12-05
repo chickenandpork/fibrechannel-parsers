@@ -14,6 +14,7 @@
     <innerdir refid="dir_daea5a5e15a03b5a636711ea6b9b0987">java/genproto/msosmsql</innerdir>
     <innerdir refid="dir_50e20d61f67e286b4715d2e1bc365b76">java/genproto/ocidwh</innerdir>
     <innerdir refid="dir_d7e3ce18747015d129b8f64d6faa4b30">java/genproto/osmsql</innerdir>
+    <innerdir refid="dir_9ed736c8effb5cabd84b76b7f43a9f07">java/genproto/ssh</innerdir>
     <innerdir refid="dir_ddc1521b0e0353c4b1a175d3ebf5eedb">java/genproto/vmware</innerdir>
     <briefdescription>
     </briefdescription>

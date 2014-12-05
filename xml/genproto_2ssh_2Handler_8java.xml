@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="genproto_2ssh_2Handler_8java" kind="file">
+    <compoundname>Handler.java</compoundname>
+    <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler" prot="public">org::smallfoot::parser::ssh::Handler</innerclass>
+    <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1ssh">org::smallfoot::parser::ssh</innernamespace>
+    <briefdescription>
+<para>This class has a specific naming scheme which causes it to be used when Java needs to open a connection to a URL of the form ssh://server/ by passing control over to the proper class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/allan.clark/src/fcparsers/java/genproto/ssh/Handler.java"/>
+  </compounddef>
+</doxygen>

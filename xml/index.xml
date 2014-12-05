@@ -199,6 +199,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" kind="variable"><name>propWWPN</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" kind="variable"><name>propName</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" kind="function"><name>CIMXMLCQLURLConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a92c96050d9b2157bb07a1b981f6c7b53" kind="function"><name>CIMXMLCQLURLConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1afba634ab6ebfeb95ecea6767c3eac453" kind="function"><name>CIMXMLCQLURLConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" kind="function"><name>setRequestHeader</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa608e58be69b0389d82d846a25091d36" kind="function"><name>setContentType</name></member>
@@ -326,46 +327,61 @@
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler" kind="class"><name>org::smallfoot::parser::bna::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bna_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1Handler" kind="class"><name>org::smallfoot::parser::bnacql::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler" kind="class"><name>org::smallfoot::parser::bnapsql::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler" kind="class"><name>org::smallfoot::parser::cimcql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler" kind="class"><name>org::smallfoot::parser::cmcne::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcfm::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnm::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnmsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnmcql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::msosmsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler" kind="class"><name>org::smallfoot::parser::ocidwh::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
+  </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::osmsql::Handler</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler" kind="class"><name>org::smallfoot::parser::ssh::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler" kind="class"><name>org::smallfoot::parser::cimcql::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler" kind="class"><name>org::smallfoot::parser::cmcne::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1cmcne_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcfm::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnm::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnmsql::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1Handler" kind="class"><name>org::smallfoot::parser::dcnmcql::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::msosmsql::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler" kind="class"><name>org::smallfoot::parser::ocidwh::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-  </compound>
-  <compound refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler" kind="class"><name>org::smallfoot::parser::osmsql::Handler</name>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1Handler" kind="class"><name>org::smallfoot::parser::vmware::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" kind="class"><name>org::smallfoot::parser::msosmsql::MSDWHURLConnection</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a658c89e45145229c94d261bdbaa085b2" kind="function"><name>MSDWHURLConnection</name></member>
@@ -970,6 +986,8 @@
   </compound>
   <compound refid="genproto_2osmsql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
+  <compound refid="genproto_2ssh_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
   <compound refid="genproto_2vmware_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="ssh_2Handler_8java" kind="file"><name>Handler.java</name>
@@ -1081,6 +1099,8 @@
   <compound refid="dir_d7e3ce18747015d129b8f64d6faa4b30" kind="dir"><name>java/genproto/osmsql</name>
   </compound>
   <compound refid="dir_78f1eca83964fe61d8b36350cd844585" kind="dir"><name>java/ssh</name>
+  </compound>
+  <compound refid="dir_9ed736c8effb5cabd84b76b7f43a9f07" kind="dir"><name>java/genproto/ssh</name>
   </compound>
   <compound refid="dir_ddc1521b0e0353c4b1a175d3ebf5eedb" kind="dir"><name>java/genproto/vmware</name>
   </compound>

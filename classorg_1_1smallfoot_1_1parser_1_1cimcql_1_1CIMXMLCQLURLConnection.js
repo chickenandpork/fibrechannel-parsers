@@ -2,6 +2,7 @@ var classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection =
 [
     [ "ResultCSVPipe", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe.html", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe" ],
     [ "CIMXMLCQLURLConnection", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a00d00670c946d6e0027e690eb4a42772", null ],
+    [ "CIMXMLCQLURLConnection", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a92c96050d9b2157bb07a1b981f6c7b53", null ],
     [ "CIMXMLCQLURLConnection", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#afba634ab6ebfeb95ecea6767c3eac453", null ],
     [ "connect", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a1396bf9b5defe9fa844a63b5cd40ac0e", null ],
     [ "getInputStream", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a0924d1107a459be632532ef34324494e", null ],

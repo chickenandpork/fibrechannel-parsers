@@ -30,35 +30,49 @@
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/genproto/cimcql/Handler.java" line="29" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/genproto/cimcql/Handler.java" bodystart="29" bodyend="32"/>
       </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int getDefaultPort</definition>
+        <argsstring>()</argsstring>
+        <name>getDefaultPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/genproto/cimcql/Handler.java" line="34" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/genproto/cimcql/Handler.java" bodystart="34" bodyend="34"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="447">
+      <node id="443">
         <label>URLStreamHandler</label>
       </node>
-      <node id="446">
+      <node id="442">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler"/>
-        <childnode refid="447" relation="public-inheritance">
+        <childnode refid="443" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="449">
+      <node id="445">
         <label>URLStreamHandler</label>
       </node>
-      <node id="448">
+      <node id="444">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler"/>
-        <childnode refid="449" relation="public-inheritance">
+        <childnode refid="445" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/genproto/cimcql/Handler.java" line="22" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/genproto/cimcql/Handler.java" bodystart="21" bodyend="33"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/genproto/cimcql/Handler.java" line="22" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/genproto/cimcql/Handler.java" bodystart="21" bodyend="35"/>
     <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::Handler</scope><name>getDefaultPort</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1Handler_1a3838795af42df5d7757e609b8b312956" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::Handler</scope><name>openConnection</name></member>
     </listofallmembers>
   </compounddef>
