@@ -266,6 +266,16 @@ Alias: 10000000c9123456, Oracle01
 Alias: 10000000c9123457, Oracle01
 ], [stderr])
 
+AT_CHECK([java -Ddebug.verboseTokenizer=Alias4Parser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.Alias4Parser < abs_top_srcdir/samples/VW3-4column-bogusname.csv ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=Alias4Parser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.Alias4Parser < abs_top_srcdir/samples/VW3-4column-bogusname.csv ], 0, [Parse results for Alias4Parser:
+Zones: 0
+Aliases: 3 (names with one or more WWPNs)
+Aliases: 3 (name/WWPN pairs)
+Alias: 500a098698123456, 0x123456
+Alias: c0507612345600fe, 0x123457
+Alias: 500a098598123456, 500a098598123456
+], [stderr])
+
 AT_CLEANUP()
 
 
