@@ -375,7 +375,7 @@ else
         {
             String m = se.getMessage();
             if (m.startsWith("FATAL: no pg_hba.conf entry for host"))
-                System.err.println("Connection error: " + se.getMessage() + "\n PLEASE add the client's IP address to the file C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\ni.e: host   all   all  0.0.0.0/0  md5\n(no BNA restart is required)");
+                System.err.println("Connection ACL error: " + se.getMessage() + "\n  IMPORTANT: connection happened but was disconnected due to ACL\n PLEASE add the client's IP address to the pg_hba.conf files\n(BNA and Progresql DB restart may not be required)\nexample file locations:\n (windows) C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\n (linux) /usr/apps/bna/12_1_5/data/databases/pg_hba.conf\n (linux) /usr/apps/bna/12_0_3/db/share/pg_hba.conf\nexample line:\n host   all   all  0.0.0.0/0  md5");
             else if (m.startsWith("Connection refused."))
                 System.err.println("Connection error: " + se.getMessage() + "\n PLEASE also confirm that no firewall on the server is instructed to block/refuse our connection");
             else
