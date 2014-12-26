@@ -102,6 +102,7 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
     String connectionInfo = null;
     java.util.Properties properties = new java.util.Properties();
     protected WBEMClient client = null;
+    protected WBEMClient sclient = null;
     protected CIMObjectPath cop = null;
     protected String path = "/cimv2";
     protected String className = "CIM_Object";
@@ -206,9 +207,29 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
 //System.out.println("gathering inputstream via "+client.toString());
             javax.cim.CIMObjectPath cop = new javax.cim.CIMObjectPath(path+":"+className);
 //System.out.println("gathering inputstream: cop == "+cop+" wwpn="+propWWPN+" name="+propName);
-            ResultCSVPipe res = new ResultCSVPipe( client.execQuery(cop, String.format("select pwwn,name from %s", className), "WQL"), propWWPN, propName);
-            new Thread(res).start();
-            return new java.io.PipedInputStream(res);
+            ResultCSVPipe res = null;
+	    try
+	    {
+		res = new ResultCSVPipe(  client.execQuery(cop, String.format("select %s,%s from %s", propWWPN, propName, className), "WQL"), propWWPN, propName);
+	    }
+            catch (WBEMException e)
+	    {
+		if (e.getCause() instanceof java.net.ConnectException)
+{
+System.out.println("running "+String.format("select %s,%s from %s", propWWPN, propName, className));
+		    res = new ResultCSVPipe( sclient.execQuery(cop, String.format("select %s,%s from %s", propWWPN, propName, className), "WQL"), propWWPN, propName);
+}
+		else
+		    throw e;
+	    }
+
+            if (null != res)
+	    {
+		new Thread(res).start();
+            	return new java.io.PipedInputStream(res);
+	    }
+	    else
+		return null;
         }
         catch (WBEMException e)
         {
@@ -253,17 +274,22 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
 
 
 
-    static public WBEMClient getWBEMClient(java.net.URL u) throws WBEMException
+    static public WBEMClient getWBEMClient(java.net.URL u, String proto) throws WBEMException
     {
-        String uri = "http://"+u.getHost();
+        String uri = proto+"://"+u.getHost();
         if (-1 != u.getPort()) uri += ":"+u.getPort();
+	else if (proto.equalsIgnoreCase("http"))
+	    uri += ":5988";
+	else if (proto.equalsIgnoreCase("https"))
+	    uri += ":5989";
         uri += u.getPath().replaceFirst("//", "/").replaceAll("/$","");
-//System.out.println("connecting via getWBEMClient("+u.toString()+") -> \""+uri+"\"");
+System.out.println("connecting via getWBEMClient("+u.toString()+") -> \""+uri+"\"");
+System.out.println("connecting via getWBEMClient("+u.toString()+") on port "+u.getPort());
 
         CIMObjectPath cns = new CIMObjectPath(uri);
         WBEMClient w = WBEMClientFactory.getClient("CIM-XML");
         w.initialize(cns, getSubjectAuth(u.getUserInfo()), null);
-//System.out.println((null == w ? "not ": "")+"connected via getWBEMClient("+u.toString()+") -> \""+uri+"\"");
+System.out.println((null == w ? "not ": "")+"connected via getWBEMClient("+u.toString()+") -> \""+uri+"\"");
 
         return w;
     }
@@ -322,10 +348,11 @@ public class CIMXMLCQLURLConnection extends java.net.URLConnection
     {
         try
         {
-//System.out.println("connecting via connect() with URL = "+this.url.toString());
+System.out.println("connecting via connect() with URL = "+this.url.toString());
             java.net.URL u = this.url;
-            client = getWBEMClient(u);
+            client = getWBEMClient(u, "http");
             path = u.getPath();
+            sclient = getWBEMClient(u, "https");
 
             cop = new javax.cim.CIMObjectPath(path+":"+className);
 //System.out.println("connection gives a CIMObjectPath "+cop.toString());
