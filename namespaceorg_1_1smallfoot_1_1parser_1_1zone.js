@@ -9,6 +9,7 @@ var namespaceorg_1_1smallfoot_1_1parser_1_1zone =
     [ "ShowZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" ],
     [ "SwappedNicknameParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser" ],
     [ "TSVParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser" ],
+    [ "UserWarningParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser" ],
     [ "VW4InvalidAddedParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" ],
     [ "ZoneParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser" ],
     [ "ZoneParserI", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" ],

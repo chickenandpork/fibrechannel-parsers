@@ -1,5 +1,5 @@
 <map id="getInputStream" name="getInputStream">
 <area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a1396bf9b5defe9fa844a63b5cd40ac0e" title="connect" alt="" coords="166,5,234,30"/>
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a23eec283e89569cf1b42cc2f39f03249" title="getWBEMClient" alt="" coords="284,5,399,30"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a3a14e01bc9d7f96def8e3a0bdba40d91" title="getWBEMClient" alt="" coords="284,5,399,30"/>
 <area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#aadf7257e3a434bec0920b9e3b07e3edd" title="getSubjectAuth" alt="" coords="448,5,560,30"/>
 </map>

@@ -193,6 +193,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a7e56aefae8a91fd879647078501bd2c8" kind="variable"><name>connectionInfo</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" kind="variable"><name>properties</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a6a3e18a04de8a1a1ac2a25d15b2fffd1" kind="variable"><name>client</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a228431d1972b2a4462cdebbe63002fdf" kind="variable"><name>sclient</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0baa21aef3abf22826d04b324a5c6f5d" kind="variable"><name>cop</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" kind="variable"><name>path</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1abc3f4a3a7207586bb03ae4c95eea6810" kind="variable"><name>className</name></member>
@@ -207,7 +208,7 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0924d1107a459be632532ef34324494e" kind="function"><name>getInputStream</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" kind="function"><name>connect</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aadf7257e3a434bec0920b9e3b07e3edd" kind="function"><name>getSubjectAuth</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" kind="function"><name>getWBEMClient</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a3a14e01bc9d7f96def8e3a0bdba40d91" kind="function"><name>getWBEMClient</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aab79a15d0c3bbe8d874b5ba29b97f921" kind="function"><name>openConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa742680415a248d60d3c595c6cc4c58e" kind="function"><name>fixURLPath</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" kind="function"><name>URLof</name></member>
@@ -672,6 +673,84 @@
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser_1a9bc4ab801fe78c7087eea21e8fcf2953" kind="function"><name>addAlias</name></member>
   </compound>
+  <compound refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser" kind="class"><name>org::smallfoot::parser::zone::UserWarningParser</name>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a4adddc9d747bbbcd221d26df8c80d05f" kind="variable"><name>yydebug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ea9e3b522e448ac462274fe70e1be82" kind="variable"><name>yynerrs</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a21e545865dbcf87cb4c1de2a7da51806" kind="variable"><name>yyerrflag</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9e2c7c7373b818c86b2df7106a92327c" kind="variable"><name>yychar</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1afa638b510be8421c552f8a71f91f6ec3" kind="variable"><name>statestk</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac89c2492d77f2a88c9ccb06cfa375c39" kind="variable"><name>stateptr</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a29aa9152242dba094643e0b3717b7de1" kind="variable"><name>stateptrmax</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a08bd7e4c8c0de0fbe835b3522cd6e9cb" kind="variable"><name>statemax</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5004db9a2ef3a73534e240417580b8b" kind="variable"><name>yytext</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad0e1edc56977784ee3140880a4ab662f" kind="variable"><name>yyval</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a86d02a47805f45fe9925395fb890e547" kind="variable"><name>yylval</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aaf3ab675514edcd808ad9e31c14bc243" kind="variable"><name>valstk</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a49423ca4199bedaafb0d36e3ce74ce40" kind="variable"><name>valptr</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5203882de4ba7010fcf9ba3a455d6fe8" kind="variable"><name>puttyWarning</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1e75f45843cf76f18cc4d6b404e85d4d" kind="variable"><name>ansiWarning</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a24b8b65b5b30d5d3f4d9cfd89f47bd8e" kind="variable"><name>st</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1acd46a0f826a276c736966f6193f717cc" kind="variable"><name>zpquiet</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" kind="variable"><name>verboseStringtokenizer</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abb93c7c711a3c0ee506f0e510bf368a9" kind="variable"><name>newline</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0bb57aaadfcbef38e67059219b4126c9" kind="variable"><name>yyn</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a31c1ea5edb0bdd30006447b3f1e58d15" kind="variable"><name>yym</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac0fe627e81502f1ccb08d1519bfa40f2" kind="variable"><name>yystate</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2cdb474303672925b387e5f813343a82" kind="variable"><name>yys</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a486498b8c8ad29ef792a499437192ca5" kind="variable"><name>YYSTACKSIZE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a39171a519b0927d419c1b50aeac99b8a" kind="variable"><name>yylhs</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e0afb9a762a5c5bad3dcb9f4ea67508" kind="variable"><name>yylen</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a76e5d053c1e04f4b4ad49b84fc440193" kind="variable"><name>yydefred</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9a9c55e1779bc144dee27b76fcf1be4e" kind="variable"><name>yydgoto</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a771f445cecdd000023eabc2556196d3f" kind="variable"><name>yysindex</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a326b811dc6a20004fd5462b50b2552b9" kind="variable"><name>yyrindex</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5657f65d3a538951fc73836fb367373" kind="variable"><name>yygindex</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aba56e7cdfd617dc786ca9452a8d56b60" kind="variable"><name>YYTABLESIZE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7682804618f55311e36c8338425eac69" kind="variable"><name>yytable</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a734735ae171a8a3bf7e651343fa35eb2" kind="variable"><name>yycheck</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ae401f7abf70e23dd826ef078c900ffa6" kind="variable"><name>YYFINAL</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abe4ca243dec8a5d592012c4e817e0b10" kind="variable"><name>YYMAXTOKEN</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0c215687f88b02eedeece3e19b48bc00" kind="variable"><name>yyname</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa90e232613bcc5abc359f1dfd9755e4a" kind="variable"><name>yyrule</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1f2abceb4d5a906ee588e05800da59b3" kind="variable"><name>PUTTYNAME</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ab8da032aab7c8db83b53cf84d0756b" kind="variable"><name>PUTTYSEPARATOR</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ab6965c48119030771a7bdf273987bb52" kind="variable"><name>ESC</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" kind="variable"><name>CSI</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kind="variable"><name>NUM</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5862b3af3f652ec3cf9d19a55cefbde0" kind="variable"><name>COLON</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" kind="variable"><name>ALPHA</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1c58472ea6621d2f613831e08d10dba3" kind="variable"><name>YYERRCODE</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5b3677e61ca769d9d9e5cf9cfa1b33c" kind="function"><name>debug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7fca06f2aea68127ed9d54ee46be67ed" kind="function"><name>state_push</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5b17a79d1f2f4e91db95a53420401505" kind="function"><name>state_pop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a3b3b21a1eb9702329844cc77d2d82a22" kind="function"><name>state_drop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9bd929c959381696ac57117965762423" kind="function"><name>state_peek</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad1071764e501d770efe1ade5ea8d7ee5" kind="function"><name>init_stacks</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a8e626edce147080d6b74344124787ed7" kind="function"><name>dump_stacks</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a15f32bea4b8f1c22ada11d651b67db4a" kind="function"><name>val_init</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a546b106645004a3f569c40a7be9cecdb" kind="function"><name>val_push</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad6e5325d5726d0823417eb248a201bc2" kind="function"><name>val_pop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a03184d479fc81e916502118e86acd1e7" kind="function"><name>val_drop</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aff23f19244cb74af69b0d1598a019c91" kind="function"><name>val_peek</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5b3da8f164c609de90b1205d63103862" kind="function"><name>dup_yyval</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad6dbf693d2fb3208331c7494acc61347" kind="function"><name>puttyWarning</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1adadbe7dcc54235543a453907b8b52a12" kind="function"><name>ansiWarning</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac677a01b361642a02e9b23afb4163fce" kind="function"><name>yyerror</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa40b27ae32d6d1ae7160bd6256e08eb8" kind="function"><name>yylex</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2d5e88a14a1ce23f517be13c8a7a0f92" kind="function"><name>yylexdebug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1acd8617a8f2ac0de8bc1cc032cf449e19" kind="function"><name>yyparse</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e87c5ede6b7235170d287cd2e254454" kind="function"><name>[static initializer]</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7bfe55f022dd2ed471f804f7e83f3b19" kind="function"><name>yytable</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e87c5ede6b7235170d287cd2e254454" kind="function"><name>[static initializer]</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa000c1557e5264cffbc58d37d7d67ce4" kind="function"><name>yycheck</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad7c704b34912678d95c13243cacf9d7f" kind="function"><name>parse</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5deab139f9ad4072e1a497c5cccda0ea" kind="function"><name>setReader</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a13a43e6d814de94978c515cb084873b1" kind="function"><name>run</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a6c13d260cf71d0554f789c4641a9f18b" kind="function"><name>setDebug</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a769e121c9e194f986fbbba18b00a2c43" kind="function"><name>UserWarningParser</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac962d60333eef2d9a542344842b1b515" kind="function"><name>UserWarningParser</name></member>
+    <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a75988cf84fc6ee7a2ebff36e363021aa" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException" kind="class"><name>org::smallfoot::parser::vmware::VCenterURLConnection::VCCException</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1afad3c6a96d0606cd42424460b1ccb1e2" kind="variable"><name>suggestion</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException_1a437e1ec98952c7e3ab073f488dd912be" kind="function"><name>suggestion</name></member>
@@ -1014,6 +1093,8 @@
   </compound>
   <compound refid="TSVParser_8java" kind="file"><name>TSVParser.java</name>
   </compound>
+  <compound refid="UserWarningParser_8java" kind="file"><name>UserWarningParser.java</name>
+  </compound>
   <compound refid="VCenterURLConnection_8java" kind="file"><name>VCenterURLConnection.java</name>
   </compound>
   <compound refid="version_8java" kind="file"><name>version.java</name>
@@ -1063,6 +1144,8 @@
   <compound refid="ShowZoneParser" kind="page"><name>ShowZoneParser</name>
   </compound>
   <compound refid="SSHURLConnection" kind="page"><name>SSHURLConnection</name>
+  </compound>
+  <compound refid="Caveat" kind="page"><name>Caveat</name>
   </compound>
   <compound refid="VW4InvalidAdded" kind="page"><name>VW4InvalidAdded</name>
   </compound>

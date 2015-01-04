@@ -317,36 +317,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="643">
+      <node id="669">
         <label>VCenterURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection"/>
-        <childnode refid="644" relation="public-inheritance">
+        <childnode refid="670" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="644">
+      <node id="670">
         <label>URLConnection</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="645">
+      <node id="671">
         <label>VCenterURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection"/>
-        <childnode refid="646" relation="public-inheritance">
+        <childnode refid="672" relation="public-inheritance">
         </childnode>
-        <childnode refid="647" relation="usage">
+        <childnode refid="673" relation="usage">
           <edgelabel>esxs</edgelabel>
         </childnode>
-        <childnode refid="648" relation="usage">
+        <childnode refid="674" relation="usage">
           <edgelabel>serviceinstance</edgelabel>
         </childnode>
       </node>
-      <node id="647">
+      <node id="673">
         <label>ManagedEntity</label>
       </node>
-      <node id="646">
+      <node id="672">
         <label>URLConnection</label>
       </node>
-      <node id="648">
+      <node id="674">
         <label>ServiceInstance</label>
       </node>
     </collaborationgraph>

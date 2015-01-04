@@ -15,5 +15,6 @@ var classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection =
     [ "cop", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a0baa21aef3abf22826d04b324a5c6f5d", null ],
     [ "path", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#adb85e16ac8c9f62df2d33b1262649843", null ],
     [ "propName", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a49fa47bfe76993bf911116857492e2ca", null ],
-    [ "propWWPN", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#adf887561fc9bb90802d364643c222af6", null ]
+    [ "propWWPN", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#adf887561fc9bb90802d364643c222af6", null ],
+    [ "sclient", "classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a228431d1972b2a4462cdebbe63002fdf", null ]
 ];

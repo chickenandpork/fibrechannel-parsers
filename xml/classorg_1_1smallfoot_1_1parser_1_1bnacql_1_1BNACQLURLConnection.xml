@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="50" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="50" bodyend="53"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="85" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="85" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_1ac2ad967a2d959c61ccc7b8fed4250e16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="55" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="55" bodyend="58"/>
+        <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="90" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="90" bodyend="94"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -52,58 +52,59 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="358">
+      <node id="372">
         <label>BNACQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection"/>
-        <childnode refid="359" relation="public-inheritance">
+        <childnode refid="373" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="359">
+      <node id="373">
         <label>CIMXMLCQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection"/>
-        <childnode refid="360" relation="public-inheritance">
+        <childnode refid="374" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="360">
+      <node id="374">
         <label>URLConnection</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="361">
+      <node id="375">
         <label>BNACQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection"/>
-        <childnode refid="362" relation="public-inheritance">
+        <childnode refid="376" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="364">
+      <node id="378">
         <label>WBEMClient</label>
       </node>
-      <node id="362">
+      <node id="376">
         <label>CIMXMLCQLURLConnection</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection"/>
-        <childnode refid="363" relation="public-inheritance">
+        <childnode refid="377" relation="public-inheritance">
         </childnode>
-        <childnode refid="364" relation="usage">
+        <childnode refid="378" relation="usage">
+          <edgelabel>sclient</edgelabel>
           <edgelabel>client</edgelabel>
         </childnode>
-        <childnode refid="365" relation="usage">
+        <childnode refid="379" relation="usage">
           <edgelabel>cop</edgelabel>
         </childnode>
-        <childnode refid="366" relation="usage">
+        <childnode refid="380" relation="usage">
           <edgelabel>properties</edgelabel>
         </childnode>
       </node>
-      <node id="363">
+      <node id="377">
         <label>URLConnection</label>
       </node>
-      <node id="365">
+      <node id="379">
         <label>CIMObjectPath</label>
       </node>
-      <node id="366">
+      <node id="380">
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="49" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="48" bodyend="59"/>
+    <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="84" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="83" bodyend="95"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_1a42330dd92e9ddf705e7338a411aa5956" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>BNACQLURLConnection</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_1ac2ad967a2d959c61ccc7b8fed4250e16" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>BNACQLURLConnection</name></member>
@@ -119,12 +120,13 @@
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>getInputStream</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>getOutputStream</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aadf7257e3a434bec0920b9e3b07e3edd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>getSubjectAuth</name></member>
-      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a23eec283e89569cf1b42cc2f39f03249" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>getWBEMClient</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a3a14e01bc9d7f96def8e3a0bdba40d91" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>getWBEMClient</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aab79a15d0c3bbe8d874b5ba29b97f921" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>openConnection</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adb85e16ac8c9f62df2d33b1262649843" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>path</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>properties</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>propName</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>propWWPN</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a228431d1972b2a4462cdebbe63002fdf" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>sclient</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>setContentType</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>setRequestHeader</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a9e8d4ee10e76dd81bf86f5384f56fd2f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>URLof</name></member>

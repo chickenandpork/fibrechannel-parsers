@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-205</span>
+   &#160;<span id="projectnumber">0.3-213</span>
    </div>
   </td>
  </tr>
@@ -445,7 +445,7 @@ $(document).ready(function(){initNavTree('BNAPURLConnection_8java_source.html','
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        {</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            String m = se.getMessage();</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            <span class="keywordflow">if</span> (m.startsWith(<span class="stringliteral">&quot;FATAL: no pg_hba.conf entry for host&quot;</span>))</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                System.err.println(<span class="stringliteral">&quot;Connection error: &quot;</span> + se.getMessage() + <span class="stringliteral">&quot;\n PLEASE add the client&#39;s IP address to the file C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\ni.e: host   all   all  0.0.0.0/0  md5\n(no BNA restart is required)&quot;</span>);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                System.err.println(<span class="stringliteral">&quot;Connection ACL error: &quot;</span> + se.getMessage() + <span class="stringliteral">&quot;\n  IMPORTANT: connection happened but was disconnected due to ACL\n PLEASE add the client&#39;s IP address to the pg_hba.conf files\n(BNA and Progresql DB restart may not be required)\nexample file locations:\n (windows) C:\\Program Files\\Network Advisor 12.0.0\\data\\databases\\pg_hba.conf\n (linux) /usr/apps/bna/12_1_5/data/databases/pg_hba.conf\n (linux) /usr/apps/bna/12_0_3/db/share/pg_hba.conf\nexample line:\n host   all   all  0.0.0.0/0  md5&quot;</span>);</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (m.startsWith(<span class="stringliteral">&quot;Connection refused.&quot;</span>))</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                System.err.println(<span class="stringliteral">&quot;Connection error: &quot;</span> + se.getMessage() + <span class="stringliteral">&quot;\n PLEASE also confirm that no firewall on the server is instructed to block/refuse our connection&quot;</span>);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            <span class="keywordflow">else</span></div>
@@ -479,7 +479,7 @@ $(document).ready(function(){initNavTree('BNAPURLConnection_8java_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><a class="el" href="BNAPURLConnection_8java.html">BNAPURLConnection.java</a></li>
-    <li class="footer">Generated on Fri Dec 5 2014 11:25:38 for fcparsers by
+    <li class="footer">Generated on Sun Jan 4 2015 12:03:11 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

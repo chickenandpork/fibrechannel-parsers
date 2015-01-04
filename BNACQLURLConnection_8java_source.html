@@ -25,7 +25,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">fcparsers
-   &#160;<span id="projectnumber">0.3-205</span>
+   &#160;<span id="projectnumber">0.3-213</span>
    </div>
   </td>
  </tr>
@@ -113,36 +113,72 @@ $(document).ready(function(){initNavTree('BNACQLURLConnection_8java_source.html'
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> * is an entirely binary connection, so the user cannot accidentally edit the content.</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * Finally, as BNA may harvest from and provide config to many fabrics at once, this is</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * typically &quot;a broader net to cast&quot; to collect information.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html">   48</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html">BNACQLURLConnection</a> <span class="keyword">extends</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html">CIMXMLCQLURLConnection</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#a42330dd92e9ddf705e7338a411aa5956">   50</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#a42330dd92e9ddf705e7338a411aa5956">BNACQLURLConnection</a>(String connectionInfo, String username, String password)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        super (connectionInfo, username, password, <span class="stringliteral">&quot;/brocade1&quot;</span>, <span class="stringliteral">&quot;Brocade_Alias&quot;</span>, <span class="stringliteral">&quot;member&quot;</span>, <span class="stringliteral">&quot;alias_name&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#ac2ad967a2d959c61ccc7b8fed4250e16">   55</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#ac2ad967a2d959c61ccc7b8fed4250e16">BNACQLURLConnection</a>(java.net.URL url)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        super(url, <span class="stringliteral">&quot;/brocade1&quot;</span>, <span class="stringliteral">&quot;Brocade_Alias&quot;</span>, <span class="stringliteral">&quot;member&quot;</span>, <span class="stringliteral">&quot;alias_name&quot;</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * http://www-01.ibm.com/support/docview.wss?uid=nas7f530c1afd86f53d8862577c40012b9de</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> *    1. On the system of IBM Systems Director, initiate &quot;cimcli&quot; command to check for Brocade switch zone members.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> *    </span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> *    (1) Query switch zones:</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> *    cimcli [-s] -l [Brocade SMI Agent IP]:[Brocade SMI Agent port] -u [Brocade SMI Agent userID] -p [Brocade SMI Agent password] -n root/brocade1 ni Brocade_Zone</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> *    Parameter &quot;-s&quot; specifies to connect over HTTPS.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> *    </span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *    For example:</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *    </span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> *    &gt;cimcli -l 9.12.28.140:5988 -u userID -p password -n root/brocade1 ni Brocade_Zone</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> *    Brocade_Zone.InstanceID=&quot;false;HMC_Managed_Zone;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> *    Brocade_Zone.InstanceID=&quot;false;IVM_Managed_Zone;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"> *    Brocade_Zone.InstanceID=&quot;false;VMC_Test_Infrastructure_Support_Zone;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> *    Brocade_Zone.InstanceID=&quot;true;HMC_Managed_Zone;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> *    Brocade_Zone.InstanceID=&quot;true;IVM_Managed_Zone;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> *    Brocade_Zone.InstanceID=&quot;true;VMC_Test_Infrastructure_Support_Zone;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> *    </span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> *    (2) For each returned Brocade_Zone path in step (1) that contains &quot;InstanceID=&quot;true&quot;, query its zone members:</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> *    cimcli [-s] -l [Brocade SMI Agent IP]:[Brocade SMI Agent port] -u [Brocade SMI Agent userID] -p [Brocade SMI Agent password] -n root/brocade1</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> *      an [Brocade_Zone path] -ac Brocade_ZoneMembershipSettingDataInZone -rc Brocade_ZoneMembershipSettingData</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> *    Parameter &quot;-s&quot; specifies to connect over HTTPS.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> *    Attention: In Brocade_Zone path, add slash before quotation marks, like this: Brocade_Zone.InstanceID=\ &quot;true;HMC_Managed_Zone;100000051ECAA229\ &quot;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> *    </span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> *    For example:</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> *    </span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> *    &gt;cimcli -l 9.12.28.140:5988 -u userID -p password -n root/brocade1 an Brocade_Zone.InstanceID=\&quot;true;HMC_Managed_Zone;100000051ECAA229\&quot;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> *              -ac Brocade_ZoneMembershipSettingDataInZone -rc Brocade_ZoneMembershipSettingData</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> *    //9.12.28.140/root/brocade1:Brocade_ZoneMembershipSettingData.InstanceID=&quot;true;10000000C9C0B372;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> *    //9.12.28.140/root/brocade1:Brocade_ZoneMembershipSettingData.InstanceID=&quot;true;10000000C99DDD04;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> *    //9.12.28.140/root/brocade1:Brocade_ZoneMembershipSettingData.InstanceID=&quot;true;10000000C99C1628;100000051ECAA229&quot;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> *    </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"> *    (3) In Step (2), if it returns no zone members for a certain zone, which does not match the switch zone configurations, that zone could include offline zone members.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html">   83</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html">BNACQLURLConnection</a> <span class="keyword">extends</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html">CIMXMLCQLURLConnection</a></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#a42330dd92e9ddf705e7338a411aa5956">   85</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#a42330dd92e9ddf705e7338a411aa5956">BNACQLURLConnection</a>(String connectionInfo, String username, String password)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        super (connectionInfo, username, password, <span class="stringliteral">&quot;/root/brocade1&quot;</span>, <span class="stringliteral">&quot;brocade_alias&quot;</span>, <span class="stringliteral">&quot;member&quot;</span>, <span class="stringliteral">&quot;alias_name&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#ac2ad967a2d959c61ccc7b8fed4250e16">   90</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#ac2ad967a2d959c61ccc7b8fed4250e16">BNACQLURLConnection</a>(java.net.URL url)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        super(url, <span class="stringliteral">&quot;/root/brocade1&quot;</span>, <span class="stringliteral">&quot;brocade_alias&quot;</span>, <span class="stringliteral">&quot;member&quot;</span>, <span class="stringliteral">&quot;alias_name&quot;</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">//setQuery(String.format(&quot;select %s,%s from %s &quot;, propWWPN, propName, className) /* HERE */ );</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="ttc" id="namespaceorg_1_1smallfoot_html"><div class="ttname"><a href="namespaceorg_1_1smallfoot.html">org.smallfoot</a></div></div>
 <div class="ttc" id="namespaceorg_1_1smallfoot_1_1parser_html"><div class="ttname"><a href="namespaceorg_1_1smallfoot_1_1parser.html">org.smallfoot.parser</a></div></div>
 <div class="ttc" id="namespaceorg_html"><div class="ttname"><a href="namespaceorg.html">org</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_html_ac2ad967a2d959c61ccc7b8fed4250e16"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#ac2ad967a2d959c61ccc7b8fed4250e16">org.smallfoot.parser.bnacql.BNACQLURLConnection.BNACQLURLConnection</a></div><div class="ttdeci">BNACQLURLConnection(java.net.URL url)</div><div class="ttdef"><b>Definition:</b> <a href="BNACQLURLConnection_8java_source.html#l00055">BNACQLURLConnection.java:55</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_html_ac2ad967a2d959c61ccc7b8fed4250e16"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#ac2ad967a2d959c61ccc7b8fed4250e16">org.smallfoot.parser.bnacql.BNACQLURLConnection.BNACQLURLConnection</a></div><div class="ttdeci">BNACQLURLConnection(java.net.URL url)</div><div class="ttdef"><b>Definition:</b> <a href="BNACQLURLConnection_8java_source.html#l00090">BNACQLURLConnection.java:90</a></div></div>
 <div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html">org.smallfoot.parser.cimcql.CIMXMLCQLURLConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="CIMXMLCQLURLConnection_8java_source.html#l00049">CIMXMLCQLURLConnection.java:49</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1FCParser.html">org.smallfoot.parser.FCParser</a></div><div class="ttdef"><b>Definition:</b> <a href="FCParser_8java_source.html#l00031">FCParser.java:31</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1FCParser_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1FCParser.html">org.smallfoot.parser.FCParser</a></div><div class="ttdef"><b>Definition:</b> <a href="FCParser_8java_source.html#l00032">FCParser.java:32</a></div></div>
 <div class="ttc" id="namespaceorg_1_1smallfoot_1_1parser_1_1cimcql_html"><div class="ttname"><a href="namespaceorg_1_1smallfoot_1_1parser_1_1cimcql.html">org.smallfoot.parser.cimcql</a></div><div class="ttdef"><b>Definition:</b> <a href="CIMXMLCQLURLConnection_8java_source.html#l00002">CIMXMLCQLURLConnection.java:2</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_html_a42330dd92e9ddf705e7338a411aa5956"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#a42330dd92e9ddf705e7338a411aa5956">org.smallfoot.parser.bnacql.BNACQLURLConnection.BNACQLURLConnection</a></div><div class="ttdeci">BNACQLURLConnection(String connectionInfo, String username, String password)</div><div class="ttdef"><b>Definition:</b> <a href="BNACQLURLConnection_8java_source.html#l00050">BNACQLURLConnection.java:50</a></div></div>
-<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html">org.smallfoot.parser.bnacql.BNACQLURLConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="BNACQLURLConnection_8java_source.html#l00048">BNACQLURLConnection.java:48</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_html_a42330dd92e9ddf705e7338a411aa5956"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html#a42330dd92e9ddf705e7338a411aa5956">org.smallfoot.parser.bnacql.BNACQLURLConnection.BNACQLURLConnection</a></div><div class="ttdeci">BNACQLURLConnection(String connectionInfo, String username, String password)</div><div class="ttdef"><b>Definition:</b> <a href="BNACQLURLConnection_8java_source.html#l00085">BNACQLURLConnection.java:85</a></div></div>
+<div class="ttc" id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_html"><div class="ttname"><a href="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection.html">org.smallfoot.parser.bnacql.BNACQLURLConnection</a></div><div class="ttdef"><b>Definition:</b> <a href="BNACQLURLConnection_8java_source.html#l00083">BNACQLURLConnection.java:83</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_93c6ba7fb77bae0709fae89c9c13b44a.html">java</a></li><li class="navelem"><a class="el" href="BNACQLURLConnection_8java.html">BNACQLURLConnection.java</a></li>
-    <li class="footer">Generated on Fri Dec 5 2014 11:25:38 for fcparsers by
+    <li class="footer">Generated on Sun Jan 4 2015 12:03:11 for fcparsers by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
   </ul>

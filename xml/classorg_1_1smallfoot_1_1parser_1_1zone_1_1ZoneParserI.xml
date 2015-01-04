@@ -11,6 +11,7 @@
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser" prot="public" virt="non-virtual">ShowZone2Parser</derivedcompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" prot="public" virt="non-virtual">ShowZoneParser</derivedcompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser" prot="public" virt="non-virtual">TSVParser</derivedcompoundref>
+    <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser" prot="public" virt="non-virtual">UserWarningParser</derivedcompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" prot="public" virt="non-virtual">VW4InvalidAddedParser</derivedcompoundref>
       <sectiondef kind="package-attrib">
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" prot="package" static="no" mutable="no">
@@ -357,6 +358,7 @@
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1af0a81691449a6211ef6b9ffc8b62bb0a" compoundref="ZoneParserI_8java" startline="88" endline="91">ZoneParserI.items</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" compoundref="ZoneParserI_8java" startline="83" endline="86">ZoneParserI.zoneSize</references>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="Alias4Parser_8java" startline="118" endline="123">Alias4Parser.main</referencedby>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="UserWarningParser_8java" startline="432" endline="438">UserWarningParser.main</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="BNAZoneParser_8java" startline="450" endline="456">BNAZoneParser.main</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="DeviceAliasParser_8java" startline="510" endline="516">DeviceAliasParser.main</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="ShowZoneParser_8java" startline="511" endline="517">ShowZoneParser.main</referencedby>
@@ -522,114 +524,120 @@
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000014"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpItems</bold> (values: Aliases, reservedAliases) can be used to tell most parsers to dump out additional results directly for diagnostics. For example, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref> can track post-remove aliases in the mapping &quot;reservedAliases&quot;</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000015"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpItems=reservedAliases<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
 </programlisting></para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000016"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAddAlias</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new alias block/set internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000017"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAddZone</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is storing a new zone block internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000018"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.verboseAppendZone</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" kindref="compound">Alias4Parser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see when the parser is adding data to an existing zone value internally for retrieval by the calling function. It might help you to see where the incorrect data is coming from.</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000019"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.yystate</bold>: (values: true, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser" kindref="compound">AliShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kindref="compound">DeviceAliasParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser" kindref="compound">ShowZoneParser</ref>, <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser" kindref="compound">VW4InvalidAddedParser</ref>) Although not much use without looking inside the code, setting this value allows you to see the debug information from inside the LALR state machine itself. This might give some insight as to why some parse attempts are failing, or how the state-machine needs to be extended to accommodate more situations. </para></xrefdescription></xrefsect></para>    </detaileddescription>
     <inheritancegraph>
-      <node id="685">
+      <node id="712">
         <label>BNAZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="690">
+      <node id="717">
         <label>ShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="689">
+      <node id="719">
+        <label>UserWarningParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser"/>
+        <childnode refid="707" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="716">
         <label>ShowZone2Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="680">
+      <node id="707">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="681" relation="public-inheritance">
+        <childnode refid="708" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="687">
+      <node id="714">
         <label>NicknameParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="692">
+      <node id="720">
         <label>VW4InvalidAddedParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1VW4InvalidAddedParser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="688">
+      <node id="715">
         <label>SwappedNicknameParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser"/>
-        <childnode refid="687" relation="public-inheritance">
+        <childnode refid="714" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="682">
+      <node id="709">
         <label>Thread</label>
       </node>
-      <node id="681">
+      <node id="708">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="682" relation="public-inheritance">
+        <childnode refid="709" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="683">
+      <node id="710">
         <label>Alias4Parser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="686">
+      <node id="713">
         <label>DeviceAliasParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="691">
+      <node id="718">
         <label>TSVParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="684">
+      <node id="711">
         <label>AliShowZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser"/>
-        <childnode refid="680" relation="public-inheritance">
+        <childnode refid="707" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="693">
+      <node id="721">
         <label>ZoneParserI</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
-        <childnode refid="694" relation="public-inheritance">
+        <childnode refid="722" relation="public-inheritance">
         </childnode>
-        <childnode refid="697" relation="usage">
+        <childnode refid="725" relation="usage">
           <edgelabel>aliases</edgelabel>
         </childnode>
-        <childnode refid="698" relation="usage">
+        <childnode refid="726" relation="usage">
           <edgelabel>zones</edgelabel>
         </childnode>
       </node>
-      <node id="698">
+      <node id="726">
         <label>Vector&lt; ZPZoneEntry &gt;</label>
       </node>
-      <node id="697">
+      <node id="725">
         <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
       </node>
-      <node id="695">
+      <node id="723">
         <label>Thread</label>
       </node>
-      <node id="694">
+      <node id="722">
         <label>ZoneParser</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
-        <childnode refid="695" relation="public-inheritance">
+        <childnode refid="723" relation="public-inheritance">
         </childnode>
-        <childnode refid="696" relation="usage">
+        <childnode refid="724" relation="usage">
           <edgelabel>_prop</edgelabel>
         </childnode>
       </node>
-      <node id="696">
+      <node id="724">
         <label>Properties</label>
       </node>
     </collaborationgraph>

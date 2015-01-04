@@ -49,24 +49,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="451">
+      <node id="465">
         <label>URLStreamHandler</label>
       </node>
-      <node id="450">
+      <node id="464">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler"/>
-        <childnode refid="451" relation="public-inheritance">
+        <childnode refid="465" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="453">
+      <node id="467">
         <label>URLStreamHandler</label>
       </node>
-      <node id="452">
+      <node id="466">
         <label>Handler</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1dcfm_1_1Handler"/>
-        <childnode refid="453" relation="public-inheritance">
+        <childnode refid="467" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

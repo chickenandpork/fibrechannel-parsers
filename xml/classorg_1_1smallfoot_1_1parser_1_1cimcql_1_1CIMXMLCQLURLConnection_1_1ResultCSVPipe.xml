@@ -59,8 +59,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="68" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="68" bodyend="98"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" compoundref="CIMXMLCQLURLConnection_8java" startline="109">CIMXMLCQLURLConnection.propName</references>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" compoundref="CIMXMLCQLURLConnection_8java" startline="108">CIMXMLCQLURLConnection.propWWPN</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" compoundref="CIMXMLCQLURLConnection_8java" startline="110">CIMXMLCQLURLConnection.propName</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" compoundref="CIMXMLCQLURLConnection_8java" startline="109">CIMXMLCQLURLConnection.propWWPN</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -68,34 +68,34 @@
     <detaileddescription>
 <para>No, I&apos;m not a fan of this method of doing so, I&apos;d rather have the upstream consume data block of WWN/Nickname pairs, but this fits into the stream-reading I&apos;ve currently got. To be shallow, it fits the current dataflow, although very soon I&apos;m sure there will be a need to strip off the layers of hand-offs and go with data blocks streaming from various resources. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="528">
+      <node id="542">
         <label>CIMXMLCQLURLConnection.ResultCSVPipe</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe"/>
-        <childnode refid="529" relation="public-inheritance">
+        <childnode refid="543" relation="public-inheritance">
         </childnode>
-        <childnode refid="530" relation="public-inheritance">
+        <childnode refid="544" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="529">
+      <node id="543">
         <label>PipedOutputStream</label>
       </node>
-      <node id="530">
+      <node id="544">
         <label>Runnable</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="531">
+      <node id="545">
         <label>CIMXMLCQLURLConnection.ResultCSVPipe</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe"/>
-        <childnode refid="532" relation="public-inheritance">
+        <childnode refid="546" relation="public-inheritance">
         </childnode>
-        <childnode refid="533" relation="public-inheritance">
+        <childnode refid="547" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="532">
+      <node id="546">
         <label>PipedOutputStream</label>
       </node>
-      <node id="533">
+      <node id="547">
         <label>Runnable</label>
       </node>
     </collaborationgraph>

@@ -11,7 +11,8 @@ Inheritance diagram for C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection\+:\nopage
 \end{figure}
 
 
-Collaboration diagram for C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection\+:\nopagebreak
+Collaboration diagram for C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -47,7 +48,7 @@ void {\bf connect} ()
 \item 
 static Subject {\bf get\+Subject\+Auth} (String auth\+Info)
 \item 
-static W\+B\+E\+M\+Client {\bf get\+W\+B\+E\+M\+Client} (java.\+net.\+U\+R\+L u)  throws W\+B\+E\+M\+Exception     
+static W\+B\+E\+M\+Client {\bf get\+W\+B\+E\+M\+Client} (java.\+net.\+U\+R\+L u, String proto)  throws W\+B\+E\+M\+Exception     
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -58,6 +59,8 @@ static W\+B\+E\+M\+Client {\bf get\+W\+B\+E\+M\+Client} (java.\+net.\+U\+R\+L u)
 \begin{DoxyCompactItemize}
 \item 
 W\+B\+E\+M\+Client {\bf client} = null
+\item 
+W\+B\+E\+M\+Client {\bf sclient} = null
 \item 
 C\+I\+M\+Object\+Path {\bf cop} = null
 \item 
@@ -94,7 +97,7 @@ Definition at line 49 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+j
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a00d00670c946d6e0027e690eb4a42772}
 
 
-Definition at line 111 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 112 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -109,7 +112,7 @@ References C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+class\+Name, C\+I\+M
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a92c96050d9b2157bb07a1b981f6c7b53}
 
 
-Definition at line 125 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 126 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}!C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}}
 \index{C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}!org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}}
@@ -124,7 +127,7 @@ Definition at line 125 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_afba634ab6ebfeb95ecea6767c3eac453}
 
 
-Definition at line 132 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 133 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -142,7 +145,7 @@ References C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+class\+Name, C\+I\+M
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a1396bf9b5defe9fa844a63b5cd40ac0e}
 
 
-Definition at line 321 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 347 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -154,7 +157,8 @@ Referenced by C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+get\+Input\+Strea
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -176,7 +180,7 @@ connect the result of a \char`\"{}\+S\+E\+L\+E\+C\+T hp.\+wwn, h.\+name F\+R\+O\
 
 
 
-Definition at line 197 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 198 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -184,7 +188,8 @@ References C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+connect().
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -206,7 +211,7 @@ Stubbed, because there's nothing to send us.
 
 Oh how did I get caught in the \char`\"{}\+Royal '\+We'\char`\"{} ? 
 
-Definition at line 188 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 189 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}!get\+Subject\+Auth@{get\+Subject\+Auth}}
 \index{get\+Subject\+Auth@{get\+Subject\+Auth}!org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}}
@@ -217,7 +222,7 @@ Definition at line 188 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_aadf7257e3a434bec0920b9e3b07e3edd}
 
 
-Definition at line 227 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 248 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -227,12 +232,13 @@ Referenced by C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+get\+W\+B\+E\+M\+
 \index{get\+W\+B\+E\+M\+Client@{get\+W\+B\+E\+M\+Client}!org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}}
 \subsubsection[{get\+W\+B\+E\+M\+Client}]{\setlength{\rightskip}{0pt plus 5cm}static W\+B\+E\+M\+Client get\+W\+B\+E\+M\+Client (
 \begin{DoxyParamCaption}
-\item[{java.\+net.\+U\+R\+L}]{u}
+\item[{java.\+net.\+U\+R\+L}]{u, }
+\item[{String}]{proto}
 \end{DoxyParamCaption}
-) throws W\+B\+E\+M\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a23eec283e89569cf1b42cc2f39f03249}
+) throws W\+B\+E\+M\+Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a3a14e01bc9d7f96def8e3a0bdba40d91}
 
 
-Definition at line 256 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 277 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -244,11 +250,12 @@ Referenced by C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+connect().
 
 
 
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=252pt]{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a23eec283e89569cf1b42cc2f39f03249_cgraph}
+\includegraphics[width=252pt]{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a3a14e01bc9d7f96def8e3a0bdba40d91_cgraph}
 \end{center}
 \end{figure}
 
@@ -274,7 +281,7 @@ populated connection as org.\+smallfoot.\+cimwql.\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\
 \end{DoxyParams}
 
 
-Definition at line 280 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 306 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}!set\+Content\+Type@{set\+Content\+Type}}
 \index{set\+Content\+Type@{set\+Content\+Type}!org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}}
@@ -294,7 +301,7 @@ Stubbed, because there's no change we want to accept yet.
 \end{DoxyParams}
 
 
-Definition at line 183 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 184 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}!set\+Request\+Header@{set\+Request\+Header}}
 \index{set\+Request\+Header@{set\+Request\+Header}!org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}}
@@ -317,7 +324,7 @@ Stubbed, because there's no change we want to accept yet.
 \end{DoxyParams}
 
 
-Definition at line 176 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 177 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -327,7 +334,7 @@ Definition at line 176 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+
 \subsubsection[{class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}String class\+Name = \char`\"{}C\+I\+M\+\_\+\+Object\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_abc3f4a3a7207586bb03ae4c95eea6810}
 
 
-Definition at line 107 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 108 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -345,14 +352,14 @@ Definition at line 104 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+
 \subsubsection[{cop}]{\setlength{\rightskip}{0pt plus 5cm}C\+I\+M\+Object\+Path cop = null\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a0baa21aef3abf22826d04b324a5c6f5d}
 
 
-Definition at line 105 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 106 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 \index{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}!path@{path}}
 \index{path@{path}!org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}}
 \subsubsection[{path}]{\setlength{\rightskip}{0pt plus 5cm}String path = \char`\"{}/cimv2\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_adb85e16ac8c9f62df2d33b1262649843}
 
 
-Definition at line 106 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 107 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -363,7 +370,7 @@ Referenced by C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+C\+I\+M\+X\+M\+L\
 \subsubsection[{prop\+Name}]{\setlength{\rightskip}{0pt plus 5cm}String prop\+Name = null\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a49fa47bfe76993bf911116857492e2ca}
 
 
-Definition at line 109 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 110 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
@@ -374,11 +381,18 @@ Referenced by C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+C\+I\+M\+X\+M\+L\
 \subsubsection[{prop\+W\+W\+P\+N}]{\setlength{\rightskip}{0pt plus 5cm}String prop\+W\+W\+P\+N = null\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_adf887561fc9bb90802d364643c222af6}
 
 
-Definition at line 108 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
+Definition at line 109 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 
 Referenced by C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection(), and C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+Result\+C\+S\+V\+Pipe.\+run().
+
+\index{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}!sclient@{sclient}}
+\index{sclient@{sclient}!org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection@{org\+::smallfoot\+::parser\+::cimcql\+::\+C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection}}
+\subsubsection[{sclient}]{\setlength{\rightskip}{0pt plus 5cm}W\+B\+E\+M\+Client sclient = null\hspace{0.3cm}{\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_a228431d1972b2a4462cdebbe63002fdf}
+
+
+Definition at line 105 of file C\+I\+M\+X\+M\+L\+C\+Q\+L\+U\+R\+L\+Connection.\+java.
 
 
 

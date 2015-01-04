@@ -84,24 +84,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="640">
+      <node id="666">
         <label>Exception</label>
       </node>
-      <node id="639">
+      <node id="665">
         <label>VCenterURLConnection.VCCException</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException"/>
-        <childnode refid="640" relation="public-inheritance">
+        <childnode refid="666" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="642">
+      <node id="668">
         <label>Exception</label>
       </node>
-      <node id="641">
+      <node id="667">
         <label>VCenterURLConnection.VCCException</label>
         <link refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException"/>
-        <childnode refid="642" relation="public-inheritance">
+        <childnode refid="668" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

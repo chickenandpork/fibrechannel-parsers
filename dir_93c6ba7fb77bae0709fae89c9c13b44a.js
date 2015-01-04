@@ -71,6 +71,9 @@ var dir_93c6ba7fb77bae0709fae89c9c13b44a =
     [ "TSVParser.java", "TSVParser_8java.html", [
       [ "TSVParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1TSVParser" ]
     ] ],
+    [ "UserWarningParser.java", "UserWarningParser_8java.html", [
+      [ "UserWarningParser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser" ]
+    ] ],
     [ "VCenterURLConnection.java", "VCenterURLConnection_8java.html", [
       [ "VCenterURLConnection", "classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection.html", "classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection" ],
       [ "VCCException", "classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException.html", "classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException" ]

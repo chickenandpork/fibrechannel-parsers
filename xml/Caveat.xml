@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="Caveat" kind="page">
+    <compoundname>Caveat</compoundname>
+    <title>Read this if you want this to work</title>
+    <detaileddescription>
+<para>The parsers in this project work on a text stream <ndash/> the less butchered and corrupted that text stream is, the better the chance that they&apos;ll work.</para><para>I spend a lot of time trying to fake around &quot;--MORE--&quot; and various ANSI Escape Sequences and to be honest, I&apos;m really quite frustrated trying to get users asking for help to read a few rules: <orderedlist>
+<listitem>
+<para>non-interactive. As in &quot;not a log of my typing&quot;. think &quot;batch mode&quot;. </para></listitem>
+<listitem>
+<para>Every parser says &quot;treat like binary&quot;, and &quot;don&apos;t edit&quot;, and &quot;in particular, the use of a putty log [is bad]&quot;. Make sure you&apos;ve seen that part. </para></listitem>
+<listitem>
+<para>this means &quot;plink.exe&quot; not &quot;putty.exe&quot;. Seriously. If you don&apos;t know why, see the first rule, and check out the difference in these tools. It&apos;s OK, I&apos;ll wait for you. Here&apos;s a hint: it tends to lead to the next one </para></listitem>
+<listitem>
+<para>No ANSI escape sequences. See also &quot;non-interative&quot;, above. Interactive terminals include &quot;hit [ENTER] to continue&quot; and some screen-formatting with ANSI escape sequences. </para></listitem>
+<listitem>
+<para>I literally spend more time un-butchering ANSI escape sequences than I spend writing code. Quit it. Seriously. Read the bits above. If I suspect that reading of the bits above has not occurred, I will send you to this page. </para></listitem>
+<listitem>
+<para>please, for the love of all things holy, please read the bits above </para></listitem>
+</orderedlist>
+</para><para>This parser detects when the rules above have not been read. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser" kind="class" prot="public">
+    <compoundname>org::smallfoot::parser::zone::UserWarningParser</compoundname>
+    <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" prot="public" virt="non-virtual">ZoneParserI</basecompoundref>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a4adddc9d747bbbcd221d26df8c80d05f" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean yydebug</definition>
+        <argsstring></argsstring>
+        <name>yydebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="54" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ea9e3b522e448ac462274fe70e1be82" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yynerrs</definition>
+        <argsstring></argsstring>
+        <name>yynerrs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="55" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a21e545865dbcf87cb4c1de2a7da51806" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yyerrflag</definition>
+        <argsstring></argsstring>
+        <name>yyerrflag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="56" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9e2c7c7373b818c86b2df7106a92327c" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yychar</definition>
+        <argsstring></argsstring>
+        <name>yychar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="57" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1afa638b510be8421c552f8a71f91f6ec3" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int statestk[]</definition>
+        <argsstring>[]</argsstring>
+        <name>statestk</name>
+        <initializer>= new int[YYSTACKSIZE]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="71" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac89c2492d77f2a88c9ccb06cfa375c39" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stateptr</definition>
+        <argsstring></argsstring>
+        <name>stateptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="72" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a29aa9152242dba094643e0b3717b7de1" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int stateptrmax</definition>
+        <argsstring></argsstring>
+        <name>stateptrmax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="73" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a08bd7e4c8c0de0fbe835b3522cd6e9cb" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int statemax</definition>
+        <argsstring></argsstring>
+        <name>statemax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="74" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5004db9a2ef3a73534e240417580b8b" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String yytext</definition>
+        <argsstring></argsstring>
+        <name>yytext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="129" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad0e1edc56977784ee3140880a4ab662f" prot="package" static="no" mutable="no">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
+        <definition>ZoneParserVal yyval</definition>
+        <argsstring></argsstring>
+        <name>yyval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="130" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a86d02a47805f45fe9925395fb890e547" prot="package" static="no" mutable="no">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
+        <definition>ZoneParserVal yylval</definition>
+        <argsstring></argsstring>
+        <name>yylval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="131" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aaf3ab675514edcd808ad9e31c14bc243" prot="package" static="no" mutable="no">
+        <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
+        <definition>ZoneParserVal valstk[]</definition>
+        <argsstring>[]</argsstring>
+        <name>valstk</name>
+        <initializer>= new <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref>[YYSTACKSIZE]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="132" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a49423ca4199bedaafb0d36e3ce74ce40" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int valptr</definition>
+        <argsstring></argsstring>
+        <name>valptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="133" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5203882de4ba7010fcf9ba3a455d6fe8" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean puttyWarning</definition>
+        <argsstring></argsstring>
+        <name>puttyWarning</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="264" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1e75f45843cf76f18cc4d6b404e85d4d" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean ansiWarning</definition>
+        <argsstring></argsstring>
+        <name>ansiWarning</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="265" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a24b8b65b5b30d5d3f4d9cfd89f47bd8e" prot="package" static="no" mutable="no">
+        <type>java.io.StreamTokenizer</type>
+        <definition>java.io.StreamTokenizer st</definition>
+        <argsstring></argsstring>
+        <name>st</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="284" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1acd46a0f826a276c736966f6193f717cc" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean zpquiet</definition>
+        <argsstring></argsstring>
+        <name>zpquiet</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="285" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean verboseStringtokenizer</definition>
+        <argsstring></argsstring>
+        <name>verboseStringtokenizer</name>
+        <initializer>= checkProperty(&quot;debug.verboseTokenizer&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="287" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abb93c7c711a3c0ee506f0e510bf368a9" prot="package" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean newline</definition>
+        <argsstring></argsstring>
+        <name>newline</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="288" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0bb57aaadfcbef38e67059219b4126c9" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yyn</definition>
+        <argsstring></argsstring>
+        <name>yyn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="459" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a31c1ea5edb0bdd30006447b3f1e58d15" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yym</definition>
+        <argsstring></argsstring>
+        <name>yym</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="460" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac0fe627e81502f1ccb08d1519bfa40f2" prot="package" static="no" mutable="no">
+        <type>int</type>
+        <definition>int yystate</definition>
+        <argsstring></argsstring>
+        <name>yystate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="461" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2cdb474303672925b387e5f813343a82" prot="package" static="no" mutable="no">
+        <type>String</type>
+        <definition>String yys</definition>
+        <argsstring></argsstring>
+        <name>yys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="462" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a486498b8c8ad29ef792a499437192ca5" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int YYSTACKSIZE</definition>
+        <argsstring></argsstring>
+        <name>YYSTACKSIZE</name>
+        <initializer>= 3000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="70" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a39171a519b0927d419c1b50aeac99b8a" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short yylhs[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yylhs</name>
+        <initializer>= {                           -1,
+    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="183" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e0afb9a762a5c5bad3dcb9f4ea67508" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short yylen[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yylen</name>
+        <initializer>= {                            2,
+    0,   12,    2,    4,    5,    6,    7,    2,    2,    2,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="186" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a76e5d053c1e04f4b4ad49b84fc440193" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short yydefred[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yydefred</name>
+        <initializer>= {                         1,
+    0,    0,    0,   10,    8,    9,    3,    0,    0,    0,
+    0,    4,    0,    0,    5,    0,    0,    6,    0,    7,
+    0,    0,    0,    0,    2,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="189" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9a9c55e1779bc144dee27b76fcf1be4e" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short yydgoto[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yydgoto</name>
+        <initializer>= {                          1,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="194" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a771f445cecdd000023eabc2556196d3f" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short yysindex[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yysindex</name>
+        <initializer>= {                         0,
+ -258, -246, -247,    0,    0,    0,    0, -249, -255, -245,
+ -254,    0, -244, -251,    0, -243, -248,    0, -242,    0,
+ -240, -239, -237, -236,    0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="196" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a326b811dc6a20004fd5462b50b2552b9" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short yyrindex[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yyrindex</name>
+        <initializer>= {                         0,
+    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+    0,    0,    0,    0,    0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="201" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5657f65d3a538951fc73836fb367373" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short yygindex[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yygindex</name>
+        <initializer>= {                         0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="206" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aba56e7cdfd617dc786ca9452a8d56b60" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int YYTABLESIZE</definition>
+        <argsstring></argsstring>
+        <name>YYTABLESIZE</name>
+        <initializer>=24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="208" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7682804618f55311e36c8338425eac69" prot="package" static="yes" mutable="no">
+        <type>short</type>
+        <definition>short yytable[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yytable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="209" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a734735ae171a8a3bf7e651343fa35eb2" prot="package" static="yes" mutable="no">
+        <type>short</type>
+        <definition>short yycheck[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yycheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="218" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ae401f7abf70e23dd826ef078c900ffa6" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short YYFINAL</definition>
+        <argsstring></argsstring>
+        <name>YYFINAL</name>
+        <initializer>=1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="227" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abe4ca243dec8a5d592012c4e817e0b10" prot="package" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short YYMAXTOKEN</definition>
+        <argsstring></argsstring>
+        <name>YYMAXTOKEN</name>
+        <initializer>=263</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="228" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0c215687f88b02eedeece3e19b48bc00" prot="package" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String yyname[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yyname</name>
+        <initializer>= {
+&quot;end-of-file&quot;,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,
+null,null,null,&quot;PUTTYNAME&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ab8da032aab7c8db83b53cf84d0756b" kindref="member">PUTTYSEPARATOR</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ab6965c48119030771a7bdf273987bb52" kindref="member">ESC</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" kindref="member">CSI</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5862b3af3f652ec3cf9d19a55cefbde0" kindref="member">COLON</ref>&quot;,&quot;<ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" kindref="member">ALPHA</ref>&quot;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="229" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa90e232613bcc5abc359f1dfd9755e4a" prot="package" static="yes" mutable="no">
+        <type>final String</type>
+        <definition>final String yyrule[]</definition>
+        <argsstring>[]</argsstring>
+        <name>yyrule</name>
+        <initializer>= {
+&quot;$accept : input&quot;,
+&quot;input :&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ab8da032aab7c8db83b53cf84d0756b" kindref="member">PUTTYSEPARATOR</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1f2abceb4d5a906ee588e05800da59b3" kindref="member">PUTTYNAME</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" kindref="member">ALPHA</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5862b3af3f652ec3cf9d19a55cefbde0" kindref="member">COLON</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5862b3af3f652ec3cf9d19a55cefbde0" kindref="member">COLON</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ab8da032aab7c8db83b53cf84d0756b" kindref="member">PUTTYSEPARATOR</ref>&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" kindref="member">ALPHA</ref>&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ab6965c48119030771a7bdf273987bb52" kindref="member">ESC</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" kindref="member">CSI</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" kindref="member">ALPHA</ref>&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ab6965c48119030771a7bdf273987bb52" kindref="member">ESC</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" kindref="member">CSI</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" kindref="member">ALPHA</ref>&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ab6965c48119030771a7bdf273987bb52" kindref="member">ESC</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" kindref="member">CSI</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" kindref="member">ALPHA</ref>&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ab6965c48119030771a7bdf273987bb52" kindref="member">ESC</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" kindref="member">CSI</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref> <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" kindref="member">ALPHA</ref>&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" kindref="member">NUM</ref>&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5862b3af3f652ec3cf9d19a55cefbde0" kindref="member">COLON</ref>&quot;,
+&quot;input : input <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" kindref="member">CSI</ref>&quot;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="248" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1f2abceb4d5a906ee588e05800da59b3" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short PUTTYNAME</definition>
+        <argsstring></argsstring>
+        <name>PUTTYNAME</name>
+        <initializer>=257</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="175" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ab8da032aab7c8db83b53cf84d0756b" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short PUTTYSEPARATOR</definition>
+        <argsstring></argsstring>
+        <name>PUTTYSEPARATOR</name>
+        <initializer>=258</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="176" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ab6965c48119030771a7bdf273987bb52" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short ESC</definition>
+        <argsstring></argsstring>
+        <name>ESC</name>
+        <initializer>=259</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="177" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short CSI</definition>
+        <argsstring></argsstring>
+        <name>CSI</name>
+        <initializer>=260</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="178" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short NUM</definition>
+        <argsstring></argsstring>
+        <name>NUM</name>
+        <initializer>=261</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="179" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5862b3af3f652ec3cf9d19a55cefbde0" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short COLON</definition>
+        <argsstring></argsstring>
+        <name>COLON</name>
+        <initializer>=262</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="180" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short ALPHA</definition>
+        <argsstring></argsstring>
+        <name>ALPHA</name>
+        <initializer>=263</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="181" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1c58472ea6621d2f613831e08d10dba3" prot="public" static="yes" mutable="no">
+        <type>final short</type>
+        <definition>final short YYERRCODE</definition>
+        <argsstring></argsstring>
+        <name>YYERRCODE</name>
+        <initializer>=256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="182" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5b3677e61ca769d9d9e5cf9cfa1b33c" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void debug</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>debug</name>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="63" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7fca06f2aea68127ed9d54ee46be67ed" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>final void state_push</definition>
+        <argsstring>(int state)</argsstring>
+        <name>state_push</name>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="78" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="78" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5b17a79d1f2f4e91db95a53420401505" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final int</type>
+        <definition>final int state_pop</definition>
+        <argsstring>()</argsstring>
+        <name>state_pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="93" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a3b3b21a1eb9702329844cc77d2d82a22" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>final void state_drop</definition>
+        <argsstring>(int cnt)</argsstring>
+        <name>state_drop</name>
+        <param>
+          <type>int</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="97" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9bd929c959381696ac57117965762423" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final int</type>
+        <definition>final int state_peek</definition>
+        <argsstring>(int relative)</argsstring>
+        <name>state_peek</name>
+        <param>
+          <type>int</type>
+          <declname>relative</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="101" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad1071764e501d770efe1ade5ea8d7ee5" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final boolean</type>
+        <definition>final boolean init_stacks</definition>
+        <argsstring>()</argsstring>
+        <name>init_stacks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="108" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="108" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a8e626edce147080d6b74344124787ed7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void dump_stacks</definition>
+        <argsstring>(int count)</argsstring>
+        <name>dump_stacks</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="117" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="117" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a15f32bea4b8f1c22ada11d651b67db4a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>final void val_init</definition>
+        <argsstring>()</argsstring>
+        <name>val_init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="137" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="137" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a546b106645004a3f569c40a7be9cecdb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>final void val_push</definition>
+        <argsstring>(ZoneParserVal val)</argsstring>
+        <name>val_push</name>
+        <param>
+          <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="143" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="143" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad6e5325d5726d0823417eb248a201bc2" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
+        <definition>final ZoneParserVal val_pop</definition>
+        <argsstring>()</argsstring>
+        <name>val_pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="158" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a03184d479fc81e916502118e86acd1e7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final void</type>
+        <definition>final void val_drop</definition>
+        <argsstring>(int cnt)</argsstring>
+        <name>val_drop</name>
+        <param>
+          <type>int</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="162" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aff23f19244cb74af69b0d1598a019c91" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
+        <definition>final ZoneParserVal val_peek</definition>
+        <argsstring>(int relative)</argsstring>
+        <name>val_peek</name>
+        <param>
+          <type>int</type>
+          <declname>relative</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="166" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5b3da8f164c609de90b1205d63103862" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
+        <definition>final ZoneParserVal dup_yyval</definition>
+        <argsstring>(ZoneParserVal val)</argsstring>
+        <name>dup_yyval</name>
+        <param>
+          <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="170" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad6dbf693d2fb3208331c7494acc61347" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void puttyWarning</definition>
+        <argsstring>()</argsstring>
+        <name>puttyWarning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="267" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="267" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1adadbe7dcc54235543a453907b8b52a12" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ansiWarning</definition>
+        <argsstring>()</argsstring>
+        <name>ansiWarning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="273" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="273" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac677a01b361642a02e9b23afb4163fce" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yyerror</definition>
+        <argsstring>(String s)</argsstring>
+        <name>yyerror</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="279" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="279" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa40b27ae32d6d1ae7160bd6256e08eb8" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int yylex</definition>
+        <argsstring>()</argsstring>
+        <name>yylex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="290" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="290" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2d5e88a14a1ce23f517be13c8a7a0f92" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void yylexdebug</definition>
+        <argsstring>(int state, int ch)</argsstring>
+        <name>yylexdebug</name>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="443" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="443" bodyend="452"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1acd8617a8f2ac0de8bc1cc032cf449e19" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int yyparse</definition>
+        <argsstring>()</argsstring>
+        <name>yyparse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="468" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="468" bodyend="668"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>[static initializer]</definition>
+        <argsstring></argsstring>
+        <name>[static initializer]</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7bfe55f022dd2ed471f804f7e83f3b19" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void yytable</definition>
+        <argsstring>()</argsstring>
+        <name>yytable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="211" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="211" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>[static initializer]</definition>
+        <argsstring></argsstring>
+        <name>[static initializer]</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa000c1557e5264cffbc58d37d7d67ce4" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void yycheck</definition>
+        <argsstring>()</argsstring>
+        <name>yycheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="220" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="220" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad7c704b34912678d95c13243cacf9d7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void parse</definition>
+        <argsstring>()</argsstring>
+        <name>parse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="367" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="367" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5deab139f9ad4072e1a497c5cccda0ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setReader</definition>
+        <argsstring>(Reader in)</argsstring>
+        <name>setReader</name>
+        <param>
+          <type>Reader</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="379" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="379" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="415" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="415" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setDebug</definition>
+        <argsstring>(boolean debug)</argsstring>
+        <name>setDebug</name>
+        <param>
+          <type>boolean</type>
+          <declname>debug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="426" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="426" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a769e121c9e194f986fbbba18b00a2c43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UserWarningParser</definition>
+        <argsstring>(InputStream in, boolean debugMe)</argsstring>
+        <name>UserWarningParser</name>
+        <param>
+          <type>InputStream</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>debugMe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="428" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="428" bodyend="428"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="UserWarningParser_8java" startline="432" endline="438">UserWarningParser.main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac962d60333eef2d9a542344842b1b515" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UserWarningParser</definition>
+        <argsstring>(java.util.Properties in)</argsstring>
+        <name>UserWarningParser</name>
+        <param>
+          <type>java.util.Properties</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="429" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="429" bodyend="429"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void main</definition>
+        <argsstring>(String args[])</argsstring>
+        <name>main</name>
+        <param>
+          <type>String</type>
+          <declname>args</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="432" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="432" bodyend="438"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="310" endline="343">ZoneParserI.testSummary</references>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a769e121c9e194f986fbbba18b00a2c43" compoundref="UserWarningParser_8java" startline="428" endline="428">UserWarningParser.UserWarningParser</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="653">
+        <label>UserWarningParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser"/>
+        <childnode refid="654" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="654">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="655" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="656">
+        <label>Thread</label>
+      </node>
+      <node id="655">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="656" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="657">
+        <label>UserWarningParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser"/>
+        <childnode refid="658" relation="public-inheritance">
+        </childnode>
+        <childnode refid="664" relation="usage">
+          <edgelabel>yylval</edgelabel>
+          <edgelabel>yyval</edgelabel>
+          <edgelabel>valstk</edgelabel>
+        </childnode>
+      </node>
+      <node id="658">
+        <label>ZoneParserI</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI"/>
+        <childnode refid="659" relation="public-inheritance">
+        </childnode>
+        <childnode refid="662" relation="usage">
+          <edgelabel>aliases</edgelabel>
+        </childnode>
+        <childnode refid="663" relation="usage">
+          <edgelabel>zones</edgelabel>
+        </childnode>
+      </node>
+      <node id="663">
+        <label>Vector&lt; ZPZoneEntry &gt;</label>
+      </node>
+      <node id="662">
+        <label>TreeMap&lt; String, org.smallfoot.parser.zone.ZPAliasEntry &gt;</label>
+      </node>
+      <node id="660">
+        <label>Thread</label>
+      </node>
+      <node id="659">
+        <label>ZoneParser</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+        <childnode refid="661" relation="usage">
+          <edgelabel>_prop</edgelabel>
+        </childnode>
+      </node>
+      <node id="661">
+        <label>Properties</label>
+      </node>
+      <node id="664">
+        <label>ZoneParserVal</label>
+        <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" line="52" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/UserWarningParser.java" bodystart="50" bodyend="685"/>
+    <listofallmembers>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>[static initializer]</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>[static initializer]</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>_prop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a49f8902117520ae3cc27b7bddb370a0e" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a21a0aa226fb1154f5413f84fd78ae2c4" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab02480bb67091ad319f56a9dd13ea899" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>addAlias</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a55d78812ef0e9e26eabc46c0269ec3ad" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a0cfe7f047edd054bac3bc33e9b611afd" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a830731cb1af2631d89e512f38460be81" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>addZone</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5c646608669073b5c31bb44626baa48f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>aliasArray</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a1631138fd08af051dc26686c00768ab3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>aliasElements</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a071816722bbf8f31f56a3b27f5c84fa6" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>aliases</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>aliasSize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a56e3ae6cd5d86514d2e6448dc87e8581" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ALPHA</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1e75f45843cf76f18cc4d6b404e85d4d" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ansiWarning</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1adadbe7dcc54235543a453907b8b52a12" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ansiWarning</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ad9eac83891611fa5e2e983328603eb8a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>appendZoneAlphanum</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a5cb1996c3b0edb483631b6c82fd82608" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>checkProperty</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5862b3af3f652ec3cf9d19a55cefbde0" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>COLON</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abc3bc5665dfc2ca2d09e9c436f18ceef" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>CSI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5b3677e61ca769d9d9e5cf9cfa1b33c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>debug</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a8e626edce147080d6b74344124787ed7" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>dump_stacks</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5b3da8f164c609de90b1205d63103862" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>dup_yyval</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ab6965c48119030771a7bdf273987bb52" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ESC</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad1071764e501d770efe1ade5ea8d7ee5" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>init_stacks</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1af0a81691449a6211ef6b9ffc8b62bb0a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>items</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a75988cf84fc6ee7a2ebff36e363021aa" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>main</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abb93c7c711a3c0ee506f0e510bf368a9" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>newline</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a60caf74b8af5eda4cab53d5a03f67a4b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>NUM</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad7c704b34912678d95c13243cacf9d7f" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>parse</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1f2abceb4d5a906ee588e05800da59b3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>PUTTYNAME</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ab8da032aab7c8db83b53cf84d0756b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>PUTTYSEPARATOR</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5203882de4ba7010fcf9ba3a455d6fe8" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>puttyWarning</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad6dbf693d2fb3208331c7494acc61347" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>puttyWarning</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>run</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>setDebug</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5deab139f9ad4072e1a497c5cccda0ea" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>setReader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a19567e6611303b1035a1a101b00310e2" prot="public" virt="non-virtual" ambiguityscope="org::smallfoot::parser::zone::ZoneParserI."><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>setReader</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a24b8b65b5b30d5d3f4d9cfd89f47bd8e" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>st</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a3b3b21a1eb9702329844cc77d2d82a22" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>state_drop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9bd929c959381696ac57117965762423" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>state_peek</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a5b17a79d1f2f4e91db95a53420401505" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>state_pop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7fca06f2aea68127ed9d54ee46be67ed" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>state_push</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a08bd7e4c8c0de0fbe835b3522cd6e9cb" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>statemax</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac89c2492d77f2a88c9ccb06cfa375c39" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>stateptr</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a29aa9152242dba094643e0b3717b7de1" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>stateptrmax</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1afa638b510be8421c552f8a71f91f6ec3" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>statestk</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>summarize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>testSummary</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a769e121c9e194f986fbbba18b00a2c43" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>UserWarningParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac962d60333eef2d9a542344842b1b515" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>UserWarningParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a03184d479fc81e916502118e86acd1e7" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>val_drop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a15f32bea4b8f1c22ada11d651b67db4a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>val_init</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aff23f19244cb74af69b0d1598a019c91" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>val_peek</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad6e5325d5726d0823417eb248a201bc2" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>val_pop</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a546b106645004a3f569c40a7be9cecdb" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>val_push</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a49423ca4199bedaafb0d36e3ce74ce40" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>valptr</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aaf3ab675514edcd808ad9e31c14bc243" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>valstk</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>verboseStringtokenizer</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9e2c7c7373b818c86b2df7106a92327c" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yychar</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a734735ae171a8a3bf7e651343fa35eb2" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yycheck</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa000c1557e5264cffbc58d37d7d67ce4" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yycheck</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a4adddc9d747bbbcd221d26df8c80d05f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yydebug</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a76e5d053c1e04f4b4ad49b84fc440193" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yydefred</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a9a9c55e1779bc144dee27b76fcf1be4e" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yydgoto</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a1c58472ea6621d2f613831e08d10dba3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>YYERRCODE</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a21e545865dbcf87cb4c1de2a7da51806" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yyerrflag</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac677a01b361642a02e9b23afb4163fce" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yyerror</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ae401f7abf70e23dd826ef078c900ffa6" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>YYFINAL</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5657f65d3a538951fc73836fb367373" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yygindex</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2e0afb9a762a5c5bad3dcb9f4ea67508" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yylen</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa40b27ae32d6d1ae7160bd6256e08eb8" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yylex</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2d5e88a14a1ce23f517be13c8a7a0f92" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yylexdebug</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a39171a519b0927d419c1b50aeac99b8a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yylhs</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a86d02a47805f45fe9925395fb890e547" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yylval</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a31c1ea5edb0bdd30006447b3f1e58d15" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yym</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1abe4ca243dec8a5d592012c4e817e0b10" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>YYMAXTOKEN</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0bb57aaadfcbef38e67059219b4126c9" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yyn</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0c215687f88b02eedeece3e19b48bc00" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yyname</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a0ea9e3b522e448ac462274fe70e1be82" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yynerrs</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1acd8617a8f2ac0de8bc1cc032cf449e19" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yyparse</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a326b811dc6a20004fd5462b50b2552b9" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yyrindex</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aa90e232613bcc5abc359f1dfd9755e4a" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yyrule</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a2cdb474303672925b387e5f813343a82" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yys</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a771f445cecdd000023eabc2556196d3f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yysindex</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a486498b8c8ad29ef792a499437192ca5" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>YYSTACKSIZE</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ac0fe627e81502f1ccb08d1519bfa40f2" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yystate</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7682804618f55311e36c8338425eac69" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yytable</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1a7bfe55f022dd2ed471f804f7e83f3b19" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yytable</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1aba56e7cdfd617dc786ca9452a8d56b60" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>YYTABLESIZE</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad5004db9a2ef3a73534e240417580b8b" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yytext</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1ad0e1edc56977784ee3140880a4ab662f" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>yyval</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a17bb9b86877d4493c7ad4ba284f7c945" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>zoneElements</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a89f1cfcb18c2aaa76794a8ce060637fb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adc74e849472a0632eb0910b719acfa77" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a18c7e8b0a1166e23d1fc9605e4740ccc" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1abe50de6630cefa98b757505c1b5fda0b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1aab55b15bec7ad0340c51c26dca3b8dc6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1adaa143b6f1a7f0df5fe512786c8d58a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParser</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a78ce415d9f6ed283bce24ee9f700cedb" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a678cd3827f5f34241ba56702cd5663a1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ae2743a1693169cd3b5ebc8fcafa07c74" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1acc9e1015da0abae3030920bc213a20c6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab13723430c8b49022eae775179389d41" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1ab16d7753f7d4aa5e5674582e3daae58b" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>ZoneParserI</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a068264f3443516292002d94b1df32457" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>zones</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a083293963a3e77da41becf829be83aca" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>zoneSize</name></member>
+      <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1UserWarningParser_1acd46a0f826a276c736966f6193f717cc" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::UserWarningParser</scope><name>zpquiet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
