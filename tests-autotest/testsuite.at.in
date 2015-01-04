@@ -32,6 +32,33 @@ AT_CHECK([java -cp $abs_top_builddir/convjars/@PACKAGE@.jar org.smallfoot.parser
 AT_CLEANUP()
 
 
+AT_SETUP(Workaround Putty Non-reading-instructions)
+dnl      -----------------------------------------
+
+AT_CHECK([java -Ddebug.debugTokenizer=UserWarningParser -Ddebug.verboseTokenizer=UserWarningParser -Ddebug.yystate=UserWarningParser -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.UserWarningParser < abs_top_srcdir/samples/Putty.Log.Die.Die.Die.shzone ], 0, [stdout], [stderr])
+AT_CHECK([java -Ddebug.dumpAliases=UserWarningParser      -cp $abs_top_builddir/java/fcparsers.jar org.smallfoot.parser.zone.UserWarningParser < abs_top_srcdir/samples/Putty.Log.Die.Die.Die.shzone ], 0, [stdout], [stderr])
+AT_CHECK([uniq stdout], 0, [DO NOT, DO NOT, DO NOT use interactive methods such as Putty - the text
+ stream is corrupted by screen-management control characters which means
+ the parser has a lower accuracy for which you will only blame the parser
+ in the end
+Parse results for UserWarningParser:
+Zones: 0
+Aliases: 0 (names with one or more WWPNs)
+], [stderr])
+
+AT_CHECK([java -jar $abs_top_builddir/convjars/@PACKAGE@.jar -N abs_top_srcdir/samples/Putty.Log.Die.Die.Die.shzone ], 0, [stdout], [stderr])
+AT_CHECK([uniq stdout], 0, [DO NOT, DO NOT, DO NOT use interactive methods such as Putty - the text
+ stream is corrupted by screen-management control characters which means
+ the parser has a lower accuracy for which you will only blame the parser
+ in the end
+Parse results for SwappedNicknameParser:
+Zones: 0
+Aliases: 0 (names with one or more WWPNs)
+], [stderr])
+
+AT_CLEANUP()
+
+
 AT_SETUP(TSV NicknameParser Tabs)
 dnl      -----------------------
 

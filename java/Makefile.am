@@ -9,6 +9,7 @@ nodist_java_JAVA += BNAZoneParser.java
 nodist_java_JAVA += DeviceAliasParser.java
 nodist_java_JAVA += ShowZoneParser.java
 nodist_java_JAVA += ShowZone2Parser.java
+nodist_java_JAVA += UserWarningParser.java
 nodist_java_JAVA += VW4InvalidAddedParser.java
 nodist_java_JAVA += $(abs_builddir)/genproto/bna/Handler.java $(abs_builddir)/genproto/bnapsql/Handler.java $(abs_builddir)/genproto/cmcne/Handler.java $(abs_builddir)/genproto/dcfm/Handler.java BNAPURLConnection.java
 nodist_java_JAVA += $(abs_builddir)/genproto/ocidwh/Handler.java $(abs_builddir)/genproto/osmsql/Handler.java $(abs_builddir)/genproto/msosmsql/Handler.java OSMURLConnection.java DWHURLConnection.java MSDWHURLConnection.java
@@ -134,6 +135,11 @@ BUILT_SOURCES += VW4InvalidAddedParser.java
 
 VW4InvalidAddedParser.java: vw4invalid.y
 	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=VW4InvalidAddedParser -J $<
+
+BUILT_SOURCES += UserWarningParser.java
+
+UserWarningParser.java: userwarning.y
+	$(BYACC) -Jstack=3000 -Jnoconstruct -Jnorun -Jsemantic=ZoneParserVal -Jpackage=org.smallfoot.parser.zone -Jextends=ZoneParserI -Jclass=UserWarningParser -J $<
 
 endif
 	
