@@ -73,7 +73,6 @@ var hierarchy =
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler.html", null ],
-      [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler.html", null ],
       [ "Handler", "classorg_1_1smallfoot_1_1parser_1_1vmware_1_1Handler.html", null ]
     ] ]
 ];

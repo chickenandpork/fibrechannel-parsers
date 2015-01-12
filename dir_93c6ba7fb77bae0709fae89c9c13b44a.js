@@ -1,7 +1,6 @@
 var dir_93c6ba7fb77bae0709fae89c9c13b44a =
 [
     [ "genproto", "dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb.html", "dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb" ],
-    [ "ssh", "dir_78f1eca83964fe61d8b36350cd844585.html", "dir_78f1eca83964fe61d8b36350cd844585" ],
     [ "Alias4Parser.java", "Alias4Parser_8java.html", [
       [ "Alias4Parser", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html", "classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser" ]
     ] ],

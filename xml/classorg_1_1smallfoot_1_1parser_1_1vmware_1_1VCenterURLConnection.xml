@@ -209,7 +209,7 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="jvmopt_1_jvmopt000009"><xreftitle>JVM Options</xreftitle><xrefdescription><para>debug.vme.showRootFolder: For testing and additional info, -Ddebug.vme.showRootFolder causes the data collector to display the VCenter&apos;s root folder. </para></xrefdescription></xrefsect></para>        </inbodydescription>
+<para><xrefsect id="jvmopt_1_jvmopt000011"><xreftitle>JVM Options</xreftitle><xrefdescription><para>debug.vme.showRootFolder: For testing and additional info, -Ddebug.vme.showRootFolder causes the data collector to display the VCenter&apos;s root folder. </para></xrefdescription></xrefsect></para>        </inbodydescription>
         <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" line="159" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java" bodystart="159" bodyend="215"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1af5dfb62a43b98d4448f55d43bef78a17" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">

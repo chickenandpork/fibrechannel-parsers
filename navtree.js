@@ -28,8 +28,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AliShowZoneParser.html",
-"classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser.html#a0908383bf408f9defeb19ebcd0d22a41",
-"namespaceorg_1_1smallfoot_1_1parser_1_1dcnm.html"
+"classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser.html#a13a43e6d814de94978c515cb084873b1",
+"namespaceorg_1_1smallfoot_1_1parser_1_1ocidwh.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

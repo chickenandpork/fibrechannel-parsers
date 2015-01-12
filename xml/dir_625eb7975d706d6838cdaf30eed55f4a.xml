@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="dir_625eb7975d706d6838cdaf30eed55f4a" kind="dir">
     <compoundname>java/genproto/dcfm</compoundname>
-    <innerfile refid="genproto_2dcfm_2Handler_8java">Handler.java</innerfile>
+    <innerfile refid="dcfm_2Handler_8java">Handler.java</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

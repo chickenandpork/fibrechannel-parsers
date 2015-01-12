@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="dir_5c5f5170099a0ff00a58e67a9cac939f" kind="dir">
     <compoundname>java/genproto/cimcql</compoundname>
-    <innerfile refid="genproto_2cimcql_2Handler_8java">Handler.java</innerfile>
+    <innerfile refid="cimcql_2Handler_8java">Handler.java</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

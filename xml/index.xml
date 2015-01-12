@@ -377,8 +377,6 @@
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler" kind="class"><name>org::smallfoot::parser::ssh::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
-    <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" kind="function"><name>getDefaultPort</name></member>
   </compound>
   <compound refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1Handler" kind="class"><name>org::smallfoot::parser::vmware::Handler</name>
     <member refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1Handler_1a3838795af42df5d7757e609b8b312956" kind="function"><name>openConnection</name></member>
@@ -1041,35 +1039,33 @@
   </compound>
   <compound refid="FCParser_8java" kind="file"><name>FCParser.java</name>
   </compound>
-  <compound refid="genproto_2bna_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="bna_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2bnacql_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="bnacql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2bnapsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="bnapsql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2cimcql_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="cimcql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2cmcne_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="cmcne_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2dcfm_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="dcfm_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2dcnm_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="dcnm_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2dcnmcql_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="dcnmcql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2dcnmsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="dcnmsql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2msosmsql_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="msosmsql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2ocidwh_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="ocidwh_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
-  <compound refid="genproto_2osmsql_2Handler_8java" kind="file"><name>Handler.java</name>
-  </compound>
-  <compound refid="genproto_2ssh_2Handler_8java" kind="file"><name>Handler.java</name>
-  </compound>
-  <compound refid="genproto_2vmware_2Handler_8java" kind="file"><name>Handler.java</name>
+  <compound refid="osmsql_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="ssh_2Handler_8java" kind="file"><name>Handler.java</name>
+  </compound>
+  <compound refid="vmware_2Handler_8java" kind="file"><name>Handler.java</name>
   </compound>
   <compound refid="MSDWHURLConnection_8java" kind="file"><name>MSDWHURLConnection.java</name>
   </compound>
@@ -1115,6 +1111,8 @@
   </compound>
   <compound refid="formats" kind="page"><name>formats</name>
   </compound>
+  <compound refid="Alias4Parser" kind="page"><name>Alias4Parser</name>
+  </compound>
   <compound refid="AliShowZoneParser" kind="page"><name>AliShowZoneParser</name>
   </compound>
   <compound refid="BNACQLURLConnection" kind="page"><name>BNACQLURLConnection</name>
@@ -1136,6 +1134,8 @@
   <compound refid="DWHURLConnection" kind="page"><name>DWHURLConnection</name>
   </compound>
   <compound refid="MSDWHURLConnection" kind="page"><name>MSDWHURLConnection</name>
+  </compound>
+  <compound refid="NicknameParser" kind="page"><name>NicknameParser</name>
   </compound>
   <compound refid="OSMURLConnection" kind="page"><name>OSMURLConnection</name>
   </compound>
@@ -1180,8 +1180,6 @@
   <compound refid="dir_50e20d61f67e286b4715d2e1bc365b76" kind="dir"><name>java/genproto/ocidwh</name>
   </compound>
   <compound refid="dir_d7e3ce18747015d129b8f64d6faa4b30" kind="dir"><name>java/genproto/osmsql</name>
-  </compound>
-  <compound refid="dir_78f1eca83964fe61d8b36350cd844585" kind="dir"><name>java/ssh</name>
   </compound>
   <compound refid="dir_9ed736c8effb5cabd84b76b7f43a9f07" kind="dir"><name>java/genproto/ssh</name>
   </compound>

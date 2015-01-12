@@ -5,7 +5,7 @@
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" prot="public">org::smallfoot::parser::zone::NicknameParser</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1zone">org::smallfoot::parser::zone</innernamespace>
     <briefdescription>
-    </briefdescription>
+<para>This class parses the basic VirtualWisdom3 4-column nickname format to quickly reinterpret the data for reuse. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java"/>

@@ -1,3 +1,5 @@
+\doxyref{Virtual\+Wisdom3 -\/style 4-\/column format}{p.}{Alias4Parser}
+
 \doxyref{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}{p.}{AliShowZoneParser}
 
 \doxyref{Brocade objects from C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database (B\+N\+A, C\+M\+C\+N\+E, H\+P\+N\+A) (alpha)}{p.}{BNACQLURLConnection}
@@ -18,6 +20,8 @@
 
 \doxyref{Net\+App O\+C\+I back-\/end Database (msosmsql)}{p.}{MSDWHURLConnection}
 
+\doxyref{Virtual\+Wisdom3 -\/style 2-\/column format}{p.}{NicknameParser}
+
 \doxyref{Net\+App O\+C\+I back-\/end Database (osmsql)}{p.}{OSMURLConnection}
 
 \doxyref{Cisco \char`\"{}show zone\char`\"{}}{p.}{ShowZone2Parser}
@@ -28,7 +32,16 @@
 
 \doxyref{Read this if you want this to work}{p.}{Caveat}
 
-\doxyref{Virtual\+Wisdom4 Validation Errors}{p.}{VW4InvalidAdded} \section{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}\label{AliShowZoneParser}
+\doxyref{Virtual\+Wisdom4 Validation Errors}{p.}{VW4InvalidAdded} \section{Virtual\+Wisdom3 -\/style 4-\/column format}\label{Alias4Parser}
+The \doxyref{Alias4\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser} interprets a 4-\/column C\+S\+V as though it contains \char`\"{}\+W\+W\+N\char`\"{}, W\+W\+P\+N, Alias, Type For example\+:
+
+\begin{DoxyVerb}"WWN",c050761234567890,AIXLeftBig,Server
+"WWN",10000000c9123456,CustServer,Server
+"WWN",50060e801234567f,HDS0123457_CL7F,Storage
+\end{DoxyVerb}
+
+
+This collector/parser chain is slightly more successful than text-\/based parsers due to proper interpretation of M\+S-\/\+D\+O\+S \char`\"{}\+I'm the exception\char`\"{} line-\/ending markers. \section{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}\label{AliShowZoneParser}
 The \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser} parses the output of a Brocade S\+A\+N switch with the \char`\"{}alishow\char`\"{} or \char`\"{}zoneshow\char`\"{} commands.
 
 As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
@@ -196,7 +209,46 @@ The \doxyref{D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Net\+App O\+C\+I back-\/end Database (msosmsql)}\label{MSDWHURLConnection}
 The \doxyref{M\+S\+D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection} collects msosmsql\+:// sources from O\+C\+I's backend database to search for aliases
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Net\+App O\+C\+I back-\/end Database (osmsql)}\label{OSMURLConnection}
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Virtual\+Wisdom3 -\/style 2-\/column format}\label{NicknameParser}
+The \doxyref{Nickname\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser} interprets a 2-\/column C\+S\+V as though it contains W\+W\+P\+N, Alias For example\+:
+
+\begin{DoxyVerb}c050761234567890,AIXLeftBig
+10000000c9123456,CustServer
+50060e801234567f,HDS0123457_CL7F
+\end{DoxyVerb}
+
+
+Additionally, this parser can be used to pull data from any C\+S\+V; for example, if your C\+S\+V has more than just W\+W\+P\+N/\+Nickname (which is typical when pulled from another resource), you might have\+:\begin{DoxyVerb}BusinessUnit, Server, WWPN, CapEx Code, Location
+Billing, BillingBigBox, c050761122334455, 2013A4, Houston
+CustServ, Service44, 1000001b32123456, 2013A4, Dallas
+\end{DoxyVerb}
+
+
+You can use system-\/wide parameters or file-\/specific parameters to set a different column number (see the jvmopt \char`\"{}wwn\char`\"{}, \char`\"{}nickname\char`\"{})
+
+
+\begin{DoxyCode}
+java -D wwn=4 -jar fcparser.jar -N cisco.txt ...  
+\end{DoxyCode}
+ 
+\begin{DoxyCode}
+java -D wwn=4 -D nickname=0 -jar fcparser.jar -N cisco.txt ...  
+\end{DoxyCode}
+
+
+better/preferred\+:
+
+
+\begin{DoxyCode}
+java -jar fcparser.jar -N \textcolor{stringliteral}{"cisco.txt;wwn=4"} ...  
+\end{DoxyCode}
+ 
+\begin{DoxyCode}
+java -jar fcparser.jar -N \textcolor{stringliteral}{"cisco.txt;wwn=4;nickname=0"} ...  
+\end{DoxyCode}
+
+
+This collector/parser chain is slightly more successful than text-\/based parsers due to proper interpretation of M\+S-\/\+D\+O\+S \char`\"{}\+I'm the exception\char`\"{} line-\/ending markers. \section{Net\+App O\+C\+I back-\/end Database (osmsql)}\label{OSMURLConnection}
 The \doxyref{O\+S\+M\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection} collects osmsql\+:// sources from O\+C\+I's backend database to parse for aliases it may know
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information.

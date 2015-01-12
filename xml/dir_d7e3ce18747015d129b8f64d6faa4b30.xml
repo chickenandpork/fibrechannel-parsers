@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="dir_d7e3ce18747015d129b8f64d6faa4b30" kind="dir">
     <compoundname>java/genproto/osmsql</compoundname>
-    <innerfile refid="genproto_2osmsql_2Handler_8java">Handler.java</innerfile>
+    <innerfile refid="osmsql_2Handler_8java">Handler.java</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

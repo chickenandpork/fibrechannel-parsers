@@ -1,5 +1,6 @@
 var formats =
 [
+    [ "VirtualWisdom3 -style 4-column format", "Alias4Parser.html", null ],
     [ "Brocade \"alishow\" and \"zoneshow\"", "AliShowZoneParser.html", null ],
     [ "Brocade objects from CIM-XML CIMOM Database (BNA, CMCNE, HPNA) (alpha)", "BNACQLURLConnection.html", null ],
     [ "Brocade BNA back-end Database", "BNAPURLConnection.html", null ],
@@ -10,6 +11,7 @@ var formats =
     [ "Cisco \"show device-alias database\"", "DeviceAliasParser.html", null ],
     [ "NetApp OCI back-end Database (ocidwh)", "DWHURLConnection.html", null ],
     [ "NetApp OCI back-end Database (msosmsql)", "MSDWHURLConnection.html", null ],
+    [ "VirtualWisdom3 -style 2-column format", "NicknameParser.html", null ],
     [ "NetApp OCI back-end Database (osmsql)", "OSMURLConnection.html", null ],
     [ "Cisco \"show zone\"", "ShowZone2Parser.html", null ],
     [ "Cisco \"show zone\"", "ShowZoneParser.html", null ],

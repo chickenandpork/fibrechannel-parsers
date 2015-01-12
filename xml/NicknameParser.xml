@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="NicknameParser" kind="page">
+    <compoundname>NicknameParser</compoundname>
+    <title>VirtualWisdom3 -style 2-column format</title>
+    <detaileddescription>
+<para>The <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kindref="compound">NicknameParser</ref> interprets a 2-column CSV as though it contains WWPN, Alias For example:</para><para><verbatim>c050761234567890,AIXLeftBig
+10000000c9123456,CustServer
+50060e801234567f,HDS0123457_CL7F
+</verbatim></para><para>Additionally, this parser can be used to pull data from any CSV; for example, if your CSV has more than just WWPN/Nickname (which is typical when pulled from another resource), you might have:<verbatim>BusinessUnit, Server, WWPN, CapEx Code, Location
+Billing, BillingBigBox, c050761122334455, 2013A4, Houston
+CustServ, Service44, 1000001b32123456, 2013A4, Dallas
+</verbatim></para><para>You can use system-wide parameters or file-specific parameters to set a different column number (see the jvmopt &quot;wwn&quot;, &quot;nickname&quot;)</para><para><programlisting><codeline><highlight class="normal">java<sp/>-D<sp/>wwn=4<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>cisco.txt<sp/>...<sp/><sp/></highlight></codeline>
+</programlisting> <programlisting><codeline><highlight class="normal">java<sp/>-D<sp/>wwn=4<sp/>-D<sp/>nickname=0<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>cisco.txt<sp/>...<sp/><sp/></highlight></codeline>
+</programlisting></para><para>better/preferred:</para><para><programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/></highlight><highlight class="stringliteral">&quot;cisco.txt;wwn=4&quot;</highlight><highlight class="normal"><sp/>...<sp/><sp/></highlight></codeline>
+</programlisting> <programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/></highlight><highlight class="stringliteral">&quot;cisco.txt;wwn=4;nickname=0&quot;</highlight><highlight class="normal"><sp/>...<sp/><sp/></highlight></codeline>
+</programlisting></para><para>This collector/parser chain is slightly more successful than text-based parsers due to proper interpretation of MS-DOS &quot;I&apos;m the exception&quot; line-ending markers. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

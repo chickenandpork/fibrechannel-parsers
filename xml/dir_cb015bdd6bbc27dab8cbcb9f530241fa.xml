@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
   <compounddef id="dir_cb015bdd6bbc27dab8cbcb9f530241fa" kind="dir">
     <compoundname>java/genproto/bnapsql</compoundname>
-    <innerfile refid="genproto_2bnapsql_2Handler_8java">Handler.java</innerfile>
+    <innerfile refid="bnapsql_2Handler_8java">Handler.java</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

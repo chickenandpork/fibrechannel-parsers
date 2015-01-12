@@ -3,7 +3,6 @@
   <compounddef id="dir_93c6ba7fb77bae0709fae89c9c13b44a" kind="dir">
     <compoundname>java</compoundname>
     <innerdir refid="dir_0e43b3eaa74cb4b3a4cbe492a3c2d8cb">java/genproto</innerdir>
-    <innerdir refid="dir_78f1eca83964fe61d8b36350cd844585">java/ssh</innerdir>
     <innerfile refid="Alias4Parser_8java">Alias4Parser.java</innerfile>
     <innerfile refid="AliShowZoneParser_8java">AliShowZoneParser.java</innerfile>
     <innerfile refid="BNACQLURLConnection_8java">BNACQLURLConnection.java</innerfile>

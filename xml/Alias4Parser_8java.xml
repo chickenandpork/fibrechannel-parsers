@@ -7,7 +7,7 @@
     <innernamespace refid="namespacejava_1_1io">java::io</innernamespace>
     <innernamespace refid="namespacejava_1_1util">java::util</innernamespace>
     <briefdescription>
-    </briefdescription>
+<para>This class parses the basic VirtualWisdom3 4-column nickname format to quickly reinterpret the data for reuse. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <location file="/Users/allan.clark/src/fcparsers/java/Alias4Parser.java"/>
