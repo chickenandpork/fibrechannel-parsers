@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::boneheadbits::Select2Sample</compoundname>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample_1ae4faf7ff4190d227357ef851490d7757" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/Select2Sample.java" line="12" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Select2Sample.java" bodystart="12" bodyend="42"/>
+        <location file="/Users/allanc/src/fcparsers/java/Select2Sample.java" line="12" column="1" bodyfile="/Users/allanc/src/fcparsers/java/Select2Sample.java" bodystart="12" bodyend="42"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" compoundref="ParserTee_8java" startline="42" endline="49">ParserTee.pipeOutputStreamTo</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1ad8cf81600663ab2330a929bfefaecacd" compoundref="ZoneParser_8java" startline="123" endline="143">ZoneParser.summarize</references>
       </memberdef>
@@ -28,7 +28,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/Select2Sample.java" line="11" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/Select2Sample.java" bodystart="10" bodyend="43"/>
+    <location file="/Users/allanc/src/fcparsers/java/Select2Sample.java" line="11" column="1" bodyfile="/Users/allanc/src/fcparsers/java/Select2Sample.java" bodystart="10" bodyend="43"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample_1ae4faf7ff4190d227357ef851490d7757" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::boneheadbits::Select2Sample</scope><name>main</name></member>
     </listofallmembers>

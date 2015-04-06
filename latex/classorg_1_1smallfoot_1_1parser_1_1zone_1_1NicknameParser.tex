@@ -27,15 +27,13 @@ void {\bf set\+Debug} (boolean debug)
 \item 
 {\bf Nickname\+Parser} (Input\+Stream in, boolean debug\+Me)
 \item 
-java.\+util.\+Enumeration\\*
-$<$ Z\+P\+Zone\+Entry $>$ {\bf zone\+Elements} ()
+java.\+util.\+Enumeration$<$ Z\+P\+Zone\+Entry $>$ {\bf zone\+Elements} ()
 \item 
 int {\bf zone\+Size} ()
 \item 
 void {\bf set\+Reader} (java.\+io.\+Reader is)
 \item 
-java.\+util.\+Enumeration\\*
-$<$ {\bf Z\+P\+Alias\+Entry} $>$ {\bf alias\+Elements} ()
+java.\+util.\+Enumeration$<$ {\bf Z\+P\+Alias\+Entry} $>$ {\bf alias\+Elements} ()
 \item 
 {\bf Z\+P\+Alias\+Entry}[$\,$] {\bf alias\+Array} ()
 \item 
@@ -55,7 +53,7 @@ void {\bf add\+Alias} (String nick, String W\+W\+N)
 \subsection{Detailed Description}
 
 
-Definition at line 45 of file Nickname\+Parser.\+java.
+Definition at line 7 of file Nickname\+Parser.\+java.
 
 
 
@@ -76,23 +74,9 @@ Create a parser, setting the debug to true or false.
 {\em properties} & additional name-\/value pair collection \\
 \hline
 \end{DoxyParams}
-\begin{DoxyRefDesc}{J\+V\+M Options}
-\item[{\bf J\+V\+M Options}]{\bfseries wwn} (values\+: numbers, 0-\/32767) can be used to indicate that the W\+W\+P\+N for a W\+W\+P\+N/\+Alias pair is not the default column \#0 (first column)\end{DoxyRefDesc}
 
 
-\begin{DoxyRefDesc}{J\+V\+M Options}
-\item[{\bf J\+V\+M Options}]
-\begin{DoxyCode}
-java -Dwwn=4 -jar fcparser.jar -N ...  
-\end{DoxyCode}
- It is preferred that a more local non-\/global setting be used, by appending to the U\+R\+L\+: 
-\begin{DoxyCode}
-java -jar fcparser.jar -N \textcolor{stringliteral}{"cisco.txt;wwn=4"} ...  
-\end{DoxyCode}
- \end{DoxyRefDesc}
-
-
-Definition at line 61 of file Nickname\+Parser.\+java.
+Definition at line 23 of file Nickname\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}!Nickname\+Parser@{Nickname\+Parser}}
 \index{Nickname\+Parser@{Nickname\+Parser}!org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}}
@@ -106,7 +90,7 @@ Definition at line 61 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a9541dfa4225692671d2e0b5ef0f57059}
 
 
-Definition at line 83 of file Nickname\+Parser.\+java.
+Definition at line 34 of file Nickname\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}!Nickname\+Parser@{Nickname\+Parser}}
 \index{Nickname\+Parser@{Nickname\+Parser}!org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}}
@@ -118,7 +102,7 @@ Definition at line 83 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a4de85135c75bd7120150390def731fbd}
 
 
-Definition at line 96 of file Nickname\+Parser.\+java.
+Definition at line 47 of file Nickname\+Parser.\+java.
 
 
 
@@ -133,7 +117,7 @@ Definition at line 96 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a9bc4ab801fe78c7087eea21e8fcf2953}
 
 
-Definition at line 133 of file Nickname\+Parser.\+java.
+Definition at line 84 of file Nickname\+Parser.\+java.
 
 
 
@@ -148,7 +132,7 @@ Referenced by Nickname\+Parser.\+run().
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a5c646608669073b5c31bb44626baa48f}
 
 
-Definition at line 122 of file Nickname\+Parser.\+java.
+Definition at line 73 of file Nickname\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}!alias\+Elements@{alias\+Elements}}
 \index{alias\+Elements@{alias\+Elements}!org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}}
@@ -159,7 +143,7 @@ Definition at line 122 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a1631138fd08af051dc26686c00768ab3}
 
 
-Definition at line 116 of file Nickname\+Parser.\+java.
+Definition at line 67 of file Nickname\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}!alias\+Size@{alias\+Size}}
 \index{alias\+Size@{alias\+Size}!org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}}
@@ -170,7 +154,7 @@ Definition at line 116 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a5586367d58e0d7e6a4d5262d6dc87fd2}
 
 
-Definition at line 127 of file Nickname\+Parser.\+java.
+Definition at line 78 of file Nickname\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}!run@{run}}
 \index{run@{run}!org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}}
@@ -181,7 +165,7 @@ Definition at line 127 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a13a43e6d814de94978c515cb084873b1}
 
 
-Definition at line 140 of file Nickname\+Parser.\+java.
+Definition at line 91 of file Nickname\+Parser.\+java.
 
 
 
@@ -207,7 +191,7 @@ Here is the call graph for this function\+:\nopagebreak
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a6c13d260cf71d0554f789c4641a9f18b}
 
 
-Definition at line 92 of file Nickname\+Parser.\+java.
+Definition at line 43 of file Nickname\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}!set\+Reader@{set\+Reader}}
 \index{set\+Reader@{set\+Reader}!org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}}
@@ -218,7 +202,7 @@ Definition at line 92 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_aa89f56e94a76b211df071f905e7288ae}
 
 
-Definition at line 111 of file Nickname\+Parser.\+java.
+Definition at line 62 of file Nickname\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}!zone\+Elements@{zone\+Elements}}
 \index{zone\+Elements@{zone\+Elements}!org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}}
@@ -229,7 +213,7 @@ Definition at line 111 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a17bb9b86877d4493c7ad4ba284f7c945}
 
 
-Definition at line 101 of file Nickname\+Parser.\+java.
+Definition at line 52 of file Nickname\+Parser.\+java.
 
 \index{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}!zone\+Size@{zone\+Size}}
 \index{zone\+Size@{zone\+Size}!org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser@{org\+::smallfoot\+::parser\+::zone\+::\+Nickname\+Parser}}
@@ -240,7 +224,7 @@ Definition at line 101 of file Nickname\+Parser.\+java.
 )\hspace{0.3cm}{\ttfamily [inline]}}\label{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_a083293963a3e77da41becf829be83aca}
 
 
-Definition at line 106 of file Nickname\+Parser.\+java.
+Definition at line 57 of file Nickname\+Parser.\+java.
 
 
 

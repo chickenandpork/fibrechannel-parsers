@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::bnacql::BNACQLURLConnection</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection" prot="public" virt="non-virtual">CIMXMLCQLURLConnection</basecompoundref>
       <sectiondef kind="public-func">
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="85" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="85" bodyend="88"/>
+        <location file="/Users/allanc/src/fcparsers/java/BNACQLURLConnection.java" line="85" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNACQLURLConnection.java" bodystart="85" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_1ac2ad967a2d959c61ccc7b8fed4250e16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="90" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="90" bodyend="94"/>
+        <location file="/Users/allanc/src/fcparsers/java/BNACQLURLConnection.java" line="90" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNACQLURLConnection.java" bodystart="90" bodyend="94"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -104,7 +104,7 @@
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" line="84" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNACQLURLConnection.java" bodystart="83" bodyend="95"/>
+    <location file="/Users/allanc/src/fcparsers/java/BNACQLURLConnection.java" line="84" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNACQLURLConnection.java" bodystart="83" bodyend="95"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_1a42330dd92e9ddf705e7338a411aa5956" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>BNACQLURLConnection</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnacql_1_1BNACQLURLConnection_1ac2ad967a2d959c61ccc7b8fed4250e16" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnacql::BNACQLURLConnection</scope><name>BNACQLURLConnection</name></member>

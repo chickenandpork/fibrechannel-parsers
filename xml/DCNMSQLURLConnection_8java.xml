@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="DCNMSQLURLConnection_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="DCNMSQLURLConnection_8java" kind="file" language="Java">
     <compoundname>DCNMSQLURLConnection.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection" prot="public">org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe" prot="package">org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection::ResultCSVPipe</innerclass>
@@ -12,6 +12,6 @@
 <para><simplesect kind="see"><para><ulink url="http://www.cisco.com/en/US/docs/switches/datacenter/sw/6_x/dcnm/installation/published/installing_DCNM.pdf">http://www.cisco.com/en/US/docs/switches/datacenter/sw/6_x/dcnm/installation/published/installing_DCNM.pdf</ulink> </para></simplesect>
 <simplesect kind="see"><para><ulink url="http://www.cisco.com/en/US/docs/switches/datacenter/nexus5000/sw/configuration/guide/fm/gs.pdf">http://www.cisco.com/en/US/docs/switches/datacenter/nexus5000/sw/configuration/guide/fm/gs.pdf</ulink> </para></simplesect>
 </para>    </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java"/>
+    <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java"/>
   </compounddef>
 </doxygen>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::osmsql::OSMURLConnection</compoundname>
     <basecompoundref prot="public" virt="non-virtual">URLConnection</basecompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" prot="public" virt="non-virtual">MSDWHURLConnection</derivedcompoundref>
@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="90" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="90" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="90" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" static="no" mutable="no">
         <type>java.util.Properties</type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="91" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="91" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="91" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="91" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="92" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="92" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="92" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="92" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="OSMURLConnection_8java" startline="216" endline="228">OSMURLConnection.connect</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a0924d1107a459be632532ef34324494e" compoundref="MSDWHURLConnection_8java" startline="66" endline="88">MSDWHURLConnection.getInputStream</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a0924d1107a459be632532ef34324494e" compoundref="OSMURLConnection_8java" startline="167" endline="189">OSMURLConnection.getInputStream</referencedby>
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="94" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="94" bodyend="100"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="94" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="94" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a463b0498cc546b8e181b4c9abc80ef91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="103" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="103" bodyend="134"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="103" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="103" bodyend="134"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -131,7 +131,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="144" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="144" bodyend="144"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="144" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="144" bodyend="144"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -156,7 +156,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="153" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="153" bodyend="153"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="153" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="153" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.OutputStream</type>
@@ -169,7 +169,7 @@
 <para>Oh how did I get caught in the &quot;Royal &apos;We&apos;&quot; ? </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="158" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="158" bodyend="161"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="158" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="158" bodyend="161"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.InputStream</type>
@@ -182,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="167" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="167" bodyend="189"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="167" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="167" bodyend="189"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="OSMURLConnection_8java" startline="216" endline="228">OSMURLConnection.connect</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" compoundref="OSMURLConnection_8java" startline="92">OSMURLConnection.connection</references>
       </memberdef>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="216" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="216" bodyend="228"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="216" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="216" bodyend="228"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" compoundref="OSMURLConnection_8java" startline="92">OSMURLConnection.connection</references>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a0924d1107a459be632532ef34324494e" compoundref="MSDWHURLConnection_8java" startline="66" endline="88">MSDWHURLConnection.getInputStream</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a0924d1107a459be632532ef34324494e" compoundref="OSMURLConnection_8java" startline="167" endline="189">OSMURLConnection.getInputStream</referencedby>
@@ -228,7 +228,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="197" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="197" bodyend="200"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="197" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="197" bodyend="200"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">
@@ -247,7 +247,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="202" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="202" bodyend="214"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="202" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="202" bodyend="214"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -294,7 +294,7 @@
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="33" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="32" bodyend="229"/>
+    <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="33" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="32" bodyend="229"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::osmsql::OSMURLConnection</scope><name>connect</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::osmsql::OSMURLConnection</scope><name>connection</name></member>

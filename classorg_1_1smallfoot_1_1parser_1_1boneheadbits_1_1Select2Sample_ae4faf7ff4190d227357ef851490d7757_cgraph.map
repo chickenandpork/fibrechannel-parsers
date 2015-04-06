@@ -1,7 +1,7 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1ParserTee.html#a262d09da300622ed145bdd69bbd1a884" title="Tee off the datastream and set it to sink into the given ZoneParser. " alt="" coords="104,5,285,43"/>
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ad8cf81600663ab2330a929bfefaecacd" title="Summarize the parsing results to stdout. " alt="" coords="107,67,282,106"/>
-<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a6837faff1f96406f15225cf38c2186e9" title="org.smallfoot.parser.zone.\lZoneParser.zoneSize" alt="" coords="334,5,509,43"/>
-<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ac04020e56b85b1d8b222f5e344924336" title="org.smallfoot.parser.zone.\lZoneParser.aliasSize" alt="" coords="334,67,509,106"/>
-<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aa17ce2b8c32af2a9550b43506c727efc" title="org.smallfoot.parser.zone.\lZoneParser.aliasArray" alt="" coords="334,130,509,169"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1ParserTee.html#a262d09da300622ed145bdd69bbd1a884" title="Tee off the datastream and set it to sink into the given ZoneParser. " alt="" coords="104,5,287,47"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ad8cf81600663ab2330a929bfefaecacd" title="Summarize the parsing results to stdout. " alt="" coords="107,71,283,112"/>
+<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a6837faff1f96406f15225cf38c2186e9" title="org.smallfoot.parser.zone.\lZoneParser.zoneSize" alt="" coords="335,5,511,47"/>
+<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ac04020e56b85b1d8b222f5e344924336" title="org.smallfoot.parser.zone.\lZoneParser.aliasSize" alt="" coords="335,71,511,112"/>
+<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aa17ce2b8c32af2a9550b43506c727efc" title="org.smallfoot.parser.zone.\lZoneParser.aliasArray" alt="" coords="335,136,511,177"/>
 </map>

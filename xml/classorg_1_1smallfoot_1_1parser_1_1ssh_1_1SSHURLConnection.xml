@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::ssh::SSHURLConnection</compoundname>
     <basecompoundref prot="public" virt="non-virtual">URLConnection</basecompoundref>
       <sectiondef kind="protected-attrib">
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="48" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="48" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="48" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="173" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="173" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="173" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="173" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="50" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="50" bodyend="80"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="50" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="50" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -86,7 +86,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="88" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="88" bodyend="88"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="88" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="88" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -111,7 +111,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="95" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="95" bodyend="95"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="95" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="95" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.OutputStream</type>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="100" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="100" bodyend="103"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="100" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="100" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="117" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="117" bodyend="125"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="117" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="117" bodyend="125"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" compoundref="SSHURLConnection_8java" startline="132" endline="170">SSHURLConnection._connect</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1af2b580734225ddbdaedca5601f2a58f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="186" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="186" bodyend="189"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="186" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="186" bodyend="189"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a0a6cc494e46f52b56f10362524e74496" compoundref="SSHURLConnection_8java" startline="177" endline="184">SSHURLConnection._session</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a960705de531a20389fb29928d43258c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="191" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="191" bodyend="200"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="191" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="191" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1ae27bfcfb9f9afbc62d4382c7e88717b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="202" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="202" bodyend="202"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="202" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="202" bodyend="202"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1afd5aca5710671c827da3c15fe9301b6d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="204" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="204" bodyend="204"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="204" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="204" bodyend="204"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -224,7 +224,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="112" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="112" bodyend="115"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="112" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="112" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -259,10 +259,10 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="jvmopt_1_jvmopt000007"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpSSHPreConnect</bold> (values: true, false) can be used to dump out the User/Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000008"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpSSHPreConnect=</highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
-</programlisting> </para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000009"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpSSHAuthInfo</bold> (values: true, false) can be used to dump out the User/Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000010"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpSSHAuthInfo=</highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
+<para><xrefsect id="jvmopt_1_jvmopt000005"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpSSHPreConnect</bold> (values: true, false) can be used to dump out the User/Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000006"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpSSHPreConnect=true<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
+</programlisting> </para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000007"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>debug.dumpSSHAuthInfo</bold> (values: true, false) can be used to dump out the User/Pass Authentication info before the client connects to the remote server. Note that this can cause plaintext revelation of private credential info</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000008"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Ddebug.dumpSSHAuthInfo=true<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
 </programlisting> </para></xrefdescription></xrefsect></para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="132" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="132" bodyend="170"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="132" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="132" bodyend="170"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a0a6cc494e46f52b56f10362524e74496" compoundref="SSHURLConnection_8java" startline="177" endline="184">SSHURLConnection._session</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="SSHURLConnection_8java" startline="117" endline="125">SSHURLConnection.connect</referencedby>
       </memberdef>
@@ -286,7 +286,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="177" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="177" bodyend="184"/>
+        <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="177" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="177" bodyend="184"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" compoundref="SSHURLConnection_8java" startline="132" endline="170">SSHURLConnection._connect</references>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1af2b580734225ddbdaedca5601f2a58f3" compoundref="SSHURLConnection_8java" startline="186" endline="189">SSHURLConnection.exec</referencedby>
       </memberdef>
@@ -323,7 +323,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" line="47" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SSHURLConnection.java" bodystart="46" bodyend="205"/>
+    <location file="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" line="47" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SSHURLConnection.java" bodystart="46" bodyend="205"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1aa4711ecd1154e59ce7dabf904ed49c16" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>_connect</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection_1adaf456b2ae21274f05ed32d31cbec7fa" prot="private" virt="non-virtual"><scope>org::smallfoot::parser::ssh::SSHURLConnection</scope><name>_session</name></member>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1version" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1version" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::version</compoundname>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1version_1ae4faf7ff4190d227357ef851490d7757" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -19,14 +19,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/version.java" line="5" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/version.java" bodystart="5" bodyend="8"/>
+        <location file="/Users/allanc/src/fcparsers/java/version.java" line="5" column="1" bodyfile="/Users/allanc/src/fcparsers/java/version.java" bodystart="5" bodyend="8"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/version.java" line="4" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/version.java" bodystart="3" bodyend="9"/>
+    <location file="/Users/allanc/src/fcparsers/java/version.java" line="4" column="1" bodyfile="/Users/allanc/src/fcparsers/java/version.java" bodystart="3" bodyend="9"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1version_1ae4faf7ff4190d227357ef851490d7757" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::version</scope><name>main</name></member>
     </listofallmembers>

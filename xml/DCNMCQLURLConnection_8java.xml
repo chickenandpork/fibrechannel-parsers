@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="DCNMCQLURLConnection_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="DCNMCQLURLConnection_8java" kind="file" language="Java">
     <compoundname>DCNMCQLURLConnection.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection" prot="public">org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcnmcql">org::smallfoot::parser::dcnmcql</innernamespace>
@@ -8,6 +8,6 @@
 <para>This class provides the connection info to query a DCNM service via CIM-XML and CQL (WQL) Query. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java"/>
+    <location file="/Users/allanc/src/fcparsers/java/DCNMCQLURLConnection.java"/>
   </compounddef>
 </doxygen>

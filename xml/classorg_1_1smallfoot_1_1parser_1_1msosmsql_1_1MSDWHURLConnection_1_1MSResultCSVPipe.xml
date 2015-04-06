@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe" kind="class" prot="protected">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe" kind="class" language="Java" prot="protected">
     <compoundname>org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</compoundname>
     <basecompoundref prot="public" virt="non-virtual">ResultCSVPipe</basecompoundref>
       <sectiondef kind="public-func">
@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="101" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="101" bodyend="104"/>
+        <location file="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" line="101" column="1" bodyfile="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" bodystart="101" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1ae8fd7d31a535c027fdd2a44607614324" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char</type>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="106" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="106" bodyend="123"/>
+        <location file="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" line="106" column="1" bodyfile="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" bodystart="106" bodyend="123"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" compoundref="MSDWHURLConnection_8java" startline="125" endline="160">MSDWHURLConnection.MSResultCSVPipe.run</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="125" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="125" bodyend="160"/>
+        <location file="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" line="125" column="1" bodyfile="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" bodystart="125" bodyend="160"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1ae8fd7d31a535c027fdd2a44607614324" compoundref="MSDWHURLConnection_8java" startline="106" endline="123">MSDWHURLConnection.MSResultCSVPipe.uniqueness</references>
       </memberdef>
       </sectiondef>
@@ -80,7 +80,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="99" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="98" bodyend="161"/>
+    <location file="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" line="99" column="1" bodyfile="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" bodystart="98" bodyend="161"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a48969ca60c1736f7e57420019b30220c" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</scope><name>MSResultCSVPipe</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</scope><name>run</name></member>

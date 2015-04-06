@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::msosmsql::MSDWHURLConnection</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection" prot="public" virt="non-virtual">OSMURLConnection</basecompoundref>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1_1MSResultCSVPipe" prot="protected">org::smallfoot::parser::msosmsql::MSDWHURLConnection::MSResultCSVPipe</innerclass>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="27" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="27" bodyend="30"/>
+        <location file="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" line="27" column="1" bodyfile="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" bodystart="27" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1abae9d7254fdf3bbe668232e54188a03f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="32" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="32" bodyend="35"/>
+        <location file="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" line="32" column="1" bodyfile="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" bodystart="32" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.InputStream</type>
@@ -58,7 +58,7 @@
 <para>SELECT DISTINCT host.name, host_port.wwn, fabric.name FROM host, host_port, port_connectivity, switch, fabric, switch_port WHERE host.id = host_port.hostId AND host_port.wwn = port_connectivity.connectedWwn AND port_connectivity.portId = switch_port.id AND switch_port.fabricId = fabric.id ORDER BY host.name ASC</para><para>...to something that looks readable, such as an InputStream of CSV for the parser array</para><para>this model/schema/query is used so that a htree-column output is returned such as: +-----------------<mdash/>+----------------------<mdash/>+---------<mdash/>+ | name | wwn | name2 | +-----------------<mdash/>+----------------------<mdash/>+---------<mdash/>+ | MY-SQL-14 | 10:00:00:00:c9:12:34:56 | WEST_FAB_A | | MY-SQL-14 | 10:00:00:00:c9:12:34:57 | WEST_FAB_B | | MY-SQL-15 | 10:00:00:00:c9:12:34:58 | EAST_FAB_1 | | MY-SQL-15 | 10:00:00:00:c9:12:34:59 | EAST_FAB_2 | +-----------------<mdash/>+----------------------<mdash/>+---------<mdash/>+</para><para>The output will be the A/B of the fabric appended to the alias with 1/2 converted to A/B: 10:00:00:00:c9:12:34:56,&quot;MY-SQL-14_A&quot; 10:00:00:00:c9:12:34:57,&quot;MY-SQL-14_B&quot; 10:00:00:00:c9:12:34:58,&quot;MY-SQL-15_A&quot; 10:00:00:00:c9:12:34:59,&quot;MY-SQL-15_B&quot; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="66" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="66" bodyend="88"/>
+        <location file="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" line="66" column="1" bodyfile="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" bodystart="66" bodyend="88"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="OSMURLConnection_8java" startline="216" endline="228">OSMURLConnection.connect</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" compoundref="OSMURLConnection_8java" startline="92">OSMURLConnection.connection</references>
       </memberdef>
@@ -107,7 +107,7 @@
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" line="26" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/MSDWHURLConnection.java" bodystart="25" bodyend="162"/>
+    <location file="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" line="26" column="1" bodyfile="/Users/allanc/src/fcparsers/java/MSDWHURLConnection.java" bodystart="25" bodyend="162"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>connect</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1a6b788764b81c8f58b7654c790ec4988d" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::msosmsql::MSDWHURLConnection</scope><name>connection</name></member>

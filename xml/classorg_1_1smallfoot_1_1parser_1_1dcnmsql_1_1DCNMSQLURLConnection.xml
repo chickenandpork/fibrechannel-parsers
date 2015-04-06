@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection</compoundname>
     <basecompoundref prot="public" virt="non-virtual">URLConnection</basecompoundref>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1_1ResultCSVPipe" prot="package">org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection::ResultCSVPipe</innerclass>
@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="199" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="199" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="199" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="199" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1aedfbe5b969a63d56f28f84c4777f80cf" prot="package" static="no" mutable="no">
         <type>java.util.Properties</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="200" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="200" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="200" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="200" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a6b788764b81c8f58b7654c790ec4988d" prot="package" static="no" mutable="no">
         <type>java.sql.Connection</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="201" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="201" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="201" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="201" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="203" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="203" bodyend="209"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="203" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="203" bodyend="209"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1ac4a5f26b253d332290de3a50b4ea26dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -89,7 +89,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="212" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="212" bodyend="251"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="212" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="212" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1ac2f45f32dfcaef408189cabb2644841c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -125,7 +125,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="261" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="261" bodyend="261"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="261" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="261" bodyend="261"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1aa608e58be69b0389d82d846a25091d36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -150,7 +150,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="270" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="270" bodyend="270"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="270" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="270" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a4170f42681efaf92df5c2030f5298905" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.OutputStream</type>
@@ -163,7 +163,7 @@
 <para>Oh how did I get caught in the &quot;Royal &apos;We&apos;&quot; ? </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="275" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="275" bodyend="278"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="275" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="275" bodyend="278"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a0924d1107a459be632532ef34324494e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.io.InputStream</type>
@@ -180,7 +180,7 @@
         <inbodydescription>
 <para><simplesect kind="see"><para><ulink url="http://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_x/technical/reference/DCNM-SAN_Published/dbschema/db_tab.html#wp1319153">http://www.cisco.com/c/en/us/td/docs/switches/datacenter/mds9000/sw/6_x/technical/reference/DCNM-SAN_Published/dbschema/db_tab.html#wp1319153</ulink></para></simplesect>
 </para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="288" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="288" bodyend="317"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="288" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="288" bodyend="317"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" compoundref="DCNMSQLURLConnection_8java" startline="346" endline="364">DCNMSQLURLConnection.connect</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -194,7 +194,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="346" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="346" bodyend="364"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="346" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="346" bodyend="364"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a0924d1107a459be632532ef34324494e" compoundref="DCNMSQLURLConnection_8java" startline="288" endline="317">DCNMSQLURLConnection.getInputStream</referencedby>
       </memberdef>
       </sectiondef>
@@ -223,7 +223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="325" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="325" bodyend="328"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="325" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="325" bodyend="328"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="330" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="330" bodyend="344"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="330" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="330" bodyend="344"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -277,7 +277,7 @@
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" line="35" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="34" bodyend="365"/>
+    <location file="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" line="35" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMSQLURLConnection.java" bodystart="34" bodyend="365"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a1396bf9b5defe9fa844a63b5cd40ac0e" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection</scope><name>connect</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection_1a6b788764b81c8f58b7654c790ec4988d" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::dcnmsql::DCNMSQLURLConnection</scope><name>connection</name></member>

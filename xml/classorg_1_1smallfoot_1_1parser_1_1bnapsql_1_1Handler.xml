@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::bnapsql::Handler</compoundname>
     <basecompoundref prot="public" virt="non-virtual">URLStreamHandler</basecompoundref>
       <sectiondef kind="protected-func">
@@ -28,7 +28,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/genproto/bnapsql/Handler.java" line="29" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/genproto/bnapsql/Handler.java" bodystart="29" bodyend="32"/>
+        <location file="/Users/allanc/src/fcparsers/java/genproto/bnapsql/Handler.java" line="29" column="1" bodyfile="/Users/allanc/src/fcparsers/java/genproto/bnapsql/Handler.java" bodystart="29" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/genproto/bnapsql/Handler.java" line="34" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/genproto/bnapsql/Handler.java" bodystart="34" bodyend="34"/>
+        <location file="/Users/allanc/src/fcparsers/java/genproto/bnapsql/Handler.java" line="34" column="1" bodyfile="/Users/allanc/src/fcparsers/java/genproto/bnapsql/Handler.java" bodystart="34" bodyend="34"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -70,7 +70,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/genproto/bnapsql/Handler.java" line="22" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/genproto/bnapsql/Handler.java" bodystart="21" bodyend="35"/>
+    <location file="/Users/allanc/src/fcparsers/java/genproto/bnapsql/Handler.java" line="22" column="1" bodyfile="/Users/allanc/src/fcparsers/java/genproto/bnapsql/Handler.java" bodystart="21" bodyend="35"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1aadc354b6a8746020e9961fbcb433427c" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::Handler</scope><name>getDefaultPort</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1Handler_1a3838795af42df5d7757e609b8b312956" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::Handler</scope><name>openConnection</name></member>

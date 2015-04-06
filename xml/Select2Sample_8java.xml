@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="Select2Sample_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="Select2Sample_8java" kind="file" language="Java">
     <compoundname>Select2Sample.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample" prot="public">org::smallfoot::parser::boneheadbits::Select2Sample</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1boneheadbits">org::smallfoot::parser::boneheadbits</innernamespace>
@@ -8,6 +8,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/Select2Sample.java"/>
+    <location file="/Users/allanc/src/fcparsers/java/Select2Sample.java"/>
   </compounddef>
 </doxygen>

@@ -1,5 +1,3 @@
-\doxyref{Virtual\+Wisdom3 -\/style 4-\/column format}{p.}{Alias4Parser}
-
 \doxyref{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}{p.}{AliShowZoneParser}
 
 \doxyref{Brocade objects from C\+I\+M-\/\+X\+M\+L C\+I\+M\+O\+M Database (B\+N\+A, C\+M\+C\+N\+E, H\+P\+N\+A) (alpha)}{p.}{BNACQLURLConnection}
@@ -20,8 +18,6 @@
 
 \doxyref{Net\+App O\+C\+I back-\/end Database (msosmsql)}{p.}{MSDWHURLConnection}
 
-\doxyref{Virtual\+Wisdom3 -\/style 2-\/column format}{p.}{NicknameParser}
-
 \doxyref{Net\+App O\+C\+I back-\/end Database (osmsql)}{p.}{OSMURLConnection}
 
 \doxyref{Cisco \char`\"{}show zone\char`\"{}}{p.}{ShowZone2Parser}
@@ -32,21 +28,12 @@
 
 \doxyref{Read this if you want this to work}{p.}{Caveat}
 
-\doxyref{Virtual\+Wisdom4 Validation Errors}{p.}{VW4InvalidAdded} \section{Virtual\+Wisdom3 -\/style 4-\/column format}\label{Alias4Parser}
-The \doxyref{Alias4\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1Alias4Parser} interprets a 4-\/column C\+S\+V as though it contains \char`\"{}\+W\+W\+N\char`\"{}, W\+W\+P\+N, Alias, Type For example\+:
-
-\begin{DoxyVerb}"WWN",c050761234567890,AIXLeftBig,Server
-"WWN",10000000c9123456,CustServer,Server
-"WWN",50060e801234567f,HDS0123457_CL7F,Storage
-\end{DoxyVerb}
-
-
-This collector/parser chain is slightly more successful than text-\/based parsers due to proper interpretation of M\+S-\/\+D\+O\+S \char`\"{}\+I'm the exception\char`\"{} line-\/ending markers. \section{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}\label{AliShowZoneParser}
+\doxyref{Virtual\+Wisdom4 Validation Errors}{p.}{VW4InvalidAdded} \section{Brocade \char`\"{}alishow\char`\"{} and \char`\"{}zoneshow\char`\"{}}\label{AliShowZoneParser}
 The \doxyref{Ali\+Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1AliShowZoneParser} parses the output of a Brocade S\+A\+N switch with the \char`\"{}alishow\char`\"{} or \char`\"{}zoneshow\char`\"{} commands.
 
-As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
+As always, this parser is more successful when the content is treated like binary\+: don\textquotesingle{}t edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
 
-When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:
+When collecting aliases using an ssh command, it\textquotesingle{}s better to execute that command noninteractively\+:
 
 In U\+N\+I\+X, Linux, Ubuntu, O\+S\+X, or the 6000 other licensees of the U\+S\+L codebase\+: \begin{DoxyVerb}ssh username@switch44.example.com "alishow" > switch44.alishow
 \end{DoxyVerb}
@@ -138,12 +125,12 @@ For example\+:
 $>$cimcli -\/l 9.\+12.\+28.\+140\+:5988 -\/u user\+I\+D -\/p password -\/n root/brocade1 an Brocade\+\_\+\+Zone.\+Instance\+I\+D="true;H\+M\+C\+\_\+\+Managed\+\_\+\+Zone;100000051\+E\+C\+A\+A229" -\/ac Brocade\+\_\+\+Zone\+Membership\+Setting\+Data\+In\+Zone -\/rc Brocade\+\_\+\+Zone\+Membership\+Setting\+Data //9.12.\+28.\+140/root/brocade1\+:Brocade\+\_\+\+Zone\+Membership\+Setting\+Data.\+Instance\+I\+D=\char`\"{}true;10000000\+C9\+C0\+B372;100000051\+E\+C\+A\+A229\char`\"{} //9.12.\+28.\+140/root/brocade1\+:Brocade\+\_\+\+Zone\+Membership\+Setting\+Data.\+Instance\+I\+D=\char`\"{}true;10000000\+C99\+D\+D\+D04;100000051\+E\+C\+A\+A229\char`\"{} //9.12.\+28.\+140/root/brocade1\+:Brocade\+\_\+\+Zone\+Membership\+Setting\+Data.\+Instance\+I\+D=\char`\"{}true;10000000\+C99\+C1628;100000051\+E\+C\+A\+A229\char`\"{}
 
 (3) In Step (2), if it returns no zone members for a certain zone, which does not match the switch zone configurations, that zone could include offline zone members. \section{Brocade B\+N\+A back-\/end Database}\label{BNAPURLConnection}
-The \doxyref{B\+N\+A\+P\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection} collects bna\+://, bnapsql\+://, cmcne\+://, and dcfm\+:// sources from B\+N\+A's backend database to provide the bnazone-\/formatted zone and alias information
+The \doxyref{B\+N\+A\+P\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection} collects bna\+://, bnapsql\+://, cmcne\+://, and dcfm\+:// sources from B\+N\+A\textquotesingle{}s backend database to provide the bnazone-\/formatted zone and alias information
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Brocade B\+N\+A Database}\label{BNAZoneParser}
 The \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} parses the binary text records in a B\+N\+A server representing the zonesets and their aliases
 
-This parser is not normally used from a downloaded text; it's normally used when a client executes a query against the backing database of a B\+N\+A instance. The resulting query tends to have data columns in resultset that are binary-\/coded to reduce parsing load. These same binary tokens are parsed by \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} to provide results similar to Ali\+Show\+Parser.
+This parser is not normally used from a downloaded text; it\textquotesingle{}s normally used when a client executes a query against the backing database of a B\+N\+A instance. The resulting query tends to have data columns in resultset that are binary-\/coded to reduce parsing load. These same binary tokens are parsed by \doxyref{B\+N\+A\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser} to provide results similar to Ali\+Show\+Parser.
 
 There are times that the backing database is easier to query than switches
 
@@ -161,14 +148,14 @@ This collector/parser chain is more successful than text-\/based parsers simply 
 The \doxyref{D\+C\+N\+M\+C\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection} collects dcnmcql\+:// Cisco\+\_\+\+Device\+Alias from a D\+C\+N\+M Server via C\+I\+M-\/\+X\+M\+L Database
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as D\+C\+N\+M may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Cisco D\+C\+N\+M back-\/end Database}\label{DCNMSQLURLConnection}
-The \doxyref{D\+C\+N\+M\+S\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection} collects dcnmsql\+:// sources from D\+C\+N\+M's backend database to search for aliases it may know
+The \doxyref{D\+C\+N\+M\+S\+Q\+L\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1dcnmsql_1_1DCNMSQLURLConnection} collects dcnmsql\+:// sources from D\+C\+N\+M\textquotesingle{}s backend database to search for aliases it may know
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as D\+C\+N\+M may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Cisco \char`\"{}show device-\/alias database\char`\"{}}\label{DeviceAliasParser}
 The \doxyref{Device\+Alias\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show device-\/alias database\char`\"{} command
 
-As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
+As always, this parser is more successful when the content is treated like binary\+: don\textquotesingle{}t edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
 
-When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:
+When collecting aliases using an ssh command, it\textquotesingle{}s better to execute that command noninteractively\+:
 
 In U\+N\+I\+X, Linux, Ubuntu, O\+S\+X, or the 6000 other licensees of the U\+S\+L codebase\+: \begin{DoxyVerb}ssh username@switch44.example.com "show device-alias database" > switch44.dad
 \end{DoxyVerb}
@@ -204,68 +191,29 @@ with the following result of W\+W\+P\+N/alias pairs\+: \begin{DoxyVerb}10000000c
 5000097201234554,"vmax-18641-fa06a0"
 5000097201234558,"vmax-18641-fa07a0" \end{DoxyVerb}
  \section{Net\+App O\+C\+I back-\/end Database (ocidwh)}\label{DWHURLConnection}
-The \doxyref{D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection} collects ocidwh\+:// sources from O\+C\+I's backend database to search for aliases
+The \doxyref{D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1ocidwh_1_1DWHURLConnection} collects ocidwh\+:// sources from O\+C\+I\textquotesingle{}s backend database to search for aliases
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Net\+App O\+C\+I back-\/end Database (msosmsql)}\label{MSDWHURLConnection}
-The \doxyref{M\+S\+D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection} collects msosmsql\+:// sources from O\+C\+I's backend database to search for aliases
+The \doxyref{M\+S\+D\+W\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1msosmsql_1_1MSDWHURLConnection} collects msosmsql\+:// sources from O\+C\+I\textquotesingle{}s backend database to search for aliases
 
-This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Virtual\+Wisdom3 -\/style 2-\/column format}\label{NicknameParser}
-The \doxyref{Nickname\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser} interprets a 2-\/column C\+S\+V as though it contains W\+W\+P\+N, Alias For example\+:
-
-\begin{DoxyVerb}c050761234567890,AIXLeftBig
-10000000c9123456,CustServer
-50060e801234567f,HDS0123457_CL7F
-\end{DoxyVerb}
-
-
-Additionally, this parser can be used to pull data from any C\+S\+V; for example, if your C\+S\+V has more than just W\+W\+P\+N/\+Nickname (which is typical when pulled from another resource), you might have\+:\begin{DoxyVerb}BusinessUnit, Server, WWPN, CapEx Code, Location
-Billing, BillingBigBox, c050761122334455, 2013A4, Houston
-CustServ, Service44, 1000001b32123456, 2013A4, Dallas
-\end{DoxyVerb}
-
-
-You can use system-\/wide parameters or file-\/specific parameters to set a different column number (see the jvmopt \char`\"{}wwn\char`\"{}, \char`\"{}nickname\char`\"{})
-
-
-\begin{DoxyCode}
-java -D wwn=4 -jar fcparser.jar -N cisco.txt ...  
-\end{DoxyCode}
- 
-\begin{DoxyCode}
-java -D wwn=4 -D nickname=0 -jar fcparser.jar -N cisco.txt ...  
-\end{DoxyCode}
-
-
-better/preferred\+:
-
-
-\begin{DoxyCode}
-java -jar fcparser.jar -N \textcolor{stringliteral}{"cisco.txt;wwn=4"} ...  
-\end{DoxyCode}
- 
-\begin{DoxyCode}
-java -jar fcparser.jar -N \textcolor{stringliteral}{"cisco.txt;wwn=4;nickname=0"} ...  
-\end{DoxyCode}
-
-
-This collector/parser chain is slightly more successful than text-\/based parsers due to proper interpretation of M\+S-\/\+D\+O\+S \char`\"{}\+I'm the exception\char`\"{} line-\/ending markers. \section{Net\+App O\+C\+I back-\/end Database (osmsql)}\label{OSMURLConnection}
-The \doxyref{O\+S\+M\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection} collects osmsql\+:// sources from O\+C\+I's backend database to parse for aliases it may know
+This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information. \section{Net\+App O\+C\+I back-\/end Database (osmsql)}\label{OSMURLConnection}
+The \doxyref{O\+S\+M\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection} collects osmsql\+:// sources from O\+C\+I\textquotesingle{}s backend database to parse for aliases it may know
 
 This collector/parser chain is more successful than text-\/based parsers simply because it avoids human-\/error and the error of not reading the warning to avoid putty log traces and other \char`\"{}nearly 100\% unmodified\char`\"{} methods of transferring content. Additionally, this is an entirely binary connection, so the user cannot accidentally edit the content. Finally, as B\+N\+A may harvest from and provide config to many fabrics at once, this is typically \char`\"{}a broader net to cast\char`\"{} to collect information.
 
-Testing of this data was done with an exported config database from jessigg called \char`\"{}dwh\+\_\+inventory.\+sql\char`\"{} loaded using\+: /usr/local/mysql/bin/mysqladmin create dwh\+\_\+inventory /usr/local/mysql/bin/mysql -\/u root mysql \char`\"{}grant connect on dwh\+\_\+inventory.$\ast$ to dwh identified by 'password'\char`\"{} /usr/local/mysql/bin/mysqladmin reload grant /usr/local/mysql/bin/mysql -\/u root dwh\+\_\+inventory $<$ $\sim$/dwh\+\_\+inventory.sql \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZone2Parser}
+Testing of this data was done with an exported config database from jessigg called \char`\"{}dwh\+\_\+inventory.\+sql\char`\"{} loaded using\+: /usr/local/mysql/bin/mysqladmin create dwh\+\_\+inventory /usr/local/mysql/bin/mysql -\/u root mysql \char`\"{}grant connect on dwh\+\_\+inventory.$\ast$ to dwh identified by \textquotesingle{}password\textquotesingle{}\char`\"{} /usr/local/mysql/bin/mysqladmin reload grant /usr/local/mysql/bin/mysql -\/u root dwh\+\_\+inventory $<$ $\sim$/dwh\+\_\+inventory.sql \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZone2Parser}
 The \doxyref{Show\+Zone2\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZone2Parser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show zone\char`\"{} command in a more aggressive manner
 
-This parser was added based on Grzeg Sliwka running into some of the most interesting zones I have seen. I don't think it will handle every situation, as follows\+: 
+This parser was added based on Grzeg Sliwka running into some of the most interesting zones I have seen. I don\textquotesingle{}t think it will handle every situation, as follows\+: 
 \begin{DoxyEnumerate}
 \item If a zone has two \char`\"{}fcalias name X\+X\+X\char`\"{} values, it may be applied to both sets of members 
-\item If a zone has a device-\/alias, the name will not get resolved; this assumes that if the name is known, ever, it'll be somewhere in the file (which will cause a name/wwn mapping to be added) 
-\item If a zone has a device-\/alias, the dereferenced name's W\+W\+N will not get added to the zone (yet) 
+\item If a zone has a device-\/alias, the name will not get resolved; this assumes that if the name is known, ever, it\textquotesingle{}ll be somewhere in the file (which will cause a name/wwn mapping to be added) 
+\item If a zone has a device-\/alias, the dereferenced name\textquotesingle{}s W\+W\+N will not get added to the zone (yet) 
 \end{DoxyEnumerate}
 
-As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
+As always, this parser is more successful when the content is treated like binary\+: don\textquotesingle{}t edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
 
-When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:
+When collecting aliases using an ssh command, it\textquotesingle{}s better to execute that command noninteractively\+:
 
 In U\+N\+I\+X, Linux, Ubuntu, O\+S\+X, or the 6000 other licensees of the U\+S\+L codebase\+: \begin{DoxyVerb}ssh username@switch44.example.com "show zone" > switch44.shzone
 \end{DoxyVerb}
@@ -305,9 +253,9 @@ The resulting content from this example would be the following W\+W\+P\+N/alias 
  \section{Cisco \char`\"{}show zone\char`\"{}}\label{ShowZoneParser}
 The \doxyref{Show\+Zone\+Parser}{p.}{classorg_1_1smallfoot_1_1parser_1_1zone_1_1ShowZoneParser} parses the output of a Cisco S\+A\+N switch with the \char`\"{}show zone\char`\"{} command
 
-As always, this parser is more successful when the content is treated like binary\+: don't edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
+As always, this parser is more successful when the content is treated like binary\+: don\textquotesingle{}t edit it. In particular, the use of a putty log to capture output while querying the switch leads to parser exceptions because the interactive "you have connected to blah blah system version 1.\+2.\+3, the weather is fabulous and I have 42 pages of boilerplate to spit out before you enter the command for aliases... hit enter to continue... have some backspaces..." is included. As are the backspaces.
 
-When collecting aliases using an ssh command, it's better to execute that command noninteractively\+:
+When collecting aliases using an ssh command, it\textquotesingle{}s better to execute that command noninteractively\+:
 
 In U\+N\+I\+X, Linux, Ubuntu, O\+S\+X, or the 6000 other licensees of the U\+S\+L codebase\+: \begin{DoxyVerb}ssh username@switch44.example.com "show zone" > switch44.shzone
 \end{DoxyVerb}
@@ -340,13 +288,13 @@ The resulting content from this example would be the following W\+W\+P\+N/alias 
 50060e8012345679,"HDS0123457_CL7F" \end{DoxyVerb}
  \section{S\+S\+H Query}\label{SSHURLConnection}
 The \doxyref{S\+S\+H\+U\+R\+L\+Connection}{p.}{classorg_1_1smallfoot_1_1parser_1_1ssh_1_1SSHURLConnection} batch-\/executes a command via S\+S\+H \section{Read this if you want this to work}\label{Caveat}
-The parsers in this project work on a text stream -- the less butchered and corrupted that text stream is, the better the chance that they'll work.
+The parsers in this project work on a text stream -- the less butchered and corrupted that text stream is, the better the chance that they\textquotesingle{}ll work.
 
-I spend a lot of time trying to fake around \char`\"{}-\/-\/\+M\+O\+R\+E-\/-\/\char`\"{} and various A\+N\+S\+I Escape Sequences and to be honest, I'm really quite frustrated trying to get users asking for help to read a few rules\+: 
+I spend a lot of time trying to fake around \char`\"{}-\/-\/\+M\+O\+R\+E-\/-\/\char`\"{} and various A\+N\+S\+I Escape Sequences and to be honest, I\textquotesingle{}m really quite frustrated trying to get users asking for help to read a few rules\+: 
 \begin{DoxyEnumerate}
 \item non-\/interactive. As in \char`\"{}not a log of my typing\char`\"{}. think \char`\"{}batch mode\char`\"{}. 
-\item Every parser says \char`\"{}treat like binary\char`\"{}, and \char`\"{}don't edit\char`\"{}, and \char`\"{}in particular, the use of a putty log [is bad]\char`\"{}. Make sure you've seen that part. 
-\item this means \char`\"{}plink.\+exe\char`\"{} not \char`\"{}putty.\+exe\char`\"{}. Seriously. If you don't know why, see the first rule, and check out the difference in these tools. It's O\+K, I'll wait for you. Here's a hint\+: it tends to lead to the next one 
+\item Every parser says \char`\"{}treat like binary\char`\"{}, and \char`\"{}don\textquotesingle{}t edit\char`\"{}, and \char`\"{}in particular, the use of a putty log [is bad]\char`\"{}. Make sure you\textquotesingle{}ve seen that part. 
+\item this means \char`\"{}plink.\+exe\char`\"{} not \char`\"{}putty.\+exe\char`\"{}. Seriously. If you don\textquotesingle{}t know why, see the first rule, and check out the difference in these tools. It\textquotesingle{}s O\+K, I\textquotesingle{}ll wait for you. Here\textquotesingle{}s a hint\+: it tends to lead to the next one 
 \item No A\+N\+S\+I escape sequences. See also \char`\"{}non-\/interative\char`\"{}, above. Interactive terminals include \char`\"{}hit [\+E\+N\+T\+E\+R] to continue\char`\"{} and some screen-\/formatting with A\+N\+S\+I escape sequences. 
 \item I literally spend more time un-\/butchering A\+N\+S\+I escape sequences than I spend writing code. Quit it. Seriously. Read the bits above. If I suspect that reading of the bits above has not occurred, I will send you to this page. 
 \item please, for the love of all things holy, please read the bits above 
@@ -377,4 +325,4 @@ The result is a list of nicknames, all of which say that the W\+W\+P\+N has a ni
 \begin{DoxyVerb}20c2000dec123456,"none" \end{DoxyVerb}
 
 
-This format has limited facility\+: it's intended for cases where an error message is used to exclude entities from an import file. In such case, the same import would be used to generate a list of W\+W\+P\+N/alias combinations, then the \char`\"{}exclusion\char`\"{} list would be read using this parser. 
+This format has limited facility\+: it\textquotesingle{}s intended for cases where an error message is used to exclude entities from an import file. In such case, the same import would be used to generate a list of W\+W\+P\+N/alias combinations, then the \char`\"{}exclusion\char`\"{} list would be read using this parser. 

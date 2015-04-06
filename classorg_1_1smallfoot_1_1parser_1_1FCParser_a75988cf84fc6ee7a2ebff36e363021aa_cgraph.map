@@ -1,10 +1,10 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a47b0fe73f5a3ae8d0b5e23da3b1b4b63" title="Load a file from the resource given to a WWN/Nickname vector. " alt="" coords="158,46,226,71"/>
-<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a6085cf44eb1e750084cff1666eeae8ba" title="Create a stream from a URL or file name with a convenience workaround for no&#45;proto URLs..." alt="" coords="145,158,239,183"/>
-<area shape="rect" id="node7" href="$classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a9f16799674af7de1e539f0b54dbea72a" title="Collect in a single place the process to register protocol handlers. " alt="" coords="131,207,253,233"/>
-<area shape="rect" id="node8" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ad8cf81600663ab2330a929bfefaecacd" title="Summarize the parsing results to stdout. " alt="" coords="105,95,279,134"/>
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ac04020e56b85b1d8b222f5e344924336" title="org.smallfoot.parser.zone.\lZoneParser.aliasSize" alt="" coords="329,5,503,43"/>
-<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a6837faff1f96406f15225cf38c2186e9" title="org.smallfoot.parser.zone.\lZoneParser.zoneSize" alt="" coords="329,67,503,106"/>
-<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a87eb2ebceee6e66dc59ed239d2220a56" title="Produce an InputStream for the given uri in a way that corresponds to the url protocol. " alt="" coords="369,193,463,218"/>
-<area shape="rect" id="node9" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aa17ce2b8c32af2a9550b43506c727efc" title="org.smallfoot.parser.zone.\lZoneParser.aliasArray" alt="" coords="329,130,503,169"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a47b0fe73f5a3ae8d0b5e23da3b1b4b63" title="Load a file from the resource given to a WWN/Nickname vector. " alt="" coords="157,49,227,75"/>
+<area shape="rect" id="node5" href="$classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a6085cf44eb1e750084cff1666eeae8ba" title="Create a stream from a URL or file name with a convenience workaround for no&#45;proto URLs..." alt="" coords="145,166,239,193"/>
+<area shape="rect" id="node7" href="$classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a9f16799674af7de1e539f0b54dbea72a" title="Collect in a single place the process to register protocol handlers. " alt="" coords="131,217,253,243"/>
+<area shape="rect" id="node8" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ad8cf81600663ab2330a929bfefaecacd" title="Summarize the parsing results to stdout. " alt="" coords="104,100,280,141"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#ac04020e56b85b1d8b222f5e344924336" title="org.smallfoot.parser.zone.\lZoneParser.aliasSize" alt="" coords="328,5,504,47"/>
+<area shape="rect" id="node4" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#a6837faff1f96406f15225cf38c2186e9" title="org.smallfoot.parser.zone.\lZoneParser.zoneSize" alt="" coords="328,71,504,112"/>
+<area shape="rect" id="node6" href="$classorg_1_1smallfoot_1_1parser_1_1FCParser.html#a87eb2ebceee6e66dc59ed239d2220a56" title="Produce an InputStream for the given uri in a way that corresponds to the url protocol. " alt="" coords="369,202,463,229"/>
+<area shape="rect" id="node9" href="$classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser.html#aa17ce2b8c32af2a9550b43506c727efc" title="org.smallfoot.parser.zone.\lZoneParser.aliasArray" alt="" coords="328,136,504,177"/>
 </map>

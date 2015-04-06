@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe" kind="class" prot="protected">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe" kind="class" language="Java" prot="protected">
     <compoundname>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection::ResultCSVPipe</compoundname>
     <basecompoundref prot="public" virt="non-virtual">PipedOutputStream</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="61" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="61" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="61" column="1" bodyfile="/Users/allanc/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="61" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1a56f057df31a3d6feded3e02c1bee778a" compoundref="CIMXMLCQLURLConnection_8java" startline="63" endline="66">CIMXMLCQLURLConnection.ResultCSVPipe.ResultCSVPipe</referencedby>
       </memberdef>
       </sectiondef>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="63" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="63" bodyend="66"/>
+        <location file="/Users/allanc/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="63" column="1" bodyfile="/Users/allanc/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="63" bodyend="66"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1aba69451974e3a12eee61d115c7a023d1" compoundref="CIMXMLCQLURLConnection_8java" startline="61">CIMXMLCQLURLConnection.ResultCSVPipe.source</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="68" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="68" bodyend="98"/>
+        <location file="/Users/allanc/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="68" column="1" bodyfile="/Users/allanc/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="68" bodyend="98"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a49fa47bfe76993bf911116857492e2ca" compoundref="CIMXMLCQLURLConnection_8java" startline="110">CIMXMLCQLURLConnection.propName</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1adf887561fc9bb90802d364643c222af6" compoundref="CIMXMLCQLURLConnection_8java" startline="109">CIMXMLCQLURLConnection.propWWPN</references>
       </memberdef>
@@ -99,7 +99,7 @@
         <label>Runnable</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="60" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="59" bodyend="99"/>
+    <location file="/Users/allanc/src/fcparsers/java/CIMXMLCQLURLConnection.java" line="60" column="1" bodyfile="/Users/allanc/src/fcparsers/java/CIMXMLCQLURLConnection.java" bodystart="59" bodyend="99"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1a56f057df31a3d6feded3e02c1bee778a" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection::ResultCSVPipe</scope><name>ResultCSVPipe</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::cimcql::CIMXMLCQLURLConnection::ResultCSVPipe</scope><name>run</name></member>

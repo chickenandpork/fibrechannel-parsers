@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::zone::SwappedNicknameParser</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" prot="public" virt="non-virtual">NicknameParser</basecompoundref>
       <sectiondef kind="public-func">
@@ -27,7 +27,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/SwappedNicknameParser.java" line="14" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SwappedNicknameParser.java" bodystart="14" bodyend="17"/>
+        <location file="/Users/allanc/src/fcparsers/java/SwappedNicknameParser.java" line="14" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SwappedNicknameParser.java" bodystart="14" bodyend="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -122,7 +122,7 @@
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/SwappedNicknameParser.java" line="8" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/SwappedNicknameParser.java" bodystart="7" bodyend="18"/>
+    <location file="/Users/allanc/src/fcparsers/java/SwappedNicknameParser.java" line="8" column="1" bodyfile="/Users/allanc/src/fcparsers/java/SwappedNicknameParser.java" bodystart="7" bodyend="18"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>_prop</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9bc4ab801fe78c7087eea21e8fcf2953" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::zone::SwappedNicknameParser</scope><name>addAlias</name></member>

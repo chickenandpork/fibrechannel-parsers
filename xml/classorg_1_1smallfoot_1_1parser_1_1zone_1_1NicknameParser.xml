@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::zone::NicknameParser</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" prot="public" virt="non-virtual">ZoneParserI</basecompoundref>
     <derivedcompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1SwappedNicknameParser" prot="public" virt="non-virtual">SwappedNicknameParser</derivedcompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="47" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="47" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="9" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a0dc8b05b3f25e59bc98f90dc8c64857c" prot="package" static="no" mutable="no">
         <type>java.util.Vector&lt; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref> &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="48" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="48" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="10" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5c6dc08d17828cc9d70bc64b4fb6bf38" prot="package" static="no" mutable="no">
         <type>java.util.HashSet&lt; String &gt;</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="49" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="49" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="11" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1acd46a0f826a276c736966f6193f717cc" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="50" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="50" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="12" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1af26e25032f46caaa1ead40bbb43f7ec0" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="51" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="51" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="13" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a341bcf40e54fcdc15748aa1675957256" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="53" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="53" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="15" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="15" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a250553b93f729354b4125eeda5f9ffea" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="54" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="54" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="16" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="16" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -125,10 +125,8 @@
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="jvmopt_1_jvmopt000003"><xreftitle>JVM Options</xreftitle><xrefdescription><para><bold>wwn</bold> (values: numbers, 0-32767) can be used to indicate that the WWPN for a WWPN/Alias pair is not the default column #0 (first column)</para></xrefdescription></xrefsect></para><para><xrefsect id="jvmopt_1_jvmopt000004"><xreftitle>JVM Options</xreftitle><xrefdescription><para><programlisting><codeline><highlight class="normal">java<sp/>-Dwwn=4<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/>...<sp/><sp/></highlight></codeline>
-</programlisting> It is preferred that a more local non-global setting be used, by appending to the URL: <programlisting><codeline><highlight class="normal">java<sp/>-jar<sp/>fcparser.jar<sp/>-N<sp/></highlight><highlight class="stringliteral">&quot;cisco.txt;wwn=4&quot;</highlight><highlight class="normal"><sp/>...<sp/><sp/></highlight></codeline>
-</programlisting> </para></xrefdescription></xrefsect></para>        </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="61" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="61" bodyend="81"/>
+        </inbodydescription>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="23" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="23" bodyend="32"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -145,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="92" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="92" bodyend="95"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="43" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="43" bodyend="46"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a4de85135c75bd7120150390def731fbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -166,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="96" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="96" bodyend="99"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="47" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="47" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a17bb9b86877d4493c7ad4ba284f7c945" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.util.Enumeration&lt; ZPZoneEntry &gt;</type>
@@ -179,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="101" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="101" bodyend="104"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="52" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="52" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a083293963a3e77da41becf829be83aca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -192,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="106" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="106" bodyend="109"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="57" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="57" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1aa89f56e94a76b211df071f905e7288ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -209,7 +207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="111" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="111" bodyend="114"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="62" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="62" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a1631138fd08af051dc26686c00768ab3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.util.Enumeration&lt; <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref> &gt;</type>
@@ -222,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="116" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="116" bodyend="120"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="67" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="67" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5c646608669073b5c31bb44626baa48f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kindref="compound">ZPAliasEntry</ref>[]</type>
@@ -235,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="122" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="122" bodyend="125"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="73" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="73" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a5586367d58e0d7e6a4d5262d6dc87fd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -248,7 +246,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="127" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="127" bodyend="131"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="78" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="78" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -261,8 +259,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="140" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="140" bodyend="168"/>
-        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9bc4ab801fe78c7087eea21e8fcf2953" compoundref="NicknameParser_8java" startline="133" endline="138">NicknameParser.addAlias</references>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="91" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="91" bodyend="119"/>
+        <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9bc4ab801fe78c7087eea21e8fcf2953" compoundref="NicknameParser_8java" startline="84" endline="89">NicknameParser.addAlias</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -293,7 +291,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="83" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="83" bodyend="90"/>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="34" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="34" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9bc4ab801fe78c7087eea21e8fcf2953" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -314,8 +312,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="133" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="133" bodyend="138"/>
-        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a13a43e6d814de94978c515cb084873b1" compoundref="NicknameParser_8java" startline="140" endline="168">NicknameParser.run</referencedby>
+        <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="84" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="84" bodyend="89"/>
+        <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a13a43e6d814de94978c515cb084873b1" compoundref="NicknameParser_8java" startline="91" endline="119">NicknameParser.run</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -404,7 +402,7 @@
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" line="46" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/NicknameParser.java" bodystart="45" bodyend="169"/>
+    <location file="/Users/allanc/src/fcparsers/java/NicknameParser.java" line="8" column="1" bodyfile="/Users/allanc/src/fcparsers/java/NicknameParser.java" bodystart="7" bodyend="120"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParser_1a70657018094ce3115705b2a88005bdd0" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::NicknameParser</scope><name>_prop</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1NicknameParser_1a9bc4ab801fe78c7087eea21e8fcf2953" prot="protected" virt="non-virtual"><scope>org::smallfoot::parser::zone::NicknameParser</scope><name>addAlias</name></member>

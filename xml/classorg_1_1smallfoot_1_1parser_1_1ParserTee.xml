@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1ParserTee" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1ParserTee" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::ParserTee</compoundname>
     <basecompoundref prot="public" virt="non-virtual">TeeInputStream</basecompoundref>
       <sectiondef kind="public-static-func">
@@ -37,7 +37,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ParserTee.java" line="42" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ParserTee.java" bodystart="42" bodyend="49"/>
+        <location file="/Users/allanc/src/fcparsers/java/ParserTee.java" line="42" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ParserTee.java" bodystart="42" bodyend="49"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1boneheadbits_1_1Select2Sample_1ae4faf7ff4190d227357ef851490d7757" compoundref="Select2Sample_8java" startline="12" endline="42">Select2Sample.main</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a0827a34f92131d39860a9f9df6a4b8c3" compoundref="ParserTee_8java" startline="58" endline="61">ParserTee.ParserTee</referencedby>
       </memberdef>
@@ -86,7 +86,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ParserTee.java" line="58" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ParserTee.java" bodystart="58" bodyend="61"/>
+        <location file="/Users/allanc/src/fcparsers/java/ParserTee.java" line="58" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ParserTee.java" bodystart="58" bodyend="61"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" compoundref="ParserTee_8java" startline="42" endline="49">ParserTee.pipeOutputStreamTo</references>
       </memberdef>
       </sectiondef>
@@ -116,7 +116,7 @@
         <label>TeeInputStream</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/ParserTee.java" line="12" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ParserTee.java" bodystart="11" bodyend="62"/>
+    <location file="/Users/allanc/src/fcparsers/java/ParserTee.java" line="12" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ParserTee.java" bodystart="11" bodyend="62"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a0827a34f92131d39860a9f9df6a4b8c3" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ParserTee</scope><name>ParserTee</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1ParserTee_1a262d09da300622ed145bdd69bbd1a884" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::ParserTee</scope><name>pipeOutputStreamTo</name></member>

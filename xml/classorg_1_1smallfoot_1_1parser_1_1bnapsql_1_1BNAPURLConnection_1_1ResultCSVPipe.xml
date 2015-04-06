@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" kind="class" prot="package">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" kind="class" language="Java" prot="package">
     <compoundname>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</compoundname>
     <basecompoundref prot="public" virt="non-virtual">PipedOutputStream</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="43" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="43" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" line="43" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1aba69de0d9eefee9055958ec4bc795910" prot="package" static="no" mutable="no">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1BNAZoneParser" kindref="compound">BNAZoneParser</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="44" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="44" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" line="44" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" bodystart="44" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="45" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="45" bodyend="48"/>
+        <location file="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" line="45" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" bodystart="45" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2bda4f9ef7a24e3ad30a7f53cdc63481" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="49" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="49" bodyend="53"/>
+        <location file="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" line="49" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" bodystart="49" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="55" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="55" bodyend="118"/>
+        <location file="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" line="55" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" bodystart="55" bodyend="118"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -170,7 +170,7 @@
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" line="42" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java" bodystart="41" bodyend="119"/>
+    <location file="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" line="42" column="1" bodyfile="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java" bodystart="41" bodyend="119"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1aba69de0d9eefee9055958ec4bc795910" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</scope><name>aszp</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</scope><name>ResultCSVPipe</name></member>

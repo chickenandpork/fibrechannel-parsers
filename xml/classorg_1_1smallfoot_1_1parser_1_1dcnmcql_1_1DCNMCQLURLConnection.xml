@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection" prot="public" virt="non-virtual">CIMXMLCQLURLConnection</basecompoundref>
       <sectiondef kind="public-func">
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" line="50" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="50" bodyend="53"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMCQLURLConnection.java" line="50" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="50" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1DCNMCQLURLConnection_1a8393b7c7f0bd57a255a4123016011930" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" line="55" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="55" bodyend="58"/>
+        <location file="/Users/allanc/src/fcparsers/java/DCNMCQLURLConnection.java" line="55" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="55" bodyend="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -104,7 +104,7 @@
         <label>Properties</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" line="49" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="48" bodyend="59"/>
+    <location file="/Users/allanc/src/fcparsers/java/DCNMCQLURLConnection.java" line="49" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DCNMCQLURLConnection.java" bodystart="48" bodyend="59"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a00d00670c946d6e0027e690eb4a42772" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>CIMXMLCQLURLConnection</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection_1a92c96050d9b2157bb07a1b981f6c7b53" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::dcnmcql::DCNMCQLURLConnection</scope><name>CIMXMLCQLURLConnection</name></member>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="VCenterURLConnection_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="VCenterURLConnection_8java" kind="file" language="Java">
     <compoundname>VCenterURLConnection.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection" prot="public">org::smallfoot::parser::vmware::VCenterURLConnection</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1vmware_1_1VCenterURLConnection_1_1VCCException" prot="public">org::smallfoot::parser::vmware::VCenterURLConnection::VCCException</innerclass>
@@ -12,6 +12,6 @@
 <para>This class provides the connection and query of a vCenter instance, which is by default found at <ulink url="https://IP.IP.IP.IP/sdk">https://IP.IP.IP.IP/sdk</ulink>. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/VCenterURLConnection.java"/>
+    <location file="/Users/allanc/src/fcparsers/java/VCenterURLConnection.java"/>
   </compounddef>
 </doxygen>

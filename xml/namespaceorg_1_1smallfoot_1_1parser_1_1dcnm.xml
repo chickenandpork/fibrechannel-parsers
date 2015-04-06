@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="namespaceorg_1_1smallfoot_1_1parser_1_1dcnm" kind="namespace">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="namespaceorg_1_1smallfoot_1_1parser_1_1dcnm" kind="namespace" language="Java">
     <compoundname>org::smallfoot::parser::dcnm</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1dcnm_1_1Handler" prot="public">org::smallfoot::parser::dcnm::Handler</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/genproto/dcnm/Handler.java" line="2" column="1"/>
+    <location file="/Users/allanc/src/fcparsers/java/genproto/dcnm/Handler.java" line="2" column="1"/>
   </compounddef>
 </doxygen>

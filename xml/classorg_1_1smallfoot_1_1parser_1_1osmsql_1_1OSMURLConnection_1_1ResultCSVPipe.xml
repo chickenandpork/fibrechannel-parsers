@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe" kind="class" prot="protected">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe" kind="class" language="Java" prot="protected">
     <compoundname>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</compoundname>
     <basecompoundref prot="public" virt="non-virtual">PipedOutputStream</basecompoundref>
     <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="44" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="44" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="44" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="44" bodyend="-1"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" compoundref="OSMURLConnection_8java" startline="46" endline="49">OSMURLConnection.ResultCSVPipe.ResultCSVPipe</referencedby>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" compoundref="OSMURLConnection_8java" startline="51" endline="86">OSMURLConnection.ResultCSVPipe.run</referencedby>
       </memberdef>
@@ -37,7 +37,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="46" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="46" bodyend="49"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="46" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="46" bodyend="49"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" compoundref="OSMURLConnection_8java" startline="44">OSMURLConnection.ResultCSVPipe.source</references>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="51" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="51" bodyend="86"/>
+        <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="51" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="51" bodyend="86"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a0c3a7ce1bb1c3c7b06743537a6b185cf" compoundref="OSMURLConnection_8java" startline="44">OSMURLConnection.ResultCSVPipe.source</references>
       </memberdef>
       </sectiondef>
@@ -91,7 +91,7 @@
         <label>Runnable</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" line="43" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/OSMURLConnection.java" bodystart="42" bodyend="87"/>
+    <location file="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" line="43" column="1" bodyfile="/Users/allanc/src/fcparsers/java/OSMURLConnection.java" bodystart="42" bodyend="87"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a2d26f904856f6afcdb434ea6d6013288" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</scope><name>ResultCSVPipe</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1osmsql_1_1OSMURLConnection_1_1ResultCSVPipe_1a13a43e6d814de94978c515cb084873b1" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::osmsql::OSMURLConnection::ResultCSVPipe</scope><name>run</name></member>

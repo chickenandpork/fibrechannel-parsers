@@ -1,4 +1,4 @@
 <map id="connect" name="connect">
-<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a3a14e01bc9d7f96def8e3a0bdba40d91" title="getWBEMClient" alt="" coords="124,5,239,30"/>
-<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#aadf7257e3a434bec0920b9e3b07e3edd" title="getSubjectAuth" alt="" coords="288,5,400,30"/>
+<area shape="rect" id="node2" href="$classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#a3a14e01bc9d7f96def8e3a0bdba40d91" title="getWBEMClient" alt="" coords="123,5,239,32"/>
+<area shape="rect" id="node3" href="$classorg_1_1smallfoot_1_1parser_1_1cimcql_1_1CIMXMLCQLURLConnection.html#aadf7257e3a434bec0920b9e3b07e3edd" title="getSubjectAuth" alt="" coords="287,5,399,32"/>
 </map>

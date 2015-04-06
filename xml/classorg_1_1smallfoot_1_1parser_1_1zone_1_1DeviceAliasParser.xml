@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::zone::DeviceAliasParser</compoundname>
     <basecompoundref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI" prot="public" virt="non-virtual">ZoneParserI</basecompoundref>
       <sectiondef kind="package-attrib">
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="90" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="90" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="90" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a0ea9e3b522e448ac462274fe70e1be82" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="91" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="91" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="91" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="91" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a21e545865dbcf87cb4c1de2a7da51806" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="92" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="92" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="92" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a9e2c7c7373b818c86b2df7106a92327c" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="93" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="93" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="93" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="93" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1afa638b510be8421c552f8a71f91f6ec3" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="107" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="107" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="107" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ac89c2492d77f2a88c9ccb06cfa375c39" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="108" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="108" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="108" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="108" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a29aa9152242dba094643e0b3717b7de1" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="109" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="109" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="109" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="109" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a08bd7e4c8c0de0fbe835b3522cd6e9cb" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="110" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="110" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="110" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ad5004db9a2ef3a73534e240417580b8b" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="165" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="165" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="165" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="165" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ad0e1edc56977784ee3140880a4ab662f" prot="package" static="no" mutable="no">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="166" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="166" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="166" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a86d02a47805f45fe9925395fb890e547" prot="package" static="no" mutable="no">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="167" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="167" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="167" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1aaf3ab675514edcd808ad9e31c14bc243" prot="package" static="no" mutable="no">
         <type><ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="168" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="168" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="168" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a49423ca4199bedaafb0d36e3ce74ce40" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="169" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="169" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="169" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ab3627b14322e66c17a48d05c216c4da5" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="351" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="351" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="351" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="351" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a24b8b65b5b30d5d3f4d9cfd89f47bd8e" prot="package" static="no" mutable="no">
         <type>java.io.StreamTokenizer</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="352" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="352" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="352" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="352" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1acd46a0f826a276c736966f6193f717cc" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="353" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="353" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="353" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="353" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ac6df73cb0bdb4ae46024fd82bbe0309c" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -227,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="360" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="360" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="360" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="360" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1abb93c7c711a3c0ee506f0e510bf368a9" prot="package" static="no" mutable="no">
         <type>boolean</type>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="361" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="361" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="361" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="361" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a0bb57aaadfcbef38e67059219b4126c9" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="537" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="537" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="537" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="537" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a31c1ea5edb0bdd30006447b3f1e58d15" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="538" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="538" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="538" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="538" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ac0fe627e81502f1ccb08d1519bfa40f2" prot="package" static="no" mutable="no">
         <type>int</type>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="539" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="539" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="539" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="539" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a2cdb474303672925b387e5f813343a82" prot="package" static="no" mutable="no">
         <type>String</type>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="540" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="540" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="540" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="540" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-attrib">
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="106" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="106" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="106" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a39171a519b0927d419c1b50aeac99b8a" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -326,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="218" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="218" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="218" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="218" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a2e0afb9a762a5c5bad3dcb9f4ea67508" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -343,7 +343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="222" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="222" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="222" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a76e5d053c1e04f4b4ad49b84fc440193" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -360,7 +360,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="226" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="226" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="226" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="226" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a9a9c55e1779bc144dee27b76fcf1be4e" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -376,7 +376,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="230" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="230" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="230" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="230" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a771f445cecdd000023eabc2556196d3f" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -393,7 +393,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="233" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="233" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="233" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a326b811dc6a20004fd5462b50b2552b9" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -410,7 +410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="237" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="237" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="237" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ad5657f65d3a538951fc73836fb367373" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -426,7 +426,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="241" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="241" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="241" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="241" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1aba56e7cdfd617dc786ca9452a8d56b60" prot="package" static="yes" mutable="no">
         <type>final int</type>
@@ -440,7 +440,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="244" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="244" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="244" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="244" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a7682804618f55311e36c8338425eac69" prot="package" static="yes" mutable="no">
         <type>short</type>
@@ -453,7 +453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="245" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="245" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="245" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="245" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a734735ae171a8a3bf7e651343fa35eb2" prot="package" static="yes" mutable="no">
         <type>short</type>
@@ -466,7 +466,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="278" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="278" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="278" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="278" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ae401f7abf70e23dd826ef078c900ffa6" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -480,7 +480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="311" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="311" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="311" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="311" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1abe4ca243dec8a5d592012c4e817e0b10" prot="package" static="yes" mutable="no">
         <type>final short</type>
@@ -494,7 +494,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="312" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="312" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="312" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="312" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a0c215687f88b02eedeece3e19b48bc00" prot="package" static="yes" mutable="no">
         <type>final String</type>
@@ -527,7 +527,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="313" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="313" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="313" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1aa90e232613bcc5abc359f1dfd9755e4a" prot="package" static="yes" mutable="no">
         <type>final String</type>
@@ -555,7 +555,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="333" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="333" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="333" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="333" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -571,7 +571,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="211" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="211" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="211" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="211" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a66fe0c51d242ca6db52c31bf73a55f8e" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -585,7 +585,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="212" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="212" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="212" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="212" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1aaa70cc94f40a0785c0ce9ce3cf2ff61d" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -599,7 +599,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="213" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="213" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="213" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1afa1bd945463851953be939c8793faf70" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -613,7 +613,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="214" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="214" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="214" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="214" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1aa5a7513c6fbf326cadda716be1c49304" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -627,7 +627,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="215" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="215" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="215" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="215" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a242c421c42590f99bbf2a619102e5bbd" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -641,7 +641,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="216" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="216" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="216" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="216" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a1c58472ea6621d2f613831e08d10dba3" prot="public" static="yes" mutable="no">
         <type>final short</type>
@@ -655,7 +655,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="217" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="217" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="217" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="217" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-func">
@@ -674,7 +674,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="99" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="99" bodyend="103"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="99" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="99" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a7fca06f2aea68127ed9d54ee46be67ed" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -691,7 +691,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="114" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="114" bodyend="128"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="114" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="114" bodyend="128"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a5b17a79d1f2f4e91db95a53420401505" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final int</type>
@@ -704,7 +704,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="129" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="129" bodyend="132"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="129" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="129" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a3b3b21a1eb9702329844cc77d2d82a22" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -721,7 +721,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="133" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="133" bodyend="136"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="133" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="133" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a9bd929c959381696ac57117965762423" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final int</type>
@@ -738,7 +738,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="137" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="137" bodyend="140"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="137" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="137" bodyend="140"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ad1071764e501d770efe1ade5ea8d7ee5" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final boolean</type>
@@ -751,7 +751,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="144" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="144" bodyend="149"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="144" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="144" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a8e626edce147080d6b74344124787ed7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -768,7 +768,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="153" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="153" bodyend="160"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="153" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="153" bodyend="160"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a15f32bea4b8f1c22ada11d651b67db4a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -781,7 +781,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="173" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="173" bodyend="178"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="173" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="173" bodyend="178"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a546b106645004a3f569c40a7be9cecdb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -798,7 +798,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="179" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="179" bodyend="193"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="179" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="179" bodyend="193"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ad6e5325d5726d0823417eb248a201bc2" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -811,7 +811,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="194" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="194" bodyend="197"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="194" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="194" bodyend="197"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a03184d479fc81e916502118e86acd1e7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final void</type>
@@ -828,7 +828,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="198" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="198" bodyend="201"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="198" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="198" bodyend="201"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1aff23f19244cb74af69b0d1598a019c91" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -845,7 +845,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="202" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="202" bodyend="205"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="202" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="202" bodyend="205"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a5b3da8f164c609de90b1205d63103862" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>final <ref refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal" kindref="compound">ZoneParserVal</ref></type>
@@ -862,7 +862,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="206" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="206" bodyend="209"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="206" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="206" bodyend="209"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1ac677a01b361642a02e9b23afb4163fce" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -879,7 +879,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="355" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="355" bodyend="358"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="355" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="355" bodyend="358"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1aa40b27ae32d6d1ae7160bd6256e08eb8" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -892,7 +892,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="363" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="363" bodyend="443"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="363" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="363" bodyend="443"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a2d5e88a14a1ce23f517be13c8a7a0f92" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -913,7 +913,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="521" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="521" bodyend="530"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="521" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="521" bodyend="530"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1acd8617a8f2ac0de8bc1cc032cf449e19" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -926,7 +926,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="546" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="546" bodyend="718"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="546" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="546" bodyend="718"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-static-func">
@@ -941,7 +941,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="245" column="1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="245" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a7bfe55f022dd2ed471f804f7e83f3b19" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -954,7 +954,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="247" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="247" bodyend="277"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="247" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="247" bodyend="277"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -967,7 +967,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="278" column="1"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="278" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1aa000c1557e5264cffbc58d37d7d67ce4" prot="package" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -980,7 +980,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="280" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="280" bodyend="310"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="280" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="280" bodyend="310"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -995,7 +995,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="446" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="446" bodyend="455"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="446" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="446" bodyend="455"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a5deab139f9ad4072e1a497c5cccda0ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1012,7 +1012,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="458" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="458" bodyend="490"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="458" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="458" bodyend="490"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a13a43e6d814de94978c515cb084873b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1025,7 +1025,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="493" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="493" bodyend="502"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="493" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="493" bodyend="502"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a6c13d260cf71d0554f789c4641a9f18b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1042,7 +1042,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="504" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="504" bodyend="504"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="504" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="504" bodyend="504"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1af519c80bc4449da0ad3d5e335175b967" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -1063,7 +1063,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="506" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="506" bodyend="506"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="506" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="506" bodyend="506"/>
         <referencedby refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a75988cf84fc6ee7a2ebff36e363021aa" compoundref="DeviceAliasParser_8java" startline="510" endline="516">DeviceAliasParser.main</referencedby>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a706c7e825e1b41ae324ab12035f7a208" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -1081,7 +1081,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="507" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="507" bodyend="507"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="507" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="507" bodyend="507"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -1101,7 +1101,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="510" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="510" bodyend="516"/>
+        <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="510" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="510" bodyend="516"/>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1af519c80bc4449da0ad3d5e335175b967" compoundref="DeviceAliasParser_8java" startline="506" endline="506">DeviceAliasParser.DeviceAliasParser</references>
         <references refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserI_1a70080dd2601542e3fa52cfdac8e00afb" compoundref="ZoneParserI_8java" startline="310" endline="343">ZoneParserI.testSummary</references>
       </memberdef>
@@ -1183,7 +1183,7 @@ null,null,null,null,&quot;DEVICEALIAS&quot;,&quot;<ref refid="classorg_1_1smallf
         <link refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZoneParserVal"/>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" line="88" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/DeviceAliasParser.java" bodystart="86" bodyend="735"/>
+    <location file="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" line="88" column="1" bodyfile="/Users/allanc/src/fcparsers/java/DeviceAliasParser.java" bodystart="86" bodyend="735"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>[static initializer]</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1DeviceAliasParser_1a2e87c5ede6b7235170d287cd2e254454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::DeviceAliasParser</scope><name>[static initializer]</name></member>

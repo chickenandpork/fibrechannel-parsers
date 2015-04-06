@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kind="class" prot="public">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry" kind="class" language="Java" prot="public">
     <compoundname>org::smallfoot::parser::zone::ZPAliasEntry</compoundname>
     <basecompoundref prot="public" virt="non-virtual">java::lang::Comparable&lt; ZPAliasEntry &gt;</basecompoundref>
     <innerclass refid="enumorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1_1DeviceType" prot="public">org::smallfoot::parser::zone::ZPAliasEntry::DeviceType</innerclass>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="5" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="5" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="5" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="5" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a679154f48ec2a0c2339f57892fd95b7d" prot="package" static="no" mutable="no">
         <type>java.util.TreeSet&lt; String &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="7" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="7" bodyend="-1"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="7" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="7" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="package-func">
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="9" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="9" bodyend="13"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="9" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="9" bodyend="13"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1afb41473f6f2d96fe5a59cfba35e4272b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="14" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="14" bodyend="17"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="14" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="14" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a2f5f3c0590fde4600fee4ae884b30454" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="18" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="18" bodyend="22"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="18" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="18" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a2d6b39cc90ea6219c68615847f3b7e8d" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="29" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="29" bodyend="36"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="29" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="29" bodyend="36"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="24" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="24" bodyend="27"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="24" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="24" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1afa2149aced9d90555f788dfc81c23d15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="38" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="38" bodyend="41"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="38" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="38" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a615bd9484115d596c7ea43e7a74f0b17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>java.util.Iterator&lt; String &gt;</type>
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="42" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="42" bodyend="45"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="42" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="42" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1ad91f327feecd7baf6b0a99938adb5201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>String[]</type>
@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="46" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="46" bodyend="49"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="46" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="46" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a202e7da3074eb820067bc4e288aa0744" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="51" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="51" bodyend="54"/>
+        <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="51" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="51" bodyend="54"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -208,7 +208,7 @@
         <label>Comparable&lt; ZPAliasEntry &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" line="4" column="1" bodyfile="/Users/allan.clark/src/fcparsers/java/ZPAliasEntry.java" bodystart="3" bodyend="55"/>
+    <location file="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" line="4" column="1" bodyfile="/Users/allanc/src/fcparsers/java/ZPAliasEntry.java" bodystart="3" bodyend="55"/>
     <listofallmembers>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1a2f5f3c0590fde4600fee4ae884b30454" prot="package" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>addAlias</name></member>
       <member refid="classorg_1_1smallfoot_1_1parser_1_1zone_1_1ZPAliasEntry_1aec823a1eff2b5333c693248b642141a6" prot="public" virt="non-virtual"><scope>org::smallfoot::parser::zone::ZPAliasEntry</scope><name>addAlias</name></member>

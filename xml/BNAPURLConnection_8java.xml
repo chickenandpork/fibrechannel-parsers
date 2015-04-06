@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="BNAPURLConnection_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="BNAPURLConnection_8java" kind="file" language="Java">
     <compoundname>BNAPURLConnection.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection" prot="public">org::smallfoot::parser::bnapsql::BNAPURLConnection</innerclass>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1bnapsql_1_1BNAPURLConnection_1_1ResultCSVPipe" prot="package">org::smallfoot::parser::bnapsql::BNAPURLConnection::ResultCSVPipe</innerclass>
@@ -17,6 +17,6 @@
 </para></listitem></itemizedlist>
 </para></sect1>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/BNAPURLConnection.java"/>
+    <location file="/Users/allanc/src/fcparsers/java/BNAPURLConnection.java"/>
   </compounddef>
 </doxygen>

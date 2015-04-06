@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
-  <compounddef id="dcnmcql_2Handler_8java" kind="file">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.9.1">
+  <compounddef id="dcnmcql_2Handler_8java" kind="file" language="Java">
     <compoundname>Handler.java</compoundname>
     <innerclass refid="classorg_1_1smallfoot_1_1parser_1_1dcnmcql_1_1Handler" prot="public">org::smallfoot::parser::dcnmcql::Handler</innerclass>
     <innernamespace refid="namespaceorg_1_1smallfoot_1_1parser_1_1dcnmcql">org::smallfoot::parser::dcnmcql</innernamespace>
@@ -8,6 +8,6 @@
 <para>This class has a specific naming scheme which causes it to be used when Java needs to open a connection to a URL of the form dcnmcql://server/ by passing control over to the proper class. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/allan.clark/src/fcparsers/java/genproto/dcnmcql/Handler.java"/>
+    <location file="/Users/allanc/src/fcparsers/java/genproto/dcnmcql/Handler.java"/>
   </compounddef>
 </doxygen>
