@@ -45,6 +45,8 @@ jconn2.jar:
 	test -f $${TMPDIR-/tmp}/jconn2-5.5.jar && cp $${TMPDIR-/tmp}/jconn2-5.5.jar $@ || true
 	test -f $@ || wget -O $@ http://oodt.jpl.nasa.gov/download/private/sybase/jconn2/5.5/$(@F) || curl -Lo $@ http://oodt.jpl.nasa.gov/download/private/sybase/jconn2/5.5/$(@F)
 	test \! -f $@ || jar tf $@ >/dev/null || rm $@
+	test -f $@ || wget -O $@  ftp://ftp.sayan.ru/PW/Server136Final/Beastie136PW/usr/java/jdk1.5.0_05/jre/lib/ext/jconn2.jar || curl -Lo $@  ftp://ftp.sayan.ru/PW/Server136Final/Beastie136PW/usr/java/jdk1.5.0_05/jre/lib/ext/jconn2.jar
+	test \! -f $@ || jar tf $@ >/dev/null || rm $@
 	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
 else
 jconn2.jar: @JCONN2JAR@
@@ -175,6 +177,19 @@ sblim-cim-client2-$(VER_SBLIM)-bin.zip:
 	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
 	-touch $@
 
+
+
+if FETCH_GETOPTJAR
+
+JARS += getopt.jar
+
+# getopt.jar includes both org.smallfoot.getopt and gnu.getopt
+
+getopt.jar:
+	test -f $${TMPDIR-/tmp}/$(@F) && cp $${TMPDIR-/tmp}/$(@F) $@ || true
+	test -f $@ || wget -O $@ http://chickenandpork.github.io/wwndesc/$(@F) || curl -Lo $@ http://chickenandpork.github.io/wwndesc/$(@F)
+	test -f $${TMPDIR-/tmp}/$(@F) || cp $@ $${TMPDIR-/tmp}/$(@F)
+endif
 
 
 BUILT_SOURCES := $(JARS)

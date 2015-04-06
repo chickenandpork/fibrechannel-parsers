@@ -20,7 +20,7 @@ EXTRA_DIST += samples/Putty.Log.Die.Die.Die.shzone samples/VW3-4column-bogusname
 SOURCES = java/Alias4Parser.java.in java/FCParser.java.in java/NicknameParser.java.in java/ParserTee.java java/VW4InvalidAddedParser.java java/ZoneParser.java java/ZPAliasEntry.java java/ZPFCAliasEntry.java java/ZPZoneEntry.java java/ZoneParser.java java/ZoneParserI.java java/SwappedNicknameParser.java
 
 if DO_DOXYGEN
-doc: htdocs/README.dox Doxyfile $(SOURCES)
+doc: htdocs/README.dox Doxyfile $(SOURCES) htdocs/@PACKAGE@.jar
 	$(DOXYGEN)
 	@if test \! -d $(<D)/.git; then echo "subdir $(<D) not set as a gh-pages branch; see http://rickfoosusa.blogspot.com/2011/10/howto-use-doxygen-with-github.html"; git branch|grep gh-pages || echo git clone --branch gh-pages $$(git config --get remote.origin.url) $(<D); grep $(<D) .gitignore || echo "echo $(<D) > .gitignore"; echo "then delete everything in $(<D), commit, and push"; exit 1; fi
 	@grep $(<D) .gitignore || { echo "echo $(<D) > .gitignore"; exit 1; }
@@ -36,6 +36,8 @@ else
 endif DO_DOXYGEN_MD_FALSE
 endif
 
+htdocs/@PACKAGE@.jar: convjars/@PACKAGE@.jar
+	cp $< $@
 
 
 if DO_ASTYLE
